@@ -1,6 +1,23 @@
 History of changes:
 -------------------
 
+02-03-13:
+    encyclopedia (port to Maple 6)
+    Ore_algebra 3.1 (port to Maple 6)
+    Groebner 3.1 (port to Maple 6)
+    Holonomy 3.1 (port to Maple 6)
+    Mgfun 3.1 (port to Maple 6)
+
+02-03-01:
+    regexpcount 1.4 (port to Maple 6)
+
+02-02-27:
+    gfun 2.66 (port to Maple 6)
+
+02-02-26:
+    gdev (port to Maple 6)
+    combstruct 4.1 (bug fixes)
+
 01-05-29:
     a few bug fixes in evalr (part of equivalent)
 

@@ -1,4 +1,4 @@
-This file describes the installation of algolib for MapleV.5.
+This file describes the installation of algolib for Maple 6.
 
 
 I. Install the files.
@@ -55,7 +55,7 @@ Under Windows:
       The `algolib' path is something like `C:\algolib', so
       that your command reads:
 
-	     libname:="C:\algolib",libname:
+	     libname:="C:/algolib",libname:
 
 
 III. Using the algolib library.
