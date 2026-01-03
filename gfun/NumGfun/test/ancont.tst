@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -55,12 +55,34 @@ TryEval(1.3,
     I+1.5,
     2);
 
+TryEval(1.4,
+    {diff(y(z),z)-1, y(0)=42},
+    [0,1],
+    43,
+    10);
+
+TryEval(1.5,
+    y(z),
+    [0,2],
+    0,
+    10);
+
+TryEval(1.6,
+    z^12*y(z),
+    2,
+    0,
+    10);
+
+Try[verify,Matrix](1.7,
+    transition_matrix(z^3*y(z), y(z), 1, 10),
+    Matrix());
+
 ## 2. Usual elementary and special functions inside their disc of convergence
 
-for f in [ arccos, arccot, 
-    #AiryAi,   ### FIXME: bound computations fail
+for f in [ arccos, arccot,
+    AiryAi,
     arcsin, arctan,
-    #AiryBi,
+    AiryBi,
     cos, erf, erfc, erfi,
     arccosh, arcsinh, arctanh, cosh, sinh, sin ] do
   TryEval(sprintf("2.%a.lowprec", f),
@@ -123,17 +145,20 @@ TryEval(4.2,
 
 # diffeqtoproc w/o initial values
 Try[verify, 'polynom(neighborhood(10^(-10)))'](6.2,
-    diffeqtoproc(diff(y(z),z)-y(z),y(z))(1, 10),
+    eval(diffeqtoproc(diff(y(z),z)-y(z),y(z))(1, 10), ``=(x->x)),
     2.718281828459*_C[0]);
 
 # diffeqtoproc w/o initial values
 deq := -2*z*diff(y(z),z)+(-1-z^2)*diff(diff(y(z),z),z); # cancels arctan
 Try[verify, 'polynom(neighborhood(10^(-10)))'](6.2,
-    diffeqtoproc(deq, y(z))(1/2, 50),
+    eval(diffeqtoproc(deq, y(z))(1/2, 50), ``=(x->x)),
     _C[0]+.463647609000806116214256231461214402028537054286120263810933088720*_C[1]);
 
+# catch hardcoded variable names
+Try[testnoerror]("w(t)",
+    evaldiffeq(diff(w(t),t)=2*t*w(t), w(t), 1, 10));
 
-## 5. Some less usual functions
+## 5. Some less common functions
 
 TryEval(5.1,
   subs({a=1, b=1, c=1, q=1},
@@ -198,6 +223,11 @@ TryEval(7.6,  # similar issue
   51.2526832902 - 2.0511329801*I,
   10);
 
+TryEval(7.7,  # bound computation used to fail with recent Maple versions
+  {(1+z^2)*diff(y(z),z)-1, y(0) = 0},  # arctan
+  [0,11/10],
+  0.83298126667443170542,
+  20);
 
 ## 8. transition_matrix
 
@@ -224,4 +254,12 @@ Try[verify, 'Matrix(neighborhood(10^(-10)))'](8.4,
         (1, 2) = 4.71238898038468985 + 1.64791843300216453709*I,
         (2, 2) = -3.}));
 
+# 9. catch hardcoded variable names
 
+deq := (1+w^2)*diff(g(w),w)-1;
+
+Try[testnoerror]("varnames",
+    evaldiffeq(deq, g(w), [0,5/2]));
+
+Try[testnoerror]("varnames",
+    transition_matrix(deq, g(w), [0,convert(evalf[100](Pi), rational, exact)]));

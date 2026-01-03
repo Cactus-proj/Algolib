@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -54,7 +54,7 @@ Try[testnoerror]("bound_diffeq help 3",
 
 # from bound_diffeq_tail.mws
 #
-# FIXME: find a way to actually test the output!
+# TODO: actually test the output!
 
 Try[testnoerror]("bound_diffeq_tail help 1",
     bound_diffeq_tail({diff(y(z),z)=y(z), y(0)=1}, y(z), n));

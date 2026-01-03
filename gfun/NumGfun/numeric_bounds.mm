@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -23,104 +23,67 @@ numeric_bounds := module()
 
 uses LinearAlgebra;
 
-export bound_frobenius_norm, bound_fundamental_solutions, one_sol_of_ineq,
+export bound_frobenius_norm, bound_fundamental_solutions, dicho_solve_ineq,
     needed_terms, bound_step_transition_matrix, bound_path_transition_matrix,
     bound_transition_matrix, bound_small_transition,
     bound_fundamental_solutions_exact_point;
 
-## Floating-point Frobenius norm with directed rounding
+bound_frobenius_norm := proc(mat)
+    local mymat;
+    mymat := map(above_abs, mat);
+    Rounding := infinity;
+    Norm(mymat, 'Frobenius');
+    # · return a rational above instead of a Float?
+end proc;
 
-bound_frobenius_norm := overload([
-
-    proc(mat::{'Vector'('anything'), 'Matrix'('anything')})
-        option overload;
-        Rounding := infinity;  # environment variable
-        Norm(evalf(mat), 'Frobenius');
-        # · return a rational above instead of a Float?
-    end proc,
-
-    proc(mat::ndmatrix)
-        option overload;
-        local num, den;
-        UseHardwareFloats := false;  # insufficient exponent range
-        num, den := op(mat);
-        num := rndu(num);
-        den := rndz(den);
-        procname(rndu(`/`, num, den));
-    end proc
-
-]);
-
-
-# Le rec*rec fait par normalize_diffeq est coûteux (mais moins, quand même,
-# depuis qu'il ne calcule plus les conditions initiales). Comme kappa (<=0)
-# ne change pas quand on déplace l'équation, ce serait bien de faire la
-# normalisation une fois pour toutes. Problèmes :
-# · en appelant normalize_diffeq avec un a formel, on ne calcule pas
-#   le bon kappa ;
-# · en faisant tout le normalize_diffeq avec le bon kappa formellement,
-#   le rectodiffeq fait des expressions mostrueuses ;
-# · si on essaie de faire normalize_*rec* en un point générique, puis subs,
-#   et diffeqtorec après substitution, ça marche en temps de calcul, mais
-#   ça donne des gros coefficients, d'où une borne (un K) très pessimiste.
-#
-#    rec := diffeqtorec(deq, yofz, u(n));
-#    kappa := rec_factorial_growth(rec, u(n));
-#    genericdeq := algebraicsubs(deq, y=a+z, yofz);
-#    genericrec := diffeqtorec(genericdeq, yofz, u(n));
-#    genericnormalrec := normalize_rec_doit(genericrec, u(n), kappa);
-#    localnormalrec := subs(a=z0, genericnormalrec);
-#    localnormaldeq := rectodiffeq(localnormalrec, u(n), y(z), 'ini'=false, 
-#                                                    'homogeneous'=true);
-
-
-# Input: 
+# Input:
 #   deq - homogeneous diffeq
 #   z0 - an *ordinary* (for the time being) point of deq
 # Output:
 #   parameters of a majorant series that bounds all fundamental solutions at z0
 #   of deq
-# Note: There is some (not that much) code duplication between
-#   bound_diffeq_doit, bound_rec_doit, and bound_fundamental_solutions,
-#   because I don't know yet how these procedures will evolve or how to
-#   factorize it.
-bound_fundamental_solutions_exact_point := proc(deq, yofz, z0)
+# Note: see also bounds:-params_given_normaldeq
+bound_fundamental_solutions_exact_point := proc(deq, yofz, z0, {wini:=true}, $)
     option cache;
     local y, z, ordeq, kappa, localdeq, localnormaldeq, saved_mode,
-        bound_params, thr, headrec, generic_head, k, head, cst, ini;
-    userinfo(4, 'gfun', "enter bound_fundamental_solutions", "point"=z0);
-    bound_params;
+        bound_params, validity, headrec, generic_head, k, head, cst, ini;
+    userinfo(4, 'gfun', "enter", "point"=z0);
     y, z := getname(yofz);
     ordeq := orddiffeq(deq, yofz);
-    localdeq := algebraicsubs(deq, y=z0+z, yofz);
-    # this is expensive, but I do not know how to avoid it
-    kappa, localnormaldeq := bounds:-normalize_diffeq(localdeq, yofz);
-    if kappa = -infinity then
-        return [0, 0, 1, 1, [], 1];
-    end if:
-    saved_mode := set_mode(numeric_mode);
-    bound_params, thr := bound_normal_diffeq(localnormaldeq, yofz);
-    reset_mode(saved_mode);
-    # To compute the first terms of the fundamental solutions at z0, which are
-    # needed to determine the constant, we translate the diffeq *without
-    # normalisation*.
     localdeq := algebraicsubs(bare_diffeq(deq, z), y=z0+z, yofz);
-    headrec := diffeqtorec(
-        { localdeq, seq( (D@@k)(y)(0)=ini[k]/k!, k=0..ordeq-1 ) },
-        yofz, u(n));
-    generic_head := rectoproc( headrec,
-        u(n), 'remember', 'params'=[seq(ini[k], k=0..ordeq-1)]);
-    head := proc(n)
-        local j;
-        max(seq(
-            abs( generic_head(n, 0$j, 1, 0$(ordeq-1-j)) ),
-            j=0..ordeq-1));
-    end proc;
-    # 
+    kappa, localnormaldeq := bounds:-normalize_diffeq(localdeq, yofz);
+    saved_mode := set_mode(numeric_mode);
+    bound_params, validity := bound_normal_diffeq(localnormaldeq, yofz);
+    ASSERT(kappa > -infinity or bound_params[2] = 0); # κ=-∞ => α=0
+    reset_mode(saved_mode);
+    # Unlike the pseudocode version in [Mezzarobba and Salvy, 2010],
+    # bound_normal_diffeq computes its bound up to a constant factor ('A'). Here
+    # we compare the first few terms of the bound (taking into account the
+    # normalization by psi(n)) with those of the fundamental solutions at z0 of
+    # the original diffeq (not the normalized one!) to find the correct constant
+    # part.
+    if ordeq = 0 then
+        head := 0;
+    elif wini then
+        headrec := diffeqtorec(
+            { localdeq, seq( (D@@k)(y)(0)=ini[k]/k!, k=0..ordeq-1 ) },
+            yofz, u(n));
+        generic_head := rectoproc( headrec,
+            u(n), 'remember', 'params'=[seq(ini[k], k=0..ordeq-1)]);
+        head := proc(n)
+            local j;
+            max(seq(
+                abs( generic_head(n, 0$j, 1, 0$(ordeq-1-j)) ),
+                j=0..ordeq-1));
+        end proc;
+    else
+        head := 1;
+    end if;
     bound_params := [kappa, op(bound_params)];
-    cst := bounds:-find_constant(bound_params, thr, head);
+    cst := bounds:-find_constant(bound_params, validity, head);
     bound_params := [op(bound_params), cst];
-    bound_params := bounds:-get_rid_of_P(bound_params, op(yofz));
+    # Counterproductive in the numeric case?
+    #bound_params := bounds:-get_rid_of_P(bound_params, op(yofz));
     userinfo(3, 'gfun', "bound on fundamental solutions:", "point"=z0,
         "parameters"=bound_params);
     bound_params;
@@ -134,38 +97,40 @@ bound_small_transition := proc(deq, yofz, center, rad)
     params := bound_fundamental_solutions_exact_point(deq, yofz, center);
     ordeq := orddiffeq(deq,yofz);
     maj := table([seq(
-        k = bounds:-tail_bound(op(params), dz, 0, 'derivative' = k),
-        k = 0 .. ordeq-1 )]);
+        k = bounds:-tail_bound(op(params), dz, 0, 'deriv'=k),
+        k = 0..ordeq-1 )]);
     maj := eval(`simplify/piecewise`(maj));
     B := sqrt(ordeq * add(
         (1/k! * (subs(dz=rad,maj[k]) - subs(dz=0, maj[k])))^2,
         k = 0 .. ordeq-1 ));
     B := eval(`simplify/piecewise`(B));
     Digits := max(0, -ilog10(rad)) + 10;
-    B := evalrC(B);
-    B := bound_abs_interval(B);
+    _EnvNumGfunExtendEvalrC := ["GAMMA", "Hypergeom"];
+    B := above_abs(B, 'rational');
     userinfo(5, 'gfun', sprintf("|z0-%a| < %a, bound ~= %a",
         center, evalf[2](rad), evalf[2](B)));
     B;
 end proc:
 
 # See bound_fundamental_solutions_exact_point.  This version is allowed to
-# replace z0 to a nearby point of small bit-size before computing the majorant.
-# To take this into account, it adjusts params, and returns in addition to it a
-# change of variable to be done in the majorant series.
+# replace z0 by a nearby point of small bit-size before computing the majorant.
+# To take this into account, it adjusts params, and returns (in addition to
+# params) a change of variable to be done in the majorant series.
 bound_fundamental_solutions := proc(deq, yofz, z0, approx_size := Digits, $)
     local center, params, delta, invtransbound, cst, res, K;
     if length(denom(z0)) < approx_size then
-        res := [bound_fundamental_solutions_exact_point(deq, yofz, z0), z->z];
+        res := [bound_fundamental_solutions_exact_point(deq, yofz, z0), 0];
     else
-        # this is intended to yield the same result for consecutive z0 close
+        # This is intended to yield the same result for consecutive z0 close
         # enough to each other (bit burst), so that the majorants can be
-        # remembered
+        # remembered.
         center := convert(rndz(z0, prec = approx_size), 'rational', 'exact');
-        userinfo(5, 'gfun', "z0"=z0, "center"=center);
+        userinfo(5, 'gfun', "z0"=sprint_small_approx(z0), "center"=center);
         params := bound_fundamental_solutions_exact_point(deq, yofz, center);
-        delta := z0 - center;
-        delta := convert(rndu(abs(delta)),'rational', 'exact'); # XXX pas rigoureux
+        delta := above_abs(z0 - center, 'rational');
+        # FIXME: Fails if D(center, delta) contains a singular point of deq,
+        # which could happen, e.g., if |z0-sing| << 10^(-approx_size).  However,
+        # assumptions of this kind are made in several other places in the code.
         invtransbound := bound_small_transition(deq, yofz, center, delta);
         if invtransbound > 1/2 then
             # If maj = exp(K/(1-z)), we expect that approx_size should be of the
@@ -180,108 +145,102 @@ bound_fundamental_solutions := proc(deq, yofz, z0, approx_size := Digits, $)
         cst := rndu(orddiffeq(deq, yofz)/rndz(1-invtransbound));
         cst := convert(cst, 'rational', 'exact');
         params := subsop(-1 = params[-1]*cst, params);
-        res := [params, z->(delta+z)];
+        res := [params, delta];
     end if:
     userinfo(6, 'gfun', "done");
     op(res);
 end proc:
 
-one_sol_of_ineq := proc(ineq, x, n0 := 1, $)::posint;
-    description "Finds n >= n0 s.t. expr(n) < epsilon (for nonnegative expr tending to 0)";
-    local expression,evalexpr,epsilon,dicho,n,s;
-    ASSERT(type(ineq, `<`)); ASSERT(type(x, 'name'));
-    expression := lhs(ineq);
-    # makes numerical evaluation much faster (otherwise too much is done at simplification time)
-    if hastype(expression, `^`) then expression := convert(expression, 'exp') end if;
-    epsilon := below(rhs(ineq));
-    userinfo(5, 'gfun', 'epsilon' = evalf(epsilon));
-#    evalexpr := proc(t)
-#        local u;
-#        # Gives "Error, (in evalr/shake) Not implemented, evalr/hypergeom"
-#        #u := upper(shake(subs(x=t,expression)));
-#        u := above(subs(x=evalf(t), expression));
-#        userinfo(6, 'gfun', 'f'(t) = u);
-#        u;
-#    end proc:
-    dicho := proc(i, j)  # expr(j) always < epsilon (=> OK even if expr non-nonincreasing!)
-        local m;
-        if j-i <= 2 then j
-        else
-            m := iquo(i+j,2);
-            if evalf(subs(x=m, expression))>epsilon then
-		dicho(m,j) 
-            else dicho(i,m) 
-            end if;
-	end if;
-    end proc:
-    n := n0;
-    #while evalexpr(2*n) > epsilon do n := 2*n end do;
-    # expression may be a piecewise => use eval, not subs
-    # it would be better to use interval arithmetic here, but evalrC does not
-    # support hypergeom
-    #while bound_abs_interval(evalrC(eval(expression, x=2*n))) > epsilon do
-    while evalf(eval(expression, x=2*n)) > epsilon do
-        n := 2*n;
-        if n > 2^20 then
-            error "unable to compute a suitable truncation order for the Taylor "
-            "expansion (precision too high?)"
-        end if;
-    end do;
-    n := dicho(n,2*n);
-    userinfo(5, 'gfun', "done");
-    n;
+# Finds n in [low, high] s.t. fun(n) < epsilon (assuming fun(n) ≥ 0, fun(n) → 0)
+dicho_solve_ineq := proc(fun, eps, low := 1, high := infinity, $)
+    local mid;
+    if low > Settings:-max_series_terms then
+        error "about %1 terms or more of some series expansion seem necessary "
+            "to reach the required precision: giving up.  (Increase "
+            "NumGfun:-Settings:-max_series_terms to proceed.  Increasing "
+            "Digits may also give tighter bounds in some cases.)",
+            Settings:-max_series_terms;
+    end if;
+    mid := `if`(high=infinity, 2*low, iquo(low+high,2));
+    if high - low <= 2 then
+        high;
+    elif fun(mid) < eps then
+        dicho_solve_ineq(fun, eps, low, mid);
+    else
+        dicho_solve_ineq(fun, eps, mid, high);
+    end if;
 end proc:
 
-# assumes homogeneous diffeq, ordinary point
-needed_terms := proc(deq, yofz, derivation_order, z0, Rad, epsilon,
-                {canonical := true})::nonnegint; 
-    local bound, params, changevar, nt, rad;
+# Assumes homogeneous diffeq, ordinary point.
+#
+# FIXME: As usual, this could fail if rad is close enough to the distance to
+# the nearest singular point that rounding it makes the bounds infinite.
+# This should not happen in practice, but...
+needed_terms := proc(deq::hrdeq, yofz::function(name), difforder::nonnegint,
+            z0::complexcons, rad::complexcons, epsilon::positive,
+            {canonical := true})::nonnegint;
+    local bound, num_bound, evalbound, params, zshift, myrad, nt;
     userinfo(6, 'gfun', "called");
     if canonical then
-        params, changevar := bound_fundamental_solutions(deq, yofz, z0);
+        params, zshift := bound_fundamental_solutions(deq, yofz, z0);
     else
         # useful for testing
-        error("not implemented anymore!");
+        error("not implemented anymore!");  # TODO: put it back!
     end if;
-    rad := rndu(Rad);  # XXX rigoureux ? 
-    bound := bounds:-tail_bound(op(params), rad, n,
-        'derivative'=derivation_order, 'simplify_hypergeom'=false,
-        'transform'=changevar);
-    if type(bound, 'SymbolicInfinity') then 
+    myrad := evalrCf(rad);
+    bound := bounds:-tail_bound(op(params), myrad, n,
+        'deriv'=difforder, 'simplify_hgeom'=false, 'zshift'=zshift);
+    if type(bound, 'SymbolicInfinity') then
         error "no finite bound for series tail"
     end if;
-    userinfo(6, 'gfun', "tail bound computation done, now solving ineq");
-    nt := one_sol_of_ineq(bound < epsilon, n, 1);
-    userinfo(6, 'gfun', "done");
+    # faster numerical evaluation when expr contains large integers
+    if hastype(bound, `^`) then bound := convert(bound, 'exp') end if;
+    # try a fast but non-rigorous search...
+    num_bound := evalf(subs(myrad=evalf(above_abs(rad)), bound));
+    evalbound := proc(k) evalf(subs(n=k, num_bound)); end proc:
+    userinfo(8, 'gfun', "tail bound computation done, now solving ineq");
+    nt := dicho_solve_ineq(evalbound, epsilon/10);
+    # ...then check the result rigorously and fallback to slow method if needed
+    _EnvNumGfunExtendEvalrC := ["GAMMA", "Hypergeom"];
+    if above(eval(bound, n=nt)) > epsilon then
+        userinfo(3, 'gfun', "fast tail bound computation failed, falling back "
+            "to slow method");
+        evalbound := proc(k) above(eval(bound, n=k)); end proc:
+        nt := dicho_solve_ineq(evalbound, epsilon);
+    end if;
+    userinfo(8, 'gfun', "done");
     nt;
 end proc:
 
 ## Bound transition matrices (in Frobenius norm)
 
-# La norme de Frobenius est une norme d'algèbre, et majore la norme subordonnée
-# à la norme euclidienne (d'après l'inégalité de Cauchy-Schwarz).
-
 bound_step_transition_matrix := proc(deq, yofz, z0, z1)
-    local params, changevar, ordeq, dz, B, k;
+    local params, zshift, ordeq, rad, B, k;
     userinfo(6, 'gfun', "called");
-    params, changevar := bound_fundamental_solutions(deq, yofz, z0);
+    if ancont:-is_regsing_step(z0) or ancont:-is_regsing_step(z1) then
+        userinfo(3, 'gfun', sprintf("singular step %a -> %a ignored",
+            sprint_small_approx(op(z0)), sprint_small_approx(op(z1))));
+        return 1;
+    end if;
+    _EnvNumGfunExtendEvalrC := ["GAMMA", "Hypergeom"];
+    params, zshift := bound_fundamental_solutions(deq, yofz, z0);
     ordeq := orddiffeq(deq,yofz);
-    dz := abs(evalf(z1-z0));  # FIXME
+    rad := above_abs(z1-z0, 'rational') + zshift; # [Mez2011, Remark 6.7]
     B := evalrC(sqrt(ordeq * add(
-        (1/k! * bounds:-tail_bound(op(params), dz, 0, 'derivative' = k,
-                                                    'transform'=changevar))^2,
+        (1/k! * bounds:-tail_bound(op(params), rad, 0, 'deriv'=k))^2,
         k = 0..ordeq-1)));
-    B := bound_abs_interval(B);
-    userinfo(3, 'gfun', sprintf("%a -> %a, bound ~= %a", z0, z1, evalf[2](B)));
-    above(B); # inutile ?
+    B := above_abs(B);
+    userinfo(3, 'gfun', sprintf("%a -> %a, bound ~= %a",
+        sprint_small_approx(z0), sprint_small_approx(z1), evalf[2](B)));
+    B;
 end proc:
 
-# Version d'avant le tail_bound actuel :
+# Used to be (prior to changes in tail_bound):
 #
 # |Sum(a_n*z^n/n!^tau)| <= Sum(|a_n·t^n|·|z/t|^n/n!^tau)
 #                       <= max(|a_n·t^n|) · Sum(|z/t|^n/n!^tau)
 #                       <= Sum(|a_n·t^n|) · Sum(|z/t|^n/n!^tau)
-# (La dernière inégalité n'est pas fine, mais pas monstrueusement large.)
+# (The last inequality is not tight, but it could be worse.)
 #
 #t := 1/2 * abs(evalf(1/alpha));  # arbitrary point where maj converges
 #B2 := evalf(

@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -19,14 +19,22 @@
 # Dominant roots of polynomials.
 # Marc Mezzarobba, Algorithms project, INRIA. 2009.
 
-# We call dominant roots of a polynomial those of maximal multiplicity among
-# the nonzero roots of smallest modulus.
+# In [MS2010], we call dominant roots of a polynomial those of maximal
+# multiplicity among the nonzero roots of smallest modulus.  However, this code
+# disregards the 'nonzero' condition and leaves it to its caller to filter out
+# roots at the origin if needed.
+#
+# XXX: is this really the behaviour we want?
 
 # What follows is basically a less clever and more specialized version of
 # infsolvepoly (heavily inspired by it, though) that seems to work better for
 # our purposes.
 
-# TODO: option pour renvoyer directement les valeurs absolues ?
+# TODO: avoid using things like Float(1, 2-Digits) in numerical tests, since
+# Maple now seems to provide more reliable tools
+
+# TODO: optionally return the absolute value of the dominant root instead of
+# its exact value?
 
 dominant_root := module()
 
@@ -132,7 +140,7 @@ end proc;
 #   good approximation of the roots])
 doit := proc(facpoly, z, {banzai := false}, $)
     local sorted, nbmini, chk, i, res;
-    if Digits > 200 then error "emergency stop (Digits too large)" end if;
+    fail_if_Digits_too_large("dominant_root");
     sorted := sort(map(irreducible_solve, facpoly, z), dominant_first);
     # Count irreducible factors with roots of modulus close to the minimum
     for nbmini to nops(sorted)-1 while 
@@ -174,7 +182,7 @@ doit := proc(facpoly, z, {banzai := false}, $)
     if numeric_mode then
         res := ratbelow_complex(sorted[1][3]);
     else
-        res := RootOf(sorted[1][1], z, sorted[1][3])
+        res := make_RootOfs_indexed(RootOf(sorted[1][1], z, sorted[1][3]))
     end if;
     [ 
         res,                                # a dominant root

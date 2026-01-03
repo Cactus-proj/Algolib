@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -36,8 +36,6 @@ local PRECOMPUTED_DATA, PRECOMPUTATION_PREC, DEQ, Y, Z;
 #   precomputed local expansions (for points in one of the given disks and
 #   precisions up to prec) or multiple-precision numerical analytic
 #   continuation.
-#   - The default evaluation precision is 'Digits', even though the procedure
-#     takes an *absolute* precision.
 #   - Precomputed expansions are used whenever possible if 'path' a point,
 #     regardless whether it lies inside or outside the disk of convergence of
 #     the solutions, and are not used when 'path' is a path.  For multivalued
@@ -46,14 +44,15 @@ local PRECOMPUTED_DATA, PRECOMPUTATION_PREC, DEQ, Y, Z;
 #     diffeqtoproc.
 #   (See the description of precompute_local_sol and proc_template below for
 #   more details.)
-ModuleApply := proc(Deq, yofz,
-        { prec :: nonnegint := 0,
-          disks :: list([path,And(numeric,positive)]) 
+ModuleApply := proc(Deq::hrdeq, yofz::function(name),
+        { prec::nonnegint := 0,
+          disks::list([path,And(numeric,positive)])
                 := default_disks(Deq, yofz, prec) },
         $)
-    local deq, eps, precomputed_data, y, z;
+    local deq, eps, precomputed_data, y, z, ini, norm_ini,
+        iniconds_are_symbolic;
     ## Check arguments
-    deq := diffeqtohomdiffeq(Deq, yofz);
+    deq := diffeqtohomdiffeq_warn(Deq, yofz);
     trial_run(deq, yofz);
     if prec = 0 and disks <> [] then
         WARNING("'disks' will be ignored since prec = 0");
@@ -63,7 +62,16 @@ ModuleApply := proc(Deq, yofz,
     # 'complex(rational)' value of z (using exact arithmetic), and then
     # converted to floating-point using makeitfloat, thus the -1.
     eps := Float(1,-prec-1);
-    precomputed_data := map[3](precompute_local_sol, deq, yofz, disks, eps);
+    # Here mainly to avoid repeated warnings
+    ini := ancont:-diffeq_inicond_matrix(deq, yofz);
+    norm_ini, iniconds_are_symbolic := op(ancont:-ext_norm_ini(ini));
+    if iniconds_are_symbolic then
+        WARNING("Symbolic initial values are only partially supported in "
+            "diffeqtoproc with option disks.  Some numerical results may "
+            "be inaccurate.");
+    end if;
+    precomputed_data := map[3](precompute_local_sol, deq, yofz, disks, eps,
+        ini, norm_ini, iniconds_are_symbolic);
     ## Return proc
     y, z := getname(yofz);
     subs(
@@ -74,7 +82,9 @@ end proc:
 
 # Procedure template used by diffeqtoproc.  Identifiers in uppercase get
 # substituted (and are module-local for this purpose).
-proc_template := proc(path, prec := Digits)
+#
+# TODO: better handling of symbolic initial values, via apply_ini and co
+proc_template := proc(path, prec:=Settings:-default_eval_precision)
     local disk, center, arg, rad, local_exp, res;
     if prec <= PRECOMPUTATION_PREC and type(path, 'complex'('numeric')) then
         arg := convert(path, 'rational', 'exact');
@@ -92,7 +102,7 @@ proc_template := proc(path, prec := Digits)
             end if;
         end do;
     end if;
-    userinfo(2, 'gfun', "using multiprecision analytic continuation");
+    userinfo(2, 'gfun', "using multiple-precision analytic continuation");
     ancont:-analytic_continuation(DEQ, Y(Z), path, prec);
 end proc:
 
@@ -117,9 +127,12 @@ trial_run := proc(deq, yofz, $)
 end proc:
 
 # Compute the 'prec' first terms of the Taylor expansion at 'pt' of a solution
-# of 'deq' of the form y(pt+dz) = dz^sol_idx + O(dz^ordeq).
-basic_series_sol := proc(deq, yofz, pt, sol_idx, prec, $)
-    local y, z, ordeq, ini, k, sol, dz, mydeq, rec, u, n, coef;
+# of 'deq' of the form y(pt+dz) = dz^sol_idx + O(dz^ordeq); then throw away the
+# high-order terms as long as we are able to prove that the error thus
+# introduced is bounded by eps_eco.
+basic_series_sol := proc(deq, yofz, pt, sol_idx, prec, rad, eps_eco, $)
+    local y, z, ordeq, ini, k, sol, dz, mydeq, rec, u, n, coef, prec_eco,
+        bound_eco, curterm;
     y, z := getname(yofz);
     ordeq := orddiffeq(deq, y(z));
 ##  simple but too slow for large precisions
@@ -133,7 +146,15 @@ basic_series_sol := proc(deq, yofz, pt, sol_idx, prec, $)
               seq( (D@@k)(y)(0) = 0, k in {$0..ordeq-1} minus {sol_idx} ) };
     rec := diffeqtorec({mydeq, op(ini)}, yofz, u(n));
     coef := rectoproc(rec, u(n), 'remember');
-    sol := add(coef(k)*dz^k, k = 0..prec-1);
+    bound_eco := 0; sol := 0;
+    for k from prec-1 to 0 by -1 do
+        curterm := abs(coef(k))*rad^k;
+        if bound_eco + curterm < eps_eco then  # trivial Taylor economization
+            bound_eco := bound_eco + curterm;
+        else
+            sol := sol + coef(k)*dz^k;
+        end if;
+    end do;
     # faster to eval(..., z=...) than series
     sol := convert(convert(sol, 'polynom'), 'horner');
     subs(dz = z-pt, sol);
@@ -145,12 +166,13 @@ end proc;
 # ini may be a matrix
 # would it make sense to have fundamental_solution return an ndmatrix when
 # possible??? (probably not)
-fundamental_solution := proc(deq, yofz, path, Ini, eps)
-    local norm_ini, eps_transmat, transmat, iniconds_are_symbolic;
-    norm_ini, iniconds_are_symbolic := op(ancont:-ext_norm_ini(Ini));
+fundamental_solution := proc(deq, yofz, path, ini, norm_ini,
+                                                  iniconds_are_symbolic, eps, $)
+    local eps_transmat, transmat;
     eps_transmat := rndz(`/`, eps, rndu(`*`, 2, norm_ini));
     transmat := ancont:-path_transition_matrix(deq, yofz, path, eps_transmat);
-    ancont:-apply_ini(transmat, Ini, iniconds_are_symbolic, eps, infinity);
+    ancont:-apply_ini(transmat, ini, eps, infinity, iniconds_are_symbolic,
+        proc(x) x end proc);
 end proc:
 
 # Input:
@@ -164,10 +186,11 @@ end proc:
 #   abs(p(z)-y(z)) <= eps for z in disk. If some initial values of deq are
 #   non-numeric (missing, symbolic...), this holds only for the coefficients of
 #   y(z) as a linear function of the initial values.
-precompute_local_sol := proc(deq, yofz, disk, eps)
+precompute_local_sol := proc(deq, yofz, disk, eps, ini, norm_ini,
+                                                       iniconds_are_symbolic, $)
     local ordeq, my_eps, path, rad, pt, bound_on_disk, eps_local_ini,
         local_ini, norm_local_ini, eps_series, nt, complete_formula,
-        diff_order, sol_idx, params, changevar;
+        diff_order, sol_idx, params, zshift;
     ordeq := orddiffeq(deq, yofz);
     my_eps := rndz(`/`, eps, 2*ordeq);
     path, rad := op(disk);
@@ -177,25 +200,24 @@ precompute_local_sol := proc(deq, yofz, disk, eps)
     ## Compute `initial values' at path end [y(pt), y'(pt), 1/2·y''(pt), ...]
     # Error analysis (y denotes the `true' solution):
     # (E1)  |y^(k)(pt)/k! - local_ini[k+1]| <= eps_local_ini  for all k
-    params, changevar :=
+    params, zshift :=
         numeric_bounds:-bound_fundamental_solutions(deq, yofz, pt);
     bound_on_disk := max(seq(
-        bounds:-tail_bound(op(params), rad, 0, 'derivative'=diff_order,
-                                                    'transform'=changevar),
+        bounds:-tail_bound(op(params), rad+zshift, 0, 'deriv'=diff_order),
         diff_order = 0..ordeq-1));
     eps_local_ini := rndz(`/`, my_eps, bound_on_disk);
     # norm_local_ini is a bound on the Frobenius (= Euclidean, for a vector)
     # norm of local_ini, hence also on all |local_ini[k]|
     local_ini, norm_local_ini := op(fundamental_solution(deq, yofz, path,
-        ancont:-diffeq_inicond_matrix(deq, yofz),
-        eps_local_ini));
+        ini, norm_ini, iniconds_are_symbolic, eps_local_ini));
     ## Compute Taylor expansions at pt of all basic solutions
     # (E2)  sup(|y[k](z) - basic_series_sol(sol_idx=k)(z)|, z in disk)
     #           <= eps_series   for all k
     # where y[k](pt+dz) = dz^k + O(z^ordeq) is the basic sol of index k.
+    # Here nt is half eps_series to leave some room for economization.
     eps_series := rndz(`/`, my_eps, norm_local_ini);
-    nt := numeric_bounds:-needed_terms(deq, yofz, 0, pt, rad, eps_series);
-    if nt > 500 then
+    nt := numeric_bounds:-needed_terms(deq, yofz, 0, pt, rad, eps_series/2);
+    if nt > Settings:-diffeqtoproc_max_precomp then
         error "precomputation failed (would use %1 terms)", nt;
     end if;
     userinfo(2, 'gfun', "point" = pt, "radius" = rad, "#terms" = nt);
@@ -209,9 +231,10 @@ precompute_local_sol := proc(deq, yofz, disk, eps)
     # thus
     #   |complete_formula(z) - y(z)| <= 2·ordeq·my_eps <= eps.
     complete_formula := add(
-        local_ini[1+sol_idx,1] * basic_series_sol(deq, yofz, pt, sol_idx, nt),
+        local_ini[1+sol_idx,1]
+            * basic_series_sol(deq, yofz, pt, sol_idx, nt, rad, eps_series/2),
         sol_idx = 0..ordeq-1);
-    userinfo(5, 'gfun', "approx" = complete_formula); 
+    userinfo(5, 'gfun', "approx" = complete_formula);
     [pt, rad, complete_formula];
 end proc:
 

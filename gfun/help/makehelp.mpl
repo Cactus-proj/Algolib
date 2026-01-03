@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -190,13 +190,13 @@ makehelp(
   'browser'=[cat(basedir, "nth_term"), cat(basedir, "fnth_term"), cat(basedirNumGfun, "nth_term"), cat(basedirNumGfun, "fnth_term")]):
 makehelp(
   `gfun[NumGfun]`,
-  `help/NumGfun/NumGfun.mws`,
+  `NumGfun/help/NumGfun.mws`,
   THE_HDB,
   'aliases'=["gfun/NumGfun/overview", "NumGfun", " overview/NumGfun"],
   'browser'=[cat(basedirNumGfun, "Overview")]):
 makehelp(
   `NumGfun[evaldiffeq]`,
-  `help/NumGfun/evaldiffeq.mws`,
+  `NumGfun/help/evaldiffeq.mws`,
   THE_HDB,
   'aliases'=["NumGfun/analytic_continuation", "NumGfun/transition_matrix",
         "evaldiffeq", "analytic_continuation"],
@@ -204,31 +204,31 @@ makehelp(
         "analytic_continuation"), cat(basedirNumGfun,"transition_matrix")]):
 makehelp(
   `NumGfun[diffeqtoproc]`,
-  `help/NumGfun/diffeqtoproc.mws`,
+  `NumGfun/help/diffeqtoproc.mws`,
   THE_HDB,
   'aliases'=["NumGfun/diffeqtoproc", "diffeqtoproc"],
   'browser'=[cat(basedirNumGfun, "diffeqtoproc")]):
 makehelp(
   `NumGfun[bound_ratpoly]`,
-  `help/NumGfun/bound_ratpoly.mws`,
+  `NumGfun/help/bound_ratpoly.mws`,
   THE_HDB,
   'aliases'=["bound_ratpoly"],
   'browser'=[cat(basedirNumGfun, "bound_ratpoly")]):
 makehelp(
   `NumGfun[bound_diffeq]`,
-  `help/NumGfun/bound_diffeq.mws`,
+  `NumGfun/help/bound_diffeq.mws`,
   THE_HDB,
   'aliases'=["bound_diffeq"],
   'browser'=[cat(basedirNumGfun, "bound_diffeq")]):
 makehelp(
   `NumGfun[bound_diffeq_tail]`,
-  `help/NumGfun/bound_diffeq_tail.mws`,
+  `NumGfun/help/bound_diffeq_tail.mws`,
   THE_HDB,
   'aliases'=["bound_diffeq_tail"],
   'browser'=[cat(basedirNumGfun, "bound_diffeq_tail")]):
 makehelp(
   `NumGfun[bound_rec]`,
-  `help/NumGfun/bound_rec.mws`,
+  `NumGfun/help/bound_rec.mws`,
   THE_HDB,
   'aliases'=["NumGfun/bound_rec_tail", "bound_rec", "bound_rec_tail"],
   'browser'=[cat(basedirNumGfun, "bound_rec"), cat(basedirNumGfun,"bound_rec_tail")]):

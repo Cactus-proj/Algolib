@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -23,49 +23,44 @@
 
 # this one does not disappear with maple6
 
+# New version for Maple17. BS. June 2013.
+
 `evalc/RootOf`:=proc(p)
-local x,y,p1,p2,a,b,v, c, rof, g;
-options `Copyright 1993 by Waterloo Maple Software`;
-    if nargs=1 or (nargs=2 and type(args[2],`=`(identical(label),anything))) 
-	and type(p,'polynom(algnum,_Z)') then
-	if type(p,'polynom(numeric,_Z)') and
-	    sturm(sturmseq(p,_Z),_Z,-infinity,infinity)=degree(p,_Z) then
-	    # p has real coefficients and real roots only
-	    `evalc/remember`('RootOf'(p)):=`evalc/split`('RootOf'(p),0)
-	else
-	    v := `evalc/evalc`(subs(_Z = x+I*y,p));
-	    a := op(1,v);
-	    b := op(2,v);
-	    p1 := subs(y = _Z,resultant(a,b,x));
-	    p2 := subs(x = _Z,resultant(a,b,y));
-	    # make them square free
-	    g:=gcd(p1,diff(p1,_Z));
-	    if g<>1 then p1:=quo(p1,g,_Z) fi;
-	    g:=gcd(p2,diff(p2,_Z));
-	    if g<>1 then p2:=quo(p2,g,_Z) fi;
-	    # remove _Z if it's a factor to reduce the cost of RootOf
-	    if subs(_Z=0,p1)=0 then p1:=quo(p1,_Z,_Z) fi;
-	    if subs(_Z=0,p2)=0 then p2:=quo(p2,_Z,_Z) fi;
-	    p1:=RootOf(p1);
-	    p2:=RootOf(p2);
-	    `evalc/remember`(p1):=`evalc/split`(p1,0);
-	    `evalc/remember`(p2):=`evalc/split`(p2,0);
-	    `evalc/remember`('RootOf'(p)):=`evalc/split`(p2,p1)
-	fi
-    elif nargs=2 then
-	c:=traperror(`evalc/evalc`(args[2]));
-	if c<>lasterror and op(2,c)=0 then # real case, nothing to do
-	    `evalc/split`('RootOf'(p,args[2]),0)
-	elif type(p,'polynom(algnum,_Z)') then
-	    rof:=`evalc/evalc`('RootOf'(p)); # this uses evalc/remember
-	    if c=lasterror then rof
-	    else `evalc/split`('RootOf'(op(op(1,rof)),op(1,c)),
-			       'RootOf'(op(op(2,rof)),op(2,c)))
-	    fi
-	else `evalc/unsplit`('RootOf'(args));
-	fi
-    else `evalc/unsplit`('RootOf'(args));
-    fi
-end:
+local x, y, a, b, v, i, f, polpart, res;
+    if type(p, 'polynom(algnum, _Z)') then
+        if nargs = 2 then
+            if has(args[2], 'label') then return `evalc/unsplit`('RootOf'(args))
+            elif type(args[2], identical('index') = integer) then
+                f := evalf(RootOf(args));
+                if not type(f, complex(float)) then return `evalc/unsplit`('RootOf'(args))
+                end if
+            else f := evalc(args[2])
+            end if
+        end if;
+        if type(p, 'polynom(numeric, _Z)') and
+        sturm(sturmseq(p, _Z), _Z, -infinity, infinity) = degree(p, _Z) then
+            polpart := [p, _Z]
+        else
+            v := `evalc/evalc`(subs(_Z = x + y*I, p));
+            a := op(1, v);
+            b := op(2, v);
+            polpart := [subs(x = _Z, resultant(a, b, y)), subs(y = _Z, resultant(a, b, x))]
+        end if;
+        if nargs = 1 then res := `evalc/split`(op(map(RootOf, polpart)))
+### This is where it differs from the library version
+        elif Im(f) = 0 then res := `evalc/split`(RootOf(polpart[1], f), 0)
+### end change.
+        else res := `evalc/split`(RootOf(polpart[1], Re(f)), RootOf(polpart[2], Im(f)))
+        end if;
+        if nargs = 2 and type(args[2], identical('index') = integer) then
+            try res := map(`evalc/RootOf/index`, res)
+            catch "index not tracked": return `evalc/unsplit`('RootOf'(args))
+            end try
+        end if;
+        for i in res do `evalc/remember`(i) := `evalc/split`(i, 0) end do;
+        res
+    else `evalc/unsplit`('RootOf'(args))
+    end if
+end proc:
 
 #savelib( `evalc/RootOf`);

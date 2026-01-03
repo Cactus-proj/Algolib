@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -46,7 +46,7 @@ Try(2.2,
     nth_term(rec,u(n),100,'series'),
     100);
 
-## ...
+## Misc
 
 rec := {u(n+3) = u(n) + u(n+1) + u(n+2), u(0) = 1, u(1) = 1, u(2) = 1};
 
@@ -57,16 +57,3 @@ Try(3.1,
 Try(3.2,
     nth_term(rec,u(n),100,'series'),
     151404293106684183601223222);
-
-#g := proc(s, prec)
-#  local k, rec, a;
-#  k := ceil(evalf((prec)*ln(10) + ln((prec)*ln(10)))):
-#  rec := {u(n+1) = k/(n+s+1)*u(n), u(0) = 1/s}:
-#  a := fnth_term(rec,u(n),6*k,prec+1,'series'):
-#  evalf[prec+1](k^s*exp(-k)*a):
-#end proc:
-#p := 300:
-#r1 := g(5/3,p);
-#r2 := evalf[p](GAMMA(5/3));
-#ASSERT(abs(r1-r2) <= 10^(-p));
-

@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -16,9 +16,15 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
+# Some examples of the use of bound_rec, (mostly?) from:
+# - Marc Mezzarobba and Bruno Salvy.  Effective Bounds for P-Recursive
+#   Sequences.  Journal of Symbolic Computation 45(10):1075–1096, 2010.
+# - Marc Mezzarobba.  Autour de l'évaluation numérique des fonctions D-finies.
+#   Thèse de doctorat, École polytechnique, 2011.
+
 with(gfun:-NumGfun);
 
-# formule des Chudnovsy pour pi
+# precision required in the Chudnovsky formula
 A := 13591409;
 B := 545140134;
 C := 640320^3;
@@ -27,14 +33,14 @@ rec := { (A+B*n) * (3*n+3)* (3*n+2)*(3*n+1) * (n+1)^3 * C * u(n+1)
          u(0) = A };
 bound_rec(rec, u(n));
 
-# permutations de Baxter
+# Baxter permutations
 rec := { (n+2)*(n+3)*a(n) = (7*n^2+7*n-2)*a(n-1) + 8*(n-1)*(n-2)*a(n-2), a(0)=1, a(1)=1 };
 bound_rec(rec, a(n));
 
-# involutions, cf. Wimp & Zeilberger1985, ex. 2.1
+# involutions (see Wimp & Zeilberger1985, Example 2.1)
 rec := { (n+1)*t(n) + t(n+1) - t(n+2), t(0) = 1, t(1) = 1 };
 bound_rec(rec, t(n));
 
-# une intégrale, cf. Wimp & Zeilberger1985, ex. 2.3
+# a sequence of integrals (see Wimp & Zeilberger1985, Example 2.3)
 rec := { 2*i(n+3) = (n+2)*i(n+1)+i(n), i(0)=1/5, i(1)=1/5, i(2)=1/5 };
 bound_rec(rec, i(n));

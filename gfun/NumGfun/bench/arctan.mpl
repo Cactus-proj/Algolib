@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -21,6 +21,9 @@ a := 1/3;
 tests := 10;
 interface(quiet=true);
 deq := diffeqtohomdiffeq(holexprtodiffeq(arctan(z),y(z)),y(z));
-seq(time(evaldiffeq(deq,y(z),[0,a],100*2^j)),j=0..tests);
-gc();
-seq(time(evalf(arctan(a),100*2^j)),j=0..tests);
+res := [];
+for NumGfun:-Settings:-binary_splitting_threshold from 1 to 1002 by 100 do
+    gc();
+    res := [op(res),
+    [seq(2^j=time(evaldiffeq(deq,y(z),[0,a],100*2^j)),j=6..tests)]];
+end do;

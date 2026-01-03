@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -21,8 +21,8 @@ with(TestTools):
 with(gfun):
 
 
-# The first version of my code failed on singular recurrences. Test from bug report / feature
-# request by Bruno <4D76EDA9-FD61-4FA9-9C68-949CE3207284@inria.fr>.
+# The first version of my code failed on singular recurrences.  This example
+# comes from Bruno's email <4D76EDA9-FD61-4FA9-9C68-949CE3207284@inria.fr>.
 
 rec := {(-25/18*n-5/3+25/18*n^2+25/18*n^3+5/18*n^4)*u(n)+(115/3-29/18
     *n^4-67/6*n^3-113/6*n^2+239/18*n)*u(n+1)+(-1265/6+61/18*n^4+181/6

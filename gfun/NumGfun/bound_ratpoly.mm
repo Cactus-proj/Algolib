@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -16,9 +16,9 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-####################################################################################################
+################################################################################
 ## Majorant series for rational polynomials
-####################################################################################################
+################################################################################
 
 bound_ratpoly := module()
 
@@ -26,12 +26,8 @@ export
     parse_exppoly_term, ratabove_algebraic, ratabove_algebraic_doit, bound_term,
     bound_tail, doit, ModuleApply;
 
-# Dans tout ce truc, ça serait quand même bien d'arriver à faire le calcul entier en flottants, sans
-# above(), et de vérifier à la fin. Avec en option le fait de faire exactement en rationnels ce qui
-# peut l'être.
-
 # Input:  expression of the form c·(n+1)···(n+d)·a^(-n)
-# Output: [c, d, a] 
+# Output: [c, d, a]
 parse_exppoly_term := proc(Term, n, $)::[complexcons,nonnegint,anything];
     local t, c, p, e, d, a;
     if type(Term, `*`) then t := [op(Term)] else t := [Term] end if;
@@ -57,8 +53,7 @@ end proc:
 
 ratabove_algebraic_doit := proc(zeta)
     local num, r, a;
-    if Digits > 200 then error "emergency stop: Digits too large (%1)", Digits end if;
-    #if type(zeta, 'complex'('rational')) or hastype(zeta, 'complex'('float')) then
+    fail_if_Digits_too_large("ratabove_algebraic");
     if type(zeta, 'complex'('rational')) then
         a := abs(zeta);
         if a^2 > 1 then error "something is going wrong here" end if;
@@ -90,10 +85,10 @@ end proc;
 # Output: 'bound' and 'n0' such that for n >= n0, abs(Term(n)) <= [z^n]
 #   bound/(1-alpha·z)^m.
 bound_term := proc(Term, n, alpha, m, $)
-    local expr, eq, zeta, P_zeta, npart, rat, ldeg, poly, sum_value, infroot, cste, deg, t, lambda,
-       bound, k, n0, sol;
-    # relâcher la contrainte de type et déplacer en fallback si parse_exppoly_term échoue ??
-    if type(Term, 'Or'('constant','linear'(n))) then # there may remain a linear part <> n+1...
+    local expr, eq, zeta, P_zeta, P_zeta_prim, npart, rat, ldeg, poly,
+        sum_value, infroot, cste, deg, t, lambda, bound, k, n0, sol, primfield;
+    if type(Term, 'Or'('constant','linear'(n))) then
+        # there may remain a linear part <> n+1...
         if Term = 0 then return [0, 1] end if; # even if alpha > 1
         ASSERT(m >= degree(Term, n), "m too small");
         lambda := ratabove_algebraic(1/alpha); 
@@ -103,24 +98,30 @@ bound_term := proc(Term, n, alpha, m, $)
     elif type(Term, 'specfunc'('anything', 'Sum')) then
         expr, eq := op(Term);
         ASSERT(type(rhs(eq), 'RootOf'), "malformed expression");
-        zeta := lhs(eq); P_zeta := subs(_Z=zeta, op(rhs(eq)));
+        zeta := lhs(eq); P_zeta := eval(subs(_Z=zeta, op(rhs(eq))));
+        # Get rid of nested RootOf. We need both P_zeta (to use with
+        # dominant_root) and P_zeta_prim
+#       primfield := op([1,1],evala('Primfield'(rhs(eq)), 'independent'));
+#       ASSERT(rhs(primfield) = rhs(eq));
+#       P_zeta_prim := subs(_Z=zeta, op(lhs(primfield)));
         if type(expr, `*`) then expr := [op(expr)] else expr := [expr] end if;
         npart, rat := selectremove(has, expr, n);
         npart := `*`(op(npart)); rat := `*`(op(rat));
         t := parse_exppoly_term(npart, n); ASSERT(t[1] = 1); ASSERT(t[3] = zeta);
         cste := add(
-            bound_abs_interval(evalrC(subs(_alpha=evalrC(sol),rat))),
-            sol in [fsolve(P_zeta, zeta, 'complex')]);
+            above_abs(evalrC(
+                subs(zeta=evalrC(RootOf(P_zeta, 'index'=k)),rat))),
+            k = 1..degree(P_zeta, zeta));
         cste := ratabove(cste);
         userinfo(5, 'gfun', 'cste'=cste);
-        infroot := dominant_root(P_zeta,zeta)[1]; # one of the zeta's closest to 0
+        infroot := dominant_root(P_zeta,zeta)[1]; # one of the ζ's closest to 0
         deg := t[2];
-    else 
+    else
         t := parse_exppoly_term(Term, n);
         cste := abs(t[1]); deg := t[2]; infroot := t[3];
     end if;
     lambda := ratabove_algebraic(1/(alpha*infroot));
-    bound := cste * (m-1)! * normal(mul(n+k,k=1..deg)/mul(n+k,k=1..m-1)) * lambda^n;
+    bound := cste*(m-1)!*normal(mul(n+k,k=1..deg)/mul(n+k,k=1..m-1))*lambda^n;
     if m > deg then
         n0 := 1
     else
@@ -130,31 +131,26 @@ bound_term := proc(Term, n, alpha, m, $)
     [bound, n0];
 end proc:
 
-# FIXME: Le truc avec bound_ratpoly_max_expand ne marche pas bien, parce qu'au
-# moins sur certains exemples (Airy), on gagne sur certains coeffs de l'équa
-# diff mais pas sur le coeff dominant, de sorte que la borne a une partie
-# exp(poly) inutile !
-
 bound_tail := proc(rat, z, alpha, m, n, $)
     local den, polypart, num, rofn, term_bounds, tofn, n0, prev_tail_bound,
         tail_bound;
     den := denom(rat); polypart := quo(numer(rat), den, z, 'num');
-    # Compute the general coefficient of the series expansion of rat, as a sum (of Sums over the
-    # roots of some squarefree factor of den) of terms of the form cste·(n+1)···(n+k)·zeta^(-n)
-    # (where cste usually involves the root over which the Sum if taken).  Trivial piecewise's may
-    # appear, convert/piecewise gets rid of them.
+    # Compute the general coefficient of the series expansion of rat, as a sum
+    # (of Sums over the roots of some squarefree factor of den) of terms of the
+    # form cste·(n+1)···(n+k)·zeta^(-n) (where cste usually involves the root
+    # over which the Sum if taken).  Trivial piecewise's may appear,
+    # convert/piecewise gets rid of them.
     rofn := convert(ratpolytocoeff(num/den, z, n),'piecewise');
     if type(rofn, `+`) then rofn:=[op(rofn)] else rofn:=[rofn] end if;
-    # Compute a formal expression that bounds abs(rofn)/([z^n]1/(1-alpha·z)^m) and a positive
-    # integer n0 such that our bound is nonincreasing for n >= n0.
+    # Compute a formal expression >= abs(rofn)/([z^n]1/(1-alpha·z)^m) and a
+    # positive integer n0 such that our bound is nonincreasing for n >= n0.
     term_bounds := map(bound_term, rofn, n, alpha, m);
     tofn := `+`(op(map[2](op, 1, term_bounds)));
     n0 := max(op(map[2](op, 2, term_bounds)));
     # Increase n0 so that |[z^n]rat| <= tofn(n) for n >= n0. 
     n0 := max(1, degree(polypart) + 1, n0);
-    # (We could already return [tofn, n0], with a "small" n0.)
-
-    # Increase n0 again until tofn(n0) seems to approach its limit.
+    # We could already return [tofn, n0], with a "small" n0.
+    # Now increase n0 again until tofn(n0) seems to approach its limit.
     while prev_tail_bound/tail_bound > Settings:-bound_ratpoly_tail_prec
             and n0 <= Settings:-bound_ratpoly_max_expand
             or type(prev_tail_bound, 'symbol') do
@@ -163,18 +159,18 @@ bound_tail := proc(rat, z, alpha, m, n, $)
         n0 := 2*n0;
     end do;
     n0 := iquo(n0, 2);
-
     [tofn, n0]
 end proc:
 
-
-# Input:  a rational function rat(z), an algebraic number alpha, a positive integer m; with
-#   abs(alpha) <= abs(dominant singularity of rat), and, in the case
-#   abs(alpha) = abs(dominant sing), m >= multiplicity(dominant sing)
-# Output: A, [b0, b1, ..., b(n0-1)]] s.t. |[z^n]rat| <= A·([z^n]1/(1-alpha·z)) for n >= n0,
-#   and |[z^n]rat| <= A·([z^n]1/(1-alpha·z)) + b_n for n < n0
+# Input:  a rational function rat(z), an algebraic number alpha, a positive
+#   integer m; with abs(alpha) <= abs(dominant singularity of rat) and
+#   abs(alpha) = abs(dominant sing) => m >= multiplicity(dominant sing)
+# Output: A, [b0, b1, ..., b(n0-1)]] s.t. |[z^n]rat| <= A·([z^n]1/(1-alpha·z))
+#   for n >= n0, and |[z^n]rat| <= A·([z^n]1/(1-alpha·z)) + b_n for n < n0
+# Note: I might want to add a version of bound_ratpoly that returns bounds of
+#   the form M/(1-α·z)^m (without polynomial part).
 doit := proc(rat, z, alpha, m, $)
-    local tofn, n0, tail_bound, l_alpha, headrec, head, head_bound, j, y, u, n, delta;
+    local tofn, n0, tail_bound, l_alpha, head, head_bound, j, y, u, n, delta;
     if type(rat, 'polynom') then
         head_bound := [seq(abs(coeff(rat,z,i)), i=0..degree(rat))];
         tail_bound := 0;
@@ -182,12 +178,11 @@ doit := proc(rat, z, alpha, m, $)
         ASSERT(evalf(abs(alpha)) > 0);
         ## Compute a tight bound on the tail of the series
         tofn, n0 := op(bound_tail(rat, z, alpha, m, n));
-        tail_bound := ratabove(subs(n=n0, tofn));  # this is A
+        tail_bound := ratabove(subs(n=n0, tofn));  # this is M
         ## Bound the head
-        headrec := diffeqtorec(y(z)=rat, y(z), u(n));
-        head := rectoproc(headrec, u(n), 'remember');
-        # no cancellation here, we get l_alpha < abs(alpha)
-        l_alpha := convert(abs(evalf(alpha)) - Float(1, 2-Digits), 'rational', 'exact');
+        head := rectoproc(diffeqtorec(y(z)=rat, y(z), u(n)), u(n), 'remember');
+        l_alpha := below_abs(make_RootOfs_indexed(alpha));
+        # Note: it might even be useful to allow for negative terms here.
         delta := seq(
             abs(head(j)) - tail_bound * l_alpha^j * binomial(j+m-1, m-1),
             j = 0..n0-1);
@@ -199,12 +194,10 @@ doit := proc(rat, z, alpha, m, $)
     end if;
     tail_bound, head_bound;
 end proc:
-    
-# éventuellement, réécrire un bound_ratpoly:-doit à l'ancienne (sans partie polynomiale) qui
-# appelle le précédent
 
-ModuleApply := proc(Rat::ratpoly, z::name, $) # exported
-    description "Compute a majorant of the form z^(-t)*M/(1-alpha·z)^m+P(z) for rat.";
+
+ModuleApply := proc(Rat::ratpoly(complex(numeric)), z::name, $) # exported
+    description "Compute a majorant of the form z^t*M/(1-a·z)^m+P(z) for rat.";
     local rat, mult0, dompole, mult, M, P, i, maj;
     rat := normal(Rat);
     mult0 := bounds:-common_root_multiplicity(denom(rat), z, z);
@@ -217,5 +210,3 @@ ModuleApply := proc(Rat::ratpoly, z::name, $) # exported
 end proc:
 
 end module:
-
-

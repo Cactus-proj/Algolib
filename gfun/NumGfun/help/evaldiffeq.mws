@@ -1,0 +1,254 @@
+{VERSION 13 0 "Linux" "13.0" }
+{USTYLETAB {PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times"
+ 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 2" -1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 3" -1 202 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 72 2 0 2 2 -1 1 }{PSTYLE "Ordered List 4" -1 203 
+1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3
+ 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordered List 5" -1 204 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 
+2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 -1 1 }{PSTYLE "Warning" 
+-1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 205 1 
+{CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0 0 12 
+12 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "" -1 -1 "C
+ourier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printe
+d Output" -1 6 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1
+ 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE
+ "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0
+ 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier"
+ 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 128 64 
+1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" 
+-1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Hyperlin
+kError" -1 206 1 {CSTYLE "" -1 -1 "Courier" 1 12 255 0 255 1 2 2 1 2 2
+ 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0
+ 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1 -1 "Tim
+es" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2
+ 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1
+ 15 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0
+ 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 
+"Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1
+ 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1
+ 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 
+0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 207 1 {CSTYLE ""
+ -1 -1 "Courier" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Output" -1 12 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{CSTYLE "Annota
+tion Text" -1 200 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Plot Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Nonterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 
+0 0 1 }{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 0 0 0 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0
+ 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 
+0 0 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 
+255 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 "Times" 
+1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Small" -1 7 "Times" 
+1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1
+ 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times"
+ 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times" 1
+ 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Time
+s" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 
+"Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Smal
+l208" -1 201 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math
+ Italic Small212215" -1 202 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Italic Small207" -1 203 "Times" 1 1 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Maple Comment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2
+ 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small209" -1 204 "Times" 1 1 0
+ 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Caption Reference" -1 205 "Times"
+ 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small204" 
+-1 206 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Input P
+laceholder" -1 207 "Courier" 1 12 200 0 200 1 2 1 2 2 1 2 0 0 0 1 }
+{CSTYLE "Code" -1 208 "Courier" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Italic Small206" -1 209 "Times" 1 1 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "2D Math Italic Small205" -1 210 "Times" 1 1 0 0 0
+ 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small210213" -1 211 "T
+imes" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inert Output" -1 
+212 "Times" 1 12 144 144 144 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math I
+talic Small" -1 213 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "
+2D Math Italic Small210211" -1 214 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0
+ 0 1 }{CSTYLE "2D Math Italic Small210212" -1 215 "Times" 1 1 0 0 0 1 
+1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 18 "Times" 1 12 0 0 0 1 2
+ 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Times" 1 12 
+0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times" 1 10 0 
+0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 
+128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Times"
+ 1 12 0 0 0 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 
+12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 1 12 0 
+0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small212" -1 216 "T
+imes" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Input" -1 19 "Times
+" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math Italic Small210
+" -1 217 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Header and \+
+Footer" -1 218 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Text
+" -1 219 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes
+" -1 37 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Bold" 
+-1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Labe
+l" -1 220 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "LaTeX" -1
+ 32 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "T
+imes" 1 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Dictionary Hyperl
+ink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Capti
+on Text" -1 221 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hel
+p Fixed" -1 23 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "" 
+-1 222 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 223 "
+Courier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 224 "Times" 1
+ 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 225 "Times" 1 12 0 
+128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 226 "Times" 1 12 0 128 
+128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 227 "Times" 1 12 0 0 0 1 1 2 
+2 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT 228 51 "NumGfun[evaldiffeq], Num
+Gfun[analytic_continuation]" }{TEXT 30 45 " - numerical evaluation of \+
+D-finite functions" }}{PARA 3 "" 0 "" {TEXT 228 27 "NumGfun[transition
+_matrix] " }{TEXT 219 59 "- numerical evaluation of a fundamental syst
+em of solutions" }}{PARA 4 "" 0 "usage" {TEXT 229 17 "Calling Sequence
+s" }}{PARA 12 "" 0 "" {TEXT 230 16 "     evaldiffeq(" }{TEXT 35 2 "eq"
+ }{TEXT 230 2 ", " }{TEXT 35 4 "y(z)" }{TEXT 230 2 ", " }{TEXT 35 5 "p
+oint" }{TEXT 230 3 ", [" }{TEXT 35 10 "precision]" }{TEXT 230 1 ")" }}
+{PARA 12 "" 0 "" {TEXT 230 16 "     evaldiffeq(" }{TEXT 35 2 "eq" }
+{TEXT 230 2 ", " }{TEXT 35 4 "y(z)" }{TEXT 230 2 ", " }{TEXT 35 4 "pat
+h" }{TEXT 230 3 ", [" }{TEXT 35 10 "precision]" }{TEXT 230 1 ")" }}
+{PARA 12 "" 0 "" {TEXT 230 27 "     analytic_continuation(" }{TEXT 35 
+2 "eq" }{TEXT 230 2 ", " }{TEXT 35 4 "y(z)" }{TEXT 230 2 ", " }{TEXT 
+35 5 "point" }{TEXT 230 3 ", [" }{TEXT 35 10 "precision]" }{TEXT 230 
+1 ")" }}{PARA 12 "" 0 "" {TEXT 230 27 "     analytic_continuation(" }
+{TEXT 35 2 "eq" }{TEXT 230 2 ", " }{TEXT 35 4 "y(z)" }{TEXT 230 2 ", "
+ }{TEXT 35 4 "path" }{TEXT 230 3 ", [" }{TEXT 35 10 "precision]" }
+{TEXT 230 1 ")" }}{PARA 12 "" 0 "" {TEXT 230 23 "     transition_matri
+x(" }{TEXT 35 2 "eq" }{TEXT 230 2 ", " }{TEXT 35 4 "y(z)" }{TEXT 230 
+2 ", " }{TEXT 35 4 "path" }{TEXT 230 3 ", [" }{TEXT 35 10 "precision]"
+ }{TEXT 230 1 ")" }}{PARA 4 "" 0 "" {TEXT 229 10 "Parameters" }}{PARA 
+0 "" 0 "" {TEXT 23 3 "   " }{TEXT 23 11 "eq        -" }{TEXT 222 1 " "
+ }{TEXT 231 57 "linear differential equation with polynomial coefficie
+nts" }}{PARA 0 "" 0 "" {TEXT 23 3 "   " }{TEXT 23 11 "y         -" }
+{TEXT 223 1 " " }{TEXT 231 19 "name; function name" }}{PARA 0 "" 0 "" 
+{TEXT 23 15 "   z         - " }{TEXT 219 31 "name; variable of the fun
+ction " }{TEXT 35 1 "y" }}{PARA 0 "" 0 "" {TEXT 23 15 "   point     - 
+" }{TEXT 219 32 "complex number; evaluation point" }}{PARA 0 "" 0 "" 
+{TEXT 23 15 "   path      - " }{TEXT 219 51 "list of complex numbers; \+
+analytic continuation path" }}{PARA 0 "" 0 "" {TEXT 23 15 "   precisio
+n - " }{TEXT 219 50 "(optional) positive integer; number of digits (of
+ " }{TEXT 22 8 "absolute" }{TEXT 219 11 " precision)" }}}{SECT 0 
+{PARA 4 "" 0 "info" {TEXT 229 11 "Description" }}{PARA 15 "" 0 "" 
+{TEXT 232 4 "The " }{TEXT 35 38 "evaldiffeq(eq, y(z), point, precision
+)" }{TEXT 232 70 " calling sequence evaluates the solution of the diff
+erential equation " }{TEXT 232 2 "eq" }{TEXT 232 27 " to the absolute \+
+precision " }{TEXT 232 5 "10^(-" }{TEXT 232 9 "precision" }{TEXT 232 
+1 ")" }{TEXT 232 173 ". The equation must not be singular at the origi
+n (except in some special cases discussed below, where the origin may \+
+be a regular singular point), and the evaluation point " }{TEXT 232 5 
+"point" }{TEXT 232 128 " must lie inside the disk of convergence of th
+e differential equation, that is, be closer to zero than any of its si
+ngularities." }{TEXT 232 0 "" }}{PARA 15 "" 0 "" {TEXT 232 4 "The " }
+{TEXT 35 37 "evaldiffeq(eq, y(z), path, precision)" }{TEXT 232 217 " c
+alling sequence evaluates the function defined by analytic continuatio
+n of this same solution along a broken-line path starting at 0 given a
+s a list of vertices. The path must avoid the singularities of the equ
+ation" }{TEXT 232 99 " (except in some special cases discussed below, \+
+where some vertices may be regular singular points)" }{TEXT 232 21 ". \+
+More particularly, " }{TEXT 35 40 "evaldiffeq(eq, y(z), [point], preci
+sion)" }{TEXT 232 18 " is equivalent to " }{TEXT 35 38 "evaldiffeq(eq,
+ y(z), point, precision)" }{TEXT 232 4 " if " }{TEXT 35 5 "point" }
+{TEXT 232 40 " lies inside the disk of convergence of " }{TEXT 35 2 "e
+q" }{TEXT 232 122 ", and computes the value of the solution defined on
+ the Mittag-Leffler star with center at 0 of the differential equation
+ " }{TEXT 35 2 "eq" }{TEXT 232 11 " otherwise." }}{PARA 15 "" 0 "" 
+{TEXT 232 188 "When the result is not a single floating-point number (
+e.g., because the intial values contain symbolic parameters), the floa
+ting-point coefficients appearing in it are \"quoted\" using the " }
+{HYPERLNK 224 "empty symbol" 2 "````" "" }{TEXT 232 1 " " }{TEXT 35 2 
+"``" }{TEXT 232 1 "." }{TEXT 232 0 "" }}{PARA 15 "" 0 "" {TEXT 35 21 "
+analytic_continuation" }{TEXT 232 20 " is synonymous with " }{TEXT 35 
+10 "evaldiffeq" }{TEXT 232 1 "." }}{PARA 15 "" 0 "" {TEXT 232 47 "Inst
+ead of the value of a single solution, the " }{TEXT 35 46 "transition_
+matrix(eq, y(z), path, [precision])" }{TEXT 232 80 " calling sequences
+ computes the fundamental matrix at the endpoint of the path, " }{TEXT
+ 232 409 "corresponding to initial conditions Y(z0)=Id at the starting
+ point. (The i-th row of Y(z) contains the value of the coefficient of
+ z^i in the Taylor expansion of each fundamental solution.) Initial va
+lues given in the differential equation are ignored. The path does not
+ need to start at 0, thus 0 must be specified explicitly as the starti
+ng point if needed. The meaning of the other parameters is unchanged."
+ }}{PARA 15 "" 0 "" {TEXT 232 188 "These functions are designed to be \+
+efficient at high precisions (up to millions of digits) and to ensure \+
+the accuracy of the output (it is a bug if the result is not within 10
+^(-precision)" }{TEXT 232 231 " of the exact value of the function). T
+hey are less suitable to be called repeatedly, even at moderate precis
+ions, and may be slow and use lots of memory for high-order or high-de
+gree differential equations or near singular points." }}{PARA 15 "" 0 
+"" {TEXT 232 25 "The environment variable " }{HYPERLNK 225 "Digits" 2 
+"Digits" "" }{TEXT 232 241 " has no influence on the precision of the \+
+results. Likewise, evaluation points given in floating-point format ar
+e interpreted as exact rational numbers (or complex numbers with ratio
+nal real and imaginary parts) regardless of the setting of " }
+{HYPERLNK 226 "Digits" 2 "Digits" "" }{TEXT 232 447 ". However, some i
+nternal computations including that of intermediate error bounds are p
+erformed at precision Digits (typically, using interval arithmetic to \+
+ensure that the final result remains rigorous). In some rare cases (e.
+g., equations with singularities at distance about 10^(-Digits) from e
+ach other), it may be necessary to increase Digits for the computation
+ to succeed. Of course, higher values of Digits slow down the whole co
+mputation." }}{PARA 15 "" 0 "" {TEXT 232 18 "Some experimental " }
+{TEXT 232 16 "support for the " }{TEXT 227 20 "numerical connection" }
+{TEXT 232 230 " between ordinary and regular singular points is also a
+vailable, as illustrated by the last example below. Please refer to th
+e source code of NumGfun for details of its current status. Note that \+
+the interface is subject to change." }}}{SECT 0 {PARA 4 "" 0 "examples
+" {TEXT 229 8 "Examples" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "w
+ith(gfun:-NumGfun):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "eval
+diffeq(\{diff(y(z),z)-y(z), y(0)=1\}, y(z), 1, 50);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "$\"T'**p$4Zsv(\\iENruGg`BX!f%G=G=F!#]" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 100 "analytic_continuation(\{(1+z^2)*diff(y(z
+),z,z)-(2*z+3)*y(z)+I*y(z), y(0)=Pi, D(y)(0)=-I\}, y(z), [2]);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 ",&$\"-Y/DpnP!#5\"\"\"*&$\"-#QINxE#F%F&^#
+F&F&!\"\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 74 "eq := gfun:-di
+ffeqtohomdiffeq(gfun:-holexprtodiffeq(arctan(z),y(z)),y(z));" }
+{MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "<%,&*&I\"zG6\"\"\"\"
+-I%diffG%*protectedG6$-I\"yGF&6#F%F%F'!\"#*&,&!\"\"F'*$F%\"\"#F2F'-F)6
+$F(F%F'F'/-F-6#\"\"!F:/--I\"DG6$F*I(_syslibGF&6#F-F9F'" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "transition_matrix(eq, y(z), [2*I, -
+1+I, 0, 1+I, 2*I], 20);" }}{PARA 207 "" 1 "" {TEXT 233 0 "" }{HYPERLNK
+ 233 "Warning, initial conditions will be ignored" 4 "http://www.maple
+soft.com/support/help/errors/view.aspx?path=Warning,%20initial%20condi
+tions%20will%20be%20ignored" "" }{TEXT 233 0 "" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "-I'MatrixG6$%*protectedGI(_syslibG6\"6#/I$%idGF'\"0?V#eC<
+,9" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "# Regular singular po
+int\n" }{MPLTEXT 1 0 40 "evaldiffeq(eq, y(z), [0, I], 30, ord=3);" }}
+{PARA 207 "" 1 "" {TEXT 233 0 "" }{HYPERLNK 233 "Warning, analytic con
+tinuation through regular singular point z = I: using experimental, IN
+COMPLETE numerical connection code" 4 "http://www.maplesoft.com/suppor
+t/help/errors/view.aspx?path=Warning,%20analytic%20continuation%20thro
+ugh%20regular%20singular%20point%20z%20%3D%20I%3A%20using%20experiment
+al,%20INCOMPLETE%20numerical%20connection%20code" "" }{TEXT 233 0 "" }
+}{PARA 11 "" 1 "" {XPPMATH 20 ",&*&-I!G6\"6#,$*&$\"?++++++++++++++]!#I
+\"\"\"^#F-F-!\"\"F-,(-I#lnG6$%*protectedGI(_syslibGF&6#,&I\"zGF&F-F.F/
+F-*&*&#F-\"\"#F-F.F-F-F7F-F-*&#F-\"\")F-)F7F<F-F/F-F--F%6#,&$\"??e%3m:
+'4$[uRj\")R&yF,F-*&$\"?H21;'3Zls*z-ftlMF,F-F.F-F-F-" }}}}{SECT 0 
+{PARA 4 "" 0 "seealso" {TEXT 229 9 "See Also " }}{PARA 0 "" 0 "" {TEXT
+ 219 0 "" }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT 219 2 ", " }
+{HYPERLNK 17 "NumGfun" 2 "gfun[NumGfun]" "" }{TEXT 219 2 ", " }
+{HYPERLNK 17 "diffeqtoproc" 2 "NumGfun[diffeqtoproc]" "" }{TEXT 219 2 
+", " }{HYPERLNK 17 "nth_term" 2 "gfun[nth_term]" "" }{TEXT 219 0 "" }}
+}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

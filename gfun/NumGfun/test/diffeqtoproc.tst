@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -21,7 +21,7 @@ with(gfun):
 with(NumGfun):
 $include <testutils.mm>
 
-for deq in [
+for eq in [
     holexprtodiffeq(arctan(z), y(z)),
     holexprtodiffeq(exp(z), y(z)),
     holexprtodiffeq(erf(z), y(z)),
@@ -32,19 +32,25 @@ for deq in [
     { -2*z*diff(y(z),z)+(-1-z^2)*diff(y(z),z,z),
         y(0) = sqrt(Pi)+t, D(y)(0) = a },
     # random equations (thanks to A. Benoit)
-    {(4-z)*(diff(y(z), z, z))+(1/10*(-55-7*z^2+22*z))
+    {10*(4-z)*(diff(y(z), z, z))+(1/10*(-55-7*z^2+22*z))
         *(diff(y(z), z))+(-94*z+87)*y(z), y(0) = 2, (D(y))(0) = 1},
-    {diff(y(z), z, z)+(1/10*(97-62*z))*(diff(y(z), z))
+    {10*diff(y(z), z, z)+(1/10*(97-62*z))*(diff(y(z), z))
         +(1/7*(-83-73*z^2-4*z))*y(z), y(0) = 2, (D(y))(0) = 1},
     NULL
 ] do
-    myproc := diffeqtoproc(deq, y(z), prec = 20,
-        disks = [ [[-1], 1/2], [0,3/4], [[1/2,1], 1/2] ]);
     for pt in [ 0, 1/2, 1.15, -0.8234567887654, 1/3*(1+I) ] do
-        Try("diffeqtoproc",
-            myproc(pt, 16),
-            evaldiffeq(deq, y(z), [pt], 16));
-    end do;
+        Try(sprintf("diffeqtoproc %a", eq),
+            diffeqtoproc(eq, y(z), prec = 20,
+                disks = [ [[-1], 1/2], [0,3/4], [[1/2,1], 1/2] ])(pt, 16),
+            evaldiffeq(eq, y(z), [pt], 16));
+    end do:
 end do;
 
+
+# catch hardcoded variable names
+
+deq := (1+w^2)*diff(g(w),w)-1;
+
+Try[testnoerror]("varnames",
+    diffeqtoproc(deq, g(w), prec=3, disks=[[0,1/4]]));
 

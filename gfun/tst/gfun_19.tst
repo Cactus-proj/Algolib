@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -55,7 +55,7 @@ TestTools:-Try(13,gfun:-holexprtodiffeq(sqrt(x^2-1),y(x)),{-x*y(x)+(x^2-1)*diff(
 # Test changed jul 09. BS.
 #TestTools:-Try(14,gfun:-listtorec([0,1,4,5,8,9],a(n)),[{7*a(n+4)+4*a(n+3)-19*a(n+2), a(0) = 0, a(1) = 1, a(2) = 4, a(3) = 5}, ogf]);
 TestTools:-Try(14,gfun:-listtorec([0,1,4,5,8,9],a(n)),FAIL);
-TestTools:-Try(14.5,gfun:-listtorec([0,1,4,5,8,9,116/7,733/49],a(n)),[{a(n+4)+4/7*a(n+3)-19/7*a(n+2), a(0) = 0, a(1) = 1, a(2) = 4, a(3) = 5}, ogf]);
+TestTools:-Try(14.5,gfun:-listtorec([0,1,4,5,8,9,116/7,733/49],a(n)),[{7*a(n+4)+4*a(n+3)-19*a(n+2), a(0) = 0, a(1) = 1, a(2) = 4, a(3) = 5}, ogf]);
          
 # Used to return Error, (in gfun:-goodinitvalues/diffeq) no valid initial conditions
 TestTools:-Try(14,gfun:-rectodiffeq({(q*n-n-1+q)*u(n+1)+q*u(n), u(0) = 1}, u(n), f(t)),{f(0) = 1, q*f(t)+(q-1)*diff(f(t),t)});

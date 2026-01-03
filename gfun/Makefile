@@ -29,7 +29,7 @@ clean:
 ### MLA
 
 SOURCEDIRS = -I . -I NumGfun
-SRC = gfun.mpl ratinterp.mi *.mm NumGfun/*.mm ported/*.mm
+SRC = gfun.mpl ratinterp.mi Storjohann.mi *.mm NumGfun/*.mm ported/*.mm
 
 # %.date records the last time the contents of %.mpl were added to
 # $(MLA). Note that we cannot write a generic rule %.date: %.mpl (unless
@@ -49,7 +49,7 @@ $(MLA): $(SRC)
 
 ### HDB
 
-HELPSRC = help/makehelp.mpl help/*.mws help/NumGfun/*.mws
+HELPSRC = help/makehelp.mpl help/*.mws NumGfun/help/*.mws
 
 # same mechanism as above
 lib/.hdbdate: $(HELPSRC)

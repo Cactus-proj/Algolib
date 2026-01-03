@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -19,7 +19,8 @@
 with(gfun);
 with(NumGfun);
 prec := 10000;
-deq := diffeqtohomdiffeq(holexprtodiffeq(erf(z),y(z)),y(z));
-mypi := convert(evalf[prec](Pi),rational,exact);
-evaldiffeq(deq, y(z), [0, mypi], prec, 'usebitburst');
-evalf[prec](erf(Pi));
+deq := diffeqtohomdiffeq(holexprtodiffeq(erf(z),y(z)),y(z)):
+mypi := convert(evalf[prec](Pi),rational,exact):
+time(evaldiffeq(deq, y(z), [0, mypi], prec));
+time(evaldiffeq(deq, y(z), [0, mypi], prec/10, 'usebitburst'=false));
+time(evalf[prec](erf(mypi)));

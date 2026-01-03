@@ -1,0 +1,130 @@
+# Copyright (C) 1991--2013 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+## Input:
+##      M: matrix of univariate polynomials, s.t. A(0) is invertible
+##      v: vector of univariate polynomials
+##      x: variable
+##      p: prime number
+## Output:
+##      M^(-1) . v mod p
+## Description:
+##      Storjohann's algorithm + lifting of the vector at the end
+##      Local data structure is matrices of modp1
+
+mymap:=proc(procedure,mat,extra)
+local rowdim,coldim,i,j,rest;
+    if nargs=3 then rest:=extra else rest:=NULL fi;
+    if nops([op(1,mat)])=2 then
+        rowdim:=op([1,1],mat); coldim:=op([1,2],mat);
+        for i to rowdim do for j to coldim do mat[i,j]:=procedure(mat[i,j],rest) od od
+    else
+        for i to op(1,mat) do mat[i]:=procedure(mat[i],rest) od
+    fi;
+    mat
+end:
+
+#use Map=LinearAlgebra:-Map,Zip=LinearAlgebra:-Zip,Map2=LinearAlgebra:-Map2 in
+use Zip=LinearAlgebra:-Zip,Map2=LinearAlgebra:-Map2 in
+
+Storjohannmodp := proc(M, v, x, p)
+local dim, MM, vv,d,E,A,B,i,ordre, X, S, den, V, minusM, def,invlco;
+    dim := op([1,1],M);
+    MM:=map(ConvertIn,M,x);
+    MM:=mymap(modp1,MM,p);
+    vv:=map(ConvertIn,v,x);
+    vv:=mymap(modp1,vv,p);
+    d := max(degmat(MM), degvect(vv)+1); #Attention au "+1" dans le max, il est important, sinon la formule fondamentale ne marche plus
+    ordre := ilog2(dim)+2; #car on a besoin pour pade que deg(sortie) >= 2*n*d,et deg(sortie)+1 = d*2^ordre
+    X := modp1(Monomial(d,x),p);
+    E := HighOrderComp(MM,ordre,d,X,x,p);
+    A := matmultvectmodp(p,E[1],vv,x);
+    A := mymap(modp1,<map(Rem,A,X)|map(Rem,map(Quo,A,X),X)>,p);
+    minusM := mymap(modp1,map(Multiply,MM,Constant(-1,x)),p);
+    for i to ordre do
+        A:=<copy(A)|lift(A,minusM,E[i],x,X,p)>
+    od;
+    A:=mymap(proc(u) op(u),0$(d-nops(u)) end,mymap(modp1,mymap(ConvertOut,A),p));
+    A:=Vector(dim,[seq(modp1(ConvertIn([seq(A[i,j],j=1..2*dim+1)],x),p),i=1..dim)]);
+    V:=map(Constant,LinearAlgebra:-Modular:-Random(p,dim,0,integer[]),x);
+    S:=modp1(Add(seq(Multiply(V[i],A[i]),i=1..dim)),p);
+    den,def:=matinterpmodp([modp1(One(x),p),S],0,2*dim*d,2,[0,0],x,p,"differential");
+    if def<>true then
+        member(max(op(def)),def,'i'); 
+        den:=den[i,2]
+    else den:=den[2]
+    fi;
+    # make it monic
+    invlco:=Constant(modp(1/modp1(Lcoeff(den),p),p),x);
+    den:=modp1(Multiply(den,invlco),p);
+    mymap(modp1,mymap(Rem,mymap(Multiply,A,den),Monomial(dim*d,x)),p),den
+end:
+
+lift := proc(A,M,E,x,X,p)
+local tmp;
+    tmp:=copy(A);    
+    matmultmodp(p,M,A,tmp,x);
+    mymap(modp1,mymap(Quo,tmp,X),p);
+    matmultmodp(p,E,tmp,A,x);
+    mymap(Quo,A,X);
+    mymap(Rem,A,X);
+    mymap(modp1,A,p)
+end:
+
+HighOrderComp := proc(M,k,d,X,x,p)
+local L,H,E,res,i,dim, minusM;
+    dim:=op([1,1],M);
+    E:=Matrix_inverse_Newton(M,2*d-1,x,p,dim);
+    res[1]:=copy(E);
+    L := mymap(modp1,map(Rem,E,X),p);
+    H := mymap(modp1,map(Quo,E,X),p);
+    minusM := mymap(modp1, map(Multiply,M,Constant(-1,x)),p);
+    for i from 2 to k do
+        lift(L,minusM,E,x,X,p);
+        lift(H,minusM,E,x,X,p);
+        E:=copy(H);
+        mymap(Multiply,E,X);
+        Zip(Add,E,L,inplace=true);
+        mymap(modp1,E,p);
+        res[i] := E
+    od;
+    [seq(res[i],i=1..k)]
+end:
+
+Matrix_inverse_Newton := proc(M,t,x,p,dim)
+local deg,i,j,tmp,res,truncate;
+    if t=0 then 
+        map(proc(u) modp1(ConvertIn(u,x),p) end,
+            LinearAlgebra:-Modular:-Inverse(p,LinearAlgebra:-Modular:-Mod(p,M,x=0,integer[])))
+    else 
+        tmp:=rtable(1..dim,1..dim,0,'subtype'='Matrix');
+        deg:=iquo(t,2);
+        res:=procname(M,deg,x,p,dim);
+        truncate:=modp1(Monomial(t+1,x),p);
+        matmultmodp(p,mymap(modp1,Map2(Multiply,Constant(-1,x),mymap(modp1,map(Rem,M,truncate),p)),p),res,tmp,x);
+        tmp:=mymap(modp1,mymap(Rem,tmp,truncate),p);
+        for i to dim do tmp[i,i]:=modp1(Add(One(x),tmp[i,i]),p) od;
+        matmultmodp(p,res,tmp,tmp,x);
+        mymap(Rem,tmp,truncate);
+        Zip(Add,res,tmp,inplace=true);
+        mymap(modp1,res,p);
+        res
+    fi
+end:
+
+end use:

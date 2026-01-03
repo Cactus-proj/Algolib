@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -48,19 +48,20 @@ Try[member]("dominant_root 5",
 
 # Mignotte polynomial (irreducible polynomial with close roots)
 Try[verify, 'neighborhood(1e-20)']("dominant_root 6 (Mignotte)",
-    NumGfun:-dominant_root(X^7-2*(1000*X-1)^2, X),
-    [RootOf(_Z^7-2000000*_Z^2+4000*_Z-2,.99999999997763932023e-3), 1]);
+    evalf[30](NumGfun:-dominant_root(X^7-2*(1000*X-1)^2, X)),
+    evalf[30]([RootOf(_Z^7-2000000*_Z^2+4000*_Z-2,.99999999997763932023e-3),
+    1]));
 
 # Mignotte-like irreducible polynomial with near-opposite roots
 Try[verify, 'neighborhood(1e-20)']("dominant_root 7 (opp-Mignotte)",
-    NumGfun:-dominant_root(X^7-2*(1000*X^2-1), X),
-    [RootOf(_Z^7-2000*_Z^2+2,-.31622776601433793320e-1), 1]);
+    evalf[30](op(1, NumGfun:-dominant_root(X^7-2*(1000*X^2-1), X))),
+    evalf[30](RootOf(_Z^7-2000*_Z^2+2,-.31622776601433793320e-1)));
 
 # similar example with non-real roots
 Try[verify, 'neighborhood(1e-20)']("dominant_root 8 (opp-Mignotte)",
-    NumGfun:-dominant_root(X^7-2*(1000*X^2-I+1), X),
-    [RootOf(_Z^7-2000*_Z^2-2+2*I,-.14391204993750742880e-1
-            -.34743442275511562818e-1*I), 1]);
+    evalf[30](NumGfun:-dominant_root(X^7-2*(1000*X^2-I+1), X)),
+    evalf[30]([RootOf(_Z^7-2000*_Z^2-2+2*I,-.14391204993750742880e-1
+            -.34743442275511562818e-1*I), 1]));
 
 Try("dominant_root 9",
     NumGfun:-dominant_root((z^8-1)*(z-I), z),

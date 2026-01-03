@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -265,6 +265,7 @@ export
    `diffeq*diffeq`,
    diffeqtohomdiffeq,
    diffeqtorec,
+   gfun_pade,
    guesseqn,
    guessgf,
    hadamardproduct,
@@ -313,7 +314,18 @@ export
    mindegeqn,
    minordereqn,
    optionsgf,
-   version;
+   tryhard,
+   version,
+# For use by DDMF.
+   firstnonzero,
+   getname,
+   indicialeq,
+   listprimpart,
+   makediffeq,
+   maxindex,
+   minindex,
+   myisolve,
+   systomatrix;
 ####### END HIDDEN LIST
 
 global
@@ -335,12 +347,9 @@ local
    borelinvborel,
    cheapgausselim,
    expintalg,
-   firstnonzero,
    formatpoleq,
    funtodiffeq,
-   getname,
    guessandcheck,
-   indicialeq,
    infsolvepoly,
    `infsolvepoly/found`,
    `infsolvepoly/isroot`,
@@ -348,15 +357,10 @@ local
    inifromseries,
    isholonomic,
    lindep,
-   listprimpart,
    listtoseriestable,
    `l2r/l2r`,
    `l2h/l2h`,
-   makediffeq,
-   maxindex,
-   minindex,
    mygcdex  ,
-   myisolve,
    nbinicond,
    powcompose,
    powcomposesimple,
@@ -370,39 +374,47 @@ local
    `rectoproc/checkcond`,
    `gfun/rectoproc/binsplit`,           # defined in NumGfun
    `rectoproc/binsplitparameters`,      # defined in NumGfun
-   `gfun_pade2/exmin`,
+   gfun_pade2,
    `gfun_pade2/doit`,
    `ratpolytocoeff/elmt`,
    `ratpolytocoeff/poly`,
    rectohomrecbis,
    `s2d/s2d`,
    `s2a/s2a`,
-   systomatrix,
    typecheck,
    CheckName,
    `@@D`,		# to compute @@(D,i)(y)(x) without calling D
 	# variables from ratinterp
-finddiffeq,
-findalgeq,
-rationalinterpolation,
-findequation,
-findequationgivenorder,
-findequationgivenorderratpoly,
-findequationgivenorderrational,
-do_reduce,
-findequationgivenordermodp,
-degmat,
-degvect,
-interpmat,
-interpvect,
-matmultmodp,
-vectmultmodp,
-matinterpmodp,
-matinterpmodpearlyabort,
-initmat,
-tryearly,
-checkresultnormal,
-checkresult
+    mymap,
+    finddiffeq,
+    findalgeq,
+    rationalinterpolation,
+    findequation,
+    findequationgivenorder,
+    findequationgivenorderratpoly,
+    findequationgivenorderrational,
+    do_reduce,
+    findequationgivenordermodp,
+    degmat,
+    degvect,
+    interpmat,
+    interpvect,
+    matmultmodp,
+    matmultvectmodp,
+    vectmultmodp,
+    matinterpmodp,
+    matinterpmodpearlyabort,
+    initmat,
+    tryearly,
+    checkresultnormal,
+    checkresult,
+    normalizeresult,
+    # variables from Storjohann
+   	Storjohann, # local not exported: not good enough
+    lift,
+    HighOrderComp,
+    Matrix_inverse_Newton,
+    Storjohannmodp
    ;
 
 _pexports:=proc() [op({exports(gfun)} minus GFUN_HIDDEN)] end:
@@ -414,6 +426,7 @@ GFUN_HIDDEN:={
     ':-formatrec',
     ':-`goodinitvalues/diffeq`',
     ':-`goodinitvalues/rec`',
+    ':-indicialeq',
     ':-makerec',
     #':-maxdegcoeff',
     ':-maxordereqn',
@@ -422,6 +435,7 @@ GFUN_HIDDEN:={
     #':-mindegeqn',
     ':-minordereqn',
     ':-optionsgf',
+    ':-tryhard',
     ':-version'
 }:
 
@@ -430,10 +444,11 @@ GFUN_HIDDEN:={
 # The minor number is meant to be a two-digit number, so the
 # floating-point value is meant to be incremented by .01 at
 # each new version.  It is printed by the format "%.2f".
-   version := 3.53:
+   version := 3.66:
    optionsgf := ['ogf','egf']:
-   maxordereqn := infinity: # default 3rd order
+   maxordereqn := infinity: # default no limit
    minordereqn := 1: # default 1st order
+   tryhard := 6: # number of rounds in findequationgivenorderrational
 ## The following ones are now obsolete
 #   maxdegcoeff := 4: # default degree 4 coefficients
 #   mindegcoeff := 0: # default constant coefficients
@@ -479,174 +494,13 @@ $include <rectoproc.mm>
          acc:=accuracy
       end if;
       result:=`gfun_pade2/doit`(map(taylor,subs(x=x+a,functionlist),x,acc),
-                                x,l,acc-1); # it has to be taylor and not series
+                                x,l,acc); # it has to be taylor and not series
       if result=FAIL then FAIL else subs(x=x-a,result) end if
    end proc: # pade2
 
-#  gfun_pade2/exmin
-#  Extended minimum.
-# Input: a list, a boolean function, and an optional name.
-# Output: the minimum of the list according to the order
-# the name being assigned the index of the first occurrence of
-# the minimum in the list.
-#
-# No attempt at efficiency has been made, since this should really be in
-# the kernel, with sort.
-   `gfun_pade2/exmin`:=proc(l,order,aux)
-   option `Copyright (c) 1992-2008 by Algorithms Project, INRIA France. All rights reserved.`;
-   local res;
-      res:=op(1,sort(l,order));
-      if nargs=3 then member(res,l,aux) end if;
-      res
-   end proc: # `gfun_pade2/exmin`
-
-# `gfun_pade2/doit`
-# Input: a list of series in the variable x, the variable x, a list of degree
-#  bounds and a bound on the number of iterations. This latter bound
-#  should be at most the order of the series.
-# Output: a list of polynomial coefficients for the series, such that
-#  the scalar product of this list with the input has zero Taylor
-#  coefficients up to a large order.
-   `gfun_pade2/doit`:=proc(ll,x,degs,nbiter)
-   option `Copyright (c) 1992-2008 by Algorithms Project, INRIA France. All rights reserved.`;
-   local y, i, L, n, j, l, ind, l2, pivot, vars, leadcoeff, k, normalize, lk,
-      rationalcoeff, tt, finished, dmin, deg, lterm, jj, lterm2, inds,
-      polycoeff, ll2, dmin2, ind2, co, cco, cco1, cco2, cco3;
-      n:=nops(ll);
-      vars:=[seq(y[i],i=1..n),x];
-      inds:=indets(ll) minus {x};
-      if inds={} then
-         normalize:=x->x;
-         rationalcoeff:=type({op(map(op,ll))} minus {O(1)},'set'('rational'));
-         polycoeff:=false  # polycoeff means non-rational but polynomial
-      else
-         normalize:=normal;
-         rationalcoeff:=false;
-         polycoeff:=type({op(map(op,ll))} minus {O(1)},
-                         'set'('polynom'('rational',inds)))
-      end if;
-      for i to n do
-         L[i]:=series(y[i]*x^degs[i],x,infinity);
-         l[i]:=ll[i]; co[i]:=1
-      end do;
-      finished:=false;
-      for j from 0 to nbiter while not finished do
-         userinfo(3,'gfun_pade2',`iteration number`,j);
-         dmin:=infinity;
-         # Select the pivot
-         for i to n do
-            leadcoeff[i]:=normalize(coeff(l[i],x,j));
-            if leadcoeff[i]<>0 then
-               l2[i]:=i;
-               deg:=op(nops(L[i]),L[i]);
-               if deg>dmin then next
-               elif deg<dmin then
-                  dmin:=deg; lterm:=op(nops(L[i])-1,L[i]);
-                  dmin2:=length(l[i]); ind2:=i
-               else
-                  lterm2:=op(nops(L[i])-1,L[i]);
-                  if length(l[i])<dmin2 then
-                  	ind2:=i; dmin2:=length(l[i]) end if;
-                  for jj to n while
-                  has(lterm,y[jj]) and has(lterm2,y[jj]) do end do;
-                  if jj<=n and not has(lterm,y[jj]) or
-                  jj>n and leadcoeff[i]<>O(1) and
-                  length(leadcoeff[i])>=length(leadcoeff[ind]) then next
-                  else lterm:=lterm2 end if
-               end if
-            else
-               l2[i]:=NULL;
-               if coeff(l[i],x,j)=0 then next
-               else # normalizing did it
-                  l[i]:=map(normalize,l[i]);
-                  if l[i]<>0 and op(1,l[i])<>O(1) then next end if
-               end if
-            end if;
-            ind:=i;
-            pivot:=leadcoeff[ind];
-            if pivot=O(1) then break end if
-         end do;
-         if pivot=O(1) then k:=ind; break end if;
-         if dmin=infinity then next end if;
-         ll2:=[seq(l2[i],i=1..n)];
-         if rationalcoeff and pivot<>1 and pivot<>-1 then
-            tt:=abs(icontent(add(leadcoeff[i]*y[i],i=ll2)));
-            if tt<>1 then
-               pivot:=pivot/tt;
-               for i in ll2 do leadcoeff[i]:=leadcoeff[i]/tt end do
-            end if
-         elif polycoeff then
-            tt:=content(add(leadcoeff[i]*y[i],i=ll2),vars);
-            if tt<>1 then
-               divide(pivot,tt,'pivot');
-               for i in ll2 do
-               	divide(leadcoeff[i],tt,evaln(leadcoeff[i])) end do
-            end if
-         end if;
-         tt:=l[ind2];
-         for i in ll2 do
-            if i<>ind then
-               l[i]:= map(normalize, # this was commented out and killed
-               # the timings for
-               # seriestodiffeq(series(hypergeom([a,b],[c],x),x,7),y(x),[ogf])
-               series(pivot*l[i]-leadcoeff[i]*l[ind],x,infinity));
-               if l[i]=0 or op(1,l[i])=O(1) then
-                  L[i]:=map(normalize,series(pivot*co[i]*L[i]
-                               -leadcoeff[i]*co[ind]*L[ind],x,infinity));
-                  finished:=true
-               elif op(2,l[i])=j then l[i]:=subsop(1=0,l[i])
-               end if
-            end if
-         end do;
-         if finished then # select the smallest one
-            dmin:=infinity;
-            for i in ll2 do
-               if (l[i]=0 or op(1,l[i])=O(1)) and length(L[i])<dmin then
-                  dmin:=length(L[i]); k:=i
-               end if
-            end do;
-            break
-         end if;
-         l[ind]:=series(x*tt,x,infinity);
-         tt:=L[ind2]; cco:=co[ind2];
-         for i in ll2 do
-            if i<>ind then
-               if rationalcoeff then
-                  cco2:=pivot*co[i];
-                  cco3:=co[ind]*numer(leadcoeff[i]);
-                  cco1:=igcd(cco2,cco3);
-                  cco2:=cco2/cco1; cco3:=co[ind]*leadcoeff[i]/cco1;
-                  L[i]:=series(cco2*L[i]-cco3*L[ind],x,infinity);
-                  cco2:=numer(icontent(add(icontent(op(2*jj-1,L[i]))*y[jj],
-                                           jj=1..iquo(nops(L[i]),2))));
-                  if cco2<>1 and cco2<>-1 then
-                     L[i]:=series(L[i]/cco2,x,infinity) end if;
-                  co[i]:=cco1*cco2
-               elif polycoeff then
-                  cco1:=gcd(pivot*co[i],leadcoeff[i]*co[ind],'cco2','cco3');
-                  L[i]:=map(normal,series(cco2*L[i]-cco3*L[ind],x,infinity));
-                  cco2:=content(convert(L[i],polynom),vars,'cco3');
-                  if cco2<>1 and cco2<>-1 then
-                     L[i]:=series(cco3,x,infinity); co[i]:=cco1*cco2
-                  else co[i]:=cco1
-                  end if
-               else L[i]:=map(normalize,
-                              series(pivot*L[i]-leadcoeff[i]*L[ind],x,infinity))
-               end if end if
-         end do;
-         L[ind]:=series(x*tt,x,infinity); co[ind]:=cco;
-         userinfo(5,'gfun_pade2',`current list`,lprint([seq(L[i],i=1..n)]));
-      end do;
-      if j=nbiter+1 and not finished then
-         `gfun_pade2/exmin`([seq(`if`(l[i]<>0,op(2,l[i]),infinity),i=1..n)],
-         	numeric,'k')
-      end if;
-      lk:=collect(convert(L[k],polynom),vars,'distributed',normalize);
-      if rationalcoeff then divide(lk,icontent(lk),'lk')
-      elif polycoeff then divide(lk,content(lk,vars),'lk') end if;
-	  # this was map(expand,.) but was too slow with parameters
-      listprimpart(map(collect,[seq(coeff(lk,y[i])*x^(-degs[i]),i=1..n)],x))
-   end proc: # `gfun_pade2/doit`
+`gfun_pade2/doit`:=proc(ll,x,degs,nbiter)
+    gfun_pade2(map(gfun:-seriestolist,map(series,ll+[O(x^nbiter)$nops(ll)],x,nbiter)),x,degs)
+end proc: # `gfun_pade2/doit`
 
 ######################### Type Checking ##############################
 
@@ -1275,10 +1129,8 @@ $include <ported/goodinitvalues_rec.mm>
 #   for possible valuations of series solutions)
    indicialeq:=proc (deq, z, alpha, val)
    option `Copyright (c) 1992-2008 by Algorithms Project, INRIA France. All rights reserved.`;
-   local ldeg, i, v, res, j, dd;
-      # this is because of the new convention for degree(0) in V.5
-      dd:=map(proc(x) if x=0 then 1 else x end if end,deq);
-      ldeg:=[seq(ldegree(dd[i],z)-i+2,i=2..nops(deq))];
+   local ldeg, i, v, res, j;
+      ldeg:=[seq(ldegree(deq[i],z)-i+2,i=2..nops(deq))];
       v:=min(op(ldeg));
       if nargs=4 then val:=v end if;
       for i to nops(ldeg) do
@@ -1564,8 +1416,8 @@ $include <ported/goodinitvalues_rec.mm>
 			fi;
                         #res:=
 			listtodiffeq('stamped',L,args[3],args[4]) ;
-                #       Pamameters('maxordereqn'=moe)
-                #catch: Pamameters('maxordereqn'=moe)
+                #       Parameters('maxordereqn'=moe)
+                #catch: Parameters('maxordereqn'=moe)
                 #end try;
                 #res
                 #
@@ -1684,6 +1536,9 @@ $include <ported/goodinitvalues_rec.mm>
    end proc: # seriestoratpoly
 
 $include <ratinterp.mi>
+# This implementation of Storjohann's algorithm needs more work.
+# LinearAlgebra[LinearSolve] is faster.
+$include <Storjohann.mi>
 
 `s2d/s2d` := proc(s, x, y)
 local L, i;
@@ -1742,9 +1597,9 @@ end proc: # `s2a/s2a`
 				L:=[op(L),0$(max(10,nops(L)))]
 			fi;
 			res:=listtorec('stamped',L,args[3],args[4]) ;
-			Pamameters('maxordereqn'=moe)
+			Parameters('maxordereqn'=moe)
 		catch:
-			Pamameters('maxordereqn'=moe);
+			Parameters('maxordereqn'=moe);
 			error
 		end try;
 		res
@@ -3294,6 +3149,10 @@ $include <ported/diffeqtorec_doit.mm>
 		  deqs[nbsub]:=subs(y=y[nbsub],funtodiffeq(funs[i],y(x)));
 		  newexpr:=subs(funs[i]=y[nbsub](x),newexpr)
 	  od;
+	  
+	  # special case for (polynomial(x)^freeof(x))^freeof(x)
+      pows := select(has,indets(newexpr,('polynom'('anything',x)^anything)^anything),x);
+      newexpr:=subs([seq(i=op([1,1],i)^(op([1,2],i)*op(2,i)),i=pows)],newexpr);
 
       # special case for polynomial(x)^(freeof(x))
       ## added select(has,.,x). BS. Mar04.
@@ -3365,7 +3224,10 @@ $include <ported/diffeqtorec_doit.mm>
          # exp(algebraic)^rational
          type(op(2,expr),'rational') and
          type(op(1,expr),'specfunc'({'radfun'('anything',x),
-         	'algfun'('anything',x)},exp))
+         	'algfun'('anything',x)},exp)) or
+         # (polynomial^nice)^nice, e.g., 1/x^n
+         type(op(1,expr),`^`) and type(op([1,1],expr),'polynom'('anything',x)) and
+         not has(op(2,expr),x) and not has(op([1,2],expr),x)
       else
          false
       end if
@@ -3625,9 +3487,10 @@ $include <ported/diffeqtorec_doit.mm>
                       #':-maxdegeqn',
                       #':-mindegcoeff',
                       #':-mindegeqn',
-                      ':-minordereqn'
+                      ':-minordereqn',
+                      ':-tryhard'
                    }) then
-            if rhs(x) :: 'nonnegint' then
+            if rhs(x) :: 'nonnegint' or rhs(x)=infinity and glob=':-maxordereqn' then
                p:=[exports(thismodule)];
                q:=[exports(thismodule,'instance')];
                member(glob,p,'ii');
@@ -3666,6 +3529,7 @@ $include <ported/diffeqtorec_doit.mm>
                        #':-mindegeqn',
                        ':-minordereqn',
                        ':-optionsgf',
+                       ':-tryhard',
                        ':-version'
                     }) then
          error "invalid option: %1", glob;
@@ -3703,9 +3567,6 @@ unprotect('gfun:-maxordereqn'):
 unprotect('gfun:-minordereqn'):
 #unprotect('gfun:-mindegeqn'):
 unprotect('gfun:-optionsgf'):
-
+unprotect('gfun:-tryhard'):
 #savelib(gfun,`type/gfun/free`,`type/gfun/has2diffeqs2`,`type/gfun/has2diffeqs3`,`type/gfun/identity`,`type/gfun/initeq`,'`gfun/rectoproc/symbol`');
-
-# FIXME: comment polluer moins ?
-#savelib(`convert/ndmatrix`, `type/ndmatrix`, `type/matrix_ring`, `value/Coeftayl`);
 

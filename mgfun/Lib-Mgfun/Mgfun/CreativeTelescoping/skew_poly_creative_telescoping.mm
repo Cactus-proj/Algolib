@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -190,7 +190,9 @@ skew_poly_creative_telescoping := proc(f,
                                  op({op(dv)} minus {op(order_dx)})),
                             [eis]);
 
-  GB_output := Groebner:-Basis(sys_output, Mord_output);
+#  GB_output := Groebner:-Basis(sys_output, Mord_output);
+# Change BS. June 2013.
+  GB_output := Groebner:-Basis(map(numer,sys_output), Mord_output);
 
   g := [seq(add(z[j][2][i]*B[i], i = 1..dim), j = 1..nops(z))];
   GB_output := select(u -> coeff(u, e[0]) <> 0, GB_output);

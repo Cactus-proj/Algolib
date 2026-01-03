@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -378,7 +378,7 @@ inserttable(maintable,"General plane trees",
 [S,{S=Prod(Z,Sequence(S))},unlabelled],
 cat("Unlabelled general rooted plane trees;",
 " Catalan numbers"),
-cat(EISnb(108),"; http://www.astro.virginia.edu/~eww6n/math/CatalanNumber.html;",
+cat(EISnb(108),"; http://mathworld.wolfram.com/CatalanNumber.html;",
 "http://forum.swarthmore.edu/advanced/robertd/catalan.html"));
 #sloane577
 
@@ -402,7 +402,7 @@ inserttable(maintable,"Unlabelled Plane Binary Trees",[b, {b =
  Union(Z,Prod(b,b))}, unlabelled],
  " Unlabelled binary trees of n leaves (external nodes)",
 cat(EISnb(108),"; Catalan numbers;",
-"http://www.astro.virginia.edu/~eww6n/math/CatalanNumber.html;",
+"http://mathworld.wolfram.com/CatalanNumber.html;",
 "http://forum.swarthmore.edu/advanced/robertd/catalan.html"));
 
 inserttable(maintable,"Noy's counting of non-crossing trees",
@@ -586,7 +586,7 @@ inserttable(maintable,"Ways of parenthezing a product",
 [p,{p=Union(Prod(Z,Z),Prod(Z,p),Prod(p,Z),Prod(p,p))},unlabelled],
 cat("Number of ways of completely parenthesizing a product of n letters;",
 " Catalan numbers"),
-cat(EISnb(108),"; http://www.astro.virginia.edu/~eww6n/math/CatalanNumber.html;",
+cat(EISnb(108),"; http://mathworld.wolfram.com/CatalanNumber.html;",
 "http://forum.swarthmore.edu/advanced/robertd/catalan.html"));
 
 

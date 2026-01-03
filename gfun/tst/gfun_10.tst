@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -195,5 +195,15 @@ Try[testdiffeq, y, x]( 19 ,holexprtodiffeq(f,y(x)) , {y(x)+diff(y(x),x), y(0) = 
 # used to return a _C[0]
 # did not return initial condition in versions < 3.20
 Try[testdiffeq,y,z](20,holexprtodiffeq(hypergeom([1,1],[],z),y(z)),{y(0)=1,y(z)+(3*z-1)*diff(y(z),z)+z^2*diff(diff(y(z),z),z)}):
+
+#################################################################
+# used not to be recognized as holonomic
+f:=1/x^n:
+
+Try[testdiffeq,y,x](21,holexprtodiffeq(f,y(x)),diff(y(x),x)*x+n*y(x)):
+
+f:=1/(x^2+x+1)^n:
+
+Try[testdiffeq,y,x](21,holexprtodiffeq(f,y(x)),{(2*n*x+n)*y(x)+(x^2+x+1)*diff(y(x),x), y(0) = 1}):
 
 #end test

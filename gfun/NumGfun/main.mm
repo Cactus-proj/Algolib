@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -17,11 +17,40 @@
 # <http://www.gnu.org/licenses/>.
 
 ## NumGfun -- Recurrence unrolling by binary splitting; analytic continuation of
-## holonomic functions; bounds for holonomic sequences.
-## Marc Mezzarobba, projet Algorithms, INRIA Paris-Rocquencourt
+## D-finite (holonomic) functions; bounds for holonomic sequences.
+## Copyright 2008, 2009, 2010, 2011, 2012 Inria.
+## Written by Marc Mezzarobba.
 
-# userinfo levels:
-# 1-5 = normal info levels (cf. gfun doc),
+# NumGfun is normally distributed and intended to be used as a submodule of
+# gfun.  See
+# http://algo.inria.fr/libraries/
+# http://algo.inria.fr/libraries/papers/gfun.html
+
+# REFERENCES
+# ----------
+#
+# See also ?NumGfun.
+#
+# [Mez10] Marc Mezzarobba.  NumGfun: a Package for Numerical and Analytic
+# Computation with D-finite Functions.  In Wolfram Koepf (editor), ISSAC 2010,
+# pages 139-146.  DOI:10.1145/1837934.1837965.  [Short presentation of NumGfun
+# focusing on the numerical evaluation features.]
+#
+# [Mez11] Marc Mezzarobba. Autour de l'évaluation numérique des fonctions
+# D-finies. Thèse de doctorat, École polytechnique, 2011.  [Includes a more
+# in-depth presentation, many examples, as well as a detailed discussion of
+# most relevant algorithms.  In French.]
+#
+# [MezSal2010] Marc Mezzarobba and Bruno Salvy.  Effective bounds for
+# P-recursive sequences. Journal of Symbolic Computation 45(10):1075-1096.
+# DOI:10.1016/j.jsc.2010.06.024.  [Discusses the algorithms behind
+# bound_rec and bound_diffeq.  If you can read French, the description in the
+# thesis above is more complete.]
+
+# USERINFO LEVELS
+# ---------------
+#
+# 1-5 = normal info levels (see gfun doc),
 # 6-10 = verbose debug info
 
 NumGfun := module()
@@ -32,7 +61,7 @@ description
 
 option package;
 
-export 
+export
     fnth_term,
 
     analytic_continuation,
@@ -46,11 +75,11 @@ export
     bound_diffeq_tail,
     bound_rec_tail,
 
+    local_basis,
+
 ### undocumented functions
 
-    abs_with_RootOf,
     dominant_root, # submodule with ModuleApply
-    make_waksman_proc,
     needed_terms,
 
 ### hidden exports
@@ -63,13 +92,8 @@ export
 ;
 
 
-# the name 'ndmatrix' is used by 'inline' functions, which do not support
-# lexical scoping(!)
-# FIXME: change to NumGfun:-ndmatrix everywhere, and make local?
-global ndmatrix;
-
 local
-    numeric_mode, # que faire de ça ?
+    numeric_mode, # see bounds.mm, utilities.mm
     NUMGFUN_HIDDEN,
 
 ### submodules with ModuleApply
@@ -85,6 +109,9 @@ local
     bounds,
     numeric_bounds,
     symbolic_bounds,
+    regsing,
+    recasympt,
+    numdenmatrix,  # Actually matrices:-numdenmatrix. Also used as a type name.
 
 ### type names local to NumGfun
 
@@ -92,20 +119,21 @@ local
     # even be used as NumGfun:-typename from the global scope if
     # opaquemodules=false)
     hrdeq,
-    hrrec
+    hrrec,
+    path,
+    generalized_rec_matrix,
+    regsing_params
 ;
 
-
-# utilities.mm does NOT only define a submodule (because of severe limitations
-# of the 'use' construct) but it does contain its own global/local lines, so
-# that it **must appear first** (besides, this is needed for procedures with
-# 'option inline' to actually get inlined)
+# Must appear first.  (utilities.mm starts by global/local lines that make
+# the exports of the NumGfun:-utilities submodule available from the NumGfun:-
+# namespace, to work around severe limitations of the 'use' statement.  This is
+# also needed for procedures with 'option inline' to actually get inlined)
 $include <utilities.mm>
-
-### submodules
 $include <settings.mm>
 $include <matrices.mm>
 $include <nthterm.mm>
+$include <regsing.mm>
 $include <dominant_root.mm>
 $include <bound_ratpoly.mm>
 $include <bound_normal_diffeq.mm>
@@ -114,6 +142,7 @@ $include <numeric_bounds.mm>
 $include <symbolic_bounds.mm>
 $include <ancont.mm>
 $include <diffeqtoproc.mm>
+$include <recasympt.mm>
 # should come last, so that other submodules can define types
 $include <types.mm>
 
@@ -126,12 +155,15 @@ bound_diffeq            := symbolic_bounds:-bound_diffeq;
 bound_diffeq_tail       := symbolic_bounds:-bound_diffeq_tail;
 bound_rec_tail          := symbolic_bounds:-bound_rec_tail;
 fnth_term               := nthterm:-fnth_term;
-make_waksman_proc       := matrices:-waksman_product;
 needed_terms            := numeric_bounds:-needed_terms;
+local_basis             := regsing:-local_basis_expansions;
+
+# locals defined in submodules
+numdenmatrix := matrices:-numdenmatrix;
 
 # local to gfun, since 'option load' seems to be ignored in submodules
 NUMGFUN_SETUP := proc($) types:-setup() end proc:
-NUMGFUN_CLEANUP := proc($) types:-cleanup() end proc:
+NUMGFUN_CLEANUP := proc($) try types:-cleanup() catch: end end proc:
 
 _pexports:=proc() [op({exports(thismodule)} minus NUMGFUN_HIDDEN)] end:
 NUMGFUN_HIDDEN:={
@@ -141,7 +173,7 @@ NUMGFUN_HIDDEN:={
     ':-utilities'
 }:
 
-version := "0.5devel";
+version := "0.6";
 
 end module:
 

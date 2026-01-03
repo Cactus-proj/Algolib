@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -24,7 +24,7 @@ with(NumGfun):
 
 kernelopts('opaquemodules'=false);
 
-#### 
+####
 #### makeitfloat
 ####
 

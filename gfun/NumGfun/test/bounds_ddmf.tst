@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -23,20 +23,19 @@ with(NumGfun):
 
 $include <testutils.mm>
 
-functions := [
-    arccsc, arccos, arccot, arccsch, AiryAi, arcsec, arcsin, arctan, AiryBi, 
-    #Chi,  # no series solution
-    #Ci,  # no series solution
-    cos,
-    #Ei,  # no series solution
-    erf, erfc, erfi, arccosh, arccoth, arcsech, arcsinh, arctanh, cosh, sinh,
-    #dilog,  # no series solution
-    Shi, Si, sin
-    ];
+# TODO: put this back once we handle regular singular points a bit better
 
-# TODO: comprendre ce que je veux ici exactement (où et comment traiter les trucs non analytiques en
-# zéro), et ajuster ceci.
-
+#functions := [
+#    arccsc, arccos, arccot, arccsch, AiryAi, arcsec, arcsin, arctan, AiryBi, 
+#    #Chi,  # no series solution
+#    #Ci,  # no series solution
+#    cos,
+#    #Ei,  # no series solution
+#    erf, erfc, erfi, arccosh, arccoth, arcsech, arcsinh, arctanh, cosh, sinh,
+#    #dilog,  # no series solution
+#    Shi, Si, sin
+#    ];
+#
 #for f in functions do
 #    deq := holexprtodiffeq(f(z), y(z));
 #    maj_series := bound_diffeq(deq, y(z));

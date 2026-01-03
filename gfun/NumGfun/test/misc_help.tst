@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -34,8 +34,8 @@ Try[testabsprec, 50]("help intro 2",
     0.46364760900080611621425623146121440202853705428612);
 
 Try[verify, 'polynom(neighborhood(10^(-50)))']("help intro 3",
-    analytic_continuation((z^2+1)*diff(y(z),z,z) + (3*z+1)*diff(y(z),z) 
-        + z^2*y(z), y(z), [0, 1+I, 2], 50),
+    eval(analytic_continuation((z^2+1)*diff(y(z),z,z) + (3*z+1)*diff(y(z),z) 
+        + z^2*y(z), y(z), [0, 1+I, 2], 50), ``=(x->x)),
     .72678326528197350565935299733280205125629707790244*_C[0]
         + .43578845882065137070719121052451044561729148136090*_C[1]);
 

@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -109,19 +109,22 @@
 # followed by substitution which was much too expensive for large polynomials
 # at large values of Digits.
 
-`type/RootOf` := proc(x) options remember,system,
-`Copyright (c) 1990 by the University of Waterloo. All rights reserved.`;
-    if nargs = 1 then
-        type(x,function) and op(0,x) = 'RootOf' and type([op(x)],{
-                [algebraic], # RootOf(_Z^3-2)
-                [algebraic,constant], # RootOf(_Z^3-2,1.2)
-                # BUG [algebraic,type], # RootOf(_Z^3-2,realcons)
-                [algebraic,range], # RootOf(_Z^3-2,1.0 .. 2.0)
-		[algebraic,equation] # RootOf(_Z^3-2, index=1);
-            })
-    else false
-    fi
-end :
+# New version. June 2013. BS.
+`type/RootOf`:={'RootOf'(algebraic), 'RootOf'(algebraic, {range, constant, equation})}:
+
+#`type/RootOf` := proc(x) options remember,system,
+#`Copyright (c) 1990 by the University of Waterloo. All rights reserved.`;
+#    if nargs = 1 then
+#        type(x,function) and op(0,x) = 'RootOf' and type([op(x)],{
+#                [algebraic], # RootOf(_Z^3-2)
+#                [algebraic,constant], # RootOf(_Z^3-2,1.2)
+#                # BUG [algebraic,type], # RootOf(_Z^3-2,realcons)
+#                [algebraic,range], # RootOf(_Z^3-2,1.0 .. 2.0)
+#		[algebraic,equation] # RootOf(_Z^3-2, index=1);
+#            })
+#    else false
+#    fi
+#end :
 #savelib('`type/RootOf`'):
 
 unprotect('RootOf');

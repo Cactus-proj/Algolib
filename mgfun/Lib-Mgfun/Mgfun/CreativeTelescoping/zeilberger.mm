@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -97,16 +97,24 @@ Zeilberger := proc(Alg::OreAlgebra,
 
     constrained_P_op :=
       eval(my_conv(constrained_P, d_), [seq(d_[v[i]] = dv[i], i = 1..nb_v)]);
-    coeffs_P := coeffs(constrained_P_op, dv, 'monoms_P');
+#### Wrong code that relied on coeffs returning coefficients in the same order as in compute_indices_eta
+#### Fixed BS. June 2013.
+    coeffs_P := [coeffs(constrained_P_op, dv, 'monoms_P')];
     d := degree(constrained_P_op, dv);
 
     indices_eta := compute_indices_eta(d, nb_v);
+    #res := test_order(Alg, d, dim, var, dv, Dv, f_coords,
+    #                  uncoupled_system, eta, indices_eta, local_formal_indet,
+    #                  formal_rhs, uncoupling_method,
+    #                  constrained_eta={seq(eta[op(indices_eta[i])]=coeffs_P[i],
+    #                                       i = 1..nops(constrained_P_op))});
+	
     res := test_order(Alg, d, dim, var, dv, Dv, f_coords,
                       uncoupled_system, eta, indices_eta, local_formal_indet,
                       formal_rhs, uncoupling_method,
-                      constrained_eta={seq(eta[op(indices_eta[i])]=coeffs_P[i],
-                                           i = 1..nops(constrained_P_op))});
-
+                      constrained_eta={seq(eta[op(map2(degree,monoms_P[i],dv))]
+						=coeffs_P[i],i=1..nops(coeffs_P))});
+#### End fix.
     return convert_res(res, v, dv, dim, local_formal_indet, formal_indet, eta,
                        indices_eta);
 
@@ -126,8 +134,11 @@ Zeilberger := proc(Alg::OreAlgebra,
         converted_res := convert_res(res, v, dv, dim, local_formal_indet,
                                      formal_indet, eta, indices_eta);
 
-        if Groebner:-HilbertDimension([op(map2(op, 1, converted_res)),
-                                       dvar], Mord) <= target_dimension then
+       	#if Groebner:-HilbertDimension([op(map2(op, 1, converted_res)),
+       	#		                               dvar], Mord) <= target_dimension then
+		# Modif BS. June 2013.
+        if Groebner:-HilbertDimension(map(numer,[op(map2(op, 1, converted_res)),
+                                       dvar]), Mord) <= target_dimension then
           userinfo(4, :-CreativeTelescoping, "PROFILE - LAST_D", d);
           return converted_res
         end if

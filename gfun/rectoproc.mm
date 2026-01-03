@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -313,8 +313,8 @@ rectoproc := proc(expr,yofn)
     fi;
 
     if LIST then MAX:=N 
-    elif WHILECOND=NULL then MAX:=ORDER
-    else MAX:=max(ORDER,WHILEIND+1) fi;
+    elif WHILECOND=NULL then MAX:=max(1,ORDER)
+    else MAX:=max(1,ORDER,WHILEIND+1) fi;
 
     ### name converter
     # In the list case, the names are u[i]
@@ -440,7 +440,7 @@ rectoproc := proc(expr,yofn)
     # If 'remember' was given and 'whilecond' was not, then WHILECOND is still 
     # NULL at this point, hence the branch taken is 'normal case'.
     if PLAIN or LIST or EVALFUN <> NULL or ERRORCOND <> NULL or RHS <> 0
-            or WHILECOND <> ToInert(true)
+            or WHILECOND <> ToInert(true) or ORDER = 0
             or not type(R, 'list'('polynom'('complex'('rational'),N))) then # normal case
 	FromInert(_Inert_PROC(PARAMSEQ,
 	    _Inert_LOCALSEQ(op(map(ToInert,[LOC,XLOCVARS]))),

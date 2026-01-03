@@ -25,9 +25,9 @@ HELP_PAGES_2 = $(shell find help gdev mgfun -name '*.mw')
 
 # Still in active development or out of Maple, therefore distributed
 # via algolib:
-#   encyclopedia, gdev, gfun, Holonomy, MAD, Mgfun, MultiSeries, regexpcount
+#   encyclopedia, gdev, gfun, Holonomy, Mgfun, regexpcount
 # Same as in Maple (as of January 2010), therefore not distributed via algolib:
-#   combstruct, Groebner, Ore_algebra
+#   combstruct, Groebner, Ore_algebra, MultiSeries
 # (if the latter are reactivated, they will become again part of algolib).
 #
 # Additionally, packages with with very low activity are not submodules,
@@ -47,14 +47,12 @@ clean_help:
 very_clean: clean
 	@echo 'Caution!  Locally committed commits that have not been pushed'
 	@echo 'to the server will be lost.  Confirm?  [y/N] '
-	@read c && [ "X$$c" = Xy ] && rm -rf gdev gfun mgfun multiseries || echo 'Aborted.'
+	@read c && [ "X$$c" = Xy ] && rm -rf gdev gfun mgfun || echo 'Aborted.'
 
 $(MLA):
 	echo 'march(create, "'$(MLA)'", 1000);' | $(MAPLEAPP)
 	ln -f $(MLA) gdev/gdev.mla
 	mkdir -p gfun/lib && ln -f $(MLA) gfun/lib/gfun.mla
-	ln -f $(MLA) multiseries/MultiSeries.mla
-	ln -f $(MLA) mad/MAD.mla
 	ln -f $(MLA) mgfun/Mgfun.mla
 	ln -f $(MLA) regexpcount/regexpcount.mla
 	ln -f $(MLA) encyclopedia/encyclopedia.mla
@@ -62,19 +60,15 @@ $(MLA):
 compile:
 	$(MAKE) -C gdev algolib_compile
 	$(MAKE) -C gfun algolib_compile
-	$(MAKE) -C multiseries algolib_compile
-	$(MAKE) -C mad algolib_compile
 	$(MAKE) -C mgfun algolib_compile
 	$(MAKE) -C regexpcount algolib_compile
 	$(MAKE) -C encyclopedia algolib_compile
 	$(MAKE) -C algolib algolib_compile
 
-# MAD has no test.
 test:
 	rm -f failed_tests.txt
 	$(MAKE) -C gdev algolib_test
 	$(MAKE) -C gfun algolib_test
-	$(MAKE) -C multiseries algolib_test
 	$(MAKE) -C mgfun algolib_test
 	$(MAKE) -C regexpcount algolib_test
 	echo ; echo 'Summary of failed tests:' ; cat failed_tests.txt ; echo '(End of summary.)'

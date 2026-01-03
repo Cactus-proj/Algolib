@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -23,14 +23,26 @@ nthterm := module()
 
 uses LinearAlgebra;
 
-export frectopoly, recmatrix, frectomatrix, rec_inicond_vector, binsplit,
-    `makeitfloat/mantissa`, makeitfloat, extractline, binsplit_params,
-    ratorfloat, nth_term_doit, choose_ring, fnth_term, nth_term_of_ndseries,
-    mydiv;
+export frectopoly, recmatrix, recmatrix_rational, recmatrix_numdenmatrix,
+    recmatrix_numdenseries, rec_inicond_vector, binsplit,
+    `makeitfloat/mantissa`, makeitfloat, extract_row, extract_rownumdenmatrix,
+    extract_row_numdenseries, extract_row_generic, binsplit_params,
+    ratorfloat, nth_term_doit, choose_ring, fnth_term, nth_term_of_numdenseries,
+    mydiv, dispatch;
 
 ################################################################################
 ## Utilities
 ################################################################################
+
+# For compatibility with some old code.  Should eventually disappear, perhaps in
+# favor of matrix objects if I really want to support abstract matrix types.
+dispatch := proc(eqs, $)
+    local dispatch_table;
+    dispatch_table := table(eqs);
+    proc(dispatch_name)
+        dispatch_table[convert(dispatch_name, 'string')](_rest);
+    end proc:
+end proc:
 
 ## Recurrence to operator/matrix
 
@@ -39,49 +51,36 @@ frectopoly := proc(coef, Sn, $)
     add( coef[i+2]*Sn^i, i=0..ordfrec(coef) )
 end proc:
 
-recmatrix['generic'] := proc(L, Sn, $) 
-    local den, M;
-    M, den := op(recmatrix[ndmatrix](args));
-    map(normal, 1/den * M, expanded)
-end proc:
-
-# FIXME: Horner?
-recmatrix['ndmatrix'] := proc(L, Sn, $)
-    local charpoly, den, M;
+recmatrix_numdenmatrix := proc(L, Sn, $)
+    local charpoly, den, mat;
     charpoly := evalc(normal(L / lcoeff(L, Sn)));
     den := denom(charpoly);
-    M := map(normal,den * Transpose([CompanionMatrix(charpoly, Sn)][1]));
-    M := map(convert, M, 'horner');
+    mat := map(normal, den * Transpose([CompanionMatrix(charpoly, Sn)][1]));
+    mat := map(convert, mat, 'horner');
     den := convert(den, 'horner');
-    ndmatrix(M,den)
+    numdenmatrix:-make(mat, den)
 end proc:
 
-recmatrix['ndseries'] := proc(L, Sn, $)::Matrix(polynom(complex(integer)));
-    local den, Mcoef, M, r;
-    Mcoef, den := op(recmatrix[ndmatrix](args));
+recmatrix_rational := proc(L, Sn, $)
+    local den, mat;
+    mat, den := op(recmatrix_numdenmatrix(args));
+    map(normal, 1/den * mat, expanded)
+end proc:
+
+recmatrix_numdenseries := proc(L, Sn, $)::Matrix(polynom(complex(integer)));
+    local den, coeff_mat, mat, r;
+    coeff_mat, den := op(recmatrix_numdenmatrix(args));
     r := degree(L, Sn);
-    M := Matrix(r+1,r+1,Mcoef);
-    M[-1,-1] := den;
-    M[-1, 1] := den; #???
-    return(M);
+    mat := Matrix(r+1, r+1, coeff_mat);
+    mat[-1,-1] := den;
+    mat[-1, 1] := den;
+    return(mat);
 end proc:
 
-#`recmatrix/imatrix` := proc(L, Sn, $)
-#    local den, M, M1, X, Y;
-#    M, den := `recmatrix/numden`(args);
-#    X := map(evalc@Re, M);
-#    Y := map(evalc@Im, M);
-#    imatrix(map(convert,X,`horner`), map(convert,Y,`horner`), convert(den,`horner`));
-#end proc:
-
-# Voir si je veux mettre des rec partout... (Cf. surtout Nth_term vs /common, et gestion CI.)
-frectomatrix := proc(frec, convname, $)
-    description "Recurrence (formatrec style) --> matrix";
-    local Sn, M;
-    M := call(recmatrix, convname, frectopoly(frec, Sn), Sn);
-    userinfo(6,'gfun', printf("recurrence matrix = %a\n", M));
-    M;
-end proc:
+recmatrix := dispatch([
+    "numdenmatrix" = recmatrix_numdenmatrix,
+    "numdenseries" = recmatrix_numdenseries,
+    "generic"  = recmatrix_rational]);
 
 ## Initial values
 
@@ -95,83 +94,48 @@ end proc:
 ## Binary splitting
 ################################################################################
 
-# Prend une matrice dépendant d'un paramètre et deux indices. Calcule le produit matriciel, soit par
-# multiplication directe soit par scindage binaire (en se rappelant récursivement), suivant le
-# nombre de matrices à multiplier et la taille des coefficients. 
-# - Le scindage binaire présente un certain overhead, et *n'apporte rien* tant que la multiplication
-# est en régime quadratique. On s'attend donc à ce qu'il devienne intéressant quand le produit des
-# coefficients passe à Karatsuba. Quel que soit le nombre de matrices à multiplier, tant que la
-# taille des coefs du résultat n'atteint pas ce seuil, on a intérêt à les multiplier naïvement.
-# - Les produits à la Waksman, eux, sont intéressants même (voire surtout) pour une multiplication
-# d'entiers quadratique. En revanche, ils perdent du temps sur les matrices peu denses.
-binsplit := proc(A, n, i, j, ring, expected_entry_size, $)
-    description "Given A(n) [usually a matrix], computes A(j-1)...A(i) by binary splitting.";
-    local P, P1, P2, k, m, matmult, id, Ak;
-    matmult, id := op(2,ring), op(4, ring); ## test
-    if j-i <= 3 or expected_entry_size(i,j) <= Settings:-binary_splitting_threshold then
+# Given A(n) [usually a matrix], computes A(j-1)...A(i) by binary splitting.
+binsplit := proc(A, n, i, j, grp, expected_size, $)
+    local P, P1, P2, k, m, Ak;
+    # The binary splitting algorithm brings nothing until the multiplication
+    # becomes subquadratic (regardless of the number of matrices to multiply.)
+    if j-i <= 3 or expected_size(i,j) <= Settings:-binary_splitting_threshold
+    then
         userinfo(6, 'gfun', `iterative product, bounds =`, i, j);
-        P := id;
+        P := grp:-identity;
         for k from i to j-1 do
-            # The degrees (in n) of the entries of A are typically low, but their coefficients may
-            # be huge (e.g., in the "bit-burst" algorithm). The index k may be in the billions but
-            # little more.
+            # The degrees (in n) of the entries of A are typically low, but
+            # their coefficients may be huge (e.g., in the "bit-burst"
+            # algorithm). The index k may be in the billions but little more.
             Ak := subs(n=k, A);
-            # if A does not depend on n, Maple doesn't copy it when eval() is called, so we need to
-            # do it by hand (since the matrix product may be destructive -- well, not anymore)
+            # If A does not depend on n, Maple doesn't copy it when eval() is
+            # called, so we need to do it by hand (since the matrix product may
+            # be destructive -- well, not anymore)
             #if Ak=A then Ak := map(copy,A) end if;
-            P := matmult(Ak, P);
+            P := grp:-multiply(Ak, P);
         end do;
     else
         userinfo(6, 'gfun', `split, bounds =`, i, j);
-        m := iquo(i+j, 2);  #  gmp-chudnovsky.c déséquilibre très légèrement (a+(b-a)*0.5224)
-        P1 := binsplit(A,n,m,j,ring,expected_entry_size);
-        P2 := binsplit(A,n,i,m,ring,expected_entry_size);
-        P := matmult(P1,P2); # try using waksman here?
+        m := iquo(i+j, 2); # gmp-chudnovsky does slightly unbalanced rec calls
+        P1 := binsplit(A, n, m, j, grp, expected_size);
+        P2 := binsplit(A, n, i, m, grp, expected_size);
+        P := grp:-multiply(P1, P2);
     end if;
     P;
 end proc:
 
-# Reuse matrices to save on memory management. Maybe a few % faster than /generic.
-#`binsplit/inlined` := proc(A, n, i, j, ring::matrix_ring,
-#                        expected_entry_size, $)
-#    description "Given A(n) [usually a matrix], computes A(j-1)...A(i) by binary splitting.";
-#    local P, P1, P2, k, m, numAk, numA, denA, numP, r, tmp;
-#    if j-i <= 3 or expected_entry_size(i,j) <= binary_splitting_threshold then
-#        numA, denA := op(A);
-#        r := op(1,numA); # size
-#        numP := LA_Main:-IdentityMatrix(r,'compact'=false,'outputoptions'=[]);
-#        tmp := Matrix(r);
-#        for k from i to j-1 do
-#            numAk := eval(numA, n=k);
-#            if numAk=A then numAk := copy(numA) end if;
-#            mvMultiply(numAk,numP, tmp);
-#            numP := tmp;
-#            tmp := numAk;
-#        end do;
-#        P := ndmatrix(
-#            numP,
-#            mul( eval(denA, n=k), k=i..j-1 ));
-#    else
-#        m := iquo(i+j, 2);  #  gmp-chudnovsky.c déséquilibre très légèrement (a+(b-a)*0.5224)
-#        P1 := binsplit(A,n,m,j,ring,expected_entry_size);
-#        P2 := binsplit(A,n,i,m,ring,expected_entry_size);
-#        P := ndmatrix( ## test
-#            mvMultiply(op(1,P1),op(1,P2)),
-#            op(2,P1) * op(2,P2));
-#    end if;
-#    P;
-#end proc:
-
+# Note: Some older versions of NumGfun had specialized binary splitting routines
+# that reused rtable structures to save a bit of memory management. See git
+# history if needed.
 
 ################################################################################
 ## Rational to Float conversion without gcd
 ################################################################################
 
-# originally based on code by Bruno Salvy
-
 # Compute (without gcd) an integer m such that fp = m·10^(-prec) satisfies
 # abs(fp-p/q) <= 6/10 · 10^(-prec) (however fp may not be the best approximation
-# of p/q by an integer multiple of 10^(-prec)).
+# of p/q by an integer multiple of 10^(-prec)).  Originally based on code by
+# Bruno Salvy.
 `makeitfloat/mantissa` := proc(num, den, prec, $)
     local m, r, sgn;
     ASSERT(den > 0);
@@ -184,14 +148,15 @@ end proc:
 # Compute a complex(integer)-multiple fp of 10^(-prec) (as a complex(float))
 # such that abs(fp-x) < 6/10·sqrt(2)·10^(-prec) < .85·10^(-prec). In particular,
 # if x is itself an approximation of y with abs(x-y) < 10^(-prec-1), then
-# abs(fp-y) < 10^(-prec). (For matrices, this holds *entrywise*.)
+# abs(fp-y) < 10^(-prec). (For matrices, this holds *entrywise*, as it is
+# obviously not possible in general in Frobenius norm.)
 #
-# Maybe some of this should move to ratorfloat.
+# Perhaps some of the code should move to ratorfloat.
 makeitfloat := proc(x, prec, $)
     local p, q, val;
     if type(x, 'complex'('rational')) then
         procname([numer(x),denom(x)], prec)
-    elif type(x, 'ndmatrix') then  # this does not really belong here
+    elif type(x, 'numdenmatrix') then  # FIXME: this does not really belong here
         map(p -> makeitfloat([p,op(2,x)], prec), op(1, x));
     elif type(x, ['complex'('integer'),'integer']) then
         p, q := op(x);
@@ -223,30 +188,36 @@ end proc:
 ## Nth term
 ################################################################################
 
-extractline[generic] := proc(M, $)
-    Row(M, 1)
+extract_rownumdenmatrix := proc(mat, $)
+    numdenmatrix:-make(Row(op(1,mat),1), op(2,mat));
 end proc:
 
-extractline[ndmatrix] := proc(M, $)
-    ndmatrix(Row(op(1,M),1),op(2,M));
+extract_row_numdenseries := proc(mat, $)
+    numdenmatrix:-make(mat[-1,1..-2], mat[-1,-1]);
 end proc:
 
-extractline[ndseries] := proc(M, $)
-    ndmatrix(M[-1,1..-2],M[-1,-1]);
+extract_row_generic := proc(mat, $)
+    Row(mat, 1)
 end proc:
+
+extract_row := dispatch([
+    "numdenmatrix" = extract_rownumdenmatrix,
+    "numdenseries" = extract_row_numdenseries,
+    "generic"  = extract_row_generic]):
 
 # Warning: initial values given in rec are ignored.
 binsplit_params := proc(rec, uofn, startidx, stopidx, ringname, $)
-    local r, ring, A, d, h, expected_entry_size, i, k, frec, ordrec, ini, u, n;
+    local r, grp, A, d, h, expected_size, i, k, frec, ordrec, ini, u, n, Sn;
     ASSERT(type(stopidx, 'Or'('nonnegint', 'name')));
-    u, n := getname(uofn);  # encore une bonne raison de se débarrasser de frec
+    u, n := getname(uofn);
     frec, r, ini := read_rec(rec, uofn);
-    ring := call(matrices:-genmatring, ringname, r);
-    A := frectomatrix(frec, ringname);
+    grp := matrices:-matrix_ops[ringname](r);
+    A := recmatrix(ringname, frectopoly(frec, Sn), Sn);
+    userinfo(6,'gfun', printf("recurrence matrix = %a\n", A));
     d := max(degree(frec[i],n)$i=1..r);
     h := add(add(length(k), k=coeffs(expand(frec[i]),n)), i=2..r+1);
-    expected_entry_size := eval((i,j) -> (j-i)*(d*ilog2(j)+h));
-    [A, n, startidx, stopidx, ring, expected_entry_size];
+    expected_size := eval((i,j) -> (j-i)*(d*ilog2(j)+h));
+    [A, n, startidx, stopidx, grp, expected_size];
 end proc:
 
 mydiv := proc(num, den)
@@ -265,28 +236,28 @@ ratorfloat := proc(ndm, prec, $)
 end proc:
 
 nth_term_doit := proc(binsplitparams, Ini, prec, ringname, $)
-    local ndlin, lin, matrix_1toN, ini, res;
+    local ndrow, row, matrix_1toN, ini, res;
     # Actually [u(k),...,u(N)] = A(k-1)···A(0)·[u(0),...,u(r-1)] where k=N-r+1,
     # but to use that we would have to treat the case N<r separately.
     matrix_1toN := binsplit(op(binsplitparams));
-    ndlin := call(extractline, ringname, matrix_1toN); # to be improved
+    ndrow := extract_row(ringname, matrix_1toN);
     ini := Ini;
     if type(ini, 'Vector'('complex'('numeric'))) then
         if type(ini, 'Vector'('complex'('float'))) then
             ini := convert(ini, 'rational', 'exact');
         end if;
-        res := matrices:-ndmatrix_multiply(ndlin, convert(ini,ndmatrix));
+        res := numdenmatrix:-multiply( ndrow, numdenmatrix:-from_matrix(ini));
         ratorfloat(res, prec)[1];
     else
-        lin := ratorfloat(ndlin, prec);
-        DotProduct(lin, ini, 'conjugate'=false);
+        row := ratorfloat(ndrow, prec);
+        DotProduct(row, ini, 'conjugate'=false);
     end if;
 end proc:
 
 choose_ring := proc(series, rational, $)
     if rational then    error "not implemented yet"
-    elif series then    'ndseries'
-    else                'ndmatrix'
+    elif series then    "numdenseries"
+    else                "numdenmatrix"
     end if;
 end proc:
 
@@ -298,12 +269,13 @@ nth_term := proc(rec, uofn::function(name), N::nonnegative,
     ringname := choose_ring(series, rational);
     nth_term_doit(
         binsplit_params(rec, uofn, 0, N, ringname),
-        rec_inicond_vector(rec, uofn), 
+        rec_inicond_vector(rec, uofn),
         infinity,
         ringname);
 end proc:
 
-fnth_term := proc(rec, uofn::function(name), N::nonnegative, prec::posint:=Digits,
+fnth_term := proc(rec::hrrec, uofn::function(name), N::nonnegint,
+    prec::posint:=Settings:-default_eval_precision,
     { series::boolean := false, [rational,gcd]::boolean:= false }, $ )
     description "Computes a floating-point approximation of u(N) where u satisfies rec";
     local ringname;
@@ -315,46 +287,47 @@ fnth_term := proc(rec, uofn::function(name), N::nonnegative, prec::posint:=Digit
         ringname);
 end proc:
 
-# Computes Sum(u(n)*dz^n,n=0..N-1) where u(n) satisfies rec. (To compute 
+# Computes Sum(u(n)*dz^n,n=0..N-1) where u(n) satisfies rec. (To compute
 # Sum(u(n),n=0..N-1), call nth_term(series) or binsplit(ndseries) directly.)
 #
 # Called by step_transition_matrix.
-nth_term_of_ndseries := proc(rec, uofn, dz::complex(rational), N, $)::ndmatrix;
+nth_term_of_numdenseries := proc(rec, uofn, dz::complex(rational), N, $)
+        ::numdenmatrix;
     local u, n, s, k, termrec, P;
     u, n := getname(uofn);
     s := ordrec(rec, uofn);
-    termrec := subs(  # the summation is done by binsplit itself (ndseries)
+    termrec := subs(  # the summation is done by binsplit itself (numdenseries)
         { seq( u(n+k) = dz^(s-k)*u(n+k), k=0..s ) },
         rec );
-    P := binsplit(op(binsplit_params(termrec, uofn, 0, N, 'ndseries')));
-    call(extractline,'ndseries',P);
+    P := binsplit(op(binsplit_params(termrec, uofn, 0, N, "numdenseries")));
+    extract_row_numdenseries(P);
 end proc:
 
 ################################################################################
 ## gfun:-rectoproc helpers
 ################################################################################
 
-# These procedures are local to *gfun* (not NumGfun), but part of NumGfun as they need to access
-# internal functions.
+# These procedures are local to *gfun* (not NumGfun), but part of NumGfun as
+# they need to access internal functions.
 
 `rectoproc/binsplitparameters` := proc(rec, uofn, startidx, stopidx, ini, $)
     local inline_ndmatrix, bsp;
-    # FromInert seems not to support rtables containing local names
+    # FromInert does not seem to support rtables containing local names
     inline_ndmatrix := proc(m)
-        ''ndmatrix''(
-            'Matrix'(convert(op(1,m),'listlist')),
+        numdenmatrix:-make(
+            'Matrix'(convert(op(1,m), 'listlist')),
             op(2,m));
     end proc;
-    bsp := binsplit_params(_params[1..4], 'ndmatrix');
+    bsp := binsplit_params(_params[1..4], "numdenmatrix");
     bsp := subsop( 1 = inline_ndmatrix(op(1,bsp)), bsp );
     map(ToInert, _Inert_EXPSEQ(bsp, ini));
 end proc:
 
-# This allows procedures generated by rectoproc to call internal NumGfun functions without having
-# these functions escape to gfun.
+# This allows procedures generated by rectoproc to call internal NumGfun
+# functions without having these functions escape to gfun.
 `gfun/rectoproc/binsplit` := proc(binsplitparams, ini, $)
     description "NumGfun helper used by some procedures generated by rectoproc";
-    nth_term_doit(binsplitparams, ini, infinity, 'ndmatrix');
+    nth_term_doit(binsplitparams, ini, infinity, "numdenmatrix");
 end proc:
 
 end module:

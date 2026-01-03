@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -16,23 +16,20 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-`algolib/version` := "14.0" :
+`algolib/version` := "17.0" :
 
 _algolibcontent := 'printf("\
-Content of algolib (version %s), as of October 2010:\n\n\
+Content of algolib (version %s), as of July 2013:\n\n\
 + encyclopedia.\t\t\t[Written by Stéphanie Petit, with contributions by Bruno Salvy and Michèle Soria.]\n\
 + gdev.\t\t\t\t[Written by Bruno Salvy.]\n\
 + gfun (version %.2f).\t\t[Maintained and extended by Bruno Salvy, with contributions by Ludovic Meunier, Marc Mezzarobba, Marni Mishna, and Eithne Murray, original version by Bruno Salvy and Paul Zimmermann.]\n\
 + Holonomy (version %a).\t[Written by Frédéric Chyzak.]\n\
-+ MAD (version %a).\t\t[Written by Ludovic Meunier.]\n\
 + Mgfun (version %a).\t\t[Written by Frédéric Chyzak, with contributions by Shaoshi Chen, Cyril Germa, Lucien Pech, and Ziming Li.]\n\
-+ MultiSeries.\t\t\t[Written by Bruno Salvy.]\n\
 + regexpcount (version %a).\t[Written by Pierre Nicodème.]\n\
 ",\
 `algolib/version`,\
 gfun:-version,\
 `Holonomy/version`,\
-MAD:-VERSION,\
 `Mgfun/version`,\
 `regexpcount/version`\
 )' :

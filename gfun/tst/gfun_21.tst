@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -50,7 +50,7 @@ TestTools:-Try(6,P(10),4*x^5+15*x^10+8*x^15+x^20);
 # reported by Cyril Banderier 26/06/09
 F:=1/sqrt(1+u^2*z^2-2*u*z^2-2*u*z-2*u^2*z^3+u^2*z^4):
 TestTools:-Try(7,gfun:-seriestoalgeq(map(expand,series(F,z,20)),y(z),[ogf]),
-[-1/u^2+(1+u^2*z^2-2*u*z^2-2*u*z-2*u^2*z^3+u^2*z^4)/u^2*y(z)^2, ogf]
+[-1+(1+u^2*z^2-2*u*z^2-2*u*z-2*u^2*z^3+u^2*z^4)*y(z)^2, ogf]
 );
 
 # Simple borderline cases that used to fail
@@ -82,7 +82,6 @@ TestTools:-Try(10,
 gfun :- seriestodiffeq(series(x,x,infinity), y(x), [ogf]),
 [{-y(x)+x*diff(y(x),x), y(0) = 0}, ogf]);
 
-        
 # And then with algeq
 TestTools:-Try(11,
         gfun:-listtoalgeq([1],y(x)),FAIL);
@@ -100,12 +99,19 @@ gfun :- seriestoalgeq(series(x,x,infinity), y(x), [ogf]),
 [y(x)-x, ogf]);
 
 # Better error checking
+#L:=[seq(exp(i),i=1..10)];
+#TestTools:-Try[testerror](11,
+#gfun:-listtorec(L,u(n)),"not a list of ratpoly over the rationals: ");
+#S:=gfun:-listtoseries(L,z);
+#TestTools:-Try[testerror](12,
+#gfun:-seriestorec(S,u(n)),"not a list of ratpoly over the rationals: ");
+# Not an error any longer (3.57)
 L:=[seq(exp(i),i=1..10)];
-TestTools:-Try[testerror](11,
-gfun:-listtorec(L,u(n)),"not a list of ratpoly over the rationals: ");
+TestTools:-Try(11,
+gfun:-listtorec(L,u(n)),FAIL);
 S:=gfun:-listtoseries(L,z);
-TestTools:-Try[testerror](12,
-gfun:-seriestorec(S,u(n)),"not a list of ratpoly over the rationals: ");
+TestTools:-Try(12,
+gfun:-seriestorec(S,u(n)),FAIL);
 
 # Change in 3.51, added an option ini=false to diffeqtorec
 deq:={-19*y(x)+(x+37)*diff(y(x),x)+(-2*x-18)*diff(diff(y(x),x),x)+x*diff(diff(diff(y(x),x),x),x), y(0
@@ -116,6 +122,21 @@ gfun:-diffeqtorec(deq,y(x),u(n)),
 TestTools:-Try(14,
 gfun:-diffeqtorec(deq,y(x),u(n),ini=false),
 (-19+n)*u(n)+(35*n+37-2*n^2)*u(n+1)+(-15*n^2-52*n-36+n^3)*u(n+2)
+);
+
+# There was a bug in the new guessing part, which made it miss the following
+# Fixed in 3.58
+TestTools:-Try(15,
+gfun:-listtodiffeq([1, 4, 36, 400, 4900, 63504, 853776, 11778624, 165636900,
+2363904400, 34134779536, 497634306624, 7312459672336], y(x), [ogf]),
+[{4*y(x)+(32*x-1)*diff(y(x),x)+(16*x^2-x)*diff(diff(y(x),x),x), y(0) = 1, D(y)(0) = 4}, ogf]
+);
+
+# This was not found before 3.60
+L:=
+TestTools:-Try(16,
+gfun:-listtoratpoly([1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,0,1,0,1,1,1,0,0],x,['ogf']),
+[-(-x^11+x^9+x^8+x^7+x^5+x^3+x^2+x+1)/(x^11-1), ogf]
 );
 
 #end test

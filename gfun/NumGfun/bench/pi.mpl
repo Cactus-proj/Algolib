@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -16,10 +16,12 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
+# One million decimal digits of Pi using the Chudnovsky formula and
+# NumGfun:-fnth_term.
+
 with(gfun:-NumGfun);
 acc := 1000002;
 
-# Pi (ChCh)
 A := 13591409;
 B := 545140134;
 C := 640320^3;
@@ -27,7 +29,7 @@ rec := { (A+B*n) * (3*n+3)* (3*n+2)*(3*n+1) * (n+1)^3 * C * u(n+1)
         + (6*n+6)*(6*n+5)*(6*n+4)*(6*n+3)*(6*n+2)*(6*n+1) * (A+B*(n+1)) * u(n), 
         u(0) = A };
 t := time();
-x := fnth_term(rec, u(n), ceil(acc/14), acc+1, ndseries):
+x := fnth_term(rec, u(n), ceil(acc/14), acc+1, 'series'):
 p := evalf[acc](C^(1/2)/(12*x)):
 time()-t;
 save p, "pi.txt";

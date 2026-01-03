@@ -1,4 +1,4 @@
-# Copyright (C) 1991--2010 by INRIA.
+# Copyright (C) 1991--2013 by INRIA.
 #
 # This file is part of Algolib.
 #
@@ -53,12 +53,30 @@ local res;
 	if res=FAIL then FAIL else res[1]/res[2] fi
 end proc: # rationalinterpolation
 
-findequation := proc(L::list,n::name,optype::{identical("differential"),identical("recurrence"),identical("rationalinterpolation"),identical("algebraic")})
+gfun_pade:=proc(L,x)
+local res;
+    res:=findequation(L,x,"pade");    
+    if res=FAIL then FAIL else res[1]/res[2] fi
+end proc: # pade
+    
+gfun_pade2:=proc(L,x,degs)    
+    findequation(L,x,"hermitepade",-degs);
+end proc: # gfun_pade2
+    
+Storjohann := proc(M,v,x)
+local res, dim;
+    res:=findequation([M,v],x,"Storjohann");
+    dim:=op(1,v);
+    Vector(map(normal,[seq(res[i]/res[dim+1],i=1..dim)]))
+end proc: # Storjohann
+    
+findequation := proc(L::list,n::name,optype::{identical("differential"),identical("recurrence"),identical("rationalinterpolation"),identical("algebraic"),identical("pade"),identical("hermitepade"),identical("Storjohann")},degs::list(integer))
     ## Input:
     ##		L: a list whose elements are expected to satisfy a linear recurrence or 
     ##			whose generating series is expected to satisfy a linear differential equation
     ##		n: a name
-    ##		optype: either "differential" or "recurrence" or "rationalinterpolation" (so far)
+    ##		optype: either "differential" or "recurrence" or "rationalinterpolation" or "pade" or "hermitepade" (so far)
+    ##		degs: (only used for hermitepade) list of valuation shifts for the cofactors
     ## Output:
     ##		one of
     ##		. FAIL;
@@ -72,38 +90,55 @@ findequation := proc(L::list,n::name,optype::{identical("differential"),identica
     ##		Clean up the remember table of do_reduce at the end.
 local res, ord;
 # global do_reduce;
-	if optype="rationalinterpolation" then
-		res:=findequationgivenorder(L,1,n,optype)
+	if optype="rationalinterpolation" or optype="pade" or optype="Storjohann" then
+		res:=findequationgivenorder(L,1,n,optype,[0$2])
+	elif optype="hermitepade" then
+	    res:=findequationgivenorder(L,nops(L)-1,n,optype,degs)
 	else
 	    for ord from max(1,Parameters('minordereqn')) to max(Parameters('minordereqn'),min(nops(L)-2,Parameters('maxordereqn'))) do
 	        userinfo(1,'gfun',"looking for equation of order",ord);
-	        res:=findequationgivenorder(L,ord,n,optype);
+	        res:=findequationgivenorder(L,ord,n,optype,[0$(ord+1)]);
 	        if res<>FAIL then break fi
 	    od
 	fi;
 	do_reduce:=subsop(4=NULL,op(do_reduce));
-	res
+	if res<>FAIL then normalizeresult(res) else res fi
 end proc: # findequation
 
-findequationgivenorder := proc(L,ord,n,optype)
+findequationgivenorder := proc(L,ord,n,optype,degs)
     ## Input:
     ##		L: list from findequation
     ##		ord: positive integer
-    ##		u, n, optype: from findequation
+    ##		u, n, optype, degs: from findequation
     ## Output:
     ##		Same as findequation, with an equation of order ord (at most).
     ## Description:
     ##		Dispatch to findequationgivenorderrational or findequationgivenorderratpoly
     ##		depending on the optype of the elements of L.
-    if type(L,list(rational)) then
-        findequationgivenorderrational(L,ord,n,optype)
-    elif type(L,list(ratpoly(rational))) then
-        map(normal,findequationgivenorderratpoly(L,ord,n,optype))
-    else error "not a list of ratpoly over the rationals: %1",L
+local inds,newvar;
+    if type(L,list(rational)) or optype="hermitepade" and type(L,list(list(rational))) or optype="Storjohann" then
+        findequationgivenorderrational(L,ord,n,optype,degs)
+    elif type(L,list(ratpoly(rational))) or optype="hermitepade" and type(L,list(list(ratpoly(rational)))) then
+        map(normal,findequationgivenorderratpoly(L,ord,n,optype,degs))
+    else 
+        inds:=indets(L,function);
+        if inds={} then 
+            inds:=indets(L,name) intersect {constants};
+            if inds={} then
+                inds:=remove(type,indets(L),name);
+                if inds={} then
+                    inds:=remove(type,indets(L,constant),rational);
+                    if inds={} then error "not a list of ratpoly over the rationals: %1",L
+                    fi
+                fi
+            fi
+        fi;
+        subs([seq(newvar[i]=inds[i],i=1..nops(inds))],
+            procname(subs([seq(inds[i]=newvar[i],i=1..nops(inds))],L),args[2..-1]))
     fi
 end proc: # findequationgivenorder
 
-findequationgivenorderratpoly := proc(L,ord,n,optype)
+findequationgivenorderratpoly := proc(L,ord,n,optype,degs)
     ## Input:
     ##		L: list of ratpolys
     ##		ord: positive integer
@@ -115,7 +150,7 @@ findequationgivenorderratpoly := proc(L,ord,n,optype)
     ## Description:
     ##		Recursive Evaluation/Interpolation relying on findequationgivenorderrational 
     ##		when all variables have been evaluated.
-local inds, var, val, res, recurse, firstval, lastval, round, result, ini, k, tointerp, tmp, lco, lmons, pp, cofs, dens;
+local inds, var, val, res, recurse, firstval, lastval, round, result, ini, k, tointerp, tmp, lco, lmons, pp, cofs, dens, tocheck;
    inds:=indets(L);
    var:=inds[1];
    if nops(inds)=1 then recurse:=findequationgivenorderrational
@@ -126,12 +161,12 @@ local inds, var, val, res, recurse, firstval, lastval, round, result, ini, k, to
        firstval:=lastval+1; lastval:=2*firstval-1;
        for val from firstval to lastval do
            userinfo(4,'gfun',"trying at",var,"=",ini+val);
-		   res[val]:=recurse(eval(L,var=ini+val),ord,n,optype);
+		   res[val]:=recurse(eval(L,var=ini+val),ord,n,optype,degs);
            if res[val]=FAIL then return FAIL fi;
 		   userinfo(4,'gfun',"found:",res[val])
        od;
        if round=0 then
-           result:=res[1]
+           result:=res[1];tocheck:=result
        else
 #			Much too slow.
 #           result:=[seq(CurveFitting:-RationalInterpolation([seq([ini+val,res[val][k]],val=1..lastval)],var),k=1..ord+1)];
@@ -151,44 +186,59 @@ local inds, var, val, res, recurse, firstval, lastval, round, result, ini, k, to
 					#rationalinterpolation([seq(coeff(lco[k],tmp,val),val=1..lastval)],var)*lmons[k],k=1..nops(lco));
 			   od;
 			   if cofs[k]=FAIL then next fi;
-			   result:=expand(subs(var=var-ini-1,[seq(result[pp],pp=1..ord+1)]))
+			   result:=expand(subs(var=var-ini-1,[seq(result[pp],pp=1..ord+1)]));
+			   tocheck:=result
 		   else
 			   userinfo(5,'gfun',"using CurveFitting:-RationalInterpolation");
 			   result:=[seq(CurveFitting:-RationalInterpolation([seq([ini+val,res[val][k]],val=1..lastval)],var),k=1..ord+1)];
-			   result:=numer(normal(add(result[k]*tmp^(k-1),k=1..ord+1)));
-			   result:=[seq(coeff(result,tmp,k),k=0..ord)]
+###			   result:=numer(normal(add(result[k]*tmp^(k-1),k=1..ord+1)));
+###			   result:=[seq(coeff(result,tmp,k),k=0..ord)]
+   			   tocheck:=normalizeresult(result)
 		   fi
        fi;
-       if checkresultnormal(result,L,ord,n,optype) then return result fi
+       if checkresultnormal(tocheck,L,ord,n,optype) then return result fi
    od
 end proc: # findequationgivenorderratpoly
 
-findequationgivenorderrational := proc(L,ord,n,optype)
+normalizeresult := proc(res)
+local tmp,k,ord,pol;
+    ord:=nops(res);
+    pol:=numer(normal(add(res[k]*tmp^k,k=1..ord)));
+    [seq(coeff(pol,tmp,k),k=1..ord)]
+end proc: # normalizeresult
+
+findequationgivenorderrational := proc(L,ord,n,optype,degs)
     ## Input:
     ##		L: list of rational numbers
     ##		ord: positive integer
     ##		n: name
-    ##		optype: from findequation
+    ##		optype, degs: from findequation
     ## Output:
     ##		Linear equation of order ord (at most) satisfied by the elements of L,
     ##		expressed as a list of polynomials in n.
     ## Description:
     ##		Mod p and chinese remaindering, the modular case being treated by 
     ##		findequationgivenordermodp.
-local p, round, nbprimes, resmodp, res, result, modulus, moduli, i, ratresult, LL, partial;
+local p, round, nbprimes, resmodp, res, result, modulus, moduli, i, ratresult, LL, partial, den;
    p:=modp1(Prime(1)); `mod`:=mods;
-   for round from 0 to 6 do ### Arbitrary constant. Not very good, but I do not see how to avoid this.
+   for round from 0 to Parameters('tryhard') do ### Arbitrary constant. Not very good, but I do not see how to avoid this.
        for nbprimes to 2^round do     
 			do
 				try
-					LL:=do_reduce(L,p);
+				    LL:=do_reduce(L,p)
 				catch "the modular inverse does not exist": 
 					userinfo(3,'gfun',"bad prime");
 					p:=modp1(Prime(p)); next
 				end try;
 				break
 			od;
-	   		resmodp:=findequationgivenordermodp(LL,ord,n,partial,p,optype);
+            if optype<>"Storjohann" then
+	   		    resmodp:=findequationgivenordermodp(LL,ord,n,partial,p,optype,degs)
+   		    else
+   		        resmodp,den:=Storjohannmodp(op(LL),n,p);
+                # Store the denominator in the same vector to help chrem and iratrecon later
+   		        resmodp:=[seq(modp1(ConvertOut(resmodp[i],n),p),i=1..op(1,LL[2])),modp1(ConvertOut(den,n),p)]
+	        fi;
 	   	    if resmodp=FAIL then return FAIL fi;
 	        res[nbprimes]:=resmodp;
 	   	    modulus[nbprimes]:=p;
@@ -203,13 +253,19 @@ local p, round, nbprimes, resmodp, res, result, modulus, moduli, i, ratresult, L
        fi;
        moduli:=convert(moduli,`*`);
        ratresult:=iratrecon(result,moduli);
-	   if ratresult<>FAIL then 
-	   		ratresult:=[seq(coeff(ratresult,partial,i),i=0..ord)];
-   	   		if checkresult(ratresult,L,p,ord,n,optype) then 
-				if length(ratresult)>length(L) then return FAIL
-				else return ratresult
-				fi
-			fi
+	   if ratresult<>FAIL then
+            if optype="Storjohann" then
+                if checkresult(ratresult,L,p,ord,n,optype) then return ratresult fi
+            else
+                ratresult:=[seq(coeff(ratresult,partial,i),i=0..ord)];
+       	   		if checkresult(ratresult,L,p,ord,n,optype) then
+       	   		    if length(ratresult)<length(L)
+       	   		    or convert(map(nops,ratresult),`+`)<convert(map(nops,subs(0=NULL,L)),`+`)*.8 
+       	   		    then return ratresult
+    				else return FAIL
+    				fi
+    			fi
+            fi
   	   fi
    od;
    FAIL
@@ -228,13 +284,13 @@ option remember;
 	modp(L,p)
 end proc: # do_reduce
 
-findequationgivenordermodp:=proc(L,ord,n,partial,modulo,optype)
+findequationgivenordermodp:=proc(L,ord,n,partial,modulo,optype,degs)
     ## Input:
     ##		L: list of integers mod modulo
     ##		ord: positive integer
     ##		n,partial: names
     ##		modulo: prime number
-    ##		optype: from findequation
+    ##		optype,degs: from findequation
     ## Output:
     ##		Linear equation of order ord (at most) satisfied by the elements of L,
     ##		expressed as an operator in n and the operator partial.
@@ -254,13 +310,21 @@ local N,i,j,U,res,def,lco,typeopt, truncate, nbeqs, nbcoeffs, dimension, LL, per
 		U:=[seq(LinearAlgebra:-Modular:-Mod(modulo,Vector([-1,LL[i]]),integer[]),i=1..N+1)];
 		prec:=N-ord;
 		typeopt:="recurrence"
-    	elif optype="algebraic" then
+	elif optype="algebraic" then
 		typeopt:="differential";
 		U[0]:=modp1(ConvertIn(LL,n),modulo);
 		truncate:=modp1(ConvertIn(n^(N+1),n),modulo);
 		for i to ord do U[i]:=modp1(Rem(Multiply(U[i-1],U[0]),truncate),modulo) od;
 		prec:=N;
 		U:=[seq(U[i],i=0..ord)]
+    elif optype="pade" then
+        typeopt:="differential";
+        prec:=N;
+        U:=[modp1(ConvertIn([-1],n),modulo),modp1(ConvertIn(LL,n),modulo)]
+    elif optype="hermitepade" then
+        typeopt:="differential";
+        prec:=min(op(map(nops,L)))-1;
+        U:=map(modp1,map(ConvertIn,LL,n),modulo)
 	else # optype="differential"
 		typeopt:=optype;
 		U[0]:=modp1(ConvertIn(LL,n),modulo);
@@ -268,7 +332,7 @@ local N,i,j,U,res,def,lco,typeopt, truncate, nbeqs, nbcoeffs, dimension, LL, per
 		prec:=max(0,N-ord);
 		U:=[seq(U[i],i=0..ord)]
 	fi;
-	res,def:=matinterpmodp(U,0,prec,ord+1,[0$(ord+1)],n,modulo,typeopt);
+	res,def:=matinterpmodp(U,0,prec,ord+1,degs,n,modulo,typeopt);
 	if def<>true then
 	    member(max(op(def)),def,'i');       
 		res:=res[i,1..-1];
@@ -276,60 +340,64 @@ local N,i,j,U,res,def,lco,typeopt, truncate, nbeqs, nbcoeffs, dimension, LL, per
 	for i while modp1(IsZero(res[-i]),modulo) do od;
 	trueord:=ord-(i-1);
 	res:=[seq(modp1(ConvertOut(res[j],n),modulo),j=1..trueord+1)];
-	# if the order that is found is smaller than the order that was looked for, then 
-	# the last coefficients have to be checked as well
-	if trueord<ord and not checkresult(res,LL,modulo,trueord,n,typeopt) then return FAIL fi;
-		#if optype="differential" then
-		#	        bigO:=modp1(ConvertIn([0$(N-trueord),1],n),modulo);
-		#	testzero:=modp1(ConvertIn(0,n),modulo);
-		#	for i to trueord+1 do
-		#        testzero:=modp1(Rem(Add(testzero,Multiply(res[i],U[i])),bigO),modulo)
-		#	od;
-		#	        if not modp1(IsZero(testzero),modulo) then return FAIL fi
-		#	    elif 
-		#fi
-	# This is for the special case of one polynomial, whose roots are the indices
-	# where we interpolate. One exception is for 1 nonzero term.
-	if typeopt="recurrence" and nops(subs(0=NULL,res))=1 and nops(subs(0=NULL,L))<>1 then return FAIL fi;
-	# In order to decide whether the polynomials that have been found so far
-	# are likely to form a good approximant, we compare to the corresponding 
-	# linear algebra problem. 
-	for firstnonzero while L[firstnonzero]=0 do od;
-	if typeopt="algebraic" or typeopt="differential" then
-		period:=igcd(op(map2(op,2,select(has,indets(res,`^`),n))))
-	elif nops(subs(0=NULL,res))=nops(res) then period:=1
-	else
-		period:=0;
-		for lastnonzero while res[lastnonzero]=0 do od;
-		while lastnonzero<nops(res) do
-			for i from lastnonzero+1 to nops(res) while res[i]=0 do od;
-			if i<=nops(res) then
-				period:=igcd(period,i-lastnonzero); 
-				lastnonzero:=i
-			else break
-			fi
-		od
+    if optype<>"pade" and optype<>"hermitepade" then
+    	# if the order that is found is smaller than the order that was looked for, then 
+    	# the last coefficients have to be checked as well
+    	if trueord<ord and not checkresult(res,LL,modulo,trueord,n,typeopt) then return FAIL fi;
+    		#if optype="differential" then
+    		#	        bigO:=modp1(ConvertIn([0$(N-trueord),1],n),modulo);
+    		#	testzero:=modp1(ConvertIn(0,n),modulo);
+    		#	for i to trueord+1 do
+    		#        testzero:=modp1(Rem(Add(testzero,Multiply(res[i],U[i])),bigO),modulo)
+    		#	od;
+    		#	        if not modp1(IsZero(testzero),modulo) then return FAIL fi
+    		#	    elif 
+    		#fi
+    	# This is for the special case of one polynomial, whose roots are the indices
+    	# where we interpolate. One exception is for 1 nonzero term.
+    	if typeopt="recurrence" and nops(subs(0=NULL,res))=1 and nops(subs(0=NULL,L))<>1 then return FAIL fi;
+    	# In order to decide whether the polynomials that have been found so far
+    	# are likely to form a good approximant, we compare to the corresponding 
+    	# linear algebra problem. 
+    	for firstnonzero while L[firstnonzero]=0 do od;
+    	if typeopt="algebraic" or typeopt="differential" then
+            if {op(map(coeff,res,n,1))}<>{0} then period:=0 else
+    		period:=igcd(op(map2(op,2,select(has,indets(res,`^`),n)))) fi
+    	elif nops(subs(0=NULL,res))=nops(res) then period:=1
+    	else
+    		period:=0;
+    		for lastnonzero while res[lastnonzero]=0 do od;
+    		while lastnonzero<nops(res) do
+    			for i from lastnonzero+1 to nops(res) while res[i]=0 do od;
+    			if i<=nops(res) then
+    				period:=igcd(period,i-lastnonzero); 
+    				lastnonzero:=i
+    			else break
+    			fi
+    		od
+    	fi;
+    	# 
+    	# Number of equations
+    	if typeopt="recurrence" then nbeqs:=nops(U)-max(firstnonzero-1-ord,0);
+    	elif optype="algebraic" then nbeqs:=N+1-(firstnonzero-1)
+    	else # differential
+    		nbeqs:=N+1-ord-max(firstnonzero-1-ord,0)
+    	fi;
+    	if period>1 then nbeqs:=ceil(nbeqs/period) fi;
+    	# Linear combinations between the polynomials can make the sum of degrees 
+    	# drop by ord
+    # not true on L[9], findrec
+    #	nbeqs:=nbeqs-ord;
+    	# Special case for even/odd or other sparse sequences
+    #	nbnonzero:=nops(subs(0=NULL,LL));
+    	#if nbnonzero<nbeqs then nbeqs:=nbnonzero fi;
+    	# Number of coefficients
+    	nbcoeffs:=nops(map(coeffs,res,n));
+        dimension:=convert(subs(-infinity=-1,map(degree,res,n)),`+`)+nops(res)
+    fi;
+	if optype<>"pade" and optype<>"hermitepade" and dimension>=nbeqs and length(res)>.5*length(subs(0=NULL,LL)) and nbcoeffs+nops(L)>nbeqs 
+		then return FAIL
 	fi;
-	# 
-	# Number of equations
-	if typeopt="recurrence" then nbeqs:=nops(U)-max(firstnonzero-1-ord,0);
-	elif optype="algebraic" then nbeqs:=N+1-(firstnonzero-1)
-	else # differential
-		nbeqs:=N+1-ord-max(firstnonzero-1-ord,0)
-	fi;
-	if period>1 then nbeqs:=ceil(nbeqs/period) fi;
-	# Linear combinations between the polynomials can make the sum of degrees 
-	# drop by ord
-# not true on L[9], findrec
-#	nbeqs:=nbeqs-ord;
-	# Special case for even/odd or other sparse sequences
-#	nbnonzero:=nops(subs(0=NULL,LL));
-	#if nbnonzero<nbeqs then nbeqs:=nbnonzero fi;
-	# Number of coefficients
-	nbcoeffs:=nops(map(coeffs,res,n));
-    dimension:=convert(subs(-infinity=-1,map(degree,res,n)),`+`)+nops(res);
-	if dimension>=nbeqs and length(res)>.5*length(subs(0=NULL,LL)) and nbcoeffs+nops(L)>nbeqs 
-		then FAIL
 #	freedom:=nops(subs(0=NULL,L))+1;
 ##	for i to nops(L) while L[i]=0 do freedom:=freedom + 1 od;
 #	if optype<>"rationalinterpolation" then freedom:=freedom-ord fi;
@@ -337,11 +405,9 @@ local N,i,j,U,res,def,lco,typeopt, truncate, nbeqs, nbcoeffs, dimension, LL, per
 ## 	    and add(nops(res[j]),j=1..ord+1)>=.9*(nops(subs(0=NULL,L))-ord+1)
 # 	    and add(nops(res[j]),j=1..ord+1)>=.9*freedom
 # 	    then FAIL 
-    else
-        res:=add(res[j]*partial^(j-1),j=1..trueord+1);
-        lco:=modp(1/lcoeff(res,[partial,n]),modulo);
-        mods(expand(res*lco),modulo)
-	fi
+    res:=add(res[j]*partial^(j-1),j=1..trueord+1);
+    lco:=modp(1/lcoeff(res,[partial,n]),modulo);
+    mods(expand(res*lco),modulo)
 end proc: # findequationgivenordermodp
 
 degmat := proc(A)
@@ -387,13 +453,14 @@ local i, j, lpts, mat;
 	od od
 end proc: # interpmat
 
-interpvect := proc(p,listvect,dim,var)
+# dir is row or column
+interpvect := proc(p,listvect,dim,var,dir)
 local i, lpts, result, vect;
 	lpts:=[$0..(nops(listvect)-1)];
 	for i to dim do 
 		result[i]:=modp1(Interp(lpts,[seq(vect[i],vect=listvect)],var),p)
 	od;
-	Vector[row]([seq(result[i],i=1..dim)])
+	Vector[dir]([seq(result[i],i=1..dim)])
 end proc: # interpmat
 
 matmultmodp := proc(p, A, B, C, n)
@@ -406,16 +473,27 @@ matmultmodp := proc(p, A, B, C, n)
     ##		Their product is stored in C, which is returned.
     ## Description:
     ##		Evaluation/Interpolation.
-local deg,i,res;
+local deg,i,res, dim, j, k, rowdimA, coldimA, coldimB; 
 	deg:=degmat(A)+degmat(B);
-    ## Evaluation at 0,...,deg
-	for i from 0 to deg do
-		res[i]:=LinearAlgebra:-Modular:-Multiply(p,
-			LinearAlgebra:-Modular:-Mod(p,A,n=i,integer[]),
-			LinearAlgebra:-Modular:-Mod(p,B,n=i,integer[]))
-	od;
-    ## Interpolation
-	interpmat(p,[seq(res[i],i=0..deg)],op([1,1],A),op([1,2],B),C, n)
+    rowdimA,coldimA:=op(1,A);
+    coldimB:=op([1,2],B);
+    if max(rowdimA,coldimA,coldimB)<deg+3 then # small size, use modp1/Multiply
+        if C<>A and C<>B then res:=C fi;
+        for i to rowdimA do for j to coldimB do res[i,j]:=modp1(Add(seq(Multiply(A[i,k],B[k,j]),k=1..coldimA)),p) od od;
+        if C=A or C=B then
+            for i to rowdimA do for j to coldimB do C[i,j]:=res[i,j] od od;
+        fi;
+        C
+    else
+        ## Evaluation at 0,...,deg
+    	for i from 0 to deg do
+    		res[i]:=LinearAlgebra:-Modular:-Multiply(p,
+    			LinearAlgebra:-Modular:-Mod(p,A,n=i,integer[]),
+    			LinearAlgebra:-Modular:-Mod(p,B,n=i,integer[]))
+    	od;
+        ## Interpolation
+    	interpmat(p,[seq(res[i],i=0..deg)],op([1,1],A),op([1,2],B),C, n)
+    fi
 end proc: # matmultmodp	
 
 # A is a vector, B a matrix
@@ -429,7 +507,22 @@ local deg,i,res;
 			LinearAlgebra:-Modular:-Mod(p,B,n=i,integer[]))
 	od;
     ## Interpolation
-	interpvect(p,[seq(res[i],i=0..deg)],op([1,2],B), n)
+	interpvect(p,[seq(res[i],i=0..deg)],op([1,2],B), n,row)
+end proc: # vectmultmodp	
+
+# transposition of the previous one:
+# A is a matrix, B a vector
+matmultvectmodp := proc(p, A, B, n)
+local deg,i,res;
+	deg:=degvect(B)+degmat(A);
+    ## Evaluation at 0,...,deg
+	for i from 0 to deg do
+		res[i]:=LinearAlgebra:-Modular:-Multiply(p,
+			LinearAlgebra:-Modular:-Mod(p,A,n=i,integer[]),
+			LinearAlgebra:-Modular:-Mod(p,B,n=i,integer[]))
+	od;
+    ## Interpolation
+	interpvect(p,[seq(res[i],i=0..deg)],op([1,2],A), n,column)
 end proc: # vectmultmodp	
 
 matinterpmodp := proc(U,a,b,dim,n,x,p,optype)
@@ -478,7 +571,7 @@ local c, P1, P2, R, i, k, dct, indearly, early, bigO, xc, V;
 		else
 			V:=[seq(modp1(Coeff(U[i],0),p),i=1..dim)]
 		fi;
-		initmat(a,V,dim,n,x,optype,p);
+		initmat(a,V,dim,n,x,optype,p)
 	else
 		c:=iquo(a+b,2);
 		P1,dct:=matinterpmodpearlyabort(a,c,dim,n,x,p,optype,U,[1,U,a,b,c],args[9..-1]);                      
@@ -598,7 +691,7 @@ checkresultnormal := proc(listcofs,listval,ord, n,optype)
     ## Description:
     ##		check probabilistically whether recop (of degree ord wrt Sn) cancels listval,
     ##		by trying at a given point a mod a large prime.
-local inds, p, cofs, vals, val, i;
+local inds, p, cofs, vals, val, i, res;
 	inds:=indets(listval);
 	# This must not be done with p=Prime(1), which is already used
 	# in findequationgivenorderrational
@@ -607,7 +700,17 @@ local inds, p, cofs, vals, val, i;
 	val:=[seq(inds[i]=val[i],i=1..nops(inds))];
 	vals:=eval(listval,val);
 	cofs:=eval(listcofs,val);
-	checkresult(cofs,vals,modp1(Prime(p)),ord,n,optype)
+	do
+		p:=modp1(Prime(p));
+		try
+		    res:=checkresult(cofs,vals,p,ord,n,optype)
+		catch "the modular inverse does not exist","division by zero": 
+			userinfo(3,'gfun',"bad prime");
+			next
+		end try;
+		break
+	od;
+	res
 end proc: # checkresultnormal
 
 checkresult := proc(recop,listval,p,ord, n, optype)
@@ -623,7 +726,7 @@ checkresult := proc(recop,listval,p,ord, n, optype)
     ## Description:
     ##		check whether recop (of degree ord wrt partial) cancels listval mod p.
     ##		Same procedure, mod p and without the call to normal.
-local i, listcofs, U, res, bigO, cofs;
+local i, listcofs, U, res, bigO, cofs, dim, res2;
 	listcofs:=modp(recop,p);
 	if optype="rationalinterpolation" then
     	U:=modp(listval,p);
@@ -651,6 +754,25 @@ local i, listcofs, U, res, bigO, cofs;
             res:=modp1(Rem(Add(ConvertIn(listcofs[i],n),Multiply(U,res)),bigO),p)
         od;
         modp1(IsZero(res),p)
+	elif optype="pade" then
+        U:=modp1(ConvertIn(modp(listval,p),n),p);
+        bigO:=modp1(ConvertIn([0$(nops(listval)),1],n),p);
+        res:=modp1(Rem(Add(ConvertIn(-listcofs[1],n),Multiply(ConvertIn(listcofs[2],n),U)),bigO),p);
+        modp1(IsZero(res),p)
+    elif optype="hermitepade" then
+        U:=map(modp1,map(ConvertIn,map(modp,listval,p),n),p);
+        bigO:=modp1(ConvertIn([0$(nops(listval)),1],n),p);
+        res:=modp1(Rem(Add(seq(Multiply(ConvertIn(listcofs[i],n),U[i]),i=1..nops(listval))),bigO),p);
+        modp1(IsZero(res),p)
+    elif optype="Storjohann" then
+        U:=map(ConvertIn,listval[1],n);
+        U:=LinearAlgebra:-Map(modp1,U,p);
+        dim:=op(1,listval[2]);
+        res:=matmultvectmodp(p,U,Vector([seq(modp1(ConvertIn(modp(recop[i],p),n),p),i=1..dim)]),n);
+        res2:=LinearAlgebra:-Map(Multiply,LinearAlgebra:-Map(modp1,map(ConvertIn,listval[2],n),p),modp1(ConvertIn(modp(recop[-1],p),n),p));
+        res2:=LinearAlgebra:-Map(modp1,res2,p);
+        for i to dim do if res[i]<>res2[i] then return false fi od;
+        true
     else # "differential"
     	listcofs:=Vector[row](listcofs);
         U:=modp1(ConvertIn(modp(listval,p),n),p);
