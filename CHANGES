@@ -1,6 +1,9 @@
 History of changes:
 -------------------
 
+02-08-03:
+    port to Maple 7
+
 02-03-13:
     encyclopedia (port to Maple 6)
     Ore_algebra 3.1 (port to Maple 6)

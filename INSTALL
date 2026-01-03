@@ -1,4 +1,4 @@
-This file describes the installation of algolib for Maple 6.
+This file describes the installation of algolib for Maple 7.
 
 
 I. Install the files.
@@ -44,6 +44,11 @@ Under Unix:
 	     libname:="/foo/bar/.../algolib",libname:
 
 On a Macintosh:
+
+      [An installation problem has been observed with Maple7.0 on the
+      Macintosh.  Maple7.01 may be required for algolib to work
+      properly.  See
+      http://www.maplesoft.com/support/Faqs/Maple7/General/1.shtml]
 
       The `algolib' path is something like `MyDisk:algolib', so
       that your command reads:
