@@ -1,5 +1,5 @@
-ifeq (X$(MAPLE), X)
-MAPLE=maple
+ifeq (X$(MAPLEAPP), X)
+MAPLEAPP=maple
 endif
 
 MLA=../algolib.mla
@@ -15,4 +15,4 @@ all:
 algolib_compile: $(SOURCES:.mpl=.date)
 
 .mpl.date:
-	sed -e 's/#savelib/savelib/g' $< | $(MAPLE) -s -q -e2 -b $(MLA) -B && touch $*.date
+	sed -e 's/#savelib/savelib/g' $< | $(MAPLEAPP) -s -q -e2 -b $(MLA) -B && touch $*.date

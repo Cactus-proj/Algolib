@@ -22,7 +22,6 @@ lib/equivalent/saddlepoint/src/ptcol
 lib/equivalent/saddlepoint/src/selle
 lib/src/comparexpr
 lib/src/equivalent
-lib/src/signum
 lib/src/infsing
 lib/src/evalr
 lib/src/RootOf

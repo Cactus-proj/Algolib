@@ -16,24 +16,6 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-# Copyright (C) 1991--2010 by INRIA.
-#
-# This file is part of Algolib.
-#
-# Algolib is free software: you can redistribute it and/or modify it
-# under the terms of the GNU Lesser General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-#
-# Algolib is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Lesser General Public License for more details.
-#
-# You should have received a copy of the GNU Lesser General Public
-# License along with Algolib.  If not, see
-# <http://www.gnu.org/licenses/>.
-
 `multiseries/function`[arccoth, 1, "BasisVector", 0, 0, 0, "MultiSeries", 0]:=proc (expr, scale, var, order) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:11`; SERIES(scale,`multiseries/function`[arccoth,1,"CoeffProc",0,0,0](order),1,algebraic,[`$`(0 .. order)],order+1,integer,eval(scale['variable'],1),`arccoth/1/BasisVector/0/0/0/MultiSeries/0`(eval(scale['variable'],1))) end proc:
 `multiseries/function`[arccoth, -1, "BasisVector", 0, 0, 1]:=proc (n) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:12`; [0, `multiseries/function`[arccoth,-1,"CoeffProc",0,0,1](n), `multiseries/function`[arccoth,-1,"CoeffProc",0,0,0](n)] end proc:
 `multiseries/function`[arccoth, 1, "BasisVector", 0, 0, 1, "MultiSeries", 0]:=proc (expr, scale, var, order) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:11`; SERIES(scale,`multiseries/function`[arccoth,1,"CoeffProc",0,0,1](order),1,algebraic,[`$`(0 .. order)],order+1,integer,eval(scale['variable'],1),`arccoth/1/BasisVector/0/0/1/MultiSeries/0`(eval(scale['variable'],1))) end proc:

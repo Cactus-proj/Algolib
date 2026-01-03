@@ -16,24 +16,6 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-# Copyright (C) 1991--2010 by INRIA.
-#
-# This file is part of Algolib.
-#
-# Algolib is free software: you can redistribute it and/or modify it
-# under the terms of the GNU Lesser General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-#
-# Algolib is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Lesser General Public License for more details.
-#
-# You should have received a copy of the GNU Lesser General Public
-# License along with Algolib.  If not, see
-# <http://www.gnu.org/licenses/>.
-
 `multiseries/function`[Ci, 0, "BasisVector", 0, 0, 1]:=proc (n) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:16:36`; [0, `multiseries/function`[Ci,0,"CoeffProc",1,1,2](n), 2*`multiseries/function`[Ci,0,"CoeffProc",1,1,1](n), `multiseries/function`[Ci,0,"CoeffProc",1,1,0](n)] end proc:
 `multiseries/function`[`Ci/infinity/aux/1/-1/2*Pi .. 1/2*Pi`]:=proc (expr, scale, var, order) local lim, lim2, argseq, res; option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:16:39`; if expr = 0 then return `multiseries/Convert2SERIES`(`Ci/infinity/aux/1/-1/2*Pi .. 1/2*Pi`(0),scale,var,false) end if; lim := `multiseries/limit`(expr,scale,var); if lim = infinity then argseq := `multiseries/pow`(expr,-1,scale,var,order), scale, var, order else argseq := `multiseries/AddDoit`(expr,`multiseries/Convert2SERIES`(-lim,scale,var,false)), scale, var, order end if; if lim = 0 then res := `multiseries/function`[`Ci/infinity/aux/1/-1/2*Pi .. 1/2*Pi`,0](argseq) elif member(lim,{infinity}) then error "unable to compute series" else res := eval(`multiseries/function`[`Ci/infinity/aux/1/-1/2*Pi .. 1/2*Pi`,_AnyFiniteOrdinaryPoint](argseq),_AnyFiniteOrdinaryPoint = lim) end if; subsop(9 = ('`Ci/infinity/aux/1/-1/2*Pi .. 1/2*Pi`')(op(9,expr)),res) end proc:
 `multiseries/function`[`Ci/infinity/aux/1/1/2*Pi .. Pi`, _AnyFiniteOrdinaryPoint]:=proc (expr, scale, var, order) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:16:41`; `multiseries/compose`(SERIES(scale,map(normal,`multiseries/function`[`Ci/infinity/aux/0/-1/2*Pi .. 1/2*Pi`,_AnyFiniteOrdinaryPoint,"CoeffProc"](order,`Ci/infinity/aux/1/1/2*Pi .. Pi`(_AnyFiniteOrdinaryPoint),diff(`Ci/infinity/aux/1/1/2*Pi .. Pi`(_AnyFiniteOrdinaryPoint),_AnyFiniteOrdinaryPoint),2*diff(diff(`Ci/infinity/aux/1/1/2*Pi .. Pi`(_AnyFiniteOrdinaryPoint),_AnyFiniteOrdinaryPoint),_AnyFiniteOrdinaryPoint),_AnyFiniteOrdinaryPoint)),1,algebraic,[`$`(0 .. order)],order+1,integer,eval(scale['variable'],1),`Ci/infinity/aux/1/1/2*Pi .. Pi`(_AnyFiniteOrdinaryPoint+eval(scale['variable'],1))),expr,scale,var,order) end proc:

@@ -248,13 +248,30 @@ local f, ind, i, u, carefulsubs;
 end: # `infsing/infsolve/algfun`
 
 `infsing/infsolve/polynom`:=proc (pol, x, minsing, fct)
-local p, sol, i;
+local p, sol, i, newtit;
     p:=collect(pol,x);
     if degree(p,x)<=2 then sol:=solve(pol,x)
-    else sol:=fsolve(pol, x, complex) fi;
+    else
+         sol:=[fsolve(pol, x, complex)];
+         # refine each of them by one Newton iteration 
+         # (fsolve leaves too many wrong digits at the end)
+         newtit:=proc(u) local res, oldDigits;
+                 oldDigits:=Digits;
+                 Digits:=2*Digits;
+                 res:=eval(x-pol/diff(pol,x),x=u);
+                 if has(res,Float(undefined)) then res:=eval(x-normal(pol/diff(pol,x)),x=u) fi;
+                 evalf(res,oldDigits) 
+         end;
+         sol:=op(map(newtit,sol))
+    fi;
     sol:={sol} minus {0};
-    if nargs>2 and minsing<>0 then
-	sol:=`infsing/infsolve/largerroots`(sol,evalf(minsing)) fi;
+    if nargs>2 and minsing<>0 then    
+        if not has(minsing,RootOf) then 
+	        sol:=`infsing/infsolve/largerroots`(sol,minsing)
+        else
+	        sol:=`infsing/infsolve/largerroots`(sol,evalf(minsing))
+        fi                                                           
+    fi;
     if nargs>3 then sol:=`infsing/infsolve/checkroots`(sol,fct,x) fi;
     if nargs>2 then sol:=`infsing/infsolve/smallest`(sol) fi;
     if sol=[infinity] or degree(p,x)<=2 then sol
@@ -263,7 +280,8 @@ end: # `infsing/infsolve/polynom`
 
 `infsing/infsolve/largerroots`:=proc(l,minsing)
 local i, j, res;
-    j:=0;
+    j:=0;                                 
+    Digits:=Digits-1; # because fsolve is not necessarily correct to the last digit
     for i to nops(l) do
 	if comparemodule(l[i],minsing)=`>` then j:=j+1; res[j]:=l[i] fi od;
     [seq(res[i],i=1..j)]

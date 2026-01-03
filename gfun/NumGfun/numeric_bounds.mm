@@ -99,7 +99,7 @@ bound_fundamental_solutions_exact_point := proc(deq, yofz, z0)
         return [0, 0, 1, 1, [], 1];
     end if:
     saved_mode := set_mode(numeric_mode);
-    bound_params, thr := bound_normal_diffeq:-doit(localnormaldeq, yofz);
+    bound_params, thr := bound_normal_diffeq(localnormaldeq, yofz);
     reset_mode(saved_mode);
     # To compute the first terms of the fundamental solutions at z0, which are
     # needed to determine the constant, we translate the diffeq *without
@@ -177,7 +177,7 @@ bound_fundamental_solutions := proc(deq, yofz, z0, approx_size := Digits, $)
             return bound_fundamental_solutions(deq, yofz, z0,
                                             approx_size + max(K, Digits));
         end if;
-        cst := rndu(orddiffeq(deq, y(z))/rndz(1-invtransbound));
+        cst := rndu(orddiffeq(deq, yofz)/rndz(1-invtransbound));
         cst := convert(cst, 'rational', 'exact');
         params := subsop(-1 = params[-1]*cst, params);
         res := [params, z->(delta+z)];
@@ -241,7 +241,7 @@ needed_terms := proc(deq, yofz, derivation_order, z0, Rad, epsilon,
         params, changevar := bound_fundamental_solutions(deq, yofz, z0);
     else
         # useful for testing
-        error("no more implemented!");
+        error("not implemented anymore!");
     end if;
     rad := rndu(Rad);  # XXX rigoureux ? 
     bound := bounds:-tail_bound(op(params), rad, n,

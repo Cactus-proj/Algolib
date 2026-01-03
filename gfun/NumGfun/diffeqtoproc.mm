@@ -92,7 +92,7 @@ proc_template := proc(path, prec := Digits)
             end if;
         end do;
     end if;
-    userinfo(4, 'gfun', "using multiprecision analytic continuation");
+    userinfo(2, 'gfun', "using multiprecision analytic continuation");
     ancont:-analytic_continuation(DEQ, Y(Z), path, prec);
 end proc:
 
@@ -119,14 +119,21 @@ end proc:
 # Compute the 'prec' first terms of the Taylor expansion at 'pt' of a solution
 # of 'deq' of the form y(pt+dz) = dz^sol_idx + O(dz^ordeq).
 basic_series_sol := proc(deq, yofz, pt, sol_idx, prec, $)
-    local y, z, ordeq, ini, k, sol, dz;
+    local y, z, ordeq, ini, k, sol, dz, mydeq, rec, u, n, coef;
     y, z := getname(yofz);
     ordeq := orddiffeq(deq, y(z));
-    ini := { (D@@sol_idx)(y)(pt) = sol_idx!, 
-              seq( (D@@k)(y)(pt) = 0, k in {$0..ordeq-1} minus {sol_idx} ) };
-    Order := prec;
-    sol := rhs(dsolve({bare_diffeq(deq, z), op(ini)}, yofz, 'series'));
-    sol := subs(z-pt = dz, sol);
+##  simple but too slow for large precisions
+#   ini := { (D@@sol_idx)(y)(pt) = sol_idx!, 
+#             seq( (D@@k)(y)(pt) = 0, k in {$0..ordeq-1} minus {sol_idx} ) };
+#   Order := prec;
+#   sol := rhs(dsolve({bare_diffeq(deq, z), op(ini)}, yofz, 'series'));
+#   sol := subs(z-pt = dz, sol);
+    mydeq := bare_diffeq(algebraicsubs(deq, y = z+pt, yofz), z);
+    ini := { (D@@sol_idx)(y)(0) = sol_idx!, 
+              seq( (D@@k)(y)(0) = 0, k in {$0..ordeq-1} minus {sol_idx} ) };
+    rec := diffeqtorec({mydeq, op(ini)}, yofz, u(n));
+    coef := rectoproc(rec, u(n), 'remember');
+    sol := add(coef(k)*dz^k, k = 0..prec-1);
     # faster to eval(..., z=...) than series
     sol := convert(convert(sol, 'polynom'), 'horner');
     subs(dz = z-pt, sol);

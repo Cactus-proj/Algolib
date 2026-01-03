@@ -21,6 +21,8 @@
 
 symbolic_bounds := module()
 
+global Coeftayl;
+
 export bound_rec_tail, bound_rec, bound_diffeq_tail, bound_diffeq,
     simplify_algebraic; 
 
@@ -34,7 +36,7 @@ end proc:
 bound_diffeq := proc(deq::hrdeq, yofz::function(name), z0 := 0)
     description "Computes a majorant series for the *power series* "
         "solutions of deq";
-    local y, z, kappa, T, alpha, K, A, n, maj, k, p, q, psibound, P;
+    local y, z, kappa, T, alpha, K, A, n, maj, k, p, q, psibound, P, coef, cst;
     y, z := getname(yofz);
     # special case for rational functions (see note in bound_rec below)
     if orddiffeq(deq, y(z)) = 0 then
@@ -45,18 +47,23 @@ bound_diffeq := proc(deq::hrdeq, yofz::function(name), z0 := 0)
     p := numer(kappa); q := denom(kappa);
     psibound := GAMMA(n/q+1)^p * q^(kappa*n);
     if kappa = 0 then
-        bounds:-normal_majorant_series_formula(T, alpha, K, P, A, z)
+        A * bounds:-normal_majorant_series_formula(T, alpha, K, P, z)
     elif kappa > 0 then
         WARNING("divergent bound");
-        maj := bounds:-normal_majorant_series_formula(T,alpha,K,P,A,z);
-        #value(Sum(psibound * Coeftayl(maj, z=0, n) * z^n, n=0..infinity));
-        Sum(psibound * Coeftayl(maj, z=0, n) * z^n, n=0..infinity);
+        maj := bounds:-normal_majorant_series_formula(T,alpha,K,P,z);
+        #A * value(Sum(psibound * Coeftayl(maj, z=0, n) * z^n, n=0..infinity));
+        A * Sum(psibound * Coeftayl(maj, z=0, n) * z^n, n=0..infinity);
     elif kappa = -infinity then
         A * add(z^k, k=0..K);
     else # kappa < 0
-        maj := bounds:-normal_majorant_series_formula(T,alpha,K,P,A,z);
+        maj := bounds:-normal_majorant_series_formula(T,alpha,K,P,z);
         #value(Sum(psibound * Coeftayl(maj, z=0, n) * z^n, n=0..infinity));
-        Sum(psibound * value(Coeftayl(maj, z=0, n)) * z^n, n=0..infinity);
+        coef :=  simplify(psibound * value(Coeftayl(maj, z=0, n)));
+        cst := 1;
+        if type(coef, `*`) then
+            cst, coef := selectremove(type, coef, 'constant');
+        end if;
+        A * cst * Sum(coef * z^n, n=0..infinity);
     end if;
 end proc:
 
@@ -74,11 +81,11 @@ bound_rec := proc(rec::hrrec, uofn::function(name))
     local kappa, T, alpha, K, A, u, n, p, q, psibound, P, y, z, deq;
     u, n := getname(uofn);
     # special case for constant coefficients (NB: it would be nice to detect
-    # this at the level of bound_normal_diffeq:-doit, but currently the output
+    # this at the level of bound_normal_diffeq, but currently the output
     # of bound_diffeq does not have the
     # right form)
     #
-    # FIXME: this fails if there is no initial conditions
+    # FIXME: this fails if there are no initial conditions
     if rec_has_constant_coefficients(rec, u, n) then
         deq := rectodiffeq(rec, u(n), y(z));
         return ratpolytocoeff(bound_ratpoly(solve(deq, y(z)), z),z,n);

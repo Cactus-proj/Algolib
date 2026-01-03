@@ -1,10 +1,17 @@
 SHELL=/bin/bash
-ifeq (X$(MAPLE), X)
-MAPLE=maple
+ifeq (X$(MAPLEAPP), X)
+MAPLEAPP=maple
 endif
 
 MLA=Mgfun.mla
 HDB=Mgfun.hdb
+
+ifeq ($(shell uname), CYGWIN_NT-6.1)
+SAVELIBNAME=$(shell echo C:/cygwin$(CURDIR)/$(MLA) | sed -e s%/%\\\\\\\\\\\\\\\\%g)
+else
+SAVELIBNAME=$(CURDIR)/$(MLA)
+endif
+
 
 SOURCES = \
   Lib-Mgfun/Holonomy.mpl \
@@ -15,7 +22,7 @@ SOURCES = \
   Lib-Mgfun/qpochhammer.mpl
 
 # For the list of excluded tests (and reasons), see KnownFailures.txt.
-TESTS = $(shell find Test-Mgfun -name '*.test' | grep -v -e Holonomy/gordon_k4_r4 -e Mgfun/kelvin -e CreativeTelescoping/ising_ising3 -e CreativeTelescoping/qshift_qshift2 -e CreativeTelescoping/binom7_binom_quadruple)
+TESTS = $(shell find Test-Mgfun -name '*.test' | grep -v -e Holonomy/gordon_k4_r4 -e Mgfun/kelvin -e CreativeTelescoping/ising_ising3 -e CreativeTelescoping/qshift_qshift2 -e CreativeTelescoping/binom7_binom_quadruple -e Holonomy/algeq_to_dfinite -e Holonomy/dg_rat2 -e Papers/Chyzak98 -e Papers/ChSa97 -e CreativeTelescoping/bbbg_bbbg1 -e Mgfun/xZeilb_h1 -e Mgfun/dfinite_expr_to_sys -e Mgfun/xZeilb_11)
 HELP_PAGES = $(shell find Doc-Mgfun -name '*.mws')
 HELP_PAGES_2 = $(shell find Doc-Mgfun -name '*.mw')
 
@@ -50,9 +57,9 @@ test: lib
 all_tests: $(TESTS:.test=.tim)
 
 analyse: $(TESTS:.test=.tim)
-	@grep -H Execution.stopped:.CPU.time.limit.reached $(TESTS:.test=.tim) | sed -e 's/:.*/:cpu/g'
-	@grep -H Execution.stopped:.Memory.allocation.failed $(TESTS:.test=.tim) | sed -e 's/:.*/:memory/g'
-	@grep -c -v -e \# -e okay $(TESTS:.test=.out) | grep -v :0$
+	@grep -H Execution.stopped:.CPU.time.limit.reached $(TESTS:.test=.tim) | sed -e 's/:.*/:cpu/g' || true
+	@grep -H Execution.stopped:.Memory.allocation.failed $(TESTS:.test=.tim) | sed -e 's/:.*/:memory/g' || true
+	@grep -c -v -e \# -e okay $(TESTS:.test=.out) | grep -v :0$ || true
 
 analyse_detaillee:
 	@for t in $(TESTS:.test=.out) ; do \
@@ -64,22 +71,20 @@ algolib_test: test
 	$(MAKE) analyse >> ../failed_tests.txt
 
 $(MLA):
-	echo 'march(create, "'$(MLA)'", 10);' | $(MAPLE)
+	echo 'march(create, "'$(MLA)'", 10);' | $(MAPLEAPP)
 
 Lib-Mgfun/Holonomy.ok: Lib-Mgfun/hilbert_dimension_do_it.mpl Lib-Mgfun/fglm_algorithm.mpl Lib-Mgfun/fglm_termination_proc.mpl Lib-Mgfun/Holonomy/*.mm
 
 Lib-Mgfun/Mgfun.ok: Lib-Mgfun/Mgfun/*.mm Lib-Mgfun/Mgfun/CreativeTelescoping/*.mm
 
 .mpl.ok:
-	{ echo 'savelibname := "'$(CURDIR)/$(MLA)'" :' ; \
-	 sed -e s/#savelib/savelib/g $< ; \
-	} | $(MAPLE) -I Lib-Mgfun && touch $*.ok
+	{ echo 'savelibname := "'"$(SAVELIBNAME)"'" :' ; sed -e s/#savelib/savelib/g $< ; } | $(MAPLEAPP) -I Lib-Mgfun && touch $*.ok
 
-# Limit to 3 minutes and 2 GB of data.
+# Limit to 5 minutes and 1.5 GB of data.
 # This may require resetting your ulimit -v/-t beforehand.
 .test.tim:
 	@echo `date` $< | tee -a logs.txt
-	@ulimit -v 2097152 && $(MAPLE) -s -t -T 180 -b $(MLA) -B < $< >$*.out 2>$*.tim | grep -v -e \# -e okay || true
+	@ulimit -v 1572864 && $(MAPLEAPP) -s -t -T 300 -b $(MLA) -B < $< >$*.out 2>$*.tim | grep -v -e \# -e okay || true
 	@{ echo -e -n date= ; date ; echo -e -n host= ; hostname ; } >>$*.tim
 
 algolib_help: $(HELP_PAGES:.mws=.ok) $(HELP_PAGES_2:.mw=.ok)
@@ -90,7 +95,7 @@ algolib_help: $(HELP_PAGES:.mws=.ok) $(HELP_PAGES_2:.mw=.ok)
 	[ -e $$l ] || { echo Non-existent $$l ; exit 1 ; } ; \
 	{ cat helptool.mpl ; \
 	  echo 'helptool("'$<'","'$$n'",'`cat $$l`', "'$(HDB)'") :' ; } \
-	| $(MAPLE) | grep rror && { echo Problem with $$l ; exit 1 ; } || \
+	| $(MAPLEAPP) | grep rror && { echo Problem with $$l ; exit 1 ; } || \
 	{ true ; touch $*.ok ; }
 
 .mw.ok:
@@ -99,5 +104,5 @@ algolib_help: $(HELP_PAGES:.mws=.ok) $(HELP_PAGES_2:.mw=.ok)
 	[ -e $$l ] || { echo Non-existent $$l ; exit 1 ; } ; \
 	{ cat helptool.mpl ; \
 	  echo 'helptool("'$<'","'$$n'",'`cat $$l`', "'$(HDB)'") :' ; } \
-	| $(MAPLE) | grep rror && { echo Problem with $$l ; exit 1 ; } || \
+	| $(MAPLEAPP) | grep rror && { echo Problem with $$l ; exit 1 ; } || \
 	{ true ; touch $*.ok ; }

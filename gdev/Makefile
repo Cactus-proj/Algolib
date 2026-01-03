@@ -1,5 +1,5 @@
-ifeq (X$(MAPLE), X)
-MAPLE=maple
+ifeq (X$(MAPLEAPP), X)
+MAPLEAPP=maple
 endif
 
 SRC=$(shell cat package_list.txt | while read n ; do echo $$n.mpl ; done)
@@ -31,13 +31,13 @@ algolib_test: testing
 
 $(MLA):
 	rm -f $@
-	echo "march('create', \"$@\", 150) ;" | $(MAPLE) -s -q
+	echo "march('create', \"$@\", 150) ;" | $(MAPLEAPP) -s -q
 
 .mpl.date:
-	sed -e 's/#savelib/savelib/g' $< | $(MAPLE) -s -q -e2 -b $(MLA) -B && touch $*.date
+	sed -e 's/#savelib/savelib/g' $< | $(MAPLEAPP) -s -q -e2 -b $(MLA) -B && touch $*.date
 
 .test.ok: $(MLA)
-	$(MAPLE) -s -t -b $(MLA) -B $< >$*.out 2>$*.tim
+	$(MAPLEAPP) -s -t -b $(MLA) -B $< >$*.out 2>$*.tim
 	grep -v -e \# -e okay $*.out || touch $*.ok
 
 algolib_help: $(HELP_PAGES:.mws=.ok)
@@ -48,5 +48,5 @@ algolib_help: $(HELP_PAGES:.mws=.ok)
 	[ -e $$l ] || { echo Non-existent $$l ; exit 1 ; } ; \
 	{ cat helptool.mpl ; \
 	  echo 'helptool("'$<'","'$$n'",'`cat $$l`', "'$(HDB)'") :' ; } \
-	| $(MAPLE) | grep rror && { echo Problem with $$l ; exit 1 ; } || \
+	| $(MAPLEAPP) | grep rror && { echo Problem with $$l ; exit 1 ; } || \
 	{ true ; touch $*.ok ; }

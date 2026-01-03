@@ -430,7 +430,7 @@ GFUN_HIDDEN:={
 # The minor number is meant to be a two-digit number, so the
 # floating-point value is meant to be incremented by .01 at
 # each new version.  It is printed by the format "%.2f".
-   version := 3.50:
+   version := 3.53:
    optionsgf := ['ogf','egf']:
    maxordereqn := infinity: # default 3rd order
    minordereqn := 1: # default 1st order

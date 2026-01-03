@@ -1,5 +1,5 @@
-ifeq (X$(MAPLE), X)
-MAPLE=maple
+ifeq (X$(MAPLEAPP), X)
+MAPLEAPP=maple
 endif
 
 SOURCES=regexpcount.mpl
@@ -23,8 +23,8 @@ algolib_test: testing
 	for n in $(TESTS:.test=.ok) ; do [ -e $$n ] || echo regexpcount/$$n ; done >> ../failed_tests.txt
 
 .mpl.date:
-	sed -e 's/#savelib/savelib/g' $< | $(MAPLE) -s -q -e2 -b $(MLA) -B && touch $*.date
+	sed -e 's/#savelib/savelib/g' $< | $(MAPLEAPP) -s -q -e2 -b $(MLA) -B && touch $*.date
 
 .test.ok: $(MLA)
-	$(MAPLE) -s -t -b $(MLA) -B $< >$*.out 2>$*.tim
+	$(MAPLEAPP) -s -t -b $(MLA) -B $< >$*.out 2>$*.tim
 	grep -v -e \# -e okay $*.out || touch $*.ok

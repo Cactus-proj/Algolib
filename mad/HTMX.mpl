@@ -48,9 +48,9 @@
 ### The package 'HTMX' implements a translator from the DOC
 # format to HTMX. HTMX is a format that mixes HTML and LaTeX
 # (http://www.math.uic.edu/~fields/htmx). The math mode is
-# deferred to the package 'LaTeX'; options for the math mode
-# ('MathStyle') can be set independently of 'LaTeX', however 
-# the table of LaTeX symbols is shared across both packages.
+# deferred to the package 'MADLaTeX'; options for the math mode
+# ('MathStyle') can be set independently of 'MADLaTeX', however 
+# the table of MADLaTeX symbols is shared across both packages.
 # The text mode produces HTML4.0; see html.macros.mpl.
 ############################################################
 ############################################################
@@ -198,7 +198,7 @@ export
 ############################################################
 FormatNumbering := proc(x)
     _OPTION;
-    LaTeX:-FormatNumbering(x);
+    MADLaTeX:-FormatNumbering(x);
 end;	# FormatNumbering
 #>>>########################################################
 #<<<########################################################
@@ -361,15 +361,15 @@ TranslateMath := proc(x)
 	    endblk := "</td>\n",`if`(`style/equationnumbering`='right',num,NULL),
 		"</tr>\n</table>\n";
 	fi;
-	# remove label for LaTeX
+	# remove label for MADLaTeX
 	y := subsop(1='VOID',x);
 	
 	_OUT_STRING(begblk,beganc,"<latex class=\"equation\">",CommonLib:-WithLocalOptions(mylatexmathstyle,
-	    LaTeX:-MathStyle,LaTeX:-TranslateMath,y),"</latex>",endanc,endblk);
+	    MADLaTeX:-MathStyle,MADLaTeX:-TranslateMath,y),"</latex>",endanc,endblk);
 
     else### &imath(MADseq)
 	_OUT_STRING("<latex class=\"equation-inline\">",CommonLib:-WithLocalOptions(mylatexmathstyle,
-	    LaTeX:-MathStyle,LaTeX:-TranslateMath,x),"</latex>");
+	    MADLaTeX:-MathStyle,MADLaTeX:-TranslateMath,x),"</latex>");
     fi;
 end;	# TranslateMath
 #>>>########################################################
@@ -387,8 +387,8 @@ end:	# moduleinit
 #<<<########################################################
 # @scope=export
 ### Description: the function 'HTMX:-TranslateMath' is
-# implemented on top of 'LaTeX:-TranslateMath'. In particular,
-# when the options are set trough 'LaTeX:-MathStyle', they also
+# implemented on top of 'MADLaTeX:-TranslateMath'. In particular,
+# when the options are set trough 'MADLaTeX:-MathStyle', they also
 # apply for 'HTMX:-TranslateMath'. Thus, the following procedure
 # allows to set options for both packages independently.
 ############################################################
@@ -396,7 +396,7 @@ MathStyle := proc()
     _OPTION;
     # 'mylatexmathstyle' MUST passed by NAME (assignment)
     CommonLib:-WithLocalOptions('mylatexmathstyle',
-	LaTeX:-MathStyle,LaTeX:-MathStyle,args);
+	MADLaTeX:-MathStyle,MADLaTeX:-MathStyle,args);
 end;	# MathStyle
 #>>>########################################################
 ### END FUNCTIONS #############################
@@ -410,10 +410,10 @@ end;	# MathStyle
 # @exportvar=UndefineMathSymbol
 # @exportvar=DefineMathKeyword
 # @exportvar=UndefineMathKeyword
-DefineMathSymbol := LaTeX:-DefineMathSymbol;
-UndefineMathSymbol := LaTeX:-UndefineMathSymbol;
-DefineMathKeyword := LaTeX:-DefineMathKeyword;
-UndefineMathKeyword := LaTeX:-UndefineMathKeyword;
+DefineMathSymbol := MADLaTeX:-DefineMathSymbol;
+UndefineMathSymbol := MADLaTeX:-UndefineMathSymbol;
+DefineMathKeyword := MADLaTeX:-DefineMathKeyword;
+UndefineMathKeyword := MADLaTeX:-UndefineMathKeyword;
 #>>>########################################################
 #<<<########################################################
 # @sharevar=`HTMX/CSSTable`::table[string]::{string,VOID}
@@ -562,7 +562,7 @@ TextSymbol[`&sp`] := " ";
 # @sharevar=mylatexmathstyle
 ### Initialization:
 # @rawinclude
-mylatexmathstyle := CommonLib:-CopyOptions(LaTeX:-MathStyle);
+mylatexmathstyle := CommonLib:-CopyOptions(MADLaTeX:-MathStyle);
 #>>>########################################################
 #<<<########################################################
 # @exportvar=FileExtension

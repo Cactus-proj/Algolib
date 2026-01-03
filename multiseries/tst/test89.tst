@@ -40,7 +40,7 @@
        if s1=s2 then true
        elif type([s1,s2],list(specfunc(anything,'Series'))) then
    	evalb(	    (op(5,s1)=op(5,s2) or Testzero(op(5,s1)-op(5,s2))) and
-   	    Testzero(op(7,s1)-op(7,s2)) and
+   	    Testzero(op(op(7,s1))-op(op(7,s2))) and
    	    map(Testzero,{seq(op([4,i],s1)-op([4,i],s2),i=1..nops(op(4,s1)))})
    		={true} and
    	    {seq(procname(op([1,i],s1),op([1,i],s2)),i=1..nops(op(1,s1)))}
@@ -61,7 +61,7 @@
     Series([Series([4/9/(ln(1+ln(1-14/5*ln(4/3)*_var[1/ln(x)])/
     (1/_var[1/ln(ln(x))]+ln(5/14)))+ln(1+ln(5/14)*_var[
     1/ln(ln(x))])+1/_var[1/ln(ln(ln(x)))])^(7/6)],0,algebraic,[0],
-    infinity,rational,_var[1/x],4/9/(ln(1+ln(1-14/5*ln(4/3)*
+    infinity,integer,_var[1/x],4/9/(ln(1+ln(1-14/5*ln(4/3)*
     _var[1/ln(x)])/(1/_var[1/ln(ln(x))]+ln(5/14)))+
     ln(1+ln(5/14)*_var[1/ln(ln(x))])+1/_var[
     1/ln(ln(ln(x)))])^(7/6))],0,t_SERIES,[-1],infinity,integer,_var[1/exp(exp(1/136*(340*x^8*(1/x)^(809/495)+357*x^(713/77)*

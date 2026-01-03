@@ -31,7 +31,7 @@ bound_ratpoly_int := proc(rat::ratpoly, x)
         type,
         map(ceil, critical) union map(floor, critical) union {0},
         'nonnegative');
-    max( seq(eval(rat, x=i), i in candidates) );
+    max( seq(abs(eval(rat, x=i)), i in candidates) );
 end proc:
 
 bound_ratpoly_on_disk := proc(rat::ratpoly, z::name, radius::realcons, $)::realcons;

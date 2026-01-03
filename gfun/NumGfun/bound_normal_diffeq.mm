@@ -33,9 +33,9 @@ local n, y, z, ordeq;  # names shared by all functions
 
 export
     # to ease debug
-    rewrite_diffeq, bound_coefficients, reduce_order, fit_initial_values,
+    rewrite_diffeq, bound_coefficients, reduce_order, fit_initial_values, doit,
     # really public
-    doit;
+    ModuleApply;
 
 # Rewrite deq as a polynomial in (z,theta) and isolate the coefficient of z^0
 rewrite_diffeq := proc(deq, $)
@@ -49,8 +49,10 @@ rewrite_diffeq := proc(deq, $)
         c[k] := eval(rat, z=0);
         a[k] := normal((rat - c[k])/z);
     end do;
-    userinfo(5, 'gfun',  sprintf("differential equation rewritten as %a",
-        add(c[k]*theta^k, k=0..ordeq).y = add(a[k].theta^k,  k=0..ordeq-1).y ));
+    userinfo(5, 'gfun',
+        sprintf("differential equation rewritten as (%a)y = z*(%a)y", 
+        sort(add(c[k]*theta^k, k=0..ordeq),theta),
+        add(a[k].theta^k,  k=0..ordeq-1) ));
     a, c;
 end proc:
 
@@ -114,12 +116,12 @@ reduce_order := proc(c, mu, M, $)
     K, N;
 end proc:
 
-
-# Input: deq
+# Input: deq (Note: 'numeric' is not used explicitly but forces cache table
+#   entries to take into account 'numeric_mode'; see ModuleApply below)
 # Output: parameters of a majorant series 'maj' and threshold 'validity' such
 #   that, IF abs([z^n](sol of deq)) <= A*[z^n](maj) for n <= validity, THEN
 #   sol <| A*maj
-doit := proc(deq, yofz, $)
+doit := proc(deq, yofz, numeric, $)
     option cache;
     local a, c, mu, T, M, P, K, validity, below_maj, A, alpha, my_alpha, maj;
     userinfo(5, 'gfun', "deq" = deq);
@@ -137,14 +139,20 @@ doit := proc(deq, yofz, $)
     end if:
     K, validity    := reduce_order(c, mu, M);
     #my_alpha       := below(1/abs(evalf(mu)));
-    #below_maj      := normal_majorant_series_formula(T, my_alpha, K, P, 1, z);
+    #below_maj      := normal_majorant_series_formula(T, my_alpha, K, P, z);
     #A              := fit_initial_values(below_maj, head, validity);
     #A, P           := get_rid_of_P(T, my_alpha, K, P, 1, z);
     ###
     alpha := abs(1/mu);  # what is the right place to do this?
-    maj := bounds:-normal_majorant_series_formula(T, alpha, K, P, 1, z);
+    maj := bounds:-normal_majorant_series_formula(T, alpha, K, P, z);
     userinfo(4, 'gfun', 'majorant' = evalf[5](maj));
     [T, alpha, K, P], validity; # sorted by `importance'
+end proc:
+
+# Wrapper around doit to make cache table entries depend on numeric_mode.
+ModuleApply := proc(deq, yofz, $)
+    # NO option cache here
+    doit(deq, yofz, numeric_mode);
 end proc:
 
 end module:

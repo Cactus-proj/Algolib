@@ -28,7 +28,12 @@
                  minus {y(0),'D(y)(0)'})};
          ini:=[y(0)=u(0),'D(y)(0)'=u(1),seq(`@@D`(i,y,0)=u(i)*i!,i=l)];
          r:=subs(ini,R); ini:=subs(ini,iniconds)
-      else r:=R; ini:={} end if;
+      else 
+          r:=R;
+          # This was ini:={} but that did not distinguish between
+          # no initial conditions known or none desired.
+          ini:={} 
+      end if;
       # In very special cases, this loop makes it possible to return
       # an inhomogeneous equation of lower order.
       # Ex: z*(-1+z)^3*(D@@2)(y)(z)+(-1+z)^3*D(y)(z)-(-1+z)^3*y(z)-z*(z-3)

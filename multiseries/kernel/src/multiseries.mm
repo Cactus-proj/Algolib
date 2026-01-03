@@ -128,5 +128,8 @@ end proc :                            # multiseries/multiseries
     subsop(4=NULL,op('`multiseries/run`'));
     subsop(4=NULL,op('`multiseries/CommonType`'));
     subsop(4=NULL,op('`multiseries/lastchancetestzero`'));
-    unassign('`multiseries/possiblezero`')
+    unassign('`multiseries/possiblezero`');
+### Try this in all cases, but really necessary only
+### in presence of parameters.
+    subsop(4=NULL,op(newscale))
 end:

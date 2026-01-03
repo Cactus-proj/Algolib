@@ -142,6 +142,9 @@ for rec in [
     ##
     { (n+2)*(n+3)*u(n) = (7*n^2+7*n-2)*u(n-1) + 8*(n-1)*(n-2)*u(n-2),
         u(0)=1, u(1)=1 }, # Buxter
+    ## this used to trigger a bug related to multiplicities in dominant_root
+    { 25*u(n)+(-30*n-36-6*n^2)*u(n+2)+(128+14*n^3+72*n^2+160*n+n^4)*u(n+4),
+        u(0) = 1, u(1) = 0, u(2) = 3/4, u(3) = 0},
     NULL]
 do
     # FIXME: depuis l'introduction des parties polynomiales, testrecbound échoue

@@ -107,6 +107,16 @@ S:=gfun:-listtoseries(L,z);
 TestTools:-Try[testerror](12,
 gfun:-seriestorec(S,u(n)),"not a list of ratpoly over the rationals: ");
 
+# Change in 3.51, added an option ini=false to diffeqtorec
+deq:={-19*y(x)+(x+37)*diff(y(x),x)+(-2*x-18)*diff(diff(y(x),x),x)+x*diff(diff(diff(y(x),x),x),x), y(0
+) = 0, D(y)(0) = 1/19, `@@`(D,2)(y)(0) = 37/342}:
+TestTools:-Try[testerror](13,
+gfun:-diffeqtorec(deq,y(x),u(n)),
+"no valid initial conditions");
+TestTools:-Try(14,
+gfun:-diffeqtorec(deq,y(x),u(n),ini=false),
+(-19+n)*u(n)+(35*n+37-2*n^2)*u(n+1)+(-15*n^2-52*n-36+n^3)*u(n+2)
+);
 
 #end test
                        

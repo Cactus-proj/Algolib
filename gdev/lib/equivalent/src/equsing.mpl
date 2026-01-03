@@ -27,7 +27,7 @@
 ##################################################
 
 `equivalent/equsing`:=proc(fct,Sing,palg,pdev,x,typesing)
-local i,res, devint, resint, f, ord, nextsing, sing, p, mult, j, mmult, remdev, found, root, co;
+local i,res, devint, resint, f, ord, nextsing, sing, p, mult, j, mmult, remdev, found, root, co, newres;
     res:=0;
     _EnvXasyinteger:=true;
     sing:=Sing;
@@ -177,14 +177,17 @@ local i,res, devint, resint, f, ord, nextsing, sing, p, mult, j, mmult, remdev, 
     		nextsing:=infsing(fct,x,abs(sing[1]));
     		if nextsing[1]<>[] and nextsing[1][1]<>infinity and
     		nextsing[2]<>'essential' then
-    		if res[1]=1 and res[-1]<>infinity then
-    		    res:=subsop(-2=0,-1=infinity,res)
-    		elif res[1]=0 and res[-2][-1]<>infinity then
-    		    res:=subsop(-2=subsop(-2=NULL,-1=NULL,res[-2]),
-    			-1=(res[-1],0,infinity),res)
-    		fi;
-    		`dev/add`(res,`equivalent/equsing`(fct,nextsing[1],
-    		    (palg-`dev/length`(res)+1)$2,x,nextsing[2]))
+    		newres:=`equivalent/equsing`(fct,nextsing[1],
+    		    (palg-`dev/length`(res)+1)$2,x,nextsing[2]);
+    		if newres<>0 then # 0 happens for singularities that are canceled by a numerator
+            		if res[1]=1 and res[-1]<>infinity then
+            		    res:=subsop(-2=0,-1=infinity,res)
+            		elif res[1]=0 and res[-2][-1]<>infinity then
+            		    res:=subsop(-2=subsop(-2=NULL,-1=NULL,res[-2]),
+            			-1=(res[-1],0,infinity),res)
+            		fi;
+            		`dev/add`(res,newres)
+            	else res fi;
     	        else res
     		fi
 	    catch: res

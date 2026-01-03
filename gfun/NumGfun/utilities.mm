@@ -19,23 +19,37 @@
 ## utilities.mm
 ## Marc Mezzarobba, Algorithms project, INRIA Rocquencourt
 
-# Utilities can not be a module (at least, a submodule of NumGfun), beacuse we
-# want its exports to be available to other submodules under their unqualified
-# name, but 'use foo' works only when foo is a fully constructed module, which
-# does not seem to be the case until the end of the definition of foo's
-# englobing module(s). (Did I already say how much I like the Maple
+# Utilities can not be just a module (at least, a submodule of NumGfun), beacuse
+# we want its exports to be available to other submodules under their
+# unqualified name, but 'use foo' works only when foo is a fully constructed
+# module, which does not seem to be the case until the end of the definition of
+# foo's englobing module(s). (Did I already say how much I like the Maple
 # "programming" language?)
 
-#utilities := module()
-
-# these would be exported if utilities was a submodule
+# Those utility functions that we want to make available without the utilities:-
+# prefix.  Right now, these are just the exports of the module utilities below.
+# Assignments are after the definition.
 local evalf_rnd, rndu, rndz, rndd, rndn, rndi, upper, lower, below, above,
     ratabove, evalf_absolute_error, evalf_complex_absolute_error,
     ndmatrix_approximation, thetadeq, diffeq_for_derivative, getname,
     make_fresh_name_generator, ordfrec, orddiffeq, ordrec,
     rec_has_constant_coefficients, read_diffeq, read_rec, diffeq_lcoeff,
-    diffeq_singularities, diffeq_infsing, bare_diffeq, simplify_RootOf,
-    set_mode, reset_mode, call, argmax, falling_factorial,
+    diffeq_singularities, diffeq_infsing, bare_diffeq, bare_rec,
+    simplify_RootOf, set_mode, reset_mode, call, argmax, falling_factorial,
+    colinear, ratbelow, Digits_plus, bound_abs_interval, sprint_small_approx;
+
+utilities := module()
+
+option package;
+
+# these would be exported if utilities was a submodule
+export evalf_rnd, rndu, rndz, rndd, rndn, rndi, upper, lower, below, above,
+    ratabove, evalf_absolute_error, evalf_complex_absolute_error,
+    ndmatrix_approximation, thetadeq, diffeq_for_derivative, getname,
+    make_fresh_name_generator, ordfrec, orddiffeq, ordrec,
+    rec_has_constant_coefficients, read_diffeq, read_rec, diffeq_lcoeff,
+    diffeq_singularities, diffeq_infsing, bare_diffeq, bare_rec,
+    simplify_RootOf, set_mode, reset_mode, call, argmax, falling_factorial,
     colinear, ratbelow, Digits_plus, bound_abs_interval, sprint_small_approx;
 
 # ...while these should remain local (or even become local to new, smaller
@@ -276,10 +290,12 @@ ordrec := proc(eq, fofx)::nonnegint;
 end proc:
 
 rec_has_constant_coefficients := proc(rec, u, n)
-    local tmp;
+    local tmp, dummy;
     not member(n, indets(
         subs(
-            {seq(tmp=NULL, tmp in indets(rec, 'specfunc'('linear'(n),u)))},
+            {seq(
+                tmp=subs(n=dummy,tmp),
+                tmp in indets(rec, 'specfunc'('linear'(n),u)))},
             rec)));
 end proc:
 
@@ -308,7 +324,9 @@ end proc;
 
 diffeq_singularities := proc(deq, yofz)
     option cache;
-    [fsolve(diffeq_lcoeff(deq,yofz), op(yofz), 'complex')];
+    # Ignore the singularity at the origin to allow evaluating Si and Shi.
+    remove(x -> abs(x) < Float(1, 2-Digits),
+        [fsolve(diffeq_lcoeff(deq,yofz), op(yofz), 'complex')]);
 end proc;
 
 diffeq_infsing := proc(deq, yofz, {numeric := numeric_mode})
@@ -329,8 +347,16 @@ bare_diffeq := proc(deq, z_or_yofz, $)
         deq);
 end proc:
 
+bare_rec := proc(rec, n_or_uofn, $)
+    option inline;
+    `if`(type(rec, 'set'),
+        # rec needs not contain "u(n)", but op(n) = n
+        op(select(has, rec, op(n_or_uofn))),
+        rec);
+end proc:
+
 ################################################################################
-## RootOf's
+## RootOfs
 ################################################################################
 
 # This could be improved. But a less naive version must exist somewhere...
@@ -464,4 +490,46 @@ sprint_small_approx := proc(x)
     end if;
 end proc:
 
-#end module:
+end module:
+
+
+evalf_rnd                     := utilities:-evalf_rnd                    ;
+rndu                          := utilities:-rndu                         ;
+rndz                          := utilities:-rndz                         ;
+rndd                          := utilities:-rndd                         ;
+rndn                          := utilities:-rndn                         ;
+rndi                          := utilities:-rndi                         ;
+upper                         := utilities:-upper                        ;
+lower                         := utilities:-lower                        ;
+below                         := utilities:-below                        ;
+above                         := utilities:-above                        ;
+ratabove                      := utilities:-ratabove                     ;
+evalf_absolute_error          := utilities:-evalf_absolute_error         ;
+evalf_complex_absolute_error  := utilities:-evalf_complex_absolute_error ;
+ndmatrix_approximation        := utilities:-ndmatrix_approximation       ;
+thetadeq                      := utilities:-thetadeq                     ;
+diffeq_for_derivative         := utilities:-diffeq_for_derivative        ;
+getname                       := utilities:-getname                      ;
+make_fresh_name_generator     := utilities:-make_fresh_name_generator    ;
+ordfrec                       := utilities:-ordfrec                      ;
+orddiffeq                     := utilities:-orddiffeq                    ;
+ordrec                        := utilities:-ordrec                       ;
+rec_has_constant_coefficients := utilities:-rec_has_constant_coefficients;
+read_diffeq                   := utilities:-read_diffeq                  ;
+read_rec                      := utilities:-read_rec                     ;
+diffeq_lcoeff                 := utilities:-diffeq_lcoeff                ;
+diffeq_singularities          := utilities:-diffeq_singularities         ;
+diffeq_infsing                := utilities:-diffeq_infsing               ;
+bare_diffeq                   := utilities:-bare_diffeq                  ;
+bare_rec                      := utilities:-bare_rec                     ;
+simplify_RootOf               := utilities:-simplify_RootOf              ;
+set_mode                      := utilities:-set_mode                     ;
+reset_mode                    := utilities:-reset_mode                   ;
+call                          := utilities:-call                         ;
+argmax                        := utilities:-argmax                       ;
+falling_factorial             := utilities:-falling_factorial            ;
+colinear                      := utilities:-colinear                     ;
+ratbelow                      := utilities:-ratbelow                     ;
+Digits_plus                   := utilities:-Digits_plus                  ;
+bound_abs_interval            := utilities:-bound_abs_interval           ;
+sprint_small_approx           := utilities:-sprint_small_approx          ;

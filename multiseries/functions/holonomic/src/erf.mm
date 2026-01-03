@@ -16,24 +16,6 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-# Copyright (C) 1991--2010 by INRIA.
-#
-# This file is part of Algolib.
-#
-# Algolib is free software: you can redistribute it and/or modify it
-# under the terms of the GNU Lesser General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-#
-# Algolib is distributed in the hope that it will be useful, but
-# WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Lesser General Public License for more details.
-#
-# You should have received a copy of the GNU Lesser General Public
-# License along with Algolib.  If not, see
-# <http://www.gnu.org/licenses/>.
-
 ### The difference wrt to the generated one is that there is only one auxilliary function, known to be odd.
 `multiseries/function`[`erf/infinity/aux/1/-1/2*Pi .. 1/2*Pi`, 0, "BasisVector", 0]:=proc (n) option `Copyright (c) 2004 by Ludovic Meunier and the Algorithms Project, INRIA. All rights reserved. - generated 10/26/2004 @ 23:24:49`; [0, `multiseries/function`[`erf/infinity/aux/1/-1/2*Pi .. 1/2*Pi`,0,"CoeffProc"](n,0)] end proc:
 `multiseries/function`[`erf/infinity/aux/1/-1/2*Pi .. 1/2*Pi`, 0, "CoeffProc", 0]:=proc (n) option `Copyright (c) 2004 by Ludovic Meunier and the Algorithms Project, INRIA. All rights reserved. - generated 10/26/2004 @ 23:24:49`; `multiseries/function`[`erf/infinity/aux/1/-1/2*Pi .. 1/2*Pi`,0,"CoeffProc"](n,0) end proc:

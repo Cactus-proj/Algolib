@@ -107,15 +107,12 @@ TryEval(3.3,
 
 ## 4. Misc
 
-# too slow for now
-
 # orddeq=11, ordrec=9
-# ajouer une limite de temps ?
-#TryEval(4.1,
-#    eq(arctan(z) + log(1/(1-z)) + exp(z)),
-#    [0,1/30,(1+I)/30,I/30],
-#    subs(z=I/30, arctan(z) + log(1/(1-z)) + exp(z)),
-#    30);
+TryEval(4.1,
+    eq(arctan(z) + log(1/(1-z)) + exp(z)),
+    [0,1/30,(1+I)/30,I/30],
+    subs(z=I/30, arctan(z) + log(1/(1-z)) + exp(z)),
+    30);
 
 # rec with constant coefficients
 TryEval(4.2,
@@ -194,6 +191,13 @@ TryEval(7.5,  # subdivide_path used to loop
   [1+5*I],
   1.53088133393877796128+.19442614214700209103*I,
   10);
+
+TryEval(7.6,  # similar issue
+  {(z - (1+I/100))*diff(y(z),z) = 2*z*y(z), y(0)=1},
+  [0,2],
+  51.2526832902 - 2.0511329801*I,
+  10);
+
 
 ## 8. transition_matrix
 

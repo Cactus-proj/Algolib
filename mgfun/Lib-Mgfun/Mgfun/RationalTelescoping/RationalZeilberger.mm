@@ -91,10 +91,10 @@ RationalZeilberger := module()
 ###############################################################
 # Name: ParadGosper
 # Calling sequence:
-#         ParadGosper(rN, e, del, L, de, Dx)
+#         ParadGosper(rN, e, del, L, de, x, y, Dx)
 #
 ###############################################################
-ParadGosper := proc(rN, e, del, L, de, Dx)
+ParadGosper := proc(rN, e, del, L, de, x, y, Dx)
     local s, c, eqn, var, M, rk, p, tele, cer, pva, pva1, pva2,
           sol, ev, ev1, ev2, roll, j, tt;
     
@@ -236,9 +236,12 @@ RatTelescoping := proc(f, x, y, Dx)
    N[0] := P;
    rN := e[0]*P;
    iden := A*Cm*Bm;
-   R := ParadGosper(rN, [e[0]], eval(delL, k=0), [a, eval(b, k=0)], iden, Dx);
+   R := ParadGosper(rN, [e[0]], eval(delL, k=0), [a, eval(b, k=0)], iden, x, y, Dx);
    if nops(R) = 2 then
-      return [1, normal(poly + R[2])]
+          L := primpart(R[1], Dx, 'cL');
+	  g := normal((ApplyL(R[1], poly, x, Dx) + R[2])/cL);
+          return [L, g]
+          #return [1, normal(poly + R[2])]
    end if;
    
    for i from 1 to ord do
@@ -246,10 +249,10 @@ RatTelescoping := proc(f, x, y, Dx)
        N[i] := normal(normal(diff(N[i-1], x)*ACs)-normal(N[i-1]*normal(i*dACs + ACd)));
        rN := normal(e[i]*N[i] + ACs*rN);
        iden := iden*ACs;
-       R := ParadGosper(rN, [seq(e[j], j=0..i)], eval(delL, k=i), [a, eval(b, k=i)], iden, Dx);
+       R := ParadGosper(rN, [seq(e[j], j=0..i)], eval(delL, k=i), [a, eval(b, k=i)], iden, x, y, Dx);
        if nops(R) = 2 then
 	      L := primpart(R[1], Dx, 'cL');
-		  g := normal((ApplyL(R[1], poly, x, Dx) + R[2])/cL);
+	      g := normal((ApplyL(R[1], poly, x, Dx) + R[2])/cL);
           return [L, g]
        end if;
    end do; 

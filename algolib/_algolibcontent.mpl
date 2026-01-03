@@ -16,10 +16,10 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-`algolib/version` := "13.0" :
+`algolib/version` := "14.0" :
 
 _algolibcontent := 'printf("\
-Content of algolib (version %s), as of March 2010:\n\n\
+Content of algolib (version %s), as of October 2010:\n\n\
 + encyclopedia.\t\t\t[Written by Stéphanie Petit, with contributions by Bruno Salvy and Michèle Soria.]\n\
 + gdev.\t\t\t\t[Written by Bruno Salvy.]\n\
 + gfun (version %.2f).\t\t[Maintained and extended by Bruno Salvy, with contributions by Ludovic Meunier, Marc Mezzarobba, Marni Mishna, and Eithne Murray, original version by Bruno Salvy and Paul Zimmermann.]\n\

@@ -46,16 +46,16 @@
 ############################################################
 ### Package level description
 ############################################################
-### The package 'LaTeX' is a subset of the unmaintained
+### The package 'MADLaTeX' is a subset of the unmaintained
 # package 'amslatex' (see ../old/amslatex) and it implements
-# a translator for the DOC format into LaTeX (requiring the
+# a translator for the DOC format into MADLaTeX (requiring the
 # AMS LaTeX packages). The DOC format is described and
 # partially implemented in 'DocumentGenerator'. Although the
-# package 'LaTeX' is standalone, it is designed to be used
+# package 'MADLaTeX' is standalone, it is designed to be used
 # from within 'DocumentGenerator' as a translator. In
-# particular, the output of the routines of 'LaTeX' 
+# particular, the output of the routines of 'MADLaTeX' 
 # (tree of strings) requires some processing.
-# As the package 'DocumentGenerator', 'LaTeX' is divided into
+# As the package 'DocumentGenerator', 'MADLaTeX' is divided into
 # a math mode and a text mode.
 ############################################################
 ### Math mode: the math mode features automatic line-breaking
@@ -119,7 +119,7 @@
 # need any update.
 ############################################################
 ### Text mode: the framework is implemented by the package
-# 'DocumentGenerator' and the implementation for 'LaTeX'
+# 'DocumentGenerator' and the implementation for 'MADLaTeX'
 # is straightforward (see TranslateText.mpl).
 ############################################################
 ############################################################
@@ -252,7 +252,7 @@ $define _ENV_END	"}"
 #<<<###########################################
 ### @exit
 ### Generated: 04/16/2007 19:12:24
-### Module name: LaTeX
+### Module name: MADLaTeX
 #>>>###########################################
 
 #<<<########################################################
@@ -261,7 +261,7 @@ $define _LATEX_COMMENT(X)	`&sequence`("%% ",X,"\n")
 $define _LATEX_COMMENTSTR(X)	`&string`("%% ",X,"\n")
 #>>>########################################################
 ### BEGIN MODULE ##############################
-LaTeX := module()
+MADLaTeX := module()
 	option `Copyright (c) 2001-2007 INRIA. All rights reserved.`,package, load=moduleinit;
 ### BEGIN DECLARATION #########################
 local
@@ -361,7 +361,7 @@ export
 	UndefineMathSymbol,
 	latex;
 global
-	`type/LaTeX/atomic`;
+	`type/MADLaTeX/atomic`;
 ### END DECLARATION ###########################
 
 ### BEGIN FUNCTIONS ###########################
@@ -488,7 +488,7 @@ end:	# `line/cat`
 #<<<########################################################
 # @scope=export
 ### Description: format `DocumentGenerator/Numbering`
-# into LaTeX.
+# into MADLaTeX.
 ### Output format::string
 ############################################################
 FormatNumbering := proc(x)
@@ -606,7 +606,7 @@ end:	# `&decoratedsym/width`
 # @scope=local
 ### Argument sequence
 #	l: line
-#	x::`LaTeX/atomic`
+#	x::`MADLaTeX/atomic`
 ### Output format::line
 ### Description: wrapper for atomic types with new interface
 ############################################################
@@ -1062,7 +1062,7 @@ end:	# `fraction/width`
 ############################################################
 `typeid/kernel` := proc(x)
     # atomic types
-    if type(x,`LaTeX/atomic`) then
+    if type(x,`MADLaTeX/atomic`) then
 	[`atomic/width`,`atomic/string`];
     # environments
     elif op(0,x) = `&decoratedsym` then
@@ -1171,7 +1171,7 @@ end:	# `line/offset`
 #<<<########################################################
 # @scope=local
 ### Description: compute width of an object of type 
-# `LaTeX/atomic`
+# `MADLaTeX/atomic`
 ############################################################
 `atomic/width` := proc(x)
     if type(x,'integer') then `integer/width`(x);
@@ -1261,7 +1261,7 @@ end:	# `integer/width`
 #<<<########################################################
 # @scope=export
 ### Description: translate DOC math mode AND switches to
-# math mode in LaTeX.
+# math mode in MADLaTeX.
 ### Argument sequence:
 #	x::DOC
 ############################################################
@@ -1357,12 +1357,12 @@ end:
 ### Output format::boolean
 ### Description: type checking
 ############################################################
-`type/LaTeX/atomic` := proc(x)
+`type/MADLaTeX/atomic` := proc(x)
     # This MUST be the same type as `DocumentGenerator/Atomic`;
     # this latter type is not used however, such that the
-    # package 'LaTeX' is standalone.
+    # package 'MADLaTeX' is standalone.
     type(x,{'integer','fraction','float','symbol'});
-end:	# `type/LaTeX/atomic`
+end:	# `type/MADLaTeX/atomic`
 #>>>########################################################
 #<<<########################################################
 # @scope=local
@@ -2597,4 +2597,4 @@ end;
 end:
 ### END MODULE #################################
 #SAVELIBNAME
-#savelib('`type/LaTeX/atomic`','LaTeX'):
+#savelib('`type/MADLaTeX/atomic`','MADLaTeX'):

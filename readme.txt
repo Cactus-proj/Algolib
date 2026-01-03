@@ -6,7 +6,7 @@ The current maintainers are:
 - Bruno Salvy (bruno.salvy@inria.fr), mainly for gfun
 
 VERSION
-The present version, 13.0, is intended to run under Maple13 and should work with Maple14.
+The present version, 14.0, is intended to run under Maple14.
 
 INSTALLATION
 1. Download the files algolib.mla and algolib.hdb

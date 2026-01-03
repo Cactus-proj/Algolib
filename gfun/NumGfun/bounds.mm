@@ -23,7 +23,7 @@ numeric_mode :: boolean := false;  # see utilities.mm for how to set/reset
 
 bounds := module()
 
-global `value/Coeftayl`;
+global Coeftayl, `value/Coeftayl`;
 
 export common_root_multiplicity, infroot_resultant, longgcd, 
     normal_majorant_series_formula, normal_coeff_formula, tail_bound,
@@ -79,16 +79,16 @@ end proc:
 ## Explicit bounds (including human-readable formulae) associated to parameters
 ################################################################################
 
-# Solution to y' = (alpha*K*(1-alpha*z)^(-T-1)+P)*y with y(0)=A
-normal_majorant_series_formula := proc(T, alpha, K, P, A, z, $)
+# Solution to y' = (alpha*K*(1-alpha*z)^(-T-1)+P)*y with y(0)=1
+normal_majorant_series_formula := proc(T, alpha, K, P, z, $)
     local exppol;
     exppol := exp(int(PolynomialTools:-FromCoefficientList(P, z),z));
     if alpha = 0 then
-        A * exppol;
+        exppol;
     elif T = 0 then
-        A/(1-alpha*z)^K * exppol;
+        1/(1-alpha*z)^K * exppol;
     else
-        A * exp((K/T)/(1-alpha*z)^T) * exppol;
+        exp((K/T)/(1-alpha*z)^T) * exppol;
     end if;
 end proc:
 
@@ -103,14 +103,14 @@ normal_coeff_formula := proc(T, alpha, K, A, P, n, $)
         end if;
         A * bin * alpha^n
     else
-        maj := normal_majorant_series_formula(T,alpha,K,P,A,z);
+        maj := A * normal_majorant_series_formula(T,alpha,K,P,z);
         value(Coeftayl(maj, z=0, n));
     end if;
 end proc:
 
 tail_bound := module()
 
-export simplify_validity, ModuleApply;
+export simplify_validity, psi, tail_bound, ModuleApply;
 
 simplify_validity := proc(expr)
     if indets(expr) = {} then
@@ -119,16 +119,22 @@ simplify_validity := proc(expr)
         expr
     end if;
 end proc:
+
+psi := proc(kappa, n)
+    local p, q;
+    p, q := numer(kappa), denom(kappa);
+    q^(-p/q) * GAMMA(n/q+1)^(-p);
+end proc;
  
 # Input: kappa::extended_rational, T::nonnegint, alpha>0, K::nonnegative,
 #   A::nonnegative, P polynomial, r cst or formal, n::name,
 #   derivative::nonnegint, simplify_hypergeom::boolean
 # Output: A bound for the tail O(z^n) of the majorant series described by these
 #   parameters. See [preprint v2], §4.2.
-ModuleApply := proc(kappa, T, alpha, K, P, A, r, n,
+tail_bound := proc(kappa, T, alpha, K, P, A, r, n,
             {derivative:=0, simplify_hypergeom:=true, transform:=(z->z)}, $)
     local p, q, saddle, x, h, maj, z, default_bound, default_val, bound, k,
-        u, t, bound_for_small_n;
+        u, t, s, B, bound_for_small_n;
     # some parameters used by various bounds, starting with default_bound
     p := numer(kappa); q := denom(kappa);
     # saddle ~ (1-(K/n)^.../alpha; compromise between maj(saddle) and
@@ -138,14 +144,13 @@ ModuleApply := proc(kappa, T, alpha, K, P, A, r, n,
     x := r/saddle;
     h := 1/(1-x^q/(n+q)^(-p)) * add(x^u, u=0..q-1);
     maj := diff(
-        normal_majorant_series_formula(T, alpha, K, P, A, z),
+        A * normal_majorant_series_formula(T, alpha, K, P, z),
         [z $ derivative]);
     maj := subs(z=transform(z), maj);
     # This bound is correct for -infinity < kappa <= 0 as soon as
     # n >= default_val (computed below). It is up to the code below to use it
     # or not depending on whether a simpler/tighter bound is available.
-    default_bound := 1/(q^(-kappa*n)*GAMMA(n/q+1)^(-p))
-                        * eval(maj, z=saddle) * x^n *  h;
+    default_bound := 1/psi(kappa, n) * eval(maj, z=saddle) * x^n *  h;
     if kappa > 0 then # divergent series
         if r = 0 or A = 0 then bound := A else bound := infinity end if;
     elif kappa = -infinity then # polynomial (FIXME: to be improved)
@@ -178,12 +183,26 @@ ModuleApply := proc(kappa, T, alpha, K, P, A, r, n,
         # r may be outside the disk of convergence of maj (and thus > saddle for
         # all n)
         default_val := ( alpha*r / subs(n=(alpha*r)^(-q/p), saddle) )^(-q/p);
-        t := convert(1/(2*evalf(alpha)),'rational', 'exact'); # TBI!!!
-        bound_for_small_n := eval(maj, z=t) ### problème quand transform non
-                                            ### trivial ?
+        if T = 0 and transform = (z -> z) then
+            # special case to get bounds of the form poly(z)*exp(c·z^(-q/p))
+            # (which is both tighter and more readable than the form used
+            # otherwise) when possible
+            s := ceil(-(K-1)/p);
+            B := ((q-p)*s)^(-p*s)/(s!)^(-p);  # improvable (bound_ratpoly)
+            bound_for_small_n :=
+                add( binomial(u+K-1, K-1) * z^u / ratbelow(psi(kappa, u)),
+                    u = 0..(q*s-1) ) +
+                z^(q*s) * B/((K-1)!*q^(-p*s)) * add(z^u, u=0..q-1) *
+                    exp(-p/q * z^(-q/p));
+            bound_for_small_n := subs(z = alpha*r, bound_for_small_n);
+        else
+            t := convert(1/(2*evalf(alpha)),'rational', 'exact'); # TBI!!!
+            bound_for_small_n := eval(maj, z=t) ### problème quand transform 
+                                                ### non trivial ?
                              * exp(-p/q * (r/t)^(-q/p))
                              * add((r/t)^u, u=0..q-1);
-        if n = 0 then
+        end if;
+        if n = 0 or signum(n - default_val) =-1 then
             bound_for_small_n  # avoid unnecessary piecewise
         else
             piecewise(
@@ -193,6 +212,8 @@ ModuleApply := proc(kappa, T, alpha, K, P, A, r, n,
     end if;
 end proc:
 
+ModuleApply := tail_bound;
+
 end module:
 
 ################################################################################
@@ -200,14 +221,14 @@ end module:
 ## normal case
 ################################################################################
 
-normal_type := proc(rec, uofn)
+normal_type := proc(rec, uofn, $)
     description "Tests whether a recurrence equation is normalized.";
     local coef, s, ini;
     coef, s, ini := read_rec(rec, uofn);
     evalb( degree(coef[s+2]) = max(seq(degree(coef[j+2]),j=0..s-1)) );
 end proc:
 
-rec_factorial_growth := proc(rec, uofn)
+rec_factorial_growth := proc(rec, uofn, $)
     local coef, s, ini;
     coef, s, ini := read_rec(rec, uofn);
     # opposite of the slope of the rightmost edge of the Newton polygon;
@@ -217,7 +238,7 @@ rec_factorial_growth := proc(rec, uofn)
         j=0..s-1));
 end proc:
 
-normalize_rec_doit := proc(rec, uofn, kappa)
+normalize_rec_doit := proc(rec, uofn, kappa, $)
     local u, n, p, q, psirec, normalrec;
     userinfo(4, 'gfun', "starting normalization");
     u, n := getname(uofn);
@@ -234,7 +255,7 @@ normalize_rec_doit := proc(rec, uofn, kappa)
 end proc:
 
 # Initial conditions get lost, unless the recurrence is already normalized.
-normalize_rec := proc(rec, uofn)
+normalize_rec := proc(rec, uofn, $)
     local kappa;
     kappa := rec_factorial_growth(rec, uofn);
     if kappa = 0 or kappa = -infinity then
@@ -246,7 +267,7 @@ normalize_rec := proc(rec, uofn)
     end if;
 end proc:
 
-normalize_diffeq := proc(deq, yofz)
+normalize_diffeq := proc(deq, yofz, $)
     option cache;
     local rec, u, n, kappa, normalrec, normaldeq;
     rec := diffeqtorec(deq, yofz, u(n));
@@ -257,7 +278,7 @@ normalize_diffeq := proc(deq, yofz)
     kappa, normalrec := normalize_rec(rec, u(n));
     # ...ini=false here prevents gfun to reintroduce symbolic initial conditions
     # when the recurrence normalrec is singular
-    normaldeq := rectodiffeq(normalrec, u(n), y(z), 'ini'=false, 
+    normaldeq := rectodiffeq(normalrec, u(n), yofz, 'ini'=false,
                                                     'homogeneous'=true);
     kappa, normaldeq;
 end proc:
@@ -265,7 +286,7 @@ end proc:
 # Returns a procedure that computes terms of a *rational* sequence 'above_psi'
 # such that above_psi(n) >= psi(n) for all n, where psi is our usual
 # normalisation factor
-make_above_psi := proc(kappa)
+make_above_psi := proc(kappa, $)
     local p, q, psirec, above_psi_ini, psi, i;
     p,q := numer(kappa), denom(kappa);
     psirec := (n+q)^p*psi(n+q)=psi(n);
@@ -299,7 +320,7 @@ find_constant := proc(params, validity, head)
     normalhead := proc(n) above_psi(n) * ratabove(abs(head(n))) end proc:
     # Now compute rational lower bounds on the first terms of psi*v.
     below_alpha := 1/ratabove(1/abs(alpha));  # est-ce le bon sens ?
-    below_maj := normal_majorant_series_formula(T, below_alpha, K, P, 1, z);
+    below_maj := normal_majorant_series_formula(T, below_alpha, K, P, z);
     Order := validity+1;
     below_maj_head := taylor(below_maj,z=0);
     # Finally, compare normalhead and below_maj_head to find the constant.
@@ -314,6 +335,7 @@ find_constant := proc(params, validity, head)
     cst := max(seq(
         mydiv(normalhead(n), ratbelow(coeff(below_maj_head,z,n))),
         n = 0..validity));
+    cst := ratabove(cst);
 end proc:
 
 # j'aimerais ici remplacer ma récurrence par une rec à coefficients
@@ -339,7 +361,7 @@ end proc:
 # want.
 #
 # This makes use of the following, where
-# v = normal_majorant_series_formula(T, alpha, K, [], A, z):
+# v = normal_majorant_series_formula(T, alpha, K, [], z):
 # (1) for T = 0, the sequence (K/alpha)^n*v_n is nondecreasing;
 # (2) for T > 0, the sequence v_n/alpha^n is nondecreasing;
 # (3) if g is a series with nonnegative nondecreasing coefficients and f is an 
@@ -374,8 +396,7 @@ get_rid_of_P := proc(params, z)
         # since pol has nonnegative coefficients, we can do the whole
         # computation in floating-point (see above).
         #cst := ratabove(exp(logcst));
-        cst := ratabove(cst);
-        subsop(-2=[], -1=cst*A, params);
+        subsop(-2=[], -1=ratabove(cst*A), params);
     end if:
 end proc:
 
@@ -395,7 +416,7 @@ bound_diffeq_doit := proc(deq, yofz)
     end try;
     # Majorant (without constant factor)
     kappa, normaldeq := normalize_diffeq(deq, yofz);
-    params, validity := bound_normal_diffeq:-doit(normaldeq, yofz);
+    params, validity := bound_normal_diffeq(normaldeq, yofz);
     # Constant factor
     params := [kappa, op(params)];
     cst := find_constant_from_rec(params, validity, rec, u(n),
@@ -423,7 +444,7 @@ bound_rec_doit := proc(rec, uofn)
     else
         deq := rectodiffeq(normalrec, uofn, y(z), 'ini'=false,
                                                 'homogeneous'=true);
-        params, validity := bound_normal_diffeq:-doit(deq, y(z));
+        params, validity := bound_normal_diffeq(deq, y(z));
         params := [kappa, op(params)];
     end if;
     cst := find_constant_from_rec(params, validity, rec, uofn, 

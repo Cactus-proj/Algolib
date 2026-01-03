@@ -127,14 +127,19 @@ end: # `diff/SERIES`
 
 `multiseries/diffexprin_var`:=proc (expr,scale,var,ord)
 option ALGOCOPYRIGHT;
-local fvar, lvar, i2, i1, v, vvar;
+local fvar, lvar, i2, i1, v, vvar, todiff, tosubs, fcn, newexpr;
     v:=SCALEVARIABLE;
     fvar:=FASTEST([v,op(select(has,indets(expr,indexed),SCALEVARNAME))],scale);
     member(v,SCALELIST,'i1');
     member(fvar,SCALELIST,'i2');
     lvar:=[op(i1..i2,SCALELIST)];
-#    RUN(diff(`multiseries/Expr4Series2Expr`(expr,scale),var),scale,lvar,ord)
-    RUN(subs([seq(diff(vvar,var)=subs(var=SCALEVARIABLE,diff(op(vvar),var)),vvar=SCALELIST)],diff(expr,var)),
-        scale,lvar,ord) 
+    # Before Maple13, diff(a[1/x],x) remains unevaluated.
+    # Starting with Maple13, it returns 0.
+    # This change has broken the following:
+    #RUN(subs([seq(diff(vvar,var)=subs(var=SCALEVARIABLE,diff(op(vvar),var)),vvar=SCALELIST)],diff(expr,var)),
+    #    scale,lvar,ord)
+    RUN(eval(diff(`multiseries/Expr4Series2Expr`(expr,scale),var),var=SCALEBACK),scale,lvar,ord)
 end: # `multiseries/diffexprin_var`
+
+
 

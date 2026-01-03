@@ -16,7 +16,8 @@
 # License along with Algolib.  If not, see
 # <http://www.gnu.org/licenses/>.
 
-## ancont.mm: Numerical evaluation and analytic continuation of holonomic functions.
+## ancont.mm: Numerical evaluation and analytic continuation of holonomic
+## functions.
 
 
 ancont := module()
@@ -27,119 +28,161 @@ export rectodiffrec, parametered_rec, step_transition_matrix,
     path_transition_matrix, plot_path, fail_if_singular_path, bit_burst_path,
     subdivide_path, rewrite_path, absolute_precision_warning,
     diffeq_inicond_matrix, ext_norm_ini, apply_ini, analytic_continuation,
-    transition_matrix, local_monodromy, monodromy;
+    transition_matrix, local_monodromy, monodromy,
+    # new binary splitting
+    rec_matrix_num_den, binsplit_matrix, binsplit, diffeq_to_local_rec;
 
-####################################################################################################
-## Differential / recurrence equations (formal) manipulation
-####################################################################################################
 
-## Recurrences for derivatives
+################################################################################
+# Ad hoc binary splitting routines for faster analytic continuation
+################################################################################
 
-# Based on code by Bruno Salvy.
-rectodiffrec := proc(rec, uofk, $)::set;
-    description "Given a recurrence satisfied by the coefficients of a formal power series,"
-        "compute one satisfied by those of its derivative, propagating initial values as needed.";
-    local newini, s, i, rrec, ini, u, k, nextvalue;
-    u,k := getname(uofk);
-    s := ordrec(rec, uofk);
-    ini,rrec := selectremove(type,rec,`=`);
-    rrec := op(rrec);
-    nextvalue := solve(
-        subs(ini,eval(rrec,k=0)),
-        u(s));
-    newini := subs(
-        ini union {u(s)=nextvalue},
-        [seq(i*u(i),i=1..s)]);
-    newini := {seq(u(i)=newini[i+1],i=0..s-1)};
-    rrec := numer(
-        subs(
-            k=k+1,
-            eval(rrec,u=proc(k) u(k-1)/k end proc)));
-    newini union {rrec}
+# (With the matrix rewrite, this should eventually become part of a nice
+# generic infrastructure that would allow use different variants for different
+# needs, or to compare them.)
+
+# piqué de la réécriture des matrices, mais un peu modifié
+# TODO: déplacer un éventuel facteur constant dans z ?
+rec_matrix_num_den := proc(rec, uofn, $)
+    local u, n, barerec, recop, charpoly, den, mat, Shift;
+    u, n := getname(uofn);
+    barerec := bare_rec(rec, uofn);
+    recop := eval(barerec, u = (x -> Shift^eval(x,n=0)));
+    charpoly := eval(radnormal(recop / lcoeff(recop, Shift)));
+    den := denom(charpoly);
+    mat := den * Transpose([CompanionMatrix(charpoly, Shift)][1]);
+    mat := map(normal, mat);
+    mat := map(convert, mat, 'horner');
+    den := convert(den, 'horner');
+    ndmatrix(mat,den)
 end proc:
 
-####################################################################################################
-## Analytic continuation
-####################################################################################################
-
-parametered_rec := proc(deq, yofz, f, n, z0, delta, $)
-    description "Compute a recurrence satisfied by the Taylor coefficients of the formal",
-        "fundamental solutions of deq (as a function of the expansion point and the 'diagonal'",
-        "initial values).";
-    option cache;
-    local y,z,orddeq,deq0,i,rec;
-    y,z := getname(yofz);
-    orddeq := orddiffeq(deq, yofz);
-    deq0 := {
-        algebraicsubs(deq, y = z+z0, y(z)), # Initial conditions get lost here.
-        seq((D@@i)(y)(0) = delta(i)*i!, i=0..orddeq-1) };
-            # *Multiply* by i! to compute Taylor coefficients from derivatives
-    rectohomrec(diffeqtorec(deq0, y(z), f(n)), f(n));
+binsplit_matrix := proc(rec, uofn, pt, lambda, diff_order, $)
+    local coeffs_mat, den, pow_num, pow_den, sums_row;
+    coeffs_mat, den := op(rec_matrix_num_den(rec, uofn));
+    pow_num := series(numer(pt + lambda), lambda, diff_order);
+    pow_den := denom(pt);  # merge with den?
+    sums_row := Matrix([[den*pow_den, 0 $ (ordrec(rec, uofn) - 1)]]);
+    [coeffs_mat, den, pow_num, pow_den, sums_row];
 end proc:
 
-# FIXME: would use some cleaning up
-step_transition_matrix := proc(deq, yofz, z0, z1, epsilon, {firstlineonly::boolean := false}, $)
+# Order must be set by the caller
+binsplit := proc(gen_factor, n, lambda, pow_cache, low, high, $)
+    local mid, tmp1, tmp2, ordrec, j,
+        coeffs_mat_l, den_l, pow_num_l, pow_den_l, sums_row_l,
+        coeffs_mat_h, den_h, pow_num_h, pow_den_h, sums_row_h,
+        coeffs_mat,   den,   pow_num,   pow_den,   sums_row;
+    if high - low = 1 then  # TODO: binary splitting threshold
+        eval(gen_factor, n = low);
+    else
+        mid := iquo(low + high, 2);
+        coeffs_mat_l, den_l, pow_num_l, pow_den_l, sums_row_l
+            := op(procname(gen_factor, n, lambda, pow_cache, low, mid));
+        coeffs_mat_h, den_h, pow_num_h, pow_den_h, sums_row_h
+            := op(procname(gen_factor, n, lambda, pow_cache, mid, high));
+        coeffs_mat := mvMultiply(coeffs_mat_h, coeffs_mat_l);
+        ###
+        #sums_row := MatrixAdd(
+        #    MatrixScalarMultiply(
+        #        mvMultiply(sums_row_h, coeffs_mat_l),
+        #        pow_num_l),
+        #    MatrixScalarMultiply(sums_row_l, den_h * pow_den_h));
+        #    sums_row := map(series, sums_row, lambda);
+        ### Less robust but much more efficient version of the above: 
+        tmp1 := mvMultiply(sums_row_h, coeffs_mat_l);
+        tmp2 := den_h * pow_den_h;
+        ordrec := op([1,2], tmp1);
+        sums_row := rtable(1..1, 1..ordrec, 
+            [[seq(
+                series(
+                    pow_num_l * tmp1[1,j] + tmp2 * sums_row_l[1,j],
+                    lambda),
+                j=1..op([1,2], tmp1))]],
+            'subtype' = 'Matrix');
+        ###
+        # on pourrait carrément se passer de renvoyer les dénominateurs
+        if assigned(pow_cache[high - low]) then
+            pow_num, pow_den := pow_cache[high - low];
+        else
+            pow_num := series(pow_num_h * pow_num_l, lambda);
+            pow_den := pow_den_h * pow_den_l;
+            pow_cache[high - low] := pow_num, pow_den;
+        end if;
+        den := den_h * den_l;
+        [coeffs_mat, den, pow_num, pow_den, sums_row];
+    end if;
+end proc:
 
-    description "Compute the transition matrix for one step of analytic continuation (z0 to z1).";
-    local
-        generic_rec,f,n,a,delta,ordeq,nb_derivatives,i,l,coefrec,ordcoefrec,ini,
-        first_partial_sums,nterms,Nth_term_form,row,mu,den,P,c;
-    global exact;
+# z0 and u(n) are chosen here and returned in order for 'option cache' to work
+diffeq_to_local_rec := proc(deq, yofz, $)
+    option cache(1);
+    local y, z, local_deq, rec, i, z0, u, n, delta;
+    y, z := getname(yofz);
+    local_deq := algebraicsubs(deq, y = z0 + z, yofz);
+    local_deq := { local_deq,
+                   seq((D@@i)(y)(0) = delta(i)*i!,
+                       i=0..orddiffeq(deq, yofz) -1) };
+    rec := diffeqtorec(local_deq, yofz, u(n));
+    rectohomrec(rec, u(n)), z0, u, n, delta;
+end proc:
 
+step_transition_matrix := proc(deq, yofz, z0, z1, epsilon,
+        {first_row_only::boolean := false}, $)
+    local ordeq, diff_order, rec, dummy, u, n, delta, rec_matrix, lambda, rad,
+        nterms, prod, den, pow_den, sums_row, ordcoefrec, ini, ini_matrix, i, j,
+        canonical_sols_row, transition_matrix;
     ordeq := orddiffeq(deq,yofz);
-    nb_derivatives := `if`(firstlineonly, 1, ordeq);
-    userinfo(2, 'gfun', sprintf("%s --> %s (%a derivative[s]), prec~=%a",
-        sprint_small_approx(z0), sprint_small_approx(z1), nb_derivatives,
-        evalf[5](epsilon)));
-
-    if z0 = z1 then return(ndmatrix(IdentityMatrix(ordeq),1)) end if;
-
-    generic_rec := parametered_rec(deq, yofz, f, n, a, delta);
-
-    # coefrec is the recurrence satisfied by the Taylor coefficients *in z0* of the *i-th
-    # derivative*
-    coefrec := subs(a=z0, generic_rec);
-    ordcoefrec := ordrec(coefrec, f(n));
-    
-    for i from 0 to nb_derivatives-1 do  # Compute the (i+1)th line of the transition matrix
-        
-        # Initial coefficients of each fundamental solution. (Each column of the matrix contains
-        # the first coefficients of the series giving (as a function of z1-z0) the i-th Taylor
-        # coefficient in z1 of one fundamental solution. Without the factor 1/i!, we would get the
-        # value of the i-th derivative.)
-        ini := remove(has, coefrec, n);
-        mu := [ seq( [ seq(
-            subs(
-                eval(ini, delta = proc(x) if x=c then 1 else 0 end if end proc),
-                1/i! * f(l) * (z1-z0)^l ), 
-            c = 0..ordeq-1) ], l=0..ordcoefrec-1) ]; 
-        first_partial_sums := convert(mu, ndmatrix);
-        userinfo(6, 'gfun', "first partial sums" = print(Matrix(mu)));
-
-        # BOUND!
-        nterms := floor(Settings:-terms_factor
-                        * numeric_bounds:-needed_terms(deq,yofz,i,z0,abs(z1-z0),epsilon/ordeq))
-                + Settings:-terms_delta;
-        userinfo(3, 'gfun', sprintf("%s --> %s, difforder=%a, #terms=%a",
-            sprint_small_approx(z0), sprint_small_approx(z1), i, nterms));
-        Nth_term_form := nthterm:-nth_term_of_ndseries(coefrec, f(n), z1-z0, nterms);
-        row[i] := matrices:-ndmatrix_multiply(Nth_term_form,first_partial_sums);
-        
-        coefrec := rectodiffrec(coefrec, f(n));
-        
-    end do;
-    
-    # Gather the rows we computed in one matrix
-    den := mul(op(2,row[i]), i=0..nb_derivatives-1);
-    P := ndmatrix(
+    diff_order := `if`(first_row_only, 1, ordeq);
+    if z0 = z1 then
+        return ndmatrix(IdentityMatrix(ordeq)[1..diff_order],1)
+    end if;
+    # The 'matrices' we are going to multiply
+    rec, dummy, u, n, delta := diffeq_to_local_rec(deq, yofz);
+    rec := subs(dummy = z0, rec);
+    rec_matrix := binsplit_matrix(rec, u(n), z1 - z0, lambda, diff_order);
+    # How many terms to sum
+    rad := abs(z1 - z0);
+    nterms := max(seq(   # this could probably be improved
+        numeric_bounds:-needed_terms(deq, yofz, i, z0, rad, epsilon/ordeq),
+        i = 0 .. diff_order-1));
+    nterms := floor(Settings:-terms_factor * nterms + Settings:-terms_delta);
+    # Now compute the product
+    userinfo(2, 'gfun', sprintf(
+        "%s --> %s (%a derivative[s]), prec~=%a, #terms=%a",
+        sprint_small_approx(z0), sprint_small_approx(z1), diff_order,
+        evalf[5](epsilon), nterms));
+    Order := diff_order;
+    prod := binsplit(rec_matrix, n, lambda, table(), 0, nterms + 1);
+    den, pow_den, sums_row := op(prod[[2,4,5]]);
+    # Extract from sums_row the coeffs of the transition matrix. This is not
+    # entirely straightforward since the fundamental solutions of rec (that is,
+    # the columns of sums_row) do *not* correspond to the canonical solutions of
+    # deq.
+    # TODO: try to remove a common factor?
+    ini := remove(has, rec, n);
+    ordcoefrec := ordrec(rec, u(n));
+    ini_matrix := eval(Matrix([seq( [seq(
+        subs(
+            eval(ini, delta = proc(x) `if`(x = j, 1, 0) end proc),
+            u(i)),
+        j = 0..ordeq - 1)], i = 0..ordcoefrec - 1 )]));
+    canonical_sols_row := map(series,
+        MatrixMatrixMultiply(sums_row, ini_matrix), lambda);
+    transition_matrix := ndmatrix(
         Matrix([seq(
-            convert(den/op(2,row[i]) * op(1,row[i]), list),
-            i=0..nb_derivatives-1)]),
-        den);
-    userinfo(10, 'gfun', sprintf("computed matrix ~= %a", evalf[5](P)));
-    return(P);
-
+            [map(coeff, canonical_sols_row, lambda, i)],
+            i = 0..diff_order-1)]),
+        den * pow_den);
+    Digits := 5;
+    userinfo(10, 'gfun', sprintf("computed matrix ~= %a",
+        evalf(op(1,transition_matrix))/evalf(op(2, transition_matrix))));
+    transition_matrix;
 end proc:
+
+
+################################################################################
+## Analytic continuation
+################################################################################
 
 # This computes an epsilon-approximation (with rational coefficients) of the
 # transition matrix associated to deq along any nonsingular broken-line path.
@@ -165,12 +208,12 @@ path_transition_matrix := proc(deq, yofz, path, epsilon, $)
     end if;
 end proc:
 
-####################################################################################################
+###############################################################################
 ## Utilities for analytic continuation paths
-####################################################################################################
+###############################################################################
 
 # Internally, it might be a better idea to represent paths as sequences of steps (increments)
-# instead of one of vertices.
+# instead of sequences of vertices.
 
 plot_path := proc(deq, yofz, path, $) # usage: diplay(plot_path(...))
     local sing, singplot, pathplot, circplots, allpoints, xmin, xmax, ymin, ymax, gridplot;
@@ -193,8 +236,6 @@ end proc:
 fail_if_singular_path := proc(deq, yofz, Path, {check_convergence := false}, $)
     local path, sing, t, j, s;
     path := evalf(Path);
-    # ignore singularities at origin for now
-    #sing := remove(x -> abs(x) < Float(1, 2-Digits), diffeq_singularities(deq, yofz));
     sing := diffeq_singularities(deq, yofz);
     for j from 1 to nops(path)-1 do
         for s in sing do
@@ -204,6 +245,10 @@ fail_if_singular_path := proc(deq, yofz, Path, {check_convergence := false}, $)
                     "(or very close to) a singularity of %2 (in the later case, try increasing "
                     "Digits).", Path, deq;
             end if;
+        end do;
+        # this loop is separate from the previous one to avoid confusing error
+        # messages
+        for s in sing do
             if check_convergence and abs(path[j+1]-path[j]) >= abs(s-path[j]) then
                error "step %1->%2 may escape from the disk of (guaranteed) convergence of "
                 "the series expansions of the solutions of %3", path[j], path[j+1], deq; 
@@ -212,9 +257,9 @@ fail_if_singular_path := proc(deq, yofz, Path, {check_convergence := false}, $)
     end do;
 end proc:
 
-####################################################################################################
+###############################################################################
 ## Path rewriting
-####################################################################################################
+###############################################################################
 
 # Replace a path [a,b] where a is assumed to have small bit-size but not b by a
 # path along which efficient analytic continuation is possible.
@@ -252,16 +297,19 @@ bit_burst_path := proc(step::[complex(numeric), complex(numeric)], $)
 end proc:
 
 subdivide_path := proc(deq, yofz, path, start:=1)
-    local rad, point, s, direction, digits;
+    local rad, point, s, direction, digits, split_thr;
+    split_thr := 0.7;
     if start > nops(path) then
         error "invalid path"
-    elif nops(path) > 30 then
-        error "emergency stop (too many analytic continuation steps)"
+    elif nops(path) > Settings:-max_steps then
+        error "emergency stop: too many (%1) analytic continuation steps "
+              "(increase NumGfun:-Settings:-max_steps to proceed)",
+              Settings:-max_steps;
     elif start = nops(path) then # base case
         path;
     else
         rad := min(seq(abs(path[start] - s), s in diffeq_singularities(deq, yofz)));
-        if abs(evalf(path[start+1] - path[start])) <  0.7 * rad then
+        if abs(evalf(path[start+1] - path[start])) <  split_thr * rad then
             # we have finished subdividing one step, now handle the remaining ones
             subdivide_path(deq, yofz, path, start+1)
         else
@@ -271,7 +319,7 @@ subdivide_path := proc(deq, yofz, path, start:=1)
             point := path[start] + 0.5 * rad * direction;
             # keep the bit size of the intermediate points small unless the path runs very close to
             # a singular point (note that rad(path[start+1]) >= (1-0.5)*rad)
-            digits :=  max(1, -ilog10(rad)) + 1;
+            digits :=  max(1, -ilog10(split_thr*rad)) + 1;
             #point := convert(point, 'rational', digits);
             point := convert(evalf[digits](point), 'rational', 'exact');
             subdivide_path(deq, yofz, [op(path[1..start]), point, op(path[start+1..-1])], start+1);
@@ -285,7 +333,8 @@ rewrite_path := proc(deq, yofz, Path, usebitburst,
     path := Path;
     if type(path, 'complex(numeric)') then
         path := [0, path];
-        try fail_if_singular_path(deq, yofz, path, 'check_convergence') catch:
+        try fail_if_singular_path(deq, yofz, path, 'check_convergence')
+        catch "step":
             error "evaluation point outside the disk of convergence of the "
                 "differential equation (try specifying an analytic "
                 "continuation path such as [0, %1])", Path;
@@ -304,7 +353,7 @@ rewrite_path := proc(deq, yofz, Path, usebitburst,
         path := subdivide_path(deq, yofz, path);
     end if;
     if usebitburst then
-        path := [ op(path[1..-3]), op(bit_burst_path(path[-2..-1])) ];
+        path := [ op(path[1..-2]), op(bit_burst_path(path[-2..-1])) ];
     end if;
     fail_if_singular_path(deq, yofz, path, 'check_convergence');
     path := map(convert, path, 'rational', 'exact');
@@ -312,9 +361,9 @@ rewrite_path := proc(deq, yofz, Path, usebitburst,
     path;
 end proc:
 
-####################################################################################################
+###############################################################################
 ## Evaluation
-####################################################################################################
+###############################################################################
 
 absolute_precision_warning := proc($)
     userinfo(1, 'gfun', "Recall that gfun:-NumGfun works with *absolute* error.");
@@ -433,7 +482,7 @@ analytic_continuation := proc(userdeq, yofz::function(name),
     boundP := numeric_bounds:-bound_transition_matrix(deq,yofz, path[1..-2]); # BOUND!
     # For the last step, we compute only the first line of the transition matrix
     epsQ := evalf( epsilon / boundP ); # BOUND!  below?
-    Q := step_transition_matrix(deq, yofz, path[-2], path[-1], epsQ, 'firstlineonly');
+    Q := step_transition_matrix(deq, yofz, path[-2], path[-1], epsQ, 'first_row_only');
     # Previous steps: analytic continuation, compute the whole transition matrix
     epsP := evalf((nbsteps-1)*epsilon/matrices:-ndmatrix_norm(Q));  # below?
     P := path_transition_matrix(deq, yofz, path[1..-2], epsP);
@@ -464,15 +513,15 @@ transition_matrix := proc(userdeq, yofz::function(name),
     if type(deq, 'set') and nops(deq) > 0 then
         infolevel(1, 'gfun', "initial conditions will be ignored");
     end if;
-    # FIXME: give a way not to subdivide?
-    path := rewrite_path(deq, yofz, inipath, usebitburst, subdivide, fromzero=false);
+    # FIXME: provide a way to avoid subdividing the path?
+    path := rewrite_path(deq, yofz, inipath, usebitburst, subdivide, 'fromzero'=false);
     absolute_precision_warning();
     nthterm:-makeitfloat(path_transition_matrix(deq, yofz, path, 10^(-precision)), precision);
 end proc:
 
-####################################################################################################
+###############################################################################
 ## Monodromy
-####################################################################################################
+###############################################################################
 
 local_monodromy := proc(deq, yofz, z0, start, precision, $)
     local rad, path, k;
@@ -484,5 +533,113 @@ end proc:
 monodromy := proc()
     error("Not implemented yet.");
 end proc:
+
+################################################################################
+## Old analytic continuation code
+################################################################################
+
+# ## Recurrences for derivatives
+# 
+# # Based on code by Bruno Salvy.
+# rectodiffrec := proc(rec, uofk, $)::set;
+#     description "Given a recurrence satisfied by the coefficients of a formal power series,"
+#         "compute one satisfied by those of its derivative, propagating initial values as needed.";
+#     local newini, s, i, rrec, ini, u, k, nextvalue;
+#     u,k := getname(uofk);
+#     s := ordrec(rec, uofk);
+#     ini,rrec := selectremove(type,rec,`=`);
+#     rrec := op(rrec);
+#     nextvalue := solve(
+#         subs(ini,eval(rrec,k=0)),
+#         u(s));
+#     newini := subs(
+#         ini union {u(s)=nextvalue},
+#         [seq(i*u(i),i=1..s)]);
+#     newini := {seq(u(i)=newini[i+1],i=0..s-1)};
+#     rrec := numer(
+#         subs(
+#             k=k+1,
+#             eval(rrec,u=proc(k) u(k-1)/k end proc)));
+#     newini union {rrec}
+# end proc:
+# 
+# parametered_rec := proc(deq, yofz, f, n, z0, delta, $)
+#     description "Compute a recurrence satisfied by the Taylor coefficients of the formal",
+#         "fundamental solutions of deq (as a function of the expansion point and the 'diagonal'",
+#         "initial values).";
+#     option cache;
+#     local y,z,orddeq,deq0,i,rec;
+#     y,z := getname(yofz);
+#     orddeq := orddiffeq(deq, yofz);
+#     deq0 := {
+#         algebraicsubs(deq, y = z+z0, y(z)), # Initial conditions get lost here.
+#         seq((D@@i)(y)(0) = delta(i)*i!, i=0..orddeq-1) };
+#             # *Multiply* by i! to compute Taylor coefficients from derivatives
+#     rectohomrec(diffeqtorec(deq0, y(z), f(n)), f(n));
+# end proc:
+# 
+# # FIXME: would use some cleaning up
+# step_transition_matrix := proc(deq, yofz, z0, z1, epsilon, {firstlineonly::boolean := false}, $)
+# 
+#     description "Compute the transition matrix for one step of analytic continuation (z0 to z1).";
+#     local
+#         generic_rec,f,n,a,delta,ordeq,nb_derivatives,i,l,coefrec,ordcoefrec,ini,
+#         first_partial_sums,nterms,Nth_term_form,row,mu,den,P,c;
+#     global exact;
+# 
+#     ordeq := orddiffeq(deq,yofz);
+#     nb_derivatives := `if`(firstlineonly, 1, ordeq);
+#     userinfo(2, 'gfun', sprintf("%s --> %s (%a derivative[s]), prec~=%a",
+#         sprint_small_approx(z0), sprint_small_approx(z1), nb_derivatives,
+#         evalf[5](epsilon)));
+# 
+#     if z0 = z1 then return(ndmatrix(IdentityMatrix(ordeq),1)) end if;
+# 
+#     generic_rec := parametered_rec(deq, yofz, f, n, a, delta);
+# 
+#     # coefrec is the recurrence satisfied by the Taylor coefficients *in z0* of the *i-th
+#     # derivative*
+#     coefrec := subs(a=z0, generic_rec);
+#     ordcoefrec := ordrec(coefrec, f(n));
+#     
+#     for i from 0 to nb_derivatives-1 do  # Compute the (i+1)th line of the transition matrix
+#         
+#         # Initial coefficients of each fundamental solution. (Each column of the matrix contains
+#         # the first coefficients of the series giving (as a function of z1-z0) the i-th Taylor
+#         # coefficient in z1 of one fundamental solution. Without the factor 1/i!, we would get the
+#         # value of the i-th derivative.)
+#         ini := remove(has, coefrec, n);
+#         mu := [ seq( [ seq(
+#             subs(
+#                 eval(ini, delta = proc(x) if x=c then 1 else 0 end if end proc),
+#                 1/i! * f(l) * (z1-z0)^l ), 
+#             c = 0..ordeq-1) ], l=0..ordcoefrec-1) ]; 
+#         first_partial_sums := convert(mu, ndmatrix);
+#         userinfo(6, 'gfun', "first partial sums" = print(Matrix(mu)));
+# 
+#         # BOUND!
+#         nterms := floor(Settings:-terms_factor
+#                         * numeric_bounds:-needed_terms(deq,yofz,i,z0,abs(z1-z0),epsilon/ordeq))
+#                 + Settings:-terms_delta;
+#         userinfo(3, 'gfun', sprintf("%s --> %s, difforder=%a, #terms=%a",
+#             sprint_small_approx(z0), sprint_small_approx(z1), i, nterms));
+#         Nth_term_form := nthterm:-nth_term_of_ndseries(coefrec, f(n), z1-z0, nterms);
+#         row[i] := matrices:-ndmatrix_multiply(Nth_term_form,first_partial_sums);
+#         
+#         coefrec := rectodiffrec(coefrec, f(n));
+#         
+#     end do;
+#     
+#     # Gather the rows we computed in one matrix
+#     den := mul(op(2,row[i]), i=0..nb_derivatives-1);
+#     P := ndmatrix(
+#         Matrix([seq(
+#             convert(den/op(2,row[i]) * op(1,row[i]), list),
+#             i=0..nb_derivatives-1)]),
+#         den);
+#     userinfo(10, 'gfun', sprintf("computed matrix ~= %a", evalf[5](P)));
+#     return(P);
+# 
+# end proc:
 
 end module:

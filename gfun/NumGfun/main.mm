@@ -51,9 +51,11 @@ export
     abs_with_RootOf,
     dominant_root, # submodule with ModuleApply
     make_waksman_proc,
+    needed_terms,
 
 ### hidden exports
 
+    utilities,
     _pexports,
     version,
     Settings # submodule
@@ -94,13 +96,13 @@ local
 ;
 
 
-# utilities.mm does NOT define a submodule (because of severe limitations of the
-# 'use' construct) but it does contain its own global/local lines, so that it
-# **must appear first**
+# utilities.mm does NOT only define a submodule (because of severe limitations
+# of the 'use' construct) but it does contain its own global/local lines, so
+# that it **must appear first** (besides, this is needed for procedures with
+# 'option inline' to actually get inlined)
 $include <utilities.mm>
 
-# submodules
-$include <types.mm>
+### submodules
 $include <settings.mm>
 $include <matrices.mm>
 $include <nthterm.mm>
@@ -112,6 +114,8 @@ $include <numeric_bounds.mm>
 $include <symbolic_bounds.mm>
 $include <ancont.mm>
 $include <diffeqtoproc.mm>
+# should come last, so that other submodules can define types
+$include <types.mm>
 
 # exports that are defined inside submodules
 analytic_continuation   := ancont:-analytic_continuation;
@@ -123,6 +127,7 @@ bound_diffeq_tail       := symbolic_bounds:-bound_diffeq_tail;
 bound_rec_tail          := symbolic_bounds:-bound_rec_tail;
 fnth_term               := nthterm:-fnth_term;
 make_waksman_proc       := matrices:-waksman_product;
+needed_terms            := numeric_bounds:-needed_terms;
 
 # local to gfun, since 'option load' seems to be ignored in submodules
 NUMGFUN_SETUP := proc($) types:-setup() end proc:
@@ -132,7 +137,8 @@ _pexports:=proc() [op({exports(thismodule)} minus NUMGFUN_HIDDEN)] end:
 NUMGFUN_HIDDEN:={
     ':-_pexports',
     ':-version',
-    ':-Settings'
+    ':-Settings',
+    ':-utilities'
 }:
 
 version := "0.5devel";

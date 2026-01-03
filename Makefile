@@ -1,7 +1,13 @@
+# Environment variables:
+#   + MAPLEAPP: path to the Maple executable.  This cannot be named
+#     MAPLE as this would break on Cygwin.
+#   + NO_NETWORK: if set, make will skip trying fetching submodules
+
 SHELL=/bin/bash
-ifeq (X$(MAPLE), X)
-MAPLE=maple
+ifeq (X$(MAPLEAPP), X)
+MAPLEAPP=maple
 endif
+export MAPLEAPP
 
 MLA=algolib.mla
 HDB=algolib.hdb
@@ -44,14 +50,14 @@ very_clean: clean
 	@read c && [ "X$$c" = Xy ] && rm -rf gdev gfun mgfun multiseries || echo 'Aborted.'
 
 $(MLA):
-	ln -sf ../$(MLA) gdev/gdev.mla
-	mkdir -p gfun/lib && ln -sf ../../$(MLA) gfun/lib/gfun.mla
-	ln -sf ../$(MLA) multiseries/MultiSeries.mla
-	ln -sf ../$(MLA) mad/MAD.mla
-	ln -sf ../$(MLA) mgfun/Mgfun.mla
-	ln -sf ../$(MLA) regexpcount/regexpcount.mla
-	ln -sf ../$(MLA) encyclopedia/encyclopedia.mla
-	echo 'march(create, "'$(MLA)'", 1000);' | $(MAPLE)
+	echo 'march(create, "'$(MLA)'", 1000);' | $(MAPLEAPP)
+	ln -f $(MLA) gdev/gdev.mla
+	mkdir -p gfun/lib && ln -f $(MLA) gfun/lib/gfun.mla
+	ln -f $(MLA) multiseries/MultiSeries.mla
+	ln -f $(MLA) mad/MAD.mla
+	ln -f $(MLA) mgfun/Mgfun.mla
+	ln -f $(MLA) regexpcount/regexpcount.mla
+	ln -f $(MLA) encyclopedia/encyclopedia.mla
 
 compile:
 	$(MAKE) -C gdev algolib_compile
@@ -72,6 +78,8 @@ test:
 	$(MAKE) -C mgfun algolib_test
 	$(MAKE) -C regexpcount algolib_test
 	echo ; echo 'Summary of failed tests:' ; cat failed_tests.txt ; echo '(End of summary.)'
+	@grep -v 'make\[' failed_tests.txt > /tmp/ft$$.txt || true
+	@! cat /tmp/ft$$.txt | grep -q .
 
 # Other help pages are under development.
 help: $(HELP_PAGES:.mws=.ok) $(HELP_PAGES_2:.mw=.ok)
@@ -85,7 +93,7 @@ help: $(HELP_PAGES:.mws=.ok) $(HELP_PAGES_2:.mw=.ok)
 	[ -e $$l ] || { echo Non-existent $$l ; exit 1 ; } ; \
 	{ cat helptool.mpl ; \
 	  echo 'helptool("'$<'","'$$n'",'`cat $$l`', "'$(HDB)'") :' ; } \
-	| $(MAPLE) | grep -v autoerror | grep rror && { echo Problem with $$l ; exit 1 ; } || \
+	| $(MAPLEAPP) | grep -v autoerror | grep rror && { echo Problem with $$l ; exit 1 ; } || \
 	{ true ; touch $*.ok ; }
 
 .mw.ok:
@@ -94,5 +102,5 @@ help: $(HELP_PAGES:.mws=.ok) $(HELP_PAGES_2:.mw=.ok)
 	[ -e $$l ] || { echo Non-existent $$l ; exit 1 ; } ; \
 	{ cat helptool.mpl ; \
 	  echo 'helptool("'$<'","'$$n'",'`cat $$l`', "'$(HDB)'") :' ; } \
-	| $(MAPLE) | grep -v autoerror | grep rror && { echo Problem with $$l ; exit 1 ; } || \
+	| $(MAPLEAPP) | grep -v autoerror | grep rror && { echo Problem with $$l ; exit 1 ; } || \
 	{ true ; touch $*.ok ; }

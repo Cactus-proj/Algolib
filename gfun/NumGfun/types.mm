@@ -80,9 +80,9 @@ types_table := table([
 
     NULL]);
 
-# define types local to NumGfun (see ?ExtendingMaple)
+# Define types local to NumGfun (see ?ExtendingMaple)
 
-# this should be called by NumGfun's (?) 'option load'
+# This function is meant to be called by gfun's/NumGfun's 'option load'
 setup := proc($)
     local mytype;
     for mytype in indices(types_table, 'nolist') do
@@ -93,7 +93,8 @@ end proc:
 cleanup := proc($)
     local mytype;
     for mytype in indices(types_table, 'nolist') do
-        TypeTools:-RemoveType(mytype);
+        try TypeTools:-RemoveType(mytype)
+        catch: end;
     end do;
 end proc:
 

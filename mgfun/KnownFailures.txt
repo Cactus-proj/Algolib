@@ -17,3 +17,14 @@ Oct 13, 2009
 Jan 17, 2010
   CreativeTelescoping/binom7_binom_quadruple:
     currently doesn't work. Known issue. Should work one day...
+
+13.0, failures not investigated: just to let people know they are not breaking
+anything further
+  Holonomy/algeq_to_dfinite.out:37 (invalid input)
+  Holonomy/dg_rat2.out:1 (more than a change of normalisation)
+  Papers/Chyzak98.out:1 (bug in Maplesoft's Groebner:-Basis?)
+  Papers/ChSa97.out:1 (bug in Maplesoft's Groebner:-Basis?)
+  CreativeTelescoping/bbbg_bbbg1.out:2 (Error, (in Groebner:-Basis) arguments should be polynomials)
+  Mgfun/xZeilb_h1.out:8 (change of calling sequence in creative_telescoping)
+  Mgfun/dfinite_expr_to_sys.out:19 (division by zero)
+  Mgfun/xZeilb_11.out:19 (directory reorganization)

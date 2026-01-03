@@ -193,6 +193,6 @@ end proc:
 end proc:
 
 
-`Mgfun/version` := 4.0 :
+`Mgfun/version` := 4.1 :
 
 #savelib('`Mgfun/version`', '`Mgfun/old_behaviour_of_Groebner_Reduce`', 'Mgfun', '`Mgfun/NOT_BUGGED_Reduce`');

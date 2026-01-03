@@ -32,8 +32,9 @@ dominant_root := module()
 
 description "compute a root of maximal multiplicity among those of minimal"
     "modulus of a polynomial in Q(i)[z]";
-export longgcd, infroot_resultant, sqrabs, irreducible_solve, irreducible_check,
-    inffactors, doit, ModuleApply, dominant_first, ratbelow_complex;
+export longgcd, infroot_resultant, sqrabs, irreducible_solve,
+    irreducible_check, inffactors, isroot, doit, ModuleApply, dominant_first,
+    ratbelow_complex;
 
 
 # gcd of more than two polynomials
@@ -42,11 +43,13 @@ longgcd := proc(polys, $)
     foldl(gcd, op(polys));
 end proc;
 
+# See irreducible_check. Note that this function is supposed to preserve
+# multiplicities.
 infroot_resultant := proc(Poly, z, $)
-    local poly, conjpoly, y, j;
+    local poly, conjpoly, y, j, res;
     poly := expand(Poly);
     conjpoly := add(conjugate(coeff(poly, z, j))*z^j, j=0..degree(poly, z));
-    resultant(
+    res := resultant(
         subs(z=y, poly),
         numer(subs(z=z/y, conjpoly)),
         y);
@@ -84,12 +87,12 @@ irreducible_check := proc(facwithroots, z, $)
         # of those of poly. (We could remember poly2 between successive
         # refinements, but those should be very rare.) The smallest positive
         # root of poly2 should be minsqr and have multiplicity nbmini. (Note to
-        # self: recall that if u and v are roots of poly both close to 1, u², v²
-        # and u·v will all be roots of poly2, all close to 1.)
+        # self: recall that if u and v are roots of poly both close to 1, then
+        # u², v² and u·v will all be roots of poly2, all close to 1.)
         poly2 := infroot_resultant(poly, z); 
         minsqr := sqrabs(sorted[1]);
         # Here we do *not* want to discard sqfactors with several roots close to
-        # minsqr (hence the use of eval instead of `infsolvepoly/isroot`).
+        # minsqr (hence the use of eval instead of isroot).
         testfun := u -> sqrabs(eval(op(1,u), z=minsqr)) < Float(1,2-Digits);
         candidates := select(testfun, op(2,sqrfree(poly2,z)));
         (nops(candidates) = 1 and op(2,candidates[1]) = nbmini);
@@ -112,6 +115,13 @@ ratbelow_complex := proc(z)
         NextAfter(Re(z), 0) + I * NextAfter(Im(z), 0),
         'rational', 'exact');
 end proc:
+
+# Check whether pol has a unique (possibly multiple) root close to pt. This is
+# the same as `infsolvepoly/isroot` except that it allows for multiple roots.
+isroot := proc(pt, pol, z)
+    evalb(
+        abs(eval(normal(pol/diff(pol,z)), z = evalf(pt))) < Float(1,2-Digits))
+end proc;
 
 # Input:  list of irreducible polynomials with multiplicities
 # Output: a root of maximal multiplicity among those of minimal modulus,
@@ -147,11 +157,13 @@ doit := proc(facpoly, z, {banzai := false}, $)
         end do;
         if nbmini > 1 then
             # Check that the dominant roots of the remaining factors sorted[1],
-            # ..., sorted[nbmini] all have exactly the same absolute value.
+            # ..., sorted[nbmini] all have exactly the same absolute value. Note
+            # that, while the input polynomials are irreducible, those returned
+            # by infroot_resultant may have multiple roots.
             chk := longgcd([seq(
                 infroot_resultant(sorted[i][1], z),
                 i=1..nbmini)]);
-            if chk = 1 or not `infsolvepoly/isroot`(
+            if chk = 1 or not isroot(
                         sqrabs(sorted[1][3]), chk, z) then
                 userinfo(5,'gfun',"cross-factor root check failed, refining");
                 Digits := 2*Digits;
@@ -180,6 +192,8 @@ ModuleApply := proc(poly, z, { inffactors := false }, $)
         # coefficients of poly--is this really what we want? This is related to
         # what kinds of polynomials we allow in RootOf()s, and to how we compute
         # root multiplicities.
+        #
+        # besides, this is expensive when poly has complex coefficients
         res := doit(op(2, factors(poly)), z);
     end if;
     if not inffactors then res[1..2] else res end if;

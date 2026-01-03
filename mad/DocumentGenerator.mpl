@@ -1132,7 +1132,7 @@ end;	# checkmath
 # - 04/26/03: added 'setoption', which is a list of procedures,
 # each of them being followed by its argument sequences
 # in the form option::symbol=value::anything. For instance:
-# setoption=[HTMX:-MathStyle,width=20,...,LaTeX:-DocStyle,...].
+# setoption=[HTMX:-MathStyle,width=20,...,MADLaTeX:-DocStyle,...].
 # These options apply to the current document; local options
 # are to be set locally within the document with &setoption.
 # - 04/27/03: added 'header', which is a list of lists of

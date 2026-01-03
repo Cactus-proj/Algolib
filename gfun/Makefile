@@ -1,5 +1,6 @@
-ifeq (X$(MAPLE), X)
-MAPLE = maple
+SHELL=/bin/bash
+ifeq (X$(MAPLEAPP), X)
+export MAPLEAPP=maple
 endif
 
 # May be overriden when this Makefile is called recursively from that of
@@ -22,8 +23,8 @@ all: $(MLA) $(HDB)
 # split this rule to suit versions of the top-level Makefile of algolib
 # that create a symlink gfun/lib/gfun.mla -> somewhere/algolib.mla.
 clean:
-	rm -f *~ */*~ */*/*~ tst/*.{out,ok} NumGfun/test/*.{out,ok} \
-	    lib/* *.date */*.date
+	rm -f *~ */*~ */*/*~ tst/*.out tst/*.ok NumGfun/test/*.out \
+	    NumGfun/test/*.ok lib/* *.date */*.date
 
 ### MLA
 
@@ -38,12 +39,12 @@ SRC = gfun.mpl ratinterp.mi *.mm NumGfun/*.mm ported/*.mm
 # which is probably not a good idea)
 gfun.date: $(SRC)
 	sed -e 's/^#savelib/savelib/' gfun.mpl | \
-	  ${MAPLE} -s -q -e2 ${SOURCEDIRS} -b $(MLA) -B && touch $@
+	  ${MAPLEAPP} -s -q -e2 ${SOURCEDIRS} -b $(MLA) -B && touch $@
 
 $(MLA): $(SRC)
 	mkdir -p lib
 	rm -f $(MLA) gfun.date
-	echo "march('create',\"${MLA}\",500);" | ${MAPLE} -s -q
+	echo "march('create',\"${MLA}\",500);" | ${MAPLEAPP} -s -q
 	$(MAKE) gfun.date
 
 ### HDB
@@ -52,7 +53,7 @@ HELPSRC = help/makehelp.mpl help/*.mws help/NumGfun/*.mws
 
 # same mechanism as above
 lib/.hdbdate: $(HELPSRC)
-	$(MAPLE) -c 'THE_HDB := \"'$(HDB)'\" \;' help/makehelp.mpl \
+	$(MAPLEAPP) -c 'THE_HDB := \"'$(HDB)'\" \;' help/makehelp.mpl \
 	    > /dev/null  &&  touch $@
 
 $(HDB): $(HELPSRC)
@@ -67,9 +68,9 @@ NUMGFUN_TESTS = $(wildcard NumGfun/test/*.tst)
 TESTS = $(GFUN_TESTS) $(NUMGFUN_TESTS)
 
 #%.out: %.tst gfun.date NumGfun/test/testutils.mm
-%.out: %.tst $(MLA_STATUS) NumGfun/test/testutils.mm
+%.out: %.tst NumGfun/test/testutils.mm $(MLA)
 	ulimit -v 1048576 && \
-	    ${MAPLE} -s -t -q -e2 -A2 -b "lib/" -B -I NumGfun/test < $< > $@
+	    ${MAPLEAPP} -s -t -q -e2 -A2 -b "lib/" -B -I NumGfun/test < $< > $@
 
 .out.ok:
 	grep -q -e failed.running.the.following.code $*.out || touch $*.ok

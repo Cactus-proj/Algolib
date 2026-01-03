@@ -25,10 +25,9 @@
          [mysin(0), 0, D(mysin)(0), 1, 1/2*`@@`(D,2)(mysin)(0), 2, 1
 	 /6*`@@`(D,3)(mysin)(0), 3, 1/24*`@@`(D,4)(mysin)(0), 4, 1/
 	 120*`@@`(D,5)(mysin)(0), 5, O(1), 6]);
-   forget(series);
    AddFunction(mysin,eval(GetFunction(sin)));
-   TRY(2, [op(series(mysin(x),x))],
-          [1, 1, -1/6, 3, 1/120, 5, O(1), 7]);
+   TRY(2, [op(series(mysin(x),x,7))],
+          [1, 1, -1/6, 3, 1/120, 5, -1/5040, 7, O(1), 8]);
    forget(series);
    TRY(3,FunctionSupported(sin),true);
    RemoveFunction(sin);

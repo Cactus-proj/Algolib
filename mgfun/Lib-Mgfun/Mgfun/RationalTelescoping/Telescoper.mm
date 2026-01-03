@@ -60,7 +60,7 @@ Telescoper := module()
 
 
   GetCoeffs := proc(L, y)
-     local n, C, A, B, i, j, Bs, nu, c:
+     local n, C, A, B, i, j, Bs, nu, c, a:
      n := nops(L):
      (C, A, B) := table([]), table([]), table([]):
      for i from 1 to n do

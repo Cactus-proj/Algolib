@@ -177,7 +177,7 @@ MAD := module()
 local
 	moduleinit,
 	`HTMX/more`,
-	`LaTeX/more`,
+	`MADLaTeX/more`,
 	`default/export`,
 	`error/export`,
 	`html/banner/bottom`,
@@ -228,22 +228,22 @@ export
 end;	# `error/export`
 #>>>########################################################
 #<<<########################################################
-### Description: new definitions for LaTeX. This procedure
+### Description: new definitions for MADLaTeX. This procedure
 # is called by 'moduleinit'. Indeed, there is no way one can
-# save these new definitions into the package LaTeX from this
+# save these new definitions into the package MADLaTeX from this
 # package.
 ############################################################
-`LaTeX/more` := proc()
-    LaTeX:-TextSymbol[`&mad`] := cat("\\href{",_URL_MAD,"}{MAD}");
-    LaTeX:-TextSymbol[`&maple`] := "\\href{http://www.maplesoft.com/}{\\sf Maple}";
-    LaTeX:-TextSymbol[`&postscript`] := "{\\sf PostScript}";
-    LaTeX:-TextSymbol[`&latex`] := "\\LaTeX";
-    LaTeX:-TextSymbol[`&html`] := "{\\sf HTML}";
-    LaTeX:-TextSymbol[`&pdf`] := "{\\sf PDF}";
-    LaTeX:-TextSymbol[`&esf`] := cat("\\href{",_URL_ESF,"}{ESF}");
-    LaTeX:-TextSymbol[`&dlmf`] := "\\href{http://dlmf.nist.gov/Contents/}{DLMF}";
-    LaTeX:-TextSymbol[`&lgpl`] := "\\href{http://www.gnu.org/copyleft/lesser.html}{LGPL}";
-end;	# `LaTeX/more`
+`MADLaTeX/more` := proc()
+    MADLaTeX:-TextSymbol[`&mad`] := cat("\\href{",_URL_MAD,"}{MAD}");
+    MADLaTeX:-TextSymbol[`&maple`] := "\\href{http://www.maplesoft.com/}{\\sf Maple}";
+    MADLaTeX:-TextSymbol[`&postscript`] := "{\\sf PostScript}";
+    MADLaTeX:-TextSymbol[`&latex`] := "\\LaTeX";
+    MADLaTeX:-TextSymbol[`&html`] := "{\\sf HTML}";
+    MADLaTeX:-TextSymbol[`&pdf`] := "{\\sf PDF}";
+    MADLaTeX:-TextSymbol[`&esf`] := cat("\\href{",_URL_ESF,"}{ESF}");
+    MADLaTeX:-TextSymbol[`&dlmf`] := "\\href{http://dlmf.nist.gov/Contents/}{DLMF}";
+    MADLaTeX:-TextSymbol[`&lgpl`] := "\\href{http://www.gnu.org/copyleft/lesser.html}{LGPL}";
+end;	# `MADLaTeX/more`
 #>>>########################################################
 #<<<########################################################
 # @scope=local
@@ -458,7 +458,7 @@ end;	# `html/banner/bottom`
 	else
 	    # check if can translate
 	    try
-		LaTeX:-latex(tmp,'string');
+		MADLaTeX:-latex(tmp,'string');
 	    catch:
 		`error/export`("MAD Error","The expression you entered contained a sub expression that is not supported yet. Please try another request.",_HTML_MADFORM);
 		return;	    
@@ -789,7 +789,7 @@ Ref := DocumentGenerator:-Ref;
 TableOfContents := DocumentGenerator:-TableOfContents;
 FILEARCH := DocumentGenerator:-FILEARCH;
 #>>>########################################################
-VERSION := 1.444;
+VERSION := 1.445;
 ### END RAW INCLUSION #########################
 
 end:
