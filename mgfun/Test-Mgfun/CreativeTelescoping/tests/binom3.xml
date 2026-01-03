@@ -1,0 +1,34 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  <!-- Andrews Paule 1993 -->
+  <test name="binom_paule">
+    <fun>binomial(i+j,j)^2*binomial(4*n-2*i-2*j,2*n-2*j)</fun>
+    <tex>\sum_j\left(\sum_i {i+j \choose j}^2{4n-2i-2j \choose 2n-2j}\right)</tex>
+    <var_int name="i,j"/>
+    <var name="i" type="shift"/>
+    <var name="n" type="shift"/>
+    <var name="j" type="shift"/>
+    <set_val name="n" type="int" inter="50..100"/>
+    <set_val name="i" type="int" inter="1..50"/>
+    <set_val name="j" type="int" inter="1..50"/>
+  </test>
+</tests>

@@ -1,0 +1,61 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" 
+-1 256 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 
+0 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 260 "" 0 1 0 128 0 1 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 0 1 0 0 0 0 
+0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 
+0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 
+4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 
+14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 
+15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 
+3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 20 "LaTeX[DerivedFormat]" }{TEXT 30 
+15 " - system calls" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 11 "Descri
+ption" }}{PARA 15 "" 0 "" {TEXT -1 12 "The package " }{TEXT 35 6 "LaTe
+X " }{TEXT -1 82 "is meant to produce files in the LaTeX format, whose
+ file extensions are given by " }{TEXT 35 13 "FileExtension" }{TEXT 
+-1 35 ". The production of this format is " }{TEXT 256 7 "totally" }
+{TEXT -1 19 " done within Maple." }}{PARA 15 "" 0 "" {TEXT -1 39 "Othe
+r formats may be obtained by using " }{TEXT 257 8 "external" }{TEXT 
+-1 70 " binaries and scripts that are applied to the LaTeX format. The
+ table " }{TEXT 35 13 "DerivedFormat" }{TEXT -1 52 " associates the na
+mes of these other formats to the " }{TEXT 258 6 "system" }{TEXT -1 
+90 " commands for producing these formats. Currently available formats
+ include:\n              " }{HYPERLNK 17 "ps" 2 "" "ps" }{TEXT -1 43 "
+: produce PostScript format;\n              " }{HYPERLNK 17 "dvi" 2 "
+" "dvi" }{TEXT -1 42 ": produce LaTeX DVI format;\n              " }
+{HYPERLNK 17 "pdf" 2 "" "pdf" }{TEXT -1 21 ": produce PDF format." }}
+{PARA 15 "" 0 "" {TEXT -1 4 "The " }{TEXT 259 6 "system" }{TEXT -1 
+228 " commands are, by default, tuned for UNIX-like operating systems \+
+and it is user's responsability to make the system calls work on his o
+perating system. A system call is represented by a string and the spec
+ial character sequence " }{TEXT 260 3 "%F " }{TEXT -1 58 "can be used \+
+to refer to the LaTeX file with its extension." }}}{SECT 0 {PARA 4 "" 
+0 "" {TEXT -1 17 "Available formats" }}{PARA 0 "" 0 "" {TEXT -1 16 "Li
+st of formats:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "indices(De
+rivedFormat);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%7#%#psG7#%$dviG7#%$pd
+fG" }}}{PARA 15 "" 0 "ps" {TEXT 262 2 "ps" }{TEXT -1 19 ": PostScript \+
+format" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "DerivedFormat[ps];
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#QJlatex~%F;dvips~$(basename~%F~.te
+x).dvi~-o6\"" }}}{PARA 15 "" 0 "dvi" {TEXT 263 3 "dvi" }{TEXT -1 33 ":
+ LaTeX DeVice Independent format" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 19 "DerivedFormat[dvi];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#Q)latex
+~%F6\"" }}}{PARA 15 "" 0 "pdf" {TEXT 264 3 "pdf" }{TEXT -1 18 ": Adobe
+ PDF format" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "DerivedFormat
+[pdf];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#Q,pdflatex~%F6\"" }}}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 9 "
+See Also " }}{PARA 0 "" 0 "" {HYPERLNK 17 "LaTeX" 2 "LaTeX" "" }{TEXT 
+-1 2 ", " }{HYPERLNK 17 "HTMX[DerivedFormat]" 2 "HTMX,DerivedFormat" "
+" }}}}{MARK "2 7 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 
+0 1 2 33 1 1 }

@@ -1,0 +1,32 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  <test name="chyzak1">
+    <fun>(-1)^(n+r+s)*binomial(n,r)*binomial(n,s)*binomial(n+r,r)*binomial(n+s,s)*binomial(2*n-r-s,n)</fun>
+    <var_int name="r,s" />
+    <var name="n" type="shift"/>
+    <var name="s" type="shift"/>
+    <var name="r" type="shift" />
+    <set_val name="n" type="int" inter="23..23" />
+    <set_val name="r" type="int" inter="11..11" />
+    <set_val name="s" type="int" inter="17..17" />
+  </test>
+</tests>

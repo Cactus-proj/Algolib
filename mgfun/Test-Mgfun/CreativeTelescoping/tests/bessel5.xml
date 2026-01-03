@@ -1,0 +1,65 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <test name="elkashlan">
+    <fun>x^a*exp(-b*x)*BesselK(m,c*x)*BesselK(n,d*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="a" type="shift"/>
+  </test>
+
+  <test name="elkashlan2">
+    <fun>x^a*exp(-b*x)*BesselK(m,c*x)*BesselK(n,d*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="b" type="diff"/>
+  </test>
+
+  <test name="elkashlan3">
+    <fun>x^a*exp(-b*x)*BesselK(m,c*x)*BesselK(n,d*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="c" type="diff"/>
+  </test>
+
+  <test name="elkashlan4">
+    <fun>x^a*exp(-b*x)*BesselK(m,c*x)*BesselK(n,d*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="d" type="diff"/>
+  </test>
+  
+  <test name="elkashlan5">
+    <fun>x^a*exp(-b*x)*BesselK(m,c*x)*BesselK(n,d*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="n" type="shift"/>
+  </test>
+  
+  <test name="elkashlan6">
+    <fun>x^a*exp(-b*x)*BesselK(m,c*x)*BesselK(n,d*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="m" type="shift"/>
+  </test>
+
+</tests>

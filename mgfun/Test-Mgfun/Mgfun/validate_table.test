@@ -1,0 +1,219 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Mgfun):
+
+# Table of correspondence between the renamed orthogonal polynomials
+# and their expression in the Maple language.
+Correspondence_orthogonal_polynomials:=table([
+    GegenbauerC=orthopoly[G],
+    HermiteH=orthopoly[H],
+    LaguerreL=orthopoly[L],
+    JacobiP=orthopoly[P],
+    ChebyshevT=orthopoly[T],
+    ChebyshevU=orthopoly[U]
+]):
+
+# Lists of functions in the table, for which the dimension of the
+# solution space for the given system is known...
+L[2]:=[AiryAi,AiryBi,arccos,arccosh,arccot,arccoth,arccsc,arccsch,arcsec,arcsech,arcsin,arcsinh,arctan,arctanh,cos,cosh,erf,erfc,erfi,ln,sin,sinh,Ei,BesselI,BesselJ,BesselK,BesselY,HankelH1,HankelH2,ChebyshevT,ChebyshevU,GegenbauerC,HermiteH,JacobiP,LaguerreL]:
+L[3]:=[Chi,Ci,FresnelC,FresnelS,Shi,Si,Ssi,dilog]:
+L[5]:=[LommelS1,LommelS2]:
+# ... or unknown.
+L[unknown]:=[AngerJ,KummerM,KummerU,StruveH,StruveL,WeberE]:
+# List of the exceptional cases for which we cannot perform any easy
+# test, as a parameter remains.
+L[exceptional]:=[`Mgfun/EXP`,`Mgfun/GAMMA`,`Mgfun/IDENTITY`,`Mgfun/POWER`,`Mgfun/qPOCHHAMMER`]:
+
+DST:=Mgfun:-MG_Internals:-dfinite_spec_table:
+
+nops([indices(DST)])<>add(nops(L[i]),i=[2,3,5,unknown,exceptional])
+    # This is to compensate for the NULL entry that cannot be part of
+    # any list.
+    +1:
+if evalb(%)
+then printf("BUG: partition\n"); % else okay end if;
+
+for dim in 2,3,5,unknown do for spec_func in L[dim] do
+    printf("# %s\n",spec_func);
+    if not assigned(DST[spec_func]) then
+	printf("%s not in table\n",spec_func);
+	next
+    end if;
+    signature:=DST[spec_func][1];
+    the_proc:=DST[spec_func][2];
+    args_with_operator_exprseq:=op(1,eval(the_proc));
+    non_param_number:=nops(subs({'parameter'=NULL,'non_root_of_one'=NULL},
+	signature));
+    # Number of parameter or non_root_of_one (they can't appear in the
+    # same signature).
+    param_number:=nops(signature)-non_param_number;
+    inverse_number:=nops(select(member,signature,
+	{'diff','parameter','non_root_of_one'}));
+    q_calculus:=false;
+    # Points to the x associated to j-th element in signature.
+    x_offset:=0;
+    # Points to the dx associated to j-th element in signature.
+    dx_offset:=non_param_number;
+    # Points to the q associated to q-calculus elements in
+    # signature.
+    q_offset:=2*non_param_number+inverse_number+1;
+    # Points to the qx associated to j-th element in signature.
+    qx_offset:=2*non_param_number+inverse_number+1;
+    # (Each pointer points to last "eaten"; q considered already
+    # "eaten".)
+    for j to nops(signature) do
+	if signature[j]='diff' then
+	    x_offset:=x_offset+1;
+	    dx_offset:=dx_offset+1;
+	    type_table[j]:='diff'=[
+		args_with_operator_exprseq[dx_offset],
+		args_with_operator_exprseq[x_offset]]
+	elif signature[j]='shift' then
+	    x_offset:=x_offset+1;
+	    dx_offset:=dx_offset+2;
+	    type_table[j]:='`shift+dual_shift`'=[
+		args_with_operator_exprseq[dx_offset-1..dx_offset],
+		args_with_operator_exprseq[x_offset]]
+	elif signature[j]='parameter' then
+	    type_table[j]:=NULL
+	    elif signature[j]='non_root_of_one' then
+		type_table[j]:=NULL;
+		q_calculus:=true
+	elif signature[j]='qshift' then
+		x_offset:=x_offset+1;
+		dx_offset:=dx_offset+2;
+		qx_offset:=qx_offset+1;
+		type_table[j]:='`qdilat+dual_qdilat`'=[
+		    args_with_operator_exprseq[dx_offset-1..dx_offset],
+		    args_with_operator_exprseq[qx_offset]=
+			args_with_operator_exprseq[q_offset]
+			    ^args_with_operator_exprseq[x_offset]]
+	elif signature[j]='qdilat' then
+		x_offset:=x_offset+1;
+		dx_offset:=dx_offset+2;
+		qx_offset:=qx_offset+1;
+		type_table[j]:='`qdilat+dual_qdilat`'=[
+		    args_with_operator_exprseq[dx_offset-1..dx_offset],
+		    args_with_operator_exprseq[x_offset],
+		    args_with_operator_exprseq[q_offset]]
+	else
+	    ERROR("wrong argument in table")
+	end if
+    end do;
+    type_list:=seq(type_table[j],j=1..nops(signature));
+    descr:=the_proc(args_with_operator_exprseq);
+    if not q_calculus then
+	args_exprseq:=args_with_operator_exprseq[1..nops(signature)]
+    else
+	args_exprseq:=args_with_operator_exprseq[1..nops(signature)-1],
+	    args_with_operator_exprseq[q_offset]
+    end if;
+    expr:=spec_func(args_exprseq);
+    # Definition of the algebra.
+    Alg:=skew_algebra(type_list,comm={`if`(q_calculus,q,NULL),
+	    `if`(has(descr[1],`Mgfun/Pi`),`Mgfun/Pi`,NULL)});
+    TOrd:=MonomialOrder(Alg,descr[2]);
+    hdim:=HilbertDimension(descr[1],TOrd);
+    if hdim<>0 then
+	printf("positive dimension %a for %a\n",hdim,expr);
+	next
+    end if;
+    dimension:=subs(s=1,convert(HilbertSeries(descr[1],TOrd,s),polynom));
+    if dim<>unknown and dimension<>dim then
+	printf("bad dimension of solution space for %a (%a instead of %a)\n",
+	    expr,dimension,dim)
+    end if;
+
+    the_f:=f(`if`(nops(signature)=1,args_exprseq::op(signature),
+	seq(args_exprseq[i]::signature[i],i=1..nops(signature))));
+    # Do not count q as a variable.
+    the_f:=remove(has,the_f,'non_root_of_one');
+    # qshift and shift are not distinguished when input
+    # to dfinite_expr_to_sys.
+    the_f:=subs('qshift'='shift',the_f);
+    sys:=dfinite_expr_to_sys(expr,the_f);
+    # Problem with orthogonal polynomials
+    if assigned(Correspondence_orthogonal_polynomials[spec_func]) then
+	sf:=Correspondence_orthogonal_polynomials[spec_func]
+    else
+	sf:=spec_func
+    end if;
+    # Traperror is only here to trap a bug in the library of Maple V.4.
+    sys:=traperror(eval(subs(f=sf,sys)));
+    if sys=lasterror then
+	# Make sure nothing will work, but nothing will yield an error.
+	sys:={1}
+    end if;
+
+    if normal(sys,expanded)={0} then
+	print(okay);
+	next
+    end if;
+    if simplify(sys,symbolic)={0} then
+	print(okay);
+	next
+    end if;
+    if degree(convert(signature,`*`),diff)=1 then
+	# Make 10 attempts to obtain 0 SYMBOLICALLY for randomized
+	# values of the parameters.
+	for attempt to 10 do
+	    res:=eval(subs(
+		[seq(`if`(signature[i]<>diff,args_exprseq[i]=3+rand(20)(),
+		    NULL),i=1..nops(signature))],
+		sys));
+	    # To remove D.
+	    res:=eval(subs(`&where`=proc(a,b) subs(b,a) end,
+		convert(res,'diff')));
+	    res:=simplify(normal(res,'expanded'),'symbolic');
+	    res:=traperror(
+		{seq(convert(series(op(i,res),x),polynom),i=1..nops(res))});
+	    if res={0} then
+		break
+	    end if
+	end do;
+	if attempt<11 then
+	    print(okay);
+	    next
+	end if;
+	# Make 10 attempts to obtain 0 NUMERICALLY for randomized
+	# values of the parameters.
+	for attempt to 10 do
+	    res:=eval(subs(
+		[seq(args_exprseq[i]=`if`(signature[i]<>diff,3+rand(20)(),
+		    1/(1+rand(20)())),i=1..nops(signature))],sys));
+	    # To remove D.
+	    res:=eval(subs(`&where`=proc(a,b) subs(b,a) end,
+		convert(res,'diff')));
+	    res:=simplify(normal(res,'expanded'),'symbolic');
+	    res:=traperror(max(op(map(abs,evalf(res,50)))));
+	    if res<>lasterror and res<1/10^20 then
+		break
+	    end if
+	end do;
+	if attempt<11 then
+	    print(okay);
+	    next
+	end if
+    end if;
+    printf("BUG: %s\n",spec_func);
+    print(res,expr,sys)
+
+end do end do:

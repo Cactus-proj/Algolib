@@ -1,0 +1,506 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 2 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 1 12 0 0 0 0 1 2 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+260 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 2 0 0 0 0 0 0 0 
+0 }{CSTYLE "" -1 263 "" 1 16 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+264 "" 0 1 0 0 0 0 2 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 
+0 }{CSTYLE "" -1 267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+268 "" 0 1 0 0 0 0 1 2 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 1 12 0 0 0 
+0 1 2 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 
+0 }{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+272 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "T
+ext Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 0 0 0 0 
+0 1 3 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 3
+" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 
+0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Warning" 2 7 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 255 1 0 0 0 0 0 0 1 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"Error" 7 8 1 {CSTYLE "" -1 -1 "" 0 1 255 0 255 1 0 0 0 0 0 0 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Plot" 
+0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+259 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 260 1 {CSTYLE "" -1 -1 "" 1 18 0 0 
+0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+261 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 262 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+263 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 264 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+265 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 257 "" 0 "" {TEXT -1 1 " " }{TEXT 256 36 "ENUMERA
+TION OF PLANAR CONFIGURATIONS" }}{PARA 260 "" 0 "" {TEXT 263 25 "IN CO
+MPUTATIONAL GEOMETRY" }}{PARA 263 "" 0 "" {TEXT -1 0 "" }}{PARA 261 "
+" 0 "" {TEXT 265 17 "Philippe Flajolet" }}{PARA 262 "" 0 "" {TEXT -1 
+29 "(Version of January 15, 1997)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 9 "Consider " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 256 " points on a circle that define a convex polygon. The en
+umeration of geometric configurations that can be superimposed on thes
+e points has a dignified history. In 1753, Euler solved the problem of
+ counting the number of possible triangulations of a convex " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 178 "-gon while inventing the c
+oncept of generating function for this particular combinatorial enumer
+ation problem. Since then, many configurations have been enumerated; s
+ee Comtet's " }{TEXT 257 24 "Advanced Combinatorics, " }{TEXT -1 71 "p
+. 74 for a discussion of works of Prouhet 1886, Jordan 1920, Guy 1967.
+" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 356 "Till
+ recently, any new enumerative result was basically a research paper, \+
+and some of the applications discussed below have required several pag
+es of recurrence manipulations. In this report, we take inspiration fr
+om a recent memo of Noy (September 1996) and show that many such resul
+ts can be derived automatically using the Maple system and the package
+s " }{HYPERLNK 17 "Combstruct" 2 "combstruct" "" }{TEXT -1 5 " and " }
+{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT -1 53 ". This worsheet is meant
+ as a simple introduction to " }{HYPERLNK 17 "Combstruct specification
+s" 2 "combstruct[specification]" "" }{TEXT -1 71 " as well as to basic
+ experimental computations that may accompany them." }}}{SECT 1 {PARA 
+3 "" 0 "" {TEXT -1 34 "Euler's counting of triangulations" }}{SECT 1 
+{PARA 4 "" 0 "" {TEXT -1 7 "Problem" }}{PARA 256 "" 0 "" {TEXT -1 47 "
+Find the number of ways of cutting up a convex " }{XPPEDIT 18 0 "``(n+
+2)" "-%!G6#,&%\"nG\"\"\"\"\"#F'" }{TEXT -1 34 "-gon into n triangles b
+y means of " }{XPPEDIT 18 0 "``(n-1" "-%!G6#,&%\"nG\"\"\"\"\"\"!\"\"" 
+}{TEXT -1 28 " non-intersecting diagonals." }}{PARA 258 "" 0 "" {TEXT 
+262 73 "Here are examples of  triangulations of the octogon and of the
+ icosagon.\n" }{INLPLOT "66-%'CURVESG6#7$7$$\"3\\+++D[0rq!#=$\"3>+++*z
+!3rqF*7$$!3\")*****H50Kn$!#B$\"\"\"\"\"!-F$6#7$F-7$$!3#)*****>x162(F*$
+\"3v*****>&)G52(F*-F$6#7$F7F'-F$6#7$F77$$!\"\"F3$!3&******p?5kM(F0-F$6
+#7$FB7$$!30+++yG+rqF*$!3W*****\\uK62(F*-F$6#7$FJF7-F$6#7$7$$\"3=+++=(e
+62(F*$!3M+++/p(42(F*7$$\"2*******)*********!#<$\"3.+++T?Gp9!#A-F$6#7$F
+Z7$$\"3_******H4&42(F*$\"3))*****>p%=rqF*-F$6#7$F^oFU-F$6#7$7$$\"3$***
+***4`h>5\"Fjn$!2*******)*********FgnFU-F$6#7$FUF^o-F$6#7$F^oFio-F$6#7$
+FJFio-F$6#7$FioF^o-F$6#7$F^oFJ-F$6#7$7$F1F3F'-F$6#7$F'FU-F$6#7$FUF`q-%
+*AXESSTYLEG6#%%NONEG-%'COLOURG6&%$RGBGF3F3$\"*++++\"!\")" 2 217 215 
+215 2 0 1 0 2 6 0 1 2 1.000000 45.000000 45.000000 10030 10061 10056 
+10074 0 0 0 20040 0 12020 0 0 0 255 0 0 255 1 0 0 0 0 91 100 0 0 0 0 
+0 0 }{INLPLOT "6J-%'CURVESG6#7$7$$\"\"\"\"\"!F*7$$\"3o*****H*Gc5&*!#=$
+\"3!******4$p<!4$F.F#-F$6#7$F+7$$\"36+++38;!4)F.$\"3$*******4W'y(eF.-F
+$6#7$F47$$\"3G+++$pMy(eF.$\"37+++)*G=!4)F.-F$6#7$F<7$$\"3%)*****f*>9!4
+$F.$\"3i*****RCu0^*F.-F$6#7$FDF4-F$6#7$FD7$$!3\")*****H50Kn$!#BF(-F$6#
+7$FO7$$!3*)*****\\'=@!4$F.$\"3v*****>a^0^*F.-F$6#7$FVFD-F$6#7$FV7$$!3h
++++ET*y(eF.$\"3,+++<(R,4)F.-F$6#7$F[o7$$!3A+++*[/-4)F.$\"3^*****f(\\!y
+(eF.-F$6#7$Fco7$$!3f+++%f&e5&*F.$\"3&)*****>12,4$F.-F$6#7$F[pF[o-F$6#7
+$FVF[p-F$6#7$FDF[p-F$6#7$F4F[p-F$6#7$F[p7$$!\"\"F*$!3&******p?5kM(FR-F
+$6#7$F4F_q-F$6#7$F_q7$$!3\")*****4>S0^*F.$!3))******)zY-4$F.-F$6#7$Fjq
+7$$!3\"******f7=,4)F.$!3E+++VQ#z(eF.-F$6#7$Fbr7$$!3')******e_xxeF.$!3C
++++zgA!4)F.-F$6#7$FjrFjq-F$6#7$F_qFjr-F$6#7$Fjr7$$!3')*****z7s+4$F.$!3
+_+++Xpf5&*F.-F$6#7$Fhs7$$\"3$******4`h>5\"!#A$!2*******)*********!#<-F
+$6#7$F`tFjr-F$6#7$F_qF`t-F$6#7$F`t7$$\"3')*****Ht\"G!4$F.$!3()******R)
+G0^*F.-F$6#7$F_qF`u-F$6#7$F`u7$$\"3\"*******fN&z(eF.$!3\")*****\\`'4!4
+)F.-F$6#7$F_qF[v-F$6#7$F[v7$$\"3D+++pwC!4)F.$!3@+++UbuxeF.-F$6#7$F_qFf
+v-F$6#7$F4Ffv-F$6#7$F+Ffv-F$6#7$F'Ffv-F$6#7$Ffv7$$\"3Q+++&H31^*F.$!3z*
+****H>P+4$F.-F$6#7$F'Fjw-%*AXESSTYLEG6#%%NONEG-%'COLOURG6&%$RGBGF*F*$
+\"*++++\"!\")" 2 218 217 217 2 0 1 0 2 6 0 1 2 1.000000 45.000000 
+45.000000 10030 10061 10056 10074 0 0 0 20040 0 12020 0 0 0 255 0 0 
+255 1 0 0 0 0 98 80 0 0 0 0 0 0 }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 
+13 "Specification" }}{PARA 0 "" 0 "" {TEXT -1 49 "A triangulation deco
+mposes into three components:" }}{PARA 0 "" 0 "" {TEXT -1 115 "      -
+ the \"root\" triangle uniquely defined uniquely by the fact that it c
+ontains the edge with smallest numbers (" }{XPPEDIT 18 0 "0,1" "6$\"\"
+!\"\"\"" }{TEXT -1 12 " initially);" }}{PARA 0 "" 0 "" {TEXT -1 105 " \+
+     - the left and right subtriangulations defined by their position \+
+with respect to the root triangle." }}{PARA 0 "" 0 "" {TEXT -1 19 "Fir
+st, we load the " }{HYPERLNK 17 "combstruct" 2 "combstruct" "" }{TEXT 
+-1 9 " package:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "with(comb
+struct);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7.%+allstructsG%&countG%%d
+rawG%)finishedG%'gfeqnsG%)gfseriesG%(gfsolveG%,iterstructsG%+nextstruc
+tG%,prog_gfeqnsG%.prog_gfseriesG%-prog_gfsolveG" }}}{PARA 0 "" 0 "" 
+{TEXT -1 54 "In writing a specification, we take the atomic symbol " }
+{XPPEDIT 18 0 "Z" "I\"ZG6\"" }{TEXT -1 23 " to denote a traingle, " }
+{XPPEDIT 18 0 "T" "I\"TG6\"" }{TEXT -1 179 " being an arbitrary triang
+ulation. One must be careful to isolate one-sided triangulations, wher
+e either the left or the right subtriangulations may be empty. Thus, t
+he grammar is" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 84 "triang:=[T,
+\{T=Union(Z,Prod(Epsilon,Z,T),Prod(T,Z,Epsilon),Prod(T,Z,T))\},unlabel
+led]:" }}}{PARA 0 "" 0 "" {TEXT -1 65 "This specification is clearly r
+eminiscent of binary search trees." }}}{SECT 1 {PARA 4 "" 0 "" {TEXT 
+-1 10 "Counting. " }}{PARA 0 "" 0 "" {TEXT -1 59 "Now, we can count th
+e number of triangulations of size 100:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 23 "count(triang,size=100);" }}{PARA 0 "" 0 "" {TEXT -1 
+120 "Here the system takes a couple of seconds to set up (once and for
+ all!) complete counting tables till size equal to 100." }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#\"Z?$4fuQ:_P3UK15u+2qro'\\J,4Z*>l*)" }}}{PARA 0 
+"" 0 "" {TEXT -1 39 "In particular, the first few values are" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "seq(count(triang,size=i),i=0
+..20);" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"!\"\"\"\"\"#\"\"&\"#9\"#
+U\"$K\"\"$H%\"%I9\"%i[\"&'z;\"&'ye\"'7!3#\"'+Hu\"(SWn#\"(X[p*\")qwNN\"
+*!zW'H\"\"*+(QwZ\"+!>jsw\"\"+?/7kl" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 151 "These numbers are known as the Catalan numbers in the honor of
+ the French and Belgian mathematician who worked out their main proper
+ties in the 1850's." }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 1 
+{PARA 4 "" 0 "" {TEXT -1 18 "Random generation." }}{PARA 0 "" 0 "" 
+{TEXT -1 349 "We can draw a triangulation at random amongst those of a
+ny given size. Note that uniformity is granted a priori by the algorit
+hms contained in the combstruct package. Naturally, the output is in t
+he format dictated by the specification. Here is a triangulation of si
+ze 10, that is to say, comprised of 10 triangles, and corresponding to
+ a dodecagon." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "draw(triang
+,size=10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%%ProdG6%-F$6%%\"ZGF(-F
+$6%-F$6%%(EpsilonGF(-F$6%F-F(F(F(F-F(-F$6%F.F(F-" }}}{PARA 0 "" 0 "" 
+{TEXT -1 210 "Since the objects generated are standard Maple objects, \+
+we can manipulate them and in particular construct plots to visualise \+
+them. Here is a set of procedures to construct the list of edges of a \+
+triangulation." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 73 "size:=proc
+(t) convert(map(size,t),`+`) end: size(Epsilon):=0: size(Z):=1:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 390 "set_edges:=proc(tree,org,ed
+ge_set) local se1,se2;\n    if tree=Epsilon then\n        org,org,edge
+_set union \{[org,org+1]\}\n    elif tree=Z then\n        org,org+1,ed
+ge_set union \{[org,org+1],[org+1,org+2],[org+2,org]\}\n    else\n    \+
+    se1:=set_edges(op(1,tree),org,edge_set);\n        se2:=set_edges(o
+p(3,tree),se1[2]+1,se1[3]);\n        se1[1],se2[2],se2[3] union \{[se1
+[1],se2[2]+1]\}\n    fi\nend:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 137 "plott:=proc(n) plot([op(map2(map,[cos,sin],expand(map(`*`,set_e
+dges(draw(triang,size=n-2),0,\{\})[3],2*Pi/n))))],color=blue,axes=NONE
+) end:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "plott(20);" }}
+{PARA 13 "" 1 "" {INLPLOT "6I-%'CURVESG6#7$7$$!3`P:&H;l0^*!#=$!3^u%\\P
+%*p,4$F*7$$!3^u%\\P%*p,4)F*$!3PJZ#H__y(eF*-F$6#7$7$F+$\"3`P:&H;l0^*F*7
+$$!\"\"\"\"!F;-F$6#7$F8F'-F$6#7$F57$F($\"3^u%\\P%*p,4$F*-F$6#7$FBF8-F$
+6#7$7$F.$\"3PJZ#H__y(eF*F5-F$6#7$F57$F0$\"3^u%\\P%*p,4)F*-F$6#7$FQFK-F
+$6#7$F57$FCF6-F$6#7$7$FLFRF5-F$6#7$7$FRFLF5-F$6#7$FhnFZ-F$6#7$FZ7$F;$
+\"\"\"F;-F$6#7$FcoF5-F$6#7$F\\oFhn-F$6#7$F-F8-F$6#7$F5F--F$6#7$F\\o7$F
+0F.-F$6#7$7$FdoF;7$F6F+-F$6#7$Fip7$F6FC-F$6#7$F^qF\\o-F$6#7$Fip7$FRF0-
+F$6#7$FeqFjp-F$6#7$F^qFeq-F$6#7$7$F;F9Feq-F$6#7$F\\oFeq-F$6#7$7$FLF.F_
+r-F$6#7$FfrFeq-F$6#7$F_r7$FCF(-F$6#7$F]sFfr-F$6#7$7$F+F(F_r-F$6#7$F\\o
+F_r-F$6#7$F5Fep-F$6#7$FepFds-F$6#7$F-Fep-F$6#7$F\\oFds-F$6#7$FKFB-%'CO
+LOURG6&%$RGBGF;F;$\"*++++\"!\")-%*AXESSTYLEG6#%%NONEG" 2 588 588 588 
+2 0 1 0 2 6 0 1 2 1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 
+0 0 255 0 0 255 1 0 0 0 0 16360 255 0 0 0 0 0 0 }}}}{SECT 1 {PARA 4 "
+" 0 "" {TEXT -1 22 "Exhaustive generation." }}{PARA 0 "" 0 "" {TEXT 
+-1 34 "With the December 1996 release of " }{HYPERLNK 17 "Combstruct" 
+2 "combstruct" "" }{TEXT -1 219 ", we may also list exhautively all co
+nfigurations of a given size. This proves useful for exhaustive testin
+g of small cases, though there are  physical limitations owing to the \+
+exponential growth of the number of cases." }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 31 "tr4:=allstructs(triang,size=4);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%$tr4G70-%%ProdG6%%(EpsilonG%\"ZG-F'6%F)F*-F'6%F)F*F
+*-F'6%-F'6%-F'6%F*F*F)F*F)F*F)-F'6%-F'6%F)F*F3F*F)-F'6%F-F*F*-F'6%F*F*
+F3-F'6%F3F*F*-F'6%F)F*-F'6%F*F*F*-F'6%F)F*-F'6%F-F*F)-F'6%F+F*F)-F'6%F
+*F*F--F'6%FAF*F)-F'6%F)F*F1-F'6%F)F*F7-F'6%FEF*F)" }}}{PARA 0 "" 0 "" 
+{TEXT -1 34 "We found 14 objects, as we should." }}}{SECT 1 {PARA 4 "
+" 0 "" {TEXT -1 30 "Generating function equations." }}{PARA 0 "" 0 "" 
+{TEXT -1 152 "Again, this uses the December 1996 release of Combstruct
+. We may form the generating function equations associated to a given \+
+specification, as follows:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+34 "gfeqns(op(2,triang),unlabelled,z);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#7$/-%\"ZG6#%\"zGF(/-%\"TGF',(F%\"\"\"*&F%F-F*F-\"\"#*&F*F/F%F-F-
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "gfsys:=gfsolve(op(2,tri
+ang),unlabelled,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&gfsysG<$/-%
+\"TG6#%\"zG,$*&F*!\"\",(\"\"\"F/F*!\"#*$,&F/F/F*!\"%#F/\"\"#F-F/F4/-%
+\"ZGF)F*" }}}{PARA 0 "" 0 "" {TEXT -1 119 "Here, the solution could be
+ obtained explicitly. Correctness can be checked by a Taylor expansion
+, comparing with what " }{HYPERLNK 17 "combstruct[count]" 2 "combstruc
+t[count]" "" }{TEXT -1 10 " gives us." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 30 "op([1,2],\"); series(\",z=0,12);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*&%\"zG!\"\",(\"\"\"F(F%!\"#*$,&F(F(F%!\"%#F(\"\"#F&F
+(F-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+9%\"zG\"\"\"\"\"\"\"\"#\"\"#\"
+\"&\"\"$\"#9\"\"%\"#U\"\"&\"$K\"\"\"'\"$H%\"\"(\"%I9\"\")\"%i[\"\"*\"&
+'z;\"#5-%\"OG6#F%\"#6" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "se
+q(count(triang,size=n),n=0..10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"
+\"!\"\"\"\"\"#\"\"&\"#9\"#U\"$K\"\"$H%\"%I9\"%i[\"&'z;" }}}{PARA 0 "" 
+0 "" {TEXT -1 94 "Alternatively, an arbitrary system of generating fun
+ction equations can be solved by means of " }{HYPERLNK 17 "combstruct[
+gfseries]" 2 "combstruct[gfseries]" "" }{TEXT -1 40 ", even when no cl
+osed form is available." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "g
+fseries(op(2..3,triang),z,[[z]],6);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6
+#-%&TABLEG6#7$/-%\"ZG6#%\"zG+%F+\"\"\"\"\"\"/-%\"TGF*+/F+F-\"\"\"\"\"#
+\"\"#\"\"&\"\"$\"#9\"\"%\"#U\"\"&-%\"OG6#F-\"\"'" }}}}}{SECT 1 {PARA 
+3 "" 0 "" {TEXT -1 36 "Noy's counting of non-crossing trees" }}{SECT 
+1 {PARA 4 "" 0 "" {TEXT -1 8 "Problem." }}{PARA 259 "" 0 "" {TEXT -1 
+96 "Find the number of trees (called non-crossing trees) that can be b
+uilt on the n vertices on the " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 
+-1 51 "-gon, assuming that no edges of the tree intersect." }}}{SECT 
+1 {PARA 4 "" 0 "" {TEXT -1 14 "Specification." }}{PARA 0 "" 0 "" 
+{TEXT -1 68 "View node number 0 as the root, the vertices being number
+ from 0 to " }{XPPEDIT 18 0 "n-1" ",&%\"nG\"\"\"\"\"\"!\"\"" }{TEXT 
+-1 82 ". An arbitrary number of edges connect the root to other nodes.
+ At each such node " }{XPPEDIT 18 0 "m" "I\"mG6\"" }{TEXT -1 93 " conn
+ected to the root, there is a \"butterfly\", defined by two noncrossin
+g trees attached to " }{XPPEDIT 18 0 "m" "I\"mG6\"" }{TEXT -1 49 " (on
+e non-crossing tree to the left of the edges " }{XPPEDIT 18 0 "<0,m>" 
+"-%-anglebracketG6$\"\"!%\"mG" }{TEXT -1 34 ", the other to the right)
+. We let " }{XPPEDIT 18 0 "T" "I\"TG6\"" }{TEXT -1 33 " denote non-cro
+ssing (NC) trees, " }{XPPEDIT 18 0 "F" "I\"FG6\"" }{TEXT -1 49 " denot
+e forests defined by pruning the root of a " }{XPPEDIT 18 0 "T" "I\"TG
+6\"" }{TEXT -1 11 "-tree, and " }{XPPEDIT 18 0 "B" "I\"BG6\"" }{TEXT 
+-1 47 " denote a butterfly. The specification results." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 65 "nctree:=[T,\{T=Prod(Z,F),F=Sequence
+(B),B=Prod(F,Z,F)\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 34 "seq(count(nctree,size=i),i=0..20);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "67\"\"!\"\"\"F$\"\"$\"#7\"#b\"$t#\"%G9\"%_x\"&jK%\"'vmC
+\"(:2V\"\"(SYT)\")3r1]\"*s0$3I\"+?lwA=\",kcvC6\"\",f\\vG$o\"-N`aI?U\".
+lE/J'>E\"/+.HAHL;" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 1 {PARA 
+4 "" 0 "" {TEXT -1 41 "Random generation, exhaustive generation." }}
+{PARA 0 "" 0 "" {TEXT -1 32 "We  draw objects at random with " }
+{HYPERLNK 17 "combstruct[draw]" 2 "combstruct[draw]" "" }{TEXT -1 27 "
+. Here is a random NC-tree." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+20 "draw(nctree,size=8);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%%ProdG6$
+%\"ZG-%)SequenceG6$-F$6%%(EpsilonGF&-F(6#-F$6%-F(6#-F$6%-F(6#-F$6%-F(6
+#-F$6%F,F&F,F&F9F&F,F&F,F;" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 27 "G
+uessing counts with Maple." }}{PARA 0 "" 0 "" {TEXT -1 232 "At this st
+age, we ask ourselves whether a closed form expression may exist.  Fir
+st, let us examine the way we might proceed in a simple case, using Ma
+ple. Consider for instance the number of NC-trees of size 30 and try t
+o factor it." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "ifactor(coun
+t(nctree,size=30));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*>-%!G6#\"\"#\"
+\"$-F%6#F(F'-F%6#\"\"&\"\"\"-F%6#\"#<F.-F%6#\"#JF.-F%6#\"#PF.-F%6#\"#T
+F.-F%6#\"#VF.-F%6#\"#hF.-F%6#\"#nF.-F%6#\"#rF.-F%6#\"#tF.-F%6#\"#zF.-F
+%6#\"#$)F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 280 "We observe that th
+e count is a highly composite number that involves all the prime numbe
+rs between 31 and 83. This is a strong indication that a closed form i
+nvolving factorials or binomial coefficients should exist. The pattern
+ can then be guessed by taking successive quotients." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 70 "seq([n,ifactor(count(nctree,size=n+1)/cou
+nt(nctree,size=n))],n=1..15);" }}{PARA 12 "" 1 "" {XPPMATH 20 "617$\"
+\"\"F$7$\"\"#-%!G6#\"\"$7$F**$-F(6#F&F&7$\"\"%**-F(6#\"\"&F$-F(6#\"#6F
+$F-!\"#F'!\"\"7$F4*,F'F$-F(6#\"\"(F$-F(6#\"#8F$F2F9F5F97$\"\"'*(F-F&-F
+(6#\"#<F$F?F97$F>*(F-F$-F(6#\"#>F$F<F97$\"\")*,F'F$F5F$-F(6#\"#BF$F-!
+\"$FEF97$\"\"***F2F&F?F$F'F9FJF97$\"#5*&-F(6#\"#HF$F2F97$F7*,F-F0F'F$-
+F(6#\"#JF$F5F9FPF97$\"#7**F<F$FEF$F-F8F2F97$FA**FJF$-F(6#\"#PF$F'F8F?F
+97$\"#9*.F-F$F'F$F2F$-F(6#\"#TF$F<F9FZF97$\"#:*,F-F$F5F$-F(6#\"#VF$F2F
+9FinF9" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 27 "The ratios clearly invo
+lve " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 
+0 "2*n+1" ",&*&\"\"#\"\"\"%\"nGF%F%\"\"\"F%" }{TEXT -1 69 " in the den
+ominator, at least whenever these are primes. We thus try:" }}{PARA 0 
+"> " 0 "" {MPLTEXT 1 0 80 "seq([n,ifactor(n*(2*n+1)*count(nctree,size=
+n+1)/count(nctree,size=n))],n=1..15);" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"617$\"\"\"-%!G6#\"\"$7$\"\"#*(-F&6#F*F$F%F$-F&6#\"\"&F$7$F(*(F,F*F%F$
+-F&6#\"\"(F$7$\"\"%*(F%F$F.F$-F&6#\"#6F$7$F0*(F%F$F3F$-F&6#\"#8F$7$\"
+\"'*(F,F(F%F$-F&6#\"#<F$7$F5**F,F$F%F$F.F$-F&6#\"#>F$7$\"\")*(F%F$F9F$
+-F&6#\"#BF$7$\"\"**(F%F$F.F*F>F$7$\"#5**F,F$F%F$F3F$-F&6#\"#HF$7$F;*(F
+,F7F%F$-F&6#\"#JF$7$\"#7**F%F$F.F$F3F$FDF$7$F@*(F%F$FIF$-F&6#\"#PF$7$
+\"#9**F,F*F%F$F.F$-F&6#\"#TF$7$\"#:**F,F$F%F$F9F$-F&6#\"#VF$" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "The numerators now seem to involve
+ " }{XPPEDIT 18 0 "3*n-1" ",&*&\"\"$\"\"\"%\"nGF%F%\"\"\"!\"\"" }
+{TEXT -1 5 " and " }{XPPEDIT 18 0 "3*m-2" ",&*&\"\"$\"\"\"%\"mGF%F%\"
+\"#!\"\"" }{TEXT -1 18 ". Thus we try next" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 96 "seq([n,ifactor(n*(2*n+1)/(3*n-1)/(3*n-2)*count(nctree
+,size=n+1)/count(nctree,size=n))],n=1..15);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "617$\"\"\"*&-%!G6#\"\"$F$-F'6#\"\"#!\"\"7$F,F%7$F)F%7$\"
+\"%F%7$\"\"&F%7$\"\"'F%7$\"\"(F%7$\"\")F%7$\"\"*F%7$\"#5F%7$\"#6F%7$\"
+#7F%7$\"#8F%7$\"#9F%7$\"#:F%" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 82 "W
+e have thus found empirically evidence for the conjecture that the cou
+nts satisfy" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "u(n+1)=3/2*n*(2*n+1)
+/(3*n-1)/(3*n-2)*u(n);" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/-%\"uG6#,&%\"nG\"\"\"F)F),$*,F(F),&F(\"\"#F)F)F),
+&F(\"\"$!\"\"F)F0,&F(F/!\"#F)F0-F%6#F(F)#F/F-" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 49 "This can be solved by means of the Maple command " }
+{HYPERLNK 17 "rsolve" 2 "rsolve" "" }{TEXT -1 57 ", suggesting a close
+d binomial form for the coefficients." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 21 "rsolve(\{\",u(1)=1\},u);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*.\"\"$#\"\"\"\"\"#%#PiGF'-%&GAMMAG6#,$%\"nGF(F'-F+6#
+,&F.F'#!\"\"F%F'F3-F+6#,&F.F'#!\"#F%F'F3)\"#7,$F.F3F'\"\")" }}}{PARA 
+0 "" 0 "" {TEXT -1 81 "Naturally, we succeeded here only because the c
+ounts admit a direct product form." }}}{SECT 1 {PARA 4 "" 0 "" {TEXT 
+-1 27 "Guessing counts with Gfun. " }}{PARA 0 "" 0 "" {TEXT -1 60 "Our
+ guessing task is greatly simplified if we appeal to the " }{HYPERLNK 
+17 "Gfun" 2 "gfun" "" }{TEXT -1 174 " package that determines automati
+cally recurrences for sequences and differential equations for the cor
+responding generating functions that match a given set of initial data
+." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "with(gfun);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#7T%(LaplaceG%.algebraicsubsG%.algeqtodiffeqG
+%.algeqtoseriesG%.algfuntoalgeqG%&borelG%.cauchyproductG%.diffeq*diffe
+qG%.diffeq+diffeqG%,diffeqtorecG%)guesseqnG%(guessgfG%0hadamardproduct
+G%0holexprtodiffeqG%)invborelG%,listtoalgeqG%-listtodiffeqG%0listtohyp
+ergeomG%+listtolistG%.listtoratpolyG%*listtorecG%-listtoseriesG%5listt
+oseries/LaplaceG%1listtoseries/egfG%4listtoseries/lgdegfG%4listtoserie
+s/lgdogfG%1listtoseries/ogfG%4listtoseries/revegfG%4listtoseries/revog
+fG%,maxdegcoeffG%*maxdegeqnG%,maxordereqnG%,mindegcoeffG%*mindegeqnG%,
+minordereqnG%*optionsgfG%,poltodiffeqG%)poltorecG%/ratpolytocoeffG%(re
+c*recG%(rec+recG%,rectodiffeqG%*rectoprocG%.seriestoalgeqG%/seriestodi
+ffeqG%2seriestohypergeomG%-seriestolistG%0seriestoratpolyG%,seriestore
+cG%/seriestoseriesG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 39 "First, we \+
+build a list of small values:" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "l:
+=[seq(count(nctree,size=n),n=0..20)];" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6#>%\"lG77\"\"!\"\"\"F'\"\"$\"#7\"#b\"$t#\"%G9\"%_x\"&jK%\"'vmC\"(:2V
+\"\"(SYT)\")3r1]\"*s0$3I\"+?lwA=\",kcvC6\"\",f\\vG$o\"-N`aI?U\".lE/J'>
+E\"/+.HAHL;" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 14 "The procedure " }
+{HYPERLNK 17 "gfun[listtorec]" 2 "gfun[listtorec]" "" }{TEXT -1 128 " \+
+finds automatically a plausible recurrence with polynomial coefficient
+s, provided such a form exists; similarly, the procedure " }{HYPERLNK 
+17 "gfun[listtodiffeq]" 2 "gfun[listtodiffeq]" "" }{TEXT -1 113 " find
+s automatically a plausible differential equation with polynomial coef
+ficients, provided such a form exists." }}{PARA 0 "> " 0 "" {MPLTEXT 
+1 0 18 "listtorec(l,u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7$<%/-%
+\"uG6#\"\"\"F),&*&,(!\"'F)%\"nG\"#F*$F.\"\"#!#FF)-F'6#F.F)F)*&,&F.F1F0
+\"\"%F)-F'6#,&F.F)F)F)F)F)/-F'6#\"\"!F>%$ogfG" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 21 "listtodiffeq(l,U(z));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7$<%/-%\"UG6#\"\"!F),(*&,&!\"#\"\"\"%\"zG\"\"'F.-F'6#F/
+F.F.*&F/F.-%%diffG6$F1F/F.\"\"#*&,&*$F/\"\"$\"#F*$F/F7!\"%F.-F56$F4F/F
+.F./--%\"DG6#F'F(F.%$ogfG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 78 "This
+ candidate equation can be passed for possible solution to Maple's dso
+lve." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "dsolve(op(1,\"),U(z));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"UG6#%\"zG*&F'\"\"\"-%*hypergeomG6
+%7$#\"\"#\"\"$#F)F07##F0F/,$F'#\"#F\"\"%F)" }}}}{SECT 1 {PARA 4 "" 0 "
+" {TEXT -1 34 "Proving solutions with Combstruct." }}{PARA 0 "" 0 "" 
+{TEXT -1 133 "With the version of December 1996, we can find automatic
+ally a system of equations and in this particular case, an explicit so
+lution." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "gfeqns(op(2..3,nc
+tree),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7&/-%\"ZG6#%\"zGF(/-%\"FG
+F'*$,&\"\"\"F.-%\"BGF'!\"\"F1/F/*&F*\"\"#F%F./-%\"TGF'*&F%F.F*F." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "nctree_sys:=gfsolve(op(2..3,
+nctree),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+nctree_sysG<&/-%\"ZG
+6#%\"zGF*/-%\"BGF)*&-%'RootOfG6#,(%#_ZG!\"\"*&F3\"\"$F*\"\"\"F7F7F7\"
+\"#F*F7/-%\"TGF)*&F*F7F/F7/-%\"FGF)F/" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 81 "This tells us in particular that the generating function \+
+of non-crossing trees is" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "nctree_
+gf:=subs(nctree_sys,B(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*nctre
+e_gfG*&-%'RootOfG6#,(%#_ZG!\"\"*&F*\"\"$%\"zG\"\"\"F/F/F/\"\"#F.F/" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "series(nctree_gf,z=0,12);" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#+;%\"zG\"\"\"\"\"\"\"\"#\"\"#\"\"(\"
+\"$\"#I\"\"%\"$V\"\"\"&\"$G(\"\"'\"%wQ\"\"(\"&=8#\"\")\"'v,7\"\"*\"'!p
+!p\"#5\"(:?.%\"#6-%\"OG6#F%\"#7" }}}}{SECT 1 {PARA 5 "" 0 "" {TEXT 
+264 10 "Conclusion" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 80 "In particular, we have obtained automatically one of the theore
+ms of Noy (1994):" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT 266 7 "Theorem" }{TEXT -1 2 ". " }{TEXT 267 68 "The generating f
+unction of non crossing trees satisfies the equation" }}{PARA 264 "" 
+0 "" {XPPEDIT 18 0 "T(z)=1+z*T(z)^3" "/-%\"TG6#%\"zG,&\"\"\"\"\"\"*&F&
+F)*$-F$6#F&\"\"$F)F)" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 25 "T
+he number of trees with " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 9 " \+
+nodes is" }}{PARA 265 "" 0 "" {XPPEDIT 18 0 "binomial(3*n+1,n)/(3n+1)
+" "*&-%)binomialG6$,&*&\"\"$\"\"\"%\"nGF)F)\"\"\"F)F*F),&*&\"\"$F)F*F)
+F)\"\"\"F)!\"\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 14 "The result of " }{HYPERLNK 17 "combstruct
+[gfsolve]" 2 "combstruct[gfsolve]" "" }{TEXT -1 72 " gives a valid pro
+of of the generating function equation. The result of " }{HYPERLNK 17 
+"gfun[guessgf]" 2 "gfun[guessgf]" "" }{TEXT -1 13 " followed by " }
+{HYPERLNK 17 "gfun[listtodiffeq]" 2 "gfun[listtodiffeq]" "" }{TEXT -1 
+166 " is a priori only heuristic. However, once a candidate recurrence
+ or differential equation has been found, it may then rigorously be ch
+ecked from withing gfun itself." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+85 "First, we compute automatically a differential equation from the g
+enerating function." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "algf
+untoalgeq(nctree_gf,Y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,*%\"zG!
+\"\"%\"YG\"\"\"*$F&\"\"#!\"#*$F&\"\"$F'" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 22 "algeqtodiffeq(\",Y(z));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,*!\"#\"\"\"-%\"YG6#%\"zG\"\"$*&,&\"\"#F%F)!#FF%-%%diffG6$F&F)F%
+F%*&,&*$F)F-F.F)\"\"%F%-F06$F/F)F%F%" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 165 "This result has proven value and it coincides with the differe
+ntial equation that was previously \"guessed\". Thus, the theorem has \+
+been established \"automatically\"..." }}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 31 "Comtet's counting of slicings. " }}{SECT 1 {PARA 4 "" 0 "
+" {TEXT -1 8 "Problem." }}{PARA 0 "" 0 "" {TEXT 258 6 "Given " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 268 78 " points on a circle, count
+ the number of slicings, that is to say, graphs cons" }{TEXT 259 10 "i
+sting of " }{XPPEDIT 18 0 "floor(n/2)" "-%&floorG6#*&%\"nG\"\"\"\"\"#!
+\"\"" }{TEXT 269 47 " edges that do not intersect inside the circle." 
+}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 47 "Specification, random generati
+on, and counting." }}{PARA 0 "" 0 "" {TEXT -1 247 "Consider first the \+
+case of an even number of vertices. A slicing decomposes into a centra
+l edge (initially, the edge that contains vertex 0) and into a left an
+d right slicing that are each of a similar nature. This is readily spe
+cified as follows." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 83 "sl0:=
+\{Edge=Prod(Z,Z),S=Union(Epsilon,Prod(S,Edge,S))\}: slicing:=[S,sl0,un
+labelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "seq(count(sli
+cing,size=n),n=0..20);" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"\"\"\"!F
+#F$\"\"#F$\"\"&F$\"#9F$\"#UF$\"$K\"F$\"$H%F$\"%I9F$\"%i[F$\"&'z;" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 50 "Our old friends, the Catalan numbe
+rs strike again." }}{PARA 0 "" 0 "" {TEXT -1 237 "An interest of the m
+ethod is to allow for the counting of odd slicings, where one has a fr
+ee unattached point. The following specification just says that the \"
+free point\" lies somewhere either left or right or at the root of the
+ slicing." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 113 "sl1:=sl0 unio
+n \{Free=Z, S1=Union(Prod(S1,Edge,S),Prod(S,Edge,S1),Prod(S,Free,S))\}
+: slicing1:=[S1,sl1,unlabelled]:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 36 "seq(count(slicing1,size=n),n=0..20);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "67\"\"!\"\"\"F#\"\"%F#\"#:F#\"#cF#\"$5#F#\"$#zF#\"%.
+IF#\"&S9\"F#\"&eP%F#\"'gz;F#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 23 "draw(slicing1,size=20);" }}{PARA 8 "" 1 "" {TEXT -1 69 "Error, (
+in combstruct/drawgrammar) there is no structure of this size" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 114 "There, the system has recognized \+
+the absence of any structure of even size. Everything goes well with a
+n odd size." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "draw(slicing
+1,size=19);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%%ProdG6%%(EpsilonG-F$
+6$%\"ZGF)-F$6%-F$6%-F$6%-F$6%F&F'-F$6%-F$6%F&F'F&F'F4F'F&F)F&F'-F$6%F&
+F'F4" }}}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 51 "Jordan's couting of no
+n-crossing Hamiltonian paths." }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 8 "P
+roblem." }}{PARA 0 "" 0 "" {TEXT 260 6 "Given " }{XPPEDIT 18 0 "n" "I
+\"nG6\"" }{TEXT 270 90 " points on a circle, determine the number of h
+amiltonian paths that have no crossing edges" }{TEXT -1 1 "." }}}
+{SECT 1 {PARA 4 "" 0 "" {TEXT -1 45 "Specification, random generation \+
+and couting." }}{PARA 0 "" 0 "" {TEXT -1 237 "We discuss here the simp
+ler problem of specifying non-crossing hamiltonian paths that start at
+ the designated root node of index 0. An initial segment of such a pat
+h can be continued in two ways, either by moving to the \"next\" point
+ (an " }{XPPEDIT 18 0 "N" "I\"NG6\"" }{TEXT -1 72 "-move) away from th
+e root, or by crossing over to the opposite side (an " }{XPPEDIT 18 0 
+"X" "I\"XG6\"" }{TEXT -1 28 "-move). The final step (the " }{XPPEDIT 
+18 0 "F" "I\"FG6\"" }{TEXT -1 70 "-step) is fully determined by the co
+ntext. Thus, the specification is:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 70 "ham_path:=[H,\{H=Prod(Sequence(Union(N,X)),F),F=Z,N=Z
+,X=Z\},unlabelled]:" }}}{PARA 0 "" 0 "" {TEXT -1 34 "We count, draw, e
+tc. For instance:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "seq(cou
+nt(ham_path,size=n),n=0..20);" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"!
+\"\"\"\"\"#\"\"%\"\")\"#;\"#K\"#k\"$G\"\"$c#\"$7&\"%C5\"%[?\"%'4%\"%#>
+)\"&%Q;\"&oF$\"&Ob'\"'s58\"'W@E\"')GC&" }}}{PARA 0 "" 0 "" {TEXT -1 
+134 "Naturally, the result is the powers of two. We leave it as an exe
+rcise to prove that the number of unconstrained hamiltonian paths is \+
+" }{XPPEDIT 18 0 "n*2^(n-3)" "*&%\"nG\"\"\")\"\"#,&F#F$\"\"$!\"\"F$" }
+{TEXT -1 161 ". The idea is to decompose such paths as either starting
+ right, or left, or as a gluing (with suitable constraints) of two pat
+hs that emenate from the root node." }}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 34 "Other non-crossing configurations." }}{SECT 1 {PARA 4 "" 
+0 "" {TEXT -1 11 "Discussion." }}{PARA 0 "" 0 "" {TEXT -1 295 "By the \+
+same principles, it is possible to enumerate, list exhautively, draw a
+t random, etc, a large number of geometrical configurations. Examples \+
+are general non-crossing graphs, forests, dissections, trees and graph
+s of bounded degree (Noy , September1996). We discuss here the case of
+ forest." }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 8 "Problem." }}{PARA 0 "
+" 0 "" {TEXT 261 67 "How many forests of trees with no crossing edges \+
+can be built from " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 271 20 " poin
+ts on a circle?" }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 49 "Specification
+, counting and generating functions." }}{PARA 0 "" 0 "" {TEXT -1 255 "
+A forest has a skeletton that is defined as the non-crossing tree that
+ contains the vertex of smallest index. A (possibly empty) forest is t
+hen attached to each node of the skeleton. Thus forests are recursivel
+y definable as non-crossing trees of forests." }}{PARA 0 "" 0 "" 
+{TEXT -1 70 "The corresponding specification is thus derived from that
+ of NC-trees." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 99 "forest:=[F,
+\{F=Union(Epsilon,T),T=Prod(Z1,P),P=Sequence(B),B=Prod(P,Z1,P),Z1=Prod
+(Z,F)\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "seq
+(count(forest,size=n),n=0..20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "67\"
+\"\"F#\"\"#\"\"(\"#L\"$\"=\"%$3\"\"%ao\"&6^%\"'HcI\"($G<@\")7#H\\\"\"*
++0z1\"\"*-c.t(\"+BdF_c\",@F\"RoT\"-fjL\"p4$\".&[_Dx:B\"/rLf&R:u\"\"0W(
+o]LK;8\"0GQT\\MU***" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "draw
+(forest,size=20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%%ProdG6$-F$6$%
+\"ZG-F$6$-F$6$F(%(EpsilonGF--%)SequenceG6$-F$6%F-F+F--F$6%F--F$6$F(-F$
+6$F&F--F/6#-F$6%-F/6#-F$6%F-F+-F/6'F1-F$6%-F/6$-F$6%-F/6#F1F+F-F1F+F-F
+1-F$6%-F/6#-F$6%-F/6$F1F1F+FIF+F-F1F+F-" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 39 "forest_sys:=gfsolve(op(2..3,forest),z);" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6#>%+forest_sysG<(/-%\"ZG6#%\"zGF*/-%#Z1GF),$*&F*
+\"\"\",&*&-%'RootOfG6#,**&%#_ZG\"\"$F*F0F0*&F8\"\"#F*F0F0*&,&!\"\"F0F*
+F>F0F8F0F0F0F0F0F*F0F0F>F0F>F>/-%\"FGF),$*$F1F>F>/-%\"BGF),$*(F3F;F*F0
+F1F>F>/-%\"PGF)F3/-%\"TGF),$*(F*F0F1F>F3F0F>" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 29 "evala(subs(forest_sys,F(z)));" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#,,*&-%'RootOfG6#,**&%#_ZG\"\"$%\"zG\"\"\"F-*&F*\"\"#F
+,F-F-*&,&!\"\"F-F,F2F-F*F-F-F-F-F/F,F/F-*&F%F-F,F/F-*&F%F-F,F-F-*$F,F/
+F2F-F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 48 "We automatically obtain
+ a theorem of Noy (1996)." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+12 "series(\",z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+1%\"zG\"\"\"\"\"
+!F%\"\"\"\"\"#\"\"#\"\"(\"\"$\"#L\"\"%\"$\"=\"\"&-%\"OG6#F%\"\"'" }}}}
+}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 12 "Conclusions." }}{PARA 0 "" 0 "" 
+{TEXT -1 29 "We have demonstrated the way " }{TEXT 272 10 "Combstruct
+" }{TEXT -1 67 " can be used to do experimental combinatorics. In conj
+unction with " }{TEXT 273 4 "Gfun" }{TEXT -1 97 ", it can help generat
+e conjectures and even derive automatic proofs of theorems in combinat
+orics." }}}}{MARK "1 0 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 }

@@ -1,0 +1,242 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+257 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 }{CSTYLE "" -1 260 "times" 0 1 255 0 0 1 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 261 "" 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+262 "" 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 
+0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Text Output" -1 2 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 0 0 0 0 0 1 3 0 3 0 }1 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 
+"" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "" 2 6 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 
+-1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 32 "Introduction to the HTMX Package
+" }}{PARA 4 "" 0 "usage" {TEXT -1 16 "Calling Sequence" }}{PARA 0 "" 
+0 "" {TEXT -1 10 "     HTMX[" }{TEXT 35 8 "function" }{TEXT -1 2 "](" 
+}{TEXT 35 9 "arguments" }{TEXT -1 1 ")" }}{PARA 0 "" 0 "" {TEXT -1 5 "
+     " }{TEXT 35 8 "function" }{TEXT -1 1 "(" }{TEXT 35 9 "arguments" 
+}{TEXT -1 1 ")" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 11 "Description
+" }}{PARA 15 "" 0 "" {TEXT -1 12 "The package " }{TEXT 35 4 "HTMX" }
+{TEXT -1 23 " allows to convert the " }{HYPERLNK 17 "MAD" 2 "MAD" "" }
+{TEXT -1 74 " format into the HTMX format. This package is meant to be
+ used along with " }{HYPERLNK 17 "DocumentGenerator" 2 "DocumentGenera
+tor" "" }{TEXT -1 6 " as a " }{HYPERLNK 17 "translator" 2 "DocumentGen
+erator,translator" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 81 "
+The HTMX format mixes both HTML and LaTeX and it is meant to be proces
+sed by the " }{TEXT 256 8 "external" }{TEXT -1 8 " script " }{TEXT 35 
+4 "htmx" }{TEXT -1 12 " into HTML.\n" }{TEXT 257 4 "Note" }{TEXT -1 
+49 ": it is user's responsability to make the script " }{TEXT 35 4 "ht
+mx" }{TEXT -1 30 " available on his system; see " }{TEXT 261 38 "http:
+//www2.math.uic.edu/~fields/htmx/" }{TEXT -1 2 ";\n" }{TEXT 258 4 "Not
+e" }{TEXT -1 74 ": by default, system calls to external binaries are g
+athered in the table " }{HYPERLNK 17 "DerivedFormat" 2 "HTMX,DerivedFo
+rmat" "" }{TEXT -1 64 " and they are configured to work on UNIX-like o
+perating systems;" }}{PARA 15 "" 0 "" {TEXT -1 242 "Although specific \+
+standards for dealing with the display of mathematical objects on the \+
+web are arising, LaTeX has been chosen for its quality: mathematical f
+ormulae are rendered as LaTeX pictures in the HTML documents. Note tha
+t the package " }{HYPERLNK 17 "MathML" 2 "MathML" "" }{TEXT -1 68 " co
+uld be used to render mathematical formulae in the MathML format." }}
+{PARA 15 "" 0 "" {TEXT -1 22 "The generated HTML is " }{TEXT 259 9 "co
+mpliant" }{TEXT -1 17 " with HTML 4.01 (" }{TEXT 262 28 "http://www.w3
+.org/TR/html401" }{TEXT -1 16 ") and uses CSS (" }{TEXT 263 29 "http:/
+/www.w3.org/TR/REC-CSS1" }{TEXT -1 70 ") instructions for the physical
+ formatting of the HTML documents; see " }{HYPERLNK 17 "DocStyle" 2 "H
+TMX,DocStyle" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 5 "As a \+
+" }{HYPERLNK 17 "translator" 2 "DocumentGenerator,translator" "" }
+{TEXT -1 14 ", the package " }{TEXT 35 4 "HTMX" }{TEXT -1 49 " exports
+ the following members:\n                 " }{HYPERLNK 17 "TranslateMa
+th" 2 "DocumentGenerator,translator" "" }{TEXT -1 28 ": (mandatory) tr
+anslate the " }{TEXT 35 3 "MAD" }{TEXT -1 1 " " }{HYPERLNK 17 "math fo
+rmat" 2 "DocumentGenerator,math" "" }{TEXT -1 30 " into HTMX; \n      \+
+           " }{HYPERLNK 17 "TranslateText" 2 "DocumentGenerator,transl
+ator" "" }{TEXT -1 54 ": (mandatory) table of procedures for translati
+ng the " }{TEXT 35 3 "MAD" }{TEXT -1 1 " " }{HYPERLNK 17 "text math" 
+2 "DocumentGenerator,text" "" }{TEXT -1 30 " into HTMX; \n            \+
+     " }{HYPERLNK 17 "FileExtension" 2 "DocumentGenerator,translator" 
+"" }{TEXT -1 72 ",: (mandatory) the file extension for the HTMX format
+;\n                 " }{HYPERLNK 17 "TextSymbol" 2 "DocumentGenerator,
+translator" "" }{TEXT -1 79 " : (mandatory) table that associates symb
+ols to HTMX strings;\n                 " }{HYPERLNK 17 "DerivedFormat
+" 2 "HTMX,DerivedFormat" "" }{TEXT -1 63 ": (optional) table that asso
+ciates the names of formats to the " }{TEXT 264 6 "system" }{TEXT -1 
+60 " commands for generating these formats from the HTMX files.\n" }
+{TEXT 265 4 "Note" }{TEXT -1 35 ": the other members of the package " 
+}{TEXT 35 4 "HTMX" }{TEXT -1 59 " are meant to set parameters and cust
+omize the translation." }}{PARA 15 "" 0 "" {TEXT -1 12 "The package " 
+}{TEXT 35 4 "HTMX" }{TEXT -1 23 " relies on the package " }{TEXT 35 5 
+"LaTeX" }{TEXT -1 82 " for handling the mathematical expressions. The \+
+following routines are members of " }{TEXT 35 5 "LaTeX" }{TEXT -1 136 
+", but they are also exported by HTMX and they allow to extend the way
+ mathematical expressions are handled.\n                            " 
+}{HYPERLNK 17 "DefineMathKeyword" 2 "LaTeX,DefineMathKeyword" "" }
+{TEXT -1 15 "               " }{HYPERLNK 17 "UndefineMathKeyword" 2 "L
+aTeX,UndefineMathKeyword" "" }{TEXT -1 35 "      \n                   \+
+         " }{HYPERLNK 17 "DefineMathSymbol" 2 "LaTeX,DefineMathSymbol
+" "" }{TEXT -1 19 "                   " }{HYPERLNK 17 "UndefineMathSym
+bol" 2 "LaTeX,UndefineMathSymbol" "" }{TEXT -1 8 "        " }}{PARA 
+15 "" 0 "" {TEXT -1 12 "The way the " }{TEXT 35 3 "MAD" }{TEXT -1 56 "
+ format is translated into HTMX can be parameterized by " }{HYPERLNK 
+17 "MathStyle" 2 "HTMX,MathStyle" "" }{TEXT -1 5 " and " }{HYPERLNK 
+17 "DocStyle" 2 "HTMX,DocStyle" "" }{TEXT -1 16 ". The procedure " }
+{HYPERLNK 17 "FormatNumbering" 2 "HTMX,FormatNumbering" "" }{TEXT -1 
+37 " is used to format an object of type " }{HYPERLNK 17 "DocumentGene
+rator/Numbering" 2 "DocumentGenerator,Numbering" "" }{TEXT -1 11 " int
+o HTML." }}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 8 "Examples" }}{PARA 0 "
+" 0 "" {TEXT -1 44 "This example demonstrates how to build up a " }
+{TEXT 35 3 "MAD" }{TEXT -1 39 " document and to convert in into HTMX. \+
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "with(DocumentGenerator):
+" }}}{PARA 0 "" 0 "" {TEXT -1 14 "First section." }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 217 "s1 := Section(\"Introduction\",\n  Paragraph(
+\"Consider the function \",InlineMath(cos),\". It is defined by the \"
+,Nth(2),\" order differential equation\",Equation(diff(y(x),x$2)+y(x)=
+0,label=[eq1],separator=[point,point]))):" }}}{PARA 0 "" 0 "" {TEXT 
+-1 15 "Second section." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 204 "s
+2 := Section(\"Series expansion\",\n   Paragraph(\"The series expansio
+n at \",InlineMath(0),\" of the function defined by \",Ref([eq1]), \" \+
+is given by\",Equation(`&relation`(approx,cos(x),series(cos(x),x,3))))
+):" }}}{PARA 0 "" 0 "" {TEXT -1 16 "Entire document." }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 23 "doc := Document(s1,s2):" }}}{PARA 0 "" 0 
+"" {TEXT -1 58 "Translation to HTMX. The HTML format would be produced
+ by " }{TEXT 260 28 "Export(doc,HTMX,format=html)" }{TEXT -1 1 "." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "Export(doc,HTMX);" }}{PARA 
+6 "" 1 "" {TEXT -1 90 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//
+EN\" \"http://www.w3.org/TR/html4/strict.dtd\">" }}{PARA 6 "" 1 "" 
+{TEXT -1 6 "<html>" }}{PARA 6 "" 1 "" {TEXT -1 6 "<head>" }}{PARA 6 "
+" 1 "" {TEXT -1 72 "<meta http-equiv=\"content-type\" content=\"text/h
+tml; charset=iso-8859-1\">" }}{PARA 6 "" 1 "" {TEXT -1 57 "<meta http-
+equiv=\"content-style-type\" content=\"text/css\">" }}{PARA 6 "" 1 "" 
+{TEXT -1 48 "<meta name=\"date\" content=\"2003-07-14T11:31:04\">" }}
+{PARA 6 "" 1 "" {TEXT -1 37 "<meta name=\"generator\" content=\"MAD\">
+" }}{PARA 6 "" 1 "" {TEXT -1 15 "<title></title>" }}{PARA 6 "" 1 "" 
+{TEXT -1 24 "<!-- BEGIN CSS TABLE -->" }}{PARA 6 "" 1 "" {TEXT -1 23 "
+<style type=\"text/css\">" }}{PARA 6 "" 1 "" {TEXT -1 70 "a.error\{bac
+kground-color:#FFFF00;font-family:monospace;color:#000000;\}" }}{PARA 
+6 "" 1 "" {TEXT -1 27 "a.relatives\{color:#CCCCCC;\}" }}{PARA 6 "" 1 "
+" {TEXT -1 44 "a.relatives:hover\{background-color:#F0F0F0;\}" }}
+{PARA 6 "" 1 "" {TEXT -1 42 "a.tableofcontents\{margin:0;color:#000000
+;\}" }}{PARA 6 "" 1 "" {TEXT -1 59 "a.tableofcontents:hover\{margin:0;
+background-color:#CCCCCC;\}" }}{PARA 6 "" 1 "" {TEXT -1 6 "body\{\}" }
+}{PARA 6 "" 1 "" {TEXT -1 13 "div.chapter\{\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 89 "div.error-block\{background-color:#FFFF00;font-family:mon
+ospace;color:#000000;padding:5px\}" }}{PARA 6 "" 1 "" {TEXT -1 33 "div
+.main\{margin: 1em 3em 3em 3em\}" }}{PARA 6 "" 1 "" {TEXT -1 18 "div.p
+lot-caption\{\}" }}{PARA 6 "" 1 "" {TEXT -1 44 "div.relatives\{color:#
+CCCCCC;font-size:small\}" }}{PARA 6 "" 1 "" {TEXT -1 29 "div.section1
+\{margin: 0em 1em\}" }}{PARA 6 "" 1 "" {TEXT -1 29 "div.section2\{marg
+in: 0em 1em\}" }}{PARA 6 "" 1 "" {TEXT -1 29 "div.section3\{margin: 0e
+m 1em\}" }}{PARA 6 "" 1 "" {TEXT -1 29 "div.section4\{margin: 0em 1em
+\}" }}{PARA 6 "" 1 "" {TEXT -1 29 "div.section5\{margin: 0em 1em\}" }}
+{PARA 6 "" 1 "" {TEXT -1 29 "div.section6\{margin: 0em 1em\}" }}{PARA 
+6 "" 1 "" {TEXT -1 103 "div.tableofcontents\{border-width:1px;border-c
+olor:#000000;border-style:solid;background-color:#F0F0F0;\}" }}{PARA 
+6 "" 1 "" {TEXT -1 74 "div.tableofcontents-title\{font-weight:bold;mar
+gin-top:1em;margin-left:1em\}" }}{PARA 6 "" 1 "" {TEXT -1 30 "h1.chapt
+er\{text-align:center;\}" }}{PARA 6 "" 1 "" {TEXT -1 13 "h1.section1\{
+\}" }}{PARA 6 "" 1 "" {TEXT -1 13 "h2.section2\{\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 13 "h3.section3\{\}" }}{PARA 6 "" 1 "" {TEXT -1 13 "h4.sectio
+n4\{\}" }}{PARA 6 "" 1 "" {TEXT -1 13 "h5.section5\{\}" }}{PARA 6 "" 
+1 "" {TEXT -1 13 "h6.section6\{\}" }}{PARA 6 "" 1 "" {TEXT -1 30 "img.
+equation\{border-width:0px\}" }}{PARA 6 "" 1 "" {TEXT -1 42 "img.equat
+ion-inline\{vertical-align:middle\}" }}{PARA 6 "" 1 "" {TEXT -1 26 "im
+g.plot\{border-width:0px\}" }}{PARA 6 "" 1 "" {TEXT -1 30 "p.paragraph
+\{margin: 0.5em 1em\}" }}{PARA 6 "" 1 "" {TEXT -1 27 "span.bold\{font-
+weight:bold\}" }}{PARA 6 "" 1 "" {TEXT -1 24 "span.chapter-numbering\{
+\}" }}{PARA 6 "" 1 "" {TEXT -1 33 "span.emphasize\{font-style:italic\}
+" }}{PARA 6 "" 1 "" {TEXT -1 25 "span.equation-numbering\{\}" }}{PARA 
+6 "" 1 "" {TEXT -1 80 "span.error-inline\{background-color:#FFFF00;fon
+t-family:monospace;color:#000000;\}" }}{PARA 6 "" 1 "" {TEXT -1 21 "sp
+an.plot-numbering\{\}" }}{PARA 6 "" 1 "" {TEXT -1 37 "span.relatives-d
+immed\{color:#F0F0F0;\}" }}{PARA 6 "" 1 "" {TEXT -1 25 "span.section1-
+numbering\{\}" }}{PARA 6 "" 1 "" {TEXT -1 25 "span.section2-numbering
+\{\}" }}{PARA 6 "" 1 "" {TEXT -1 25 "span.section3-numbering\{\}" }}
+{PARA 6 "" 1 "" {TEXT -1 25 "span.section4-numbering\{\}" }}{PARA 6 "
+" 1 "" {TEXT -1 25 "span.section5-numbering\{\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 25 "span.section6-numbering\{\}" }}{PARA 6 "" 1 "" {TEXT -1 
+40 "span.tableofcontents-numbering\{margin:0\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 38 "span.typewriter\{font-family:monospace\}" }}{PARA 6 "" 1 
+"" {TEXT -1 33 "table.tableofcontents\{margin:1em\}" }}{PARA 6 "" 1 "
+" {TEXT -1 30 "td.equation\{text-align:center\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 26 "td.plot\{text-align:center\}" }}{PARA 6 "" 1 "" {TEXT -1 
+8 "</style>" }}{PARA 6 "" 1 "" {TEXT -1 22 "<!-- END CSS TABLE -->" }}
+{PARA 6 "" 1 "" {TEXT -1 28 "<!-- BEGIN STATIC HEADER -->" }}{PARA 6 "
+" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 26 "<!-- END STATIC HE
+ADER -->" }}{PARA 6 "" 1 "" {TEXT -1 29 "<!-- BEGIN DYNAMIC HEADER -->
+" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 27 "<!-- \+
+END DYNAMIC HEADER -->" }}{PARA 6 "" 1 "" {TEXT -1 7 "</head>" }}
+{PARA 6 "" 1 "" {TEXT -1 6 "<body>" }}{PARA 6 "" 1 "" {TEXT -1 18 "<di
+v class=\"main\">" }}{PARA 6 "" 1 "" {TEXT -1 22 "<div class=\"section
+1\">" }}{PARA 6 "" 1 "" {TEXT -1 58 "<table cellspacing=\"0\" cellpadd
+ing=\"0\" style=\"width:100%\">" }}{PARA 6 "" 1 "" {TEXT -1 4 "<tr>" }
+}{PARA 6 "" 1 "" {TEXT -1 23 "<td style=\"width:100%\">" }}{PARA 6 "" 
+1 "" {TEXT -1 112 "<h1 class=\"section\"><a name=\"175062427419669081
+\"><span class=\"section1-numbering\">1</span> Introduction</a></h1>" 
+}}{PARA 6 "" 1 "" {TEXT -1 5 "</td>" }}{PARA 6 "" 1 "" {TEXT -1 4 "<td
+>" }}{PARA 6 "" 1 "" {TEXT -1 31 "<div style=\"position:relative\">" }
+}{PARA 6 "" 1 "" {TEXT -1 43 "<div style=\"position:absolute;right:130
+px\">" }}{PARA 6 "" 1 "" {TEXT -1 264 "<div class=\"relatives\">[<span
+ class=\"relatives-dimmed\">up</span>]&nbsp;[<span class=\"relatives-d
+immed\">back</span>]&nbsp;[<a class=\"relatives\" href=\"1750633436330
+73697.html#175063321110693270\">next</a>]&nbsp;[<span class=\"relative
+s-dimmed\">into</span>]</div></div>" }}{PARA 6 "" 1 "" {TEXT -1 6 "</d
+iv>" }}{PARA 6 "" 1 "" {TEXT -1 5 "</td>" }}{PARA 6 "" 1 "" {TEXT -1 
+5 "</tr>" }}{PARA 6 "" 1 "" {TEXT -1 193 "</table><p class=\"paragraph
+\">Consider the function <latex class=\"equation-inline\">$\\operatorn
+ame\{cos\}$</latex>. It is defined by the second order differential eq
+uation<table style=\"width:100%\">" }}{PARA 6 "" 1 "" {TEXT -1 4 "<tr>
+" }}{PARA 6 "" 1 "" {TEXT -1 40 "<td class=\"equation\" style=\"width:
+100%\">" }}{PARA 6 "" 1 "" {TEXT -1 38 "<a name=\"eq1\"><latex class=
+\"equation\">" }}{PARA 6 "" 1 "" {TEXT -1 17 "\\begin\{equation*\}" }}
+{PARA 6 "" 1 "" {TEXT -1 13 "\\begin\{split\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 54 "\\frac\{\\partial^\{2\} y (x)\}\{\\partial x^\{2\}\} + y \+
+(x)& =0." }}{PARA 6 "" 1 "" {TEXT -1 11 "\\end\{split\}" }}{PARA 6 "" 
+1 "" {TEXT -1 15 "\\end\{equation*\}" }}{PARA 6 "" 1 "" {TEXT -1 17 "<
+/latex></a></td>" }}{PARA 6 "" 1 "" {TEXT -1 4 "<td>" }}{PARA 6 "" 1 "
+" {TEXT -1 43 "<span class=\"equation-numbering\">1.1</span>" }}{PARA 
+6 "" 1 "" {TEXT -1 5 "</td>" }}{PARA 6 "" 1 "" {TEXT -1 5 "</tr>" }}
+{PARA 6 "" 1 "" {TEXT -1 8 "</table>" }}{PARA 6 "" 1 "" {TEXT -1 0 "" 
+}}{PARA 6 "" 1 "" {TEXT -1 6 "</div>" }}{PARA 6 "" 1 "" {TEXT -1 22 "<
+div class=\"section1\">" }}{PARA 6 "" 1 "" {TEXT -1 58 "<table cellspa
+cing=\"0\" cellpadding=\"0\" style=\"width:100%\">" }}{PARA 6 "" 1 "" 
+{TEXT -1 4 "<tr>" }}{PARA 6 "" 1 "" {TEXT -1 23 "<td style=\"width:100
+%\">" }}{PARA 6 "" 1 "" {TEXT -1 116 "<h1 class=\"section\"><a name=\"
+175063321110693270\"><span class=\"section1-numbering\">2</span> Serie
+s expansion</a></h1>" }}{PARA 6 "" 1 "" {TEXT -1 5 "</td>" }}{PARA 6 "
+" 1 "" {TEXT -1 4 "<td>" }}{PARA 6 "" 1 "" {TEXT -1 31 "<div style=\"p
+osition:relative\">" }}{PARA 6 "" 1 "" {TEXT -1 43 "<div style=\"posit
+ion:absolute;right:130px\">" }}{PARA 6 "" 1 "" {TEXT -1 264 "<div clas
+s=\"relatives\">[<span class=\"relatives-dimmed\">up</span>]&nbsp;[<a \+
+class=\"relatives\" href=\"175063343633073697.html#175062427419669081
+\">back</a>]&nbsp;[<span class=\"relatives-dimmed\">next</span>]&nbsp;
+[<span class=\"relatives-dimmed\">into</span>]</div></div>" }}{PARA 6 
+"" 1 "" {TEXT -1 6 "</div>" }}{PARA 6 "" 1 "" {TEXT -1 5 "</td>" }}
+{PARA 6 "" 1 "" {TEXT -1 5 "</tr>" }}{PARA 6 "" 1 "" {TEXT -1 206 "</t
+able><p class=\"paragraph\">The series expansion at <latex class=\"equ
+ation-inline\">$0$</latex> of the function defined by <a href=\"175063
+343633073697.html#eq1\">1.1</a> is given by<table style=\"width:100%\"
+>" }}{PARA 6 "" 1 "" {TEXT -1 4 "<tr>" }}{PARA 6 "" 1 "" {TEXT -1 21 "
+<td class=\"equation\">" }}{PARA 6 "" 1 "" {TEXT -1 24 "<latex class=
+\"equation\">" }}{PARA 6 "" 1 "" {TEXT -1 17 "\\begin\{equation*\}" }}
+{PARA 6 "" 1 "" {TEXT -1 13 "\\begin\{split\}" }}{PARA 6 "" 1 "" 
+{TEXT -1 91 "\\operatorname\{cos\} (x)& \\approx1 - \\frac\{1\}\{2\}  \+
+ x^\{2\} + \\operatorname\{O\} \\bigl(x^\{3\}\\bigr)" }}{PARA 6 "" 1 "
+" {TEXT -1 11 "\\end\{split\}" }}{PARA 6 "" 1 "" {TEXT -1 15 "\\end\{e
+quation*\}" }}{PARA 6 "" 1 "" {TEXT -1 13 "</latex></td>" }}{PARA 6 "
+" 1 "" {TEXT -1 5 "</tr>" }}{PARA 6 "" 1 "" {TEXT -1 8 "</table>" }}
+{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 6 "</div>" }}
+{PARA 6 "" 1 "" {TEXT -1 6 "</div>" }}{PARA 6 "" 1 "" {TEXT -1 7 "</bo
+dy>" }}{PARA 6 "" 1 "" {TEXT -1 7 "</html>" }}}}{SECT 0 {PARA 4 "" 0 "
+seealso" {TEXT -1 9 "See Also " }}{PARA 0 "" 0 "" {HYPERLNK 17 "Docume
+ntGenerator" 2 "DocumentGenerator" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "
+LaTeX" 2 "LaTeX" "" }}}}{MARK "6 0 0" 4 }{VIEWOPTS 1 1 0 1 1 1803 1 1 
+1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

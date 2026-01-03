@@ -1,0 +1,52 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 23 "Courier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }{PSTYLE "Norm
+al" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 
+-1 "Courier" 1 10 0 0 255 1 0 0 0 0 0 1 3 0 3 0 }1 0 0 -1 -1 -1 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading \+
+2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "" 2 6 1 {CSTYLE "" -1 -1 "" 0 1 0 0 
+0 0 0 0 0 0 0 0 2 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "War
+ning" 2 7 1 {CSTYLE "" -1 -1 "" 0 1 0 0 255 1 0 0 0 0 0 0 1 0 0 0 }0 
+0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "
+" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 
+15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 23 "LaTeX[DefineMathSymbol]" }{TEXT 
+30 22 " - define a new symbol" }}{PARA 3 "" 0 "" {TEXT -1 25 "LaTeX[Un
+defineMathSymbol]" }{TEXT 30 31 " - opposite of DefineMathSymbol" }}
+{PARA 4 "" 0 "usage" {TEXT -1 16 "Calling Sequence" }}{PARA 0 "" 0 "" 
+{TEXT -1 22 "     DefineMathSymbol(" }{TEXT 35 4 "symb" }{TEXT -1 1 ",
+" }{TEXT 35 8 " TeXsymb" }{TEXT -1 26 ")\n     UndefineMathSymbol(" }
+{TEXT 35 4 "symb" }{TEXT -1 1 ")" }}{PARA 4 "" 0 "" {TEXT -1 10 "Param
+eters" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 23 14 "symb        \+
+- " }{TEXT -1 6 "symbol" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 
+23 14 "TeXsymb     - " }{TEXT -1 4 "list" }}{SECT 0 {PARA 4 "" 0 "info
+" {TEXT -1 11 "Description" }}{PARA 15 "" 0 "" {TEXT -1 14 "The proced
+ure " }{TEXT 35 16 "DefineMathSymbol" }{TEXT -1 67 " allows to define \+
+new symbols. A symbol is referred to by its name " }{TEXT 35 4 "symb" 
+}{TEXT -1 50 " and it is associated to its LaTeX representation " }
+{TEXT 35 7 "TeXsymb" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 230 "
+The LaTeX representation of a symbol is a list of 2 elements. The firs
+t element is the LaTeX string. The second element is a float, which is
+ the width of the symbol. The width is expressed in an internal unit; \+
+a digit has width 1." }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 8 "E
+xamples" }}{PARA 0 "" 0 "" {TEXT -1 32 "This example defines the symbo
+l " }{TEXT 35 6 "dagger" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 12 "with(LaTeX):" }}{PARA 7 "" 1 "" {TEXT -1 69 "Warning,
+ the protected name latex has been redefined and unprotected\n" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "latex(dagger);" }}{PARA 6 "
+" 1 "" {TEXT -1 6 "dagger" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+55 "DefineMathSymbol(dagger,[\"\\\\dagger\",1]);\nlatex(dagger);" }}
+{PARA 6 "" 1 "" {TEXT -1 7 "\\dagger" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 42 "UndefineMathSymbol(dagger);\nlatex(dagger);" }}{PARA 
+6 "" 1 "" {TEXT -1 6 "dagger" }}}{EXCHG }{EXCHG }{EXCHG }{EXCHG }
+{EXCHG }}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 9 "See Also " }}
+{PARA 0 "" 0 "" {HYPERLNK 17 "LaTeX" 2 "LaTeX" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "DefineMathKeyword" 2 "LaTeX,DefineMathKeyword" "" }}}}
+{MARK "9 1 2" 17 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 
+2 33 1 1 }

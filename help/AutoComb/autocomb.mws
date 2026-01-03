@@ -1,0 +1,260 @@
+{VERSION 4 0 "IBM INTEL LINUX22" "4.0" }
+{USTYLETAB {CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 1 
+}{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+257 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 258 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 260 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 263 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 268 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+272 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 273 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 274 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 275 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 276 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+277 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 278 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 279 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 280 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 281 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+282 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 283 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 284 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 285 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 286 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+287 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 288 "" 1 12 0 0 
+0 0 1 0 2 0 0 0 0 0 0 1 }{CSTYLE "" -1 289 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 290 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 291 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+292 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 293 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 294 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 295 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 296 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+297 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 298 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 299 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 300 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 1 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }1 0 0 0 6 6 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }{PSTYLE "Tit
+le" 0 18 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 0 0 0 0 0 0 1 }3 0 
+0 -1 12 12 0 0 0 0 0 0 19 0 }{PSTYLE "Author" 0 19 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }3 0 0 -1 8 8 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT -1 34 "Studies in Automatic Comb
+inatorics" }}{PARA 18 "" 0 "" {TEXT 288 37 "Combinatorics meets comput
+er algebra!" }}{PARA 19 "" 0 "" {TEXT -1 0 "" }}{PARA 19 "" 0 "" 
+{TEXT 256 18 "Algorithms Project" }}{PARA 256 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 180 "Here is a series of notes that
+ describe interactions between combinatorial analysis, discrete mathem
+atics, and computer algebra.  They discuss combinatorial explorations \+
+using the " }{TEXT 289 5 "Maple" }{TEXT -1 65 " system for symbolic co
+mpution in conjunction with packages like " }{TEXT 290 10 "Combstruct
+" }{TEXT -1 2 ", " }{TEXT 291 4 "Gfun" }{TEXT -1 6 ", and " }{TEXT 
+292 5 "Mgfun" }{TEXT -1 303 ".  The series appeared in three volumes, \+
+Volume I (1996), Volume II (1997), and Volume III (2001), which are av
+ailable from the web site of the Algorithms Project.  The present work
+sheet lists case studies sorted by application domains, and also point
+s to additional tutorials and package introductions." }}{PARA 0 "" 0 "
+" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 86 "Note that several of th
+ese worksheets have been produced with earlier releases of the " }
+{TEXT 293 7 "algolib" }{TEXT -1 96 " packages, and have not been updat
+ed.  You may thus get different outputs when reproducing them." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 1 {PARA 3 "" 0 "" {TEXT 
+-1 27 "Tutorials and Introductions" }}{EXCHG {PARA 15 "" 0 "" 
+{HYPERLNK 17 "Introduction to the Combinatorial Structures Package." 
+2 "combstruct/grammars" "" }{TEXT -1 26 "  A light introduction to " }
+{TEXT 257 10 "Combstruct" }{TEXT -1 170 ".  There, you'll learn about \+
+the basics of specifications, how to get counting sequences, and how t
+o use predefined structures (subsets, permutations, combinations, etc)
+." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Combinatorial Structures Package.
+" 2 "combstruct/sample_struct" "" }{TEXT -1 32 "  Here's a simple coll
+ection of " }{TEXT 258 10 "Combstruct" }{TEXT -1 184 " examples showin
+g how to generate random trees, investigate the distribution of height
+ by simulation, enumerate functional graphs, alcohols (!), necklaces, \+
+expression trees, and so on." }}{PARA 15 "" 0 "" {HYPERLNK 17 "The Com
+bstruct Package, Generating Functions." 2 "combstruct/generating_funct
+ions" "" }{TEXT -1 31 "  Starting with version 3.0 of " }{TEXT 259 10 
+"Combstruct" }{TEXT -1 120 ", it becomes possible to produce generatin
+g function equations and to solve some of them.  Also, a new function,
+ called " }{TEXT 260 10 "allstructs" }{TEXT -1 60 " for the exhaustive
+ generation of structures has been added." }}{PARA 15 "" 0 "" 
+{HYPERLNK 17 "Introduction to the Package Ore_algebra, A Package for L
+inear Operators and Skew Polynomials." 2 "Ore_algebra/intro" "" }
+{TEXT -1 236 "  Several algorithms for integration and summation have \+
+a natural description in terms of linear differential and difference o
+perators, which in turn are well described by skew (or Ore) polynomial
+s.  This was the starting point for the " }{TEXT 262 11 "Ore_algebra" 
+}{TEXT -1 9 " package." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Introduction \+
+to the Groebner Package." 2 "Groebner/intro" "" }{TEXT -1 6 "  The " }
+{TEXT 261 8 "Groebner" }{TEXT -1 393 " package implements a general Bu
+chberger algorithm to deal with ideals of several types of multivariat
+e polynomials. Available features are: (i) calculations over complicat
+ed ground fields are possible with a single package; (ii) many term or
+ders; (iii) calculations of common invariants of ideals and varieties;
+ (iv) facilities for change of orderings; (v) calculations with skew p
+olynomials." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Introduction to the Mgfu
+n Package." 2 "Mgfun,intro" "" }{TEXT -1 6 "  The " }{TEXT 294 5 "Mgfu
+n" }{TEXT -1 118 " package is intended for the symbolic manipulation o
+f a large class of special functions and combinatorial sequences (" }
+{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 131 "-finite and holonomic func
+tions), especially for their symbolic summation and integration.  It i
+s a user-oriented interface to the " }{TEXT 295 8 "Holonomy" }{TEXT 
+-1 39 " package, by avoiding the user to call " }{TEXT 296 8 "Holonomy
+" }{TEXT -1 5 " and " }{TEXT 297 8 "Groebner" }{TEXT -1 42 " directly.
+  It is designed to be close to " }{TEXT 298 4 "gfun" }{TEXT -1 11 " i
+n spirit." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 21 "General Functional
+ity" }}{EXCHG {PARA 15 "" 0 "" {HYPERLNK 17 "Analysis of Algorithms wi
+th Combstruct." 2 "combstruct/algorithm_analysis" "" }{TEXT -1 31 "  S
+tarting with version 3.2 of " }{TEXT 263 10 "Combstruct" }{TEXT -1 87 
+", it is possible to perform some simple complexity analyses of algori
+thms operating on " }{TEXT 264 10 "Combstruct" }{TEXT -1 29 " structur
+es in the spirit of " }{TEXT 265 3 "Luo" }{TEXT -1 1 "." }}{PARA 15 "
+" 0 "" {HYPERLNK 17 "Generating Marked Combstruct Grammars." 2 "combst
+ruct/mark1" "" }{TEXT -1 322 "  Version 3.2 contains new functions pro
+ducing grammars with marked objects.  This makes it possible to analys
+e means and variance of parameters of various combinatorial objects.  \+
+The basic mechanisms are described here together with examples like: c
+ycles in permutations, path length or leaves in binary trees, and so o
+n." }}{PARA 15 "" 0 "" {HYPERLNK 17 "More Examples of Marking Combstru
+ct Grammars." 2 "combstruct/mark2" "" }{TEXT -1 59 "  This worksheet c
+ontinues to explore the possibilities of " }{TEXT 266 16 "combstruct[m
+ark]" }{TEXT -1 213 ".  How far is the common ancestor of two nodes in
+ a random binary tree?  What is the average distance between two nodes
+?  This and a few other examples related to non-crossing configuration
+s are to be found there." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Attribute G
+rammars and Combinatorics." 2 "combstruct/attributes" "" }{TEXT -1 28 
+"  This worksheet introduces " }{TEXT 299 10 "Combstruct" }{TEXT -1 
+410 " capability for describing properties of structures, like pathlen
+gth of trees, using attribute grammars.  Since for some structures and
+ algorithms it is possible to define a property corresponding to the c
+omplexity of the algorithm on the structure, these functions provide a
+nother mechanism of algorithm analysis.  However, in this case there i
+s access to more statistical information, such as higher moments." }}}
+}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 13 "Combinatorics" }}{EXCHG {PARA 
+15 "" 0 "" {HYPERLNK 17 "Enumeration of Planar Configurations in Combi
+natorial Geometry." 2 "autocomb/noncrossing_1" "" }{TEXT -1 64 "  Ther
+e, starting with Euler's counting of triangulations of an " }{XPPEDIT 
+18 0 "n" "6#%\"nG" }{TEXT -1 142 "-gon, many planar configurations can
+ be counted, listed and randomly generated, automatically.  This sheet
+ may serve as an entry point to the " }{TEXT 272 10 "Combstruct" }
+{TEXT -1 5 " and " }{TEXT 273 4 "Gfun" }{TEXT -1 10 " packages." }}
+{PARA 15 "" 0 "" {HYPERLNK 17 "Enumerating alcohols and other classes \+
+of chemical moleculs, an example of Poly\341's theory." 2 "autocomb/al
+cohols" "" }{TEXT -1 85 "  Classes of chemical compounds can be repres
+ented by combinatorial models using the " }{TEXT 274 10 "Combstruct" }
+{TEXT -1 9 " package." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Balls and Urns
+, Etc." 2 "autocomb/balls_and_urns" "" }{TEXT -1 211 "  Balls and urns
+ models are basic in combinatorics, statistics, analysis of algorithms
+ and statistical physics.  We demonstrate here how their properties ca
+n be explored using most of the functionalities of the " }{TEXT 275 
+10 "Combstruct" }{TEXT -1 9 " package." }}{PARA 15 "" 0 "" {HYPERLNK 
+17 "Combinatorics of Non-Crossing Configurations." 2 "autocomb/noncros
+sing_2" "" }{TEXT -1 294 "  Take points on a circle and consider graph
+s based on these points such that no edges cross.  A fairly complete t
+heory of these constrained random graphs can be developed.  Planarity \+
+entails a very strong combinatorial decomposability that is especially
+ well suited to a detailed treatment by " }{TEXT 267 10 "Combstruct" }
+{TEXT -1 1 "." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Constrained Permutatio
+ns and the Principle of Inclusion-Exclusion." 2 "autocomb/permutations
+" "" }{TEXT -1 33 "  This worksheet is based on the " }{TEXT 268 10 "C
+ombstruct" }{TEXT -1 5 " and " }{TEXT 269 4 "Gfun" }{TEXT -1 318 " pac
+kages.  It shows how to enumerate many classes of permutations with co
+nstraints on ``succession gaps'' (differences between consecutive elem
+ents).  This covers many celebrated combinatorial problems (like ``ren
+contre'' or ``menage'').  Generating functions, recurrences, and asymp
+totics are obtained automatically." }}{PARA 15 "" 0 "" {HYPERLNK 17 "R
+obustness in Random Interconnection Graphs." 2 "autocomb/random_graphs
+" "" }{TEXT -1 33 "  This worksheet is based on the " }{TEXT 270 10 "C
+ombstruct" }{TEXT -1 5 " and " }{TEXT 271 4 "Gfun" }{TEXT -1 165 " pac
+kages.  It shows how to characterize the trade-offs between the densit
+y of edges in a graph, its connectivity by short paths, and its robust
+ness to link failure." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Monomer-Dimer \+
+Tilings." 2 "autocomb/polymer_tilings" "" }{TEXT -1 253 "  The number \+
+of ways a square lattice can be tiled with unit squares and dominoes i
+s a combinatorial problem related to physical models of phase transiti
+on.  This worksheet applies combstruct to finding bounds on the asympt
+otic behaviour of this number." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 
+22 "Analytic Combinatorics" }}{EXCHG {PARA 15 "" 0 "" {HYPERLNK 17 "A \+
+Problem in Statistical Classification Theory." 2 "autocomb/hierarchy_t
+rees" "" }{TEXT -1 136 "  Classification theory makes use of classific
+ation trees.  This worksheet explores properties of random classificat
+ion trees using the " }{TEXT 276 10 "Combstruct" }{TEXT -1 13 " packag
+e and " }{TEXT 277 5 "Maple" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" 
+{HYPERLNK 17 "Pollard's Rho Algorithm." 2 "autocomb/Pollard_algo" "" }
+{TEXT -1 101 "  An efficient and simple technique used to find factors
+ of integers.  We show in this worksheet how " }{TEXT 278 10 "Combstru
+ct" }{TEXT -1 5 " and " }{TEXT 279 4 "Gfun" }{TEXT -1 162 " can be use
+d to analyze a realistic combinatorial model of the algorithm and thus
+ derive a probabilistic complexity analysis of this algorithm and vari
+ants of it." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 31 "Special Function
+s Manipulations" }}{EXCHG {PARA 15 "" 0 "" {HYPERLNK 17 "Gfun and the \+
+AGM." 2 "autocomb/AGM" "" }{TEXT -1 144 "  The arithmetic-geometric me
+an is related to hypergeometric functions.  This relation and a genera
+lization of it are explored and proved using " }{TEXT 281 4 "gfun" }
+{TEXT -1 1 "." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Variations on the Sequ
+ence of Ap\351ry Numbers." 2 "autocomb/Apery_numbers" "" }{TEXT -1 
+131 "  Finding a second order recurrence satisfied by combinatorial nu
+mbers was a crucial step in Ap\351ry's proof of the irrationality of \+
+" }{XPPEDIT 18 0 "Zeta(3)" "6#-%%ZetaG6#\"\"$" }{TEXT -1 259 ".  In th
+is session, we exemplify an algorithmic method for symbolic summation \+
+by rediscovering the recurrence on these numbers and proving a combina
+torial identity that they satisfy.  We also derive an efficient calcul
+ation of the first hundreds of digits of " }{XPPEDIT 18 0 "Zeta(3)" "6
+#-%%ZetaG6#\"\"$" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {HYPERLNK 17 "An \+
+Integral of a Product of four Bessel Functions." 2 "autocomb/Bessel_in
+tegral" "" }{TEXT -1 31 "  We illustrate the use of the " }{TEXT 280 
+5 "Mgfun" }{TEXT -1 155 " package on the computation of a closed form \+
+for an integral from a recent research paper.  This nice integral invo
+lves the four types of Bessel functions." }}{PARA 15 "" 0 "" 
+{HYPERLNK 17 "Borel Resummation of Divergent Series Using Gfun." 2 "au
+tocomb/Borel_resummation" "" }{TEXT -1 452 "  For some ``irregular sin
+gular'' problems coming from differential equations, there exist forma
+l power series solutions that are everywhere divergent.  These power s
+eries turn out to make sense as asymptotic expansions of actual soluti
+ons.  The Borel summation technique is used to recover convergent repr
+esentations for these actual functions solutions.  For a fairly large \+
+class of integrands, this technique leads to algorithmic calculations \+
+using " }{TEXT 300 4 "gfun" }{TEXT -1 1 "." }}}}{SECT 1 {PARA 3 "" 0 "
+" {TEXT -1 11 "Asymptotics" }}{EXCHG {PARA 15 "" 0 "" {HYPERLNK 17 "Pa
+tterns in Words." 2 "autocomb/DNA" "" }{TEXT -1 50 "  How likely is it
+ that a specific pattern occurs " }{XPPEDIT 18 0 "k" "6#%\"kG" }{TEXT 
+-1 34 " times in a random word of length " }{XPPEDIT 18 0 "n" "6#%\"nG
+" }{TEXT -1 98 "?  How does the probability of this event depend on th
+e specific pattern?  This worksheet applies " }{TEXT 283 10 "Combstruc
+t" }{TEXT -1 5 " and " }{TEXT 284 4 "Gfun" }{TEXT -1 77 " to this prob
+lem which has a connection to questions from biology of the DNA." }}
+{PARA 15 "" 0 "" {HYPERLNK 17 "A Seating Arrangement Problem." 2 "auto
+comb/channel_allocation" "" }{TEXT -1 20 "  What happens when " }
+{XPPEDIT 18 0 "n" "6#%\"nG" }{TEXT -1 334 " persons arrive at a lunche
+onette and are so unfriendly that no one wants to sit next to an alrea
+dy occupied seat?  This worksheet explores properties of this problem \+
+when people arrive randomly.  (This also serves as a simplified model \+
+of channel occupation in mobile communication.)  The complete treatmen
+t is entirely based on the " }{TEXT 285 4 "Gfun" }{TEXT -1 13 " packag
+e and " }{TEXT 286 5 "Maple" }{TEXT -1 50 "'s capabilities in solving \+
+differential equations." }}{PARA 15 "" 0 "" {HYPERLNK 17 "Staircase po
+lygons, a simplified model for self-avoiding walks." 2 "autocomb/self_
+avoiding_walks" "" }{TEXT -1 193 "  There, we count pairs of non-cross
+ing paths in integer lattices of dimensions 2, 3 and more.  We also ge
+t numerical asymptotics by a connection method.  This sheet makes inte
+nsive use of the " }{TEXT 287 4 "Gfun" }{TEXT -1 9 " package." }}
+{PARA 15 "" 0 "" {HYPERLNK 17 "Asymptotics of the Stirling Numbers of \+
+the Second Kind." 2 "autocomb/Stirling_numbers" "" }{TEXT -1 443 "  Th
+e asymptotics of the Bell numbers is a classical problem which is trad
+itionally treated by the saddle-point method.  The asymptotic scale re
+quired to perform the computation is non-trivial, and variants of this
+ problem such as the asymptotic behaviour of the average value or the \+
+variance of the Stirling numbers involve an indefinite cancellation in
+ this scale.  This worksheet exemplifies the use of a recent algorithm
+ on this problem.  " }{TEXT 282 29 "[Based on experimental code.]" }}}
+}}{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 1 1 1 1 }{PAGENUMBERS 0 1 
+2 33 1 1 }

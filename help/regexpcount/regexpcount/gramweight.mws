@@ -1,0 +1,78 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 1 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }1 0 0 0 8 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 
+0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple
+ Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE 
+"" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 3 3 0 0 0 0 0 0 
+15 2 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT -1 23 "regexpcount[gramweight]" }
+{TEXT 30 52 " - transform an automaton for processing with gfeqns" }}
+{PARA 4 "" 0 "usage" {TEXT -1 17 "Calling Sequence:" }}{PARA 0 "" 0 "
+" {TEXT -1 21 "     gramweight(auto)" }}{PARA 4 "" 0 "" {TEXT -1 11 "P
+arameters:" }}{PARA 0 "" 0 "" {TEXT -1 55 "     auto    - a grammar sp
+ecification for an automaton" }}}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 
+12 "Description:" }}{PARA 15 "" 0 "" {TEXT -1 230 "This function subst
+itute each (possibly Markov) letter l in the transitions of a (possibl
+y Markov) automaton by \"Prod(l,Atom)\", where l becomes associated wi
+th Epsilon. The input and output automaton are in grammar external for
+m. " }}{PARA 15 "" 0 "" {TEXT -1 4 "See " }{HYPERLNK 17 "regexpcount[s
+pecification]" 2 "regexpcount[specification]" "" }{TEXT -1 38 " for co
+mplete external specifications." }}{PARA 15 "" 0 "" {TEXT -1 138 "This
+ function is useful as preprocessing before computing generating funct
+ions in the non-uniform Bernoulli or Markov cases when one uses " }
+{HYPERLNK 17 "combstruct[gfeqns]" 2 "combstruct[gfeqns]" "" }{TEXT -1 
+1 "." }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 9 "Examples:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "with(regexpcount): " }}}
+{PARA 0 "" 0 "" {TEXT -1 35 "A Bernoulli automaton recognizing  " }
+{XPPEDIT 19 1 "ab^`*`;" "6#)%#abG%\"*G" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 83 "R:=\{reg=Prod(Sequence(Y),a),Y=Prod(a,b),a=Atom,b=Ato
+m\}:\nGauto:=regexptogram(R,reg);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%&GautoG<&/%\"aG%%AtomG/%\"bGF(/%#w2G-%&UnionG6$%(EpsilonG-%%ProdG6$F*
+%$regG/F4-F26$F'F," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 48 "Transform t
+his automaton to a weighted automaton" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 26 "WGauto:=gramweight(Gauto);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%'WGautoG<&/%\"aG%(EpsilonG/%\"bGF(/%$regG-%%ProdG6$-F
+.6$F'%%AtomG%#w2G/F3-%&UnionG6$F(-F.6$-F.6$F*F2F," }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 48 "Compute the generating function of the language " 
+}{XPPEDIT 19 1 "(a+b)^`*`;" "6#),&%\"aG\"\"\"%\"bGF&%\"*G" }{TEXT -1 
+67 ", when the probabilities of the letters are 1/3 for a and 2/3 for \+
+b" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 161 "The procedure suppressparm \+
+suppresses the parameters in the output of gfeqns, simplifying the dis
+play. Remark that gfeqns do not accept rational values for tags." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "suppressparm:=proc(L::list) \+
+local i: subs(seq(i=op(0,i),i=indets(L,function)),L) end:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "Eq:=combstruct[gfeqns](WGauto,unlab
+elled,z,[[ka,a],[kb,b]]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#EqG7&/
+-%\"aG6%%\"zG%#kaG%#kbGF+/-%\"bGF)F,/-%$regGF)*(F+\"\"\"F*F4-%#w2GF)F4
+/F5,&F4F4*(F,F4F*F4F1F4F4" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+20 "H:=suppressparm(Eq);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"HG7&/%
+\"aG%#kaG/%\"bG%#kbG/%$regG*(F(\"\"\"%\"zGF/%#w2GF//F1,&F/F/*(F+F/F0F/
+F-F/F/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "H:=subs(ka=1/3,kb
+=2/3,H);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"HG7&/%\"aG#\"\"\"\"\"$
+/%\"bG#\"\"#F*/%$regG,$*(F*!\"\"%\"zGF)%#w2GF)F)/F5,&F)F)**F.F)F*F3F4F
+)F0F)F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "subs(solve(\{op(
+%)\},\{seq(op(1,i),i=%)\}),reg);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$
+*(\"\"$\"\"\"%\"zGF&,&\"\"*!\"\"*&\"\"#F&)F'F,F&F&F*F*" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 22 "Expand the first terms" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 17 "series(%,z=0,10);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+/%\"zG#\"\"\"\"\"$F&#\"\"#\"#FF'#\"\"%\"$V#\"\"&#\"\")
+\"%(=#\"\"(#\"#;\"&$o>\"\"*-%\"OG6#F&\"#6" }}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 10 "See Also: " }}
+{PARA 0 "" 0 "" {HYPERLNK 17 "regexpcount" 2 "regexpcount" "" }{TEXT 
+-1 2 ", " }{HYPERLNK 17 "regexpcount[specification]" 2 "regexpcount[sp
+ecification]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "regexpcount[grammarko
+v]" 2 "regexpcount[grammarkov]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "com
+bstruct[gfeqns]" 2 "combstruct[gfeqns]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "regexpcount[eqnstoasympexp]" 2 "regexpcount[eqnstoasympe
+xp]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "solve/linear" 2 "solve,linear
+" "" }}}}{MARK "2 14 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

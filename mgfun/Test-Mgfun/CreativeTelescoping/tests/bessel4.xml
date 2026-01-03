@@ -1,0 +1,35 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <test name="bessel_double">
+    <fun>exp(-x)*exp(-y)*BesselJ(1,x)*BesselJ(1,y)*BesselJ(2,c*sqrt(x*y))</fun>
+    <tex>\int\!\!\!\!\int e^{-x}e^{-y}J_1(x)J_1(y)J_2(c\sqrt{xy})\text{d}x\text{d}y</tex>
+    <var_int name="x,y"/>
+    <var name="x" type="diff"/>
+    <var name="y" type="diff"/>
+    <var name="c" type="diff"/>
+    <set_val name="x" type="float" inter="0..10"/>
+    <set_val name="y" type="float" inter="0..10"/>
+    <set_val name="c" type="float" inter="0..10"/>
+  </test>
+
+</tests>

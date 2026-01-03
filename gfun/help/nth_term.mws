@@ -1,0 +1,176 @@
+{VERSION 13 0 "Linux" "13.0" }
+{USTYLETAB {PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times"
+ 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 2" -1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 3" -1 202 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 72 2 0 2 2 -1 1 }{PSTYLE "Ordered List 4" -1 203 
+1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3
+ 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordered List 5" -1 204 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 
+2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 -1 1 }{PSTYLE "Warning" 
+-1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 205 1 
+{CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0 0 12 
+12 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "" -1 -1 "C
+ourier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printe
+d Output" -1 6 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1
+ 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE
+ "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0
+ 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier"
+ 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 128 64 
+1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" 
+-1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Hyperlin
+kError" -1 206 1 {CSTYLE "" -1 -1 "Courier" 1 12 255 0 255 1 2 2 1 2 2
+ 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0
+ 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1 -1 "Tim
+es" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2
+ 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1
+ 15 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0
+ 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 
+"Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1
+ 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1
+ 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 
+0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 207 1 {CSTYLE ""
+ -1 -1 "Courier" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Output" -1 12 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{CSTYLE "Annota
+tion Text" -1 200 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Plot Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Nonterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 
+0 0 1 }{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 0 0 0 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0
+ 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 
+0 0 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 
+255 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 "Times" 
+1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Small" -1 7 "Times" 
+1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1
+ 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times"
+ 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times" 1
+ 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Time
+s" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 
+"Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Smal
+l207" -1 201 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple C
+omment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D \+
+Math Italic Small204" -1 202 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Maple Input Placeholder" -1 203 "Courier" 1 12 200 0 200 1 2 
+1 2 2 1 2 0 0 0 1 }{CSTYLE "Code" -1 204 "Courier" 1 12 255 0 0 1 2 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small206" -1 205 "Times" 1 1 
+0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small205" -1 206 
+"Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inert Output" -1 
+207 "Times" 1 12 144 144 144 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math I
+talic Small" -1 208 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "
+2D Comment" -1 18 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Underlined Bold" -1 41 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Copyright" -1 34 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1
+ }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 0 0 1 2 2 1 2 2 2 0 0
+ 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "2D Math" -1 2 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Input" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }
+{CSTYLE "Header and Footer" -1 209 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 
+0 0 1 }{CSTYLE "Text" -1 210 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 
+}{CSTYLE "Help Notes" -1 37 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Equation Label" -1 211 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0
+ 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Popup" -1 31 "Times" 1 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "Dictionary Hyperlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0 1 2 2 2 2 
+2 2 0 0 0 1 }{CSTYLE "" -1 212 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 
+0 1 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT 213 14 "gfun[nth_term]" }{TEXT 
+30 60 " - compute one term of the solution of a recurrence relation" }
+}{PARA 3 "" 0 "" {TEXT 213 19 "NumGfun[fnth_term] " }{TEXT 210 120 "- \+
+compute a floating-point approximation to one term of the solution of \+
+a recurrence relation, with guaranteed precision" }}{PARA 4 "" 0 "usag
+e" {TEXT 214 17 "Calling Sequences" }}{PARA 12 "" 0 "" {TEXT 215 14 " \+
+    nth_term(" }{TEXT 35 3 "rec" }{TEXT 215 2 ", " }{TEXT 35 4 "u(n)" 
+}{TEXT 215 2 ", " }{TEXT 35 1 "k" }{TEXT 215 10 ", [series]" }{TEXT 
+210 1 ")" }}{PARA 12 "" 0 "" {TEXT 215 15 "     fnth_term(" }{TEXT 35 
+3 "rec" }{TEXT 215 2 ", " }{TEXT 35 4 "u(n)" }{TEXT 215 2 ", " }{TEXT 
+35 1 "k" }{TEXT 215 3 ", [" }{TEXT 35 9 "precision" }{TEXT 215 11 "], \+
+[series]" }{TEXT 210 1 ")" }}{PARA 4 "" 0 "" {TEXT 214 10 "Parameters"
+ }}{PARA 0 "" 0 "" {TEXT 212 15 "   rec       - " }{TEXT 216 50 "linea
+r recurrence relation with coefficients in \342\204\232[" }{XPPEDIT 
+216 0 "Typesetting:-mrow(Typesetting:-mi(\"\"), Typesetting:-mn(\"i\",
+ mathvariant = \"normal\"));" "-I%mrowG6#/I+modulenameG6\"I,Typesettin
+gGI(_syslibGF'6$-I#miGF$6#Q!F'-I#mnGF$6$Q\"iF'/%,mathvariantGQ'normalF
+'" }{TEXT 216 2 "][" }{TEXT 35 1 "n" }{TEXT 216 1 "]" }}{PARA 0 "" 0 "
+" {TEXT 23 15 "   u         - " }{TEXT 216 29 "name; holonomic sequenc
+e name" }}{PARA 0 "" 0 "" {TEXT 23 15 "   n         - " }{TEXT 210 41 
+"name; variable of the holonomic sequence " }{TEXT 35 1 "u" }}{PARA 0 
+"" 0 "" {TEXT 23 15 "   k         - " }{TEXT 216 26 "nonnegative integ
+er; index" }}{PARA 0 "" 0 "" {TEXT 23 15 "   precision - " }{TEXT 210 
+50 "(optional) positive integer; number of digits (of " }{TEXT 22 8 "a
+bsolute" }{TEXT 210 11 " precision)" }}}{SECT 0 {PARA 4 "" 0 "info" 
+{TEXT 214 11 "Description" }}{PARA 15 "" 0 "" {TEXT 217 4 "The " }
+{TEXT 35 22 "nth_term(rec, u(n), k)" }{TEXT 217 22 " command computes \+
+the " }{TEXT 35 1 "k" }{TEXT 217 27 "th term of the solution of " }
+{TEXT 35 3 "rec" }{TEXT 217 1 "." }}{PARA 15 "" 0 "" {TEXT 217 4 "The 
+" }{TEXT 35 33 "fnth_term(rec, u(n), k,precision)" }{TEXT 217 56 " com
+mand computes a floating-point approximation to the " }{TEXT 35 1 "k" 
+}{TEXT 217 27 "th term of the solution of " }{TEXT 35 3 "rec" }{TEXT 
+217 31 ", with an error less than 10^(-" }{TEXT 35 9 "precision" }
+{TEXT 217 33 "). It is basically equivalent to " }{TEXT 35 22 "nth_ter
+m(rec, u(n), k)" }{TEXT 217 96 " followed by floating-point evaluation
+ to a suitable precision, but usually more efficient when " }{TEXT 35 
+1 "k" }{TEXT 217 10 " is large." }{TEXT 217 0 "" }}{PARA 15 "" 0 "" 
+{TEXT 217 14 "If the option " }{TEXT 35 6 "series" }{TEXT 217 24 " is \+
+present, instead of " }{TEXT 35 4 "u(k)" }{TEXT 217 30 ", these functi
+ons compute the " }{TEXT 35 1 "k" }{TEXT 217 47 "th partial sum of the
+ series with general term " }{TEXT 217 4 "u(n)" }{TEXT 217 33 ", that \+
+is, Sum(u(n), n = 0..k-1)." }}{PARA 15 "" 0 "" {TEXT 217 23 "The defau
+lt (absolute) " }{TEXT 217 9 "precision" }{TEXT 217 25 " is the curren
+t value of " }{TEXT 35 6 "Digits" }{TEXT 217 2 ". " }}{PARA 15 "" 0 ""
+ {TEXT 217 103 "These functions are designed to compute exact values o
+r high-precision approximations of remote terms (" }{TEXT 35 1 "k" }
+{TEXT 217 5 " and " }{TEXT 35 9 "precision" }{TEXT 217 94 " in the mil
+lions) efficiently. They are inefficient when the order of the recurre
+nce relation " }{TEXT 217 3 "rec" }{TEXT 217 96 " is too large. For or
+ders in the hundreds, naive unrolling will likely be faster except fo \+
+huge " }{TEXT 35 1 "k" }{TEXT 217 1 "." }}}{SECT 0 {PARA 4 "" 0 "examp
+les" {TEXT 214 8 "Examples" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+26 "with(gfun): with(NumGfun):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 77 "nth_term(\{(n^2+1)*u(n+2)+u(n+1)=(2*n+2*I+5)*u(n), u(0)=1, u(1
+)=0\}, u(n), 20);" }}{PARA 11 "" 1 "" {XPPMATH 20 ",&#\"<*z(G57tOz')4
+\"3!p&\"@++]i!**HtSxQ?*RD#*)\"\"\"*&#\"<P!pYY\"*yL_uUE.')\"@++DJ&*\\m.
+(Q>g*p7Y%F&^#F&F&F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "nth_
+term(u(n+2)=u(n)+u(n+1), u(n), 50);" }}{PARA 11 "" 1 "" {XPPMATH 20 ",
+&*&\"+\\?uyx\"\"\"-I\"uG6\"6#\"\"!F%F%*&\",D!pie7F%-F'6#F%F%F%" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "nth_term(u(n+1)=u(n)/(n+1), \+
+u(n), 40, 'series');" }}{PARA 11 "" 1 "" {XPPMATH 20 ",$*&#\"O*=(3=s'[
+W;Lx\"HLr1p%=+hfBx#\"O+++Sy'[9&*p39?$z;s)fS5%*)>5\"\"\"-I\"uG6\"6#\"\"
+!F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "fnth_term(u(n+1)=u
+(n)/(n+1), u(n), 30, 30, 'series');" }}{PARA 11 "" 1 "" {XPPMATH 20 ",
+$*&$\"@`8Z(Gg`BX!f%G=G=F!#I\"\"\"-I\"uG6\"6#\"\"!F'F'" }}}}{SECT 0 
+{PARA 4 "" 0 "seealso" {TEXT 214 9 "See Also " }}{PARA 0 "" 0 "" {TEXT
+ 210 0 "" }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT 210 2 ", " }
+{HYPERLNK 17 "NumGfun" 2 "gfun[NumGfun]" "" }{TEXT 210 2 ", " }
+{HYPERLNK 17 "rectoproc" 2 "gfun[rectoproc]" "" }{TEXT 210 2 ", " }
+{HYPERLNK 17 "evaldiffeq" 2 "NumGfun[evaldiffeq]" "" }{TEXT 210 0 "" }
+}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

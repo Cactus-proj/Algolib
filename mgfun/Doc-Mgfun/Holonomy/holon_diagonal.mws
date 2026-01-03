@@ -1,0 +1,124 @@
+{VERSION 3 0 "DEC ALPHA UNIX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 23 "C
+ourier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 }{CSTYLE "Help Heading" -1 26 "
+" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "List Item" 0 
+14 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 
+0 0 0 0 0 0 14 5 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }{PSTYLE "
+" 14 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 14 257 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {SECT 0 {PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 58 
+"Holonomy[holon_diagonal] - Compute diagonals of holonomic " }
+{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 27 "-finite formal power series
+" }}{PARA 0 "" 0 "usage" {TEXT 26 17 "Calling Sequence:" }{TEXT -1 19 
+"\n   holon_diagonal(" }{XPPEDIT 18 0 "G;" "6#%\"GG" }{TEXT -1 1 "," }
+{XPPEDIT 18 0 "x_list;" "6#%'x_listG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "
+s;" "6#%\"sG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "T_rat;" "6#%&T_ratG" }
+{TEXT -1 1 "," }{XPPEDIT 18 0 "T_poly;" "6#%'T_polyG" }{TEXT -1 1 "," 
+}{XPPEDIT 18 0 "T_elim;" "6#%'T_elimG" }{TEXT -1 1 ")" }}{PARA 0 "" 0 
+"" {TEXT 26 11 "Parameters:" }{TEXT -1 4 "\n   " }{XPPEDIT 18 0 "G;" "
+6#%\"GG" }{TEXT 23 21 "                   - " }{TEXT -1 74 "set or lis
+t of generators of an ideal of linear differential operators\n   " }
+{XPPEDIT 18 0 "x_list;" "6#%'x_listG" }{TEXT 23 16 "              - " 
+}{TEXT -1 85 "the list or set of variables with respect to which the d
+iagonal is to be computed\n   " }{XPPEDIT 18 0 "s;" "6#%\"sG" }{TEXT 
+23 21 "                   - " }{TEXT -1 34 "name of the remaining vari
+able\n   " }{XPPEDIT 18 0 "T_rat,T_poly,T_elim;" "6%%&T_ratG%'T_polyG%
+'T_elimG" }{TEXT 23 3 " - " }{TEXT -1 11 "term orders" }}}{SECT 0 
+{PARA 0 "" 0 "synopsis" {TEXT 26 12 "Description:" }}{PARA 15 "" 0 "" 
+{TEXT -1 110 "The command holon_diagonal computes a system of linear d
+ifferential operators that cancel the diagonal of the " }{XPPEDIT 18 
+0 "d;" "6#%\"dG" }{TEXT -1 41 "-finite function described by the syste
+m " }{XPPEDIT 18 0 "G;" "6#%\"GG" }{TEXT -1 76 " of linear differentia
+l operators: given a formal power series f of the form" }}{PARA 256 "
+" 0 "" {XPPEDIT 18 0 "sum(u[n[1],`...`,n[d]]*x[1]^n[1]*`...`*x[d]^n[d]
+);" "6#-%$sumG6#**&%\"uG6%&%\"nG6#\"\"\"%$...G&F+6#%\"dG\"\"\")&%\"xG6
+#\"\"\"&F+6#\"\"\"F2F.F2)&F56#F1&F+6#F1F2" }{TEXT -1 1 "," }}{PARA 14 
+"" 0 "" {TEXT -1 26 "where the sum ranges over " }{XPPEDIT 18 0 "0 <= \+
+n[1],`...`,0 <= n[d];" "6%1\"\"!&%\"nG6#\"\"\"%$...G1F$&F&6#%\"dG" }
+{TEXT -1 1 "." }}{PARA 14 "" 0 "" {TEXT -1 29 "Its diagonal with respe
+ct to " }{XPPEDIT 18 0 "x_list = [x[1], `...`, x[p]];" "6#/%'x_listG7%
+&%\"xG6#\"\"\"%$...G&F'6#%\"pG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "s \+
+= x[i];" "6#/%\"sG&%\"xG6#%\"iG" }{TEXT -1 14 " is defined as" }}
+{PARA 257 "" 0 "" {XPPEDIT 18 0 "sum(u[n[i],`...`,n[i],n[p+1],`...`,n[
+d]]*x[i]^n[i]*x[p+1]^n[p+1]*`...`*x[d]^n[d]);" "6#-%$sumG6#*,&%\"uG6(&
+%\"nG6#%\"iG%$...G&F+6#F-&F+6#,&%\"pG\"\"\"\"\"\"F5F.&F+6#%\"dGF5)&%\"
+xG6#F-&F+6#F-F5)&F<6#,&F4F5\"\"\"F5&F+6#,&F4F5\"\"\"F5F5F.F5)&F<6#F9&F
++6#F9F5" }{TEXT -1 0 "" }}{PARA 14 "" 0 "" {TEXT -1 6 "where " }
+{XPPEDIT 18 0 "0 <= n[i];" "6#1\"\"!&%\"nG6#%\"iG" }{TEXT -1 6 ", and \+
+" }{XPPEDIT 18 0 "0 <= n[p+1],`...`,0 <= n[d];" "6%1\"\"!&%\"nG6#,&%\"
+pG\"\"\"\"\"\"F*%$...G1F$&F&6#%\"dG" }{TEXT -1 1 "." }}{PARA 15 "" 0 "
+" {TEXT -1 201 "When the input system does not describe a holonomic id
+eal, a heuristic extension/contraction method is used. Termination is \+
+not ensured in this case. This should be changed and fixed in a next v
+ersion." }}{PARA 15 "" 0 "" {TEXT -1 49 "Typically, to compute a diago
+nal with respect to " }{XPPEDIT 18 0 "x_list = [x[p], `...`, x[p]];" "
+6#/%'x_listG7%&%\"xG6#%\"pG%$...G&F'6#F)" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "s = x[i];" "6#/%\"sG&%\"xG6#%\"iG" }{TEXT -1 2 ": " }
+{XPPEDIT 18 0 "T_rat;" "6#%&T_ratG" }{TEXT -1 33 " is a term order ove
+r an algebra " }{XPPEDIT 18 0 "A_rat = K(x[1],`...`,x[d])*[D[1], `...`
+, D[d]];" "6#/%&A_ratG*&-%\"KG6%&%\"xG6#\"\"\"%$...G&F*6#%\"dG\"\"\"7%
+&%\"DG6#\"\"\"F-&F46#F0F1" }{TEXT -1 71 " of linear differential opera
+tors with rational function coefficients; " }{XPPEDIT 18 0 "T_poly;" "
+6#%'T_polyG" }{TEXT -1 53 " is a term order over the corresponding Wey
+l algebra " }{XPPEDIT 18 0 "A_poly = K*[x[1], `...`, x[d]]*[D[1], `...
+`, D[d]];" "6#/%'A_polyG*(%\"KG\"\"\"7%&%\"xG6#\"\"\"%$...G&F*6#%\"dGF
+'7%&%\"DG6#\"\"\"F-&F36#F0F'" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "T_el
+im;" "6#%'T_elimG" }{TEXT -1 34 " is a term order over the algebra " }
+{XPPEDIT 18 0 "A_elim = K(s,x[p+1],`...`,x[d])*[x[1], `...`, x[p]]*[D[
+s], D[p+1], `...`, D[d]];" "6#/%'A_elimG*(-%\"KG6&%\"sG&%\"xG6#,&%\"pG
+\"\"\"\"\"\"F/%$...G&F+6#%\"dGF/7%&F+6#\"\"\"F1&F+6#F.F/7&&%\"DG6#F)&F
+=6#,&F.F/\"\"\"F/F1&F=6#F4F/" }{TEXT -1 13 " viewed as a " }{XPPEDIT 
+18 0 "K(s,x[p+1],`...`,x[d])*[D[s], D[p+1], `...`, D[d]];" "6#*&-%\"KG
+6&%\"sG&%\"xG6#,&%\"pG\"\"\"\"\"\"F-%$...G&F)6#%\"dGF-7&&%\"DG6#F'&F56
+#,&F,F-\"\"\"F-F/&F56#F2F-" }{TEXT -1 28 "-module (multiplications by \+
+" }{XPPEDIT 18 0 "x[1],`...`,x[p];" "6%&%\"xG6#\"\"\"%$...G&F$6#%\"pG
+" }{TEXT -1 17 " are forbidden). " }{XPPEDIT 18 0 "G;" "6#%\"GG" }
+{TEXT -1 26 " is a set of operators in " }{XPPEDIT 18 0 "A_rat;" "6#%&
+A_ratG" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 105 "The efficienc
+y of the calculation varies dramatically depending on the choice of ea
+ch of the term orders " }{XPPEDIT 18 0 "T_rat;" "6#%&T_ratG" }{TEXT 
+-1 2 ", " }{XPPEDIT 18 0 "T_poly;" "6#%'T_polyG" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "T_elim;" "6#%'T_elimG" }{TEXT -1 113 " over the corresp
+onding algebras. This is why these term orders have to be chosen and d
+eclared at the user level." }}{PARA 15 "" 0 "" {TEXT -1 262 "This func
+tion is part of the Holonomy package, and so can be used in the form h
+olon_diagonal(..) only after performing the command with(Holonomy) or \+
+with(Holonomy,holon_diagonal). The function can always be accessed in \+
+the long form Holonomy[holon_diagonal](..)." }}}{SECT 0 {PARA 0 "" 0 "
+examples" {TEXT 26 9 "Examples:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 50 "with(Ore_algebra):\nwith(Groebner):\nwith(Holonomy):" }}}
+{PARA 0 "" 0 "" {TEXT -1 70 "Compute a differential equation satisfied
+ by the complete diagonal of " }{XPPEDIT 18 0 "cos(x+y)*exp(z);" "6#*&
+-%$cosG6#,&%\"xG\"\"\"%\"yGF)F)-%$expG6#%\"zGF)" }{TEXT -1 31 ":\n1. d
+eclare a term order over " }{XPPEDIT 18 0 "C(x,y,z)*[D[x], D[y], D[z]]
+;" "6#*&-%\"CG6%%\"xG%\"yG%\"zG\"\"\"7%&%\"DG6#F'&F-6#F(&F-6#F)F*" }
+{TEXT -1 2 ": " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 82 "A_rat:=dif
+f_algebra([Dx,x],[Dy,y],[Dz,z]):\nT_rat:=termorder(A_rat,tdeg(Dx,Dy,Dz
+)):" }}}{PARA 0 "" 0 "" {TEXT -1 29 "2. declare a term order over " }
+{XPPEDIT 18 0 "C*[x, y, z]*[D[x], D[y], D[z]];" "6#*(%\"CG\"\"\"7%%\"x
+G%\"yG%\"zGF%7%&%\"DG6#F'&F,6#F(&F,6#F)F%" }{TEXT -1 2 ": " }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 123 "A_poly:=diff_algebra([Dx,x],[Dy,y]
+,[Dz,z],polynom=\{x,y,z\}):\nT_poly:=termorder(A_poly,wdeg([3,3,3,1,1,
+1],[Dx,Dy,Dz,x,y,z])):" }}}{PARA 0 "" 0 "" {TEXT -1 29 "3. declare a t
+erm order over " }{XPPEDIT 18 0 "C(z)*[x, y]*[D[z]];" "6#*(-%\"CG6#%\"
+zG\"\"\"7$%\"xG%\"yGF(7#&%\"DG6#F'F(" }{TEXT -1 28 ", with no multipli
+cation by " }{XPPEDIT 18 0 "x;" "6#%\"xG" }{TEXT -1 4 " or " }
+{XPPEDIT 18 0 "y;" "6#%\"yG" }{TEXT -1 10 " allowed: " }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 106 "A_elim:=diff_algebra([Dz,z],comm=\{x,y\}
+,polynom=\{x,y\}):\nT_elim:=termorder(A_elim,lexdeg([x,y],[Dz]),[x,y])
+:" }}}{PARA 0 "" 0 "" {TEXT -1 25 "4. compute the diagonal: " }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "G:=\{Dx^2+1,Dx-Dy,Dz-1\}:\nh
+olon_diagonal(G,[x,y,z],z,T_rat,T_poly,T_elim);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7#,*%#DzG\"\"\"*&)F%\"\"$\"\"\")%\"zG\"\"#F*F&*&)F%F-F*
+F,F&F)F&F&" }}}}{SECT 0 {PARA 0 "" 0 "seealso" {TEXT 26 10 "See Also: \+
+" }{HYPERLNK 17 "Holonomy" 2 "Holonomy" "" }{TEXT -1 1 " " }}}}{MARK "
+0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

@@ -1,0 +1,19 @@
+Have never worked and are therefore excluded directly by the Makefile:
+  Holonomy/gordon_k4_r4
+  Mgfun/kelvin
+  CreativeTelescoping/ising_ising3
+
+Sep 30, 2009
+  Papers/ChSa97:
+    Section 3.2 commented out because of a bug in Groebner[Basis].
+  Mgfun/system1:
+    (-1)^k*q^((5*k^2-k)/2)/qfactorial(q,n-k)/qfactorial(q,n+k) commented out
+    as q-calculus no longer works.
+
+Oct 13, 2009
+  CreativeTelescoping/qshift_qshift2:
+    commented out as q-calculus no longer works.
+
+Jan 17, 2010
+  CreativeTelescoping/binom7_binom_quadruple:
+    currently doesn't work. Known issue. Should work one day...

@@ -1,0 +1,59 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+A_rat:=diff_algebra([Dx,x],[Dy,y],[Dz,z]):
+T_rat:=MonomialOrder(A_rat,tdeg(Dx,Dy,Dz)):
+A_poly:=diff_algebra([Dx,x],[Dy,y],[Dz,z],polynom={x,y,z}):
+T_poly:=MonomialOrder(A_poly,wdeg([3,3,3,1,1,1],[Dx,Dy,Dz,x,y,z])):
+A_elim:=diff_algebra([Dy,y],[Dz,z],comm=x,polynom=x):
+T_elim:=MonomialOrder(A_elim,lexdeg([x],[Dy,Dz]),[x]):
+
+# cos(x+y)*exp(z) --> Sum((-1)^n*y^n/n!^2,n=0..infinity)*exp(z)
+G:={Dx^2+1,Dx-Dy,Dz-1}:
+holon_diagonal(G,[x,y],y,T_rat,T_poly,T_elim):
+if %=[Dz-1, Dy^2*y+Dy+1] then okay else % fi;
+
+A_rat:=diff_algebra([Dx,x],[Dy,y],[Dz,z]):
+T_rat:=MonomialOrder(A_rat,tdeg(Dx,Dy,Dz)):
+A_poly:=diff_algebra([Dx,x],[Dy,y],[Dz,z],polynom={x,y,z}):
+T_poly:=MonomialOrder(A_poly,wdeg([3,3,3,1,1,1],[Dx,Dy,Dz,x,y,z])):
+A_elim:=diff_algebra([Dx,x],[Dy,y],comm=z,polynom=z):
+T_elim:=MonomialOrder(A_elim,lexdeg([z],[Dx,Dy]),[z]):
+
+# cos(x+y)*exp(z) -->
+#	cos(x)*Sum((-1)^n*y^(2*n)/(2*n)!^2,n=0..infinity)
+#	-sin(x)*Sum((-1)^n*y^(2*n+1)/(2*n+1)!^2,n=0..infinity)
+G:={Dx^2+1,Dx-Dy,Dz-1}:
+holon_diagonal(G,[y,z],y,T_rat,T_poly,T_elim):
+if %=[-Dx+Dy^2*y+Dy, Dy*Dx^2+Dy, Dx^3+Dx] then okay else % fi;
+
+A_rat:=diff_algebra([Dx,x],[Dy,y],[Dz,z]):
+T_rat:=MonomialOrder(A_rat,tdeg(Dx,Dy,Dz)):
+A_poly:=diff_algebra([Dx,x],[Dy,y],[Dz,z],polynom={x,y,z}):
+T_poly:=MonomialOrder(A_poly,wdeg([3,3,3,1,1,1],[Dx,Dy,Dz,x,y,z])):
+A_elim:=diff_algebra([Dz,z],comm={x,y},polynom={x,y}):
+T_elim:=MonomialOrder(A_elim,lexdeg([x,y],[Dz]),[x,y]):
+
+# cos(x+y)*exp(z) --> Sum((-1)^n/n!^3*z^n,n=0..infinity)
+G:={Dx^2+1,Dx-Dy,Dz-1}:
+holon_diagonal(G,[x,y,z],z,T_rat,T_poly,T_elim):
+if %=[Dz+z^2*Dz^3+3*z*Dz^2+1] then okay else % fi;

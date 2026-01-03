@@ -1,0 +1,38 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <test name="ising2">
+    <fun>1/(1-4*w^2/(1-2*w*t+(1-4*w*t+4*w^2*t^2-4*w^2)^(1/2))^2)</fun>
+    <var_int name="t"/>
+    <var name="t" type="diff"/>
+    <var name="w" type="diff"/>
+  </test>
+
+  <test name="ising3">
+    <fun>1/(1-8*w^3/(1-2*w*t+(1-4*w*t+4*w^2*t^2-4*w^2)^(1/2))^2/(1-2*w*(-1+2*t^
+2)+(1-4*w*(-1+2*t^2)+4*w^2*(-1+2*t^2)^2-4*w^2)^(1/2)))</fun>
+    <var_int name="t"/>
+    <var name="t" type="diff"/>
+    <var name="w" type="diff"/>
+  </test>
+
+</tests>

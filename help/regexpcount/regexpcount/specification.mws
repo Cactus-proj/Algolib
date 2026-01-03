@@ -1,0 +1,293 @@
+{VERSION 4 0 "IBM INTEL LINUX22" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+257 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 258 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 0 1 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 260 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 261 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{PSTYLE "Normal" -1 0 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 
+0 0 0 0 1 0 0 0 0 0 0 0 1 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Head
+ing 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }0 
+0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }3 3 0 -1 -1 -1 0 0 0 0 0 0 
+-1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 
+0 0 0 1 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 3 3 0 
+0 0 0 0 0 15 2 }{PSTYLE "Fixed Width" 0 17 1 {CSTYLE "" -1 -1 "Courier
+" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 1 }3 0 0 -1 -1 -1 0 0 0 0 0 0 17 0 }
+{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 
+1 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT -1 86 "regexpcount[specification]
+ - specification of a regular expression and of an automaton" }}}
+{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 19 "Regular expression:" }}{PARA 
+15 "" 0 "" {TEXT -1 236 "A regular expression over an alphabet is buil
+t over elementary regular expressions restricted to be a letter of the
+ alphabet and on recursive applications of the constructors \"Union\",
+ \"Prod\", \"Sequence\" and \"Not\" on regular expressions:" }}{PARA 
+17 "" 0 "" {TEXT -1 326 "         l=Atom           - l is a letter of \+
+the alphabet                                                    \n    \+
+     U=Union(A,B,...) - U=A+B     (non necessarily disjoint) union of \+
+the languages A,B,...              \n       P=Prod(A,B, ...) - P=A.B..
+..   (possibly ambiguous) concatenation of the languages A, B, ...    \+
+   " }}{PARA 17 "" 0 "" {TEXT -1 27 "    S=Sequence(A)    - S = " }
+{XPPEDIT 19 1 "epsilon;" "6#%(epsilonG" }{TEXT -1 7 " + A + " }
+{XPPEDIT 19 1 "A^2;" "6#*$%\"AG\"\"#" }{TEXT -1 3 " + " }{XPPEDIT 19 
+1 "A^3;" "6#*$%\"AG\"\"$" }{TEXT -1 30 " + ...  Kleene Star Operator (
+" }{XPPEDIT 19 1 "epsilon;" "6#%(epsilonG" }{TEXT -1 27 "  empty word)
+              " }}{PARA 17 "" 0 "" {TEXT -1 23 "S=Not(R)         - S =
+ " }{XPPEDIT 19 1 "Sigma^`*`;" "6#)%&SigmaG%\"*G" }{TEXT -1 6 " - R (
+" }{XPPEDIT 19 1 "Sigma;" "6#%&SigmaG" }{TEXT -1 60 " alphabet, minus \+
+as set operation)                          " }}{PARA 17 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 17 "" 0 "" {TEXT -1 23 "                      \n" }}
+{PARA 15 "" 0 "" {TEXT -1 68 "Union(A,B,...) = \{w,   w belongs to A o
+r B or ...\}  (inclusive or). " }}{PARA 15 "" 0 "" {TEXT -1 55 "Prod(A
+1,A2,...,Ak)  = \{w1.w2....wk,   wi belongs to Ai\}" }}{PARA 15 "" 0 "
+" {TEXT -1 38 "The empty word is denoted by Epsilon. " }}{EXCHG {PARA 
+0 "" 0 "" {TEXT 257 9 "Examples:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+53 "Specify a grammar G for the regular expression for R=" }{XPPEDIT 
+19 1 "a^`*`*b+c;" "6#,&*&)%\"aG%\"*G\"\"\"%\"bGF(F(%\"cGF(" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 57 "G:=\{R=Union(Prod(Sequence(a),b),c)
+,a=Atom,b=Atom,c=Atom\}:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 62 "Speci
+fy a grammar G for the regular expression R=aab + Epsilon" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "G:=\{R=Union(Prod(a,a,b),'Epsilon')
+,a=Atom,b=Atom\}:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 260 38 "Procedures \+
+accessible from this level:" }}}{EXCHG {PARA 0 "" 0 "" {HYPERLNK 17 "r
+egexptogram" 2 "regexpcount[regexptogram]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "regexptomarkgram" 2 "regexpcount[regexptomatchesgram]" "
+" }{TEXT -1 2 ", " }{HYPERLNK 17 "regexpstowaitgram" 2 "regexpcount[re
+gexpstowaitgram]" "" }{TEXT -1 1 "," }{HYPERLNK 17 "starnormalform" 2 
+"regexpcount[randregexp]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "regexptoa
+uto" 2 "regexpcount[regexptoauto]" "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+261 10 "See also: " }{HYPERLNK 17 "randregexp" 2 "regexpcount[randrege
+xp]" "" }}}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 3 "" 0 "" 
+{TEXT 256 9 "Automaton" }}{PARA 0 "" 0 "" {TEXT -1 51 "A finite automa
+ton is given the following elements:" }}{PARA 0 "" 0 "" {TEXT -1 17 " \+
+  - an alphabet " }{XPPEDIT 19 1 "Sigma;" "6#%&SigmaG" }}{PARA 0 "" 0 
+"" {TEXT -1 22 "   - a set of states Q" }}{PARA 0 "" 0 "" {TEXT -1 23 
+"   - an initial state i" }}{PARA 0 "" 0 "" {TEXT -1 59 "   - a possib
+ly partial transition function delta from   Q*" }{XPPEDIT 19 1 "Sigma;
+" "6#%&SigmaG" }{TEXT -1 5 " on Q" }}{PARA 0 "" 0 "" {TEXT -1 28 "   -
+ a set of final states F" }}{PARA 0 "" 0 "" {TEXT -1 47 "   - an optio
+nal set of marked sets (M1,M2,...)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 42 "If the image of any pair  s (in Q), l (in
+ " }{XPPEDIT 19 1 "Sigma;" "6#%&SigmaG" }{TEXT -1 111 ")   by delta is
+ either empty or a singleton, the automaton is deterministic. It is no
+n deterministic otherwise." }}{PARA 0 "" 0 "" {TEXT -1 32 "If for any \+
+pair s (in Q), l (in " }{XPPEDIT 19 1 "Sigma;" "6#%&SigmaG" }{TEXT -1 
+92 ")  in a deterministic automaton, the image by delta is non-empty, \+
+the automaton is complete." }}{PARA 0 "" 0 "" {TEXT -1 282 "A word is \+
+ recognized by an automaton  if there exists a path beginning in the i
+nitial state and finishing in a terminal state that spells out the let
+ters of this word by reading the transitions of the path. The language
+ recognized by an automaton is the set of words it recognizes." }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 128 "By a non
+-standard definition, we also consider marked states of different type
+s defined by indiced subsets of the set of states." }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 4 "" 0 "
+info" {TEXT -1 23 "External specification:" }}{PARA 0 "" 0 "" {TEXT 
+-1 62 "The external specification of an automaton is a subset of the \+
+" }{HYPERLNK 17 "combstruct[specification]" 2 "combstruct[specificatio
+n]" "" }{TEXT -1 3 " . " }}{PARA 0 "" 0 "" {TEXT -1 106 "An automaton \+
+is defined as a set of equations such that the left handsides of these
+ equations are one of: " }}{PARA 15 "" 0 "" {TEXT -1 33 "letters of th
+e alphabet (l=Atom)," }}{PARA 15 "" 0 "" {TEXT -1 175 "name of states \+
+of automaton; in this latter case, the right member of the equation sp
+ecifies the transitions from that state (if any) and whether the state
+ is terminal or not;" }}{PARA 15 "" 0 "" {TEXT -1 54 "marks (letters o
+f size zero such as m='Epsilon', see  " }{HYPERLNK 17 "combstruct[spec
+ification]" 2 "combstruct[specification]" "" }{TEXT -1 189 " ) that tr
+anslate to parameters in multivariate generating functions; beware tha
+t there may be equations w_i='Epsilon' where w_i is not a mark but a f
+inal state without output transitions. " }}{PARA 0 "" 0 "" {TEXT -1 
+268 "Transitions are specified by a Prod constructor with r parameters
+ (r >=2). The first parameter is a letter of the alphabet and the last
+ parameter is a state name. Parameters 2 to r-1 are marks names indica
+ting that the state accessed by the transition has been marked." }}
+{PARA 0 "" 0 "" {TEXT -1 136 "Unions may be recursively applied over e
+lements which are transitions or the empty word 'Epsilon' (in which ca
+se the state is terminal)." }}{PARA 0 "" 0 "" {TEXT -1 109 "You can fi
+nd the generating function of the language recognized by a marked dete
+rministic automaton by using " }{HYPERLNK 17 "combstruct[gfsolve]" 2 "
+combstruct[gfsolve]" "" }{TEXT -1 30 " or alternative methods using " 
+}{HYPERLNK 17 "regexpcount[gramweight]" 2 "regexpcount[gramweight]" "
+" }{TEXT -1 2 ", " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "combstruct[gf
+eqns]" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "solve[linear]" 2 "solve[l
+inear]" "" }{TEXT -1 2 " ." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 
+"" 0 "" {TEXT 258 9 "Examples:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 18 "with(regexpcount):" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 55 "Speci
+fy an automaton A recognizing the language L=a+bb," }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 90 "A:=\{a=Atom,b=Atom,L=Union(Prod(a,w1),Prod(
+b,w2)),w1='Epsilon',w2=Prod(b,w3),w3='Epsilon'\};" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%\"AG<(/%\"aG%%AtomG/%\"bGF(/%\"LG-%&UnionG6$-%%ProdG6
+$F'%#w1G-F16$F*%#w2G/F6-F16$F*%#w3G/F3%(EpsilonG/F:F<" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 126 "Specify an automaton recognizing texts o
+ver the alphabet \{a,b\} where a mark has been added after each match \+
+with the letter a." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 117 "B:=
+\{a=Atom,b=Atom,R=Union('Epsilon',Prod(a,m,w2),Prod(b,R)),w2=Union('Ep
+silon',Prod(a,m,w2),\nProd(b,R)),m='Epsilon'\};" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%\"BG<'/%\"aG%%AtomG/%\"bGF(/%\"RG-%&UnionG6%%(Epsilon
+G-%%ProdG6%F'%\"mG%#w2G-F26$F*F,/F5F-/F4F0" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 20 "gramtoauto(B,R,[m]);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#-%&TABLEG6#7(/\"\"\"-F$6#7%/%&transG<$%\"aG%\"bG/F/<#F(/F0<#%%in
+itG/F5F)/%%markG-F$6#7#/F(F2/%&finalG<$F(F5/%)alphabetGF./%+liststates
+GF?" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT 262 38 "Procedure \+
+accessible from this level: " }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" 
+}{HYPERLNK 17 "gramtoauto" 2 "regexpcount[gramtoauto]" "" }{TEXT -1 2 
+", " }{HYPERLNK 17 "grammarkov" 2 "regexpcount[grammarkov]" "" }{TEXT 
+-1 2 ", " }{HYPERLNK 17 "gramweight" 2 "gramweight" "" }{TEXT -1 2 ", \+
+" }{HYPERLNK 17 "gramerror" 2 "gramerror" "" }}}}{SECT 0 {PARA 4 "" 0 
+"info" {TEXT -1 23 "Internal specification:" }}{PARA 0 "" 0 "" {TEXT 
+-1 120 "Internally, the automata are represented as tables, using the \+
+following predefined fields for an automaton named 'auto':" }}{PARA 
+15 "" 0 "" {TEXT -1 95 "auto['alphabet']  ->  set of letters of the al
+phabet (may include the empty transition epsilon)" }}{PARA 15 "" 0 "" 
+{TEXT -1 41 "auto['liststates']   -> set of liststates" }}{PARA 15 "" 
+0 "" {TEXT -1 48 "auto['init']  -> built in name of the init state" }}
+{PARA 15 "" 0 "" {TEXT -1 37 "auto['final']  -> set of final states" }
+}{PARA 15 "" 0 "" {TEXT -1 92 "auto['mark'][i] ->  (optional field) se
+t of marked states of type i. (i must be an integer)." }}{PARA 15 "" 
+0 "" {TEXT -1 91 "auto['checked']  ->  (optional field) bypass the int
+ernal coherence controls if set to true" }}{PARA 15 "" 0 "" {TEXT -1 
+79 "auto['pruned'] -> (optional field) the automaton has been pruned i
+f set to true" }}{PARA 0 "" 0 "" {TEXT -1 69 "If there are transitions
+ from a state s, they are defined as follows:" }}{PARA 15 "" 0 "" 
+{TEXT -1 40 "auto[s]['trans']  ->  set of transitions" }}{PARA 15 "" 
+0 "" {TEXT -1 65 "auto[s][l]   -> set of states accessed from state s \+
+with letter l" }}{EXCHG {PARA 0 "" 0 "" {TEXT 259 9 "Examples:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 78 "Internal specification with epsilo
+n-transitions of an automaton recognizing R=" }{XPPEDIT 19 1 "(a+b)^`*
+`*b;" "6#*&),&%\"aG\"\"\"%\"bGF'%\"*GF'F(F'" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 230 "auto:=table([]): auto['alphabet']:=\{a,b,'epsilon
+'\}: auto['liststates']:=\{'init',w1\}:\nauto['final']:=\{w1\}: auto['
+init']['trans']:=\{a,b,'epsilon'\}: auto['init'][a]:=\{'init'\}:\nauto
+['init'][b]:=\{'init'\}: auto['init']['epsilon']:=\{w1\}:" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 79 "A marked automaton specified as a grammar
+ recognizing matches with the letter a" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 117 "B:=\{a=Atom,b=Atom,R=Union('Epsilon',Prod(a,m,w2),Pr
+od(b,R)),w2=Union('Epsilon',Prod(a,m,w2),\nProd(b,R)),m='Epsilon'\}:" 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 32 "Internal representation as tabl
+e" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "gramtoauto(B,R,[m]);  \+
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%&TABLEG6#7(/\"\"\"-F$6#7%/%&tran
+sG<$%\"aG%\"bG/F/<#F(/F0<#%%initG/F5F)/%%markG-F$6#7#/F(F2/%&finalG<$F
+(F5/%)alphabetGF./%+liststatesGF?" }}}{EXCHG {PARA 256 "" 0 "" {TEXT 
+-1 38 "Procedures accessible from this level:" }}}{EXCHG {PARA 0 "" 0 
+"" {HYPERLNK 17 "autotogram" 2 "regexpcount[autotogram]" "" }{TEXT -1 
+2 ", " }{HYPERLNK 17 "autodeterminize" 2 "regexpcount[autodetermini
+ze]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "autominimize" 2 "regexpcount[automini
+mize]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "autocarprod" 2 "regexpcount[
+autocarprod]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "autocomplete" 2 "rege
+xpcount[autocomplete]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "autoprune" 
+2 "regexpcount[autocomplete]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "automark
+ov" 2 "regexpcount[automarkov]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "aut
+oerror" 2 "autoerror" "" }}}}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT 
+-1 9 "Examples:" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 53 "Specify a gramm
+ar G for the regular expression for R=" }{XPPEDIT 19 1 "a^`*`*b;" "6#*
+&)%\"aG%\"*G\"\"\"%\"bGF'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+48 "G:=\{R=Union(Prod(Sequence(a),b)),a=Atom,b=Atom\}:" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 42 "The grammar of the corresponding automato
+n" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "A:=regexptogram(G,R);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"AG<&/%\"RG-%&UnionG6$-%%ProdG6
+$%\"aGF'-F,6$%\"bG%#w2G/F.%%AtomG/F1F4/F2%(EpsilonG" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 81 "Compute the generating function of the language
+ recognized by the automaton with " }{HYPERLNK 17 "combstruct[gfsolve]
+" 2 "combstruct[gfsolve]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 51 "gf:=subs(combstruct[gfsolve](A,unlabelled,z),R(z))
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#gfG,$*&%\"zG\"\"\",&!\"\"F(F'F
+(F*F*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 106 "Expand the first terms;
+ the Taylor coefficient of order n is the number of words of size n in
+ the language" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "series(%,z
+=0,10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+7%\"zG\"\"\"F%F%\"\"#F%\"
+\"$F%\"\"%F%\"\"&F%\"\"'F%\"\"(F%\"\")F%\"\"*-%\"OG6#F%\"#5" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 44 "The same automaton in internal spe
+cification" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "auto:=regexpt
+oauto(G,R):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "eval(auto);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%&TABLEG6#7(/\"\"#-F$6#7#/%&trans
+G<\"/%'prunedG%%trueG/%%initG-F$6#7%/F-<$%\"aG%\"bG/F9<#F3/F:<#F(/%&fi
+nalGF>/%)alphabetGF8/%+liststatesG<$F(F3" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 19 "autotogram(auto,R);" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#<&/%\"RG-%&UnionG6$-%%ProdG6$%\"aGF%-F*6$%\"bG%#w2G/F,%%AtomG/F/F2/F
+0%(EpsilonG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 81 "A marked automaton
+ for the number of matches of a random text with the pattern ab" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "G:=\{R=Prod(a,b),a=Atom,b=At
+om\}:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "A:=regexptomatches
+gram(G,S,[[R,m,'overlap']]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"AG
+<(/%#w3G-%&UnionG6%-%%ProdG6$%\"aGF'%(EpsilonG-F,6%%\"bG%\"mG%#w2G/%\"
+SG-F)6%F+-F,6$F2F6F//F4F7/F.%%AtomG/F2F=/F3F/" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 62 "The multivariate generating function for the number of
+ matches" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "with(combstruct
+):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "gf:=subs(gfsolve(A,un
+labelled,z,[[u,m]]),S(z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#gfG
+,$*&\"\"\"F',**&)%\"zG\"\"#F'%\"uGF'F'F'!\"\"*&F,F'F+F'F'*$F*F'F.F.F.
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "The corresponding probability
+ generating function in the Bernoulli uniform case." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 20 "pgf:=subs(z=z/2,gf);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$pgfG,$*&\"\"\"F',**&)%\"zG\"\"#F'%\"uGF'#F'\"\"%F'!
+\"\"F+F'*&#F'F/F'*$F*F'F'F0F0F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+87 "The generating functions for the expectation and second moment of \+
+the number of matches" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 68 "E(
+z):=subs(u=1,diff(pgf,u)); M2(z):=subs(u=1,diff(u*diff(pgf,u),u));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%\"EG6#%\"zG,$*&*$)F'\"\"#\"\"\"F-*$
+),&!\"\"F-F'F-F,F-F1#F-\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#M2
+G6#%\"zG,&*&*$)F'\"\"#\"\"\"F-*$),&!\"\"F-F'F-F,F-F1#F-\"\"%*&#F-\"\")
+F-*&*$)F'F3F-F-*$)F0\"\"$F-F1F-F1" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+22 "Expand the first terms" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+51 "SE:=series(E(z),z=0,10); SM2:=series(M2(z),z=0,10);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%#SEG+5%\"zG#\"\"\"\"\"%\"\"##F(F*\"\"$#F,F)F)F
+(\"\"&#F.F)\"\"'#F,F*\"\"(#F2F)\"\")F*\"\"*-%\"OG6#F(\"#5" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%$SM2G+5%\"zG#\"\"\"\"\"%\"\"##F(F*\"\"$#\"\"(
+\"\")F)#\"#6F/\"\"&F*\"\"'#F1F)F.#\"#HF/F/#\"#PF/\"\"*-%\"OG6#F(\"#5" 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 55 "Expectation and standard deviat
+ion for texts of size 50" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 
+"expect:=coeff(series(E(z),z,51),z,50);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%'expectG#\"#\\\"\"%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+37 "mom2:=coeff(series(M2(z),z,51),z,50);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%%mom2G#\"$8'\"\"%" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 25 "std:=sqrt(mom2-expect^2);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$stdG,$*$-%%sqrtG6#\"#^\"\"\"#F+\"\"%" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "evalf(expect); evalf(std);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"++++D7!\")" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"+2rN&y\"!\"*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 91 
+"Bernoulli non-uniform case where letter a has probability 1/3 and let
+ter b probability 2/3." }}{PARA 0 "" 0 "" {TEXT -1 87 "Transform the l
+etters to objects of size 0 to give a specification to be processed by
+  " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "combstruct[gfeqns]" "" }
+{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "WA:=gramwe
+ight(A);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#WAG<(/%\"mG%(EpsilonG/%
+\"SG-%&UnionG6%-%%ProdG6$-F/6$%\"aG%%AtomG%#w3G-F/6$-F/6$%\"bGF4F*F(/%
+#w2GF+/F3F(/F:F(/F5-F,6%F.F(-F/6%F8F'F<" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 54 "gfeq:=gfeqns(WA,unlabelled,z,[[1/3,a],[2/3,b],[u,m]])
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%gfeqG7(/-%\"aG6$%\"zG%\"uG#\"
+\"\"\"\"$/-%\"bGF)#\"\"#F./-%#w3GF),(F-F-*(F,F-F*F-F5F-F-**F2F-F*F-F+F
+--%#w2GF)F-F-/-%\"SGF),(F-F-*(F,F-F*F-F5F-F-*(F2F-F*F-F=F-F-/F:F?/-%\"
+mGF)F+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 69 "Solve the system to get
+ the bivariate probability generating function" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 59 "pwgf:=subs(solve(\{op(gfeq)\},\{seq(op(1,i),i=
+gfeq)\}),S(z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%pwgfG,$*&\"\"
+\"F',*!\"*F'*&\"\"*F'%\"zGF'F'*&\"\"#F')F,F.F'!\"\"*(F.F'F/F'%\"uGF'F'
+F0F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 62 "The generating functions \+
+for expectation and moment of order 2" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 72 "WE(z):=subs(u=1,diff(pwgf,u)); WM2(z):=subs(u=1,diff(
+u*diff(pwgf,u),u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-%#WEG6#%\"zG,
+$*&*$)F'\"\"#\"\"\"F-*$),&!\"*F-*&\"\"*F-F'F-F-F,F-!\"\"\"#=" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>-%$WM2G6#%\"zG,&*&*$)F'\"\"#\"\"\"F-*$),&!
+\"*F-*&\"\"*F-F'F-F-F,F-!\"\"\"#=*&*&\"#sF-)F'\"\"%F-F-*$)F0\"\"$F-F4F
+4" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "The expectation and standard
+ deviation for texts of size 50" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 102 "expect:=coeff(series(WE(z),z,51),z,50);mom2:=coeff(series(WM2
+(z),z,51),z,50):std:=sqrt(mom2-expect^2);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%'expectG#\"#)*\"\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%$stdG,$*$-%%sqrtG6#\"$-$\"\"\"#F+\"\"*" }}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 8 "See also" }}{PARA 0 "" 
+0 "" {HYPERLNK 17 "regexpcount" 2 "regexpcount" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "combstruct[gfsolve]" 2 "combstruct[gfsolve]" "" }{TEXT 
+-1 2 ", " }{HYPERLNK 17 "regexpcount[gramweight]" 2 "regexpcount[gramw
+eight]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "comb
+struct[gfeqns]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "solve/linear" 2 "so
+lve,linear" "" }}}}{MARK "3 16 18 0 5" 4 }{VIEWOPTS 1 1 0 1 1 1803 1 
+1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

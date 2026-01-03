@@ -1,0 +1,25 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun) :
+f := (1+exp(x^2+y)+exp(2*x^2+2*y))^2 :
+if dfinite_expr_to_sys(f, F(x::diff, y::diff)) =
+{diff(F(x,y),x)-2*x*diff(F(x,y),y), 24*diff(F(x,y),y)-50*diff(diff(F(x,y),y),y
+)+35*diff(diff(diff(F(x,y),y),y),y)-10*diff(diff(diff(diff(F(x,y),y),y),y),y)+
+diff(diff(diff(diff(diff(F(x,y),y),y),y),y),y)}
+then okay else % end if ;

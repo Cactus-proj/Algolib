@@ -1,0 +1,113 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 21 "gfun[`diffeq+diffeq`]" }
+{TEXT 30 87 " - determine the differential equation satisfied by the sum of two holonomic functions " }
+}
+{PARA 3 "> " 0 "" {TEXT -1 21 "gfun[`diffeq*diffeq`]" }
+{TEXT 30 97 " - determine the differential equation satisfied by the Cauchy product of two holonomic functions" }
+}
+{PARA 3 "> " 0 "" {TEXT -1 21 "gfun[hadamardproduct]" }
+{TEXT 30 99 " - determine the differential equation satisfied by the Hadamard product of two holonomic functions" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 21 "     `diffeq+diffeq`(" }
+{TEXT 35 3 "eq1" }
+{TEXT -1 2 ", " }
+{TEXT 35 3 "eq2" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 21 "     `diffeq*diffeq`(" }
+{TEXT 35 3 "eq1" }
+{TEXT -1 2 ", " }
+{TEXT 35 3 "eq2" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 2 ") " }
+}
+{PARA 0 "> " 0 "" {TEXT -1 21 "     hadamardproduct(" }
+{TEXT 35 3 "eq1" }
+{TEXT -1 2 ", " }
+{TEXT 35 3 "eq2" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 2 ") " }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 11 "eq1, eq2 - " }
+{TEXT -1 62 "two linear differential equations with polynomial coefficients" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 11 "y,z      - " }
+{TEXT -1 57 "name of the holonomic function and itsXS generic variable" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 1 "f" }
+{TEXT -1 8 " (resp. " }
+{TEXT 35 1 "g" }
+{TEXT -1 38 ") is a holonomic function solution of " }
+{TEXT 35 3 "eq1" }
+{TEXT -1 8 " (resp. " }
+{TEXT 35 3 "eq2" }
+{TEXT -1 3 "), " }
+{TEXT 35 21 "gfun[`diffeq+diffeq`]" }
+{TEXT -1 52 " outputs a linear differential equation verified by " }
+{TEXT 35 3 "f+g" }
+{TEXT -1 2 ", " }
+{TEXT 35 21 "gfun[`diffeq*diffeq`]" }
+{TEXT -1 52 " outputs a linear differential equation verified by " }
+{TEXT 35 3 "f*g" }
+{TEXT -1 6 ", and " }
+{TEXT 35 21 "gfun[hadamardproduct]" }
+{TEXT -1 76 " outputs a linear differential equation verified by the Hadamard product of " }
+{TEXT 35 1 "f" }
+{TEXT -1 5 " and " }
+{TEXT 35 1 "g" }
+{TEXT -1 36 " (the function whose coefficient of " }
+{TEXT 35 3 "z^n" }
+{TEXT -1 86 " in the Taylor expansion around 0 is the product of the corresponding coefficients of " }
+{TEXT 35 1 "f" }
+{TEXT -1 5 " and " }
+{TEXT 35 1 "g" }
+{TEXT -1 3 "). " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 112 "The differential order of the output equation is at most the sum of the input equations differential orders for " }
+{TEXT 35 21 "gfun[`diffeq+diffeq`]" }
+{TEXT -1 24 ", and their product for " }
+{TEXT 35 21 "gfun[`diffeq*diffeq`]" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 98 "with(gfun):\neq1 := D(y)(x)-y(x):\neq2 := (1+x)*(D@@2)(y)(x)+D(y)(x):\n`diffeq+diffeq`(eq1,eq2,y(x));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#,(*&,&!\"$\"\"\"%\"xG!\"\"F'-%%diffG6$-%\"yG6#F(F(F'F'*&,(F'F'F(!\"
+#*$F(\"\"#F)F'-F+6$F--%\"$G6$F(F4F'F'*&,(F4F'F(\"\"$F3F'F'-F+6$F-
+-F86$F(F<F'F'
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "`diffeq*diffeq`(eq1,eq2,y(x));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#,(*&%\"xG\"\"\"-%\"yG6#F%F&F&*&,&!\"\"F&F%!\"#F&-%%diffG6$F'F%F&F&
+*&,&F&F&F%F&F&-F/6$F'-%\"$G6$F%\"\"#F&F&
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "hadamardproduct(eq1,eq2,y(x));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<%,(*&,&\"\"\"F'%\"xGF'F'-%%diffG6$-%\"yG6#F(F(F'F'*&F(F'-F*6$F
+,-%\"$G6$F(\"\"#F'F'&%#_CG6#F'!\"\"/-F-6#\"\"!&F7F</--%\"DG6#F-F<F6
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[poltodiffeq]" 2 "gfun[poltodiffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[rec+rec]" 2 "gfun[rec+rec]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[rec*rec]" 2 "gfun[rec*rec]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[cauchyproduct]" 2 "gfun[cauchyproduct]" "" }{TEXT -1 3 ",  " }
+}
+}}

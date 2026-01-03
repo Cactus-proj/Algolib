@@ -1,0 +1,79 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+257 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier
+" 1 10 0 0 255 1 0 0 0 0 0 1 3 0 3 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 
+}{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 
+{CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 
+0 0 0 0 0 -1 0 }{PSTYLE "" 2 6 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 2 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item
+" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 33 "Introduction to the LaTeX Package
+" }}{PARA 4 "" 0 "usage" {TEXT -1 16 "Calling Sequence" }}{PARA 0 "" 
+0 "" {TEXT -1 11 "     LaTeX[" }{TEXT 35 8 "function" }{TEXT -1 2 "](
+" }{TEXT 35 9 "arguments" }{TEXT -1 1 ")" }}{PARA 0 "" 0 "" {TEXT -1 
+5 "     " }{TEXT 35 8 "function" }{TEXT -1 1 "(" }{TEXT 35 9 "argument
+s" }{TEXT -1 1 ")" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 11 "Descript
+ion" }}{PARA 15 "" 0 "" {TEXT -1 12 "The package " }{TEXT 35 5 "LaTeX
+" }{TEXT -1 23 " allows to convert the " }{HYPERLNK 17 "MAD" 2 "MAD" "
+" }{TEXT -1 122 " format into LaTeX and, thanks to external binaries, \+
+into PostScript and PDF. This package is meant to be used along with \+
+" }{HYPERLNK 17 "DocumentGenerator" 2 "DocumentGenerator" "" }{TEXT 
+-1 6 " as a " }{HYPERLNK 17 "translator" 2 "DocumentGenerator,translat
+or" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 5 "As a " }
+{HYPERLNK 17 "translator" 2 "DocumentGenerator,translator" "" }{TEXT 
+-1 14 ", the package " }{TEXT 35 5 "LaTeX" }{TEXT -1 49 " exports the \+
+following members:\n                 " }{HYPERLNK 17 "TranslateMath" 
+2 "DocumentGenerator,translator" "" }{TEXT -1 28 ": (mandatory) transl
+ate the " }{TEXT 35 3 "MAD" }{TEXT -1 1 " " }{HYPERLNK 17 "math format
+" 2 "DocumentGenerator,math" "" }{TEXT -1 30 " into HTMX; \n          \+
+       " }{HYPERLNK 17 "TranslateText" 2 "DocumentGenerator,translator
+" "" }{TEXT -1 54 ": (mandatory) table of procedures for translating t
+he " }{TEXT 35 3 "MAD" }{TEXT -1 1 " " }{HYPERLNK 17 "text math" 2 "Do
+cumentGenerator,text" "" }{TEXT -1 30 " into HTMX; \n                 \+
+" }{HYPERLNK 17 "FileExtension" 2 "DocumentGenerator,translator" "" }
+{TEXT -1 72 ",: (mandatory) the file extension for the HTMX format;\n \+
+                " }{HYPERLNK 17 "TextSymbol" 2 "DocumentGenerator,tran
+slator" "" }{TEXT -1 79 " : (mandatory) table that associates symbols \+
+to HTMX strings;\n                 " }{HYPERLNK 17 "DerivedFormat" 2 "
+LaTeX,DerivedFormat" "" }{TEXT -1 63 ": (optional) table that associat
+es the names of formats to the " }{TEXT 256 6 "system" }{TEXT -1 61 " \+
+commands for generating these formats from the LaTeX files.\n" }{TEXT 
+257 4 "Note" }{TEXT -1 35 ": the other members of the package " }
+{TEXT 35 5 "LaTeX" }{TEXT -1 59 " are meant to set parameters and cust
+omize the translation." }}{PARA 15 "" 0 "" {TEXT -1 20 "The capabiliti
+es of " }{TEXT 35 5 "LaTeX" }{TEXT -1 72 " can be extended by the foll
+owing routines.\n                            " }{HYPERLNK 17 "DefineMa
+thKeyword" 2 "LaTeX,DefineMathKeyword" "" }{TEXT -1 15 "              \+
+ " }{HYPERLNK 17 "UndefineMathKeyword" 2 "LaTeX,UndefineMathKeyword" "
+" }{TEXT -1 35 "      \n                            " }{HYPERLNK 17 "D
+efineMathSymbol" 2 "LaTeX,DefineMathSymbol" "" }{TEXT -1 19 "         \+
+          " }{HYPERLNK 17 "UndefineMathSymbol" 2 "LaTeX,UndefineMathSy
+mbol" "" }{TEXT -1 8 "        " }}{PARA 15 "" 0 "" {TEXT -1 12 "The wa
+y the " }{TEXT 35 3 "MAD" }{TEXT -1 57 " format is translated into LaT
+eX can be parameterized by " }{HYPERLNK 17 "MathStyle" 2 "LaTeX,MathSt
+yle" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "DocStyle" 2 "LaTeX,DocStyle
+" "" }{TEXT -1 16 ". The procedure " }{HYPERLNK 17 "FormatNumbering" 
+2 "HTMX,FormatNumbering" "" }{TEXT -1 37 " is used to format an object
+ of type " }{HYPERLNK 17 "DocumentGenerator/Numbering" 2 "DocumentGene
+rator,Numbering" "" }{TEXT -1 12 " into LaTeX." }}{PARA 15 "" 0 "" 
+{TEXT -1 12 "The package " }{TEXT 35 5 "LaTeX" }{TEXT -1 31 " also imp
+lements the procedure " }{HYPERLNK 17 "latex" 2 "LaTeX,latex" "" }
+{TEXT -1 49 ", which is an improved and extendable version of " }
+{HYPERLNK 17 "latex" 2 "latex" "" }{TEXT -1 1 "." }}}{SECT 0 {PARA 4 "
+" 0 "" {TEXT -1 8 "Examples" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+30 "LaTeX:-latex(x^2 + y^2 = z^2);" }}{PARA 6 "" 1 "" {TEXT -1 21 "x^
+\{2\} + y^\{2\} = z^\{2\}" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+52 "LaTeX:-latex(Int(1/(x^2+1), x) = int(1/(x^2+1), x));" }}{PARA 6 "
+" 1 "" {TEXT -1 60 "\\int_\{x\} \\frac\{1\}\{x^\{2\} + 1\} d x = \\ope
+ratorname\{arctan\} (x)" }}}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 
+9 "See Also " }}{PARA 0 "" 0 "" {HYPERLNK 17 "DocumentGenerator" 2 "Do
+cumentGenerator" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "latex" 2 "latex" "
+" }}}}{MARK "4 4 10" 8 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

@@ -1,0 +1,37 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+
+for spec_func in [Fresnelf,Fresnelg] do
+    printf("# %s\n",spec_func);
+    sys:=dfinite_expr_to_sys(spec_func(x),f(x::diff));
+    res:=eval(subs(f=spec_func,sys));
+    res:=subs([
+	Fresnelf(x)=
+	    (1/2-FresnelS(x))*cos(Pi/2*x^2)-(1/2-FresnelC(x))*sin(Pi/2*x^2),
+	Fresnelg(x)=
+	    (1/2-FresnelC(x))*cos(Pi/2*x^2)-(1/2-FresnelS(x))*sin(Pi/2*x^2)
+	],res):
+    res:=simplify(res);
+    if res={0} then
+	print(okay);
+	next
+    fi;
+    print(res,sys)
+od:

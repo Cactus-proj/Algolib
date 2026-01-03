@@ -1,0 +1,191 @@
+{VERSION 3 0 "IBM INTEL LINUX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 23 "Courier" 1 
+10 0 0 0 0 0 0 0 0 0 0 3 0 0 }{CSTYLE "Help Heading" -1 26 "" 1 14 0 
+0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "Courier" 1 10 0 0 0 0 0 0 
+0 0 0 0 3 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple O
+utput" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 
+0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {SECT 0 {PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 64 
+"Mgfun[`sys+sys`] - Compute a system of equations for the sum of " }
+{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 0 "" }{TEXT -1 18 "-finite func
+tions " }}{PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 68 "Mgfun
+[`sys*sys`] - Compute a system of equations for the product of " }
+{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 0 "" }{TEXT -1 17 "-finite func
+tions" }}{PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 81 "Mgfun[
+pol_to_sys] - Compute a system of equations for a polynomial expressio
+n in " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 0 "" }{TEXT -1 17 "-fin
+ite functions" }}{PARA 0 "" 0 "usage" {TEXT 26 17 "Calling Sequence:" 
+}{TEXT -1 14 "\n   `sys+sys`(" }{XPPEDIT 18 0 "sys[1];" "6#&%$sysG6#\"
+\"\"" }{TEXT -1 1 "," }{XPPEDIT 18 0 "sys[2];" "6#&%$sysG6#\"\"#" }
+{TEXT -1 19 ",...)\n   `sys*sys`(" }{XPPEDIT 18 0 "sys[1];" "6#&%$sysG
+6#\"\"\"" }{TEXT -1 1 "," }{XPPEDIT 18 0 "sys[2];" "6#&%$sysG6#\"\"#" 
+}{TEXT -1 20 ",...)\n   pol_to_sys(" }{XPPEDIT 18 0 "h(x[1],`...`,x[n]
+) = poly;" "6#/-%\"hG6%&%\"xG6#\"\"\"%$...G&F(6#%\"nG%%polyG" }{TEXT 
+-1 1 "," }{XPPEDIT 18 0 "descr_set;" "6#%*descr_setG" }{TEXT -1 1 "," 
+}{XPPEDIT 18 0 "univ;" "6#%%univG" }{TEXT -1 0 "" }{TEXT -1 1 ")" }}
+{PARA 0 "" 0 "" {TEXT 26 11 "Parameters:" }{TEXT -1 4 "\n   " }
+{XPPEDIT 18 0 "sys[i];" "6#&%$sysG6#%\"iG" }{TEXT 23 13 "           - \+
+" }{TEXT -1 49 "systems of linear equations in the same function " }
+{XPPEDIT 18 0 "f[i](x[1],`...`,x[n]);" "6#-&%\"fG6#%\"iG6%&%\"xG6#\"\"
+\"%$...G&F*6#%\"nG" }{TEXT -1 4 "\n   " }{XPPEDIT 18 0 "poly;" "6#%%po
+lyG" }{TEXT 23 14 "            - " }{TEXT -1 35 "polynomial expression
+ in functions " }{XPPEDIT 18 0 "f[i](x[1],`...`,x[n]);" "6#-&%\"fG6#%
+\"iG6%&%\"xG6#\"\"\"%$...G&F*6#%\"nG" }{TEXT -1 4 "\n   " }{XPPEDIT 
+18 0 "descr_set;" "6#%*descr_setG" }{TEXT 23 9 "       - " }{TEXT -1 
+27 "a set of lists of the form " }{XPPEDIT 18 0 "[f[i](x[1],`...`,x[n]
+), sys[i]];" "6#7$-&%\"fG6#%\"iG6%&%\"xG6#\"\"\"%$...G&F+6#%\"nG&%$sys
+G6#F(" }{TEXT -1 4 "\n   " }{XPPEDIT 18 0 "h(x[1],`...`,x[n]);" "6#-%
+\"hG6%&%\"xG6#\"\"\"%$...G&F'6#%\"nG" }{TEXT 23 4 "  - " }{TEXT -1 35 
+"the function used in the output\n   " }{TEXT 23 11 "(optional) " }
+{XPPEDIT 18 0 "univ;" "6#%%univG" }{TEXT 256 3 " - " }{TEXT -1 29 "a f
+unction call 'univariate'(" }{XPPEDIT 18 0 "v;" "6#%\"vG" }{TEXT -1 
+13 ") for a name " }{XPPEDIT 18 0 "v;" "6#%\"vG" }}}{SECT 0 {PARA 0 "
+" 0 "synopsis" {TEXT 26 12 "Description:" }}{PARA 15 "" 0 "" {TEXT -1 
+114 "The functions `sys+sys` and `sys*sys` compute systems satisfied b
+y the sum and the product of the sequence of the " }{XPPEDIT 18 0 "d;
+" "6#%\"dG" }{TEXT -1 43 "-finite functions described by the systems \+
+" }{XPPEDIT 18 0 "sys[i];" "6#&%$sysG6#%\"iG" }{TEXT -1 15 ", respecti
+vely." }}{PARA 15 "" 0 "" {TEXT -1 48 "The function pol_to_sys inputs \+
+the descriptions " }{XPPEDIT 18 0 "sys[i];" "6#&%$sysG6#%\"iG" }{TEXT 
+-1 12 " of several " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 0 "" }
+{TEXT -1 18 "-finite functions " }{XPPEDIT 18 0 "f[i](x[1],`...`,x[n])
+;" "6#-&%\"fG6#%\"iG6%&%\"xG6#\"\"\"%$...G&F*6#%\"nG" }{TEXT -1 39 " a
+nd outputs a system satisfied by the " }{XPPEDIT 18 0 "d;" "6#%\"dG" }
+{TEXT -1 0 "" }{TEXT -1 17 "-finite function " }{XPPEDIT 18 0 "h(x[1],
+`...`,x[n]) = poly;" "6#/-%\"hG6%&%\"xG6#\"\"\"%$...G&F(6#%\"nG%%polyG
+" }{TEXT -1 8 ", where " }{XPPEDIT 18 0 "poly;" "6#%%polyG" }{TEXT -1 
+35 " is a polynomial expression in the " }{XPPEDIT 18 0 "f[i];" "6#&%
+\"fG6#%\"iG" }{TEXT -1 41 "'s. In the case of the optional argument " 
+}{XPPEDIT 18 0 "'univariate'(v);" "6#-.%+univariateG6#%\"vG" }{TEXT 
+-1 70 "', pol_to_sys computes a single equation with respect to the va
+riable " }{XPPEDIT 18 0 "v;" "6#%\"vG" }{TEXT -1 1 "." }}{PARA 15 "" 
+0 "" {TEXT -1 98 "All functions under consideration are actually to be
+ regarded as generic solutions of the systems " }{XPPEDIT 18 0 "sys[i]
+;" "6#&%$sysG6#%\"iG" }{TEXT -1 21 " of linear equations." }}{PARA 15 
+"" 0 "" {TEXT -1 25 "Be aware that the system " }{XPPEDIT 18 0 "sys[i]
+;" "6#&%$sysG6#%\"iG" }{TEXT -1 20 " must indeed define " }{XPPEDIT 
+18 0 "d;" "6#%\"dG" }{TEXT -1 77 "-finite functions, i.e., that the de
+rivatives, shifts,... of any solution of " }{XPPEDIT 18 0 "sys[i];" "6
+#&%$sysG6#%\"iG" }{TEXT -1 88 " must span a finite-dimensional vector \+
+space. Otherwise, the algorithm cannot terminate." }}{PARA 15 "" 0 "" 
+{TEXT -1 103 "So far, the functions described in this help page only w
+ork with (possibly mixed) differential, shift, " }{XPPEDIT 18 0 "q;" "
+6#%\"qG" }{TEXT -1 11 "-shift and " }{XPPEDIT 18 0 "q;" "6#%\"qG" }
+{TEXT -1 39 "-dilation equations. Furthermore, each " }{XPPEDIT 18 0 "
+sys[i];" "6#&%$sysG6#%\"iG" }{TEXT -1 32 " must involve a single funct
+ion." }}{PARA 15 "" 0 "" {TEXT -1 317 "These function are part of the \+
+Mgfun package, and so can be used in the form `sys+sys`(..), `sys*sys`
+(..) and pol_to_sys only after performing the command with(Mgfun) or w
+ith(Mgfun,<function>). The functions can always be accessed in the lon
+g form Mgfun[`sys+sys`](..), Mgfun[`sys*sys`](..) and Mgfun[pol_to_sys
+](..)." }}}{SECT 0 {PARA 0 "" 0 "examples" {TEXT 26 9 "Examples:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(Mgfun):" }}}{PARA 0 "" 
+0 "" {XPPEDIT 18 0 "exp(mu*x+nu*y);" "6#-%$expG6#,&*&%#muG\"\"\"%\"xGF
+)F)*&%#nuGF)%\"yGF)F)" }{TEXT -1 45 " satisfies the following first or
+der system: " }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "sys[exp(mu*x+n
+u*y)]:=\{diff(f(x,y),x)-mu*f(x,y),diff(f(x,y),y)-nu*f(x,y)\}:" "6#>&%$
+sysG6#-%$expG6#,&*&%#muG\"\"\"%\"xGF-F-*&%#nuGF-%\"yGF-F-<$,&-%%diffG6
+$-%\"fG6$F.F1F.F-*&F,F--F86$F.F1F-!\"\",&-F56$-F86$F.F1F1F-*&F0F--F86$
+F.F1F-F=" }}}{PARA 0 "" 0 "" {XPPEDIT 18 0 "BesselJ(mu,x)*BesselJ(nu,y
+);" "6#*&-%(BesselJG6$%#muG%\"xG\"\"\"-F%6$%#nuG%\"yGF)" }{TEXT -1 46 
+" satisfies the following second order system: " }}{EXCHG {PARA 0 "> \+
+" 0 "" {XPPEDIT 19 1 "sys[BesselJ(mu,x)*BesselJ(nu,y)]:=\{\n    x^2*di
+ff(f(x,y),x,x)+x*diff(f(x,y),x)+(x^2-mu^2)*f(x,y),\n    y^2*diff(f(x,y
+),y,y)+y*diff(f(x,y),y)+(y^2-nu^2)*f(x,y)\}:" "6#>&%$sysG6#*&-%(Bessel
+JG6$%#muG%\"xG\"\"\"-F)6$%#nuG%\"yGF-<$,(*&F,\"\"#-%%diffG6%-%\"fG6$F,
+F1F,F,F-F-*&F,F--F76$-F:6$F,F1F,F-F-*&,&*$F,\"\"#F-*$F+\"\"#!\"\"F--F:
+6$F,F1F-F-,(*&F1\"\"#-F76%-F:6$F,F1F1F1F-F-*&F1F--F76$-F:6$F,F1F1F-F-*
+&,&*$F1\"\"#F-*$F0\"\"#FGF--F:6$F,F1F-F-" }}}{PARA 0 "" 0 "" {TEXT -1 
+8 "The sum " }{XPPEDIT 18 0 "exp(mu*x+nu*y)+BesselJ(mu*x)*BesselJ(nu*y
+);" "6#,&-%$expG6#,&*&%#muG\"\"\"%\"xGF*F**&%#nuGF*%\"yGF*F*F**&-%(Bes
+selJG6#*&F)F*F+F*F*-F16#*&F-F*F.F*F*F*" }{TEXT -1 28 " is cancelled by
+ the system " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 118 "sys[exp(mu*
+x+nu*y)+BesselJ(mu,x)*BesselJ(nu,y)]:=\n    `sys+sys`(sys[exp(mu*x+nu*
+y)],sys[BesselJ(mu,x)*BesselJ(nu,y)]);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>&%$sysG6#,&-%$expG6#,&*&%#muG\"\"\"%\"xGF.F.*&%#nuGF.%\"yGF.F.F
+.*&-%(BesselJG6$F-F/F.-F56$F1F2F.F.<%,.*&,&*&)F1\"\"#\"\"\"F-F@F.*&)F2
+F?F@F-F@!\"\"F.-%\"fG6$F/F2F.F.*(FBF@F-F@-%%diffG6$FD-%\"$G6$F2F?F.FC*
+&,&*$FBF@F.*$F>F@FCF.-FI6$FDF/F.F.*(F-F@F2F@-FI6$FDF2F.FC*&FBF@-FI6%FD
+F/FKF.F.*&F2F@-FI6%FDF/F2F.F.,**&,4*$)F1\"\"&F@FC*&FBF@)F1\"\"$F@F?*&F
+BF@F1F@F.*$F^oF@F.*&)F2F_oF@F>F@FC*&)F2\"\"%F@F1F@FC*&FBF@F[oF@F.*&Feo
+F@F^oF@FC*&)F1FfoF@F2F@F_oF.FDF@F.*&,.*&F>F@F2F@!\"$*$FcoF@F.F`oF?FdoF
+CF]oF.FhoFCF.FHF@F.*&,2*&FBF@F>F@!\"%FPFCFQFC*$FeoF@F.*&FeoF@F>F@F.*&F
+BF@FjoF@FC*&FcoF@F^oF@FC*$FjoF@F.F.FUF@F.*&,*FbpFCFepF.*&F1F@FcoF@F.Fd
+pF.F.-FI6$FD-FL6$F2F_oF.F.,,*&,2*(FBF@F>F@)F/F?F@F.*(FBF@F>F@)F-F?F@FC
+*(F1F@F2F@FdqF@F.*(F1F@F2F@FfqF@FC*(F/F@FBF@F-F@FC*(FdqF@FfqF@FBF@FC*(
+FdqF@FfqF@F>F@F.*(F/F@F>F@F-F@F.F.FDF@F.*&,**&FBF@FfqF@F.*&FBF@FdqF@FC
+FiqFCFjqFCF.FHF@F.*&,*F`rF.*&F>F@FdqF@FCFcqF.FgqF.F.-FI6$FD-FL6$F/F?F.
+F.*&,**&F>F@F/F@FC*(FBF@F>F@F/F@F.*&FBF@F/F@F.*(F1F@F2F@F/F@F.F.FRF@F.
+*&,**&F2F@FdqF@FC*(FdqF@FfqF@F2F@FC*(F/F@F-F@F2F@FC*&FfqF@F2F@F.F.FUF@
+F." }}}{PARA 0 "" 0 "" {TEXT -1 28 "Note the cross derivatives. " }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}}{PARA 0 "" 0 "" {XPPEDIT 18 0 
+"exp(-p*x)/sqrt(1-x^2);" "6#*&-%$expG6#,$*&%\"pG\"\"\"%\"xGF*!\"\"F*-%
+%sqrtG6#,&\"\"\"F**$F+\"\"#F,F," }{TEXT -1 22 " satisfies the system \+
+" }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "sys[exp(-p*x)/sqrt(1-x^2)]
+:=\{f(n+1,x)-f(n,x),\n    (1-x^2)*diff(f(n,x),x)+(p*(1-x^2)-x)*f(n,x)
+\}:" "6#>&%$sysG6#*&-%$expG6#,$*&%\"pG\"\"\"%\"xGF.!\"\"F.-%%sqrtG6#,&
+\"\"\"F.*$F/\"\"#F0F0<$,&-%\"fG6$,&%\"nGF.\"\"\"F.F/F.-F;6$F>F/F0,&*&,
+&\"\"\"F.*$F/\"\"#F0F.-%%diffG6$-F;6$F>F/F/F.F.*&,&*&F-F.,&\"\"\"F.*$F
+/\"\"#F0F.F.F/F0F.-F;6$F>F/F.F." }}}{PARA 0 "" 0 "" {TEXT -1 4 "The " 
+}{HYPERLNK 17 "Chebyshev polynomials" 2 "orthopoly[T]" "" }{TEXT -1 1 
+" " }{XPPEDIT 18 0 "orthopoly[T](n,x);" "6#-&%*orthopolyG6#%\"TG6$%\"n
+G%\"xG" }{TEXT -1 21 " is known to satisfy " }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 173 "sys[orthopoly[T](n,x)]:=\{f(n+2,x)-2*x*f(n+1,x)+f(
+n,x),\n    (1-x^2)*diff(f(n,x),x,x)-x*diff(f(n,x),x)+n^2*f(n,x),\n    \+
+(1-x^2)*diff(f(n+1,x),x)+(n+1)*x*f(n+1,x)-(n+1)*f(n,x)\};" }}{PARA 12 
+"" 1 "" {XPPMATH 20 "6#>&%$sysG6#-&%*orthopolyG6#%\"TG6$%\"nG%\"xG<%,(
+*&,&\"\"\"F3*$)F.\"\"#\"\"\"!\"\"F3--&%\"DG6#F66#%\"fG6$,&F-F3F3F3F.F3
+F3*(FAF3F.F3-F?F@F3F3*&FAF7-F?F,F3F8,(-F?6$,&F-F3F6F3F.F3*&F.F7FCF7!\"
+#FEF3,(*&F2F7-%%diffG6$FE-%\"$G6$F.F6F3F3*&F.F7-FO6$FEF.F3F8*&)F-F6F7F
+EF7F3" }}}{PARA 0 "" 0 "" {TEXT -1 12 "The product " }{XPPEDIT 18 0 "e
+xp(-p*x)*orthopoly[T](n,x)/sqrt(1-x^2);" "6#*(-%$expG6#,$*&%\"pG\"\"\"
+%\"xGF*!\"\"F*-&%*orthopolyG6#%\"TG6$%\"nGF+F*-%%sqrtG6#,&\"\"\"F**$F+
+\"\"#F,F," }{TEXT -1 29 "  is cancelled by the system " }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 61 "`sys*sys`(sys[exp(-p*x)/sqrt(1-x^2)
+],sys[orthopoly[T](n,x)]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$,(-%\"
+fG6$,&%\"nG\"\"\"\"\"#F*%\"xGF**&F,F*-F&6$,&F)F*F*F*F,F*!\"#-F&6$F)F,F
+*,(*&,*F,F*%\"pG!\"\"*&F7F*)F,F+\"\"\"F**&F)F*F,F;F*F*F2F*F**&,&F8F**$
+F:F;F*F*-%%diffG6$F2F,F*F**&F)F;F.F;F8" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 46 "Cassini's identity: let \+
+the Fibonacci numbers " }{XPPEDIT 18 0 "F(n);" "6#-%\"FG6#%\"nG" }
+{TEXT -1 15 " be defined by " }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 
+1 "sys[F(n)]:=\{f(n+2)-f(n+1)-f(n)\}:" "6#>&%$sysG6#-%\"FG6#%\"nG<#,(-
+%\"fG6#,&F*\"\"\"\"\"#F1F1-F.6#,&F*F1\"\"\"F1!\"\"-F.6#F*F7" }}}{PARA 
+0 "" 0 "" {TEXT -1 4 "and " }{XPPEDIT 18 0 "F(0) = 1;" "6#/-%\"FG6#\"
+\"!\"\"\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "F(1) = 1;" "6#/-%\"FG6#
+\"\"\"\"\"\"" }{TEXT -1 19 ". Then the numbers " }}{EXCHG {PARA 0 "> \+
+" 0 "" {XPPEDIT 19 1 "h(n)=f(n+2)*f(n)-f(n+1)^2:" "6#/-%\"hG6#%\"nG,&*
+&-%\"fG6#,&F'\"\"\"\"\"#F.F.-F+6#F'F.F.*$-F+6#,&F'F.\"\"\"F.\"\"#!\"\"
+" }}}{PARA 0 "" 0 "" {TEXT -1 47 "satisfy the following identity due t
+o Cassini: " }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "h(n)=(-1)^n:" "
+6#/-%\"hG6#%\"nG),$\"\"\"!\"\"F'" }}}{PARA 0 "" 0 "" {TEXT -1 7 "Proof
+: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "pol_to_sys(%%,\{[f(n),
+sys[F(n)]]\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<#,&-%\"hG6#%\"nG\"
+\"\"-F&6#,&F(F)F)F)F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "LR
+Etools[hypergeomsols](op(%),h(n),\{h(0)=1\});" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#)!\"\"%\"nG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}
+}{PARA 0 "" 0 "" {TEXT -1 123 "pol_to_sys can also be used to derive e
+quations with respect to a single variable out of a system of mixed eq
+uations only: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 109 "pol_to_sy
+s(f(x,y)=f(x,y),\n    \{[f(x,y),sys[exp(mu*x+nu*y)+BesselJ(mu,x)*Besse
+lJ(nu,y)]]\},\n    univariate(x));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#
+,**&,4*&)%\"xG\"\"$\"\"\")%#muG\"\"#F*!\"\"*&)F(F-F*)F,F)F*F-*&F0F*F,
+\"\"\"F3*&)F,\"\"&F*F0F*F3*&)F(\"\"%F*F,F*F.*&F8F*F1F*F.*&)F,F9F*F(F3F
+)*$F1F*F3*$F5F*F.F3-%\"fG6$F(%\"yGF3F3*&,**$F8F*F3*&F,F*F'F*F3*&F8F*F+
+F*F3*&F0F*F+F*F.F3-%%diffG6$F?-%\"$G6$F(F)F3F3*&,.F2F-*$F'F*F3F7F.*&F+
+F*F(F*!\"$F:F.F/F3F3-FJ6$F?-FM6$F(F-F3F3*&,2FH!\"%*$F+F*F.*&F0F*F<F*F.
+*$F<F*F3*$F0F*F.FEF3FGF3*&F'F*F1F*F.F3-FJ6$F?F(F3F3" }}}}{SECT 0 
+{PARA 0 "" 0 "seealso" {TEXT 26 10 "See Also: " }{HYPERLNK 17 "Mgfun" 
+2 "Mgfun" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Holonomy[dfinite_add]" 2 
+"Holonomy[dfinite_add]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Holonomy[df
+inite_mul]" 2 "Holonomy[dfinite_mul]" "" }{TEXT -1 1 " " }}}}{MARK "0 \+
+0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

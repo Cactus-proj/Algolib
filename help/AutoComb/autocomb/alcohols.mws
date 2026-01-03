@@ -1,0 +1,738 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 267 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 274 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 275 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" 
+-1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 
+18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE "H
+eading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 
+0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" -1 
+-1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 256 "" 0 "" {TEXT 256 60 "Enumerating alcohols an
+d other classes of chemical moleculs," }}{PARA 257 "" 0 "" {TEXT 258 
+26 "an example of Polya theory" }}{PARA 258 "" 0 "" {TEXT -1 47 "\nFre
+deric Chyzak\n(Version of January 13, 1997)\n" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 106 "Alkanes are a simple class of chemical compounds.  Th
+ey are generically described by the chemical formula " }{XPPEDIT 18 0 
+"C[n]*H[2*n+2]" "*&&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"#F'
+F'" }{TEXT -1 28 ".  First examples for small " }{XPPEDIT 18 0 "n" "I
+\"nG6\"" }{TEXT -1 14 " are methane (" }{XPPEDIT 18 0 "n=1" "/%\"nG\"
+\"\"" }{TEXT -1 11 "), ethane (" }{XPPEDIT 18 0 "n=2" "/%\"nG\"\"#" }
+{TEXT -1 12 "), propane (" }{XPPEDIT 18 0 "n=3" "/%\"nG\"\"$" }{TEXT 
+-1 11 "), butane (" }{XPPEDIT 18 0 "n=4" "/%\"nG\"\"%" }{TEXT -1 23 ")
+, a.s.o.  For a given " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 40 " h
+owever, there exist several different " }{TEXT 271 7 "isomers" }{TEXT 
+-1 226 ", i.e., different structures of bonds between atoms.  In chemi
+stry, there is much interest in knowing the number, or better yet the \+
+list, of such isomers.  Alcohols are obtained from alkanes by replacin
+g a hydrogen atom by an " }{XPPEDIT 18 0 "OH" "I#OHG6\"" }{TEXT -1 
+116 " group.  It follows that they are isomorphic to carbon chains wit
+h a distinguished node, or again to alkyl radicals " }{XPPEDIT 18 0 "C
+[n]*H[2*n+1]" "*&&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"F'F
+'" }{TEXT -1 113 ", which are alkanes with a missing hydrogen atom.  I
+f we disregard geometrical constraints (i.e., if we consider " }{TEXT 
+272 10 "structural" }{TEXT -1 23 " isomers only, and not " }{TEXT 273 
+14 "conformational" }{TEXT -1 152 " isomers), this leads to a pure gra
+ph-theoretical problem: how many rooted trees are there with n interna
+l nodes, where each internal node has degree 4?" }}{PARA 0 "" 0 "" 
+{TEXT -1 35 "In this session, we  thus consider " }{TEXT 257 6 "rooted
+" }{TEXT -1 68 " trees, so that we count and enumerate alkyls, with ge
+neric formula " }{XPPEDIT 18 0 "C[n]*H[2*n+1" "*&&%\"CG6#%\"nG\"\"\"&%
+\"HG6#,&*&\"\"#F'F&F'F'\"\"\"F'F'" }{TEXT -1 57 ".  The combinatorics \+
+also corresponds to simple alcohols " }{XPPEDIT 18 0 "C[n]*H[2*n+1]*O*
+H" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"F'F'%\"OGF'F)F
+'" }{TEXT -1 27 ", organo-metalic compounds " }{XPPEDIT 18 0 "C[n]*H[2
+*n+1]*X" "*(&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"F'F'%\"X
+GF'" }{TEXT -1 165 ", and any other monosubstituted alkanes.  We next \+
+treat the cases of disubstituted and trisubstituted alkanes.  We devel
+op the study of our models using the package " }{HYPERLNK 17 "Combstru
+ct" 2 "combstruct" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "with(combstruct);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+7.%+allstructsG%&countG%%drawG%)finishedG%'gfeqnsG%)gfseriesG%(gfsolve
+G%,iterstructsG%+nextstructG%,prog_gfeqnsG%.prog_gfseriesG%-prog_gfsol
+veG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 127 "Enumerations of such clas
+ses of chemical compounds are part of Polya theory.  We refer to the b
+ook by G. Polya and R. C. Read [" }{TEXT 266 67 "Combinatorial Enumera
+tion of Groups, Graphs, and Chemical Compounds" }{TEXT -1 54 ", (1987)
+, Springer-Verlag] for more extensive results." }}}{SECT 1 {PARA 3 "" 
+0 "" {TEXT -1 25 "Monosubstituted alkanes, " }{XPPEDIT 18 0 "C[n]*H[2*
+n+1]*X" "*(&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"F'F'%\"XG
+F'" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 57 "In this section, we study mo
+nosubstituted alkanes, i.e., " }{TEXT 275 6 "rooted" }{TEXT -1 60 " tr
+ees, first without any constraint, next according to the " }{TEXT 274 
+6 "height" }{TEXT -1 1 "." }}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 14 "Gen
+eral alkyls" }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 10 "Definition" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 280 "An alkyl radical can be viewed as
+ a carbon atom linked to at most 3 alkyl radicals.  Thus, we only take
+ into account hydrogen atoms implicitly. There is no loss of informati
+on, since hydrogen atoms can always be recovered from the carbon skele
+ton.  This yields the class equation " }{XPPEDIT 18 0 "Alkyl=Carbon*(E
+psilon+Alkyl+Alkyl^2+Alkyl^3)" "/%&AlkylG*&%'CarbonG\"\"\",*%(EpsilonG
+F&F#F&*$F#\"\"#F&*$F#\"\"$F&F&" }{TEXT -1 42 ", which we map into the \+
+following grammar:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 110 "gram
+m_Alkyl:=Alkyl=Prod(Carbon,Set(Alkyl,card<=3)),Carbon=Atom:\nspecs_Alk
+yl:=[Alkyl,\{gramm_Alkyl\},unlabelled]:" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 20 "Note that since the " }{HYPERLNK 17 "Set" 2 "combstruct[s
+pecification]" "" }{TEXT -1 190 " construct denotes multisets, i.e., s
+ets with repetitions, a carbon atom of an alkyl is allowed to be bound
+ to two copies of the same subtree (but the order of the subtrees does
+ not matter)." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 126 "Define the size
+ of an alkyl as the number of carbon atoms it contains.  We compute th
+e number of alkyls of a given size using " }{HYPERLNK 17 "combstruct[c
+ount]" 2 "combstruct[count]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 39 "seq(count(specs_Alkyl,size=i),i=0..50);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6U\"\"!\"\"\"F$\"\"#\"\"%\"\")\"#<\"#R\"
+#*)\"$6#\"$2&\"%Q7\"%dI\"%Rw\"&T#>\"&l)[\"'1\\7\"')>@$\"'>-$)\"(5g:#\"
+(4@i&\")8er9\")_\"\\'Q\"*F>#=5\"*&[5!p#\"*nlc7(\"+WL*>*=\"+G[qM]\",1y6
+DM\"\",p3bme$\",)Gl8*f*\"-1X'GLd#\"-0TNG4p\".f:N@y&=\".`rg0B+&\"/pc2Sk
+[8\"/y-V#Q/k$\"/$Gq\"z2Q)*\"0x/+_&ehE\"0Z9$o(z!3s\"1>=m]?+a>\"1jq,#p]>
+I&\"2<#R6h\"**)R9\"2_dY^(ox8R\"3l9`eY&fY1\"\"38%Rk5*QT)*G\"3hd4\\v6U'*
+y\"4cblrf%\\\"G:#\"4a>Lh$3eAte\"5u!RqbZ_\\Lg\"\"5gxdP>%\\b(zV" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "This series appears as the entry \+
+" }{TEXT 261 5 "M1146" }{TEXT -1 30 " (\"quartic planted trees with " 
+}{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 56 " nodes\") in the book by N
+. J. A. Sloane and S. Plouffe [" }{TEXT 262 37 "The Encyclopedia of In
+teger Sequences" }{TEXT -1 26 ", (1995), Academic Press]." }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 76 "Here is an example of an alkyl with 6 car
+bon atoms, obtained by the command " }{HYPERLNK 17 "combstruct[draw]" 
+2 "combstruct[draw]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 30 "alk:=draw(specs_Alkyl,size=6);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$alkG-%%ProdG6$%'CarbonG-%$SetG6#-F&6$F(-F*6$-F&6$F(-
+F*6#-F&6$F(%(EpsilonGF0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 67 "The fo
+llowing procedure rewrites an alkyl into a more readable way." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 113 "nice:=proc(alk) eval(subs(
+\{Epsilon=NULL,Carbon=C,Prod=proc() global H; [args] end,Set=proc() ar
+gs end\},alk)) end:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "nice
+(alk);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7$%\"CG7%F$7$F$7#F$F&" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "The following procedure computes t
+he size of a given alkyl." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+103 "size:=proc(alk) option remember; 1+convert(map(size,op(2,alk)),`+
+`) end:\nsize(Prod(Carbon,Epsilon)):=1:" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 61 "The following procedure computes the height of a given al
+kyl." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 105 "height:=proc(alk) \+
+option remember; 1+max(op(map(height,op(2,alk)))) end:\nheight(Prod(Ca
+rbon,Epsilon)):=1:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 74 "Here is an \+
+alkyl with 50 carbon atoms, its nice representation and height." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "alk:=draw(specs_Alkyl,size=5
+0):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "nice(alk);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#7$%\"CG7$F$7%F$7#F$7$F$7%F$7%F$7&F$F'7$F$7%F
+$F'7%F$F'F'7&F$7$F$7$F$F'F07%F$7&F$F'F'7&F$F'F'F17%F$F'F17$F$7$F$7%F$F
+1F.7%F$F0F0" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "height(alk);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#8" }}}}{SECT 1 {PARA 4 "" 0 "" 
+{TEXT -1 15 "Empirical study" }}{SECT 1 {PARA 5 "" 0 "" {TEXT -1 7 "Dr
+awing" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 171 "By drawing several rando
+m structures, we can study probabilistic properties of alkyls.  For in
+stance, the following is a probabilistic estimate of their height on a
+verage:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "for i to 10 do h
+o[i]:=height(draw(specs_Alkyl,size=50)) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%#hoG6#\"\"\"\"#=" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+>&%#hoG6#\"\"#\"#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#hoG6#\"\"$\"
+#>" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#hoG6#\"\"%\"#8" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>&%#hoG6#\"\"&\"#8" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>&%#hoG6#\"\"'\"#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#hoG6#
+\"\"(\"#8" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#hoG6#\"\")\"#;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#hoG6#\"\"*\"#9" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>&%#hoG6#\"#5\"#<" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 23 "add(ho[i],i=1..10)/10.;" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#$\"++++I:!\")" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 77 "In the sam
+e way, we get a probabilistic estimate of their standard deviation:" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "sqrt(add((ho[i]-\")^2,i=1.
+.10)/10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+`%G=0#!\"*" }}}}
+{SECT 1 {PARA 5 "" 0 "" {TEXT -1 22 "Exhaustive enumeration" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 12 "The command " }{HYPERLNK 17 "combstruct[d
+raw]" 2 "combstruct[draw]" "" }{TEXT -1 20 " permits us to draw " }
+{TEXT 259 3 "one" }{TEXT -1 44 " structure at random.  We can also gen
+erate " }{TEXT 260 3 "all" }{TEXT -1 31 " alkyls of a given size, usin
+g " }{HYPERLNK 17 "combstruct[allstructs]" 2 "combstruct[allstructs]" 
+"" }{TEXT -1 222 ", so as to compute the mean of a particular paramete
+r exactly, or to count all those with a particular property.  For inst
+ance, the height of trees cannot be represented in the class of combin
+atorial structures when using " }{HYPERLNK 17 "Combstruct" 2 "combstru
+ct" "" }{TEXT -1 134 ".  For instance, by computing all alkyls of size
+ 5, we get the distribution of height for these alkyls (in their nice \+
+representation)." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "allstru
+cts(specs_Alkyl,size=5):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 
+"map(nice,\");" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7*7$%\"CG7%F%7#F%7$F
+%F'7&F%F'F'F(7%F%F'7%F%F'F'7$F%7$F%7$F%F(7$F%7&F%F'F'F'7$F%7$F%F+7%F%F
+'F.7%F%F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "sort(map(hei
+ght,\"\"));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7*\"\"$F$F$F$\"\"%F%F%
+\"\"&" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 115 "Here we count 4 alkyls \+
+of size 5 and height 3, 3 alkyls of size 5 and height 4, and 1 alkyl o
+f size 5 and height 5." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 95 "By the \+
+same method, we get the exact mean and standard deviation of the heigh
+t for small sizes." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 190 "esd:
+=proc(n) local i,as,mean;\n    as:=map(height,allstructs(specs_Alkyl,s
+ize=n));\n    mean:=evalf(convert(as,`+`)/nops(as));\n    nops(as),mea
+n,evalf(sqrt(add((i-mean)^2,i=as))/nops(as))\nend:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 33 "for i from 2 to 6 do i=esd(i) od;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/\"\"#6%\"\"\"$F$\"\"!F(" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/\"\"$6%\"\"#$\"+++++D!\"*$\"+1R`NN!#5" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#/\"\"%6%F$$\"\"$\"\"!$\"+0R`NN!#5" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#/\"\"&6%\"\")$\"++++DO!\"*$\"+huigC!#5" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/\"\"'6%\"#<$\"+fqk<T!\"*$\"+8/j<?!#5" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 18 "We could go up to " }{XPPEDIT 18 
+0 "i=9" "/%\"iG\"\"*" }{TEXT -1 24 " in less than 2 minutes." }}}}}}
+{SECT 1 {PARA 3 "" 0 "" {TEXT -1 32 "Alkyls according to their height
+" }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 7 "Grammar" }}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 20 "We define the class " }{XPPEDIT 18 0 "Alkyl_height[n
+]" "&%-Alkyl_heightG6#%\"nG" }{TEXT -1 37 " to be the class of alkyls \+
+of height " }{TEXT 263 7 "at most" }{TEXT -1 1 " " }{XPPEDIT 18 0 "n" 
+"I\"nG6\"" }{TEXT -1 30 ".  An alkyl of height at most " }{XPPEDIT 18 
+0 "n" "I\"nG6\"" }{TEXT -1 81 " can be viewed as a carbon atom linked \+
+to at most three alkyls of height at most " }{XPPEDIT 18 0 "n-1" ",&%
+\"nG\"\"\"\"\"\"!\"\"" }{TEXT -1 28 ", according to the equation " }
+{XPPEDIT 18 0 "Alkyl_height[n]=Carbon*(Epsilon+Alkyl_height[n-1]+Alkyl
+_height[n-1]^2+Alkyl_height[n-1]^3)" "/&%-Alkyl_heightG6#%\"nG*&%'Carb
+onG\"\"\",*%(EpsilonGF)&F$6#,&F&F)\"\"\"!\"\"F)*$&F$6#,&F&F)\"\"\"F0\"
+\"#F)*$&F$6#,&F&F)\"\"\"F0\"\"$F)F)" }{TEXT -1 1 "." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 307 "gramm_ltd_height:=proc(n) option remembe
+r;\n    Alkyl_height[n]=Prod(Carbon,Set(Alkyl_height[n-1],card<=3)),gr
+amm_ltd_height(n-1)\nend:\ngramm_ltd_height(1):=Alkyl_height[1]=Prod(C
+arbon,Epsilon),Carbon=Atom:\nspecs_ltd_height:=proc(n) option remember
+;\n    [Alkyl_height[n],\{gramm_ltd_height(n)\},unlabelled]\nend:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 67 "The following procedure rewrites a
+n alkyl into a more readable way." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 113 "nice:=proc(alk) eval(subs(\{Epsilon=NULL,Carbon=C,Pr
+od=proc() global H; [args] end,Set=proc() args end\},alk)) end:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 70 "The following procedures compute t
+he size and height of a given alkyl." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 103 "size:=proc(alk) option remember; 1+convert(map(size,
+op(2,alk)),`+`) end:\nsize(Prod(Carbon,Epsilon)):=1:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 105 "height:=proc(alk) option remember; 1+max
+(op(map(height,op(2,alk)))) end:\nheight(Prod(Carbon,Epsilon)):=1:" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 86 "For instance, we compute the heig
+ht of a random alkyl of size 10 and height at most 5." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "alk:=draw(specs_ltd_height(5),size=
+10):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "nice(alk);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#7&%\"CG7#F$7$F$F%7$F$7&F$F%F%F&" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "size(alk),height(alk);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#5\"\"&" }}}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 213 "In this section, we proceed to compute a table of the nu
+mber of alkyls according to their size and height.  The first method i
+s by generating all structures.  Next, we use generating functions to \+
+extend the table." }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 25 "Generating \+
+all structures" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 89 "The following pr
+ocedure remembers all the alkyls of a given size and with bounded heig
+ht." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 83 "list_all_st:=proc(d,
+s) option remember; allstructs(specs_ltd_height(d),size=s) end:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "An alkyl of height " }{XPPEDIT 18 
+0 "h" "I\"hG6\"" }{TEXT -1 20 " has a size at most " }{XPPEDIT 18 0 "(
+3^h-1)/2" "*&,&)\"\"$%\"hG\"\"\"\"\"\"!\"\"F'\"\"#F)" }{TEXT -1 56 ". \+
+ Therefore, to produce all alkyls with height at most " }{XPPEDIT 18 
+0 "h[max]" "&%\"hG6#%$maxG" }{TEXT -1 48 ", we need to produce all alk
+yls with size up to " }{XPPEDIT 18 0 "s[max]=(3^h[max]-1)/2" "/&%\"sG6
+#%$maxG*&,&)\"\"$&%\"hG6#F&\"\"\"\"\"\"!\"\"F.\"\"#F0" }{TEXT -1 1 ".
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "s[max]:=(3^h[max]-1)/2;
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"sG6#%$maxG,&)\"\"$&%\"hGF&#\"
+\"\"\"\"##!\"\"F/F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 61 "To begin w
+ith, we enumerate all alkyls with height at most 3." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 10 "h[max]:=3;" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>&%\"hG6#%$maxG\"\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+91 "for i from 1 to s[max] do i,nops(list_all_st(h[max],i)),map(nice,l
+ist_all_st(h[max],i)) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"\"F#7
+#7#%\"CG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"#\"\"\"7#7$%\"CG7#F'" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"$\"\"#7$7%%\"CG7#F'F(7$F'7$F'F(
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"%\"\"$7%7%%\"CG7#F'7$F'F(7$F'7
+%F'F(F(7&F'F(F(F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"&\"\"%7&7&%\"
+CG7#F'F(7$F'F(7%F'F(7%F'F(F(7$F'7&F'F(F(F(7%F'F)F)" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6%\"\"'\"\"%7&7&%\"CG7#F'7$F'F(F)7%F'F(7&F'F(F(F(7%F'F)
+7%F'F(F(7&F'F(F(F-" }}{PARA 12 "" 1 "" {XPPMATH 20 "6%\"\"(\"\"&7'7&%
+\"CG7$F'7#F'F(F(7&F'F)F)7&F'F)F)F)7&F'F)F(7%F'F)F)7%F'F-F-7%F'F(F+" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6%\"\")\"\"%7&7&%\"CG7#F'7%F'F(F(F)7%F'F
+)7&F'F(F(F(7&F'F(7$F'F(F+7&F'F-F-F)" }}{PARA 12 "" 1 "" {XPPMATH 20 "6
+%\"\"*\"\"%7&7&%\"CG7#F'7%F'F(F(7&F'F(F(F(7&F'7$F'F(F,F*7&F'F,F)F)7%F'
+F*F*" }}{PARA 12 "" 1 "" {XPPMATH 20 "6%\"#5\"\"$7%7&%\"CG7$F'7#F'7%F'
+F)F)7&F'F)F)F)7&F'F)F+F+7&F'F*F*F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%
+\"#6\"\"#7$7&%\"CG7$F'7#F'7&F'F)F)F)F*7&F'7%F'F)F)F,F*" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6%\"#7\"\"\"7#7&%\"CG7%F'7#F'F)7&F'F)F)F)F*" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6%\"#8\"\"\"7#7&%\"CG7&F'7#F'F)F)F(F(" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 112 "In this way, we have obtained t
+he truncation of the bivariate generating function of alkyls with size
+ marked by " }{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT -1 15 " and height b
+y " }{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 161 "enum_BGF:=map(series,series(convert(map(proc
+(s,z,u) z^size(s)*u^height(s) end,map(op,[seq(list_all_st(h[max],i),i=
+1..s[max])]),z,u),`+`),z,infinity),u,infinity);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%)enum_BGFG+=%\"zG+%%\"uG\"\"\"\"\"\"\"\"\"+%F(F)\"\"#
+\"\"#+'F(F)\"\"#F)\"\"$\"\"$+'F(F)\"\"#\"\"#\"\"$\"\"%+%F(\"\"%\"\"$\"
+\"&F8\"\"'+%F(\"\"&\"\"$\"\"(F8\"\")F8\"\"*+%F(\"\"$\"\"$\"#5+%F(F5\"
+\"$\"#6+%F(F)\"\"$\"#7FJ\"#8" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 20 
+"Generating functions" }}{EXCHG {PARA 0 "" 0 "" {HYPERLNK 17 "combstru
+ct[gfeqns]" 2 "combstruct[gfeqns]" "" }{TEXT -1 210 " returns a system
+ of functional equations satisfied by the generating functions of rela
+ted combinatorial structures.  In the case of the alkyls with maximum \+
+height above, we get the following triangular system." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "gfeqns(op(2..3,specs_ltd_height(4))
+,z);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7'/-%'CarbonG6#%\"zGF(/-&%-Alk
+yl_heightG6#\"\"#F'*&F%\"\"\",0F0F0-&F,6#F0F'F0-F36#*$F(F.#F0F.*$F2F.F
+8-F36#*$F(\"\"$#F0F=*&F2F0F5F0F8*$F2F=#F0\"\"'F0/-&F,6#F=F'*&F%F0,0F0F
+0F*F0-F+F6F8*$F*F.F8-F+F;F>*&F*F0FIF0F8*$F*F=FAF0/F2F%/-&F,6#\"\"%F'*&
+F%F0,0F0F0FDF0-FEF6F8*$FDF.F8-FEF;F>*&FDF0FVF0F8*$FDF=FAF0" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "gfsol:=gfsolve(op(2..3,specs_ltd_he
+ight(4)),z);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&gfsolG<'/-&%-Alkyl_
+heightG6#\"\"$6#%\"zG,<F-\"\"\"*$F-\"\"(\"\"&*$F-\"\"*\"\"%*$F-\"#5F+*
+$F-\"#8F/*$F-\"\"#F/*$F-\"#6F;*$F-\"#7F/*$F-\"\"'F5*$F-\"\")F5*$F-F+F;
+*$F-F5F+*$F-F2F5/-&F)6#F5F,,\\pF@F?FB\"#JF3\"#ZF>\"$P\"F-F/F8\"$%=F6\"
+#qF<\"#**FFF1F0\"#?*$F-\"#:\"$+$*$F-\"#=\"$)\\*$F-FR\"$%f*$F-\"#E\"$`%
+*$F-\"#C\"$q&*$F-\"#;\"$p$*$F-\"#@\"$9'*$F-\"#F\"$y$*$F-\"#I\"$\"=*$F-
+\"#RF/*$F-\"#L\"#c*$F-\"#OF?*$F-\"#A\"$C'*$F-\"#9\"$R#*$F-\"#QF+*$F-\"
+#PFA*$F-\"#MFgp*$F-\"#NFR*$F-FL\"$G\"*$F-\"#G\"$7$*$F-\"#H\"$Q#*$F-\"#
+K\"#*)*$F-\"#B\"$,'*$F-\"#D\"$9&*$F-\"#<\"$K%*$F-\"#>\"$^&*$F-\"#SF/F:
+F/FDF;FEF5/-&F)6#F/F,F-/-%'CarbonGF,F-/-&F)6#F;F,,*F-F/F:F/FDF/FEF/" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 151 "In particular, we have obtained
+ a truncation of the bivariate generating function of all alkyls (i.e.
+, with no constraint on height).  In this series, " }{XPPEDIT 18 0 "u
+" "I\"uG6\"" }{TEXT -1 55 " marks the height.  It extends the previous
+ truncation " }{XPPEDIT 18 0 "enum_BGF" "I)enum_BGFG6\"" }{TEXT -1 1 "
+." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 138 "BGF:=map(series,serie
+s(eval(subs(Alkyl_height[0]=0,gfsol,add(u^h*(Alkyl_height[h]-Alkyl_hei
+ght[h-1])(z),h=1..4))),z,infinity),u,infinity);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%$BGFG+]p%\"zG+%%\"uG\"\"\"\"\"\"\"\"\"+%F(F)\"\"#\"\"
+#+'F(F)\"\"#F)\"\"$\"\"$+)F(F)\"\"#\"\"#\"\"$F)\"\"%\"\"%+'F(\"\"%\"\"
+$\"\"$\"\"%\"\"&+'F(F:\"\"$\"\")\"\"%\"\"'+'F(\"\"&\"\"$\"#:\"\"%\"\"(
++'F(F:\"\"$\"#F\"\"%\"\")+'F(F:\"\"$\"#V\"\"%\"\"*+'F(F<\"\"$\"#n\"\"%
+\"#5+'F(F5\"\"$\"#(*\"\"%\"#6+'F(F)\"\"$\"$O\"\"\"%\"#7+'F(F)\"\"$\"$$
+=\"\"%\"#8+%F(\"$R#\"\"%\"#9+%F(\"$+$\"\"%\"#:+%F(\"$p$\"\"%\"#;+%F(\"
+$K%\"\"%\"#<+%F(\"$)\\\"\"%\"#=+%F(\"$^&\"\"%\"#>+%F(\"$%f\"\"%\"#?+%F
+(\"$9'\"\"%\"#@+%F(\"$C'\"\"%\"#A+%F(\"$,'\"\"%\"#B+%F(\"$q&\"\"%\"#C+
+%F(\"$9&\"\"%\"#D+%F(\"$`%\"\"%\"#E+%F(\"$y$\"\"%\"#F+%F(\"$7$\"\"%\"#
+G+%F(\"$Q#\"\"%\"#H+%F(\"$\"=\"\"%\"#I+%F(\"$G\"\"\"%\"#J+%F(\"#*)\"\"
+%\"#K+%F(\"#c\"\"%\"#L+%F(\"#P\"\"%\"#M+%F(\"#?\"\"%\"#N+%F(\"#7\"\"%
+\"#O+%F(\"\"'\"\"%\"#P+%F(F<\"\"%\"#Q+%F(F)\"\"%\"#RFeu\"#S" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 95 "This is made explicit on the follo
+wing normalized difference: each entry starts with a term in " }
+{XPPEDIT 18 0 "u^4" "*$%\"uG\"\"%" }{TEXT -1 41 ", denoting alkyls wit
+h height at least 4." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "map
+(series,series(BGF-enum_BGF,z,infinity),u,infinity);" }}{PARA 12 "" 1 
+"" {XPPMATH 20 "6#+go%\"zG+%%\"uG\"\"\"\"\"%\"\"%+%F&\"\"$\"\"%\"\"&+%
+F&\"\")\"\"%\"\"'+%F&\"#:\"\"%\"\"(+%F&\"#F\"\"%\"\")+%F&\"#V\"\"%\"\"
+*+%F&\"#n\"\"%\"#5+%F&\"#(*\"\"%\"#6+%F&\"$O\"\"\"%\"#7+%F&\"$$=\"\"%
+\"#8+%F&\"$R#\"\"%\"#9+%F&\"$+$\"\"%\"#:+%F&\"$p$\"\"%\"#;+%F&\"$K%\"
+\"%\"#<+%F&\"$)\\\"\"%\"#=+%F&\"$^&\"\"%\"#>+%F&\"$%f\"\"%\"#?+%F&\"$9
+'\"\"%\"#@+%F&\"$C'\"\"%\"#A+%F&\"$,'\"\"%\"#B+%F&\"$q&\"\"%\"#C+%F&\"
+$9&\"\"%\"#D+%F&\"$`%\"\"%\"#E+%F&\"$y$\"\"%\"#F+%F&\"$7$\"\"%\"#G+%F&
+\"$Q#\"\"%\"#H+%F&\"$\"=\"\"%\"#I+%F&\"$G\"\"\"%\"#J+%F&\"#*)\"\"%\"#K
++%F&\"#c\"\"%\"#L+%F&\"#P\"\"%\"#M+%F&\"#?\"\"%\"#N+%F&\"#7\"\"%\"#O+%
+F&\"\"'\"\"%\"#PF*\"#QF%\"#RF%\"#S" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT 
+-1 58 "Table of the number of alkyls according to size and height" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 235 "Calculations with respect to diff
+erent heights are much more efficient than the method of exhaustive en
+umeration.  This makes it possible for us to set up the table of the n
+umber of alkyls according to size and height in a few minutes:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "h[max]:=5;" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>&%\"hG6#%$maxG\"\"&" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 52 "gfsol:=gfsolve(op(2..3,specs_ltd_height(h[max])),z);
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&gfsolG<(/-&%-Alkyl_heightG6#\"
+\"&6#%\"zG,^z*$F-\"\"'\"#;*$F-\"\")\"#j*$F-\"\"*\"$@\"*$F-\"#7\"$\\(F-
+\"\"\"*$F-\"#8\"%W8*$F-\"#5\"$D#*$F-\"#6\"$:%*$F-F+F3*$F-\"\"(\"#L*$F-
+\"#$*\")yF#*R*$F-\"#%)\"*Nl/_&*$F-\"#()\"*3Mrh#*$F-\"#'*\")kzn7*$F-\"#
+:\"%HT*$F-\"#=\"&a.#*$F-\"#?\"&1d&*$F-\"#E\"'FF()*$F-\"#C\"'bXO*$F-F1
+\"%1r*$F-\"#@\"&G1**$F-\"#F\"(X&G8*$F-\"#I\"((G$R%*$F-\"#R\")\\av*)*$F
+-FH\")EX?8*$F-\"#O\")-^4O*$F-\"#A\"'Hd9*$F-\"#9\"%lB*$F-\"#Q\")^9&p'*$
+F-\"#P\"))**=%\\*$F-\"#M\")0zl=*$F-\"#N\")W#)3E*$F-\"#J\"($o2k*$F-\"#G
+\"(O0+#*$F-\"#H\"(a0)H*$F-\"#K\"(IoC**$F-\"#B\"',=B*$F-\"#D\"'1sc*$F-
+\"#<\"&/@\"*$F-\"#>\"&$)Q$*$F-\"#S\"*\\J1>\"*$F-\"\"#F;*$F-\"\"$F_s*$F
+-F7F;*$F-\"#p\"+'enS*R*$F-\"#v\"+YN@KD*$F-\"#^\"+QR_B8*$F-\"#d\"+rF*)[
+G*$F-\"$?\"F;*$F-\"#i\"+XuV$*R*$F-\"#c\"+b:CwD*$F-\"#e\"+R[0;J*$F-\"#k
+\"+7L\"yA%*$F-\"#Y\"*\"Qf&>&*$F-\"#]\"+1q`@6*$F-\"#!)\"+<X'fB\"*$F-F4
+\"+h'p@8%*$F-\"#\")\"+yFgI5*$F-\"#!*\"*%R]#4\"*$F-\"$<\"Fdo*$F-\"#**\"
+(N\"pM*$F-\"$3\"\"&%eD*$F-\"$9\"\"$Q$*$F-\"$6\"\"%`L*$F-\"$-\"\"'Z&3)*
+$F-\"#X\"*-)ftT*$F-\"$0\"\"'w%e\"*$F-\"#_\"+[z;X:*$F-\"#[\"*HI%)z(*$F-
+\"#U\"*US)H?*$F-\"#a\"+z*G*Q?*$F-\"#g\"+L/t1O*$F-\"#y\"+#)\\?5<*$F-\"#
+m\"+?PmxU*$F-\"#s\"+7RQcL*$F-\"#W\"*VerJ$*$F-\"#w\"+uI_\\A*$F-\"#u\"+7
+,d:G*$F-\"#o\"+.h3MT*$F-\"#q\"+[\"yQ\"Q*$F-\"\"%F]z*$F-\"##)\"*o<=[)*$
+F-\"#$)\"*`D)))o*$F-\"#&)\"*[%RkV*$F-\"#')\"*2[KS$*$F-\"#))\"*$RJ%)>*$
+F-\"#*)\"*k_J[\"*$F-\"#\"*\")/!)Hz*$F-\"##*\")'>&pc*$F-\"#%*\")n`nF*$F
+-\"#&*\"):]))=*$F-\"#(*\"(+GP)*$F-\"#)*\"(EcV&*$F-\"$+\"\"(&Ru@*$F-\"$
+,\"\"(!zQ8*$F-\"$.\"\"'R$z%*$F-\"$/\"\"'!Gy#*$F-\"$1\"\"&/#))*$F-\"$2
+\"\"&E\"[*$F-\"$4\"\"&[L\"*$F-\"$5\"\"%Wn*$F-\"$7\"\"%/;*$F-\"$8\"\"$e
+(*$F-\"$:\"\"$a\"*$F-\"$;\"Fbt*$F-\"$=\"F@*$F-\"$>\"F]z*$F-\"#f\"+T8+r
+L*$F-\"#h\"+7KQ;Q*$F-\"#l\"+R<(pF%*$F-\"#n\"+;rgHU*$F-\"#r\"+d_:*f$*$F
+-\"#t\"+b3u#4$*$F-\"#x\"+#HbP(>*$F-\"#z\"+wa@j9*$F-\"#T\"*IZGc\"*$F-\"
+#V\"*ee'3E*$F-\"#Z\"*<&R*R'*$F-\"#\\\"*_nBS**$F-\"#`\"+j!*e%y\"*$F-\"#
+b\"+N2S/B/-&F)6#FasF,,<F-F;FFF+F5F]zF?FasF<F;F^sF;FBF_sF8F;F/F]zF2F]zF
+`sF_sF\\zFasFEF]z/-&F)6#F]zF,,\\pF/F9F2FdqF5Fh`lF8\"$P\"F-F;F<\"$%=F?F
+jyFBFavFEFGFFFfnFU\"$+$FX\"$)\\Fen\"$%fFhn\"$`%F[o\"$q&F^o\"$p$F`o\"$9
+'Fco\"$y$Ffo\"$\"=FioF;F\\pFetF^pF9Fap\"$C'Fdp\"$R#FgpFasFjpF0F]qF[qF`
+qFfnFcq\"$G\"Ffq\"$7$Fiq\"$Q#F\\rF^[lF_r\"$,'Fbr\"$9&Fer\"$K%Fhr\"$^&F
+[sF;F^sF;F`sF_sF\\zF]z/-&F)6#F;F,F-/-%'CarbonGF,F-/-&F)6#F_sF,,*F-F;F^
+sF;F`sF;F\\zF;" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 147 "BGF:=map
+(series,series(eval(subs(Alkyl_height[0]=0,gfsol,add(u^hh*(Alkyl_heigh
+t[hh]-Alkyl_height[hh-1])(z),hh=1..h[max]))),z,infinity),u,infinity);
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$BGFG+_z%\"zG+%%\"uG\"\"\"\"\"\"
+\"\"\"+%F(F)\"\"#\"\"#+'F(F)\"\"#F)\"\"$\"\"$+)F(F)\"\"#\"\"#\"\"$F)\"
+\"%\"\"%+)F(\"\"%\"\"$\"\"$\"\"%F)\"\"&\"\"&+)F(F:\"\"$\"\")\"\"%F:\"
+\"&\"\"'+)F(\"\"&\"\"$\"#:\"\"%\"#8\"\"&\"\"(+)F(F:\"\"$\"#F\"\"%\"#K
+\"\"&\"\")+)F(F:\"\"$\"#V\"\"%\"#u\"\"&\"\"*+)F(F<\"\"$\"#n\"\"%\"$b\"
+\"\"&\"#5+)F(F5\"\"$\"#(*\"\"%\"$;$\"\"&\"#6+)F(F)\"\"$\"$O\"\"\"%\"$7
+'\"\"&\"#7+)F(F)\"\"$\"$$=\"\"%\"%g6\"\"&\"#8+'F(\"$R#\"\"%\"%E@\"\"&
+\"#9+'F(\"$+$\"\"%\"%HQ\"\"&\"#:+'F(\"$p$\"\"%\"%Pn\"\"&\"#;+'F(\"$K%
+\"\"%\"&s;\"\"\"&\"#<+'F(\"$)\\\"\"%\"&c)>\"\"&\"#=+'F(\"$^&\"\"%\"&KL
+$\"\"&\"#>+'F(\"$%f\"\"%\"&7^&\"\"&\"#?+'F(\"$9'\"\"%\"&9+*\"\"&\"#@+'
+F(\"$C'\"\"%\"'0^9\"\"&\"#A+'F(\"$,'\"\"%\"'+7B\"\"&\"#B+'F(\"$q&\"\"%
+\"'&)RO\"\"&\"#C+'F(\"$9&\"\"%\"'#pm&\"\"&\"#D+'F(\"$`%\"\"%\"'uA()\"
+\"&\"#E+'F(\"$y$\"\"%\"(n\"G8\"\"&\"#F+'F(\"$7$\"\"%\"(C-+#\"\"&\"#G+'
+F(\"$Q#\"\"%\"(;.)H\"\"&\"#H+'F(\"$\"=\"\"%\"(1JR%\"\"&\"#I+'F(\"$G\"
+\"\"%\"(bvS'\"\"&\"#J+'F(\"#*)\"\"%\"(TnC*\"\"&\"#K+'F(\"#c\"\"%\")qW?
+8\"\"&\"#L+'F(\"#P\"\"%\")oyl=\"\"&\"#M+'F(\"#?\"\"%\")C#)3E\"\"&\"#N+
+'F(\"#7\"\"%\")!4&4O\"\"&\"#O+'F(\"\"'\"\"%\")#**=%\\\"\"&\"#P+'F(F<\"
+\"%\")[9&p'\"\"&\"#Q+'F(F)\"\"%\")[av*)\"\"&\"#R+'F(F)\"\"%\"*[J1>\"\"
+\"&\"#S+%F(\"*IZGc\"\"\"&\"#T+%F(\"*US)H?\"\"&\"#U+%F(\"*ee'3E\"\"&\"#
+V+%F(\"*VerJ$\"\"&\"#W+%F(\"*-)ftT\"\"&\"#X+%F(\"*\"Qf&>&\"\"&\"#Y+%F(
+\"*<&R*R'\"\"&\"#Z+%F(\"*HI%)z(\"\"&\"#[+%F(\"*_nBS*\"\"&\"#\\+%F(\"+1
+q`@6\"\"&\"#]+%F(\"+QR_B8\"\"&\"#^+%F(\"+[z;X:\"\"&\"#_+%F(\"+j!*e%y\"
+\"\"&\"#`+%F(\"+z*G*Q?\"\"&\"#a+%F(\"+N2S/B\"\"&\"#b+%F(\"+b:CwD\"\"&
+\"#c+%F(\"+rF*)[G\"\"&\"#d+%F(\"+R[0;J\"\"&\"#e+%F(\"+T8+rL\"\"&\"#f+%
+F(\"+L/t1O\"\"&\"#g+%F(\"+7KQ;Q\"\"&\"#h+%F(\"+XuV$*R\"\"&\"#i+%F(\"+h
+'p@8%\"\"&\"#j+%F(\"+7L\"yA%\"\"&\"#k+%F(\"+R<(pF%\"\"&\"#l+%F(\"+?Pmx
+U\"\"&\"#m+%F(\"+;rgHU\"\"&\"#n+%F(\"+.h3MT\"\"&\"#o+%F(\"+'enS*R\"\"&
+\"#p+%F(\"+[\"yQ\"Q\"\"&\"#q+%F(\"+d_:*f$\"\"&\"#r+%F(\"+7RQcL\"\"&\"#
+s+%F(\"+b3u#4$\"\"&\"#t+%F(\"+7,d:G\"\"&\"#u+%F(\"+YN@KD\"\"&\"#v+%F(
+\"+uI_\\A\"\"&\"#w+%F(\"+#HbP(>\"\"&\"#x+%F(\"+#)\\?5<\"\"&\"#y+%F(\"+
+wa@j9\"\"&\"#z+%F(\"+<X'fB\"\"\"&\"#!)+%F(\"+yFgI5\"\"&\"#\")+%F(\"*o<
+=[)\"\"&\"##)+%F(\"*`D)))o\"\"&\"#$)+%F(\"*Nl/_&\"\"&\"#%)+%F(\"*[%RkV
+\"\"&\"#&)+%F(\"*2[KS$\"\"&\"#')+%F(\"*3Mrh#\"\"&\"#()+%F(\"*$RJ%)>\"
+\"&\"#))+%F(\"*k_J[\"\"\"&\"#*)+%F(\"*%R]#4\"\"\"&\"#!*+%F(\")/!)Hz\"
+\"&\"#\"*+%F(\")'>&pc\"\"&\"##*+%F(\")yF#*R\"\"&\"#$*+%F(\")n`nF\"\"&
+\"#%*+%F(\"):]))=\"\"&\"#&*+%F(\")kzn7\"\"&\"#'*+%F(\"(+GP)\"\"&\"#(*+
+%F(\"(EcV&\"\"&\"#)*+%F(\"(N\"pM\"\"&\"#**+%F(\"(&Ru@\"\"&\"$+\"+%F(\"
+(!zQ8\"\"&\"$,\"+%F(\"'Z&3)\"\"&\"$-\"+%F(\"'R$z%\"\"&\"$.\"+%F(\"'!Gy
+#\"\"&\"$/\"+%F(\"'w%e\"\"\"&\"$0\"+%F(\"&/#))\"\"&\"$1\"+%F(\"&E\"[\"
+\"&\"$2\"+%F(\"&%eD\"\"&\"$3\"+%F(\"&[L\"\"\"&\"$4\"+%F(\"%Wn\"\"&\"$5
+\"+%F(\"%`L\"\"&\"$6\"+%F(\"%/;\"\"&\"$7\"+%F(\"$e(\"\"&\"$8\"+%F(\"$Q
+$\"\"&\"$9\"+%F(\"$a\"\"\"&\"$:\"+%F(\"#i\"\"&\"$;\"+%F(FP\"\"&\"$<\"+
+%F(\"#5\"\"&\"$=\"+%F(F:\"\"&\"$>\"+%F(F)\"\"&\"$?\"F[^m\"$@\"" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 41 "In the following table, the entry \+
+at row " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 12 " and column " }
+{XPPEDIT 18 0 "c" "I\"cG6\"" }{TEXT -1 33 " is the number of alkyls of
+ size " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 0 "" }{TEXT -1 12 " an
+d height " }{XPPEDIT 18 0 "c" "I\"cG6\"" }{TEXT -1 1 ":" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 128 "matrix([[` `,seq(`height = `.hh,hh
+=1..h[max])],seq([`size = `.ss,seq(coeff(coeff(BGF,z,ss),u,hh),hh=1..h
+[max])],ss=1..s[max])]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%'MATRIXG
+6#7fr7(%\"~G%+height~=~1G%+height~=~2G%+height~=~3G%+height~=~4G%+heig
+ht~=~5G7(%)size~=~1G\"\"\"\"\"!F1F1F17(%)size~=~2GF1F0F1F1F17(%)size~=
+~3GF1F0F0F1F17(%)size~=~4GF1F0\"\"#F0F17(%)size~=~5GF1F1\"\"%\"\"$F07(
+%)size~=~6GF1F1F;\"\")F;7(%)size~=~7GF1F1\"\"&\"#:\"#87(%)size~=~8GF1F
+1F;\"#F\"#K7(%)size~=~9GF1F1F;\"#V\"#u7(%*size~=~10GF1F1F<\"#n\"$b\"7(
+%*size~=~11GF1F1F8\"#(*\"$;$7(%*size~=~12GF1F1F0\"$O\"\"$7'7(%*size~=~
+13GF1F1F0\"$$=\"%g67(%*size~=~14GF1F1F1\"$R#\"%E@7(%*size~=~15GF1F1F1
+\"$+$\"%HQ7(%*size~=~16GF1F1F1\"$p$\"%Pn7(%*size~=~17GF1F1F1\"$K%\"&s;
+\"7(%*size~=~18GF1F1F1\"$)\\\"&c)>7(%*size~=~19GF1F1F1\"$^&\"&KL$7(%*s
+ize~=~20GF1F1F1\"$%f\"&7^&7(%*size~=~21GF1F1F1\"$9'\"&9+*7(%*size~=~22
+GF1F1F1\"$C'\"'0^97(%*size~=~23GF1F1F1\"$,'\"'+7B7(%*size~=~24GF1F1F1
+\"$q&\"'&)RO7(%*size~=~25GF1F1F1\"$9&\"'#pm&7(%*size~=~26GF1F1F1\"$`%
+\"'uA()7(%*size~=~27GF1F1F1\"$y$\"(n\"G87(%*size~=~28GF1F1F1\"$7$\"(C-
++#7(%*size~=~29GF1F1F1\"$Q#\"(;.)H7(%*size~=~30GF1F1F1\"$\"=\"(1JR%7(%
+*size~=~31GF1F1F1\"$G\"\"(bvS'7(%*size~=~32GF1F1F1\"#*)\"(TnC*7(%*size
+~=~33GF1F1F1\"#c\")qW?87(%*size~=~34GF1F1F1\"#P\")oyl=7(%*size~=~35GF1
+F1F1\"#?\")C#)3E7(%*size~=~36GF1F1F1\"#7\")!4&4O7(%*size~=~37GF1F1F1\"
+\"'\")#**=%\\7(%*size~=~38GF1F1F1F<\")[9&p'7(%*size~=~39GF1F1F1F0\")[a
+v*)7(%*size~=~40GF1F1F1F0\"*[J1>\"7(%*size~=~41GF1F1F1F1\"*IZGc\"7(%*s
+ize~=~42GF1F1F1F1\"*US)H?7(%*size~=~43GF1F1F1F1\"*ee'3E7(%*size~=~44GF
+1F1F1F1\"*VerJ$7(%*size~=~45GF1F1F1F1\"*-)ftT7(%*size~=~46GF1F1F1F1\"*
+\"Qf&>&7(%*size~=~47GF1F1F1F1\"*<&R*R'7(%*size~=~48GF1F1F1F1\"*HI%)z(7
+(%*size~=~49GF1F1F1F1\"*_nBS*7(%*size~=~50GF1F1F1F1\"+1q`@67(%*size~=~
+51GF1F1F1F1\"+QR_B87(%*size~=~52GF1F1F1F1\"+[z;X:7(%*size~=~53GF1F1F1F
+1\"+j!*e%y\"7(%*size~=~54GF1F1F1F1\"+z*G*Q?7(%*size~=~55GF1F1F1F1\"+N2
+S/B7(%*size~=~56GF1F1F1F1\"+b:CwD7(%*size~=~57GF1F1F1F1\"+rF*)[G7(%*si
+ze~=~58GF1F1F1F1\"+R[0;J7(%*size~=~59GF1F1F1F1\"+T8+rL7(%*size~=~60GF1
+F1F1F1\"+L/t1O7(%*size~=~61GF1F1F1F1\"+7KQ;Q7(%*size~=~62GF1F1F1F1\"+X
+uV$*R7(%*size~=~63GF1F1F1F1\"+h'p@8%7(%*size~=~64GF1F1F1F1\"+7L\"yA%7(
+%*size~=~65GF1F1F1F1\"+R<(pF%7(%*size~=~66GF1F1F1F1\"+?PmxU7(%*size~=~
+67GF1F1F1F1\"+;rgHU7(%*size~=~68GF1F1F1F1\"+.h3MT7(%*size~=~69GF1F1F1F
+1\"+'enS*R7(%*size~=~70GF1F1F1F1\"+[\"yQ\"Q7(%*size~=~71GF1F1F1F1\"+d_
+:*f$7(%*size~=~72GF1F1F1F1\"+7RQcL7(%*size~=~73GF1F1F1F1\"+b3u#4$7(%*s
+ize~=~74GF1F1F1F1\"+7,d:G7(%*size~=~75GF1F1F1F1\"+YN@KD7(%*size~=~76GF
+1F1F1F1\"+uI_\\A7(%*size~=~77GF1F1F1F1\"+#HbP(>7(%*size~=~78GF1F1F1F1
+\"+#)\\?5<7(%*size~=~79GF1F1F1F1\"+wa@j97(%*size~=~80GF1F1F1F1\"+<X'fB
+\"7(%*size~=~81GF1F1F1F1\"+yFgI57(%*size~=~82GF1F1F1F1\"*o<=[)7(%*size
+~=~83GF1F1F1F1\"*`D)))o7(%*size~=~84GF1F1F1F1\"*Nl/_&7(%*size~=~85GF1F
+1F1F1\"*[%RkV7(%*size~=~86GF1F1F1F1\"*2[KS$7(%*size~=~87GF1F1F1F1\"*3M
+rh#7(%*size~=~88GF1F1F1F1\"*$RJ%)>7(%*size~=~89GF1F1F1F1\"*k_J[\"7(%*s
+ize~=~90GF1F1F1F1\"*%R]#4\"7(%*size~=~91GF1F1F1F1\")/!)Hz7(%*size~=~92
+GF1F1F1F1\")'>&pc7(%*size~=~93GF1F1F1F1\")yF#*R7(%*size~=~94GF1F1F1F1
+\")n`nF7(%*size~=~95GF1F1F1F1\"):]))=7(%*size~=~96GF1F1F1F1\")kzn77(%*
+size~=~97GF1F1F1F1\"(+GP)7(%*size~=~98GF1F1F1F1\"(EcV&7(%*size~=~99GF1
+F1F1F1\"(N\"pM7(%+size~=~100GF1F1F1F1\"(&Ru@7(%+size~=~101GF1F1F1F1\"(
+!zQ87(%+size~=~102GF1F1F1F1\"'Z&3)7(%+size~=~103GF1F1F1F1\"'R$z%7(%+si
+ze~=~104GF1F1F1F1\"'!Gy#7(%+size~=~105GF1F1F1F1\"'w%e\"7(%+size~=~106G
+F1F1F1F1\"&/#))7(%+size~=~107GF1F1F1F1\"&E\"[7(%+size~=~108GF1F1F1F1\"
+&%eD7(%+size~=~109GF1F1F1F1\"&[L\"7(%+size~=~110GF1F1F1F1\"%Wn7(%+size
+~=~111GF1F1F1F1\"%`L7(%+size~=~112GF1F1F1F1\"%/;7(%+size~=~113GF1F1F1F
+1\"$e(7(%+size~=~114GF1F1F1F1\"$Q$7(%+size~=~115GF1F1F1F1\"$a\"7(%+siz
+e~=~116GF1F1F1F1\"#i7(%+size~=~117GF1F1F1F1FG7(%+size~=~118GF1F1F1F1\"
+#57(%+size~=~119GF1F1F1F1F;7(%+size~=~120GF1F1F1F1F07(%+size~=~121GF1F
+1F1F1F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "A (huge) table for " }
+{XPPEDIT 18 0 "h[max]=7" "/&%\"hG6#%$maxG\"\"(" }{TEXT -1 43 " could b
+e computed in less than 10 minutes." }}}}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 23 "Disubstituted alkanes, " }{XPPEDIT 18 0 "C[n]*H[2*n]*X*Y
+" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#*&\"\"#F'F&F'F'%\"XGF'%\"YGF'" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 34 "Enumerating disubstituted alkanes \+
+" }{XPPEDIT 18 0 "C[n]*H[2*n]*X*Y" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#*&\"
+\"#F'F&F'F'%\"XGF'%\"YGF'" }{TEXT -1 53 " is equivalent to enumerating
+ monosubstituted alkyls " }{XPPEDIT 18 0 "C[n]*H[2*n]*X" "*(&%\"CG6#%
+\"nG\"\"\"&%\"HG6#*&\"\"#F'F&F'F'%\"XGF'" }{TEXT -1 163 ".  The latter
+ can generically be viewed as a carbon atom linked to one monosubstitu
+ted alkyl and at least 2 nonsubstituted alkyls.  This yields the class
+ equation " }{XPPEDIT 18 0 "S1_Alkyl[X]=Carbon*S1_Alkyl[X]*(Epsilon+Al
+kyl)+Carbon*X*(Epsilon+Alkyl+Alkyl^2)" "/&%)S1_AlkylG6#%\"XG,&*(%'Carb
+onG\"\"\"&F$6#F&F*,&%(EpsilonGF*%&AlkylGF*F*F**(F)F*F&F*,(F.F*F/F**$F/
+\"\"#F*F*F*" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+129 "gramm_S1_Alkyl:=S1_Alkyl[X]=Union(Prod(Carbon,S1_Alkyl[X],Set(Alk
+yl,card<=2)),Prod(Prod(Carbon,X),Set(Alkyl,card<=2))),X=Epsilon:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 70 "specs_S1_Alkyl:=[S1_Alkyl[X]
+,\{gramm_S1_Alkyl,gramm_Alkyl\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 42 "seq(count(specs_S1_Alkyl,size=i),i=0..50);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6U\"\"!\"\"\"\"\"#\"\"&\"#7\"#J\"#!)\"$5
+#\"$b&\"%z9\"%fR\"&_1\"\"&g(G\"&5z(\"'C;@\"'@id\"(5Ad\"\"(LxH%\")Gtw6
+\"),oEK\")EYf))\"*>\\aV#\"*B'G-n\"+PRGY=\"+=^g!4&\",o!ow/9\",$HA\\zQ\"
+-d!Q_@2\"\"-/(y9]'H\"-&HhiZ?)\".j#eksrA\".c\"HIL$H'\"/;M;oJW<\"/amji+P
+[\"0yf)4p!>M\"\"0y:)Q$eVs$\"1%R3p')yS.\"\"1\\<dEFBsG\"1hX^4^p!)z\"2\\Q
+UcEU#=A\"2PQG\\u6w;'\"3H+6:>4P:<\"3/&4SfWxAx%\"4Za4)pc)[!G8\"4Ir?\\oJH
+np$\"5D\\EIwK[FH5\"5h^#)=Pi&*[mG\"5,<39N`J\"\\)z\"6Pfmzfs!yxCA\"6N[u%
+\\T_!e+?'\"7n'yl!f+)G*>G<" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "This
+ series appears as the entry " }{TEXT 264 5 "M1418" }{TEXT -1 18 " (\"
+paraffins with " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 63 " carbon a
+toms\") in the book by N. J. A. Sloane and S. Plouffe [" }{TEXT 265 
+37 "The Encyclopedia of Integer Sequences" }{TEXT -1 26 ", (1995), Aca
+demic Press]." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 161 "Of course, ther
+e are more monosubstituted alkyls than nonsubstituted ones.  We give t
+he ratios number of monosubstituted alkyls/number of alkyls for small \+
+sizes:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "seq([i=evalf(coun
+t(specs_S1_Alkyl,size=i)/count(specs_Alkyl,size=i))],i=1..50);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6T7#/\"\"\"$F%\"\"!7#/\"\"#$F*F'7#/\"\"$
+$\"+++++D!\"*7#/\"\"%$F.F'7#/\"\"&$\"++++vQF17#/\"\"'$\"+`B)eq%F17#/\"
+\"($\"+&Q:YQ&F17#/\"\")$\"+c]&fB'F17#/\"\"*$\"+t'y%4qF17#/\"#5$\"+,&y'
+3yF17#/\"#6$\"+B.?/')F17#/\"#7$\"+ei\"zS*F17#/\"#8$\"+#*y*)>5!\")7#/\"
+#9$\"+v'f)*4\"F]o7#/\"#:$\"+p+@z6F]o7#/\"#;$\"+`Xre7F]o7#/\"#<$\"+/B.Q
+8F]o7#/\"#=$\"+zjP<9F]o7#/\"#>$\"+Hzf'\\\"F]o7#/\"#?$\"+ya#ed\"F]o7#/
+\"#@$\"+iy)\\l\"F]o7#/\"#A$\"+\"RNTt\"F]o7#/\"#B$\"+%)yC8=F]o7#/\"#C$
+\"++XM#*=F]o7#/\"#D$\"+^$=9(>F]o7#/\"#E$\"+$zy/0#F]o7#/\"#F$\"+5Q_H@F]
+o7#/\"#G$\"+Uxb3AF]o7#/\"#H$\"+01e(G#F]o7#/\"#I$\"+\"f%fmBF]o7#/\"#J$
+\"+#>+cW#F]o7#/\"#K$\"+)o)fCDF]o7#/\"#L$\"+I1f.EF]o7#/\"#M$\"+Eod#o#F]
+o7#/\"#N$\"+rxbhFF]o7#/\"#O$\"+=S`SGF]o7#/\"#P$\"+vf]>HF]o7#/\"#Q$\"+[
+SZ)*HF]o7#/\"#R$\"+l&Qu2$F]o7#/\"#S$\"+K)*RcJF]o7#/\"#T$\"+9\"e`B$F]o7
+#/\"#U$\"+^OJ9LF]o7#/\"#V$\"+bmE$R$F]o7#/\"#W$\"+>t@sMF]o7#/\"#X$\"+:e
+;^NF]o7#/\"#Y$\"+*H7,j$F]o7#/\"#Z$\"+6p04PF]o7#/\"#[$\"+!y**zy$F]o7#/
+\"#\\$\"+C5%p'QF]o7#/\"#]$\"+Z2)e%RF]o" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 91 "Here is an example of a monosubstituted alkyl with 6 carb
+on atoms, obtained by the command " }{HYPERLNK 17 "combstruct[draw]" 
+2 "combstruct[draw]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 33 "alk:=draw(specs_S1_Alkyl,size=6);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%$alkG-%%ProdG6%%'CarbonG-F&6%F(-F&6$-F&6$F(%\"XG-%$
+SetG6#-F&6$F(-F16#-F&6$F(%(EpsilonGF5F9" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 82 "The following procedure rewrites a monosubstituted alkyl \+
+into a more readable way." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+118 "nice:=proc(alk) subs([C,X]=CX,eval(subs(\{Epsilon=NULL,Carbon=C,P
+rod=proc() [args] end,Set=proc() args end\},alk))) end:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "nice(alk);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7$%\"CG7%F$7$%#CXG7$F$7#F$F)" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 86 "The following procedures compute the size and height of
+ a given monosubstituted alkyl." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 138 "size:=proc(alk) option remember; 1+convert(map(op,map2(map,si
+ze,[op(2..-1,alk)])),`+`) end:\nsize(Carbon):=1:\nsize(X):=0:\nsize(Ep
+silon):=0:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 194 "height:=proc
+(alk) option remember; `if`(nops(alk)=2,1+max(op(map(height,op(2,alk))
+)),1+max(height(op(2,alk)),op(map(height,op(3,alk))))) end:\nheight(Ca
+rbon):=1:\nheight(X):=0:\nheight(Epsilon):=0:" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 89 "Here is a monosubstituted alkyl with 50 carbon atoms, \+
+its nice representation and height." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 34 "alk:=draw(specs_S1_Alkyl,size=50):" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 10 "nice(alk);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#7&%\"CG7%F$7$F$7$F$7&F$7#%#CXG7#F$7%F$F+7$F$7%F$7$F$7$F$F+7%F$F0
+F0F+7%F$F+7&F$F+F+F07$F$7&F$F+F37%F$7$F$F/7$F$7&F$F07%F$F+F+F:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "height(alk);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#\"#6" }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 24 "Tri
+substituted alkanes, " }{XPPEDIT 18 0 "C[n]*H[2*n-1]*X*Y*Z" "*,&%\"CG6
+#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"F'%\"XGF'%\"YGF'%\"ZGF
+'" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "Enumerating trisubstituted al
+kanes " }{XPPEDIT 18 0 "C[n]*H[2*n-1]*X*Y*Z" "*,&%\"CG6#%\"nG\"\"\"&%
+\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"F'%\"XGF'%\"YGF'%\"ZGF'" }{TEXT -1 
+51 " is equivalent to enumerating disubstituted alkyls " }{XPPEDIT 18 
+0 "C[n]*H[2*n-1]*X*Y" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'
+\"\"\"!\"\"F'%\"XGF'%\"YGF'" }{TEXT -1 30 ".  In this section, we assu
+me " }{XPPEDIT 18 0 "X" "I\"XG6\"" }{TEXT -1 2 ", " }{XPPEDIT 18 0 "Y
+" "I\"YG6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "Z" "I\"ZG6\"" }{TEXT 
+-1 139 " to be distinct.  The grammar is more involved than in the dis
+ubstituted case: we have to distinguish several cases, according to wh
+ich of " }{XPPEDIT 18 0 "X" "I\"XG6\"" }{TEXT -1 5 " and " }{XPPEDIT 
+18 0 "Y" "I\"YG6\"" }{TEXT -1 81 " go into subtrees, and into which su
+btrees.  The corresponding class equation is " }{XPPEDIT 18 0 "S2_Alky
+l[X,Y]=Carbon*S2_Alkyl[X,Y]*(Epsilon+Alkyl+Alkyl^2)+Carbon*(X+S1_Alkyl
+[X])*(Y+S1_Alkyl[Y])*(Epsilon+Alkyl)" "/&%)S2_AlkylG6$%\"XG%\"YG,&*(%'
+CarbonG\"\"\"&F$6$F&F'F+,(%(EpsilonGF+%&AlkylGF+*$F0\"\"#F+F+F+**F*F+,
+&F&F+&%)S1_AlkylG6#F&F+F+,&F'F+&F66#F'F+F+,&F/F+F0F+F+F+" }{TEXT -1 1 
+"." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 157 "gramm_S2_Alkyl:=S2_A
+lkyl[X,Y]=Union(Prod(Carbon,S2_Alkyl[X,Y],Set(Alkyl,card<=2)),Prod(Car
+bon,Union(S1_Alkyl[X],X),Union(S1_Alkyl[Y],Y),Set(Alkyl,card<=1))):" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 118 "specs_S2_Alkyl:=[S2_Alkyl
+[X,Y],\{gramm_S2_Alkyl,gramm_S1_Alkyl,op(subs(X=Y,[gramm_S1_Alkyl])),g
+ramm_Alkyl\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+42 "seq(count(specs_S2_Alkyl,size=i),i=0..50);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6U\"\"!\"\"\"\"\"%\"#8\"#U\"$J\"\"$-%\"%=7\"%dO\"&**3\"\"
+&)HK\"&d_*\"'W)z#\"'!R>)\"(#R#R#\"(cz'p\")u4D?\")*3W(e\"*!)*=,<\"***R
+\">\\\"+iQ\\?9\"+I0%p4%\",_@<.=\"\",tuDqR$\",6t-yw*\"-J%GVi!G\"-iQs(e0
+)\".#*****>4J#\".'>,,nCm\"/esD3*y*=\"/Ha/i0Ma\"0%>P7D.b:\"0$*H;kmwW%\"
+1B\\,!)))\\r7\"1f>\"o`:Lj$\"2a'4pg\"zx.\"\"2$R'4-E,I'H\"2'=qi!p^lX)\"3
+HPg)36rET#\"3(HOX&eX/\")o\"4\"R?ab;o'='>\"49\"*eR]\\&y\"f&\"5/#Q)yi(pA
+Lf\"\"5`gq(>D3R(QX\"6*[4QX#)[$fDH\"\"6j@SF0]&)e+o$\"7QaL6c:Ks\\Z5\"76y
+wJGxQO\"4)H\"7)>J.6q<0H5[)\"83$=`[.<OzU7C\"8WCnr%[ayLtgo" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 30 "This series extends the entry " }{TEXT 
+267 5 "M3466" }{TEXT -1 18 " (\"paraffins with " }{XPPEDIT 18 0 "n" "I
+\"nG6\"" }{TEXT -1 63 " carbon atoms\") in the book by N. J. A. Sloane
+ and S. Plouffe [" }{TEXT 268 37 "The Encyclopedia of Integer Sequence
+s" }{TEXT -1 26 ", (1995), Academic Press]." }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 89 "Here is an example of a disubstituted alkyl with 6 carb
+on atoms, obtained by the command " }{HYPERLNK 17 "combstruct[draw]" 
+2 "combstruct[draw]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 33 "alk:=draw(specs_S2_Alkyl,size=6);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%$alkG-%%ProdG6%%'CarbonG-F&6&F(%\"XG-F&6%F(-F&6$-F&
+6$F(%\"YG-%$SetG6#-F&6$F(%(EpsilonGF3F8F8" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 80 "The following procedure rewrites a disubstituted alkyl in
+to a more readable way." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 141 
+"nice:=proc(alk) subs(\{[C,X]=CX,[C,Y]=CY,[C,X,Y]=CXY\},eval(subs(\{Ep
+silon=NULL,Carbon=C,Prod=proc() [args] end,Set=proc() args end\},alk))
+) end:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "nice(alk);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#7$%\"CG7%F$%\"XG7%F$7$%#CYG7#F$F*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 84 "The following procedures compute t
+he size and height of a given disubstituted alkyl." }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 224 "size:=proc(alk) option remember; `if`(nops
+(alk)=2,1+convert(map(size,op(2,alk)),`+`),1+convert(map(size,[op(2..-
+2,alk)]),`+`)+convert(map(size,op(-1,alk)),`+`)) end:\nsize(Carbon):=1
+:\nsize(X):=0:\nsize(Y):=0:\nsize(Epsilon):=0:" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 223 "height:=proc(alk) option remember; `if`(nops(
+alk)=2,1+max(op(map(height,op(2,alk)))),1+max(op(map(height,[op(2..-2,
+alk)])),op(map(height,op(-1,alk))))) end:\nheight(Carbon):=1:\nheight(
+X):=0:\nheight(Y):=0:\nheight(Epsilon):=0:" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 87 "Here is a disubstituted alkyl with 50 carbon atoms, its n
+ice representation and height." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 34 "alk:=draw(specs_S2_Alkyl,size=50):" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 10 "nice(alk);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7$%\"
+CG7%F$7$F$7&F$7$F$7$F$7%F$7%F$7$F$7$F$7&F$7&F$7&F$7#%#CXG7$F$7&F$7#F$F
+5F57$F$7$F$7$F$F5F87%F$F5F5F5F8F97%F$F8F9F5F57%F$7$%#CYGF6F8" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "height(alk);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#\"#<" }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 24 "Tri
+substituted alkanes, " }{XPPEDIT 18 0 "C[n]*H[2*n-1]*X[2]*Y" "**&%\"CG
+6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"F'&%\"XG6#\"\"#F'%\"Y
+GF'" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "Enumerating trisubstituted \+
+alkanes " }{XPPEDIT 18 0 "C[n]*H[2*n-1]*X[2]*Y" "**&%\"CG6#%\"nG\"\"\"
+&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"F'&%\"XG6#\"\"#F'%\"YGF'" }{TEXT 
+-1 51 " is equivalent to enumerating disubstituted alkyls " }{XPPEDIT 
+18 0 "C[n]*H[2*n-1]*X[2]" "*(&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F
+'F'\"\"\"!\"\"F'&%\"XG6#\"\"#F'" }{TEXT -1 30 ".  In this section, we \+
+assume " }{XPPEDIT 18 0 "X" "I\"XG6\"" }{TEXT -1 5 " and " }{XPPEDIT 
+18 0 "Y" "I\"YG6\"" }{TEXT -1 40 " to be distinct.  The class equation
+ is " }{XPPEDIT 18 0 "S2_Alkyl[X,X]=Carbon*S2_Alkyl[X,X]*(Epsilon+Alky
+l+Alkyl^2)+Carbon*(S1_Alkyl[X]^2+S1_Alkyl[X]*X+X^2)*(Epsilon+Alkyl)" "
+/&%)S2_AlkylG6$%\"XGF&,&*(%'CarbonG\"\"\"&F$6$F&F&F*,(%(EpsilonGF*%&Al
+kylGF**$F/\"\"#F*F*F**(F)F*,(*$&%)S1_AlkylG6#F&\"\"#F**&&F66#F&F*F&F*F
+**$F&\"\"#F*F*,&F.F*F/F*F*F*" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 183 "gramm_S2b_Alkyl:=S2_Alkyl[X,X]=Union(Prod(Carbo
+n,S2_Alkyl[X,X],Set(Alkyl,card<=2)),Prod(Carbon,Union(Prod(S1_Alkyl[X]
+,S1_Alkyl[X]),Prod(S1_Alkyl[X],X),Prod(X,X)),Set(Alkyl,card<=1))):" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 89 "specs_S2b_Alkyl:=[S2_Alkyl[
+X,X],\{gramm_S2b_Alkyl,gramm_S1_Alkyl,gramm_Alkyl\},unlabelled]:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "seq(count(specs_S2b_Alkyl,si
+ze=i),i=0..50);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6U\"\"!\"\"\"\"\"$\"
+\"*\"#H\"#\"*\"$#G\"$k)\"%CE\"%0z\"&lO#\"&e/(\"'8)3#\"'+kh\"(aL\"=\"(t
+'=`\")s!fb\"\")R-TX\"*_(eA8\"*4O\\%Q\"+&e2f6\"\"+$>#yLK\"+8RHe$*\",a)*
+=[q#\",;sV(3y\"-\\pt)>D#\"-VH5E)['\".Q&z'pw'=\".](RPnr`\"/a'Q_pPa\"\"/
+(4DyYMV%\"0:!\\fCNs7\"0Y,zI6#\\O\"1(RJ(4Q+Y5\"1)G.!y)yl*H\"1!R#QcS1!e)
+\"2p4]()G/bX#\"26i<\"*peS-(\"308(>@Nq$3?\"3gr?G)Hy+u&\"4^C;qC83*R;\"4:
+4NNM>gLo%\"5b'36&\\Lj-P8\"5eX+\\W$f*p:Q\"6B(Q#)zrAqf)3\"\"6INZ)3v\\1u/
+J\"6()GI2WiVsA&))\"77j%*)\\6E'[DBD\"7ZJ9qP\\FQM!>(\"82MK768y*)\\%[?\"8
+7!><a#H6$[NMe" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 75 "This series does
+ not appear in the book by N. J. A. Sloane and S. Plouffe [" }{TEXT 
+269 37 "The Encyclopedia of Integer Sequences" }{TEXT -1 86 ", (1995),
+ Academic Press], nor do its first four differences.  Comparing to the
+ entry " }{TEXT 270 5 "M2838" }{TEXT -1 26 " (\"tertiary alcohols with
+ " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 76 " carbon atoms\") in thi
+s book, we check that there are always more compounds " }{XPPEDIT 18 
+0 "C[n]*H[2*n-1]*X[2]*Y" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'
+F'\"\"\"!\"\"F'&%\"XG6#\"\"#F'%\"YGF'" }{TEXT -1 16 " than compounds \+
+" }{XPPEDIT 18 0 "C[n]*H[2*n-1]*X[3]" "*(&%\"CG6#%\"nG\"\"\"&%\"HG6#,&
+*&\"\"#F'F&F'F'\"\"\"!\"\"F'&%\"XG6#\"\"$F'" }{TEXT -1 6 " (for " }
+{XPPEDIT 18 0 "X<>Y" "0%\"XG%\"YG" }{TEXT -1 2 ")." }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 89 "Here is an example of a disubstituted alkyl with \+
+6 carbon atoms, obtained by the command " }{HYPERLNK 17 "combstruct[dr
+aw]" 2 "combstruct[draw]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 34 "alk:=draw(specs_S2b_Alkyl,size=6);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%$alkG-%%ProdG6%%'CarbonG-F&6$-F&6%F(-F&6$-F&6$F(
+%\"XG-%$SetG6#-F&6$F(%(EpsilonG-F36$F5F5F1F7" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 80 "The following procedure rewrites a disubstituted alkyl \+
+into a more readable way." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+134 "nice:=proc(alk) subs(\{[C,X]=CX,[C,X,X]=CX[2]\},eval(subs(\{Epsil
+on=NULL,Carbon=C,Prod=proc() [args] end,Set=proc() args end\},alk))) e
+nd:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "nice(alk);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#7$%\"CG7$7&F$7$%#CXG7#F$F)F)%\"XG" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 39 "Here are the 9 disubstituted compo
+unds " }{XPPEDIT 18 0 "C[n]*H[2*n-1]*X[2]*Y" "**&%\"CG6#%\"nG\"\"\"&%
+\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"F'&%\"XG6#\"\"#F'%\"YGF'" }{TEXT -1 
+5 " for " }{XPPEDIT 18 0 "n=3" "/%\"nG\"\"$" }{TEXT -1 1 ":" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "map(nice,allstructs(specs_S2
+b_Alkyl,size=3));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7+7%%\"CG7$7#%#CX
+G%\"XG7#F%7%F%7$F%7$F)F)F*7$F%7%F%F-F*7$F%7$7$F(F*F)7$F%7$7$F%F'F)7$F%
+7$F%F,7$F%7$F%F&7%F%F-7$F%F*7$F%7$F'F'" }}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 39 "Conclusion: multiply substituted alkyls" }}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 71 "In the previous sections, we have enumerated th
+e substituted compounds " }{XPPEDIT 18 0 "C[n]*H[2*n+1]*X" "*(&%\"CG6#
+%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"F'F'%\"XGF'" }{TEXT -1 2 ", \+
+" }{XPPEDIT 18 0 "C[n]*H[2*n]*X*Y" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#*&\"
+\"#F'F&F'F'%\"XGF'%\"YGF'" }{TEXT -1 2 ", " }{XPPEDIT 18 0 "C[n]*H[2*n
+-1]*X*Y*Z" "*,&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"F
+'%\"XGF'%\"YGF'%\"ZGF'" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "C[n]*H[2*n
+-1]*X[2]*Y" "**&%\"CG6#%\"nG\"\"\"&%\"HG6#,&*&\"\"#F'F&F'F'\"\"\"!\"\"
+F'&%\"XG6#\"\"#F'%\"YGF'" }{TEXT -1 45 ".  We could in principle enume
+rate the class " }{XPPEDIT 18 0 "S[p[1],`...`,p[t]]" "&%\"SG6%&%\"pG6#
+\"\"\"%$...G&F&6#%\"tG" }{TEXT -1 42 " of compounds obtained after sub
+stituting " }{XPPEDIT 18 0 "p[1]" "&%\"pG6#\"\"\"" }{TEXT -1 19 " hydr
+ogen atoms by " }{XPPEDIT 18 0 "X^`(1)`" ")%\"XG%$(1)G" }{TEXT -1 8 " \+
+atoms, " }{XPPEDIT 18 0 "p[2]" "&%\"pG6#\"\"#" }{TEXT -1 19 " hydrogen
+ atoms by " }{XPPEDIT 18 0 "X^`(2)`" ")%\"XG%$(2)G" }{TEXT -1 13 " ato
+ms, ..., " }{XPPEDIT 18 0 "p[t]" "&%\"pG6#%\"tG" }{TEXT -1 19 " hydrog
+en atoms by " }{XPPEDIT 18 0 "X^`(t)`" ")%\"XG%$(t)G" }{TEXT -1 33 " a
+toms, and one hydrogen atom by " }{XPPEDIT 18 0 "Y" "I\"YG6\"" }{TEXT 
+-1 73 " (so as to plant the trees).  Doing so would require to define \+
+the class " }{XPPEDIT 18 0 "S[q[1],`...`,q[t]]" "&%\"SG6%&%\"qG6#\"\"
+\"%$...G&F&6#%\"tG" }{TEXT -1 10 " for each " }{XPPEDIT 18 0 "q[1]<=p[
+1]" "1&%\"qG6#\"\"\"&%\"pG6#\"\"\"" }{TEXT -1 7 ", ..., " }{XPPEDIT 
+18 0 "q[t]<=p[t]" "1&%\"qG6#%\"tG&%\"pG6#F&" }{TEXT -1 15 ", and for e
+ach " }{XPPEDIT 18 0 "q[1]<=p[1]" "1&%\"qG6#\"\"\"&%\"pG6#\"\"\"" }
+{TEXT -1 7 ", ..., " }{XPPEDIT 18 0 "q[t]<=p[t]" "1&%\"qG6#%\"tG&%\"pG
+6#F&" }{TEXT -1 75 ", to write a recursion involving  partitions into \+
+4 parts of the multiset \{" }{XPPEDIT 18 0 "X^`(1)`" ")%\"XG%$(1)G" }
+{TEXT -1 2 " (" }{XPPEDIT 18 0 "q[1]" "&%\"qG6#\"\"\"" }{TEXT -1 14 " \+
+times), ..., " }{XPPEDIT 18 0 "X^`(t)`" ")%\"XG%$(t)G" }{TEXT -1 2 " (
+" }{XPPEDIT 18 0 "q[t]" "&%\"qG6#%\"tG" }{TEXT -1 20 " times)\}.  When
+ the " }{XPPEDIT 18 0 "q[i]" "&%\"qG6#%\"iG" }{TEXT -1 60 "'s are give
+n, those partitions can be computed by a call to " }{HYPERLNK 17 "comb
+struct[allstructs]" 2 "combstruct[allstructs]" "" }{TEXT -1 146 ".  It
+ follows that we would describe and generate the grammar for multiply \+
+substituted alkyls in terms of the grammar for partitions into 4 parts
+!" }}}}}{MARK "0 2 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 }

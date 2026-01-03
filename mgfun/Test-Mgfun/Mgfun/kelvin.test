@@ -1,0 +1,38 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+infolevel[fglm]:=3:
+
+for spec_func in
+    [KelvinBer,KelvinBei,KelvinHer,KelvinHei,KelvinKer,KelvinKei]
+do
+    printf("# %s\n",spec_func);
+    sys:=dfinite_expr_to_sys(spec_func(n,x),f(n::shift,x::diff));
+    sys:=eval(subs(f=spec_func,sys));
+    res:=collect(sys,indets(sys,function),factor);
+    res:={seq(subs(n=10+1/i,res),i=[1,2,3,5,7])};
+    res:=eval(subs(`&where`=proc(a,b) subs(b,a) end,
+	convert(res,'diff')));
+    res:=normal(convert(expand(res),'exp'));
+    if res={{0}} then
+	print(okay);
+	next
+    fi;
+    print(res,spec_func(n,x),sys)
+od:

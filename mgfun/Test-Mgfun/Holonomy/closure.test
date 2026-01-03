@@ -1,0 +1,34 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+p:=1-(x+y):
+f:=1/p:
+A:=diff_algebra([Dx,x],[Dy,y],polynom={x,y}):
+T:=MonomialOrder(A,tdeg(Dx,Dy,x,y)):
+G:=Basis(hypergeom_to_dfinite(f,A),T):
+HilbertDimension(G,T):
+if %=3 then okay else % fi;
+A_loc:=skew_algebra(loc_diff=[Dx,x],loc_diff=[Dy,y],
+    polynom={x,y},localization=[u,p]):
+T_loc:=MonomialOrder(A_loc,lexdeg([Dx,Dy],[x,y,u])):
+holon_closure(G,T,T_loc):
+if %=[Dx-Dy,x*Dy+y*Dy-Dy+1] then okay else % fi;

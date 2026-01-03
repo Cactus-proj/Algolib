@@ -1,0 +1,31 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  <test name="wallis">
+    <fun>1/(x^2+1)^(m+1)</fun>
+    <tex>\int\frac{1}{(x^2+1)^{m+1}}\text{d}x</tex>
+    <var_int name="x" />
+    <var name="x" type="diff"/>
+    <var name="m" type="shift" />
+    <set_val name="m" type="int" inter="0..10"/>
+    <set_val name="x" type="float" inter="-100..100"/>
+  </test>
+</tests>

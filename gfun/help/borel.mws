@@ -1,0 +1,84 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 11 "gfun[borel]" }
+{TEXT 30 55 " - compute the Borel transform of a generating function" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 11 "     borel(" }
+{TEXT 35 4 "expr" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "a(n)" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "t" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "expr - " }
+{TEXT -1 46 "linear recurrence with polynomial coefficients" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "a,n  - " }
+{TEXT -1 32 "name and index of the recurrence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "t    - " }
+{TEXT -1 19 "(optional) 'diffeq'" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 20 "(a(n),n=0..infinity)" }
+{TEXT -1 54 " is the sequence of numbers defined by the recurrence " }
+{TEXT 35 4 "expr" }
+{TEXT -1 56 ", the procedure computes the recurrence for the numbers " }
+{TEXT 35 7 "a(n)/n!" }
+{TEXT -1 2 ". " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 43 "If an optional argument 'diffeq' is given, " }
+{TEXT 35 4 "expr" }
+{TEXT -1 95 " is considered as a linear differential equation with polynomial coefficients for the function " }
+{TEXT 35 4 "a(n)" }
+{TEXT -1 103 ". In this case the procedure outputs a linear differential equation verified by the Borel transform of " }
+{TEXT 35 4 "a(n)" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 78 "with(gfun):\nrec:={a(n)=n*a(n-1)+a(n-2), a(0)=1, a(1)=1}:\nb:= borel(rec, a(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%\"bG<%/-%\"aG6#\"\"!\"\"\"/-F(6#F+F+,(-F(6#%\"nG!\"\"*&,(*$F2\"\"#F3
+F2!\"$!\"#F+F+-F(6#,&F2F+F+F+F+F+*&,(F6F+F2\"\"$F7F+F+-F(6#,&F2F
++F7F+F+F+
+"}}}
+{PARA 0 "> " 0 "" {TEXT 35 8 "invborel" }
+{TEXT -1 25 " is the inverse command: " }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "invborel(b,a(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<%/-%\"aG6#\"\"!\"\"\"/-F&6#F)F),(-F&6#%\"nG!\"\"*&,&F0F1!\"#F)F)-F&
+6#,&F0F)F)F)F)F)-F&6#,&F0F)\"\"#F)F)
+"}}}
+{PARA 0 "> " 0 "" {TEXT -1 82 "We can also perform Borel transforms on the corresponding differential equations: " }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "deq:=rectodiffeq(rec, a(n), f(x)):\nnewdeq:= borel(deq, f(x), `diffeq`);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%'newdeqG<%,(-%\"fG6#%\"xG!\"\"-%%diffG6$F'F*!\"#*&,&\"\"\"F2F*F+
+F2-F-6$F'-%\"$G6$F*\"\"#F2F2/-F(6#\"\"!F2/--%\"DG6#F(F;F2
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "diffeqtorec(newdeq, f(x), a(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<%/-%\"aG6#\"\"!\"\"\"/-F&6#F)F),(-F&6#%\"nG!\"\"*&,(*$F0\"\"#F1F0!\"$
+!\"#F)F)-F&6#,&F0F)F)F)F)F)*&,(F4F)F0\"\"$F5F)F)-F&6#,&F0F)F5F)
+F)F)
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[invborel]" 2 "gfun[invborel]" "" }{TEXT -1 2 "  " }
+}
+}}

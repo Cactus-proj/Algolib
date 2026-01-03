@@ -1,0 +1,983 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 2 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 1 14 0 0 0 0 2 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 0 2 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 
+"" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 275 "" 0 1 0 0 0 0 0 2 0 0 0 0 0 0 0 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Text Output" -1 2 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 0 0 0 0 0 1 3 0 0 }1 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 
+1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" 
+-1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Warning" 2 7 1 {CSTYLE "" -1 -1 "" 0 1 0 0 255 1 0 0 0 0 
+0 0 1 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Error" 7 8 1 
+{CSTYLE "" -1 -1 "" 0 1 255 0 255 1 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 
+0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Dash Item" 0 16 1 {CSTYLE "" -1 
+-1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 16 3 }
+{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 5 257 1 {CSTYLE "" -1 -1 "
+" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 260 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 262 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 264 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 256 "" 0 "" {TEXT 256 21 "BALLS AND URNS, ETC.\n" }
+{TEXT 268 1 "\n" }{TEXT 257 17 "Philippe Flajolet" }}{PARA 262 "" 0 "
+" {TEXT -1 30 "(Version of December 14, 1996)" }}{PARA 263 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 274 "Balls and urns models ar
+e basic in combinatorics, statistics, analysis of algorithms, and stat
+istical physics. These models are nicely decomposable and their basic \+
+properties can be explored using tools developed for the automatic man
+ipulation of combinatorial models, like " }{HYPERLNK 17 "Combstruct" 
+2 "combstruct" "" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 125 "As i
+s well-known there are four types of models, depending on whether ball
+s and  urns are taken to be distinguishable or not." }}{PARA 0 "" 0 "
+" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 1 {PARA 3 "" 
+0 "" {TEXT -1 21 "The four basic models" }}{PARA 0 "" 0 "" {TEXT -1 
+350 "We consider the placement of balls into urns in all possible ways
+. For definiteness, we examine only the situation of nonempty urns, so
+ that the number of possible configurations of a fixed size (i.e., a f
+ixed number of balls) is always finite. If the balls are distinguishab
+le, we may assume them to be numbered consecutively by integers 1, 2, \+
+..., " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 200 "; in this case, we
+ are dealing with labelled structures, and balls are labelled atoms. I
+f the balls are indistinguishable, then we simply regard them as anony
+mous unlabelled atoms (generically called " }{HYPERLNK 17 "Z" 2 "combs
+truct[specification]" "" }{TEXT -1 143 ", by a global convention of Co
+mbstruct). If the urns are distinguishable, we may view them as arrang
+ed in a row, so that we are dealing with a " }{HYPERLNK 17 "Sequence" 
+2 "combstruct[specification]" "" }{TEXT -1 36 " construction; otherwis
+e, we have a " }{HYPERLNK 17 "Set" 2 "combstruct[specification]" "" }
+{TEXT -1 20 " construction. (The " }{HYPERLNK 17 "Set" 2 "combstruct[s
+pecification]" "" }{TEXT -1 98 " construction of Combstruct means a mu
+ltiset, that is to say a set where repetitions are allowed.)" }}{PARA 
+0 "" 0 "" {TEXT -1 66 "Balls are not ordered within an urn, so that an
+ urn is a priori a " }{HYPERLNK 17 "Set" 2 "combstruct[specification]
+" "" }{TEXT -1 52 " of balls. This gives rise to four different models
+:" }}{PARA 16 "" 0 "" {TEXT -1 116 "DBDU: distinguishable balls and di
+stinguishable urns; we are dealing with Sequences of Sets, in a labell
+ed universe;" }}{PARA 16 "" 0 "" {TEXT -1 113 "DBIU: distinguishable b
+alls and indistinguishable urns; we are dealing with Sets of Sets, in \+
+a labelled universe;" }}{PARA 16 "" 0 "" {TEXT -1 121 "IBDU: indisting
+uishable balls and distinguishable urns; we are dealing with Sequences
+ of Sets, in an unlabelled universe;" }}{PARA 16 "" 0 "" {TEXT -1 118 
+"IBIU: indistinguishable balls and indistinguishable urns; we are deal
+ing with Sets of Sets, in an unlabelled universe." }}{PARA 0 "" 0 "" 
+{TEXT -1 88 "In combstruct, this is expressed by four different, but s
+imilar looking, specifications:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 17 "with(combstruct);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7.%+allst
+ructsG%&countG%%drawG%)finishedG%'gfeqnsG%)gfseriesG%(gfsolveG%,iterst
+ructsG%+nextstructG%,prog_gfeqnsG%.prog_gfseriesG%-prog_gfsolveG" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "DBDU:=[S,\{S=Sequence(U),U=S
+et(Z,card>=1)\},labelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+47 "DBIU:=[S,\{S=Set(U),U=Set(Z,card>=1)\},labelled]:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "IBDU:=[S,\{S=Sequence(U),U=Set(Z,ca
+rd>=1)\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "IB
+IU:=[S,\{S=Set(U),U=Set(Z,card>=1)\},unlabelled]:" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 57 "for spec in DBDU,DBIU,IBDU,IBIU do draw(spec
+,size=10) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%)SequenceG6*-%$SetG
+6#&%\"ZG6#\"\"%-F'6#&F*6#\"\"$-F'6#&F*6#\"\"&-F'6$&F*6#\"\"*&F*6#\"\"(
+-F'6#&F*6#\"\"#-F'6#&F*6#\"\")-F'6#&F*6#\"\"\"-F'6$&F*6#\"#5&F*6#\"\"'
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%$SetG6&-F$6#&%\"ZG6#\"\"&-F$6%&F
+)6#\"\"#&F)6#\"\")&F)6#\"#5-F$6%&F)6#\"\"$&F)6#\"\"*&F)6#\"\"(-F$6%&F)
+6#\"\"%&F)6#\"\"\"&F)6#\"\"'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%)Seq
+uenceG6%-%$SetG6$%\"ZGF)-F'6)F)F)F)F)F)F)F)-F'6#F)" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#-%$SetG6'-F$6#%\"ZGF&-F$6$F(F(F)-F$6&F(F(F(F(" }}}
+{PARA 0 "" 0 "" {TEXT -1 161 "The corresponding counting sequences sat
+isfy natural domination conditions that one can summarize by the infor
+mal inequality: \"Distinguishable>Indistinguishable\"" }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 70 "for spec in DBDU,DBIU,IBDU,IBIU do seq(co
+unt(spec,size=j),j=1..12) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6.\"\"
+\"\"\"$\"#8\"#v\"$T&\"%$o%\"&$HZ\"'Nea\"(hs3(\"*jvC-\"\"+tDjA;\",&fn:4
+G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6.\"\"\"\"\"#\"\"&\"#:\"#_\"$.#\"$x
+)\"%ST\"&Z6#\"'vf6\"'q&y'\"((f8U" }}{PARA 11 "" 1 "" {XPPMATH 20 "6.\"
+\"\"\"\"#\"\"%\"\")\"#;\"#K\"#k\"$G\"\"$c#\"$7&\"%C5\"%[?" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6.\"\"\"\"\"#\"\"$\"\"&\"\"(\"#6\"#:\"#A\"#I\"#U
+\"#c\"#x" }}}{PARA 0 "" 0 "" {TEXT -1 158 "In the sequel, it is conven
+ient to represent objects by a more concise notation. We thus introduc
+e \"reduction\" procedures for labelled and unlabelled objects:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 177 "lreduce:=proc(e) eval(subs(
+\{Set=proc() \{args\} end, Sequence=proc() [args] end\},e)) end:\nured
+uce:=proc(e) eval(subs(\{Set=proc() \{[args]\} end, Sequence=proc() [a
+rgs] end\},e)) end:" }}}{PARA 0 "" 0 "" {TEXT -1 124 "Since the set co
+nstruction \"\{\}\" in Maple does not keep multisets, an unlabelled (m
+ulti)set will be represented as \"\{[...]\}\"." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 113 "for spec in DBDU,DBIU do lreduce(draw(spec,size
+=25)) od;\nfor spec in IBDU,IBIU do ureduce(draw(spec,size=25)) od;" }
+}{PARA 12 "" 1 "" {XPPMATH 20 "6#79<#&%\"ZG6#\"#C<#&F&6#\"#6<#&F&6#\"#
+9<#&F&6#\"\"&<#&F&6#\"#D<$&F&6#\"\"(&F&6#\"#?<#&F&6#\"\"#<#&F&6#\"\"%<
+#&F&6#\"#8<#&F&6#\"#<<#&F&6#\"\"\"<#&F&6#\"\"$<#&F&6#\"#=<#&F&6#\"#5<#
+&F&6#\"#B<#&F&6#\"\"*<#&F&6#\"#@<#&F&6#\"#><#&F&6#\"#A<$&F&6#\"\")&F&6
+#\"#:<#&F&6#\"#7<#&F&6#\"\"'<#&F&6#\"#;" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#<-<#&%\"ZG6#\"\"#<#&F&6#\"#><$&F&6#\"\"*&F&6#\"#@<$&F&6#\"\"\"&F
+&6#\"#6<$&F&6#\"\"%&F&6#\"#?<$&F&6#\"#C&F&6#\"#7<&&F&6#\"\"$&F&6#\"#5&
+F&6#\"#A&F&6#\"#:<$&F&6#\"#8&F&6#\"#B<%&F&6#\"\")&F&6#\"#<&F&6#\"#=<&&
+F&6#\"\"&&F&6#\"\"(&F&6#\"#9&F&6#\"#;<$&F&6#\"\"'&F&6#\"#D" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#7-<#7(%\"ZGF&F&F&F&F&<#7#F&F'F'<#7%F&F&F&F)<
+#7$F&F&F'F'F)F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<#7&<#7%%\"ZGF'F'F%
+<#73F'F'F'F'F'F'F'F'F'F'F'F'F'F'F'F'F'<#7$F'F'" }}}{PARA 0 "" 0 "" 
+{TEXT -1 105 "On such simulations, we see that there tends to be fewer
+ urns in models of type IU, but more filled ones." }}}{SECT 1 {PARA 4 
+"" 0 "" {TEXT 258 43 "Distinguishable balls (labelled structures)" }}
+{SECT 1 {PARA 4 "" 0 "" {TEXT -1 20 "Distinguishable urns" }}{PARA 0 "
+" 0 "" {TEXT -1 156 "In this model, we deal with distinguishable balls
+ (labelled atoms) that go in all possible way into distinguishable urn
+s corresponding to the specification:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 52 "DBDU:=[S,\{S=Sequence(U),U=Set(Z,card>=1)\},labelled]
+:" }}}{PARA 0 "" 0 "" {TEXT -1 63 "Combinatorially, this model is the \+
+same as of Surjections from " }{XPPEDIT 18 0 "[1..n]" "7#;\"\"\"%\"nG
+" }{TEXT -1 94 " to an initial segment of the integers. It is the one \+
+that leads to larger cardinality counts." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 56 "for j to 3 do j=map(lreduce,allstructs(DBDU,size=j)) \+
+od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"\"7#7#<#&%\"ZG6#F$" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"#7%7$<#&%\"ZG6#F$<#&F)6#\"\"\"7$F
++F'7#<$F(F," }}{PARA 12 "" 1 "" {XPPMATH 20 "6#/\"\"$7/7#<%&%\"ZG6#F$&
+F)6#\"\"#&F)6#\"\"\"7%<#F.<#F(<#F+7%F4F2F37$<$F(F+F27$F3<$F+F.7$<$F(F.
+F47$F2F77$F4F;7%F3F2F47%F3F4F27%F4F3F27$F9F37%F2F4F3" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 32 "seq(count(DBDU,size=j),j=0..30);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6A\"\"\"F#\"\"$\"#8\"#v\"$T&\"%$o%\"&$HZ
+\"'Nea\"(hs3(\"*jvC-\"\"+tDjA;\",&fn:4G\"-\"Q[$eo_\"/V/(HMT1\"\"0`y(4>
+$GI#\"1b8)>oacJ&\"3,f8Hqwq.8\"4B`%oDjY`&Q$\"5L6TG$>te,G*\"7:J?%QWiz(ox
+E\"8@=)Q2/&)*\\#[7\")\":.Ua%Q!>.)>W%[d#\";8/e%H4duO8XQa)\"=v)[1lsa9u57
+z#eH\"?T\")\\$eDexv%QaO(p1\"\"@$3Rv7'[#\\oT%)fdA-S\"B$p`iAw#\\Ki@'=Rw(
+*e:\"CNYLNRP=N.m+&\\1ivH'\"EhodW!HL*3-!pBIE&QyME\"Gj>!\\='>kCu$[!)=,%z
+oNS6" }}}{PARA 0 "" 0 "" {TEXT -1 133 "Such tables are quite useful fo
+r checking various combinatorial conjectures. Here, we may verify that
+ these numbers are the sequence " }{TEXT 269 5 "M2952" }{TEXT -1 8 " o
+f the " }{TEXT 270 33 "Encyclopedia of Integer Sequences" }{TEXT -1 
+92 " by Sloane and Plouffe, where they are known as the numbers of pre
+ferential arrangements of " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 
+57 " things.\nThe counting problem is solved automatically by " }
+{HYPERLNK 17 "combstruct[gfeqns]" 2 "combstruct[gfeqns]" "" }{TEXT -1 
+2 ", " }{HYPERLNK 17 "combstruct[gfseries]" 2 "combstruct[gfseries]" "
+" }{TEXT -1 26 " (a series alternative to " }{HYPERLNK 17 "combstruct[
+count]" 2 "combstruct[count]" "" }{TEXT -1 6 ") and " }{HYPERLNK 17 "c
+ombstruct[gfsolve]" 2 "combstruct[gfsolve]" "" }{TEXT -1 1 ":" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "gfeqns(op(2..3,DBDU),z);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#7%/-%\"UG6#%\"zG,&-%$expG6#-%\"ZGF'\"
+\"\"!\"\"F//-%\"SGF'*$,&F/F/F%F0F0/F-F(" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 37 "Order:=12: gfseries(op(2..3,DBDU),z);" }}{PARA 12 "" 
+1 "" {XPPMATH 20 "6#-%&TABLEG6#7%/-%\"SG6#%\"zG+=F+\"\"\"\"\"!F-\"\"\"
+#\"\"$\"\"#\"\"##\"#8\"\"'\"\"$#\"#D\"\")\"\"%#\"$T&\"$?\"\"\"&#\"%h:
+\"$S#\"\"'#\"&$HZ\"%S]\"\"(#\"&*QO\"%)o#\"\")#\"(hs3(\"'!)GO\"\"*#\")@
+D3M\"(+'47\"#5#\"+tDjA;\")+o\"*R\"#6-%\"OG6#F-\"#7/-%\"UGF*+;F+F-\"\"
+\"#F-F2\"\"##F-F6\"\"$#F-\"#C\"\"%#F-F>\"\"&#F-\"$?(\"\"'#F-FF\"\"(#F-
+\"&?.%\"\")#F-FN\"\"*#F-\"(+)GO\"#5#F-FV\"#6FX\"#7/-%\"ZGF*+%F+F-\"\"
+\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "gfsolve(op(2..3,DBDU)
+,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"SG6#%\"zG,$*$,&!\"#\"\"
+\"-%$expGF'F-!\"\"F0/-%\"ZGF'F(/-%\"UGF',&F.F-F0F-" }}}{PARA 0 "" 0 "
+" {TEXT -1 82 "In particular, we have found the exponential generating
+ function (EGF) explicitly:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+37 "S_z:=subs(\",S(z)); series(S_z,z=0,7);" }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$S_zG,$*$,&!\"#\"\"\"-%$ex
+pG6#%\"zGF)!\"\"F." }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+3%\"zG\"\"\"\"
+\"!F%\"\"\"#\"\"$\"\"#\"\"##\"#8\"\"'\"\"$#\"#D\"\")\"\"%#\"$T&\"$?\"
+\"\"&#\"%h:\"$S#\"\"'-%\"OG6#F%\"\"(" }}}{PARA 0 "" 0 "" {TEXT -1 35 "
+The EGF is singular with a pole at " }{XPPEDIT 18 0 "z=ln(2)" "/%\"zG-
+%#lnG6#\"\"#" }{TEXT -1 72 ". This immediately gives an approximate ex
+pression for the coefficients:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 23 "series(S_z,z=log(2),3);" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#+),&%\"zG\"\"\"-%#lnG6#\"\"#!\"\"#F+F*
+!\"\"#F&\"\"%\"\"!-%\"OG6#F&\"\"\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 33 "S_n_asympt:=1/2*n!*log(2)^(-n-1);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%+S_n_asymptG,$*&-%*factorialG6#%\"nG\"\"\")-%#lnG6#
+\"\"#,&F*!\"\"F2F+F+#F+F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 73 "As u
+sual with meromorphic functions, the approximation is extremely good:
+" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 83 "for j from 0 by 5 to 30 do j,ev
+alf(count(DBDU,size=j)/subs(n=j,S_n_asympt),30); od;" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6$\"\"!$\"?#HCkW$)=1*)>6O%H'Q\"!#H" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6$\"\"&$\"?W)ej0U#=TLQJ>(*****!#I" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#5$\"?M>*)[b@Q#[%[**********!#I" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#:$\"?y\"*QtZVP)***************!#I" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6$\"#?$\"?X;%f-,+++++++++\"!#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#D$\"?p5-+++++++++++5!#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#I$\"?\"*****************************!#I" }}}{PARA 0 
+"" 0 "" {TEXT -1 259 "This type of analysis can be easily generalized \+
+to determine for instance the expected number of urns in a random surj
+ection. Such analyses may then be used to validate an a priori statist
+ical model by comparing theoretical predictions against empirical data
+." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 1 {PARA 4 "" 0 "" {TEXT 
+-1 39 "Indistinguishable urns (set partitions)" }}{PARA 0 "" 0 "" 
+{TEXT -1 82 "We are now dealing with indistinguishable urns. Equivalen
+tly, we consider the way " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 30 
+" elements (the labels 1, ..., " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 
+-1 63 ") may be grouped into equivalence classes in all possible ways.
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "DBIU:=[S,\{S=Set(U),U=Se
+t(Z,card>=1)\},labelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+56 "for j to 4 do j=map(lreduce,allstructs(DBIU,size=j)) od;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/\"\"\"7#<#<#&%\"ZG6#F$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"\"#7$<$<#&%\"ZG6#\"\"\"<#&F)6#F$<#<$F-F(" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/\"\"$7'<$<#&%\"ZG6#\"\"\"<$&F)6#F$&F)6#\"\"
+#<$<$F/F(<#F-<#<%F-F/F(<$<#F/<$F-F(<%F'F8F4" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#/\"\"%71<$<%&%\"ZG6#\"\"$&F)6#\"\"#&F)6#\"\"\"<#&F)6#F$
+<%<#F,<#F(<$F/F3<%<#F/F6<$F(F3<$F6<%F(F/F3<$F:<%F(F,F3<&F:F6F7F2<%<$F,
+F/F7F2<%F:F7<$F,F3<#<&F(F,F/F3<$FBF;<$F7<%F,F/F3<$<$F(F/FD<%F:<$F(F,F2
+<$FMF8<%F6FKF2" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "seq(count
+(DBIU,size=j),j=0..30);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6A\"\"\"F#\"
+\"#\"\"&\"#:\"#_\"$.#\"$x)\"%ST\"&Z6#\"'vf6\"'q&y'\"((f8U\")PWkF\"*A$*
+*3>\"+X&eHQ\"\",Z@9![5\",/)p['G)\"-fh!o2#o\".d]?UF$e\"/s`BeTs^\"0^n:;)
+p[Z\"1BtWQdr1X\"2YV3be+_T%\"3*G0[Hp)efW\"4`$***HAL!fQY\"5uiv=O_Y7j\\\"
+6*Q*)*fg$z/<da\"7bClM**f/%R0;'\"8s6>v-')Q>!)R8(\"9Z,XK$4=^9!\\n%)" }}}
+{PARA 0 "" 0 "" {TEXT -1 133 "Such tables are quite useful for checkin
+g various combinatorial conjectures. Here, we may verify that these nu
+mbers are the sequence " }{TEXT 271 5 "M1484" }{TEXT -1 8 " of the " }
+{TEXT 259 33 "Encyclopedia of Integer Sequences" }{TEXT -1 48 " by Slo
+ane and Plouffe. They are the well-known " }{HYPERLNK 17 "Bell numbers
+" 2 "combinat[bell]" "" }{TEXT -1 125 " of combinatorial theory that a
+lso appear as moments of the Poisson distribution, in the calculus of \+
+finite differences, etc." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "
+" 0 "" {TEXT -1 62 "We automatically obtain the exponential generating
+ function as" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "gfsolve(op(2
+..3,DBIU),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"ZG6#%\"zGF(/-%
+\"UGF',&-%$expGF'\"\"\"!\"\"F//-%\"SGF'-F.6#F," }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 18 "P_z:=subs(\",S(z));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$P_zG-%$expG6#,&-F&6#%\"zG\"\"\"!\"\"F," }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "series(P_z,z=0,8);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#+5%\"zG\"\"\"\"\"!F%\"\"\"F%\"\"##\"\"&\"\"'\"\"$#
+F*\"\")\"\"%#\"#8\"#I\"\"&#\"$.#\"$?(\"\"'#\"$x)\"%S]\"\"(-%\"OG6#F%\"
+\")" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "Order:=8: gfseries(o
+p(2..3,DBIU),z);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%&TABLEG6#7%/-%\"
+SG6#%\"zG+5F+\"\"\"\"\"!F-\"\"\"F-\"\"##\"\"&\"\"'\"\"$#F2\"\")\"\"%#
+\"#8\"#I\"\"&#\"$.#\"$?(\"\"'#\"$x)\"%S]\"\"(-%\"OG6#F-\"\")/-%\"UGF*+
+3F+F-\"\"\"#F-\"\"#\"\"##F-F3\"\"$#F-\"#C\"\"%#F-\"$?\"\"\"&#F-F>\"\"'
+#F-FB\"\"(FD\"\")/-%\"ZGF*+%F+F-\"\"\"" }}}{PARA 0 "" 0 "" {TEXT -1 
+131 "By expanding and truncating, we obtain excellent approximations (
+this is in fact a version of a formula found by Dobinski in 1877):" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 118 "P_n_asympt:=exp(-1)*Sum(k^n
+/k!,k=0..2*n);\nfor j by 3 to 20 do j,evalf(count(DBIU,size=j)/subs(n=
+j,P_n_asympt),30); od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+P_n_asymp
+tG*&-%$expG6#!\"\"\"\"\"-%$SumG6$*&)%\"kG%\"nGF*-%*factorialG6#F0F)/F0
+;\"\"!,$F1\"\"#F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"\"$\"?oNP9!o<
+E_HU\"49f8!#H" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%$\"?=z)pS%o]A'[Y
+Y@0+\"!#H" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"($\"?d8Vx^jn#H<21+++
+\"!#H" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#5$\"?fRk7d&yf6,+++++\"!#H
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#8$\"?'GC0GD0++++++++\"!#H" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#;$\"?C$R3+++++++++++\"!#H" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"#>$\"?,+++++++++++++5!#H" }}}}}{SECT 1 
+{PARA 3 "" 0 "" {TEXT -1 47 "Indistinguishable balls (unlabelled struc
+tures)" }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 43 "Distinguishable urns (i
+nteger compositions)" }}{PARA 0 "" 0 "" {TEXT -1 31 "We start from the
+ specification" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "IBDU:=[S,
+\{S=Sequence(U),U=Sequence(Z,card>=1)\},unlabelled]:" }}}{PARA 0 "" 0 
+"" {TEXT -1 89 "In this particular case, as balls are indistinguishabl
+e, we may as well consider urns as " }{HYPERLNK 17 "Sequence" 2 "combs
+truct[specification]" "" }{TEXT -1 250 " of atoms. The reason for doin
+g this is a simpler form of generating functions (as we do not have to
+ go unnecessarily through Polya operators) as well as faster computati
+ons. We can check that this new version is equivalent to the earlier o
+ne, namely" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 56 "IBDU_0:=[S,\{S
+=Sequence(U),U=Set(Z,card>=1)\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 67 "seq(count(IBDU,size=j),j=0..20); seq(count(IBDU_
+0,size=j),j=0..20);" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"\"F#\"\"#\"
+\"%\"\")\"#;\"#K\"#k\"$G\"\"$c#\"$7&\"%C5\"%[?\"%'4%\"%#>)\"&%Q;\"&oF$
+\"&Ob'\"'s58\"'W@E\"')GC&" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"\"F#
+\"\"#\"\"%\"\")\"#;\"#K\"#k\"$G\"\"$c#\"$7&\"%C5\"%[?\"%'4%\"%#>)\"&%Q
+;\"&oF$\"&Ob'\"'s58\"'W@E\"')GC&" }}}{PARA 0 "" 0 "" {TEXT -1 91 "Of c
+ourse, here we recognize the powers of two: the result is combinatoria
+lly obvious since" }}{PARA 0 "" 0 "" {TEXT -1 88 "a partition can be o
+btained by inserting arbitrary cuts in the integer interval 1, ..., " 
+}{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 49 ". We can also check this w
+ith combstruct[gfsolve]" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "g
+fsolve(op(2..3,IBDU),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"ZG6
+#%\"zGF(/-%\"SGF'*&,&!\"\"\"\"\"F(F/F/,&F.F/F(\"\"#F./-%\"UGF',$*&F(F/
+F-F.F." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "SS_z:=subs(\",S(z
+));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%SS_zG*&,&!\"\"\"\"\"%\"zGF(F
+(,&F'F(F)\"\"#F'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "series(
+SS_z,z=0,10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+9%\"zG\"\"\"\"\"!F%
+\"\"\"\"\"#\"\"#\"\"%\"\"$\"\")\"\"%\"#;\"\"&\"#K\"\"'\"#k\"\"(\"$G\"
+\"\")\"$c#\"\"*-%\"OG6#F%\"#5" }}}}{SECT 1 {PARA 257 "" 0 "" {TEXT 
+260 43 "Indistinguishable urns (integer partitions)" }}{PARA 0 "" 0 "
+" {TEXT -1 31 "We start from the specification" }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 54 "IBIU:=[S,\{S=Set(U),U=Sequence(Z,card>=1)\},unla
+belled]:" }}}{PARA 0 "" 0 "" {TEXT -1 99 "Combinatorially, we are spec
+ifying  integer partitions that describe the occupancy profile of urns
+." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 56 "for j to 6 do j=map(ure
+duce,allstructs(IBIU,size=j)) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/
+\"\"\"7#<#7#7#%\"ZG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"#7$<#7$7#%
+\"ZGF(<#7#7$F)F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"$7%<#7#7%%\"Z
+GF)F)<#7%7#F)F,F,<#7$7$F)F)F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"
+%7'<#7$7$%\"ZGF)F(<#7$7%F)F)F)7#F)<#7%F(F-F-<#7&F-F-F-F-<#7#7&F)F)F)F)
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#/\"\"&7)<#7$7%%\"ZGF)F)7$F)F)<#7%F
+*F*7#F)<#7&F*F-F-F-<#7#7'F)F)F)F)F)<#7$F-7&F)F)F)F)<#7%F(F-F-<#7'F-F-F
+-F-F-" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#/\"\"'7-<#7(7#%\"ZGF(F(F(F(F(
+<#7$7%F)F)F)F,<#7&F,F(F(F(<#7&7$F)F)F1F(F(<#7%F1F1F1<#7%F(F(7&F)F)F)F)
+<#7'F1F(F(F(F(<#7%F,F1F(<#7$F(7'F)F)F)F)F)<#7#7(F)F)F)F)F)F)<#7$F1F6" 
+}}}{PARA 0 "" 0 "" {TEXT -1 178 "Naturally, since we are dealing with \+
+sets of summands (the order does not count), we may as well regard the
+se objects as an increasing sequence of  summands that sum to the size
+ " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 79 ", or equivalently as \"
+staircases\" with size being the area below the staircase." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 92 "preduce:=proc(e) sort(eval(subs(\{S
+et=proc() [args] end, Sequence=proc() nargs end\},e))) end:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "rand_part:=draw(IBIU,size=10
+0): ureduce(rand_part); preduce(rand_part);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#<#7C7$%\"ZGF&F%F%F%F%F%7#F&F'F'F'F'F'F'F'F'F'F'F'F'F'F'
+F'F'7'F&F&F&F&F&F(F(F(F(F(F(F(73F&F&F&F&F&F&F&F&F&F&F&F&F&F&F&F&F&70F&
+F&F&F&F&F&F&F&F&F&F&F&F&F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7C\"\"\"
+F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$\"\"#F%F%F%F%F%\"\"&F&F&F&F&F&F&F&\"#9
+\"#<" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 56 "
+There are much fewer structures than in previous models:" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "seq(count(IBIU,size=j),j=0..30);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6A\"\"\"F#\"\"#\"\"$\"\"&\"\"(\"#6\"#:
+\"#A\"#I\"#U\"#c\"#x\"$,\"\"$N\"\"$w\"\"$J#\"$(H\"$&Q\"$!\\\"$F'\"$#z
+\"%-5\"%b7\"%v:\"%e>\"%OC\"%5I\"%=P\"%lX\"%/c" }}}{PARA 0 "" 0 "" 
+{TEXT -1 209 "The random generation process is nontrivial as one must \+
+generate objects up to certain symmetries. The first time, counting ta
+bles are set up on the fly, so that random generation takes a few seco
+nds for size " }{XPPEDIT 18 0 "n<=100" "1%\"nG\"$+\"" }{TEXT -1 1 "." 
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "for i from 0 by 20 to 100 \+
+do i,preduce(draw(IBIU,size=i)); od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6$\"\"!%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#?7*\"\"\"F%F%F
+%F%\"\"$\"\"%\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#S77\"\"\"F%F%
+F%F%F%F%F%F%F%\"\"#F&F&F&F&F&F&F&\"\"%F'\"\"'" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#g70\"\"\"F%\"\"#F&F&F&F&\"\"$\"\"%\"\"&F)\"\"'\"#7\"
+#8" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#!)7;\"\"\"\"\"#F&F&F&F&F&F&F&
+F&F&F&\"\"$F'F'F'F'F'F'F'\"\"%F(\"\"&\"\"(\"#8" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"$+\"74\"\"\"F%F%F%F%\"\"$F&F&F&F&F&\"\"&F'F'\"#5F(\"#
+6\"#J" }}}{PARA 0 "" 0 "" {TEXT -1 39 "Next, random generation becomes
+ faster:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "for i to 10 do p
+reduce(draw(IBIU,size=100)); od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#71
+\"\"\"F$F$F$F$F$F$F$\"\"#\"\"'\"#5\"#7\"#;\"#A\"#C" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#7=\"\"\"F$F$F$F$F$F$F$F$F$F$\"\"#F%F%F%F%F%\"\"$F&F&
+\"\"%F'\"\"&\"\"*F)\"#<\"#?" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#71\"\"
+\"F$F$F$F$F$\"\"#\"\"$\"\"%F'\"\"*\"#6F)\"#=\"#K" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#73\"\"\"F$F$F$F$\"\"#F%F%F%F%\"\"%\"\"(F'\"#5\"#7\"#?\"
+#D" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7A\"\"\"F$F$F$F$F$F$F$F$F$F$\"\"
+#F%F%\"\"$F&F&F&F&F&\"\"%F'F'F'F'F'F'F'F'\"#5\"#>" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7-\"\"%F$F$F$\"\"&\"\"'F&\"\"*\"#=\"#?F)" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#78\"\"\"F$F$\"\"#F%F%F%F%F%F%\"\"$\"\"&F'F'F'\"
+\"'F(F(F(\"\"(\"#9\"#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7<\"\"\"F$F$
+F$F$F$F$F$F$F$F$F$F$F$\"\"#F%F%F%\"\"$\"\"%\"\"&\"\"*\"#5\"#7\"#8\"#A
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7<\"\"\"F$F$F$F$F$F$F$F$F$F$F$\"\"
+#F%F%\"\"$F&\"\"%\"\"&F(F(\"\"(\"\")\"#7F+\"#=" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7<\"\"\"F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$\"\"%F%\"
+\"(\"#9\"#B\"#G" }}}{PARA 0 "" 0 "" {TEXT -1 325 "In this particular c
+ase, the random generation procedure that is automatically built by Co
+mbstruct coincides with a method especially designed by Wilf for integ
+er partitions. By design, Combstruct accepts in full generality arbitr
+ary compositions of Set and Cycle constructions (in addition to Union,
+ Product, Sequence, etc)." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "
+" 0 "" {TEXT -1 85 "The generating functions are now more complicated \+
+since they involve Polya operators." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 24 "gfeqns(op(2..3,IBIU),z);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7%/-%\"UG6#%\"zG,&*$,&\"\"\"F,-%\"ZGF'!\"\"F/F,F/F,/-%
+\"SGF'-%$expG6#-%$SumG6$*&-F&6#)F(&%\"jG6#F,F,F=F//F=;F,%)infinityG/F-
+F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "gfsolve(op(2..3,IBIU)
+,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"ZG6#%\"zGF(/-%\"UGF',$*
+&F(\"\"\",&!\"\"F.F(F.F0F0/-%\"SGF'-%$expG6#-%$SumG6$,$*()F(&%\"jG6#F.
+F.,&F<F.F0F.F0F=F0F0/F=;F.%)infinityG" }}}{PARA 0 "" 0 "" {TEXT -1 62 
+"Such Polya operators are however known to combstruct[gfseries]" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "gfseries(op(2..3,IBIU),z);" 
+}}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%&TABLEG6#7%/-%\"SG6#%\"zG+5F+\"\"
+\"\"\"!F-\"\"\"\"\"#\"\"#\"\"$\"\"$\"\"&\"\"%\"\"(\"\"&\"#6\"\"'\"#:\"
+\"(-%\"OG6#F-\"\")/-%\"UGF*+3F+F-\"\"\"F-\"\"#F-\"\"$F-\"\"%F-\"\"&F-
+\"\"'F-\"\"(F<\"\")/-%\"ZGF*+%F+F-\"\"\"" }}}{PARA 0 "" 0 "" {TEXT -1 
+46 "though they are not otherwise \"known\" to Maple" }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 29 "subs(\"\",S(z)); series(\",z=0);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#-%$expG6#-%$SumG6$,$*()%\"zG&%\"jG6#\"
+\"\"F0,&F+F0!\"\"F0F2F-F2F2/F-;F0%)infinityG" }}{PARA 8 "" 1 "" {TEXT 
+-1 47 "Error, (in series/exp) unable to compute series" }}}{PARA 0 "" 
+0 "" {TEXT -1 191 "In such cases, one has to resort either to simplifi
+cation by hand (not always possible) or to the literature. Here, it is
+ very well known that the generating function of integer partitions is
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "PP_z:=Product(1/(1-z^k),
+k=1..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%PP_zG-%(ProductG
+6$*$,&\"\"\"F*)%\"zG%\"kG!\"\"F./F-;F*%)infinityG" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 51 "Order:=12: series(subs(infinity=Order+2,PP_z
+),z=0);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"\"\"\"\"!F%\"\"\"
+\"\"#\"\"#\"\"$\"\"$\"\"&\"\"%\"\"(\"\"&\"#6\"\"'\"#:\"\"(\"#A\"\")\"#
+I\"\"*\"#U\"#5\"#c\"#6-%\"OG6#F%\"#7" }}}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 18 "Constrained models" }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 
+29 "Number of urns in surjections" }}{PARA 0 "" 0 "" {TEXT -1 357 "The
+ approach developed so far may be tuned to analyse a variety parameter
+s. We explore here the way Combstruct may serve to analyse the number \+
+of urns as well as related situations with bounded urn capacity. We fo
+cus on counts and building numerical tables. Naturally, random generat
+ion and exhaustive listing are possible from any of these specificatio
+ns.\n" }}{PARA 0 "" 0 "" {TEXT -1 180 "We deal here with a fixed numbe
+r of urns in the model DBDU that corresponds to surjections. Combinato
+rial specifications may actually be computed in Maple, then used by Co
+mbstruct." }}{PARA 0 "" 0 "" {TEXT -1 57 "The following procedure comp
+utes the specifications with " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT 
+-1 6 " urns." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 76 "surj:=[S,\{S
+=Sequence(U,card=r),U=Set(Z,card>=1)\}, labelled]: subs(r=5,surj);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#7%%\"SG<$/%\"UG-%$SetG6$%\"ZG1\"\"\"%%
+cardG/F$-%)SequenceG6$F'/F.\"\"&%)labelledG" }}}{PARA 0 "" 0 "" {TEXT 
+-1 106 "In passing, this illustrates the use of  cardinality modifiers
+ for Sequence, Set, and Cycle constructions." }}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 139 "The following counts imply the first few values of the
+ probability distribution of the number of urns in a random unconstrai
+ned surjection:" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "for i to 5 do se
+q(count(subs(r=i,surj),size=m),m=0..10) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6-\"\"!\"\"\"F$F$F$F$F$F$F$F$F$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6-\"\"!F#\"\"#\"\"'\"#9\"#I\"#i\"$E\"\"$a#\"$5&\"%A5" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#F#\"\"'\"#O\"$]\"\"$S&\"%1=\"%'
+z&\"&]\"=\"&!)f&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#F#F#\"#C\"$
+S#\"%g:\"%+%)\"&C3%\"'!['=\"'?&=)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-
+\"\"!F#F#F#F#\"$?\"\"%+=\"&+o\"\"'+g7\"'?T$)\"(+I5&" }}}{PARA 0 "" 0 "
+" {TEXT -1 67 "and we may build tables of probability distributions au
+tomatically:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 87 "for i to 7 d
+o seq(evalf(count(subs(r=i,surj),size=m)/count(DBDU,size=m),4),m=0..10
+) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!$\"\"\"F#$\"%LL!\"%$\"%#
+p(!\"&$\"%L8F+$\"%[=!\"'$\"%N@!\"($\"%9@!\")$\"%K=!\"*$\"%69!#5$\"%!y*
+!#7" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#$\"%nm!\"%$\"%:YF&$\"%n=
+F&$\"%Xb!\"&$\"%C8F-$\"%kE!\"'$\"%`Y!\"($\"%'>(!\")$\"%&***!\"*" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#F#$\"%:Y!\"%$\"%+[F&$\"%tFF&$\"
+%`6F&$\"%>Q!\"&$\"%i5F/$\"%hD!\"'$\"%va!\"(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6-\"\"!F#F#F#$\"%+K!\"%$\"%OWF&$\"%JLF&$\"%w<F&$\"%zu!\"&
+$\"%JEF/$\"%0!)!\"'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#F#F#F#$
+\"%=A!\"%$\"%WQF&$\"%_NF&$\"%3BF&$\"%x6F&$\"%\"*\\!\"&" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6-\"\"!F#F#F#F#F#$\"%P:!\"%$\"%(>$F&$\"%4NF&$\"%)o#F
+&$\"%2;F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#F#F#F#F#F#$\"%m5!
+\"%$\"%&e#F&$\"%&G$F&$\"%)*GF&" }}}{PARA 0 "" 0 "" {TEXT -1 177 "Final
+ly, we are led to rediscover the corresponding generating functions. U
+sually, this is done via recurrence computations, and what we obtain h
+ere is equivalent to the EGF of " }{HYPERLNK 17 "Stirling second kind \+
+(partition) numbers" 2 "combinat[stirling2]" "" }{TEXT -1 1 ":" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "for i to 5 do gfsolve(op(2,s
+ubs(r=i,surj)),labelled,z) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-
+%\"UG6#%\"zG,&-%$expGF'\"\"\"!\"\"F,/-%\"ZGF'F(/-%\"SGF'F)" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#<%/-%\"UG6#%\"zG,&-%$expGF'\"\"\"!\"\"F,/-%
+\"ZGF'F(/-%\"SGF',(*$F*\"\"#F,F*!\"#F,F," }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#<%/-%\"UG6#%\"zG,&-%$expGF'\"\"\"!\"\"F,/-%\"ZGF'F(/-%\"SGF',**$
+F*\"\"$F,*$F*\"\"#!\"$F*F6F-F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-
+%\"UG6#%\"zG,&-%$expGF'\"\"\"!\"\"F,/-%\"ZGF'F(/-%\"SGF',,*$F*\"\"%F,*
+$F*\"\"$!\"%*$F*\"\"#\"\"'F*F9F,F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+<%/-%\"UG6#%\"zG,&-%$expGF'\"\"\"!\"\"F,/-%\"SGF',.*$F*\"\"&F,*$F*\"\"
+%!\"&*$F*\"\"$\"#5*$F*\"\"#!#5F*F3F-F,/-%\"ZGF'F(" }}}{PARA 0 "" 0 "" 
+{TEXT -1 52 "This suggests a pattern involving Pascal's triangle:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 75 "Surj_z:=proc(k) local j; add
+(binomial(k,j)*(-1)^(k-j)*exp(z)^j,j=0..k) end:" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 52 "Surj_z(6); gfsolve(op(2,subs(r=6,surj)),labell
+ed,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,0\"\"\"F$-%$expG6#%\"zG!\"'
+*$F%\"\"#\"#:*$F%\"\"$!#?*$F%\"\"%F,*$F%\"\"&F)*$F%\"\"'F$" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#<%/-%\"UG6#%\"zG,&-%$expGF'\"\"\"!\"\"F,/-%
+\"ZGF'F(/-%\"SGF',0F,F,F*!\"'*$F*\"\"#\"#:*$F*\"\"$!#?*$F*\"\"%F8*$F*
+\"\"&F5*$F*\"\"'F," }}}{PARA 0 "" 0 "" {TEXT -1 55 "For coefficients f
+inally, we have by straight expansion" }}{EXCHG {PARA 264 "" 0 "" 
+{XPPEDIT 18 0 "Sum(binomial(k,j)*(-1)^(k-j)*j^n,j=0..k)" "-%$SumG6$*(-
+%)binomialG6$%\"kG%\"jG\"\"\"),$\"\"\"!\"\",&F)F+F*F/F+)F*%\"nGF+/F*;
+\"\"!F)" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 86 "
+Surj_nk:=proc(n,k) local j; `if`(n<>0,add(binomial(k,j)*(-1)^(k-j)*j^n
+,j=0..k),1) end:" }}}{PARA 0 "" 0 "" {TEXT -1 63 "The formula matches \+
+the values obtained by combstruct[gfseries]" }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 47 "Order:=16: gfseries(op(2..3,subs(r=7,surj)),z);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#-%&TABLEG6#7%/-%\"SG6#%\"zG+7F+\"\"\"
+\"\"(#\"\"(\"\"#\"\")#\"#x\"#7\"\"*#\"#\\\"\"'\"#5#\"%R>\"$S#\"#6#\"%`
+Z\"$?(\"#7#\"%\\7\"$q#\"#8#F4\"#F\"#9#\"'6h8\"&+k)\"#:-%\"OG6#F-\"#;/-
+%\"UGF*+CF+F-\"\"\"#F-F1\"\"##F-F9\"\"$#F-\"#C\"\"%#F-\"$?\"\"\"&#F-FA
+\"\"'#F-\"%S]\"\"(#F-\"&?.%\"\")#F-\"'!)GO\"\"*#F-\"(+)GO\"#5#F-\")+o
+\"*R\"#6#F-\"*+;+z%\"#7#F-\"++3-Fi\"#8#F-\",+7Hyr)\"#9#F-\".+!oVn28\"#
+:FN\"#;/-%\"ZGF*+%F+F-\"\"\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 29 "seq(Surj_nk(n,7)/n!,n=0..15);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+2\"\"\"\"\"!F$F$F$F$F$F##\"\"(\"\"##\"#x\"#7#\"#\\\"\"'#\"%R>\"$S##\"%
+`Z\"$?(#\"%\\7\"$q##F)\"#F#\"'6h8\"&+k)" }}}}{SECT 1 {PARA 5 "" 0 "" 
+{TEXT 262 39 "Number of parts in integer compositions" }}{PARA 0 "" 0 
+"" {TEXT -1 23 "This is the model IBDU." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 68 "comp_r:=[S,\{S=Sequence(U,card=r),U=Sequence(Z,card>=
+1)\},unlabelled]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 61 "for i \+
+to 5 do seq(count(subs(r=i,comp_r),size=m),m=0..15) od;" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "62\"\"!\"\"\"F$F$F$F$F$F$F$F$F$F$F$F$F$F$" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"!F#\"\"\"\"\"#\"\"$\"\"%\"\"&\"\"'
+\"\"(\"\")\"\"*\"#5\"#6\"#7\"#8\"#9" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+2\"\"!F#F#\"\"\"\"\"$\"\"'\"#5\"#:\"#@\"#G\"#O\"#X\"#b\"#m\"#y\"#\"*" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"!F#F#F#\"\"\"\"\"%\"#5\"#?\"#N\"
+#c\"#%)\"$?\"\"$l\"\"$?#\"$'G\"$k$" }}{PARA 11 "" 1 "" {XPPMATH 20 "62
+\"\"!F#F#F#F#\"\"\"\"\"&\"#:\"#N\"#q\"$E\"\"$5#\"$I$\"$&\\\"$:(\"%,5" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "for i to 5 do subs(gfsolv
+e(op(2,subs(r=i,comp_r)),labelled,z),S(z)) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*&%\"zG\"\"\",&!\"\"F&F%F&F(F(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*&%\"zG\"\"#,&!\"\"\"\"\"F$F(!\"#" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*&%\"zG\"\"$,&!\"\"\"\"\"F%F)!\"$F(" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#*&%\"zG\"\"%,&!\"\"\"\"\"F$F(!\"%" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#,$*&%\"zG\"\"&,&!\"\"\"\"\"F%F)!\"&F(" }}}{PARA 0 "" 
+0 "" {TEXT -1 115 "The pattern is obvious and this corresponds to an e
+xplicit (and well-known!) binomial formula for the coefficients." }}}
+{SECT 1 {PARA 4 "" 0 "" {TEXT -1 37 "Number of parts in integer partit
+ions" }}{PARA 0 "" 0 "" {TEXT -1 23 "This is the model IBIU." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 64 "part_r:=[S,\{S=Set(U,card=r)
+,U=Sequence(Z,card>=1)\}, unlabelled]:" }}}{PARA 0 "" 0 "" {TEXT -1 
+32 "We can build tables, like before" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 61 "for i to 5 do seq(count(subs(r=i,part_r),size=m),m=0.
+.15) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"!\"\"\"F$F$F$F$F$F$F$F
+$F$F$F$F$F$F$" }}{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"!F#\"\"\"F$\"\"#F
+%\"\"$F&\"\"%F'\"\"&F(\"\"'F)\"\"(F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+62\"\"!F#F#\"\"\"F$\"\"#\"\"$\"\"%\"\"&\"\"(\"\")\"#5\"#7\"#9\"#;\"#>
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"!F#F#F#\"\"\"F$\"\"#\"\"$\"\"&
+\"\"'\"\"*\"#6\"#:\"#=\"#B\"#F" }}{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"
+!F#F#F#F#\"\"\"F$\"\"#\"\"$\"\"&\"\"(\"#5\"#8\"#=\"#B\"#I" }}}{PARA 0 
+"" 0 "" {TEXT -1 73 "The generating functions are found by combstruct[
+gfsolve] to be rational:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "
+for i to 5 do gfsolve(op(2,subs(r=i,part_r)),unlabelled,z) od;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"ZG6#%\"zGF(/-%\"UGF',$*&F(\"\"
+\",&!\"\"F.F(F.F0F0/-%\"SGF'F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-
+%\"ZG6#%\"zGF(/-%\"UGF',$*&F(\"\"\",&!\"\"F.F(F.F0F0/-%\"SGF'*&F(\"\"#
+,**$F(\"\"$F.*$F(F5F0F(F0F.F.F0" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/
+-%\"ZG6#%\"zGF(/-%\"UGF',$*&F(\"\"\",&!\"\"F.F(F.F0F0/-%\"SGF',$*&F(\"
+\"$,.*$F(\"\"'F.*$F(\"\"&F0*$F(\"\"%F0*$F(\"\"#F.F(F.F0F.F0F0" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"ZG6#%\"zGF(/-%\"UGF',$*&F(\"\"
+\",&!\"\"F.F(F.F0F0/-%\"SGF'*&F(\"\"%,0*$F(\"#5F.*$F(\"\"*F0*$F(\"\")F
+0*$F(\"\"&\"\"#*$F(F?F0F(F0F.F.F0" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<
+%/-%\"ZG6#%\"zGF(/-%\"UGF',$*&F(\"\"\",&!\"\"F.F(F.F0F0/-%\"SGF',$*&F(
+\"\"&,:*$F(\"#:F.*$F(\"#9F0*$F(\"#8F0*$F(\"#5F.*$F(\"\"*F.*$F(\"\")F.*
+$F(\"\"(F0*$F(\"\"'F0*$F(F6F0*$F(\"\"#F.F(F.F0F.F0F0" }}}{PARA 0 "" 0 
+"" {TEXT -1 109 "The form is then easily inferred from the factored re
+presentations, as one recognizes cyclotomic polynomials." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "S5_z:=subs(\",S(z));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%%S5_zG,$*&%\"zG\"\"&,:*$F'\"#:\"\"\"*$F'\"#9!
+\"\"*$F'\"#8F/*$F'\"#5F,*$F'\"\"*F,*$F'\"\")F,*$F'\"\"(F/*$F'\"\"'F/*$
+F'F(F/*$F'\"\"#F,F'F,F/F,F/F/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 31 "factor(S5_z); series(\",z=0,20);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,$*.%\"zG\"\"&,&!\"\"\"\"\"F%F)!\"&,&F%F)F)F)!\"#,(*$F%\"\"#F)F%
+F)F)F)F(,&F.F)F)F)F(,,*$F%\"\"%F)*$F%\"\"$F)F.F)F%F)F)F)F(F(" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#+C%\"zG\"\"\"\"\"&F%\"\"'\"\"#\"\"(\"\"$\"\"
+)\"\"&\"\"*\"\"(\"#5\"#5\"#6\"#8\"#7\"#=\"#8\"#B\"#9\"#I\"#:\"#P\"#;\"
+#Z\"#<\"#d\"#=\"#q\"#>-%\"OG6#F%\"#?" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 51 "z^5/mul(1-z^i,i=1..5); factor(\"); series(\",z=0,20);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*.%\"zG\"\"&,&\"\"\"F'F$!\"\"F(,&F
+'F'*$F$\"\"#F(F(,&F'F'*$F$\"\"$F(F(,&F'F'*$F$\"\"%F(F(,&F'F'*$F$F%F(F(
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*.%\"zG\"\"&,&!\"\"\"\"\"F%F)!\"
+&,&F%F)F)F)!\"#,(*$F%\"\"#F)F%F)F)F)F(,&F.F)F)F)F(,,*$F%\"\"%F)*$F%\"
+\"$F)F.F)F%F)F)F)F(F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+C%\"zG\"\"\"
+\"\"&F%\"\"'\"\"#\"\"(\"\"$\"\")\"\"&\"\"*\"\"(\"#5\"#5\"#6\"#8\"#7\"#
+=\"#8\"#B\"#9\"#I\"#:\"#P\"#;\"#Z\"#<\"#d\"#=\"#q\"#>-%\"OG6#F%\"#?" }
+}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 
+44 "Bounded capacity in the DBDU model (hashing)" }}{PARA 0 "" 0 "" 
+{TEXT -1 74 "We now consider configurations where the number of urns i
+s a fixed number " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 118 ", so t
+hat one can relax the constraint that urns need to be nonempty. We are
+ thus dealing with the collection of  the " }{XPPEDIT 18 0 "r^n" ")%\"
+rG%\"nG" }{TEXT -1 14 " functions of " }{XPPEDIT 18 0 "[1..r]" "7#;\"
+\"\"%\"rG" }{TEXT -1 4 " to " }{XPPEDIT 18 0 "[1..r]" "7#;\"\"\"%\"rG
+" }{TEXT -1 121 ", not necessarily surjections. Such specifications al
+so describe words (size being length) on an alphabet of cardinality " 
+}{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 70 " and this may be used to m
+odel hashing sequences in a table of length " }{XPPEDIT 18 0 "r" "I\"r
+G6\"" }{TEXT -1 37 ". The set of all possible sequences (" }{XPPEDIT 
+18 0 "r" "I\"rG6\"" }{TEXT -1 24 " fixed)  is specified by" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 63 "hash_r:=[S,\{S=Prod(U$r),U=Set(Z)\}
+,labelled]: subs(r=10,hash_r);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7%%
+\"SG<$/F$-%%ProdG6#-%\"$G6$%\"UG\"#5/F--%$SetG6#%\"ZG%)labelledG" }}}
+{PARA 0 "" 0 "" {TEXT -1 26 "Here, we use a hack, with " }{HYPERLNK 
+17 "Prod" 2 "combstruct[specification]" "" }{TEXT -1 222 " instead of \+
+\"Sequence\" with fixed cardinality, since the current version of Comb
+struct does not accept Sequence applied to an argument that leads to a
+n Epsilon structure, even in the case of a bounded cardinality modifie
+r." }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 74 "We change the reduction proc
+edure to take this new construct into account." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 196 "lreduce:=proc(e) eval(subs(\{Set=proc() \{arg
+s\} end, Prod=proc() [args] end\},e)) end:\nureduce:=proc(e) eval(subs
+(\{Set=proc() \{[args]\} end, Sequence=proc() [args] end,Prod=proc() [
+args] end\},e)) end:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 30 "The numbe
+r of objects of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 19 " is
+, as predicted, " }{XPPEDIT 18 0 "10^n" ")\"#5%\"nG" }{TEXT -1 1 "." }
+}{PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "seq(count(subs(r=10,hash_r),size=j
+),j=0..10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"\"\"#5\"$+\"\"%+5\"
+&++\"\"'++5\"(+++\"\")+++5\"*++++\"\"+++++5\",+++++\"" }}}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 55 "Next, we consider ur
+ns with a bounded maximum capacity " }{XPPEDIT 18 0 "b" "I\"bG6\"" }
+{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "hash_br:=[S
+,\{S=Prod(U$r),U=Set(Z,card<=b)\}, labelled]: subs(\{r=5,b=3\},hash_br
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7%%\"SG<$/F$-%%ProdG6#-%\"$G6$%
+\"UG\"\"&/F--%$SetG6$%\"ZG1%%cardG\"\"$%)labelledG" }}}{PARA 0 "" 0 "
+" {TEXT -1 90 "Such specifications also describe words (size being len
+gth) on an alphabet of cardinality " }{XPPEDIT 18 0 "r" "I\"rG6\"" }
+{TEXT -1 41 ", given that no letter is used more than " }{XPPEDIT 18 
+0 "b" "I\"bG6\"" }{TEXT -1 59 " times. This models hashing sequences i
+n a table of length " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 26 " whe
+n pages have capacity " }{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT -1 2 ". \+
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "lreduce(draw(subs(r=10,h
+ash_r),size=30));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7,<$&%\"ZG6#\"#D&
+F&6#\"#G<'&F&6#\"\"*&F&6#\"#<&F&6#\"\"&&F&6#\"#I&F&6#\"#B<%&F&6#\"#H&F
+&6#\"\"'&F&6#\"#8<#&F&6#\"\"(<'&F&6#\"#9&F&6#\"\"\"&F&6#\"#=&F&6#\"#C&
+F&6#\"#A<%&F&6#\"#@&F&6#\"#5&F&6#\"#6%(EpsilonG<'&F&6#\"#>&F&6#\"\"#&F
+&6#\"#;&F&6#\"#E&F&6#\"#F<%&F&6#\"\"%&F&6#\"#?&F&6#\"#7<%&F&6#\"\"$&F&
+6#\"#:&F&6#\"\")" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "lreduce
+(draw(subs(\{r=10,b=4\},hash_br),size=30));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7,<%&%\"ZG6#\"#9&F&6#\"\"*&F&6#\"#C<&&F&6#\"#>&F&6#\"\"
+&&F&6#\"#A&F&6#\"#:<&&F&6#\"\"#&F&6#\"\"'&F&6#\"#;&F&6#\"#F<$&F&6#\"#B
+&F&6#\"#E<$&F&6#\"#H&F&6#\"#D<&&F&6#\"#@&F&6#\"\"(&F&6#\"#I&F&6#\"#=<%
+&F&6#\"\"\"&F&6#\"\"%&F&6#\"#<<$&F&6#\"\"$&F&6#\"#7<%&F&6#\"#5&F&6#\"#
+6&F&6#\"#?<%&F&6#\"#G&F&6#\"#8&F&6#\"\")" }}}{PARA 0 "" 0 "" {TEXT -1 
+82 "The following command automatically creates a table of maximum urn
+ occupancy: the " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 17 "-th entr
+y in the " }{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT -1 33 "-th line is the
+ probability that " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 53 " balls
+ thrown into 10 urns fit into urns of capacity " }{XPPEDIT 18 0 "b" "I
+\"bG6\"" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 113 "
+for i 1 to 6 do seq(evalf(count(subs(\{r=10,b=i\},hash_br),size=j)/cou
+nt(subs(r=10,hash_r),size=j),4),j=0..20); od;" }}{PARA 8 "" 1 "" 
+{TEXT -1 31 "Syntax error, unexpected number" }}}{PARA 0 "" 0 "" 
+{TEXT -1 75 "Naturally, Combstruct automatically recognizes \"impossib
+le\" configurations:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "draw
+(subs(\{r=10,b=3\},hash_br),size=31);" }}{PARA 8 "" 1 "" {TEXT -1 69 "
+Error, (in combstruct/drawgrammar) there is no structure of this size
+" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 43 "Bounded capacity in the IBD
+U model (bosons)" }}{PARA 0 "" 0 "" {TEXT -1 161 "This is a model of i
+nteger compositions. (A more sophisticated example that is related to \+
+submarine detection is treated below.) We consider here a fixed number
+ " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 139 " of urns and this is e
+xactly the so-called \"Bose-Einstein\" model of statistical physics, w
+here the corresponding objects are called bosons." }}{PARA 0 "" 0 "" 
+{TEXT -1 84 "Mark Kobrak, a chemist at the University of Chicago wrote
+ to us (December 13, 1996):" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+258 "" 0 "" {TEXT -1 535 "       The basic problem is this:  I am inte
+rested in simulating a problem in laser spectroscopy.  A molecule has \+
+n modes, and I need to generate every possible combination which place
+s up to m quanta in each mode.  As I go through each one, I will analy
+ze its energy.\n        This is exactly like a problem where, given n \+
+jars, you may put up to m marbles in each jar.  The marbles are indist
+inguishable. I know how to count the number of combinations, but I nee
+d a good way to program a computer to go through all these combination
+s." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 13 "We \+
+let again " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 31 " denote the nu
+mber of urns and " }{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT -1 130 " the b
+ucket capacity, i.e., the maximum number of urns that may fit into any
+ given urn. We have the model of integer compositions:" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 88 "boson_br:=[S,\{S=Prod(U$r),U=Sequen
+ce(Z,card<=b)\}, unlabelled]: subs(\{r=5,b=3\},boson_br);" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#7%%\"SG<$/%\"UG-%)SequenceG6$%\"ZG1%%cardG\"\"$
+/F$-%%ProdG6#-%\"$G6$F'\"\"&%+unlabelledG" }}}{PARA 0 "" 0 "" {TEXT 
+-1 59 "For instance, here are all the 95 possible ways of putting " }
+{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 10 " marbles (" }{XPPEDIT 18 0 
+"j<=4" "1%\"jG\"\"%" }{TEXT -1 7 ") into " }{XPPEDIT 18 0 "r=5" "/%\"r
+G\"\"&" }{TEXT -1 42 " jars, each jar being of maximum capacity " }
+{XPPEDIT 18 0 "b=2" "/%\"bG\"\"#" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 51 "seq(count(subs(\{r=5,b=2\},boson_br),size=j),j
+=1..4);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6&\"\"&\"#:\"#I\"#X" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 76 "for j to 4 do j=map(ureduce,
+allstructs(subs(\{r=5,b=2\},boson_br),size=j)) od;" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/\"\"\"7'7'7#%\"ZG%(EpsilonGF)F)F)7'F)F)F)F'F)7'F)F)F
+'F)F)7'F)F)F)F)F'7'F)F'F)F)F)" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#/\"\"
+#717'7#%\"ZG%(EpsilonGF)F'F)7'F)F)7$F(F(F)F)7'F)F'F'F)F)7'F)F)F)F+F)7'
+F)F)F)F)F+7'F)F'F)F)F'7'F'F)F'F)F)7'F)F)F)F'F'7'F)F+F)F)F)7'F+F)F)F)F)
+7'F)F'F)F'F)7'F'F'F)F)F)7'F)F)F'F)F'7'F)F)F'F'F)7'F'F)F)F)F'" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#/\"\"$7@7'7#%\"ZG7$F(F(%(EpsilonGF*F*7'F*F*F
+'F'F'7'F'F*F*F'F'7'F'F*F'F*F'7'F'F'F*F'F*7'F*F)F*F*F'7'F*F)F*F'F*7'F)F
+*F'F*F*7'F*F'F'F'F*7'F*F*F'F)F*7'F'F*F)F*F*7'F*F'F)F*F*7'F*F*F)F*F'7'F
+)F'F*F*F*7'F)F*F*F*F'7'F*F'F*F*F)7'F'F*F*F)F*7'F'F*F*F*F)7'F*F)F'F*F*7
+'F*F'F*F)F*7'F'F'F'F*F*7'F*F*F'F*F)7'F)F*F*F'F*7'F*F'F'F*F'7'F'F'F*F*F
+'7'F*F*F*F)F'7'F*F'F*F'F'7'F'F*F'F'F*7'F*F*F*F'F)7'F*F*F)F'F*" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#/\"\"%7O7'7$%\"ZGF(%(EpsilonG7#F(F)F*7
+'F)F'F)F)F'7'F*F*F'F)F)7'F)F)F*F*F'7'F*F'F*F)F)7'F*F)F*F'F)7'F)F'F*F*F
+)7'F)F)F'F'F)7'F)F'F)F*F*7'F'F)F*F*F)7'F*F*F)F)F'7'F)F'F*F)F*7'F'F*F)F
+)F*7'F)F)F)F'F'7'F)F)F'F*F*7'F)F*F'F*F)7'F*F)F*F*F*7'F*F)F'F)F*7'F)F*F
+*F)F'7'F)F'F)F'F)7'F*F'F)F*F)7'F)F)F*F'F*7'F'F)F)F'F)7'F*F*F*F*F)7'F*F
+)F)F'F*7'F)F*F)F*F'7'F*F*F)F'F)7'F'F)F'F)F)7'F)F*F*F'F)7'F'F*F*F)F)7'F
+*F*F*F)F*7'F*F'F)F)F*7'F'F'F)F)F)7'F*F)F'F*F)7'F*F*F)F*F*7'F)F)F'F)F'7
+'F*F)F*F)F'7'F)F*F'F)F*7'F)F'F'F)F)7'F)F*F)F'F*7'F'F)F)F*F*7'F)F*F*F*F
+*7'F'F*F)F*F)7'F'F)F)F)F'7'F*F)F)F*F'" }}}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 17 "Stack polyominoes" }}{PARA 0 "" 0 "" {TEXT -1 84 "Polyomi
+noes are familiar objects of combinatorial mathematics. A stack polyom
+ino or " }{TEXT 261 5 "stack" }{TEXT -1 245 " is a piling up of nonemp
+ty integer intervals, each interval being included in the previous one
+. The number of intervals comprising a stack are called the height; th
+e total length of the intervals is called the size. For instance, the \+
+collection" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "[1,12],[3,8],[
+4,7],[4,7],[6,7];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6'7$\"\"\"\"#77$\"
+\"$\"\")7$\"\"%\"\"(F)7$\"\"'F+" }}}{PARA 0 "" 0 "" {TEXT -1 31 "is a \+
+stack of height 5 and size" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+31 "(12-1)+(8-3)+(7-4)+(7-4)+(7-6);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#\"#B" }}}{PARA 0 "" 0 "" {TEXT -1 83 "We may assume stacks to be left
+ justified, starting at 1. Stacks of height exactly " }{XPPEDIT 18 0 "
+r" "I\"rG6\"" }{TEXT -1 19 " are specified by (" }{XPPEDIT 18 0 "r=5" 
+"/%\"rG\"\"&" }{TEXT -1 16 " in the example)" }}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 123 "stack:=[st,\{st=Prod(left,right),left=Set(U,card=
+r),right=Set(U,card<r),U=Sequence(Z,card>=1)\},unlabelled]: subs(r=5,s
+tack);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7%%#stG<&/%%leftG-%$SetG6$%
+\"UG/%%cardG\"\"&/%&rightG-F)6$F+2F-F./F$-%%ProdG6$F'F0/F+-%)SequenceG
+6$%\"ZG1\"\"\"F-%+unlabelledG" }}}{PARA 0 "" 0 "" {TEXT -1 85 "Combina
+torially, we view a stack as an ascending staircase (the left part) of
+ height " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 71 " followed by a d
+escending staircase (the right part) of height at most " }{XPPEDIT 18 
+0 "r" "I\"rG6\"" }{TEXT -1 77 ". Staircases of fixed height are define
+d as partitions into bounded summands." }}{PARA 0 "" 0 "" {TEXT -1 0 "
+" }}{PARA 0 "" 0 "" {TEXT -1 57 "The distribution of height in stacks \+
+is for small height:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "for \+
+i to 6 do seq(count(subs(r=i,stack),size=m),m=0..20) od;" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "67\"\"!\"\"\"F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F
+$" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"!F#\"\"\"\"\"#\"\"%\"\"'\"\"*
+\"#7\"#;\"#?\"#D\"#I\"#O\"#U\"#\\\"#c\"#k\"#s\"#\")\"#!*\"$+\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"!F#F#\"\"\"\"\"#\"\"&\"\"*\"#;\"#D
+\"#R\"#c\"#!)\"$4\"\"$Z\"\"$#>\"$\\#\"$:$\"$'R\"$*[\"$+'\"$E(" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"!F#F#F#\"\"\"\"\"#\"\"&\"#5\"#>\"#
+K\"#a\"#%)\"$H\"\"$!>\"$v#\"$'Q\"$O&\"$E(\"$t*\"%#G\"\"%s;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "67\"\"!F#F#F#F#\"\"\"\"\"#\"\"&\"#5\"#?\"#N\"#
+h\"#**\"$f\"\"$W#\"$p$\"$T&\"$%y\"%46\"%^:\"%J@" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "67\"\"!F#F#F#F#F#\"\"\"\"\"#\"\"&\"#5\"#?\"#O\"#k\"$1\"\"
+$u\"\"$u#\"$D%\"$S'\"$_*\"%%Q\"\"%*)>" }}}{PARA 0 "" 0 "" {TEXT -1 30 
+"The total number of stacks is:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 142 "for i to 6 do for m from 0 to 10 do stnum[i,m]:=count(subs(r=
+i,stack),size=m) od od: for m to 6 do m,convert([seq(stnum[i,m],i=1..6
+)],`+`) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"\"F#" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"\"#F#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$
+\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%\"\")" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6$\"\"&\"#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"'\"#
+F" }}}{PARA 0 "" 0 "" {TEXT -1 8 "This is " }{TEXT 272 5 "M1102" }
+{TEXT -1 8 " of the " }{TEXT 263 33 "Encyclopedia of Integer Sequences
+" }{TEXT -1 161 ". The table given there is incomplete. However, from \+
+an earlier computation of generating functions, we have a formula for \+
+the generating function of all stacks:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 86 "Q:=Product(1-z^k,k=1..n); Stack_z:=1+Sum(z^r/subs(n=r
+,Q)/subs(n=r-1,Q),r=1..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%\"QG-%(ProductG6$,&\"\"\"F))%\"zG%\"kG!\"\"/F,;F)%\"nG" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%(Stack_zG,&\"\"\"F&-%$SumG6$*()%\"zG%\"rGF&-%(
+ProductG6$,&F&F&)F,%\"kG!\"\"/F3;F&F-F4-F/6$F1/F3;F&,&F-F&F4F&F4/F-;F&
+%)infinityGF&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 61 "Order:=30:
+ series(value(subs(infinity=Order+3,Stack_z)),z=0);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#+[o%\"zG\"\"\"\"\"!F%\"\"\"\"\"#\"\"#\"\"%\"\"$\"\")
+\"\"%\"#:\"\"&\"#F\"\"'\"#Z\"\"(\"#z\"\")\"$I\"\"\"*\"$4#\"#5\"$I$\"#6
+\"$7&\"#7\"$%y\"#8\"%$=\"\"#9\"%l<\"#:\"%/E\"#;\"%/Q\"#<\"%/b\"#=\"%)*
+y\"#>\"&S7\"\"#?\"&!)e\"\"#@\"&xA#\"#A\"&[5$\"#B\"&.I%\"#C\"&?#f\"#D\"
+&)4\")\"#E\"'%[5\"\"#F\"'p(\\\"\"#G\"'q??\"#H-%\"OG6#F%\"#I" }}}}
+{SECT 1 {PARA 3 "" 0 "" {TEXT -1 32 "A problem in submarine detection
+" }}{PARA 0 "" 0 "" {TEXT -1 50 "Problem 68-16 that appeared in the 19
+68 volume of " }{TEXT 264 11 "SIAM Review" }{TEXT -1 18 " reads as fol
+lows:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 259 "" 0 "" {TEXT -1 
+79 "Problem 68-16. A combinatorial Problem, by Melda Hayes (Ocean Tech
+nology Inc.)." }}{PARA 260 "" 0 "" {TEXT -1 21 "In how many ways can \+
+" }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 35 " identical balls be dist
+ributed in " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 137 " boxes in a \+
+row such that each pair of  adjacent boxes contains at least 4 balls? \+
+This problem arose in some work on submarine detection." }}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 244 "The problem is thus
+ relative to integer compositions with constrained summands. The const
+raints are reminiscent of maximum capacity problems but they concern s
+uccessive summands. For pedagogical reasons, we decompose the solution
+ in two phases:" }}{PARA 16 "" 0 "" {TEXT -1 94 "a problem of counting
+ words over a 5-letter alphabet that translates the succession contrai
+nt;" }}{PARA 16 "" 0 "" {TEXT -1 21 "the original problem." }}{PARA 0 
+"" 0 "" {TEXT -1 0 "" }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 25 "The word \+
+counting problem" }}{PARA 0 "" 0 "" {TEXT -1 39 "Consider an alphabet \+
+comprising letters" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "A=seq(
+a.j,j=0..4);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%\"AG6'%#a0G%#a1G%#a2
+G%#a3G%#a4G" }}}{PARA 0 "" 0 "" {TEXT -1 6 "There " }{XPPEDIT 18 0 "a.
+j" "(%\"aG%\"jG" }{TEXT -1 6 ", for " }{XPPEDIT 18 0 "j<4" "2%\"jG\"\"
+%" }{TEXT -1 43 " represents symbolically a summand of size " }
+{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 15 "; the quantity " }{XPPEDIT 
+18 0 "a4" "I#a4G6\"" }{TEXT -1 37 " represents a summand of cardinalit
+y " }{TEXT 273 8 "at least" }{TEXT -1 56 " 4. The first grammar specif
+ies words over the alphabet " }{XPPEDIT 18 0 "A" "I\"AG6\"" }{TEXT -1 
+75 " such that the sum of indices of any two consecutive letters is at
+ least 4." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 116 "grammar1:=[Q4,
+\{\n    seq(Q.i=Union(Epsilon,seq(Prod(a.j,Q.j),j=4-i..4)),i=0..4),\n \+
+   seq(a.j=Z,j=0..4)\n\},unlabelled];" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6#>%)grammar1G7%%#Q4G<,/%#Q0G-%&UnionG6$%(EpsilonG-%%ProdG6$%#a4GF&/%
+#Q1G-F+6%F--F/6$%#a3G%#Q3GF./%#Q2G-F+6&F--F/6$%#a2GF;F6F./%#a1G%\"ZG/F
+8FC/F@FC/F1FC/%#a0GFC/F&-F+6(F--F/6$FHF)-F/6$FBF3F>F6F./F9-F+6'F-FNF>F
+6F.%+unlabelledG" }}}{PARA 0 "" 0 "" {TEXT -1 159 "The grammar above i
+s just a translation of the finite automaton that recognizes the langu
+age of symbolic constraints. We can solve the counting problem easily.
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "seq(count(grammar1,size=
+j),j=0..20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "67\"\"\"\"\"&\"#:\"#b\"$
+!>\"$r'\"%`B\"%s#)\"&c!H\"'\"4-\"\"'r'e$\"(V,E\"\"(%HFW\")#fab\"\")1&[
+Y&\"*Y')*>>\"*Pfbu'\"+FC%*pB\"+%f1kK)\",vJZ`#H\"-3BJxF5" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "gfsolve(op(2..3,grammar1),z);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#<-/-%\"ZG6#%\"zGF(/-%#Q4GF',$*&,,*$F(
+\"\"$!\"\"\"\"\"F2F(\"\"#*$F(\"\"%F2*$F(F3!\"$F2,.F1F2F6F0F4F1F/!\"%F(
+F0*$F(\"\"&F2F1F1/-%#a3GF'F(/-%#a4GF'F(/-%#Q3GF'*&,(F1F2F(F1F6F2F2F8F1
+/-%#a2GF'F(/-%#Q2GF',$*$F8F1F1/-%#a0GF'F(/-%#Q0GF',$*&,*F2F2F6F1F/F2F(
+!\"#F2F8F1F1/-%#a1GF'F(/-%#Q1GF'*&,&F1F2F(F2F2F8F1" }}}{PARA 0 "" 0 "
+" {TEXT -1 57 "The generating function of all words has been found to \+
+be" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "Q_z:=factor(subs(\",Q4
+(z)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$Q_zG,$*(,&!\"\"\"\"\"%\"z
+GF)F),(*$F*\"\"$F)F*!\"$F(F)F),.F(F)*$F*\"\"#F-*$F*\"\"%F(F,!\"%F*F-*$
+F*\"\"&F)F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "series(Q_z
+,z=0,20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+M%\"zG\"\"\"\"\"!\"\"&\"
+\"\"\"#:\"\"#\"#b\"\"$\"$!>\"\"%\"$r'\"\"&\"%`B\"\"'\"%s#)\"\"(\"&c!H
+\"\")\"'\"4-\"\"\"*\"'r'e$\"#5\"(V,E\"\"#6\"(%HFW\"#7\")#fab\"\"#8\")1
+&[Y&\"#9\"*Y')*>>\"#:\"*Pfbu'\"#;\"+FC%*pB\"#<\"+%f1kK)\"#=\",vJZ`#H\"
+#>-%\"OG6#F%\"#?" }}}{PARA 0 "" 0 "" {TEXT -1 56 "The asymptotics resu
+lts from locating the dominant pole:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 33 "Digits:=30: fsolve(denom(Q_z),z);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6'$!?%yHBOsPBOic12Do\"!#H$!?f%)H[&e5&Gx.g-I3$)!#I$\"?Ls
+L&e()3Gqlaw'HYGF($\"?$\\9]Q6G,d!*yY@(48F%$\"?89ht!yzZ**Gs%f)*=>F%" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "rho:=fsolve(denom(Q_z),z,0..
+1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$rhoG$\"?LsL&e()3Gqlaw'HYG!#I
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "c:=-subs(z=rho,numer(Q_
+z)/diff(denom(Q_z),z))/rho;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"cG$
+\"?jJPYw%zOj,\"*p,<D\"!#H" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+42 "Q_n_asympt:=proc(n) round(c*rho^(-n)) end:" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 53 "count(grammar1,size=30); Q_n_asympt(30); evalf
+(\"/\"\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"2\\,V*G*o]%H" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"2V-V*G*o]%H" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#$\"?t#R*)ex\">.++++++5!#H" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 
+31 "The integer composition problem" }}{PARA 0 "" 0 "" {TEXT -1 52 "Fo
+r the original problem, we only need to interpret " }{XPPEDIT 18 0 "a.
+j" "(%\"aG%\"jG" }{TEXT -1 0 "" }{TEXT -1 5 " for " }{XPPEDIT 18 0 "j<
+4" "2%\"jG\"\"%" }{TEXT -1 0 "" }{TEXT -1 31 " as meaning a summand of
+ value " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 0 "" }{TEXT -1 17 ", \+
+that is to say " }{XPPEDIT 18 0 "Z" "I\"ZG6\"" }{TEXT -1 0 "" }{TEXT 
+-1 10 " repeated " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 0 "" }
+{TEXT -1 12 " times, and " }{XPPEDIT 18 0 "a4" "I#a4G6\"" }{TEXT -1 0 
+"" }{TEXT -1 34 " as a summand of value at least 4." }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 156 "grammar2:=[Q4,\{\n    seq(Q.i=Union(Epsilo
+n,seq(Prod(a.j,Q.j),j=4-i..4)),i=0..4),\n    seq(a.j=Sequence(Z,card=j
+),j=0..3),a4=Sequence(Z,card>=4)\n\},unlabelled];" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%)grammar2G7%%#Q4G<,/%#Q0G-%&UnionG6$%(EpsilonG-%%Prod
+G6$%#a4GF&/F1-%)SequenceG6$%\"ZG1\"\"%%%cardG/%#a0G-F46$F6/F9\"\"!/%#a
+3G-F46$F6/F9\"\"$/%#a2G-F46$F6/F9\"\"#/%#a1G-F46$F6/F9\"\"\"/%#Q1G-F+6
+%F--F/6$FA%#Q3GF./%#Q2G-F+6&F--F/6$FGFZFVF./F&-F+6(F--F/6$F;F)-F/6$FMF
+SFgnFVF./FX-F+6'F-F^oFgnFVF.%+unlabelledG" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 36 "seq(count(grammar2,size=j),j=0..30);" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6A\"\"#\"\"\"F$F$\"\"(\"#6\"#<\"#D\"#^\"#%*\"$l\"
+\"$!G\"$'\\\"$())\"%w:\"%qF\"%!)[\"%I')\"&w_\"\"&!*p#\"&cw%\"&$=%)\"'
+\"y[\"\"'@HE\"'GXY\"'*p?)\"(\"4]9\"(]Ac#\"(ss_%\"(/\"**z\")cM89" }}}
+{PARA 0 "" 0 "" {TEXT -1 46 "We then get the generating function as be
+fore." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "gr2_sys:=gfsolve(op
+(2..3,grammar2),z);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%(gr2_sysG<-/-
+%\"ZG6#%\"zGF*/-%#a0GF)\"\"\"/-%#a4GF),$*&F*\"\"%,&!\"\"F.F*F.F6F6/-%#
+Q4GF)*&,.*$F*F4F6*$F*\"\"#F6F>F.*$F*\"\"'F.*$F*\"\"$!\"#F*F.F.,2*$F*\"
+\"*F.*$F*\"\")F.F?F6*$F*\"\"&!\"$F<FKFAF6F=F6F.F.F6/-%#a3GF)FA/-%#Q3GF
+),$*&,(FAF.F*F6F6F.F.FDF6F6/-%#a2GF)F=/-%#Q2GF)*$FDF6/-%#Q0GF)*&,,F?F.
+F<F6FAF6F=F6F.F.F.FDF6/-%#Q1GF),$*&F5F.,.FGF.FIF6F<FCFAF6F*F6F.F.F6F6/
+-%#a1GF)F*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "QQ_z:=factor(
+subs(\",Q4(z)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%QQ_zG**,&!\"\"
+\"\"\"%\"zGF(F(,,*$F)\"\"&F(*$F)\"\"%F(*$F)\"\"#!\"#F)!\"$F1F(F(,&F)F(
+F(F(F',.*$F)\"\")F(F+F'F-F1*$F)\"\"$F'F)F'F(F(F'" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 20 "series(QQ_z,z=0,31);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#+]o%\"zG\"\"#\"\"!\"\"\"\"\"\"F'\"\"#F'\"\"$\"\"(\"\"%
+\"#6\"\"&\"#<\"\"'\"#D\"\"(\"#^\"\")\"#%*\"\"*\"$l\"\"#5\"$!G\"#6\"$'
+\\\"#7\"$())\"#8\"%w:\"#9\"%qF\"#:\"%!)[\"#;\"%I')\"#<\"&w_\"\"#=\"&!*
+p#\"#>\"&cw%\"#?\"&$=%)\"#@\"'\"y[\"\"#A\"'@HE\"#B\"'GXY\"#C\"'*p?)\"#
+D\"(\"4]9\"#E\"(]Ac#\"#F\"(ss_%\"#G\"(/\"**z\"#H\")cM89\"#I-%\"OG6#F'
+\"#J" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "rho:=fsolve(denom(Q
+Q_z),z,0..1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$rhoG$\"?2Rf\"yEWN^
+2NW\\'fc!#I" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 108 "QQ_n_asympt
+:=proc(n) round(subs(z=rho,-1/diff(denom(QQ_z),z)/rho*numer(QQ_z))*rho
+^(-n)) end: QQ_n_asympt(n);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%&roun
+dG6#,$)$\"?2Rf\"yEWN^2NW\\'fc!#I,$%\"nG!\"\"$\"?z@QtsL*oJg`\"3A>aF*" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "count(grammar2,size=40); Q
+Q_n_asympt(40); evalf(\"\"/\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"+
+'[l8>%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"+CeO\">%" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#$\"?]VugqJ$HH!e$>*******!#I" }}}{PARA 0 "" 0 "" 
+{TEXT -1 148 "This solves the original problem. A detailed solution in
+volving reduction of infinite matrices was submitted by D. R. Breach, \+
+University of Toronto." }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 26 "Fixing
+ the number of boxes" }}{PARA 0 "" 0 "" {TEXT -1 96 "The published sol
+ution by D. R. Breach also provided detailed tables for number of ball
+s (size) " }{XPPEDIT 18 0 "n<=20" "1%\"nG\"#?" }{TEXT -1 0 "" }{TEXT 
+-1 21 " and number of boxes " }{XPPEDIT 18 0 "r<=10" "1%\"rG\"#5" }
+{TEXT -1 0 "" }{TEXT -1 72 ". Like before, we could generate specifica
+tions for each given value of " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT 
+-1 0 "" }{TEXT -1 50 ". However, it is possible to solve simultaneousl
+y " }{TEXT 265 3 "all" }{TEXT -1 180 "  such problems by means of biva
+riate generating functions. Roughly, Combstruct makes it possible to i
+nsert marks (in the form of Epsilons that do not modify the counting r
+esults)." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 
+18 "The specification " }{XPPEDIT 18 0 "grammar1" "I)grammar1G6\"" }
+{TEXT -1 0 "" }{TEXT -1 60 " generates objects where all atoms are ano
+nymously labelled " }{XPPEDIT 18 0 "Z" "I\"ZG6\"" }{TEXT -1 0 "" }
+{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "allstructs(
+grammar1,size=2);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#71-%%ProdG6$%\"ZG
+-F%6$F'%(EpsilonGF$F$F$F$F$F$F$F$F$F$F$F$F$F$" }}}{PARA 0 "" 0 "" 
+{TEXT -1 230 "If we wish to keep track of additional informations, we \+
+can just take products with suitable structures of size 0 (Epsilons). \+
+This is a general programming technique of  Combstruct. Here we use b.
+j to mark an occurrence of an a.j." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 158 "grammar1bis:=[Q4,\{\n    seq(Q.i=Union(Epsilon,seq(P
+rod(a.j,Q.j),j=4-i..4)),i=0..4),\n    seq(a.j=Prod(Z,b.j),j=0..4),\n  \+
+  seq(b.j=Epsilon,j=0..4)\n\},unlabelled];" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%,grammar1bisG7%%#Q4G<1/%#Q0G-%&UnionG6$%(EpsilonG-%%P
+rodG6$%#a4GF&/%#Q1G-F+6%F--F/6$%#a3G%#Q3GF./%#Q2G-F+6&F--F/6$%#a2GF;F6
+F./F&-F+6(F--F/6$%#a0GF)-F/6$%#a1GF3F>F6F./F9-F+6'F-FGF>F6F./%#b1GF-/%
+#b2GF-/%#b3GF-/%#b4GF-/%#b0GF-/FF-F/6$%\"ZGFV/FI-F/6$FZFN/F@-F/6$FZFP/
+F8-F/6$FZFR/F1-F/6$FZFT%+unlabelledG" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 60 "subs(\{Prod=``,Epsilon=NULL\},allstructs(grammar1bis,
+size=2));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#71-%!G6$-F%6$%\"ZG%#b3G-F
+%6#F'-F%6$-F%6$F)%#b2GF+-F%6$-F%6$F)%#b4G-F%6#F/-F%6$F4-F%6#F4-F%6$F/F
+;-F%6$F4-F%6#-F%6$F)%#b1G-F%6$F4-F%6#-F%6$F)%#b0G-F%6$F'FA-F%6$F'F;-F%
+6$FCF;-F%6$FCF+-F%6$F/F7-F%6$FJF;-F%6$F'F7-F%6$F4F+" }}}{PARA 0 "" 0 "
+" {TEXT -1 41 "Likewise, we may insert a generic marker " }{XPPEDIT 
+18 0 "b" "I\"bG6\"" }{TEXT -1 2 " f" }{TEXT -1 49 "or each summand in \+
+the compositions described by " }{XPPEDIT 18 0 "grammar2" "I)grammar2G
+6\"" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 190 "gram
+mar2bis:=[Q4,\{\n    seq(Q.i=Union(Epsilon,seq(Prod(a.j,Q.j),j=4-i..4)
+),i=0..4),\n    seq(a.j=Prod(b,Sequence(Z,card=j)),j=0..3),a4=Prod(b,S
+equence(Z,card>=4)),\n    b=Epsilon\n\},unlabelled];" }}{PARA 12 "" 1 
+"" {XPPMATH 20 "6#>%,grammar2bisG7%%#Q4G<-/%#Q0G-%&UnionG6$%(EpsilonG-
+%%ProdG6$%#a4GF&/%#a0G-F/6$%\"bG-%)SequenceG6$%\"ZG/%%cardG\"\"!/F1-F/
+6$F6-F86$F:1\"\"%F</%#Q1G-F+6%F--F/6$%#a3G%#Q3GF./%#Q2G-F+6&F--F/6$%#a
+2GFNFIF./F6F-/F&-F+6(F--F/6$F3F)-F/6$%#a1GFFFQFIF./FL-F+6'F-FZFQFIF./F
+S-F/6$F6-F86$F:/F<\"\"#/Ffn-F/6$F6-F86$F:/F<\"\"\"/FK-F/6$F6-F86$F:/F<
+\"\"$%+unlabelledG" }}}{PARA 0 "" 0 "" {TEXT -1 219 "The functions com
+bstruct[gfeqns] and combstruct[gfsolve] respect such marks and allow f
+or the possibility of assigning auxiliary variables for such marks. Th
+us, one can determine multivariate generating functions. Here " }
+{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 36 " is the variable associated
+ to mark " }{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT -1 1 "." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "gfeqns(op(2..3,grammar2bis),z,[[u,b
+]]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7./-%#Q4G6$%\"zG%\"uG,.\"\"\"F
++*&-%#a0GF'F+-%#Q0GF'F+F+*&-%#a1GF'F+-%#Q1GF'F+F+*&-%#a2GF'F+-%#Q2GF'F
++F+*&-%#a3GF'F+-%#Q3GF'F+F+*&-%#a4GF'F+F%F+F+/F/,&F+F+F@F+/F>,,F+F+F1F
++F6F+F;F+F@F+/F4,(F+F+F;F+F@F+/F2*&-%\"bGF'F+-%\"ZGF'F+/FKF)/F7*&FKF+F
+M\"\"#/FA*&FKF+,,*$,&F+F+FM!\"\"FXF+FXF+FMFX*$FMFRFX*$FM\"\"$FXF+/F9,*
+F+F+F6F+F;F+F@F+/FMF(/F<*&FKF+FMFen/F-FK" }}}{PARA 261 "" 0 "" {TEXT 
+266 12 "Solving for " }{XPPEDIT 18 0 "Q4(z)" "-%#Q4G6#%\"zG" }{TEXT 
+-1 0 "" }{TEXT 275 10 ", we find:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 107 "QQ_zu:=(-u^2*z^2-2*u^2*z^3+u^4*z^6+u+1-u^3*z^4+u*z)*
+(-1+z)/(u*z^2-1)/(u^4*z^8-u^2*z^5-2*u^2*z^4-u*z^3-z+1);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%&QQ_zuG**,0*&%\"uG\"\"#%\"zGF)!\"\"*&F(F)F*\"
+\"$!\"#*&F(\"\"%F*\"\"'\"\"\"F(F2F2F2*&F(F-F*F0F+*&F(F2F*F2F2F2,&F+F2F
+*F2F2,&*&F(F2F*F)F2F+F2F+,.*&F(F0F*\"\")F2*&F(F)F*\"\"&F+*&F(F)F*F0F.*
+&F(F2F*F-F+F*F+F2F2F+" }}}{PARA 0 "" 0 "" {TEXT -1 75 "We then automat
+ically obtained the main table in the solution published by " }{TEXT 
+267 11 "SIAM Review" }{TEXT -1 123 ". We can even detect errors: for i
+nstance, in the last line we must have 1261 (instead of 1211) and 4756
+ (instead of 4762)!" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "map(s
+eries,series(QQ_zu,z=0,21),u,infinity);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#+O%\"zG+'%\"uG\"\"\"\"\"!F'\"\"\"F(+%F&F'\"\"\"\"\"\"F*\"\"#F*\"
+\"$+)F&F'\"\"\"\"\"&\"\"#F'\"\"$\"\"%+)F&F'\"\"\"\"\"'\"\"#\"\"%\"\"$
+\"\"&+)F&F'\"\"\"\"\"(\"\"#\"\"*\"\"$\"\"'+)F&F'\"\"\"\"\")\"\"#\"#;\"
+\"$\"\"(+-F&F'\"\"\"F@\"\"#\"#D\"\"$\"#:\"\"%F'\"\"&\"\")+-F&F'\"\"\"
+\"#5\"\"#\"#N\"\"$\"#S\"\"%FE\"\"&\"\"*+-F&F'\"\"\"\"#6\"\"#\"#Y\"\"$
+\"#w\"\"%\"#J\"\"&\"#5+-F&F'\"\"\"\"#7\"\"#\"#e\"\"$\"$C\"\"\"%\"#&)\"
+\"&\"#6+1F&F'\"\"\"\"#8\"\"#\"#r\"\"$\"$&=\"\"%\"$!>\"\"&FW\"\"'F'\"\"
+(\"#7+1F&F'\"\"\"\"#9\"\"#Fjo\"\"$\"$g#\"\"%\"$g$\"\"&\"$a\"\"\"'F_p\"
+\"(\"#8+1F&F'\"\"\"FO\"\"#\"$+\"\"\"$\"$]$\"\"%\"$5'\"\"&\"$C%\"\"'F]o
+\"\"(\"#9+1F&F'\"\"\"FG\"\"#\"$;\"\"\"$\"$c%\"\"%\"$c*\"\"&\"$I*\"\"'
+\"$&H\"\"(\"#:+5F&F'\"\"\"\"#<\"\"#\"$L\"\"\"$\"$z&\"\"%\"%:9\"\"&\"%v
+<\"\"'\"$*))\"\"(\"#q\"\")F'\"\"*\"#;+5F&F'\"\"\"\"#=\"\"#\"$^\"\"\"$
+\"$?(\"\"%\"%0?\"\"&\"%!3$\"\"'\"%)=#\"\"(\"$[%\"\")\"#>\"\"*\"#<+5F&F
+'\"\"\"Fdu\"\"#\"$q\"\"\"$\"$!))\"\"%\"%XF\"\"&\"%&)\\\"\"'\"%_Y\"\"(
+\"%p;\"\")\"$b\"\"\"*\"#=+5F&F'\"\"\"\"#?\"\"#Fep\"\"$\"%g5\"\"%\"%bO
+\"\"&\"%]w\"\"'\"%\"*))\"\"(\"%=Z\"\")\"$0)\"\"*\"#>+9F&F'\"\"\"\"#@\"
+\"#\"$6#\"\"$\"%h7\"\"%\"%cZ\"\"&\"&c7\"\"\"'\"&'o:\"\"(\"&,7\"\"\")\"
+%OJ\"\"*\"$E\"\"#5F'\"#6\"#?+%F&-%\"OG6#F'F(\"#@" }}}{PARA 0 "" 0 "" 
+{TEXT -1 72 "We have also easy access to any subproblem defined by fix
+ing the number " }{XPPEDIT 18 0 "r" "I\"rG6\"" }{TEXT -1 0 "" }{TEXT 
+-1 10 " of boxes:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "map(nor
+mal,series(QQ_zu,u=0,8));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+5%\"uG\"
+\"\"\"\"!,$*$,&!\"\"F%%\"zGF%F*F*\"\"\",$*(F+\"\"%,&!\"&F%F+F/F%F)!\"#
+F*\"\"#*(F+F/,(F*F%F+F**$F+\"\"&F%F%F)!\"$\"\"$*(F+\"\"),(\"#:F%F+!#?*
+$F+\"\"#\"\"'F%F)!\"%\"\"%,$*(F+F;,,F%F%F+\"\"$F?F%F6!#6*$F+FA\"\"(F%F
+)F1F*\"\"&*(F+\"#7,,\"#NF%F+!#cF?\"#D*$F+FGFBFIF%F%F)!\"'\"\"'*(F+FM,0
+F*F%F+FSF?FSFRF*F6\"#mFI!#u*$F+FJ\"#@F%F)!\"(\"\"(-%\"OG6#F%\"\")" }}}
+}}}{MARK "2 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 }

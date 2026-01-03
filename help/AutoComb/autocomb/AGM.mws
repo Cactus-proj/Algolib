@@ -1,0 +1,322 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "" 0 1 0 0 
+0 0 0 0 2 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 264 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Out
+put" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "T
+itle" 0 18 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 0 0 0 0 0 0 }3 0 
+0 -1 12 12 0 0 0 0 0 0 19 0 }{PSTYLE "Author" 0 19 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 8 8 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 260 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 262 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT 256 16 "GFUN AND THE AGM" }}
+{PARA 19 "" 0 "" {TEXT 257 11 "Bruno Salvy" }}{PARA 261 "" 0 "" {TEXT 
+-1 12 "January 1998" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 4 "Let " }{XPPEDIT 18 0 "a" "I\"aG6\"" }{TEXT -1 5 " and " 
+}{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT -1 36 " be two positive real numb
+ers, with " }{XPPEDIT 18 0 "a>b" "2%\"bG%\"aG" }{TEXT -1 6 ". The " }
+{TEXT 258 20 "arithmetic-geometric" }{TEXT -1 9 " mean of " }{XPPEDIT 
+18 0 "a" "I\"aG6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "b" "I\"bG6\"" 
+}{TEXT -1 61 " is classically defined as the common limit of the seque
+nces " }{XPPEDIT 18 0 "a[k]" "&%\"aG6#%\"kG" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "b[k]" "&%\"bG6#%\"kG" }{TEXT -1 12 " defined by\n" }
+{XPPEDIT 18 0 "a[k+1]=(a[k]+b[k])/2, b[k+1]=sqrt(a[k]*b[k])" "6$/&%\"a
+G6#,&%\"kG\"\"\"\"\"\"F)*&,&&F%6#F(F)&%\"bG6#F(F)F)\"\"#!\"\"/&F06#,&F
+(F)\"\"\"F)-%%sqrtG6#*&&F%6#F(F)&F06#F(F)" }{TEXT -1 7 ", with " }
+{XPPEDIT 18 0 "a[0]=a" "/&%\"aG6#\"\"!F$" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "b[0]=b" "/&%\"bG6#\"\"!F$" }{TEXT -1 68 ".\nThat the se
+quences converge to the same limit can be inferred from" }}}{EXCHG 
+{PARA 262 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "a[k+1]^2-b[k+1]^2=((a
+[k]-b[k])/2)^2" "/,&*$&%\"aG6#,&%\"kG\"\"\"\"\"\"F*\"\"#F**$&%\"bG6#,&
+F)F*\"\"\"F*\"\"#!\"\"*$*&,&&F&6#F)F*&F/6#F)F4F*\"\"#F4\"\"#" }{TEXT 
+-1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 39 "This common limit is k
+nown by Maple as " }{HYPERLNK 17 "GaussAGM" 2 "GaussAGM" "" }{XPPEDIT 
+18 0 "``(a,b)" "-%!G6$%\"aG%\"bG" }{TEXT -1 105 ". It was discovered b
+y Gauss that the arithmetic-geometric mean is related to hypergeometri
+c functions by" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "GaussAGM(
+a,b)=a/hypergeom([1/2, 1/2],[1],1-b^2/a^2);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/-%)GaussAGMG6$%\"aG%\"bG*&F'\"\"\"-%*hypergeomG6%7$#F*
+\"\"#F/7#F*,&F*F**&F(F0F'!\"#!\"\"F5" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 24 "eval(subs(a=3.,b=2.,\"));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/$\"+O/ouC!\"*$\"+P/ouCF&" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 52 "This worksheet,  largely inspired by [1], shows how " }
+{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 123 " can be used to guess a
+nd then prove this result, as well as a generalization of it due to J.
+ M. Borwein and P. B. Borwein." }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 
+23 "The functional equation" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 143 "Fo
+llowing [1], we start by introducing a generalization of the arithmeti
+c-geometric mean obtained by considering the following iteration where
+ " }{XPPEDIT 18 0 "N>1" "2\"\"\"%\"NG" }{TEXT -1 16 " is an integer: \+
+" }}}{EXCHG {PARA 256 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "a[k+1]=(a
+[k]+(N-1)*b[k])/N,b[k+1]=(a[k+1]^N-((a[k]-b[k])/N)^N)^(1/N)" "6$/&%\"a
+G6#,&%\"kG\"\"\"\"\"\"F)*&,&&F%6#F(F)*&,&%\"NGF)\"\"\"!\"\"F)&%\"bG6#F
+(F)F)F)F1F3/&F56#,&F(F)\"\"\"F)),&)&F%6#,&F(F)\"\"\"F)F1F))*&,&&F%6#F(
+F)&F56#F(F3F)F1F3F1F3*&\"\"\"F)F1F3" }{TEXT -1 1 "." }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 41 "where the second equality is motivated by" }}}
+{EXCHG {PARA 257 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "a[k+1]^N-b[k+1
+]^N=((a[k]-b[k])/N)^N" "/,&)&%\"aG6#,&%\"kG\"\"\"\"\"\"F*%\"NGF*)&%\"b
+G6#,&F)F*\"\"\"F*F,!\"\")*&,&&F&6#F)F*&F/6#F)F3F*F,F3F," }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 87 "from which follows that both sequences co
+nverge to a common limit, which is denoted by " }{XPPEDIT 18 0 "M[N](a
+,b)" "-&%\"MG6#%\"NG6$%\"aG%\"bG" }{TEXT -1 56 ". The arithmetic-geome
+tric mean corresponds to the case " }{XPPEDIT 18 0 "N=2" "/%\"NG\"\"#
+" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 13 "The function \+
+" }{XPPEDIT 18 0 "M[N](a,b)" "-&%\"MG6#%\"NG6$%\"aG%\"bG" }{TEXT -1 
+35 " is easily seen to be homogeneous: " }{XPPEDIT 18 0 "M[N](lambda*a
+,lambda*b)=lambda*M[N](a,b)" "/-&%\"MG6#%\"NG6$*&%'lambdaG\"\"\"%\"aGF
++*&F*F+%\"bGF+*&F*F+-&F%6#F'6$F,F.F+" }{TEXT -1 6 ", for " }{XPPEDIT 
+18 0 "lambda>0" "2\"\"!%'lambdaG" }{TEXT -1 42 ". Together with the ob
+vious property that " }{XPPEDIT 18 0 "M[N](a[0],b[0])=M[N](a[1],b[1])
+" "/-&%\"MG6#%\"NG6$&%\"aG6#\"\"!&%\"bG6#F,-&F%6#F'6$&F*6#\"\"\"&F.6#
+\"\"\"" }{TEXT -1 24 ", this implies that for " }{XPPEDIT 18 0 "x" "I
+\"xG6\"" }{TEXT -1 4 " in " }{XPPEDIT 18 0 "` `(0,1)" "-%\"~G6$\"\"!\"
+\"\"" }{TEXT -1 1 "," }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 1 " " }
+{XPPEDIT 18 0 "M[N](1,(1-x^N)^(1/N))=(1+(N-1)*x)*M[N](1,(1-x)/(1+(N-1)
+*x))" "/-&%\"MG6#%\"NG6$\"\"\"),&\"\"\"\"\"\")%\"xGF'!\"\"*&\"\"\"F-F'
+F0*&,&\"\"\"F-*&,&F'F-\"\"\"F0F-F/F-F-F--&F%6#F'6$\"\"\"*&,&\"\"\"F-F/
+F0F-,&\"\"\"F-*&,&F'F-\"\"\"F0F-F/F-F-F0F-" }{TEXT -1 2 ". " }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 22 "Defining the function " }{XPPEDIT 
+18 0 "A[N](x)" "-&%\"AG6#%\"NG6#%\"xG" }{TEXT -1 3 " by" }}}{EXCHG 
+{PARA 259 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "A[N](x)=1/M[N](1,(1-x
+)^(1/N))" "/-&%\"AG6#%\"NG6#%\"xG*&\"\"\"\"\"\"-&%\"MG6#F'6$\"\"\"),&
+\"\"\"F,F)!\"\"*&\"\"\"F,F'F6F6" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+49 "the equation above translates into the following " }{TEXT 259 19 "
+functional equation" }{TEXT -1 5 " for " }{XPPEDIT 18 0 "A[N](x)" "-&%
+\"AG6#%\"NG6#%\"xG" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "funeq:=(1+(N-1)*x)*A[N](x^N)=A[N](1-((1-x)/(1+(N-1)*x))
+^N):" ">%&funeqG/*&,&\"\"\"\"\"\"*&,&%\"NGF(\"\"\"!\"\"F(%\"xGF(F(F(-&
+%\"AG6#F+6#)F.F+F(-&F16#F+6#,&\"\"\"F()*&,&\"\"\"F(F.F-F(,&\"\"\"F(*&,
+&F+F(\"\"\"F-F(F.F(F(F-F+F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 84 "wh
+ich plays a central r\364le in this worksheet. It is not too difficult
+ to show that  " }{XPPEDIT 18 0 "A[N](x)" "-&%\"AG6#%\"NG6#%\"xG" }
+{TEXT -1 139 " is analytic in the neighborhood of the origin and that \+
+the functional equation above has a unique analytic solution in this n
+eighborhood. " }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 18 "The quadratic \+
+case" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 17 "This is the case " }
+{XPPEDIT 18 0 "N=2" "/%\"NG\"\"#" }{TEXT -1 51 " and Gauss's theorem i
+s equivalent to stating that " }}}{EXCHG {PARA 260 "" 0 "" {TEXT -1 1 
+" " }{XPPEDIT 18 0 "A[2](x)=hypergeom([1/2,1/2],[1],x)" "/-&%\"AG6#\"
+\"#6#%\"xG-%*hypergeomG6%7$*&\"\"\"\"\"\"\"\"#!\"\"*&\"\"\"F0\"\"#F27#
+\"\"\"F)" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 11 "We no
+w use " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 126 " to first gues
+s and then prove this result. The first step is to use the functional \+
+equation to compute a series expansion of " }{XPPEDIT 18 0 "A[2](x)" "
+-&%\"AG6#\"\"#6#%\"xG" }{TEXT -1 168 ", then we use this series to gue
+ss a possible closed form which turns out to be analytic, then we show
+ that this analytic function does satisfy the functional equation." }}
+}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 16 "Series expansion" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 38 "Starting from the functional equation," }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "funeq2:=subs(N=2,A[2]=A,op
+(1,funeq)-op(2,funeq));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'funeq2G,
+&*&,&\"\"\"F(%\"xGF(F(-%\"AG6#*$F)\"\"#F(F(-F+6#,&F(F(*&,&F(F(F)!\"\"F
+.F'!\"#F4F4" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 79 "a series solution \+
+is easily obtained by a method of undeterminate coefficients:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "sol:=1:" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 114 "for i to 12 do \n   sol:=sol+x^i*solve(op(1,
+series(eval(\n   subs(A=unapply(sol+a*x^i,x),funeq2)),x,i+2)),a) od:so
+l;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,<\"\"\"F$%\"xG#F$\"\"%*$F%\"\"#
+#\"\"*\"#k*$F%\"\"$#\"#D\"$c#*$F%F'#\"%D7\"&%Q;*$F%\"\"&#\"%pR\"&Ob'*$
+F%\"\"'#\"&hL&\"(w&[5*$F%\"\"(#\"'TS=\"(/V>%*$F%\"\")#\")D#49%\"+C=ut5
+*$F%F+#\"*DSuZ\"\"+'Hn\\H%*$F%\"#5#\"+@PUL@\",OnZ>(o*$F%\"#6#\"+Tg`vx
+\"-Wp!z([F*$F%\"#7#\"-@&H(GqX\"/;W/'=#f<" }}}}{SECT 0 {PARA 4 "" 0 "" 
+{TEXT -1 21 "Guessing the solution" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+18 "From this series, " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 61 
+" guesses a differential equation which could be satisfied by " }
+{XPPEDIT 18 0 "A(x)" "-%\"AG6#%\"xG" }{TEXT -1 1 ":" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 61 "deq:=op(1,gfun[seriestodiffeq](series(sol
+,x,13),y(x),[ogf]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$deqG<%/-%\"
+yG6#\"\"!\"\"\",(-F(6#%\"xGF+*&,&!\"%F+F/\"\")F+-%%diffG6$F-F/F+F+*&,&
+F/F2*$F/\"\"#\"\"%F+-F56$F4F/F+F+/--%\"DG6#F(F)#F+F;" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 88 "It turns out that Maple's dsolve function is un
+able to solve this differential equation:" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 17 "dsolve(deq,y(x));" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 12 "We then use " }{HYPERLNK 17 "gfun[diffeqtorec]" 2 "gfun[diffeqt
+orec]" "" }{TEXT -1 116 " which deduces from this differential equatio
+n the recurrence satisfied by the Taylor coefficients of its solutions
+:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "gfun[diffeqtorec](deq,
+y(x),u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%,&*&,(\"\"\"F'%\"nG\"
+\"%*$F(\"\"#F)F'-%\"uG6#F(F'F'*&,(F(!\")!\"%F'F*F2F'-F-6#,&F(F'F'F'F'F
+'/-F-6#\"\"!F'/-F-6#F'#F'F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 68 "Fr
+om this first order linear recurrence, a solution is easily found:" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "rsolve(\",u(n));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#*(-%&GAMMAG6#,&%\"nG\"\"\"#F)\"\"#F)F+-F%6#,
+&F(F)F)F)!\"#%#PiG!\"\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 14 "hence \+
+the sum:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "y(x)=sum(\"*x^n
+,n=0..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"yG6#%\"xG-%*h
+ypergeomG6%7$#\"\"\"\"\"#F,7#F-F'" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT 
+-1 31 "Proving the result of the guess" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 48 "The proof consists in showing that the function " }
+{XPPEDIT 18 0 "y(x)" "-%\"yG6#%\"xG" }{TEXT -1 64 ", which is obviousl
+y analytic, satisfies the functional equation" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 19 "subs(A=y,funeq2)=0;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/,&*&,&\"\"\"F'%\"xGF'F'-%\"yG6#*$F(\"\"#F'F'-F*6#,&F'F
+'*&,&F'F'F(!\"\"F-F&!\"#F3F3\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+120 "Our approach consists in using closure properties of solutions of
+ linear differential equations that are implemented in " }{HYPERLNK 
+17 "gfun" 2 "gfun" "" }{TEXT -1 284 " to compute a linear differential
+ equation satisfied by the left-hand side of this equation. The proof \+
+then reduces to showing that 0 is the only solution of this differenti
+al equation that is compatible with the initial conditions, which are \+
+0 up to a large order by construction of " }{XPPEDIT 18 0 "y" "I\"yG6
+\"" }{TEXT -1 144 ".\nIt turns out that this proof can be performed di
+rectly from the differential equation, and would apply even if no clos
+ed-form had been found. " }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "Given
+ a linear differential equation satisfied by a series " }{XPPEDIT 18 
+0 "y(x)" "-%\"yG6#%\"xG" }{TEXT -1 15 ", the function " }{HYPERLNK 17 
+"gfun[algebraicsubs]" 2 "gfun[algebraicsubs]" "" }{TEXT -1 55 " comput
+es a  linear differential equation satisfied by " }{XPPEDIT 18 0 "y(f(
+x))" "-%\"yG6#-%\"fG6#%\"xG" }{TEXT -1 51 " for any algebraic function
+, given by a polynomial " }{XPPEDIT 18 0 "P" "I\"PG6\"" }{TEXT -1 11 "
+ such that " }{XPPEDIT 18 0 "P(x,f(x))=0" "/-%\"PG6$%\"xG-%\"fG6#F&\"
+\"!" }{TEXT -1 44 ". Thus a differential equation satisfied by " }
+{XPPEDIT 18 0 "y(1-(1-x)^2/(1+x)^2)" "-%\"yG6#,&\"\"\"\"\"\"*&,&\"\"\"
+F'%\"xG!\"\"\"\"#*$,&\"\"\"F'F+F'\"\"#F,F," }{TEXT -1 43 " is easily c
+omputed from that satisfied by " }{XPPEDIT 18 0 "y(x)" "-%\"yG6#%\"xG
+" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "deq:=op
+(select(has,deq,x)):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 65 "deq
+1:=gfun[algebraicsubs](deq,numer(y-(1-(1-x)^2/(1+x)^2)),y(x));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%deq1G,(*&,&!\"\"\"\"\"%\"xGF)F)-%\"
+yG6#F*F)F)*&,**$F*\"\"$F(*$F*\"\"#!\"$F*F(F)F)F)-%%diffG6$F+F*F)F)*&,*
+*$F*\"\"%F(F0F(F2F)F*F)F)-F66$F5F*F)F)" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 11 "Similarly, " }{XPPEDIT 18 0 "y(x^2)" "-%\"yG6#*$%\"xG\"\"
+#" }{TEXT -1 10 " satisfies" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+36 "gfun[algebraicsubs](deq,y-x^2,y(x));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,(*&-%\"yG6#%\"xG\"\"\"F(F)F)*&,&!\"\"F)*$F(\"\"#\"\"$F)-%%diffG
+6$F%F(F)F)*&,&F(F,*$F(F/F)F)-F16$F0F(F)F)" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 19 "and its product by " }{XPPEDIT 18 0 "-(1+x)" ",$,&\"\"\"
+\"\"\"%\"xGF%!\"\"" }{TEXT -1 10 " satisfies" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 45 "deq2:=gfun[`diffeq*diffeq`](\",y(x)+1+x,y(x));" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%deq2G,(*&,&\"\"\"F(%\"xG!\"\"F(-%
+\"yG6#F)F(F(*&,*F)F(*$F)\"\"$F(*$F)\"\"#F1F*F(F(-%%diffG6$F+F)F(F(*&,*
+F)F*F2F*F0F(*$F)\"\"%F(F(-F56$F4F)F(F(" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 165 "From there, we deduce a differential equation satisfied \+
+by the left-hand side of the functional equation when applied to the h
+ypergeometric function we have guessed:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 38 "gfun[`diffeq+diffeq`](deq1,deq2,y(x));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#,(*&,&\"\"\"F&%\"xG!\"\"F&-%\"yG6#F'F&F&*&,*F'F&
+*$F'\"\"$F&*$F'\"\"#F/F(F&F&-%%diffG6$F)F'F&F&*&,*F'F(F0F(F.F&*$F'\"\"
+%F&F&-F36$F2F'F&F&" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 81 "Analytic so
+lutions of this equation have a coefficient sequence which satisfies  \+
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "gfun[diffeqtorec](\",y(
+x),u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<&,**&%\"nG\"\"#-%\"uG6#F
+&\"\"\"F+*&,(F'F+*$F&F'F+F&\"\"%F+-F)6#,&F&F+F+F+F+F+*&,(F&!\"#F+F+F.!
+\"\"F+-F)6#,&F&F+F'F+F+F+*&,(F&!\"'!\"*F+F.F6F+-F)6#,&F&F+\"\"$F+F+F+/
+-F)6#F+,$&%#_CG6#\"\"!F//-F)6#F'FF/-F)FHFE" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 124 "and thus the first three zeroes of the Taylor expansion \+
+of the left-hand side of the functional equation conclude the proof." 
+}}}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 14 "The cubic case" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 108 "It has been discovered by J. M. Borwein \+
+and P. B. Borwein that a hypergeometric expression also exists when " 
+}{XPPEDIT 18 0 "N=3" "/%\"NG\"\"$" }{TEXT -1 91 ". Again, the same ste
+ps as above lead to guessing and then proving the following result by \+
+" }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT 262 7 "Theorem" }{TEXT -1 25 ". [Borwein & Borwein 90] " 
+}{TEXT 263 13 "The function " }{XPPEDIT 264 0 "A[3](x)" "-&%\"AG6#\"\"
+$6#%\"xG" }{TEXT 265 77 " corresponding to the AGM iteration of order \+
+3 has the following closed form:" }}}{EXCHG {PARA 263 "" 0 "" {TEXT 
+-1 1 " " }{XPPEDIT 18 0 "A[3](x)=hypergeom([1/3,2/3],[1],x)" "/-&%\"AG
+6#\"\"$6#%\"xG-%*hypergeomG6%7$*&\"\"\"\"\"\"\"\"$!\"\"*&\"\"#F0\"\"$F
+27#\"\"\"F)" }{TEXT -1 1 "." }}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 16 "S
+eries expansion" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 37 "We start from t
+he functional equation" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "f
+uneq3:=subs(N=3,A[3]=A,op(1,funeq)-op(2,funeq));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%'funeq3G,&*&,&\"\"\"F(%\"xG\"\"#F(-%\"AG6#*$F)\"\"$F(
+F(-F,6#,&F(F(*&,&F(F(F)!\"\"F/F'!\"$F5F5" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 68 "and compute the first terms of the series expansion of th
+e solution:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "sol:=1:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 114 "for i to 12 do \n   sol:=so
+l+x^i*solve(op(1,series(eval(\n   subs(A=unapply(sol+a*x^i,x),funeq3))
+,x,i+2)),a) od:sol;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,<\"\"\"F$%\"xG
+#\"\"#\"\"**$F%F'#\"#5\"#\")*$F%\"\"$#\"$g&\"%hl*$F%\"\"%#\"%]Q\"&\\!f
+*$F%\"\"&#\"&G!G\"'T9`*$F%\"\"'#\"(/f!>\")@n/V*$F%\"\"(#\")![!y9\"**[?
+uQ*$F%\"\")#\"*q\"eo6\"+,Wy'[$*$F%F(#\",+0\"y&f(\".H$Ge'=a#*$F%F+#\"-g
+7Uxnh\"/h\\X#zwG#*$F%\"#6#\".?vQbl0&\"0\\Y4K6*e?*$F%\"#7#\"0+o%pI\"3w$
+\"2plm*p\"=xm\"" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 21 "Guessing the
+ solution" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 78 "Again, this is a luck
+y situation where a differential equation can be guessed:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 61 "deq:=op(1,gfun[seriestodiffeq](seri
+es(sol,x,13),y(x),[ogf]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$deqG<
+%/--%\"DG6#%\"yG6#\"\"!#\"\"#\"\"*/-F+F,\"\"\",(-F+6#%\"xGF/*&,&!\"*F3
+F7\"#=F3-%%diffG6$F5F7F3F3*&,&F7F:*$F7F/F0F3-F=6$F<F7F3F3" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 43 "From there, we find a closed-form as befo
+re" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "gfun[diffeqtorec](deq
+,y(x),u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"uG6#\"\"\"#\"\"
+#\"\"*/-F&6#\"\"!F(,&*&,(F*F(%\"nGF+*$F3F*F+F(-F&6#F3F(F(*&,(F3!#=!\"*
+F(F4F:F(-F&6#,&F3F(F(F(F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+15 "rsolve(\",u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*,-%&GAMMAG6
+#,&%\"nG\"\"\"#\"\"#\"\"$F*F*-F&6#,&F)F*#F*F-F*F*-F&6#,&F)F*F*F*!\"#%#
+PiG!\"\"F-#F*F,F8" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "y(x)=s
+um(\"*x^n,n=0..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"yG6#
+%\"xG-%*hypergeomG6%7$#\"\"\"\"\"$#\"\"#F.7#F-F'" }}}}{SECT 0 {PARA 4 
+"" 0 "" {TEXT -1 31 "Proving the result of the guess" }}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 25 "The same routine applies:" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 19 "subs(A=y,funeq3)=0;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/,&*&,&\"\"\"F'%\"xG\"\"#F'-%\"yG6#*$F(\"\"$F'F'-F+6#,&
+F'F'*&,&F'F'F(!\"\"F.F&!\"$F4F4\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 27 "deq:=op(select(has,deq,x)):" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 67 "deq1:=gfun[algebraicsubs](deq,numer(y-(1-(1-x)^3
+/(1+2*x)^3)),y(x));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%deq1G,(*&,(
+\"\"#\"\"\"%\"xG!\"%*$F*F(F(F)-%\"yG6#F*F)F)*&,,!\"\"F)*$F*\"\"&\"\")*
+$F*\"\"%\"#7*$F*\"\"$F7F,F7F)-%%diffG6$F-F*F)F)*&,.*$F*\"\"'F7F3F7F6F)
+F9F+F,F+F*F2F)-F<6$F;F*F)F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+36 "gfun[algebraicsubs](deq,y-x^3,y(x));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,(*&-%\"yG6#%\"xG\"\"\"F(\"\"#F**&,&!\"\"F)*$F(\"\"$\"\"%F)-%%di
+ffG6$F%F(F)F)*&,&F(F-*$F(F0F)F)-F26$F1F(F)F)" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 47 "deq2:=gfun[`diffeq*diffeq`](\",y(x)+1+2*x,y(x));
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%deq2G,(*&,(\"\"#\"\"\"%\"xG!\"%
+*$F*F(F(F)-%\"yG6#F*F)F)*&,,!\"\"F)*$F*\"\"&\"\")*$F*\"\"%\"#7*$F*\"\"
+$F7F,F7F)-%%diffG6$F-F*F)F)*&,.*$F*\"\"'F7F3F7F6F)F9F+F,F+F*F2F)-F<6$F
+;F*F)F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "gfun[`diffeq+dif
+feq`](deq1,deq2,y(x));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,(*&,(\"\"#
+\"\"\"%\"xG!\"%*$F(F&F&F'-%\"yG6#F(F'F'*&,,!\"\"F'*$F(\"\"&\"\")*$F(\"
+\"%\"#7*$F(\"\"$F5F*F5F'-%%diffG6$F+F(F'F'*&,.*$F(\"\"'F5F1F5F4F'F7F)F
+*F)F(F0F'-F:6$F9F(F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "g
+fun[diffeqtorec](\",y(x),u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<(,
+.*&,&*$%\"nG\"\"#\"\"%F(F*\"\"\"-%\"uG6#F(F+F+*&,(F(\"#;\"#7F+F'F*F+-F
+-6#,&F(F+F+F+F+F+*&,(F'F+F(\"\"(F2F+F+-F-6#,&F(F+F)F+F+F+*&,(!#;F+F(F>
+F'!\"%F+-F-6#,&F(F+\"\"$F+F+F+*&,(!#YF+F'F?F(!#GF+-F-6#,&F(F+F*F+F+F+*
+&,(F(!#5!#DF+F'!\"\"F+-F-6#,&F(F+\"\"&F+F+F+/-F-6#F)\"\"!/-F-6#F*&%#_C
+G6#FW/-F-6#FC,$Fen#F+F)/-F-Fgn,$Fen#\"\"*F*/-F-6#F+,$Fen#FaoF)" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 123 "and thus the first five zeroes of
+ the Taylor expansion of the left-hand side of the functional equation
+ conclude the proof." }}}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 10 "Conclu
+sion" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 51 "These results are very goo
+d examples of the use of " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 
+384 ": experiments first lead to conjecture a general form for the sol
+ution to a problem and then a completely different process leads to a \+
+proof. However, the apparent ease with which the problems treated here
+ are solved using gfun hides the preliminary work which led to the for
+m under which this approach could work. For example this approach does
+ not seem to work for higher values of " }{XPPEDIT 18 0 "N" "I\"NG6\"
+" }{TEXT -1 36 ", where similar results might exist." }}}}{SECT 0 
+{PARA 3 "" 0 "" {TEXT -1 12 "Bibliography" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 99 "[1] Arithmetic-Goemetric Means Revisited. Jonathan M. Bor
+wein, Petr Lisonek and John A. Macdonald. " }{TEXT 260 9 "MapleTech" }
+{TEXT -1 2 ", " }{TEXT 261 3 "4-1" }{TEXT -1 19 ", pp. 20-27 (1997)." 
+}}}}}{MARK "0 4 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

@@ -1,0 +1,726 @@
+{VERSION 3 0 "IBM INTEL LINUX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 1 18 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 258 "" 1 24 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 259 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 "" 1 12 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 1 12 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 1 8 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 1 8 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 267 "" 1 8 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 
+"" 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 
+"" 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 
+255 1 0 0 0 0 0 1 3 0 3 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Hea
+ding 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 
+0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "" 2 6 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 2 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Map
+le Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Title" 0 18 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 0 0 0 0 0 0 }3 0 0 -1 12 12 0 
+0 0 0 0 0 19 0 }{PSTYLE "Author" 0 19 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 8 8 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 260 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 262 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 264 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 265 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 266 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 267 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 268 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 269 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 270 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 271 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 272 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 0 273 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 274 1 
+{CSTYLE "" -1 -1 "" 1 10 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT -1 48 "Borel Resummation of Dive
+rgent Series Using Gfun" }}{PARA 19 "" 0 "" {TEXT 256 51 "Fr\351d\351r
+ic Chyzak, Marianne Durand, and Bruno Salvy\n\n" }{TEXT -1 10 "June, 2
+001" }}{PARA 0 "" 0 "" {TEXT -1 1 "\n" }{TEXT 262 8 "Abstract" }{TEXT 
+-1 7 ": We ex" }{TEXT 265 0 "" }{TEXT -1 343 "pand on ideas of Balser,
+ Lutz, and Sch\344fke by showing how coefficients and integrals involv
+ed in calculations related to the analytic continuation of Borel trans
+forms obey simple recurrences that lead to efficient numerical computa
+tions.  This work is a follow-up to a talk by Donald Lutz at our Algor
+ithms seminar, and summarized in [Durand]." }}}{EXCHG {PARA 3 "" 0 "" 
+{TEXT -1 33 "1. Borel-Laplace resummation and " }{TEXT 261 0 "" }
+{TEXT -1 9 "Euler acc" }{TEXT 260 0 "" }{TEXT -1 9 "eleration" }}
+{PARA 0 "" 0 "" {TEXT -1 108 "Starting with a linear differential equa
+tion with polynomial coefficients satisfied by a formal power series" 
+}}{PARA 256 "" 0 "" {XPPEDIT 18 0 "x^~ = Sum(x[n]*z^n,n = 0 .. infinit
+y);" "6#/)%\"xG%\"|irG-%$SumG6$*&&F%6#%\"nG\"\"\")%\"zGF-F./F-;\"\"!%)
+infinityG" }{TEXT 257 0 "" }{TEXT 258 0 "" }{TEXT 259 0 "" }{TEXT -1 
+1 "," }}{PARA 0 "" 0 "" {TEXT -1 87 "it is possible to compute a diffe
+rential  equation satisfied by the Borel transform of " }{XPPEDIT 18 
+0 "x^~;" "6#)%\"xG%\"|irG" }{TEXT -1 17 ". We assume that " }{XPPEDIT 
+18 0 "x^~;" "6#)%\"xG%\"|irG" }{TEXT -1 31 " is Gevrey 1, which means \+
+that " }{XPPEDIT 18 0 "x[n] <= A*c^n*n!;" "6#1&%\"xG6#%\"nG*(%\"AG\"\"
+\")%\"cGF'F*-%*factorialG6#F'F*" }{TEXT -1 21 "  for some constants " 
+}{XPPEDIT 18 0 "A;" "6#%\"AG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "c;" 
+"6#%\"cG" }{TEXT -1 34 ", so that the Borel transform of  " }{XPPEDIT 
+18 0 "x^~;" "6#)%\"xG%\"|irG" }{TEXT -1 11 " defined by" }}{PARA 257 "
+" 0 "" {XPPEDIT 18 0 "y(z) = Sum(x[n]*z^n/n!,n = 0 .. infinity);" "6#/
+-%\"yG6#%\"zG-%$SumG6$*(&%\"xG6#%\"nG\"\"\")F'F/F0-%*factorialG6#F/!\"
+\"/F/;\"\"!%)infinityG" }{TEXT -1 1 " " }}{PARA 0 "" 0 "" {TEXT -1 
+121 "is convergent on some neighbourhood of the origin. The Borel tran
+sform has an \"inverse\", the Laplace transform defined by" }}{PARA 
+259 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "Laplace(y) = Int(exp(-t/z)*
+y(t),t = 0 .. infinity);" "6#/-%(LaplaceG6#%\"yG-%$IntG6$*&-%$expG6#,$
+*&%\"tG\"\"\"%\"zG!\"\"F4F2-F'6#F1F2/F1;\"\"!%)infinityG" }{TEXT -1 1 
+"." }}{PARA 0 "" 0 "" {TEXT -1 62 "Provided this integral converges, t
+he function it defines has " }{XPPEDIT 18 0 "z*x^~;" "6#*&%\"zG\"\"\")
+%\"xG%\"|irGF%" }{TEXT -1 18 " for expansion as " }{XPPEDIT 18 0 "proc
+ (z) options operator, arrow; 0 end;" "6#R6#%\"zG7\"6$%)operatorG%&arr
+owG6\"\"\"!F*F*F*" }{TEXT -1 42 " +.  Then applying the change of vari
+able " }{XPPEDIT 18 0 "t = phi(alpha);" "6#/%\"tG-%$phiG6#%&alphaG" }
+{TEXT -1 69 " to the integral computes the acceleration \"a la Euler\"
+ [Lutz et al.]" }}{PARA 258 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "z*x
+^~ = Int(exp(-t/z)*y(phi(psi(t))),t = 0 .. infinity);" "6#/*&%\"zG\"\"
+\")%\"xG%\"|irGF&-%$IntG6$*&-%$expG6#,$*&%\"tGF&F%!\"\"F4F&-%\"yG6#-%$
+phiG6#-%$psiG6#F3F&/F3;\"\"!%)infinityG" }{TEXT -1 1 "." }}{PARA 0 "" 
+0 "" {TEXT -1 7 "We note" }}{PARA 260 "" 0 "" {XPPEDIT 18 0 "y(phi(z))
+ = Sum(d[n]*z^n,n = 0 .. infinity);" "6#/-%\"yG6#-%$phiG6#%\"zG-%$SumG
+6$*&&%\"dG6#%\"nG\"\"\")F*F2F3/F2;\"\"!%)infinityG" }{TEXT -1 5 " and \+
+" }{XPPEDIT 18 0 "q[n](z) = Int(exp(-t/z)*psi(t)^n,t = 0 .. infinity);
+" "6#/-&%\"qG6#%\"nG6#%\"zG-%$IntG6$*&-%$expG6#,$*&%\"tG\"\"\"F*!\"\"F
+6F5)-%$psiG6#F4F(F5/F4;\"\"!%)infinityG" }{TEXT -1 2 ", " }}{PARA 0 "
+" 0 "" {TEXT -1 6 "where " }{XPPEDIT 18 0 "psi;" "6#%$psiG" }{TEXT -1 
+53 " is the functional inverse of the  rational function " }{XPPEDIT 
+18 0 "phi;" "6#%$phiG" }{TEXT -1 47 ". In terms of formal power series
+, the product " }{XPPEDIT 18 0 "z*x^~;" "6#*&%\"zG\"\"\")%\"xG%\"|irGF
+%" }{TEXT -1 31 " equals the Taylor expansion of" }}{PARA 261 "" 0 "" 
+{XPPEDIT 18 0 "Sum(q[n]*d[n],n = 0 .. infinity);" "6#-%$SumG6$*&&%\"qG
+6#%\"nG\"\"\"&%\"dG6#F*F+/F*;\"\"!%)infinityG" }{TEXT -1 2 " ," }}
+{PARA 0 "" 0 "" {TEXT -1 20 "where the integrals " }{XPPEDIT 18 0 "q[n
+];" "6#&%\"qG6#%\"nG" }{TEXT -1 21 " are independent of  " }{XPPEDIT 
+18 0 "x^~;" "6#)%\"xG%\"|irG" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 85 "This process is illustrated in \+
+the present worksheet using a simple mapping function " }{XPPEDIT 18 
+0 "phi;" "6#%$phiG" }{TEXT -1 153 " on the double confluent Heun equat
+ion. The Heun equation is the generic differential equation with four \+
+regular singular points located at 0, 1, c, and " }{XPPEDIT 18 0 "infi
+nity;" "6#%)infinityG" }{TEXT -1 134 ", see [DuLoRi92]. The double con
+fluent Heun equation is obtained by letting the  singularity located a
+t c tend  to the one located at " }{XPPEDIT 18 0 "infinity;" "6#%)infi
+nityG" }{TEXT -1 127 ", and the  singularity located at 1 tend to 0. T
+he equation obtained then has  two irregular \nsingular points located
+ at 0 and " }{XPPEDIT 18 0 "infinity;" "6#%)infinityG" }{TEXT -1 77 ".
+ The example we  study  is the double confluent Heun equation in the f
+orm   " }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "heun_infp := z^2*di
+ff(f(z),z,z)+(z+alpha*z^2+alpha)*diff(f(z),z)+(2*alpha*z^2*beta[1]+alp
+ha*z^2+alpha^2*z-2*gamma*z+2*alpha*beta[-1]-alpha)*f(z)/(2*z):" "6#>%*
+heun_infpG,(*&%\"zG\"\"#-%%diffG6%-%\"fG6#F'F'F'\"\"\"F/*&,(F'F/*&%&al
+phaGF/*$F'\"\"#F/F/F3F/F/-F*6$-F-6#F'F'F/F/*(,.**\"\"#F/F3F/F'\"\"#&%%
+betaG6#\"\"\"F/F/*&F3F/*$F'\"\"#F/F/*&F3\"\"#F'F/F/*(\"\"#F/%&gammaGF/
+F'F/!\"\"*(\"\"#F/F3F/&F@6#,$\"\"\"FKF/F/F3FKF/-F-6#F'F/*&\"\"#F/F'F/F
+KF/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "readlib(gfun):" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 48 "Since the point of interest is inf
+inity and the " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 66 " packag
+e works at the origin, we first change the variable (using " }
+{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 "):" }{TEXT 267 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "heunp:=gfun[algebraicsubs](h
+eun_infp,z*f-1,f(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&heunpG,(*&
+,.*()%\"zG\"\"#\"\"\"%&alphaG\"\"\"&%%betaG6#!\"\"F.!\"#*&F-F,F)F,F.*&
+)F-F+F,F*F.F2*&%&gammaGF.F*F,F+*&F-F,&F06#F.F.F3F-F2F.-%\"fG6#F*F.F.*&
+,(*$F)F,F3*&)F*\"\"$F,F-F,F+*&F*F,F-F,F+F.-%%diffG6$F<F*F.F.*&FCF,-FG6
+$F<-%\"$G6$F*F+F.F3" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 73 "We concent
+rate on the following set of special values for the parameters:" }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "paramform:=[alpha=-1,beta[-1]=
+1/2,beta[1]=1/2,gamma=1/3]:" "6#>%*paramformG7&/%&alphaG,$\"\"\"!\"\"/
+&%%betaG6#,$\"\"\"F**&\"\"\"\"\"\"\"\"#F*/&F-6#\"\"\"*&\"\"\"F3\"\"#F*
+/%&gammaG*&\"\"\"F3\"\"$F*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 67 "Sub
+stitution of these parameters in the differential equation gives" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "heun:=subs(paramform,heunp);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%heunG,(*&,&%\"zG#!\"\"\"\"$\"\"
+#\"\"\"F--%\"fG6#F(F-F-*&,(*$)F(F,\"\"\"!\"#*$)F(F+F5F6F(F6F--%%diffG6
+$F.F(F-F-*&F8F5-F:6$F.-%\"$G6$F(F,F-F6" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 86 "From this equation, we obtain a recurrence equation for t
+he Taylor series coefficients" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 49 "recheunseries:=gfun[diffeqtorec](heun,f(z),u(n));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%.recheunseriesG<$,(*&%\"nG\"\"\"-%\"uG6#F(F)!
+\"'*&,(!\"(F)F(!#7*$)F(\"\"#\"\"\"F-F)-F+6#,&F(F)F)F)F)F)*&,&F-F)F(F-F
+)-F+6#,&F(F)F4F)F)F)/-F+6#\"\"!FA" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+70 "This recurrence yields an efficient procedure to evaluate the coef
+fici" }{TEXT 266 0 "" }{TEXT -1 17 "ents recursively:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "heundiv:=gfun[rectoproc](recheunser
+ies union \{u(1)=1/2\},u(n),remember);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%(heundivGR6#%\"nG6\"6#%)rememberGE\\s#\"\"\"#F,\"\"#\"\"!F/,$*
+&,(-9!6#,&9$F,!\"#F,\"#7-F46#,&F7F,!\"\"F,!\"(*&,(F3!\"'F:F9*&F:F,F7F,
+FAF,F7\"\"\"F,FC,&\"\"'F,F7FA!\"\"F=F(F(F(" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 87 "From this procedure, the divergence is clear from the gro
+wth of the first coefficients:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 24 "seq(heundiv(i),i=1..15);" }}{PARA 12 "" 1 "" {XPPMATH 20 "61#
+\"\"\"\"\"##!\"(\"#7#\"$R\"\"$W\"#!%Pm\"%#f##\"'`()f\"&3A'#!)\"z)e')\"
+(Si'=#\",Z**)3D=\")SY=n#!.H7Y$zr_\"+!)[v@G#\"0^45;%\\`G\",?j<\\$>#!3V.
+Z`t%*41'*\".g*['))RJ(#\"6JV1$)z2E?]r&\"0+w$*=$R)Q%#!9PQ`%>@#[rxB?T\"2+
+;))\\]Rj*G#\"<pJaV!Rch2W56RN\"4+_Z\"fVWO&3##!?Fb!Htc\\\\$*HrRQ3d$\"6+c
+1N,gE%eE;#\"B$3lJrLh,5u(H=%[M\"=%\"8+/^X8TMyIjO\"" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 53 "The generating function associated with the sequen
+ce " }{XPPEDIT 18 0 "heundiv(n);" "6#-%(heundivG6#%\"nG" }{TEXT -1 
+151 " is divergent. It is possible here to approach the corresponding \+
+function using summation to the least term. This method consists in su
+mming the terms " }{XPPEDIT 18 0 "heundiv(n)*z^n;" "6#*&-%(heundivG6#%
+\"nG\"\"\")%\"zGF'F(" }{TEXT -1 146 " up to the smallest one. Under ce
+rtain conditions that are fulfilled here, the total differs from the f
+unction by the value of this smallest term." }}}{EXCHG {PARA 0 "> " 0 
+"" {XPPEDIT 19 1 "calculheundiv:=proc(heundiv,z)\nlocal total,previous
+,last,n;\nprevious:=heundiv(1)*z;total:=previous;last:=heundiv(2)*z^2;
+\nfor n from 3 while abs(previous)>abs(last) do\ntotal:=total+last;\np
+revious:=last;\nlast:= heundiv(n)*z^n od;\nuserinfo(1,'heundiv',n,last
+);\nevalf(total)\nend:" "6#>%.calculheundivGR6$%(heundivG%\"zG7&%&tota
+lG%)previousG%%lastG%\"nG6\"F.C(>F+*&-F'6#\"\"\"\"\"\"F(F5>F*F+>F,*&-F
+'6#\"\"#F5*$F(\"\"#F5?(F-\"\"$F5F.2-%$absG6#F,-FB6#F+C%>F*,&F*F5F,F5>F
++F,>F,*&-F'6#F-F5)F(F-F5-%)userinfoG6&\"\"\".F'F-F,-%&evalfG6#F*F.F.F.
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "plot('calculheundiv'(he
+undiv,z),z=0..0.3);" }}{PARA 13 "" 1 "" {INLPLOT "6%-%'CURVESG6$7]p7$
+\"\"!F(7$$\"+]i9Rl!#7$\"+w[*[C$F,7$$\"+WA)GA\"!#6$\"+Pw))GgF,7$$\"+Qeu
+i=F2$\"+FMF<\"*F,7$$\"+j3&o]#F2$\"+(3&>=7F27$$\"+pX*y9$F2$\"+#*)G*=:F2
+7$$\"+WTAUPF2$\"+[t.%z\"F27$$\"+%*zhdVF2$\"+f0Bv?F27$$\"+%>fS*\\F2$\"+
+1d@iBF27$$\"+>$f%GcF2$\"+\"[0Xk#F27$$\"+Dy,\"G'F2$\"+:&R5$HF27$$\"+8<z
+boF2$\"+C2G!=$F27$$\"+v4&G](F2$\"+12RdMF27$$\"+Drc_\")F2$\"+Vf:KPF27$$
+\"+D!*oy()F2$\"+#zKL*RF27$$\"+%pnsM*F2$\"+LdQGUF27$$\"+tiL-5!#5$\"+uwO
+/XF27$$\"+!R5'f5Fcp$\"+\"Q&>LZF27$$\"+/QBE6Fcp$\"+X=k,]F27$$\"+:o?&=\"
+Fcp$\"+8G!\\B&F27$$\"+a&4*\\7Fcp$\"+sWo)[&F27$$\"+j=_68Fcp$\"+jwt6dF27
+$$\"+Wy!eP\"Fcp$\"+[h&=&fF27$$\"+UC%[V\"Fcp$\"+BCPohF27$$\"+J#>&)\\\"F
+cp$\"+6InWkF27$$\"+>:mk:Fcp$\"+Fn/'p'F27$$\"+w&QAi\"Fcp$\"+t-r9pF27$$
+\"+v4L`;Fcp$\"+JT!H.(F27$$\"+uLU%o\"Fcp$\"+&f#G^rF27$$\"+ZPX#p\"Fcp$\"
++1w*==(F27$$\"+?T[+<Fcp$\"+VD`7sF27$$\"+9<\\-<Fcp$\"+&e%>?sF27$$\"+2$*
+\\/<Fcp$\"++!eyA(F27$$\"++p]1<Fcp$\"+;G_NsF27$$\"+$\\9&3<Fcp$\"+U@vFrF
+27$$\"+z'HDr\"Fcp$\"+gl<TrF27$$\"+l[a;<Fcp$\"+9*zX:(F27$$\"+5cgK<Fcp$
+\"+p1)z?(F27$$\"+bjm[<Fcp$\"+(3O5E(F27$$\"+zb^6=Fcp$\"+!p)>luF27$$\"+M
+aKs=Fcp$\"+Z0<dwF27$$\"+6W%)R>Fcp$\"+h[LjyF27$$\"+:K^+?Fcp$\"+(eM</)F2
+7$$\"+l;!H.#Fcp$\"+b,6M\")F27$$\"+8,Hl?Fcp$\"+RrOC#)F27$$\"+3(e*o?Fcp$
+\"+0BXM#)F27$$\"+,tis?Fcp$\"+;)3XC)F27$$\"+*fhW2#Fcp$\"+zi_\\#)F27$$\"
++&*eHw?Fcp$\"+h#oii)F27$$\"+#>I\"y?Fcp$\"+QgCL')F27$$\"+)[k*z?Fcp$\"+*
+GD-k)F27$$\"+v;I(3#Fcp$\"+as:o')F27$$\"+i)QY4#Fcp$\"+bO6'p)F27$$\"+OKJ
+4@Fcp$\"+*o-@v)F27$$\"+4w)R7#Fcp$\"+0#)>3))F27$$\"+WN2c@Fcp$\"+lBDJ*)F
+27$$\"+y%f\")=#Fcp$\"+rp!\\0*F27$$\"+/-a[AFcp$\"+:OY*G*F27$$\"+ial6BFc
+p$\"+vdlP&*F27$$\"+j@OtBFcp$\"+(*[!Qy*F27$$\"+fL'zV#Fcp$\"+t)zX+\"Fcp7
+$$\"+!*>=+DFcp$\"+b#*GI5Fcp7$$\"+E&4Qc#Fcp$\"+g(Hr0\"Fcp7$$\"+g)f`f#Fc
+p$\"+&3m12\"Fcp7$$\"+%>5pi#Fcp$\"+!*[O%3\"Fcp7$$\"+NfSTEFcp$\"+fdr!4\"
+Fcp7$$\"+v;!fl#Fcp$\"+cP5(4\"Fcp7$$\"+WOrdEFcp$\"+7\\!z4\"Fcp7$$\"+6c_
+fEFcp$\"+lmq)4\"Fcp7$$\"+zvLhEFcp$\"+nb45(*F27$$\"+Y&\\Jm#Fcp$\"+jYu8(
+*F27$$\"+\"[tnm#Fcp$\"+5^-@(*F27$$\"+;uRqEFcp$\"+4=GG(*F27$$\"+'GXwn#F
+cp$\"++QsU(*F27$$\"+bJ*[o#Fcp$\"+a-2d(*F27$$\"+k17=FFcp$\"+Jig@)*F27$$
+\"+r\"[8v#Fcp$\"+Yd3%))*F27$$\"+Ijy5GFcp$\"+ZKf!***F27$$\"+/)fT(GFcp$
+\"+(Q\\'45Fcp7$$\"+1j\"[$HFcp$\"+j#=!>5Fcp7$$\"\"$!\"\"$\"+](=#G5Fcp-%
+'COLOURG6&%$RGBG$\"#5FddlF(F(-%+AXESLABELSG6$Q\"z6\"%!G-%%VIEWG6$;F(Fb
+dl%(DEFAULTG" 2 376 376 376 2 0 1 0 2 9 0 4 2 1.000000 45.000000 
+45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 -22808 0 0 0 
+0 0 0 }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 3 "As " }{XPPEDIT 18 0 "z;" "
+6#%\"zG" }{TEXT -1 68 " tends to infinity, the imprecision of this sum
+mation grows quickly." }}}{EXCHG {PARA 3 "" 0 "" {TEXT -1 57 "2. Diffe
+rential equation satisfied by the Borel transform" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 116 "The class of solutions of linear differential equ
+ations enjoys many closure properties which are implemented in the " }
+{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 225 " package for the case o
+f equations with polynomial coefficients. One of them is closure under
+ Borel transform. Here is the differential equation satisfied by the B
+orel transform of the divergent solution of the Heun equation:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "bdeqp:=op(select(has,gfun[bo
+rel](heunp,f(z),'diffeq'),z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&b
+deqpG,**&,&*&%&alphaG\"\"\"&%%betaG6#!\"\"F*\"\"#F)F.F*-%\"fG6#%\"zGF*
+F**&,**&F3F*F)\"\"\"!\"#*$)F)F/F7F*F/F*%&gammaGF8F*-%%diffG6$F0F3F*F**
+&,(F3\"\"'*&F)F7&F,6#F*F*F/F)!\"$F*-F=6$F0-%\"$G6$F3F/F*F**&,&*$)F3F/F
+7F/F6F8F*-F=6$F0-FI6$F3\"\"$F*F*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+46 "and the equation specialized at the parameters" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 28 "bdeq:=subs(paramform,bdeqp):" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 93 "From this follows the recurrence satisfie
+d by the Taylor coefficients of the Borel transform:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 53 "collect(gfun[diffeqtorec](bdeqp,f(z),a(n)
+),a,factor);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*(%&alphaG\"\"\",(&%
+%betaG6#!\"\"!\"#F&F&%\"nG\"\"#F&-%\"aG6#F-F&F+*(,&F-F&F&F&F&,,*$)F-F.
+\"\"\"F.F-\"\"%*$)F%F.F7F&F.F&%&gammaGF,F&-F06#F3F&F&*,F%F7F3F7,&F-F&F
+.F&F&,(F-F.&F)6#F&F,\"\"$F&F&-F06#F?F&F+" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 6 "Check:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "l15:=
+gfun[rectoproc](\{subs(paramform,%),a(0)=0,a(1)=1/2\},a(n),list)(15);
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$l15G72\"\"!#\"\"\"\"\"##!\"(\"#
+C#\"$R\"\"$k)#!%Pm\"&3A'#\"'`()f\"(g\\Y(#!)\"z)e')\"++GpV8#\",Z**)3D=
+\"-+ce5'Q$#!.H7Y$zr_\"0+;wcJx8\"#\"0^45;%\\`G\"1+;+.\"H9-(#!3V.Z`t%*41
+'*\"5+![gM4?+Tl##\"6JV1$)z2E?]r&\"8++o\"RohKhq^<#!9PQ`%>@#[rxB?T\";++c
+5iOD.d7N(Q\"#\"<pJaV!Rch2W56RN\">++;%3tFaCew2c)H\"#!?Fb!Htc\\\\$*HrRQ3
+d$\"A++s-z?32S!G!o$G!=9#\"B$3lJrLh,5u(H=%[M\"=%\"D++?Fu&>M#*[I`rVdr'y
+\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "This list corresponds to th
+e list above, the " }{XPPEDIT 18 0 "k;" "6#%\"kG" }{TEXT -1 27 "th ele
+ment being scaled by " }{XPPEDIT 18 0 "1/k!;" "6#*&\"\"\"\"\"\"-%*fact
+orialG6#%\"kG!\"\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 147 "This differential equation and this recurrence can be used to \+
+compute (but not necessarily fast) the analytic continuation of the Bo
+rel transform. " }}}{EXCHG {PARA 3 "" 0 "" {TEXT -1 93 "3. The coeffic
+ients of the composition with an algebraic function satisfy a linear r
+ecurrence" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 117 "This is another clo
+sure property of solutions of linear differential equation that we exp
+loit here. The coefficients " }{XPPEDIT 18 0 "d[n];" "6#&%\"dG6#%\"nG
+" }{TEXT -1 15 " are defined by" }}{PARA 262 "" 0 "" {XPPEDIT 18 0 "y(
+phi(z)) = Sum(d[n]*z^n,n = 0 .. infinity);" "6#/-%\"yG6#-%$phiG6#%\"zG
+-%$SumG6$*&&%\"dG6#%\"nG\"\"\")F*F2F3/F2;\"\"!%)infinityG" }}{PARA 0 "
+" 0 "" {TEXT -1 6 "where " }{XPPEDIT 18 0 "phi;" "6#%$phiG" }{TEXT -1 
+28 " is a rational function and " }{XPPEDIT 18 0 "y;" "6#%\"yG" }
+{TEXT -1 15 "  is defined by" }}{PARA 263 "" 0 "" {XPPEDIT 18 0 "y(z) \+
+= Sum(x[n]*z^n/n!,n = 0 .. infinity);" "6#/-%\"yG6#%\"zG-%$SumG6$*(&%
+\"xG6#%\"nG\"\"\")F'F/F0-%*factorialG6#F/!\"\"/F/;\"\"!%)infinityG" }
+{TEXT -1 2 " ." }}{PARA 0 "" 0 "" {TEXT -1 42 "On the example of the H
+eun equation, with " }{XPPEDIT 18 0 "phi = 1/((1-t)^2)-1;" "6#/%$phiG,
+&*&\"\"\"\"\"\"*$,&\"\"\"F(%\"tG!\"\"\"\"#F-F(\"\"\"F-" }{TEXT -1 10 "
+ we obtain" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "eq:=(1-z)^2*(f+
+1)-1:" "6#>%#eqG,&*&,&\"\"\"\"\"\"%\"zG!\"\"\"\"#,&%\"fGF)\"\"\"F)F)F)
+\"\"\"F+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "dneqp:=gfun[alg
+ebraicsubs](bdeqp,eq,f(z));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&dneq
+pG,**&,&%&alphaG\"\"%*&F(\"\"\"&%%betaG6#!\"\"F+!\")F+-%\"fG6#%\"zGF+F
++*&,hn!\"%F+%&gammaGF)*&F(\"\"\"&F-6#F+F+\"\"'F4\"#[*&)F(\"\"#F:)F4FAF
+:!\"'*&F(F:FBF:!$n#F(!\"**&F@F:F4F+F=*&F8F+F4F:!#7*$FBF:!$)>*(F(F:FBF:
+F;F:\"#g*&F8F:FBF:\"#7*&)F4\"\"$F:F(F:\"$p%*&F4F:F(F:\"#$)*$FQF:\"$1%*
+(F(F:F;F:F4F:!#I*&)F4F)F:F(F:!$&\\*&)F4\"\"&F:F(F:\"$4$*&)F4F=F:F(F:!$
+0\"*&F@F:FQF:FA*&)F4\"\"(F:F(F:\"#:*$FenF:!$l%*$FhnF:\"$.$*$F\\oF:F]o*
+$F`oF:Fbo*(F(F:FQF:F;F:!#g*&F8F:FQF:F7*(F(F:FhnF:F;F:FC*(FenF:F(F:F;F:
+\"#I*$F@F:!\"#F+-%%diffG6$F1F4F+F+*&,RF9F`pF4FIFD\"$i\"F(FRFJ\"#!*FLFY
+FP!$%QFT!#OFV!$w#FXFOFZ\"$S&Fgn!$o%F[o\"$Y#*&)F4\"\")F:F(F:\"\"**$F_qF
+:FaqF_o!#sFco\"$`%Feo!$K%Fgo\"$S#FhoFcqFio\"#SF\\pFOF]pFY*(F(F:F\\oF:F
+;F:F`pF+-Fbp6$F1-%\"$G6$F4FAF+F+*&,DFD!#:FJF7FP\"#\\FTFAFV\"#CFZ!#\"*F
+gn\"$0\"F[o!#x*$)F4FaqF:F+F^qFFFbqFFF_o\"#NFco!#hFeo\"#&)Fgo!#qFho\"#M
+*&FgrF:F(F:F+F+-Fbp6$F1-F\\r6$F4FRF+F+" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 53 "and the equation when the parameters are specialized:" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "dneq:=gfun[algebraicsubs](b
+deq,eq,f(z));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%dneqG,(*&,,*$)%\"z
+G\"\"%\"\"\"\"\"**$)F*\"\"$F,!#O*$)F*\"\"#F,\"#hF*!#]F+\"\"\"F7-%%diff
+G6$-%\"fG6#F*F*F7F7*&,.F.\"$T\"F(!#v*$)F*\"\"&F,\"#:F2!$B\"F*\"#[!\"'F
+7F7-F96$F;-%\"$G6$F*F4F7F7*&,.F(\"#UF.!#[FB!#=*$)F*\"\"'F,F0F2\"#FF*FH
+F7-F96$F;-FL6$F*F0F7F7" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 39 "The lin
+ear recurrence satisfied by the " }{XPPEDIT 18 0 "d[n];" "6#&%\"dG6#%
+\"nG" }{TEXT -1 18 "  follows directly" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 59 "dnRec:=op(select(has,gfun[diffeqtorec](dneq,f(z),a(n)
+),n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&dnRecG,.*&,&*$)%\"nG\"\"#
+\"\"\"\"\"'*$)F*\"\"$F,F0\"\"\"-%\"aG6#F*F1F1*&,*F*!#$*!#OF1F(!#vF.!#=
+F1-F36#,&F*F1F1F1F1F1*&,*F*\"$o&\"$/%F1F(\"$n#F.\"#UF1-F36#,&F*F1F+F1F
+1F1*&,*F*!%$>\"!%w6F1F(!$6%F.!#[F1-F36#,&F*F1F0F1F1F1*&,*F*\"%U5\"%S7F
+1F(\"$\"HF.\"#FF1-F36#,&F*F1\"\"%F1F1F1*&,*F(!#yF*!$O$!$![F1F.!\"'F1-F
+36#,&F*F1\"\"&F1F1F1" }}}{EXCHG {PARA 3 "" 0 "" {TEXT -1 17 "4. The in
+tegrals " }{XPPEDIT 18 0 "q[n];" "6#&%\"qG6#%\"nG" }{TEXT -1 28 " sati
+sfy a linear recurrence" }}{PARA 0 "" 0 "" {TEXT -1 68 "The property a
+bove does not depend on the specific divergent series " }{XPPEDIT 18 
+0 "x^~;" "6#)%\"xG%\"|irG" }{TEXT -1 80 " that one is resumming. This \+
+allows one to precompute efficiently the integrals " }{XPPEDIT 18 0 "q
+[n](z);" "6#-&%\"qG6#%\"nG6#%\"zG" }{TEXT -1 28 " given the mapping fu
+nction " }{XPPEDIT 18 0 "phi;" "6#%$phiG" }{TEXT -1 173 ". Indeed the \+
+general theory of holonomic function has recently led to symbolic summ
+ation and integration algorithms that turn out to apply to the integra
+l representation of " }{XPPEDIT 18 0 "q[n](z);" "6#-&%\"qG6#%\"nG6#%\"
+zG" }{TEXT -1 224 ". The goal of these algorithms is to derive (system
+s of) linear functional equations, differential or difference, satisfi
+ed by a sum or an integral. We now proceed to use a prototypical imple
+mentation of them in the package " }{HYPERLNK 17 "Mgfun" 2 "Mgfun" "" 
+}{TEXT -1 31 " to obtain a recurrence on the " }{XPPEDIT 18 0 "q[n](z)
+;" "6#-&%\"qG6#%\"nG6#%\"zG" }{TEXT -1 138 ". Then, we prove a theorem
+ that by-passes the general theory of holonomic functions, and recover
+ the same recurrence in a more direct way." }}}{SECT 0 {PARA 3 "" 0 "
+" {TEXT -1 32 "(This section uses a version of " }{HYPERLNK 17 "Mgfun
+" 2 "Mgfun" "" }{TEXT -1 30 " that is not distributed yet.)" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "readlib(Mgfun):" }}}{EXCHG {PARA 0 
+"> " 0 "" {XPPEDIT 19 1 "phi:=1/(1-t)^2-1:" "6#>%$phiG,&*&\"\"\"\"\"\"
+*$,&\"\"\"F(%\"tG!\"\"\"\"#F-F(\"\"\"F-" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "F:=exp(-phi/z)*t^n*diff(phi,t):" "6#>%\"FG*(-%$expG6#,$
+*&%$phiG\"\"\"%\"zG!\"\"F.F,)%\"tG%\"nGF,-%%diffG6$F+F0F," }}}{EXCHG 
+{PARA 0 "> " 0 "" {XPPEDIT 19 1 "ct:=Mgfun[creative_telescoping](F,n::
+shift,t::diff);" "6#>%#ctG-&%&MgfunG6#%5creative_telescopingG6%%\"FG'%
+\"nG%&shiftG'%\"tG%%diffG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#ctG7$,
+**&,&%\"zG\"\"\"*&%\"nGF*F)F*F*F*-%#_fG6$F,%\"tGF*F**&,&F)\"\"$F+F3F*-
+F.6$,&F,F*\"\"#F*F0F*F**&,&F+!\"\"F)F:F*-F.6$,&F,F*F3F*F0F*F**&,(F+!\"
+$F)F@!\"#F*F*-F.6$,&F,F*F*F*F0F*F***F)\"\"\"F0F*,*F:F*F0F3*$)F0F7FFF@*
+$)F0F3FFF*F*F-FF" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "h[n](t)
+:=%[1];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-&%\"hG6#%\"nG6#%\"tG,**&,
+&%\"zG\"\"\"*&F(F/F.F/F/F/-%#_fG6$F(F*F/F/*&,&F.\"\"$F0F6F/-F26$,&F(F/
+\"\"#F/F*F/F/*&,&F0!\"\"F.F=F/-F26$,&F(F/F6F/F*F/F/*&,(F0!\"$F.FC!\"#F
+/F/-F26$,&F(F/F/F/F*F/F/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 
+"H[n](t):=%%[2];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>-&%\"HG6#%\"nG6#%
+\"tG**%\"zG\"\"\"F*F-,*!\"\"F-F*\"\"$*$)F*\"\"#\"\"\"!\"$*$)F*F0F4F-F-
+-%#_fG6$F(F*F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 73 "The meaning of \+
+the previous computation is that the differential equation" }}{PARA 
+272 "" 0 "" {XPPEDIT 18 0 "h[n](t)+diff(H[n](t),t) = 0;" "6#/,&-&%\"hG
+6#%\"nG6#%\"tG\"\"\"-%%diffG6$-&%\"HG6#F)6#F+F+F,\"\"!" }}{PARA 0 "" 
+0 "" {TEXT -1 91 "holds. This can be viewed as a differential-differen
+ce relation satisfied by the integrand " }{XPPEDIT 18 0 "f[n](z,t);" "
+6#-&%\"fG6#%\"nG6$%\"zG%\"tG" }{TEXT -1 27 ". Now, integrating between
+ " }{XPPEDIT 18 0 "-1;" "6#,$\"\"\"!\"\"" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "1;" "6#\"\"\"" }{TEXT -1 64 " returns a non-homogeneous
+ differential equation in the integral" }}{PARA 273 "" 0 "" {XPPEDIT 
+18 0 "q[n](z) = int(f[n](z,t),t = -1 .. 1);" "6#/-&%\"qG6#%\"nG6#%\"zG
+-%$intG6$-&%\"fG6#F(6$F*%\"tG/F3;,$\"\"\"!\"\"\"\"\"" }{TEXT -1 1 "," 
+}}{PARA 0 "" 0 "" {TEXT -1 6 "namely" }}{PARA 271 "" 0 "" {XPPEDIT 18 
+0 "int(h[n](t),t = -1 .. 1)+H[n](1)-H[n](-1) = 0;" "6#/,(-%$intG6$-&%
+\"hG6#%\"nG6#%\"tG/F.;,$\"\"\"!\"\"\"\"\"\"\"\"-&%\"HG6#F,6#\"\"\"F5-&
+F86#F,6#,$\"\"\"F3F3\"\"!" }{TEXT -1 1 "," }}{PARA 0 "" 0 "" {TEXT -1 
+40 "where the integral rewrites in terms of " }{XPPEDIT 18 0 "q[n](z);
+" "6#-&%\"qG6#%\"nG6#%\"zG" }{TEXT -1 3 " as" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 63 "Int(h[n](t),t=-1..1)=eval(subs(_f=unapply(q[n](z
+),n,t),ct[1]));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#/-%$IntG6$,**&,&%\"
+zG\"\"\"*&%\"nGF+F*F+F+F+-%#_fG6$F-%\"tGF+F+*&,&F*\"\"$F,F4F+-F/6$,&F-
+F+\"\"#F+F1F+F+*&,&F,!\"\"F*F;F+-F/6$,&F-F+F4F+F1F+F+*&,(F,!\"$F*FA!\"
+#F+F+-F/6$,&F-F+F+F+F1F+F+/F1;F;F+,**&F)\"\"\"-&%\"qG6#F-6#F*F+F+*&F3F
+J-&FM6#F7FOF+F+*&F:FJ-&FM6#F>FOF+F+*&F@FJ-&FM6#FEFOF+F+" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 31 "As to the non-homogeneous part " }
+{XPPEDIT 18 0 "H[n](1)-H[n](-1);" "6#,&-&%\"HG6#%\"nG6#\"\"\"\"\"\"-&F
+&6#F(6#,$\"\"\"!\"\"F2" }{TEXT -1 59 ", we readily evaluate it, verify
+ing that it is 0 by chance." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+55 "H[n](t):=factor(eval(subs(_f=unapply(F,n,t),H[n](t))));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>-&%\"HG6#%\"nG6#%\"tG**%\"zG\"\"\"F*F-),&!
+\"\"F-F*F-\"\"$\"\"\"%\"fGF-" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 137 "assume(z>0); assume(n,integer); factor(simplify(limit(op(2,%),t
+=1)-limit(op(2,%),t=-1))): non_hom:=subs([z='z',n='n'],%); z:='z': n:=
+'n':" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(non_homG\"\"#" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 73 "Consequently, we have obtained the follow
+ing recurrence on the integrals " }{XPPEDIT 18 0 "q[n](z);" "6#-&%\"qG
+6#%\"nG6#%\"zG" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 62 "collect(eval(subs(_f=unapply(q[n](z),n,t),ct[1])),q,factor)=0;
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/,**&,(*&%\"nG\"\"\"%\"zGF)!\"$F*F
++!\"#F)F)-&%\"qG6#,&F(F)F)F)6#F*F)F)*(F*\"\"\"F1F)-&F/6#,&F(F)\"\"$F)F
+2F)!\"\"*(F*F4F1F4-&F/6#,&F(F)\"\"#F)F2F)F9*(F*F4F1F4-&F/6#F(F2F)F)\"
+\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "collect(subs(n=n-4,%
+),q,factor);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/,**(%\"zG\"\"\",&%\"n
+GF'!\"$F'F'-&%\"qG6#,&F)F'!\"\"F'6#F&F'F0*(F&\"\"\"F(F3-&F-6#,&F)F'!\"
+#F'F1F'\"\"$*(F&F3F(F3-&F-6#,&F)F'!\"%F'F1F'F'*&,(*&F)F'F&F3F*F&\"\"*F
+8F'F'-&F-6#F(F1F'F'\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 56 "More \+
+generally, a differential equation with respect to " }{XPPEDIT 18 0 "z
+;" "6#%\"zG" }{TEXT -1 103 ", or even a system of mixed differential-d
+ifference equations could be obtained by the same algorithms." }}}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 107 "The following result had not been
+ noticed by Lutz et al., but might prove useful in numerical computati
+ons." }}{PARA 0 "" 0 "" {TEXT 263 7 "Theorem" }{TEXT -1 32 ". With the
+ above notations, let " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 266 "
+" 0 "" {XPPEDIT 18 0 "sum(p[k](n)*a(n+k),k = 0 .. K) = 0;" "6#/-%$sumG
+6$*&-&%\"pG6#%\"kG6#%\"nG\"\"\"-%\"aG6#,&F.F/F,F/F//F,;\"\"!%\"KGF6" }
+}{PARA 0 "" 0 "" {TEXT -1 150 "be the linear recurrence satisfied by t
+he Taylor coefficients at the origin of a power series solution of the
+ first-order linear differential equation" }}{PARA 267 "" 0 "" 
+{XPPEDIT 18 0 "diff(G(t),t) = (diff(phi(t),t,t)/diff(phi(t),t)-diff(ph
+i(t),t)/z)*G(t);" "6#/-%%diffG6$-%\"GG6#%\"tGF**&,&*&-F%6%-%$phiG6#F*F
+*F*\"\"\"-F%6$-F16#F*F*!\"\"F3*&-F%6$-F16#F*F*F3%\"zGF8F8F3-F(6#F*F3" 
+}{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 19 "Then the integrals " }
+{XPPEDIT 18 0 "q[n];" "6#&%\"qG6#%\"nG" }{TEXT -1 23 " satisfy the rec
+urrence" }}{PARA 268 "" 0 "" {XPPEDIT 18 0 "sum(p[k](-n)*q[n-k-1](z),k
+ = 0 .. K) = 0;" "6#/-%$sumG6$*&-&%\"pG6#%\"kG6#,$%\"nG!\"\"\"\"\"-&%
+\"qG6#,(F/F1F,F0\"\"\"F06#%\"zGF1/F,;\"\"!%\"KGF<" }{TEXT -1 1 "." }}
+{PARA 0 "" 0 "" {TEXT 264 6 "Proof." }{TEXT -1 78 " The differential e
+quation in the statement above is satisfied by the function" }}{PARA 
+269 "" 0 "" {XPPEDIT 18 0 "e^(-phi(u)/z)*diff(phi(u),u);" "6#*&)%\"eG,
+$*&-%$phiG6#%\"uG\"\"\"%\"zG!\"\"F.F,-%%diffG6$-F)6#F+F+F," }{TEXT -1 
+1 "." }}{PARA 0 "" 0 "" {TEXT -1 20 "Since the integrals " }{XPPEDIT 
+18 0 "q[n](z);" "6#-&%\"qG6#%\"nG6#%\"zG" }{TEXT -1 11 " rewrite as" }
+}{PARA 270 "" 0 "" {XPPEDIT 18 0 "int(e^(-phi(u)/z)*u^n*diff(phi(u),u)
+,u = 0 .. 1);" "6#-%$intG6$*()%\"eG,$*&-%$phiG6#%\"uG\"\"\"%\"zG!\"\"F
+1F/)F.%\"nGF/-%%diffG6$-F,6#F.F.F//F.;\"\"!\"\"\"" }{TEXT -1 1 "," }}
+{PARA 0 "" 0 "" {TEXT -1 114 "by integration by parts and differentiat
+ion under the integral sign, they satisfy the announced linear recurre
+nce." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 70 "The following one-line pr
+ocedure computes a recurrence on the integral" }}{PARA 264 "" 0 "" 
+{XPPEDIT 18 0 "q[n](z) = Int(exp(-t/z)*psi(t)^n,t = 0 .. infinity);" "
+6#/-&%\"qG6#%\"nG6#%\"zG-%$IntG6$*&-%$expG6#,$*&%\"tG\"\"\"F*!\"\"F6F5
+)-%$psiG6#F4F(F5/F4;\"\"!%)infinityG" }}{PARA 0 "" 0 "" {TEXT -1 6 "wh
+ere " }{XPPEDIT 18 0 "psi;" "6#%$psiG" }{TEXT -1 50 " is the functiona
+l inverse of a rational function " }{XPPEDIT 18 0 "phi;" "6#%$phiG" }
+{TEXT -1 20 ". It takes as input " }{XPPEDIT 18 0 "phi(t),t,g,n,z;" "6
+'-%$phiG6#%\"tGF&%\"gG%\"nG%\"zG" }{TEXT -1 115 " where all the argume
+nts except the first one are symbols that appear in the output linear \+
+recurrence relating the " }{XPPEDIT 18 0 "q[n](z);" "6#-&%\"qG6#%\"nG6
+#%\"zG" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "rec
+qnofz:=proc(phi::ratpoly,t::name,q::name,n::name,z::name)\nlocal gf,a;
+\n     op(select(has,eval(subs(n=-n,a=subs(_A=q,proc(x) _A(-x-1) end),
+\n      gfun[diffeqtorec](diff(gf(t),t)+(diff(phi,t)/z-diff(phi,t,t)/d
+iff(phi,t))*gf(t),gf(t),a(n)))),n))\nend:" "6#>%)recqnofzGR6''%$phiG%(
+ratpolyG'%\"tG%%nameG'%\"qGF,'%\"nGF,'%\"zGF,7$%#gfG%\"aG6\"F6-%#opG6#
+-%'selectG6%%$hasG-%%evalG6#-%%subsG6%/F0,$F0!\"\"/F5-FB6$/%#_AGF.R6#%
+\"xG7\"F6F6-FK6#,&FNFF\"\"\"FFF6F6F6-&%%gfunG6#%,diffeqtorecG6%,&-%%di
+ffG6$-F46#F+F+\"\"\"*&,&*&-Ffn6$F(F+FjnF2FFFjn*&-Ffn6%F(F+F+Fjn-Ffn6$F
+(F+FFFFFjn-F46#F+FjnFjn-F46#F+-F56#F0F0F6F6F6" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 9 "Example: " }{XPPEDIT 18 0 "phi = 1/((1-t)^2)-1;" "6#/%$
+phiG,&*&\"\"\"\"\"\"*$,&\"\"\"F(%\"tG!\"\"\"\"#F-F(\"\"\"F-" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "qnRec:=recqnofz(1/(1-t)^2-1,
+t,q,n,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&qnRecG,**&,&*&%\"nG\"
+\"\"%\"zGF*!\"\"F+\"\"$F*-%\"qG6#,&F)F*F,F*F*F**&,&F+!\"*F(F-F*-F/6#,&
+F)F*!\"#F*F*F**&,(F(!\"$F+\"\"*F8F*F*-F/6#,&F)F*F;F*F*F**&,&F(F*F+F;F*
+-F/6#,&F)F*!\"%F*F*F*" }}}{EXCHG {PARA 274 "" 0 "" {TEXT -1 51 "We hav
+e obtained the same recurrence as when using " }{HYPERLNK 17 "Mgfun" 
+2 "Mgfun" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+102 "qnRec:=applyop(factor,[2,2],applyop(collect,[2,1],readlib(isolate
+)(subs(n=n+1,qnRec),q(n)),q,normal));" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#>%&qnRecG/-%\"qG6#%\"nG,$*&,(*&,&%\"zG\"\"'*&F)\"\"\"F/F2!\"$F2-F'6
+#,&F)F2!\"\"F2F2F2*&,(F/!\"'F1\"\"$\"\"#F2F2-F'6#,&F)F2!\"#F2F2F2*&,&F
+/F<F1F7F2-F'6#,&F)F2F3F2F2F2\"\"\"*&F/\"\"\"F?\"\"\"!\"\"F7" }}}
+{EXCHG {PARA 3 "" 0 "" {TEXT -1 24 "5. Numerical experiments" }}{PARA 
+0 "" 0 "" {TEXT -1 39 "We know the recurrence followed by the " }
+{XPPEDIT 18 0 "q[n];" "6#&%\"qG6#%\"nG" }{TEXT -1 84 ", and we now hav
+e to compute initial conditions. By applying the change of variable " 
+}{XPPEDIT 18 0 "t = phi(u);" "6#/%\"tG-%$phiG6#%\"uG" }{TEXT -1 11 ", \+
+we obtain" }}{PARA 265 "" 0 "" {XPPEDIT 18 0 "q[n] = Int(exp(-phi(u)/z
+)*u^n*diff(phi(u),u),u = 0 .. 1);" "6#/&%\"qG6#%\"nG-%$IntG6$*(-%$expG
+6#,$*&-%$phiG6#%\"uG\"\"\"%\"zG!\"\"F7F5)F4F'F5-%%diffG6$-F26#F4F4F5/F
+4;\"\"!\"\"\"" }{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 43 "which giv
+es the following initial condition" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 27 "phi:=subs(z=u,solve(eq,f));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$phiG,$*&*&%\"uG\"\"\",&!\"#F)F(F)F)\"\"\"*$),&F(F)!
+\"\"F)\"\"#F,!\"\"F0" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "ass
+ume(z>0):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "q0:=int(exp(-p
+hi/z)*diff(phi,u),u =0..1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#q0G%
+#z|irG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "q0:=subs(z='z',q0
+); z:='z':" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#q0G%\"zG" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 53 "Note that this initial value is a posteri
+ori obvious." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 69 "Thus we now have \+
+both recurrence and initial condition. The solution " }{XPPEDIT 18 0 "
+q[n];" "6#&%\"qG6#%\"nG" }{TEXT -1 276 " to the recurrence equation qn
+Rec is a dominated solution, which means that any numerical error grow
+s exponentially. To avoid this, we run the recurrence backwards from a
+ny non trivial initial conditions. The dominating solution disappears \+
+quickly, and we obtain the solution " }{XPPEDIT 18 0 "q[n];" "6#&%\"qG
+6#%\"nG" }{TEXT -1 109 " because when the recurrence is run backwards \+
+it becomes a dominating solution. We therefore add a parameter " }
+{XPPEDIT 18 0 "NN;" "6#%#NNG" }{TEXT -1 50 " indicating from where we \+
+start running backwards." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 86 
+"eval(collect(op(2,isolate(subs(n=n+3,qnRec),q(n))),q,normal),q=proc(n
+) q(n,z,NN) end);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(-%\"qG6%,&%\"nG
+\"\"\"\"\"$F)%\"zG%#NNGF)-F%6%,&F(F)\"\"#F)F+F,!\"$*&*&,(F+F**&F(F)F+F
+)F*F0F)F)-F%6%,&F(F)F)F)F+F,F)\"\"\"*&F+\"\"\"F8\"\"\"!\"\"F)" }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "qnprocrev:=subs(_REC=%,q=qnpro
+crev,proc(n,z,NN)\noption remember;\nif n=NN then 0 \nelif n=NN-1 then
+ 0\nelif n=NN-2 then 1\nelse _REC fi end);" "6#>%*qnprocrevG-%%subsG6%
+/%%_RECG%\"%G/%\"qGF$R6%%\"nG%\"zG%#NNG7\"6#%)rememberG6\"@)/F/F1\"\"!
+/F/,&F1\"\"\"\"\"\"!\"\"F8/F/,&F1F;\"\"#F=\"\"\"F)F5F5F5" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6#>%*qnprocrevGR6%%\"nG%\"zG%#NNG6\"6#%)rememberGF
+*@)/9$9&\"\"!/F/,&F0\"\"\"!\"\"F4F1/F/,&F0F4!\"#F4F4,(-F$6%,&F/F4\"\"$
+F49%F0F4-F$6%,&F/F4\"\"#F4F>F0!\"$*&*&,(F>F=*&F/F4F>F4F=FBF4F4-F$6%,&F
+/F4F4F4F>F0F4\"\"\"*&F>\"\"\"FJ\"\"\"!\"\"F4F*F*F*" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 31 "Here is a procedure to compute " }{XPPEDIT 18 0 "
+q[n];" "6#&%\"qG6#%\"nG" }{TEXT -1 13 " numerically." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 20 "`evalf/q/digits`:=0:" }}}{EXCHG {PARA 0 "
+> " 0 "" {XPPEDIT 19 1 "`evalf/q`:=proc (n,z,NN)\noption remember; \ng
+lobal `evalf/q`,`evalf/q/digits`;\nif Digits>`evalf/q/digits` \nthen `
+evalf/q/digits`:=Digits;\n     `evalf/q`:=subsop(4=NULL,op(`evalf/q`))
+ fi; \nif n = NN then 0 \n elif n = NN-1 then 0 \n elif n = NN-2 then \+
+1.0\n else \nprocname(n+3,z,NN)+(2+3*z+3*z*n)*procname(n+1,z,NN)/(z*(n
++1))-3*procname(n+2,z,NN) fi end:" "6#>%(evalf/qGR6%%\"nG%\"zG%#NNG7\"
+6#%)rememberG6\"C$@$2%/evalf/q/digitsG%'DigitsGC$>F1F2>F$-%'subsopG6$/
+\"\"%%%NULLG-%#opG6#F$@)/F'F)\"\"!/F',&F)\"\"\"\"\"\"!\"\"FA/F',&F)FD
+\"\"#FF$\"#5!\"\",(-%)procnameG6%,&F'FD\"\"$FDF(F)FD*(,(\"\"#FD*&\"\"$
+FDF(FDFD*(\"\"$FDF(FDF'FDFDFD-FO6%,&F'FD\"\"\"FDF(F)FD*&F(FD,&F'FD\"\"
+\"FDFDFFFD*&\"\"$FD-FO6%,&F'FD\"\"#FDF(F)FDFFF-6$F$F1F-" }}}{EXCHG 
+{PARA 0 "> " 0 "" {XPPEDIT 19 1 "dnRec:=gfun[diffeqtorec](\{dneq,D(f)(
+0)=1,f(0)=0\},f(z),a(n)):" "6#>%&dnRecG-&%%gfunG6#%,diffeqtorecG6%<%%%
+dneqG/--%\"DG6#%\"fG6#\"\"!\"\"\"/-F26#F4F4-F26#%\"zG-%\"aG6#%\"nG" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "dnproc:=gfun[rectoproc](dnR
+ec,a(n),remember):" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 31 "Here is a p
+rocedure to compute " }{XPPEDIT 18 0 "d[n];" "6#&%\"dG6#%\"nG" }{TEXT 
+-1 13 " numerically." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "`ev
+alf/d/digits`:=0:" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "`evalf/d
+`:=proc (n) option remember; global `evalf/d`,`evalf/d/digits`; if n>5
+ then if Digits>`evalf/d/digits` then `evalf/d/digits`:=Digits;`evalf/
+d`:=subsop(4=NULL,op(`evalf/d`)) fi; evalf(-(-225*procname(n-5)-70*pro
+cname(n-1)+804*procname(n-4)-1011*procname(n-3)+514*procname(n-2)+(165
+*procname(n-5)-693*procname(n-4)+1048*procname(n-3)-683*procname(n-2)+
+157*procname(n-1)+(-39*procname(n-5)+195*procname(n-4)-363*procname(n-
+3)+309*procname(n-2)-114*procname(n-1)+(-18*procname(n-4)+42*procname(
+n-3)-48*procname(n-2)+3*procname(n-5)+27*procname(n-1))*n)*n)*n)/((-6+
+(12-6*n)*n)*n)) elif n=0 then 0 elif n=1 then 1 elif n=2 then evalf(1/
+3) elif n=3 then evalf(-23/108) else evalf(-2749/3888) fi end:" "6#>%(
+evalf/dGR6#%\"nG7\"6#%)rememberG6\"@-2\"\"&F'C$@$2%/evalf/d/digitsG%'D
+igitsGC$>F2F3>F$-%'subsopG6$/\"\"%%%NULLG-%#opG6#F$-%&evalfG6#,$*&,.*&
+\"$D#\"\"\"-%)procnameG6#,&F'FH\"\"&!\"\"FHFN*&\"#qFH-FJ6#,&F'FH\"\"\"
+FNFHFN*&\"$/)FH-FJ6#,&F'FH\"\"%FNFHFH*&\"%65FH-FJ6#,&F'FH\"\"$FNFHFN*&
+\"$9&FH-FJ6#,&F'FH\"\"#FNFHFH*&,.*&\"$l\"FH-FJ6#,&F'FH\"\"&FNFHFH*&\"$
+$pFH-FJ6#,&F'FH\"\"%FNFHFN*&\"%[5FH-FJ6#,&F'FH\"\"$FNFHFH*&\"$$oFH-FJ6
+#,&F'FH\"\"#FNFHFN*&\"$d\"FH-FJ6#,&F'FH\"\"\"FNFHFH*&,.*&\"#RFH-FJ6#,&
+F'FH\"\"&FNFHFN*&\"$&>FH-FJ6#,&F'FH\"\"%FNFHFH*&\"$j$FH-FJ6#,&F'FH\"\"
+$FNFHFN*&\"$4$FH-FJ6#,&F'FH\"\"#FNFHFH*&\"$9\"FH-FJ6#,&F'FH\"\"\"FNFHF
+N*&,,*&\"#=FH-FJ6#,&F'FH\"\"%FNFHFN*&\"#UFH-FJ6#,&F'FH\"\"$FNFHFH*&\"#
+[FH-FJ6#,&F'FH\"\"#FNFHFN*&\"\"$FH-FJ6#,&F'FH\"\"&FNFHFH*&\"#FFH-FJ6#,
+&F'FH\"\"\"FNFHFHFHF'FHFHFHF'FHFHFHF'FHFHFH*&,&\"\"'FN*&,&\"#7FH*&\"\"
+'FHF'FHFNFHF'FHFHFHF'FHFNFN/F'\"\"!Fju/F'\"\"\"\"\"\"/F'\"\"#-FA6#*&\"
+\"\"FH\"\"$FN/F'\"\"$-FA6#,$*&\"#BFH\"$3\"FNFN-FA6#,$*&\"%\\FFH\"%))QF
+NFNF+6$F$F2F+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 124 "Finally, the fo
+llowing procedure computes values of the double confluent Heun functio
+n as follows. First, an upper value of " }{XPPEDIT 18 0 "NN;" "6#%#NNG
+" }{TEXT -1 17 " is selected and " }{XPPEDIT 18 0 "2*NN;" "6#*&\"\"#\"
+\"\"%#NNGF%" }{TEXT -1 70 " is used in the backward recurrence to comp
+ute the scaling to use for " }{XPPEDIT 18 0 "q[n](z);" "6#-&%\"qG6#%\"
+nG6#%\"zG" }{TEXT -1 84 " in view of the actual initial condition. The
+n the summation is performed up to the " }{XPPEDIT 18 0 "NN;" "6#%#NNG
+" }{TEXT -1 63 "th term. If the relative error of the last term is lar
+ger than " }{XPPEDIT 18 0 "10^(-Digits);" "6#)\"#5,$%'DigitsG!\"\"" }
+{TEXT -1 7 ", then " }{XPPEDIT 18 0 "NN;" "6#%#NNG" }{TEXT -1 89 " is \+
+doubled and the computation starts again. Note that option remember ha
+s been used in " }{XPPEDIT 18 0 "qnprocrev;" "6#%*qnprocrevG" }{TEXT 
+-1 45 " so as to avoid duplicating some of the work." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 31 "time(evalf(q(0,10.2,3000),21));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#$\"$*R!\"$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 450 "valheun:=subs(_q0=q0,proc(z)\n    local tot,i,N,NN,l
+ambda,st,D;\nN:=10;\nst:=time();\ndo \n    N:=floor(2*N);\n    NN:=N+f
+loor(sqrt(N))+10;\n    D:=Digits+3*ilog10(N) +floor(log(N));\n    lamb
+da:=_q0/evalf(q(0,z,NN),D);\n   \n    tot:=add(evalf(d(i),D)*evalf(q(i
+,z,NN),D),i=1..N)*lambda;\n    if abs(evalf(d(N),D)*evalf(q(N,z,NN),D)
+*lambda)<abs(tot)*10^(-Digits) then break fi;\nod;\nuserinfo(1,valheun
+,\"N=\",N,\"z=\",1.0*z,\"time:\",time()-st,\"digits:\",D);\ntot;\nend)
+:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 112 "We print information on the
+ number of terms and time used for each point in a plot of the solutio
+n from 0 to 15:" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "infolevel[
+valheun]:=1:" "6#>&%*infolevelG6#%(valheunG\"\"\"" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 20 "plot(valheun,0..50);" }}{PARA 6 "" 1 "" 
+{TEXT -1 75 "valheun:   \"N=\"   80   \"z=\"   1.089857709   \"time:\"
+   .141   \"digits:\"   17" }}{PARA 6 "" 1 "" {TEXT -1 76 "valheun:   \+
+\"N=\"   160   \"z=\"   2.038137074   \"time:\"   .270   \"digits:\"  \+
+ 21" }}{PARA 6 "" 1 "" {TEXT -1 76 "valheun:   \"N=\"   320   \"z=\"  \+
+ 3.104576397   \"time:\"   .579   \"digits:\"   21" }}{PARA 6 "" 1 "" 
+{TEXT -1 76 "valheun:   \"N=\"   320   \"z=\"   4.178084772   \"time:
+\"   .571   \"digits:\"   21" }}{PARA 6 "" 1 "" {TEXT -1 76 "valheun: \+
+  \"N=\"   320   \"z=\"   5.246490950   \"time:\"   .599   \"digits:\"
+   21" }}{PARA 6 "" 1 "" {TEXT -1 77 "valheun:   \"N=\"   640   \"z=\"
+   6.237040242   \"time:\"   1.221   \"digits:\"   22" }}{PARA 6 "" 1 
+"" {TEXT -1 77 "valheun:   \"N=\"   640   \"z=\"   7.262696659   \"tim
+e:\"   1.080   \"digits:\"   22" }}{PARA 6 "" 1 "" {TEXT -1 77 "valheu
+n:   \"N=\"   640   \"z=\"   8.323431992   \"time:\"   1.129   \"digit
+s:\"   22" }}{PARA 6 "" 1 "" {TEXT -1 77 "valheun:   \"N=\"   640   \"
+z=\"   9.380765534   \"time:\"   1.240   \"digits:\"   22" }}{PARA 6 "
+" 1 "" {TEXT -1 77 "valheun:   \"N=\"   640   \"z=\"   10.46836305   \+
+\"time:\"   1.201   \"digits:\"   22" }}{PARA 6 "" 1 "" {TEXT -1 78 "v
+alheun:   \"N=\"   1280   \"z=\"   11.42631952   \"time:\"   2.520   \+
+\"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "valheun:   \"N=\"   1
+280   \"z=\"   12.50475163   \"time:\"   2.369   \"digits:\"   26" }}
+{PARA 6 "" 1 "" {TEXT -1 78 "valheun:   \"N=\"   1280   \"z=\"   13.58
+761188   \"time:\"   2.601   \"digits:\"   26" }}{PARA 6 "" 1 "" 
+{TEXT -1 78 "valheun:   \"N=\"   1280   \"z=\"   14.63114838   \"time:
+\"   2.750   \"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "valheun:
+   \"N=\"   1280   \"z=\"   15.57877949   \"time:\"   2.800   \"digits
+:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "valheun:   \"N=\"   1280   \"
+z=\"   16.70560455   \"time:\"   3.110   \"digits:\"   26" }}{PARA 6 "
+" 1 "" {TEXT -1 78 "valheun:   \"N=\"   1280   \"z=\"   17.66017317   \+
+\"time:\"   3.219   \"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "v
+alheun:   \"N=\"   1280   \"z=\"   18.77056341   \"time:\"   3.340   \+
+\"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "valheun:   \"N=\"   2
+560   \"z=\"   19.75344692   \"time:\"   7.290   \"digits:\"   26" }}
+{PARA 6 "" 1 "" {TEXT -1 78 "valheun:   \"N=\"   2560   \"z=\"   20.83
+182591   \"time:\"   8.091   \"digits:\"   26" }}{PARA 6 "" 1 "" 
+{TEXT -1 78 "valheun:   \"N=\"   2560   \"z=\"   21.85869773   \"time:
+\"   8.440   \"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "valheun:
+   \"N=\"   2560   \"z=\"   22.93013074   \"time:\"   9.180   \"digits
+:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 78 "valheun:   \"N=\"   2560   \"
+z=\"   23.91404071   \"time:\"   9.710   \"digits:\"   26" }}{PARA 6 "
+" 1 "" {TEXT -1 79 "valheun:   \"N=\"   2560   \"z=\"   24.97532053   \+
+\"time:\"   10.209   \"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 79 "
+valheun:   \"N=\"   2560   \"z=\"   26.07769200   \"time:\"   10.941  \+
+ \"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   \+
+2560   \"z=\"   27.03730960   \"time:\"   11.229   \"digits:\"   26" }
+}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   2560   \"z=\"   28.0
+7372290   \"time:\"   11.961   \"digits:\"   26" }}{PARA 6 "" 1 "" 
+{TEXT -1 79 "valheun:   \"N=\"   2560   \"z=\"   29.14443926   \"time:
+\"   12.589   \"digits:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun
+:   \"N=\"   2560   \"z=\"   30.19192632   \"time:\"   12.810   \"digi
+ts:\"   26" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   2560   \+
+\"z=\"   31.20542392   \"time:\"   13.741   \"digits:\"   26" }}{PARA 
+6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"   32.33074020
+   \"time:\"   20.060   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 
+79 "valheun:   \"N=\"   5120   \"z=\"   33.34188693   \"time:\"   12.8
+80   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=
+\"   5120   \"z=\"   34.42150189   \"time:\"   15.039   \"digits:\"   \+
+27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"  \+
+ 35.39979350   \"time:\"   17.241   \"digits:\"   27" }}{PARA 6 "" 1 "
+" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"   36.46932464   \"tim
+e:\"   19.520   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valhe
+un:   \"N=\"   5120   \"z=\"   37.47567008   \"time:\"   21.760   \"di
+gits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120 \+
+  \"z=\"   38.52759104   \"time:\"   24.110   \"digits:\"   27" }}
+{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"   39.55
+603605   \"time:\"   26.450   \"digits:\"   27" }}{PARA 6 "" 1 "" 
+{TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"   40.63272267   \"time:
+\"   28.740   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun
+:   \"N=\"   5120   \"z=\"   41.66969985   \"time:\"   31.479   \"digi
+ts:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120   \+
+\"z=\"   42.73015878   \"time:\"   33.841   \"digits:\"   27" }}{PARA 
+6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"   43.78183659
+   \"time:\"   36.099   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 
+79 "valheun:   \"N=\"   5120   \"z=\"   44.74821926   \"time:\"   39.0
+00   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=
+\"   5120   \"z=\"   45.85580287   \"time:\"   40.981   \"digits:\"   \+
+27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"  \+
+ 46.84643885   \"time:\"   43.800   \"digits:\"   27" }}{PARA 6 "" 1 "
+" {TEXT -1 79 "valheun:   \"N=\"   5120   \"z=\"   47.90266342   \"tim
+e:\"   45.850   \"digits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 79 "valhe
+un:   \"N=\"   5120   \"z=\"   48.91360511   \"time:\"   48.260   \"di
+gits:\"   27" }}{PARA 6 "" 1 "" {TEXT -1 72 "valheun:   \"N=\"   5120 \+
+  \"z=\"   50.0   \"time:\"   50.699   \"digits:\"   27" }}{PARA 6 "" 
+1 "" {TEXT -1 77 "valheun:   \"N=\"   160   \"z=\"   1.563997392   \"t
+ime:\"   1.450   \"digits:\"   21" }}{PARA 13 "" 1 "" {INLPLOT "6%-%'C
+URVESG6$7S7$$\"+4x&)*3\"!\"*$\"+7+&3\"H!#57$$\"+#R(*Rc\"F*$\"+mL$Q6&F-
+7$$\"+uq8Q?F*$\"+&Q!)ps(F-7$$\"+(RwX5$F*$\"+'epd]\"F*7$$\"+sZ3yTF*$\"+
+$Q+sV#F*7$$\"+]4\\Y_F*$\"+gn*z`$F*7$$\"+U-/PiF*$\"+w!)*[p%F*7$$\"+fmpi
+sF*$\"+nI,9gF*7$$\"+#*>VB$)F*$\"+\"=:D\\(F*7$$\"+Mbw!Q*F*$\"+**)\\'o!*
+F*7$$\"+0j$o/\"!\")$\"+CI\\y5Fhn7$$\"+_>jU6Fhn$\"+N4'oB\"Fhn7$$\"+j^Z]
+7Fhn$\"+4#pCU\"Fhn7$$\"+)=h(e8Fhn$\"+FQ(fh\"Fhn7$$\"+Q[6j9Fhn$\"+1_l3=
+Fhn7$$\"+\\z(yb\"Fhn$\"+ny]))>Fhn7$$\"+b/cq;Fhn$\"+Y8)z?#Fhn7$$\"+<t,m
+<Fhn$\"+atN)R#Fhn7$$\"+Tj0x=Fhn$\"+V$3Yi#Fhn7$$\"+#pW`(>Fhn$\"+4W#*GGF
+hn7$$\"+\"f#=$3#Fhn$\"+-(*>dIFhn7$$\"+t(pe=#Fhn$\"+.OMyKFhn7$$\"+uI,$H
+#Fhn$\"+`+z7NFhn7$$\"+rSS\"R#Fhn$\"+enCJPFhn7$$\"+`?`(\\#Fhn$\"+\"30,(
+RFhn7$$\"++#pxg#Fhn$\"+J7e@UFhn7$$\"+g4t.FFhn$\"+&\\cJW%Fhn7$$\"+!Hst!
+GFhn$\"+RW7&o%Fhn7$$\"+ERW9HFhn$\"+.%yy$\\Fhn7$$\"+KE>>IFhn$\"+wKw(=&F
+hn7$$\"+#RU07$Fhn$\"+;#**=V&Fhn7$$\"+?S2LKFhn$\"+Q%zbq&Fhn7$$\"+$p)=ML
+Fhn$\"+(HVP&fFhn7$$\"+*=]@W$Fhn$\"+:3(4A'Fhn7$$\"+]$z*RNFhn$\"+j?1lkFh
+n7$$\"+kC$pk$Fhn$\"+df&Rt'Fhn7$$\"+3qcZPFhn$\"+uH%)))pFhn7$$\"+/\"fF&Q
+Fhn$\"+sQ:dsFhn7$$\"+0OgbRFhn$\"+DKF@vFhn7$$\"+nAFjSFhn$\"+Cdi*z(Fhn7$
+$\"+&)*pp;%Fhn$\"+>yVp!)Fhn7$$\"+ye,tUFhn$\"+G40Z$)Fhn7$$\"+fO=yVFhn$
+\"+Z!3Si)Fhn7$$\"+E>#[Z%Fhn$\"+$Q-*z))Fhn7$$\"+(G!e&e%Fhn$\"+Wnyu\"*Fh
+n7$$\"+&)Qk%o%Fhn$\"+`)Q*R%*Fhn7$$\"+UjE!z%Fhn$\"+:%ySs*Fhn7$$\"+60O\"
+*[Fhn$\"+87Q(***Fhn7$\"#]$\"+U%[#H5!\"(-%'COLOURG6&%$RGBG$\"#5!\"\"\"
+\"!F`[l-%+AXESLABELSG6$%!GFd[l-%%VIEWG6$;F`[l$FezF`[l%(DEFAULTG" 2 
+762 762 762 2 0 1 0 2 9 0 4 2 1.000000 45.000000 45.000000 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 2 0 0 0 0 0 0 }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 117 "This curve is to be contrasted with the irregular
+ plot we got from the same series using summation to the least term." 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 216 "Sections 1 and 2 of this works
+heet only depend on the Heun differential equation, and can easily be \+
+adapted to any linear differential equation. Sections 3 and 4 compute \+
+the recurrences satisfied by the coefficients " }{XPPEDIT 18 0 "q[n];
+" "6#&%\"qG6#%\"nG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "d[n];" "6#&%\"
+dG6#%\"nG" }{TEXT -1 53 ", which depend on the choice of the mapping f
+unction " }{XPPEDIT 18 0 "phi;" "6#%$phiG" }{TEXT -1 10 " only for " }
+{XPPEDIT 18 0 "q[n];" "6#&%\"qG6#%\"nG" }{TEXT -1 47 ", and on the dif
+ferential equation as well for " }{XPPEDIT 18 0 "d[n];" "6#&%\"dG6#%\"
+nG" }{TEXT -1 62 ". Section 5 details the numerical computations. It d
+epends on " }{XPPEDIT 18 0 "phi;" "6#%$phiG" }{TEXT -1 158 " and on th
+e recurrences found in the previous sections. This worksheet can be ad
+apted to another mapping function and to another linear differential e
+quation." }}}{EXCHG {PARA 3 "" 0 "" {TEXT -1 10 "References" }}{PARA 
+0 "" 0 "" {TEXT -1 15 "[Lutz et al.]  " }{TEXT 268 40 "On the converge
+nce of Borel approximants" }{TEXT -1 62 ", by W. Balser, D. A. Lutz  a
+nd R. Sch\344fke, (2000).  Preprint." }}{PARA 0 "" 0 "" {TEXT -1 12 "[
+DuLoRi92]  " }{TEXT 269 77 "Kovacic's Algorithm and Its Application to
+ Some Families of Special Functions" }{TEXT -1 43 ", by Anne Duval and
+ Mich\350le Loday-Richaud, " }{TEXT 270 62 "Applicable Algebra in Engi
+neering, Communication and Computing" }{TEXT -1 29 ", (1992), vol. 3, \+
+p. 211-246." }}{PARA 0 "" 0 "" {TEXT -1 10 "[Durand]  " }{TEXT 272 75 
+"On the convergence of Borel approximants [summary of a talk by Donald
+ Lutz]" }{TEXT -1 45 ", by Marianne Durand, (2001).  To appear in: " }
+{TEXT 271 29 "Algorithms Seminar, 2000-2001" }{TEXT -1 24 ", INRIA Res
+earch Report." }}}}{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 }

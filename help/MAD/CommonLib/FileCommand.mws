@@ -1,0 +1,61 @@
+{VERSION 5 0 "DEC ALPHA UNIX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 23 "Courier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 1 }{CSTYLE "
+Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }{CSTYLE "
+" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }{PSTYLE "Normal" -1 0 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 
+0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 
+0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "He
+ading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "
+" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 
+0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 
+15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 
+3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 22 "CommonLib[FileCommand]" }{TEXT 
+30 32 " - execute a command onto a file" }}{PARA 4 "" 0 "usage" {TEXT 
+-1 16 "Calling Sequence" }}{PARA 0 "" 0 "" {TEXT -1 17 "     FileComma
+nd(" }{TEXT 35 2 "fd" }{TEXT -1 1 "," }{TEXT 35 3 "cmd" }{TEXT -1 1 ",
+" }{TEXT 35 8 "opt_args" }{TEXT -1 1 ")" }}{PARA 4 "" 0 "" {TEXT -1 
+10 "Parameters" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 23 5 "fd -
+ " }{HYPERLNK 17 "FileDescriptor\n" 2 "CommonLib,FileDescriptor" "" }
+{TEXT -1 5 "     " }{TEXT 23 6 "cmd - " }{HYPERLNK 17 "string" 2 "type
+,string" "" }{TEXT -1 25 ": valid system call\n     " }{TEXT 23 11 "op
+t_args - " }{TEXT -1 27 "expressions to be formatted" }}{SECT 0 {PARA 
+4 "" 0 "info" {TEXT -1 11 "Description" }}{PARA 15 "" 0 "" {TEXT -1 4 
+"The " }{TEXT 35 11 "FileCommand" }{TEXT -1 47 " function invokes the \+
+operating-system command " }{TEXT 35 3 "cmd" }{TEXT -1 51 " onto the f
+ile that is associated to the specified " }{TEXT 35 14 "FileDescriptor
+" }{TEXT -1 35 ". The output is similar to that of " }{HYPERLNK 17 "ss
+ystem" 2 "ssystem" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 12 "
+The command " }{TEXT 35 3 "cmd" }{TEXT -1 88 " is represented by a for
+matted string, which includes the typical formatting flags (see " }
+{HYPERLNK 17 "printf" 2 "printf" "" }{TEXT -1 12 "). The flag " }
+{TEXT 35 3 "%F " }{TEXT -1 65 "is an alias of the actual name of the f
+ile that is associated to " }{TEXT 35 2 "fd" }{TEXT -1 1 "." }}}{SECT 
+0 {PARA 4 "" 0 "seealso" {TEXT -1 7 "Example" }}{PARA 0 "" 0 "" {TEXT 
+-1 62 "This example creates a LaTeX file and processes it with latex.
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 240 "with(CommonLib):\nFileO
+ptions(rootdir=\"/tmp\"):\nfd := [a+x,RootOf(_Z^2-2),x]:\nfd2 := FileE
+xtension(fd,\"tex\"):\nFilePrint(fd2,\"\\\\documentclass\{article\}\\n
+\\\\begin\{document\}\\nHello!\\n\\\\end\{document\}\"):\nFileClose(fd
+2):\nFileCommand(fd2,\"latex %F\");\n" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6#7$\"\"!QhhlThis~is~TeX,~Version~3.14159~(Web2C~7.3.1)|+(x.tex|+LaTe
+X2e~<1999/12/01>~patch~level~1|+Babel~<v3.6Z>~and~hyphenation~patterns
+~for~american,~french,~german,~ngerman,~n|+ohyphenation,~loaded.|+(/us
+r/local/lib/teTeX/share/texmf/tex/latex/base/article.cls|+Document~Cla
+ss:~article~1999/09/10~v1.4a~Standard~LaTeX~document~class|+(/usr/loca
+l/lib/teTeX/share/texmf/tex/latex/base/size10.clo))~(x.aux)~[1]|+(x.au
+x)~)|+Output~written~on~x.dvi~(1~page,~220~bytes).|+Transcript~written
+~on~x.log.|+6\"" }}}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 9 "See Al
+so " }}{PARA 0 "" 0 "" {HYPERLNK 17 "CommonLib" 2 "CommonLib" "" }
+{TEXT -1 2 ", " }{HYPERLNK 17 "FileOptions" 2 "CommonLib,FileOptions" 
+"" }{TEXT -1 2 ", " }{HYPERLNK 17 "FileExtension" 2 "CommonLib,FileExt
+ension" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "FilePrint" 2 "CommonLib,Fil
+ePrint" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "FileClose" 2 "CommonLib,Fil
+eClose" "" }}}}{MARK "6 0 0" 7 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

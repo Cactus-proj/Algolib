@@ -1,0 +1,64 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }{PSTYLE "Norm
+al" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 
+"" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 
+0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 26 "DocumentGenerator[RefInfo]" }
+{TEXT 30 38 " - query the table of cross-references" }}{PARA 3 "" 0 "
+" {TEXT -1 30 "DocumentGenerator[RelativeRef]" }{TEXT 30 36 " - comput
+e relative cross-references" }}{PARA 3 "" 0 "" {TEXT -1 37 "DocumentGe
+nerator[RawTableOfContents]" }{TEXT 30 43 " - compute an unformatted t
+able of contents" }{TEXT -1 0 "" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT 
+-1 11 "Description" }}{PARA 15 "" 0 "" {TEXT -1 90 "The procedures lis
+ted in this help page are meant to be used in the implementation of th
+e " }{HYPERLNK 17 "text mode" 2 "DocumentGenerator,text" "" }{TEXT -1 
+13 " keywords at " }{HYPERLNK 17 "translator" 2 "DocumentGenerator,tra
+nslator" "" }{TEXT -1 7 " level." }}{PARA 15 "" 0 "" {TEXT -1 14 "The \+
+procedure " }{TEXT 35 7 "RefInfo" }{TEXT -1 65 " provides an inteface \+
+for querying the table of cross-references " }{TEXT 35 26 "DocumentGen
+erator/RefTable" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 14 "The p
+rocedure " }{TEXT 35 11 "RelativeRef" }{TEXT -1 197 " computes the \"r
+elative\" references of a given label. Relative references include \"n
+ext\", \"back\", \"up\" and \"down\". Note that a lock keeps the user \+
+from using this procedure outside of a translator." }}{PARA 15 "" 0 "
+" {TEXT -1 14 "The procedure " }{TEXT 35 18 "RawTableOfContents" }
+{TEXT -1 126 " computes an unformatted table of contents. Note that a \+
+lock keeps the user from using this procedure outside of a translator.
+" }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 7 "Example" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "with(DocumentGenerator):" }}}{PARA 
+0 "" 0 "" {TEXT 35 4 "doc1" }{TEXT -1 20 " defines references." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 317 "doc1 := Document(\n  Chapte
+r(\"Airy\",label=[c1_1],numbering=[[\"A\"],[]],\n    Paragraph(\"This \+
+chapter has the sections \",`&ref`([s1_1]),\" and \",`&ref`([s1_2]),\"
+.\"),\n    Section(\"Ai\",label=[s1_1],Paragraph(\"Next section:\",`&r
+ef`([s1_2]))),\n    Section(\"Bi\",label=[s1_2],Paragraph(\"Previous s
+ection:\",`&ref`([s1_1])))\n  )):" }}}{PARA 0 "" 0 "" {TEXT -1 48 "Com
+putation of the references for 2 translators." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 45 "ResolveRef(doc1,LaTeX):ResolveRef(doc1,HTMX):" }
+}}{PARA 0 "" 0 "" {TEXT -1 63 "One can now query the table of referenc
+es. List all references." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "
+RefInfo();" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%7#%%c1_1G7#%%s1_1G7#%%
+s1_2G" }}}{PARA 0 "" 0 "" {TEXT -1 49 "To each label is associated a s
+et of translators." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "RefInf
+o([c1_1]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$%%HTMXG%&LaTeXG" }}}
+{PARA 0 "" 0 "" {TEXT -1 69 "To a pair (label,translator) is associate
+d a set of possible queries." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+22 "RefInfo([c1_1],LaTeX);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<'%)file
+descG%*numberingG%&entryG%%typeG%$tagG" }}}{PARA 0 "" 0 "" {TEXT -1 
+22 "Values of the queries:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+33 "seq(RefInfo([c1_1],LaTeX,i),i=%);" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6'7#Q31961474274196690816\"7$7#Q\"AF%7\"Q!F%%)&chapterGQ&c1RD1F%" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT 
+-1 9 "See Also " }}{PARA 0 "" 0 "" {HYPERLNK 17 "DocumentGenerator" 2 
+"DocumentGenerator" "" }}}}{MARK "4 3 0 0" 70 }{VIEWOPTS 1 1 0 1 1 
+1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

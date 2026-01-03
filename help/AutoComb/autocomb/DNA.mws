@@ -1,0 +1,1511 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 1 18 0 0 0 0 
+0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 
+0 }{CSTYLE "" -1 267 "" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }{PSTYLE "Norma
+l" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 
+1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" 
+-1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 
+0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 256 "" 0 "" {TEXT 256 18 "PATTERNS IN WORDS\n" }}{PARA 
+257 "" 0 "" {TEXT 260 11 "Bruno Salvy" }}{PARA 258 "" 0 "" {TEXT -1 
+29 "(Version of February 7, 1997)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 23 "This worksheet applies " }{HYPERLNK 17 "c
+ombstruct" 2 "combstruct" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "gfun" 
+2 "gfun" "" }{TEXT -1 766 " to a simple combinatorial model of a probl
+em from computational biology and the study of DNA sequences. The DNA \+
+can be viewed as a long text on an alphabet of  four letters (A,C,G,T)
+. Large fragments of this text are tabulated. In particular, there are
+ huge bases of genes, a gene being a few thousand letters long. Given \+
+a short word, it is interesting to determine whether its number of occ
+urrences in a gene (or a virus) is far away from the most probable num
+ber of occurrences. If this number of occurrences is very improbable, \+
+then this particular word may have a biological function. \n\nThe comb
+inatorial model is rational. The text is a word on the alphabet (a,b,c
+,d) where all words of the same length are equiprobable. The probabili
+ty that a pattern occurs " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 72 
+" times in the text depends on the way the pattern overlaps with itsel
+f. " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "libname:=`/net/blagny
+/algo/maple/5.4`,libname:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+29 "with(combstruct): with(gfun):" }}}{SECT 0 {PARA 4 "" 0 "" {TEXT 
+264 70 "Specification and univariate generating functions for the patt
+ern abab" }}{PARA 0 "" 0 "" {TEXT -1 190 "Working over the alphabet (a
+,b,c,d), we first concentrate on a specific pattern (abab). To attack \+
+problems related to occurrences of this pattern in words using combstr
+uct, we first write a " }{TEXT 261 7 "grammar" }{TEXT -1 293 " which d
+escribes a corresponding automaton.This grammar recognizes all the wor
+ds on (a,b,c,d). It is written in such a way that a mark (named Mark) \+
+is present in a word everytime the pattern abab occurs. Then counting \+
+the number of marks in a word gives the number of occurences of abab i
+n it." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 371 "G:=\{w=Union(Epsil
+on,Prod(a,wa),Prod(b,w),\n            Prod(c,w),Prod(d,w)),\n    wa=Un
+ion(Epsilon,Prod(a,wa),Prod(b,wab),\n            Prod(c,w),Prod(d,w)),
+\n    wab=Union(Epsilon,Prod(a,waba),Prod(b,w),\n            Prod(c,w)
+,Prod(d,w)),\n    waba=Union(Epsilon,Prod(a,wa),Prod(b,Prod(Mark,w)),
+\n            Prod(c,w),Prod(d,w)),\n    Mark=Epsilon,a=Atom,b=Atom,c=
+Atom,d=Atom\}:" }}}{PARA 0 "" 0 "" {TEXT -1 20 "We use the function " 
+}{HYPERLNK 17 "combstruct[count]" 2 "combstruct[count]" "" }{TEXT -1 
+45 " to check that the number of words of length " }{XPPEDIT 18 0 "n" 
+"I\"nG6\"" }{TEXT -1 5 "  is " }{XPPEDIT 18 0 "4^n" ")\"\"%%\"nG" }
+{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "count([w,G,
+unlabelled],size=10),4^10;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"(w&[5F
+#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "count([w,G,unlabelled]
+,size=20),4^20;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\".wxi6&*4\"F#" }}}
+{PARA 0 "" 0 "" {TEXT -1 23 "It is also possible to " }{TEXT 257 5 "pr
+ove" }{TEXT -1 64 " this by computing the generating function of the l
+anguage with " }{HYPERLNK 17 "combstruct[gfsolve]" 2 "combstruct[gfsol
+ve]" "" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "gf
+solve(G,unlabelled,z);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<+/-%$wabG6#
+%\"zG,$*$,&F(\"\"%!\"\"\"\"\"F-F-/-%#waGF'F)/-%\"wGF'F)/-%%wabaGF'F)/-
+%\"cGF'F(/-%\"dGF'F(/-%\"aGF'F(/-%\"bGF'F(/-%%MarkGF'F." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "subs(\",w(z));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*$,&%\"zG\"\"%!\"\"\"\"\"F(F(" }}}{PARA 0 "" 0 "" 
+{TEXT -1 19 "The coefficient of " }{XPPEDIT 18 0 "z^n" ")%\"zG%\"nG" }
+{TEXT -1 67 " in the Taylor expansion of this generating function is t
+he number " }{XPPEDIT 18 0 "4^n" ")\"\"%%\"nG" }{TEXT -1 20 " of words
+ of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 127 " in the lang
+uage, which confirms the correctness of our grammar.\n\nHere are a few
+ typical words of the language obtained by the " }{TEXT 262 24 "unifor
+m random generator" }{TEXT -1 13 " provided by " }{HYPERLNK 17 "combst
+ruct[draw]" 2 "combstruct[draw]" "" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 76 "to 20 do eval(subs(Prod=proc() args end,draw
+([w,G,unlabelled],size=30))) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%
+\"cG%\"dG%\"aGF$F$F%%\"bGF#F&F$F#F&F%F$F&F%F#F&F#F$F#F%F%F#F%F%F$F&F%F
+#%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"bGF#%\"cGF$%\"dG%\"a
+GF#F#F#F#F$F&F#F$F&F#F%F$F&F&F$F%F$F%F&F$F$F&F&F&%(EpsilonG" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6A%\"dGF#%\"cG%\"aG%\"bGF&F%F$F$F$F&F&F$F%F#F&
+F$F&F%F&F#F&F#F$F#F%F&F%F$F%%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6A%\"bG%\"aG%\"cGF$%\"dGF%F$F$F$F&F#F#F#F%F%F&F$F&F#F%F#F$F#F#F$F%
+F#F%F&F#%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"dG%\"aG%\"cGF
+#F%F#%\"bGF#F&F$F%F#F#F&F#F&F%F#F$F%F#F#F%F$F#F$F#F$F#F#%(EpsilonG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"cG%\"bGF$F$F$F#%\"aGF#F%F$%\"dGF$F$
+F$F%F$F$F%F$F#F%F#F$F#F%F%F$F$F$F%%(EpsilonG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6A%\"bG%\"cGF#%\"dGF%%\"aGF$F$F&F$F$F&F%F#F$F$F&F%F$F#F%F
+&F&F#F$F&F&F&F&F%%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"cG%
+\"aG%\"bGF#%\"dGF#F%F#F$F$F%F%F$F#F$F&F#F&F&F&F%F&F&F&F#F&F%F$F&F%%(Ep
+silonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"cG%\"dGF$F$%\"bGF$F%%\"aG
+F$F#F&F$F$F%F%F&F#F$F#F&F%F%F#F&F$F&F&F%F%F%%(EpsilonG" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6A%\"aGF#%\"bGF$%\"dGF#F#F$F#F%F%F%F%F#F#F#F#%\"cGF%
+F$F&F$F$F$F#F#F&F#F#F%%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%
+\"aG%\"bG%\"cG%\"dGF#F$F$F%F&F%F&F%F#F%F%F%F&F%F&F#F&F#F#F&F&F#F$F#F%F
+#%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"aG%\"dG%\"bGF%F$F#F$
+F$F#F%F$F#F#F$%\"cGF#F$F&F$F$F$F%F$F&F#F$F&F%F%F$%(EpsilonG" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6B%\"dG%\"bGF$%\"aGF$F%F#F$F%F$F%F$%%MarkGF#F$
+F%%\"cGF$F#F'F#F#F$F#F#F'F%F'F'F$F#%(EpsilonG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6A%\"bG%\"dGF#%\"aGF%F#F$F$%\"cGF#F&F#F&F#F%F%F&F#F#F$F$F
+$F&F#F%F%F#F$F#F#%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"bGF#
+F#%\"cG%\"aGF$F$F%F#%\"dGF&F$F#F%F%F#F#F#F$F&F%F%F%F%F&F&F$F#F$F$%(Eps
+ilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"aG%\"bGF#%\"cGF$F%%\"dGF$F
+$F$F#F%F&F$F$F&F$F$F&F%F#F#F$F%F$F%F%F$F&F%%(EpsilonG" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6A%\"aG%\"cG%\"dG%\"bGF$F#F#F&F&F&F&F&F&F&F#F&F$F&F&
+F#F#F#F$F%F#F&F%F%F&F%%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6B%
+\"bG%\"dGF#%\"aGF%F#F$F#F#%\"cGF&F#F&F&F&F&F&F$F&F&F$F%F&F%F#F%F#%%Mar
+kGF&F%F#%(EpsilonG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"dG%\"bGF$%\"a
+G%\"cGF&F#F#F%F$F&F&F&F&F&F&F%F$F&F&F%F$F$F%F&F&F&F$F$F&%(EpsilonG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6A%\"bG%\"cGF$F$F$F$F#%\"dGF$F%F#F#F$F%F
+%F%F$%\"aGF#F#F$F&F&F&F&F$F&F#F%F&%(EpsilonG" }}}{PARA 0 "" 0 "" 
+{TEXT -1 109 "Some of these words countain the pattern abab, as indica
+ted by the letter `Mark' right after its occurrence. " }}}{SECT 0 
+{PARA 4 "" 0 "" {TEXT 265 30 "Bivariate generating functions" }}{PARA 
+0 "" 0 "" {TEXT -1 50 "From the grammar specification above, the comma
+nd " }{HYPERLNK 17 "combstruct[gfsolve]" 2 "combstruct[gfsolve]" "" }
+{TEXT -1 29 "  can also be used to derive " }{TEXT 263 12 "multivariat
+e" }{TEXT -1 96 " generating functions. From this, it is easy to compu
+te the probability that the pattern occurs " }{XPPEDIT 18 0 "k" "I\"kG
+6\"" }{TEXT -1 34 " times in a random word of length " }{XPPEDIT 18 0 
+"n" "I\"nG6\"" }{TEXT -1 109 ", the expectation of the number of occur
+rences of the pattern in such a word, and the corresponding variance.
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "gfsolve(G,unlabelled,z,[
+[u,Mark]]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<+/-%\"cG6$%\"zG%\"uGF(
+/-%\"dGF'F(/-%\"aGF'F(/-%\"bGF'F(/-%%MarkGF'F)/-%%wabaGF',$*&,.\"\"\"F
+<F(!\"\"*$F(\"\"#F<*$F(\"\"$F=*&F(F<F)F<F<*&F(FAF)F<F<F<,.F=F<F(\"\"%F
+>F=F@FE*$F(FEF=*&F(FEF)F<F<F=F=/-%$wabGF',$*&,&F<F<*&F(F?F)F<F<F<FDF=F
+=/-%\"wGF',$*&,&F<F<F>F<F<FDF=F=/-%#waGF',$*&,*F<F<F>F<F@F=FCF<F<FDF=F
+=" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "sol:=subs(\",w(z,u));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$solG,$*&,&\"\"\"F(*$%\"zG\"\"#F
+(F(,.!\"\"F(F*\"\"%F)F-*$F*\"\"$F.*$F*F.F-*&F*F.%\"uGF(F(F-F-" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "The coefficient of " }{XPPEDIT 18 
+0 "z^n*u^k" "*&)%\"zG%\"nG\"\"\")%\"uG%\"kGF&" }{TEXT -1 44 " in the T
+aylor series of this expression at " }{XPPEDIT 18 0 "z=0" "/%\"zG\"\"!
+" }{TEXT -1 34 " is the number of words of length " }{XPPEDIT 18 0 "n
+" "I\"nG6\"" }{TEXT -1 31 " where the pattern abab occurs " }{XPPEDIT 
+18 0 "k" "I\"kG6\"" }{TEXT -1 18 " times. Replacing " }{XPPEDIT 18 0 "
+z" "I\"zG6\"" }{TEXT -1 4 " by " }{XPPEDIT 18 0 "z/4" "*&%\"zG\"\"\"\"
+\"%!\"\"" }{TEXT -1 21 " directly yields the " }{TEXT 258 31 "probabil
+ity generating function" }{TEXT -1 30 " under the uniform model (see \+
+" }{HYPERLNK 17 "below" 1 "" "biased" }{TEXT -1 21 " for a biased mode
+l):" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "GF:=normal(subs(z=z/4,sol));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#GFG,$*&,&\"#;\"\"\"*$%\"zG\"\"#
+F)F),.!$c#F)F+\"$c#F*!#;*$F+\"\"$F(*$F+\"\"%!\"\"*&F+F4%\"uGF)F)F5F0" 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 32 "Here are the first coefficients
+:" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "S:=map(normal,series(GF,u));" 
+}}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"SG+1%\"uG,$*&,&\"#;\"\"\"*$%\"zG
+\"\"#F+F+,,\"$c#F+F-!$c#F,F**$F-\"\"$!#;*$F-\"\"%F+!\"\"F*\"\"!,$*(F)F
++F-F6F/!\"#F*\"\"\",$*(F)F+F-\"\")F/!\"$F*\"\"#,$*(F)F+F-\"#7F/!\"%F*
+\"\"$,$*(F)F+F-F*F/!\"&F*\"\"%,$*(F)F+F-\"#?F/!\"'F*\"\"&-%\"OG6#F+\"
+\"'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "For instance, the coeffici
+ent of " }{XPPEDIT 18 0 "u^0" "*$%\"uG\"\"!" }{TEXT -1 77 " in this se
+ries gives the probabilities that the pattern abab does not occur:" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "series(coeff(S,u,0),z,31);
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+]o%\"zG\"\"\"\"\"!F%\"\"\"F%\"\"#
+F%\"\"$#\"$b#\"$c#\"\"%#\"$F\"\"$G\"\"\"&#\"%\\S\"%'4%\"\"'#\"%<?\"%[?
+\"\"(#\"%>SF4\"\")#\"&lS'\"&Ob'\"\"*#\"(J7-\"\"(w&[5\"#5#\"'fVD\"'W@E
+\"#6#\")\"[=i\"\");sx;\"#7#\")6#eh\"FK\"#8#\")l\")4;FK\"#9#\"*PnIG\"\"
+*Gx@M\"\"#:#\"+Ryb!4%\"+'Hn\\H%\"#;#\"+(Ryw.#\"+[O[Z@\"#<#\",4eRj\\'\"
+,OnZ>(o\"#=#\",Xe\\!=;\",%=p)zr\"\"#>#\",r!o9[kF[o\"#?#\".rZapy-\"\".w
+xi6&*4\"\"#@#\"/rac(z%Q;\"/;W/'=#f<\"#A#\".23p)[S?\"._bDB!*>#\"#B#\"0D
+]3k>@g#\"0c1rw\\Z\"G\"#C#\"0p#zD)\\Cf#Fbp\"#D#\"0pD]%f\"Ge#Fbp\"#E#\"1
+,^+YrGH5\"1CE%o!***e7\"\"#F#\"2R'o%*ez&Hc'\"2Oz#z.%fd?(\"#G#\"2N]Xnd%G
+pK\"2oR'*=qzGg$\"#H#\"4TyP,oN$GU5\"4wp%og/:#H:\"\"#I-%\"OG6#F%\"#J" }}
+}{PARA 0 "" 0 "" {TEXT -1 144 "Thus the random draws of words of lengt
+h 30 that we did before are typical: the probability that the pattern \+
+does not occur in such a word being" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 35 "coeff(\",z,30)=evalf(coeff(\",z,30));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/#\"4TyP,oN$GU5\"4wp%og/:#H:\"$\"+QqOS!*!#5" }}}
+{PARA 0 "" 0 "" {TEXT -1 135 "The expected number of occurrences is ob
+tained very directly from the bivariate generating function GF. Here i
+s its generating function" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 
+"mom1:=factor(subs(u=1,diff(GF,u)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%%mom1G,$*(%\"zG\"\"%,&F'\"\"\"!\"\"F*!\"#,&\"#;F**$F'\"\"#F*F+#F*F
+." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "smom1:=series(\",z,31)
+;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&smom1G+en%\"zG#\"\"\"\"$c#\"\"
+%#F(\"$G\"\"\"&#\"#Z\"%'4%\"\"'#\"#J\"%[?\"\"(#\"%L7\"&Ob'\"\")#\"$P(
+\"&oF$\"\"*#\"&Ru#\"(w&[5\"#5#\"&Zc\"\"')GC&\"#6#\"'&Qi&\");sx;\"#7#\"
+'L?J\"(3')Q)\"#8#\")^>(4\"\"*caVo#\"#9#\"(B%zf\"*Gx@M\"\"#:#\"*d=82#\"
++'Hn\\H%\"#;#\"**3h96\"+[O[Z@\"#<#\"+$)**R>Q\",OnZ>(o\"#=#\"+fD-O?\",o
+$Q(fV$\"#>#\",\\S/&>p\".wxi6&*4\"\"#?#\",0Jo=m$\"-))Q\"ev\\&\"#@#\".NR
+,vkB\"\"/;W/'=#f<\"#A#\"-bU3w0l\".3A-$4'z)\"#B#\"/h$p\"pK&=#\"0c1rw\\Z
+\"G\"#C#\"/\"G@=0W9\"\"0G`N)[P29\"#D#\"02A&)4qw#Q\"1'\\qti*f.X\"#E#\"0
+6<r!=i'*>\"1[_o8)*z^A\"#F#\"1$>9zS2Tl'\"2Oz#z.%fd?(\"#G#\"1<o_;D^fM\"2
+oR'*=qzGg$\"#H#\"3*>*3JD3V\\6\"4wp%og/:#H:\"\"#I-%\"OG6#F(\"#J" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(\");" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#+en%\"zG$\"+++D1R!#7\"\"%$\"+++]7yF'\"\"&$\"+Q4YZ6!#6
+\"\"'$\"+v=n8:F.\"\"($\"+\"p39)=F.\"\")$\"+3b9\\AF.\"\"*$\"+dpy;EF.\"#
+5$\"+1%GW)HF.\"#6$\"+:e2_LF.\"#7$\"+DKs>PF.\"#8$\"+i-P(3%F.\"#9$\"+)H<
+]X%F.\"#:$\"+fVmA[F.\"#;$\"+>9J!>&F.\"#<$\"+y%ezb&F.\"#=$\"+ObgDfF.\"#
+>$\"+&f_KH'F.\"#?$\"+a'**3m'F.\"#@$\"+8naGqF.\"#A$\"+sP>'R(F.\"#B$\"+I
+3%Qw(F.\"#C$\"+*)y[J\")F.\"#D$\"+[\\8*\\)F.\"#E$\"+2?ym))F.\"#F$\"+m!H
+WB*F.\"#G$\"+Dh2-'*F.\"#H$\"+$=B(p**F.\"#I-%\"OG6#\"\"\"\"#J" }}}
+{PARA 0 "" 0 "" {TEXT -1 106 "Thus in a sequence of 20 draws as above,
+ we can expect the following number of occurrences of the pattern:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "20*coeff(\",z,30);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#$\"+PY%R*>!\"*" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 57 "The variances are computed as easily as the expectations:
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "mom2:=factor(subs(u=1,d
+iff(u*diff(GF,u),u)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%mom2G,$**
+%\"zG\"\"%,,\"$G\"\"\"\"F'!$G\"*$F'\"\"#\"\")*$F'\"\"$!\")*$F'F(F+F+,&
+F'F+!\"\"F+!\"$,&\"#;F+F-F+!\"##F5F*" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 61 "evalf(series(mom2-add(coeff(smom1,z,i)^2*z^i,i=0..30)
+,z,31));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+en%\"zG$\"+67*4*Q!#7\"\"%
+$\"+W[Y^xF'\"\"&$\"+rUHM6!#6\"\"'$\"+])f2\\\"F.\"\"($\"+jM1\\=F.\"\")$
+\"+EUr2AF.\"\"*$\"+%HSic#F.\"#5$\"+YMtCHF.\"#6$\"+/]B$G$F.\"#7$\"+@$R<
+k$F.\"#8$\"+uIC+SF.\"#9$\"+6mueVF.\"#:$\"+'=]sr%F.\"#;$\"+xPvv]F.\"#<$
+\"+ltDMaF.\"#=$\"+_4w#z&F.\"#>$\"+SXE^hF.\"#?$\"+F\"o(4lF.\"#@$\"+:<Fo
+oF.\"#A$\"+-`xEsF.\"#B$\"+*))y_e(F.\"#C$\"+xCyVzF.\"#D$\"+kgG-$)F.\"#E
+$\"+_'*yg')F.\"#F$\"+RKH>!*F.\"#G$\"+Fozx$*F.\"#H$\"+9/IO(*F.\"#I-%\"O
+G6#\"\"\"\"#J" }}}{PARA 0 "" 0 "" {TEXT -1 19 "The coefficient of " }
+{XPPEDIT 18 0 "z^n" ")%\"zG%\"nG" }{TEXT -1 96 " in this series is the
+ variance of the number of occurrences of the pattern in a word of len
+gth " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 1 "." }}}{SECT 0 {PARA 
+4 "" 0 "" {TEXT 266 27 "Fixed number of occurrences" }}{PARA 0 "" 0 "
+" {TEXT -1 51 "We now consider the probabilities that abab occurs " }
+{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 12 " times, for " }{XPPEDIT 18 
+0 "k=0..5" "/%\"kG;\"\"!\"\"&" }{TEXT -1 8 ". Using " }{HYPERLNK 17 "g
+fun" 2 "gfun" "" }{TEXT -1 64 ", we can compute these probabilities fo
+r random words of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 7 "
+, with " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 23 " up to a few thou
+sands." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "maxnb:=5:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 51 "for i from 0 to maxnb do pro
+ba[i]:=coeff(S,u,i) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&probaG6
+#\"\"!,$*&,&\"#;\"\"\"*$%\"zG\"\"#F,F,,,\"$c#F,F.!$c#F-F+*$F.\"\"$!#;*
+$F.\"\"%F,!\"\"F+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&probaG6#\"\"
+\",$*(,&\"#;F'*$%\"zG\"\"#F'F'F-\"\"%,,\"$c#F'F-!$c#F,F+*$F-\"\"$!#;*$
+F-F/F'!\"#F+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&probaG6#\"\"#,$*(,
+&\"#;\"\"\"*$%\"zGF'F,F,F.\"\"),,\"$c#F,F.!$c#F-F+*$F.\"\"$!#;*$F.\"\"
+%F,!\"$F+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&probaG6#\"\"$,$*(,&\"
+#;\"\"\"*$%\"zG\"\"#F,F,F.\"#7,,\"$c#F,F.!$c#F-F+*$F.F'!#;*$F.\"\"%F,!
+\"%F+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&probaG6#\"\"%,$*(,&\"#;\"
+\"\"*$%\"zG\"\"#F,F,F.F+,,\"$c#F,F.!$c#F-F+*$F.\"\"$!#;*$F.F'F,!\"&F+
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&probaG6#\"\"&,$*(,&\"#;\"\"\"*
+$%\"zG\"\"#F,F,F.\"#?,,\"$c#F,F.!$c#F-F+*$F.\"\"$!#;*$F.\"\"%F,!\"'F+
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 231 "Since we want to investigate
+ these probabilities for texts of large size (a typical gene is a few \+
+thousand letters long), we need the Taylor expansions of these rationa
+l functions for very large orders. These can be computed using " }
+{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 31 ", which will first compu
+te the " }{TEXT 259 6 "linear" }{TEXT -1 52 " recurrence satisfied by \+
+these Taylor coefficients (" }{HYPERLNK 17 "gfun[diffeqtorec]" 2 "gfun
+[diffeqtorec]" "" }{TEXT -1 73 "), and then exploit these recurrences \+
+to compute the series efficiently (" }{HYPERLNK 17 "gfun[rectoproc]" 
+2 "gfun[rectoproc]" "" }{TEXT -1 2 "):" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 216 "for i from 0 to maxnb do   \n   rec:=diffeqtorec(y(z
+)-proba[i],y(z),u(n));\n   print(i,rec);\n   rec:=select(has,rec,n) un
+ion \{seq(op(1,i)=evalf(op(2,i)),i=remove(has,rec,n))\};\n   P[i]:=rec
+toproc(rec,u(n),remember) \nod:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"
+\"!<',,-%\"uG6#%\"nG\"\"\"-F'6#,&F)F*F*F*!#;-F'6#,&F)F*\"\"#F*\"#;-F'6
+#,&F)F*\"\"$F*!$c#-F'6#,&F)F*\"\"%F*\"$c#/-F'6#F2F*/-F'6#F7F*/-F'6#F#F
+*/-F'6#F*F*" }}{PARA 12 "" 1 "" {XPPMATH 20 "6$\"\"\"<+/-%\"uG6#F#\"\"
+!/-F'6#\"\"$F)/-F'6#\"\"#F),4-F'6#%\"nGF#-F'6#,&F5F#F#F#!#K-F'6#,&F5F#
+F1F#\"$)G-F'6#,&F5F#F-F#!%C5-F'6#,&F5F#\"\"%F#\"%g*)-F'6#,&F5F#\"\"&F#
+!&%Q;-F'6#,&F5F#\"\"'F#\"&GP(-F'6#,&F5F#\"\"(F#!'s58-F'6#,&F5F#\"\")F#
+\"&Ob'/-F'6#F)F)/-F'6#FE#F#\"$c#/-F'6#FJ#F#\"$G\"/-F'6#FO#\"#Z\"%'4%/-
+F'6#FT#\"#J\"%[?" }}{PARA 12 "" 1 "" {XPPMATH 20 "6$\"\"#<//-%\"uG6#\"
+\"\"\"\"!/-F'6#\"\"$F*/-F'6#F#F*/-F'6#F*F*/-F'6#\"\"%F*/-F'6#\"\"&F*/-
+F'6#\"\"'F*/-F'6#\"\"(F*/-F'6#\"#6#\"#x\"')GC&/-F'6#\"\")#F)\"&Ob'/-F'
+6#\"\"*#F.FQ/-F'6#\"#5#\"#ZFK,<-F'6#%\"nGF)-F'6#,&FjnF)F)F)!#[-F'6#,&F
+jnF)F#F)\"$;)-F'6#,&FjnF)F.F)!%+k-F'6#,&FjnF)F8F)\"&+%Q-F'6#,&FjnF)F<F
+)!'[!e#-F'6#,&FjnF)F@F)\"'/^\")-F'6#,&FjnF)FDF)!(o(GT-F'6#,&FjnF)FOF)
+\"(+/$)*-F'6#,&FjnF)FUF)!)+W@E-F'6#,&FjnF)FZF)\")wtZ`-F'6#,&FjnF)FHF)!
+)[;L]-F'6#,&FjnF)\"#7F)\");sx;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6$\"\"
+$<3/-%\"uG6#\"\"\"\"\"!/-F'6#F#F*/-F'6#\"\"#F*/-F'6#F*F*/-F'6#\"\"*F*/
+-F'6#\"#5F*/-F'6#\"#6F*/-F'6#\"\")F*,D-F'6#%\"nGF)-F'6#,&FHF)F)F)!#k-F
+'6#,&FHF)F1F)\"%+;-F'6#,&FHF)F#F)!&![?-F'6#,&FHF)\"\"%F)\"'+k;-F'6#,&F
+HF)\"\"&F)!(Kg>\"-F'6#,&FHF)\"\"'F)\"(obS(-F'6#,&FHF)\"\"(F)!)+!oF$-F'
+6#,&FHF)FDF)\"*SI#[;-F'6#,&FHF)F8F)!*+!)GC&-F'6#,&FHF)F<F)\"+3a#e*=-F'
+6#,&FHF)F@F)!+sq%*)*[-F'6#,&FHF)\"#7F)\",+/>04\"-F'6#,&FHF)\"#8F)!,![O
+[Z@-F'6#,&FHF)\"#9F)\",+caVo#-F'6#,&FHF)\"#:F)!,%=p)zr\"-F'6#,&FHF)\"#
+;F)\"+'Hn\\H%/-F'6#FXF*/-F'6#FgnF*/-F'6#F\\oF*/-F'6#FaoF*/-F'6#F`q#\"$
+d\"\"*caVo#/-F'6#Feq#\"#x\")k)3r'/-F'6#Ffp#F)\");sx;/-F'6#F[q#F)\"(/V>
+%" }}{PARA 12 "" 1 "" {XPPMATH 20 "6$\"\"%<7/-%\"uG6#\"\"\"\"\"!/-F'6#
+\"\"$F*/-F'6#\"\"#F*/-F'6#F*F*/-F'6#\"\"*F*/-F'6#\"#5F*/-F'6#\"#6F*/-F
+'6#\"\")F*/-F'6#\"#8F*/-F'6#\"#9F*/-F'6#\"#:F*/-F'6#\"#7F*,L-F'6#%\"nG
+F)-F'6#,&FYF)F)F)!#!)-F'6#,&FYF)F2F)\"%SE-F'6#,&FYF)F.F)!&gt%-F'6#,&FY
+F)F#F)\"'?j`-F'6#,&FYF)\"\"&F)!('47Y-F'6#,&FYF)\"\"'F)\")gp&[$-F'6#,&F
+YF)\"\"(F)!*!)[B=#-F'6#,&FYF)FEF)\"+?FQc6-F'6#,&FYF)F9F)!+SUv()e-F'6#,
+&FYF)F=F)\",ca.1K#-F'6#,&FYF)FAF)!,Sy1/U*-F'6#,&FYF)FUF)\"-?j(R.'H-F'6
+#,&FYF)FIF)!-![o+*Q*)-F'6#,&FYF)FMF)\".g0t&Q%G#-F'6#,&FYF)FQF)!.'HvJ8O
+[-F'6#,&FYF)\"#;F)\".?^[cz**)-F'6#,&FYF)\"#<F)!/gh>.Jr7-F'6#,&FYF)\"#=
+F)\"/S9m8(Q8\"-F'6#,&FYF)\"#>F)!.!))Q\"ev\\&-F'6#,&FYF)\"#?F)\".wxi6&*
+4\"/-F'6#F#F*/-F'6#FgoF*/-F'6#F\\pF*/-F'6#FapF*/-F'6#Ffr#F)\"+'Hn\\H%/
+-F'6#F[s#FgoF\\u/-F'6#F`s#\"#f\",%=p)zr\"/-F'6#Fes#\"$N\"Ffu" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6$\"\"&<;/-%\"uG6#\"\"\"\"\"!/-F'6#\"\"$F*/-F'
+6#\"\"#F*/-F'6#F*F*/-F'6#\"\"*F*/-F'6#\"#5F*/-F'6#\"#6F*/-F'6#\"\")F*/
+-F'6#\"#8F*/-F'6#\"#9F*/-F'6#\"#:F*/-F'6#\"#7F*,T-F'6#,&%\"nGF)FIF)!/;
+s$*3de9-F'6#,&FZF)FMF)\"/O6*o:!Q^-F'6#,&FZF)FQF)!0'*[E&[*eb\"-F'6#,&FZ
+F)\"#;F)\"0;wW9oaF%-F'6#,&FZF)F)F)!#'*-F'6#,&FZF)F2F)\"%OR-F'6#,&FZF)F
+.F)!&O6*-F'6#,&FZF)\"\"%F)\"(cqN\"-F'6#,&FZF)\"#=F)\"1c5Y3&o:=#-F'6#,&
+FZF)\"#>F)!1wp#4e`=$R-F'6#,&FZF)\"#?F)\"1w0%)Q6^Ge-F'6#,&FZF)\"#<F)!1c
+qJUrpZ5-F'6#,&FZF)\"#CF)\"0c1rw\\Z\"G-F'6#,&FZF)\"#BF)!1OREg)\\))o\"-F
+'6#,&FZF)\"#@F)!1'47=B=GE'-F'6#,&FZF)\"#AF)\"1Oj#pwxwK%-F'6#,&FZF)FAF)
+!-w&3og6*-F'6#,&FZF)FUF)\".;3p%*y(R-F'6#,&FZF)F9F)!,wTr&)z$-F'6#,&FZF)
+F=F)\"-cyt.2?-F'6#FZF)-F'6#,&FZF)\"\"'F)\"*;;.I\"-F'6#,&FZF)F#F)!)'HZY
+\"-F'6#,&FZF)FEF)\"+cm%Q_'-F'6#,&FZF)\"\"(F)!*c=;***/-F'6#FaoF*/-F'6#F
+fqF*/-F'6#FgpF*/-F'6#F\\qF*/-F'6#FbpF*/-F'6#F#F*/-F'6#FatF*/-F'6#F^uF*
+/-F'6#Faq#F)\".wxi6&*4\"/-F'6#Fer#F.\"-))Q\"ev\\&/-F'6#Fjr#\"$J$\"/;W/
+'=#f</-F'6#F`r#\"$L%\".3A-$4'z)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+101 "We now compute the probability that the pattern abab occurs 0,1,.
+..,5 times in a word of length 1000:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 52 "Digits:=30:for i from 0 to maxnb do i,P[i](1000) od;
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"!$\"?H)f4f^R0U>$R8EUC!#J" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"\"$\"?gier+tR,%\\+Vs;=*!#J" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"#$\"?C=5L0q8+%e<-kTr\"!#I" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$$\"?k@mY![0hd;Y0$))=@!#I" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%$\"?]_Mx7(R*[%*oXK%3&>!#I" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"&$\"?CEykKv=B\">0`epU\"!#I" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 92 "The following picture then shows h
+ow these probabilities evolve with the length of the word:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 74 "plots[display](\{seq(plot([seq([10*
+i,P[j](10*i)],i=1..100)]),j=0..maxnb)\});" }}{PARA 13 "" 1 "" 
+{INLPLOT "6(-%'CURVESG6$7`q7$$\"#5\"\"!$\"+u&QX'*)!#97$$\"#?F*$\"?%Re)
+zu!of-B1RtNC\"!#K7$$\"#IF*$\"?l3;/S#)3\">=fBD$)f$F37$$\"#SF*$\">/N&eJB
+H3Fn\"o#e<q!#J7$$\"#]F*$\"?UbyD@nV)==B(R^P6F>7$$\"#gF*$\"?%\\?0.=^m:9'
+4ZUb;F>7$$\"#qF*$\"?$Hd;mTp^[)[=HqWAF>7$$\"#!)F*$\"?6&fqK$fMl=$GJ$R&*G
+F>7$$\"#!*F*$\"?;1vjj@b/\\#o%3K)f$F>7$$\"$+\"F*$\"?vF(*f(eO*f%pldT]M%F
+>7$$\"$5\"F*$\">`.>e3t;F\"zoizF^!#I7$$\"$?\"F*$\">9P$yt:6P^B9mYRfF\\o7
+$$\"$I\"F*$\">*pSG&RDPWv.\"R`tnF\\o7$$\"$S\"F*$\">`v>$3M1;_t%3SSi(F\\o
+7$$\"$]\"F*$\">'[%Qm_5?9hk$4b&[)F\\o7$$\"$g\"F*$\">#Q.,0T9c[&)z97`$*F
+\\o7$$\"$q\"F*$\"?h3m!eP8]fKzKEA-\"F\\o7$$\"$!=F*$\"?$o+hCym0IsqO\"*)3
+6F\\o7$$\"$!>F*$\"?L@\"G58*=1G#pnS\\>\"F\\o7$$\"$+#F*$\"?>qw['*zXUz*oh
+W+G\"F\\o7$$\"$5#F*$\"?.Wc)*4c89HVCz!RO\"F\\o7$$\"$?#F*$\"?yK$*4gk'Ge:
+nHniW\"F\\o7$$\"$I#F*$\"?)Hf!4!H'oO^*e6*)o_\"F\\o7$$\"$S#F*$\"?D1%p:$Q
+*G8\\+Jnbg\"F\\o7$$\"$]#F*$\"?I'*Q1I<3Z$zDM@@o\"F\\o7$$\"$g#F*$\"?/\\8
+.*QMZ`xIK%Rc<F\\o7$$\"$q#F*$\"?>O,?@7I()\\0L7DG=F\\o7$$\"$!GF*$\"?BLWD
+9e*oZl-Exv*=F\\o7$$\"$!HF*$\"?$\\/Z_u'pH1nNiFk>F\\o7$$\"$+$F*$\"?!G@)3
+K7X32Sn\"p#G?F\\o7$$\"$5$F*$\"?eSHxo=JXHNmG\\*3#F\\o7$$\"$?$F*$\"?A(yy
+l(**fSYMe')*y9#F\\o7$$\"$I$F*$\"?db_**))zT#*)**z<^M?#F\\o7$$\"$S$F*$\"
+?<'HPO#*ovn(zRs7cAF\\o7$$\"$]$F*$\"?a%ohoj\"Qoc%>y9fI#F\\o7$$\"$g$F*$
+\"?%*pVGj)Hw@p*y=\"GN#F\\o7$$\"$q$F*$\"?*RKOS(=HB*=\">e#oR#F\\o7$$\"$!
+QF*$\"?q)*)>Sw,)>O!HCszV#F\\o7$$\"$!RF*$\"?pI6k<(\\?.\\#RVFwCF\\o7$$\"
+$+%F*$\"?nx!o>[6\"\\h'f4i<^#F\\o7$$\"$5%F*$\"?qcf[by-\"3)Q,;ZWDF\\o7$$
+\"$?%F*$\"?^Af)R:&[(=+URWWd#F\\o7$$\"$I%F*$\"?I/BgO0bDgkeos,EF\\o7$$\"
+$S%F*$\"?.i>7Ka=\\:Wi'pji#F\\o7$$\"$]%F*$\"?pUj7S(fBQs[BF%[EF\\o7$$\"$
+g%F*$\"?\"*pI'o<u!RUo#Gdzm#F\\o7$$\"$q%F*$\"?&)>4**)4+(>]]T.-&o#F\\o7$
+$\"$![F*$\"?REMnrZ7+\"f1Oz'*p#F\\o7$$\"$!\\F*$\"?!\\^\"))=&\\%f,N>$**>
+r#F\\o7$$\"$+&F*$\"?fn+g]I;g))Hso/AFF\\o7$$\"$5&F*$\"?ub\"=&pEs%3EI-!*
+)HFF\\o7$$\"$?&F*$\"?8,()H*)R09:2ByfNFF\\o7$$\"$I&F*$\"?'fP`SUnPOJb4S#
+RFF\\o7$$\"$S&F*$\"?+?d\"HC6!=$)Q\"=()3u#F\\o7$$\"$]&F*$\"?-*\\?v2*[_8
+>2(41u#F\\o7$$\"$g&F*$\"?LK;uFw'*RMss$y%QFF\\o7$$\"$q&F*$\"?()e^;^0%eH
+rtvjXt#F\\o7$$\"$!eF*$\"?SwBd:eF]N)R9O*GFF\\o7$$\"$!fF*$\"?@h#etC;*>A2
+f`m@FF\\o7$$\"$+'F*$\"?13W%GA.(zsFG1#Gr#F\\o7$$\"$5'F*$\"?%zY2[9g\"zc2
+Y/Z-FF\\o7$$\"$?'F*$\"?baaW4M9uWxeCo!p#F\\o7$$\"$I'F*$\"?%*)eE)H.\\8I)
+)fL_xEF\\o7$$\"$S'F*$\"?E'eC\"3I[\"[6qzeIm#F\\o7$$\"$]'F*$\"?#e&)G')HQ
+dp#\\*G`tk#F\\o7$$\"$g'F*$\"?Hf&GG&zIL5(f:q/j#F\\o7$$\"$q'F*$\"?=n;\\m
+R<OoC^9Z7EF\\o7$$\"$!oF*$\"?zLA7O2Ybnq6zT$f#F\\o7$$\"$!pF*$\"?$\\UF0**
+=,N5(3*oLd#F\\o7$$\"$+(F*$\"?Z3%[T5bM(4M4CQ_DF\\o7$$\"$5(F*$\"?P5))Q2=
+;nY'R%\\^IDF\\o7$$\"$?(F*$\"?7Trhr;xRX2!e@y]#F\\o7$$\"$I(F*$\"?JF6VbB5
+K+$>!fN%[#F\\o7$$\"$S(F*$\"?!\\8*zO/+f1`&**p,Y#F\\o7$$\"$](F*$\"?!yRpl
+j`FN#\\QWJNCF\\o7$$\"$g(F*$\"?TQ*=Sc**G]@WHQ)4CF\\o7$$\"$q(F*$\"?j8pD%
+=<(psS6\"*y$Q#F\\o7$$\"$!yF*$\"?t8)4<]t/#oFCH@dBF\\o7$$\"$!zF*$\"?\"HY
+hQHY3(3GgU:IBF\\o7$$\"$+)F*$\"?zM([')GmwP)*y9cEI#F\\o7$$\"$5)F*$\"?FtL
+1BYn)[p%G,wuAF\\o7$$\"$?)F*$\"?I/w+?0js\\Qqi]YAF\\o7$$\"$I)F*$\"?O@#)>
+t\"Q!)Qyb=Lz@#F\\o7$$\"$S)F*$\"?FzTR9UHdU3[!y!*=#F\\o7$$\"$])F*$\"?Xcp
+h-Ls[:W9m(*f@F\\o7$$\"$g)F*$\"?d@>]hvm#)otXKmI@F\\o7$$\"$q)F*$\"?UIZOg
+:\"z6'4J4<,@F\\o7$$\"$!))F*$\"?7M9))z0D(QYCJJ:2#F\\o7$$\"$!*)F*$\"?Qh!
+HBRe'zKQ5ZxT?F\\o7$$\"$+*F*$\"?$o_cc[AGv*)4:I>,#F\\o7$$\"$5*F*$\"?-Oe6
+t?EVXY$RD?)>F\\o7$$\"$?*F*$\"?98#f/<I$f$G%ep3_>F\\o7$$\"$I*F*$\"?#)\\i
+pWEvIgyc,9A>F\\o7$$\"$S*F*$\"?+\"oa\">c\"33K!>\"4A*=F\\o7$$\"$]*F*$\"?
+a/-O&p=g\"f*[#oJi=F\\o7$$\"$g*F*$\"?KS/o$*p[B5BL^[K=F\\o7$$\"$q*F*$\"?
+D#e[(>3md-17[t-=F\\o7$$\"$!)*F*$\"?w_CKR<F7lpob3t<F\\o7$$\"$!**F*$\"?I
+cO!)Rd[P[')zgbV<F\\o7$$\"%+5F*$\"?C=5L0q8+%e<-kTr\"F\\o-%'COLOURG6&%$R
+GBG$F)!\"\"F*F*-F$6$7`q7$F(F*7$F/$\"?+++++DJ?3%4wdHa\"!#P7$F5$\">x`e96
+rAO%f54!>.'!#N7$F:$\">!)HpS]y7\"H_GZO!z$!#M7$F@$\"?>ddY)))exPJ5=2**H\"
+F_\\m7$FE$\">D$z7KD/]BbPSVwK!#L7$FJ$\">cufr&o'G=8**yw$[oFf\\m7$FO$\"?H
+zq&\\()=m?bJlj>E\"Ff\\m7$FT$\">c\\\\Fr<\"Rl<c-)Q7#F37$FY$\">[a?$\\5'oT
+D+V7#QLF37$Fhn$\">'*)HCl;D:PHv)oQ(\\F37$F^o$\">ocz?,9(ysUj+w*4(F37$Fco
+$\">&)pmzppOFQUx(p$y*F37$Fho$\"?L$=JB:5AKfi)e948F37$F]p$\"?vQnn.nu@9TI
+(*f3<F37$Fbp$\">E&\\#*4vRP$[B)*yE=#F>7$Fgp$\">0aUPb&p&)zid,$pt#F>7$F\\
+q$\">r3\"z@2$QBkT%fXwLF>7$Faq$\">erkZb$H,bN\\@)e5%F>7$Ffq$\">R1Y='=1+=
+!e@L$H\\F>7$F[r$\">7g_TSg_NJOM:/&eF>7$F`r$\">0+T#)3w)Rz_Qj?soF>7$Fer$
+\">W\"*3)eSoEdzz8D(*zF>7$Fjr$\">hUP*QZ7!f'fsRcF#*F>7$F_s$\"?Gp@pM-Pb*>
+89jk0\"F>7$Fds$\"?d*)>oHc/KEg:C%4?\"F>7$Fis$\"??!Qg(*[$eFtn_3Cc8F>7$F^
+t$\"?j.s5)4^vFBxAcB_\"F>7$Fct$\"?!R;vj;\"=!3!\\_#R#*p\"F>7$Fht$\"?q_.Y
+!Hf2KIkc&z')=F>7$F]u$\">!Q)\\'GX+*=Wx)y)[3#F\\o7$Fbu$\">5XM3sg(\\$33HQ
+LH#F\\o7$Fgu$\">(3zb$Q#*32+*z0$>^#F\\o7$F\\v$\">BJtgR**y/$HKFTSFF\\o7$
+Fav$\">LG!o+K(\\J7nQ*\\yHF\\o7$Ffv$\">3:8)o(o0u4eNueA$F\\o7$F[w$\">=q&
+[9ue0axVJ>#[$F\\o7$F`w$\">?'fxo`eU\"\\CX&3ZPF\\o7$Few$\">(o:!y^#G!=b8m
+d,-%F\\o7$Fjw$\">.N?2%H(*oZ'*o_*4I%F\\o7$F_x$\">>BFUEy'o&4UGl\"*e%F\\o
+7$Fdx$\">9:!>VBv`V$)e&=U)[F\\o7$Fix$\">V;3b_vfM-E0#p&=&F\\o7$F^y$\">/v
+JmY:+jgY-6J\\&F\\o7$Fcy$\">;ksR')GsMYb9\"*f!eF\\o7$Fhy$\">ry#z8Xh$yv`_
+SQ7'F\\o7$F]z$\">g*=Y\"**4Aa;ZlhhW'F\\o7$Fbz$\">mKP(o*z@j0bD`Cx'F\\o7$
+Fgz$\">W0g8yJ%**3:S?@-rF\\o7$F\\[l$\">i*fAI/u_mkxV$\\V(F\\o7$Fa[l$\">&
+*)\\\\4FMCI:my6qxF\\o7$Ff[l$\">AN.]>+i_Q?\"GE2\")F\\o7$F[\\l$\">2?I.ru
+L*>(ehteW)F\\o7$F`\\l$\">@KWsbN)H)yi1gay)F\\o7$Fe\\l$\">^$HFD,89?&HaQb
+7*F\\o7$Fj\\l$\">#3>\"o,m*o^VIJjl%*F\\o7$F_]l$\">8tH;di\">tdWmF0)*F\\o
+7$Fd]l$\"?B/d`n[!H1!Qd6S95F\\o7$Fi]l$\"?VmMF#on<q_P4R\"[5F\\o7$F^^l$\"
+?I*e@t#3DV!Gk!zp\"3\"F\\o7$Fc^l$\"?LTm%p+U5=7#H_.:6F\\o7$Fh^l$\"?!z#[M
+/lAB'=%f*4\"[6F\\o7$F]_l$\"?Zz9OG?U8z@8B)3=\"F\\o7$Fb_l$\"?Bhq!3%=t7`2
+uQJ87F\\o7$Fg_l$\"?qf()yDy:EJdMwOX7F\\o7$F\\`l$\"?`&=LR>AX&o\">.3qF\"F
+\\o7$Fa`l$\"?#e&QC>'zAJDu(4?38F\\o7$Ff`l$\"?CZ3=3)p2N/.)Q\"*Q8F\\o7$F[
+al$\"?,\"of3Ez#H?+mc6p8F\\o7$F`al$\"?S(H;(4%GM8S%*yw()R\"F\\o7$Feal$\"
+?\\N]^zWJ!*HTV#pyU\"F\\o7$Fjal$\"?f$f2v9h&*pRCcmjX\"F\\o7$F_bl$\"?P7Ud
+GXQ0.NAQC%[\"F\\o7$Fdbl$\"?CqCKRQa$=!)ejx9^\"F\\o7$Fibl$\"?Zy<_aB*f5SX
+9Y!Q:F\\o7$F^cl$\"?O$G?\\^VS;Aq+HRc\"F\\o7$Fccl$\"?72(yoKm)eSR%Q2\"*e
+\"F\\o7$Fhcl$\"?5,\"\\KIE(ziKARc8;F\\o7$F]dl$\"?SS$*yeWQ_%)eIFGP;F\\o7
+$Fbdl$\"??Y6aWm$HrU+O\\-m\"F\\o7$Fgdl$\"?!e>d5Q`2S`tx]Co\"F\\o7$F\\el$
+\"?+bi>SIH<PiP`(Qq\"F\\o7$Fael$\"?gS8S\")ej48;bF^C<F\\o7$Ffel$\"?5qFEk
+@B[gcsSNW<F\\o7$F[fl$\"?]$Q]Gl@HhC$G;Rj<F\\o7$F`fl$\"?S)[M:V#=6z3B!>;y
+\"F\\o7$Fefl$\"?+QnmYLgb))z%3J!*z\"F\\o7$Fjfl$\"?5([s-V;#['HG$Qi:=F\\o
+7$F_gl$\"?S)zU()e$)*y%z7W%RJ=F\\o7$Fdgl$\"?SK$HSl2IYv:?Tj%=F\\o7$Figl$
+\"?I/eRi%f>t6X[j/'=F\\o7$F^hl$\"?5F$=sb^M(Q&=qhP(=F\\o7$Fchl$\"?5TP)*R
+M;*QGwEPi)=F\\o7$Fhhl$\"?+V\"f1*e)z_4#fD*y*=F\\o7$F]il$\"?q(3En^l?v3$y
+3t3>F\\o7$Fbil$\"?gzGzy0`<_'>Tc(=>F\\o7$Fgil$\"?S-84TP_-!HO>uz#>F\\o7$
+F\\jl$\"?!=)f!pDyiRAW1!RO>F\\o7$Fajl$\"?]f2)>UlkPeYj5S%>F\\o7$Ffjl$\"?
+]_Mx7(R*[%*oXK%3&>F\\oFjjl-F$6$7`q7$F($\"?+++++v$4ry\"ex@R(*F\\o7$F/$
+\"?5n7'oW#Ge$)pr&)G$Q*F\\o7$F5$\"?T^E*G>_TI;$QqOS!*F\\o7$F:$\"?'>)*HAl
+%4]T^5z(*4()F\\o7$F@$\"?BhEF#*>i%es\"zJm\"R)F\\o7$FE$\"?WDpeVEI>oct:)
+\\3)F\\o7$FJ$\"?turh#3(eCek\\z]*y(F\\o7$FO$\"?1_3`]_MNrm+F$[](F\\o7$FT
+$\"?Q2<q4#)e)eq$*=h0B(F\\o7$FY$\"?]=*>)*>e=$Q!4?8j'pF\\o7$Fhn$\"?UF!y#
+GaO37u:Cs6nF\\o7$F^o$\"?*=&HAAO?T`'=!fVmkF\\o7$Fco$\"?QPZ=TAJUu]DO6IiF
+\\o7$Fho$\"?O982!Q*G*4o(zzU-gF\\o7$F]p$\"?\")pt(3+h.3l/LjIy&F\\o7$Fbp$
+\"?m$yWa,T\"z&y&ybrrbF\\o7$Fgp$\"?#oV+I\"*y$HtoQ<4o`F\\o7$F\\q$\"?+E55
+0Ke(=6G`4><&F\\o7$Faq$\"?%4)*))>Rg*Qr4**p*G)\\F\\o7$Ffq$\"?KW2v3y7fi![
+6#z+[F\\o7$F[r$\"?Lm$fq#*p!*)*yIVU`i%F\\o7$F`r$\"?m:1*>K%H\"=vHt/jX%F
+\\o7$Fer$\"?3^WwGSexPI#oWMH%F\\o7$Fjr$\"?*fF&*\\>['3Zx7l`OTF\\o7$F_s$
+\"?TlB5Z7#zoAqqi`)RF\\o7$Fds$\"?dvBfdCVH!pqp8(RQF\\o7$Fis$\"?F')yaGw(e
+Z.Qd(Q*p$F\\o7$F^t$\"?'p0U=h`(*H$32)*=kNF\\o7$Fct$\"?saxWmA%)e;1wH$RV$
+F\\o7$Fht$\"?(\\Tef%p&yOr$4lV3LF\\o7$F]u$\"?wsDfy(\\.\"R![VEv=$F\\o7$F
+bu$\"?F&o/x[hznO\"Q^.rIF\\o7$Fgu$\"?>@``vZ-1TxI6!)eHF\\o7$F\\v$\"?slq4
+dz)Hf!)e#)o1&GF\\o7$Fav$\"?w)*4#[oXI'[pA$)[YFF\\o7$Ffv$\"?M$4C%Gt1tns)
+>:hk#F\\o7$F[w$\"?[K?0_N7#\\[&4.T\\DF\\o7$F`w$\"?9(zyZ%fx4D!ffRiX#F\\o
+7$Few$\"?Kq'f?p2C2fy*QZmBF\\o7$Fjw$\"?3zC4OjH>awv())*zAF\\o7$F_x$\"?T!
+z<k*)4agQxLkm>#F\\o7$Fdx$\"?*[&eiXr4pFYt]Q;@F\\o7$Fix$\"?Vcwl#z;DWgSpR
+!R?F\\o7$F^y$\"?0O<9\"GCH#f\"y(4_k>F\\o7$Fcy$\"?))zRa];[No`@cs#*=F\\o7
+$Fhy$\"?o\"\\@\"G;KMyM(4aN#=F\\o7$F]z$\"?Y;Q*4,<!>zr90\"pv\"F\\o7$Fbz$
+\"?lqsbo'>))4Iv[-Fp\"F\\o7$Fgz$\"?ao`GVy4F\"4g+T3j\"F\\o7$F\\[l$\"?)y#
+)G:)f+j(HLJS7d\"F\\o7$Fa[l$\"?GQqyyS!f]Mny<Q^\"F\\o7$Ff[l$\"?t8U^w#)R*
+*f*H#Q\\e9F\\o7$F[\\l$\"?eR5WwswC`1G<>09F\\o7$F`\\l$\"?5g`\"*4%>j?`2hP
+QN\"F\\o7$Fe\\l$\"?*eb[V9P>u'H!GgVI\"F\\o7$Fj\\l$\"?4K)=Enf%e'pw9\"pc7
+F\\o7$F_]l$\"?NTI'*>q4\"G*\\ITw57F\\o7$Fd]l$\"?=Z<8L\\&fSe9c:l;\"F\\o7
+$Fi]l$\"?+@\"[*)))4>30+5%)Q7\"F\\o7$F^^l$\"?f+5!pw&=\\zMZ1\"G3\"F\\o7$
+Fc^l$\"?J2D$e\">[`#>XEQK/\"F\\o7$Fh^l$\"?%=fP)>_ei>W$47^+\"F\\o7$F]_l$
+\"?OQTKo]QIc\")3Gz$o*F>7$Fb_l$\"?FK,^&f\")Q8r<0*))H$*F>7$Fg_l$\"?=`.!>
+:(QL)*\\c!>*))*)F>7$F\\`l$\"?'p<\"H7hU,U#f95/m)F>7$Fa`l$\"?OeQ?C*[*)f;
+u\"p!RM)F>7$Ff`l$\"?57'*H!>M/Z([61(*Q!)F>7$F[al$\"?lFt!e.:9XXN]y^u(F>7
+$F`al$\"?)=Dyo\")RE?')yJB@Y(F>7$Feal$\"?8<%Q]NL,g(4jET*=(F>7$Fjal$\"?0
+JIG+WJ*f)4)[om#pF>7$F_bl$\"?%e*=:+[?&pd!el_tmF>7$Fdbl$\"?BPNFN')GfWY\\
+fjHkF>7$Fibl$\"?sYuTv*[\\=aOceY>'F>7$F^cl$\"?\"[!**yFLVa76e'o#ofF>7$Fc
+cl$\"?@E3mT&Qk[,\\R_,v&F>7$Fhcl$\"?>'\\:![\"G)oug0u+SbF>7$F]dl$\"?Fze<
+euheP;sBaP`F>7$Fbdl$\"?`-Q;B))*G(3,BmZU^F>7$Fgdl$\"?(>!\\^EoQI#3SuRX&
+\\F>7$F\\el$\"?h>0uC(zJmmN?rMx%F>7$Fael$\"?$fr7j;A0$3[\"**>!*f%F>7$Ffe
+l$\"?MI4ei:9e3'4FW4V%F>7$F[fl$\"?Kl!)*4BWW#3QV5,pUF>7$F`fl$\"?Ie-R'=jQ
+Mz_#e*H6%F>7$Fefl$\"?^v6p7eQ#[krL#oiRF>7$Fjfl$\"?;DS/m?I/;p.A'y\"QF>7$
+F_gl$\"?O#G[)3t=:&)zkYLyOF>7$Fdgl$\"?%R7]qFCfX(R(H1Ra$F>7$Figl$\"?UhQJ
+<KBP\"Qsu!R9MF>7$F^hl$\"?uXj\"*=b+/,dq%3'*G$F>7$Fchl$\"?\"*ouO)RqKIY_[
+'QpJF>7$Fhhl$\"?O#QS\"H#)p<G#48eN0$F>7$F]il$\"?!)37+s:IOB-QG'>%HF>7$Fb
+il$\"?`a\"3SS;H3T^!fWMGF>7$Fgil$\"?*HH)3tJ(zi!f%Ge3t#F>7$F\\jl$\"?-.(*
+>IjA'GxdPc5j#F>7$Fajl$\"?Oy_g>^8oE8E=!\\`#F>7$Ffjl$\"?H)f4f^R0U>$R8EUC
+F>Fjjl-F$6$7`qFc[m7$F/$\"+=q%\\4*!#A7$F5$\"?VBlV(\\v-P0]oI5P#!#Q7$F:$
+\"?Td&z/Ec0w!H:b!f%QFg[m7$F@$\"?GkTq?gi&\\#G\"yc=@#!#O7$FE$\"?[z2/'o=%
+4yJ#pJH\"zFabo7$FJ$\"?a^@n12g/!)>0n#=:#F[\\m7$FO$\"?k$yO8-&fF(Qb%GQ#*[
+F[\\m7$FT$\"?/0oL%Q:$oJ!pM]X!)*F[\\m7$FY$\"?NVZ1()pf<gQ)Q#)*)y\"F_\\m7
+$Fhn$\"?()zl$3Le2Hv!zQ6OIF_\\m7$F^o$\"?>d]L(=B'G\\-w`!R'[F_\\m7$Fco$\"
+?0xXCJ*\\:0P'o(\\VV(F_\\m7$Fho$\"?zN6rRwOAkPd*=G4\"Ff\\m7$F]p$\"?9)3om
+BG$y$yb(RMa:Ff\\m7$Fbp$\"?9MizslNB:Ol%o$\\@Ff\\m7$Fgp$\"?>7d#[t>(yCJF0
+i+HFf\\m7$F\\q$\"?o!GL^(4<ZA%oi)*>$QFf\\m7$Faq$\"?@)*\\y+V<GAlkXOo\\Ff
+\\m7$Ffq$\"?pvw([%y!>emNXK`L'Ff\\m7$F[r$\"?JrC,$Q!G&Q(3@p0fzFf\\m7$F`r
+$\"?M5rp=`<QIp#HBg')*Ff\\m7$Fer$\"?N!>]R]-Z9\"G4UG37F37$Fjr$\"?oO:;*\\
+=%ehZ#)\\gj9F37$F_s$\"?We/Et5\\6\\Ul<>b<F37$Fds$\"?^q'o03/^(f*>$pi&3#F
+37$Fis$\"?,i5msm&3MRE$4VdCF37$F^t$\"?,**yow#HtB_NAYI(GF37$Fct$\"?-PQt&
+)*G7aaiOA[L$F37$Fht$\"?nWB+$z/Y&\\XRB+XQF37$F]u$\"?^Y+=$*o2ylq)35dS%F3
+7$Fbu$\"?cg#R\"\\nE?n-D$R*=]F37$Fgu$\"?yI+rfe%=v,7dVlo&F37$F\\v$\"?<q
+\">3%)fV>RPWF-T'F37$Fav$\"?bUL:(\\TvJ0#\\\"R:>(F37$Ffv$\"?#H`27.8RF\\e
+;k=.)F37$F[w$\"?VN;y!3>q)z#[2?C$*)F37$F`w$\"?_g,uF*)3\\V))*\\_U*)*F37$
+Few$\"?l*4qH(GYnz)4@B=4\"F>7$Fjw$\"?E\">Ep.m\\T.NE00?\"F>7$F_x$\"?W;L)
+*4b\\L*)\\%)H_:8F>7$Fdx$\"?$3AN?&4Y)eyM95pV\"F>7$Fix$\"?vV8#)zh+LmMwFo
+k:F>7$F^y$\"?pEW&oYsVG>*Q$R))p\"F>7$Fcy$\"?/mkdq'H'fXWM4OR=F>7$Fhy$\"?
+@(p%\\)=C1p(\\4;@')>F>7$F]z$\"?w&)4IPYdj$oErQ$R@F>7$Fbz$\"?$zI=l*Q*>TP
+0Jt')H#F>7$Fgz$\"?svY)o$[y&**\\blITY#F>7$F\\[l$\"?t+'*Gx7*R_D0q5cj#F>7
+$Fa[l$\"?c_#HN#poDypa')*H\"GF>7$Ff[l$\"?Y*z4wuDb\"*[jdlh*HF>7$F[\\l$\"
+?5Pmb(o7;0$G(**o\\=$F>7$F`\\l$\"?%y*Rxf+pr=euNDzLF>7$Fe\\l$\"?g-kL=L#f
+t$Gl<&)yNF>7$Fj\\l$\"?AOlTo#)f#yQ)>Xe$y$F>7$F_]l$\"?w_l*RK9<k./*>E$*RF
+>7$Fd]l$\"?+lSk/cW)\\a-D%o2UF>7$Fi]l$\"?9)z>T?/`q73-UmU%F>7$F^^l$\"?H2
++!o*f_Y?*HS<*\\YF>7$Fc^l$\"?9JH'o?E)o)*y4YGx[F>7$Fh^l$\"?Y![x$)f1Ddasp
+5&3^F>7$F]_l$\"?/-w,8XX5&o6HcLM&F>7$Fb_l$\"?\\MB#*fWw-u)pIw:e&F>7$Fg_l
+$\"?Q'Q%GbM&4Hu2m?H#eF>7$F\\`l$\"?fMz\"H>%)HGd!p\\8ngF>7$Fa`l$\"?OB(QC
+A8*GasN7'RJ'F>7$Ff`l$\"?o`&QO+nLlbU_QJc'F>7$F[al$\"?'37h$ep4pat8OS9oF>
+7$F`al$\"?![!4d'4*)*))4JP;\\nqF>7$Feal$\"?!*=YUuLw(QZ=qO@K(F>7$Fjal$\"
+?*\\$G0;%*RS$Rx[s!yvF>7$F_bl$\"?5H,nT]nK?&z#G.NyF>7$Fdbl$\"?F>vh:/Z%44
+bE_F4)F>7$Fibl$\"?kD'[YWR;Gs()em4N)F>7$F^cl$\"?D]1kB/7%**yRM8%4')F>7$F
+ccl$\"?Pqzp/b%H'yhCB$y'))F>7$Fhcl$\"?]p_t/p#*)yHt.mf7*F>7$F]dl$\"?%Q$R
+$Qy*3:@7W,c$Q*F>7$Fbdl$\"?/zD!fN&>Esx!)QOS'*F>7$Fgdl$\"?bJ0#G`h0(RU^/8
+'*)*F>7$F\\el$\"?t!yGKTc$3@$*R<1:5F\\o7$Fael$\"?'eSh=O4hk(R&pe./\"F\\o
+7$Ffel$\"?$y'G*yCu&*[zaj![l5F\\o7$F[fl$\"?@<1c%*4g'*4::[S!4\"F\\o7$F`f
+l$\"?g[N<)HZ\"Q8<[!4^6\"F\\o7$Fefl$\"?JNuz&)p*fu%eK<dR6F\\o7$Fjfl$\"?J
+UJ6G&QtP2S(=xj6F\\o7$F_gl$\"?K\"oHAd3uNZn5*o(=\"F\\o7$Fdgl$\"?()HP(ySC
+JO2Gr.8@\"F\\o7$Figl$\"?i@9+f\"Q!zC#)QmfM7F\\o7$F^hl$\"?Cie8\"e4V,*)4^
+\\vD\"F\\o7$Fchl$\"?\"4!)Qs%>lPD/[Y9!G\"F\\o7$Fhhl$\"?*H)pvMA!zeXB2lBI
+\"F\\o7$F]il$\"?%*p/5#>*4st9>X>C8F\\o7$Fbil$\"?s'*[.R-K\"HzSW<cM\"F\\o
+7$Fgil$\"?E=cgzB4d8&*G!>mO\"F\\o7$F\\jl$\"?Xut5'>Wu\\:f=&=(Q\"F\\o7$Fa
+jl$\"?w\\g.P\")\\?C1gDI29F\\o7$Ffjl$\"?CEykKv=B\">0`epU\"F\\oFjjl-F$6$
+7`qFc[m7$F/$\">+v=Ud)yX(48r=<)))F_\\m7$F5$\">b*p,u:)QC$*H%yc*o'Ff\\m7$
+F:$\"?3*e`BeQR!RVl.5`@Ff\\m7$F@$\">Bk(\\Qaq$RElLQ'*)[F37$FE$\">)>qR3B
+\\]V9;Uno\"*F37$FJ$\"?Cn/ISApoue#edF_\"F37$FO$\"?#p\">9;wb\"*yBW7hDBF3
+7$FT$\"?Rzk4f#RLcs5Z?,M$F37$FY$\">)p=9lrer!eQDJrd%F>7$Fhn$\">OST?N%\\u
+1%)p%[S/'F>7$F^o$\">`u*zSK\\u/\\X#4_u(F>7$Fco$\">J(eWU&**Q#)=.#oA#o*F>
+7$Fho$\"?L+'\\ZNow&\\X)oIa=\"F>7$F]p$\"?&4Z1\\\\5L:nW#Q&eU\"F>7$Fbp$\"
+?aG!R@Myx-ze&f,*o\"F>7$Fgp$\"?ih*=*HavT!)yx.Gu>F>7$F\\q$\"?d#e3g6_=(z
+\"H=s3G#F>7$Faq$\"?_mvLx,9eZP)p)*yg#F>7$Ffq$\"?\"p!*y/PYD1Lh7oV&HF>7$F
+[r$\">um3ZWD1A&=9l?>LF\\o7$F`r$\">%[$R2c[I%*zt<t7q$F\\o7$Fer$\"><q()\\
+#ei^j_zYP*4%F\\o7$Fjr$\">,:X\"QopD`J\"[xA^%F\\o7$F_s$\">t35_P2@b\"*>N>
+(Q\\F\\o7$Fds$\">[zS]=gJ<ukj>uP&F\\o7$Fis$\">)o1p&[*\\.2vj%)3FeF\\o7$F
+^t$\">:BMD%f;3#Qo(\\V'G'F\\o7$Fct$\">UlcTcbK*))RfY<anF\\o7$Fht$\">Of\"
+GTCoBl>He.HsF\\o7$F]u$\">w9;pyw%R'oROl(4xF\\o7$Fbu$\">XP2`ke0Y^4sL^>)F
+\\o7$Fgu$\">PAzC\"zO^X@2$RRo)F\\o7$F\\v$\">&*H?DaoTXETD7]<*F\\o7$Fav$
+\">D%oIf(p\"QqmXw@n'*F\\o7$Ffv$\"?3Hk+z&f4W\"pCe%f,\"F\\o7$F[w$\"?2n(
+\\(\\j?s^exw1l5F\\o7$F`w$\"?j[[`#*[rf]'ex&)R6\"F\\o7$Few$\"?km%f<Wt-Ay
+0!Hgi6F\\o7$Fjw$\"?Q8T$[iK7SnVFE3@\"F\\o7$F_x$\"?1jlZH3I5gTVwce7F\\o7$
+Fdx$\"?%[(4$*fqiGc;JLu08F\\o7$Fix$\"?M#f1ZfRV'>emUF_8F\\o7$F^y$\"?SnQp
+HnV'oT&*)f3)R\"F\\o7$Fcy$\"?i3ZG?@9K>sN'3JW\"F\\o7$Fhy$\"?bu4nXJOid>.p
+F([\"F\\o7$F]z$\"?ld@fFkoZ(pF+I0`\"F\\o7$Fbz$\"?B]=WV!Ru`VRf6Gd\"F\\o7
+$Fgz$\"?Ey2Q<x')o]A3(pSh\"F\\o7$F\\[l$\"?a3x^-Y!)=%)RhmDa;F\\o7$Fa[l$
+\"?$)e))y+r6DO@c*GLp\"F\\o7$Ff[l$\"?l<e'\\#)p$z&[o<Z7t\"F\\o7$F[\\l$\"
+?7P1_C^@9=Qwe(zw\"F\\o7$F`\\l$\"?lBP'oKua?6%eM[.=F\\o7$Fe\\l$\"?HnbV^C
+FKo&Q0Ux$=F\\o7$Fj\\l$\"?*R;\"=!Gmj1'*QRF2(=F\\o7$F_]l$\"?2$f:ju+\\*\\
+*)z'=C!>F\\o7$Fd]l$\"?:7LDJUYU@7^%)zK>F\\o7$Fi]l$\"?]aj_Ms\"Gzd4X_='>F
+\\o7$F^^l$\"?l&>*>PsN#oWA\\p&*)>F\\o7$Fc^l$\"?@'[x5@+&HJOA8%f,#F\\o7$F
+h^l$\"?nwy6KL(yZb&)[i4/#F\\o7$F]_l$\"?H)4$4a'eYyqR?IY1#F\\o7$Fb_l$\"?^
+GhE+&*z72&[@Wp3#F\\o7$Fg_l$\"?)[s*=')oZO8Bpm!z5#F\\o7$F\\`l$\"?Q$[U(4T
+12G\\()>_F@F\\o7$Fa`l$\"?DgQSbh1H$\\]t'zX@F\\o7$Ff`l$\"?u?p0v`h_aV(\\R
+F;#F\\o7$F[al$\"?;J[_5TP.6,e2Oy@F\\o7$F`al$\"?\"z'ozT_:coZyFn#>#F\\o7$
+Feal$\"?FcG#fvr+aiB[*o0AF\\o7$Fjal$\"?y*o[5pAd<E;MEu@#F\\o7$F_bl$\"?oA
+v%))z0PLwkE+zA#F\\o7$Fdbl$\"?3;yV8wqA\"4&)\\HrB#F\\o7$Fibl$\"?+UapBOMF
+5B2N8XAF\\o7$F^cl$\"?>W>:lH!=f?+*G$>D#F\\o7$Fccl$\"?m()>#yT]ROlbF\\vD#
+F\\o7$Fhcl$\"?=me)\\MQ>Y&zI_+iAF\\o7$F]dl$\"?#fKyF)oe%\\@8<C`E#F\\o7$F
+bdl$\"?O$=]1>RtDs`FIvE#F\\o7$Fgdl$\"?#e`!>&4$>Vl@,%['oAF\\o7$F\\el$\"?
+qiM?FL<kM/3SqoAF\\o7$Fael$\"?O`KaUDl!zm-3BxE#F\\o7$Ffel$\"?V>$>>YY`!4@
+b?tlAF\\o7$F[fl$\"?K%pOYUvJ'*GTvdFE#F\\o7$F`fl$\"?/3\"f0$Q3zw\\;t#)eAF
+\\o7$Fefl$\"?8U4kQXOpx_P\"oRD#F\\o7$Fjfl$\"?UO/h-N;)QC)3y?[AF\\o7$F_gl
+$\"?0)o-#HEhty7iSdTAF\\o7$Fdgl$\"?A4iE0+1&phgr%4MAF\\o7$Figl$\"?$o)e$y
+#3;D;\"ei(zDAF\\o7$F^hl$\"?M?KueZS-ylN1r;AF\\o7$Fchl$\"?)=\"*)3nEEe%zU
+`ho?#F\\o7$Fhhl$\"?6[slcrm=1v7!yi>#F\\o7$F]il$\"?a%)[_5*4[,W^i()\\=#F
+\\o7$Fbil$\"?8OAIq;e=(f;v<I<#F\\o7$Fgil$\"?+Wy/av5@Y>kbRg@F\\o7$F\\jl$
+\"?@]ZCg<oo(oU*z9Z@F\\o7$Fajl$\"?C%)G[nv,JZA.<IL@F\\o7$Ffjl$\"?k@mY![0
+hd;Y0$))=@F\\oFjjl-F$6$7`q7$F($\"?+++++++DJ?yy&))f#F>7$F/$\"?ZiJMoq=zA
+BBs'=/'F>7$F5$\"?#>[u7$zF@S**epuH#*F>7$F:$\"?t>'3!\\**HbQ^q[l<7F\\o7$F
+@$\"?^6\"G!p!3bu<mbj&*[\"F\\o7$FE$\"??wND$>G8e#p*er*R<F\\o7$FJ$\"?G8U'
+HbQG\\b6L(3q>F\\o7$FO$\"?d0WM1$HNPst`f5=#F\\o7$FT$\"?[V3a8IMA,T-,)RP#F
+\\o7$FY$\"?w$yn%pq'RwC*zm))\\DF\\o7$Fhn$\"?f$[u.&)\\&*Rc$*=l(4FF\\o7$F
+^o$\"?Bpblq397aQ6AbaGF\\o7$Fco$\"?'>i\"yp@OVnRxs8&)HF\\o7$Fho$\"?%zfl*
+HRJ2+]d]O-JF\\o7$F]p$\"?#feH<q:jOi9XPq?$F\\o7$Fbp$\"?kw4/`(>m7Gne:**H$
+F\\o7$Fgp$\"?cB%)*>\")****fBvs@<Q$F\\o7$F\\q$\"?r)4S9$[L6w())4TJX$F\\o
+7$Faq$\"?@HlM[#)f<oAHO#[^$F\\o7$Ffq$\"?mJ)>%\\Xcc/7:cQnNF\\o7$F[r$\"?s
+-?`=y-#*4R68T6OF\\o7$F`r$\"?xCt;w,M0^,]WXZOF\\o7$Fer$\"?agTy;#4,N`2pRg
+n$F\\o7$Fjr$\"?\"G`j)4ua(HEl+kwp$F\\o7$F_s$\"?OnMUv)fN#*fj+)z7PF\\o7$F
+ds$\"?-Vd[..$Q58')>()=s$F\\o7$Fis$\"?C+h\\J%3v<&3(>``s$F\\o7$F^t$\"?)=
+lpLJ)z49\\s[fBPF\\o7$Fct$\"?xm9aSPAL')o^%*)pr$F\\o7$Fht$\"?(e_iwR^*)=K
+pc$*eq$F\\o7$F]u$\"?Qcesg'GKM[tDW1p$F\\o7$Fbu$\"?@())o.z!)pW8Z#*f:n$F
+\\o7$Fgu$\"?2^6r%y_J2UbCT*[OF\\o7$F\\v$\"?AW!\\9=Ou/,9/sIi$F\\o7$Fav$
+\"?,uv>XL+JXG4,A%f$F\\o7$Ffv$\"?b)oxrr&Qsp!Q,QEc$F\\o7$F[w$\"?1\"3U&4c
+Azc*G%QcGNF\\o7$F`w$\"?:zmT-]bMGfG>A#\\$F\\o7$Few$\"??I#4\\&eBny]MN#QX
+$F\\o7$Fjw$\"?#4TDio:#e]R6vc8MF\\o7$F_x$\"?*))4Z3$QL/!oA#4krLF\\o7$Fdx
+$\"?>-?CaAUb>SQ'>#GLF\\o7$Fix$\"?h=z+4**))yp^2*oMG$F\\o7$F^y$\"?tQ$)[R
+$HQGz`*QaPKF\\o7$Fcy$\"?/D>5^_=`Z+--f!>$F\\o7$Fhy$\"?H-bkk)H5p(f`VuUJF
+\\o7$F]z$\"?=#[q2]#z**)38FMT4$F\\o7$Fbz$\"?P\"3Hh2m/P]yrz[/$F\\o7$Fgz$
+\"?vq=Y1_17!fHs#4&*HF\\o7$F\\[l$\"?:*Q$edh7$))e'))z([%HF\\o7$Fa[l$\"?D
+<=?ymMR-BvKL%*GF\\o7$Ff[l$\"?^<r6l%*H-Vvo(\\N%GF\\o7$F[\\l$\"?0**os#pH
+B\"\\1JCh#z#F\\o7$F`\\l$\"?^hB%RoI]3-HL+;u#F\\o7$Fe\\l$\"?!*f$*\\T>oyy
+-rpe!p#F\\o7$Fj\\l$\"?KKG0D)[g$=.q0kREF\\o7$F_]l$\"?X`auG/\"p_@&pV#))e
+#F\\o7$Fd]l$\"?VeWu#=K!HLO(*o>QDF\\o7$Fi]l$\"?<!Q$\\*ok))[4'HA\"y[#F\\
+o7$F^^l$\"?))e[XCr;X'>xB?xV#F\\o7$Fc^l$\"?kT#ew1qtKeO#o'zQ#F\\o7$Fh^l$
+\"?R#4nI<yiSCM9%fQBF\\o7$F]_l$\"?JjL)[Cs,.W&>3k*G#F\\o7$Fb_l$\"?>f\"p&
+3/'*y^.V@9TAF\\o7$Fg_l$\"?z9J%***)z!p&H`EIJ>#F\\o7$F\\`l$\"?S.()eGE\\+
+ih!QMc9#F\\o7$Fa`l$\"?'p$))zd9?9.0**3o)4#F\\o7$Ff`l$\"?VyTT2mu&)=D6OH_
+?F\\o7$F[al$\"?_oZ`Ph@!)*)\\WQ\\1?F\\o7$F`al$\"?&)e[dFo.-L+61Ih>F\\o7$
+Feal$\"?x*y&=wzFa!Q'[2t;>F\\o7$Fjal$\"?r8i?;w([urW0*zs=F\\o7$F_bl$\"?9
+T5NR!4*4eW6%=&H=F\\o7$Fdbl$\"?WB'HF-bo$)=&3***oy\"F\\o7$Fibl$\"?\"Rx)
+\\FQ>NdeaH&\\u\"F\\o7$F^cl$\"?7/(3;&p&**QmkQ&o.<F\\o7$Fccl$\"?mx8`qL'*
+>^CrN5j;F\\o7$Fhcl$\"?m\\/^$HH4iHK]7Ki\"F\\o7$F]dl$\"?M7O86NS!)fy&*e,%
+e\"F\\o7$Fbdl$\"?c.2]brH$y%Hoi^X:F\\o7$Fgdl$\"?VM8xcnVhAYG]r2:F\\o7$F
+\\el$\"?42!=Swnn&)4-b71Z\"F\\o7$Fael$\"?S`n\\%fa^WbtC3UV\"F\\o7$Ffel$
+\"?5f1h!R%f'y*GV1])R\"F\\o7$F[fl$\"?J6=Z?5L4D%oV([j8F\\o7$F`fl$\"?mqYf
+-0&=3BXcl\"H8F\\o7$Fefl$\"?BYa%)**\\$3w8$f7`&H\"F\\o7$Fjfl$\"?o&[[(*3W
+$3M=1,ei7F\\o7$F_gl$\"?wS$)*p?i>L$[%42.B\"F\\o7$Fdgl$\"?!fw]QXVA!*ytm1
+()>\"F\\o7$Figl$\"?q`)Hb<wzij%oFxn6F\\o7$F^hl$\"?/WyG^Qm2cp&)))\\P6F\\
+o7$Fchl$\"?sq..zA%=\")*y#4yy5\"F\\o7$Fhhl$\"?lMzY_.lsM>)3.*y5F\\o7$F]i
+l$\"?*z5%GkG?_fwJic]5F\\o7$Fbil$\"?)f@\\I(=0=)y#z&fG-\"F\\o7$Fgil$\">'
+)=@zsM8hk%[\"\\x&**F\\o7$F\\jl$\"?()=LelH;$QCR\"y.$p*F>7$Fajl$\"?CJ&e9
+`go(z^#4vVV*F>7$Ffjl$\"?gier+tR,%\\+Vs;=*F>Fjjl" 2 248 242 242 2 0 1 
+0 2 9 0 4 2 1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 98 
+"Similarly, the following picture indicates the probabilities that the
+ pattern abab occurs at most " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT 
+-1 26 " times instead of exactly " }{XPPEDIT 18 0 "k" "I\"kG6\"" }
+{TEXT -1 6 " times" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 86 "plots
+[display](\{seq(plot([seq([10*i,add(P[k](10*i),k=0..j)],i=1..100)]),j=
+0..maxnb)\});" }}{PARA 13 "" 1 "" {INLPLOT "6(-%'CURVESG6$7`q7$$\"#5\"
+\"!$\"?+++++vVB!**fa.\"****!#I7$$\"#?F*$\"?N$e&p`6?'e@SHvu)**F-7$$\"#I
+F*$\"?g*4?g)*ziq:UtTL'**F-7$$\"#SF*$\"?p,'Q7g%R0!G5yKw#**F-7$$\"#]F*$
+\"?us2Ih+8I.zNnA\"))*F-7$$\"#gF*$\"?k,0%o$3j+%fK;`\\#)*F-7$$\"#qF*$\"?
+,)Q\"eNcU<8!3G&ff(*F-7$$\"#!)F*$\"?jd_(obu)3&R!QA*eo*F-7$$\"#!*F*$\"?'
+3bUKAJ4r!y\"HTXg*F-7$$\"$+\"F*$\"?E-xGp_#efG3))*>;&*F-7$$\"$5\"F*$\"?,
+6Dly_\"zg(40w[@%*F-7$$\"$?\"F*$\"?7@&yG\\WLv]K6))4K*F-7$$\"$I\"F*$\"?M
+fj'4Tuc=/H!4D:#*F-7$$\"$S\"F*$\"?I7p.5Lg1\"os.$z/\"*F-7$$\"$]\"F*$\"?t
+bpg-nnYu#>y+,**)F-7$$\"$g\"F*$\"?Igd[o2w0nIl6jr))F-7$$\"$q\"F*$\"?Qg))
+*\\sy$H4@mM\")\\()F-7$$\"$!=F*$\"?rC6aO!=*)z)oJ10D')F-7$$\"$!>F*$\"?:5
+bLS'el&RKG1s(\\)F-7$$\"$+#F*$\"?)fdq\"eBp:n#*Hx<o$)F-7$$\"$5#F*$\"?0p8
+fXx4\")*pWu`nB)F-7$$\"$?#F*$\"?VSz:)\\MmG!*H=fP5)F-7$$\"$I#F*$\"?i6'[b
+C$pFr0tV[pzF-7$$\"$S#F*$\"?!)3)e[g&>15I>0?MyF-7$$\"$]#F*$\"?xKe_A6[6EQ
+82;)p(F-7$$\"$g#F*$\"?f=\"y5wiK8#o&*3ghvF-7$$\"$q#F*$\"?^')R/ggQ`'))3x
+SZU(F-7$$\"$!GF*$\"?%)3<@D>b4ZdzYy(G(F-7$$\"$!HF*$\"?\\@#*)p+m?H]xUA4:
+(F-7$$\"$+$F*$\"?%3%4iV$3ob.j2IV,(F-7$$\"$5$F*$\"?9H%=$R%yND_@pq\"yoF-
+7$$\"$?$F*$\"?[sN2yA%\\7]G1&fUnF-7$$\"$I$F*$\"?EskCgv<zhJwBu2mF-7$$\"$
+S$F*$\"?%*4haQTUS;Gn3utkF-7$$\"$]$F*$\"?xs&=+.\\SRz>V32M'F-7$$\"$g$F*$
+\"?*=y,c/`auLD@`(3iF-7$$\"$q$F*$\"?a8Tfh\"\\8<WC:uz2'F-7$$\"$!QF*$\"?H
+wa>Z4LW`\\C:Y[fF-7$$\"$!RF*$\"?_+*opaV'RpOKuH?eF-7$$\"$+%F*$\"?+!*yJA?
+^x/;(GcNp&F-7$$\"$5%F*$\"?I*)[EFPu4m+g_IobF-7$$\"$?%F*$\"?3dy')*R>Xsk=
+r/YW&F-7$$\"$I%F*$\"?/vbm,nS@ud,'3DK&F-7$$\"$S%F*$\"?yu+j?Ov1_>t[1-_F-
+7$$\"$]%F*$\"?#\\!fk,pm)eTN#eJ$3&F-7$$\"$g%F*$\"?(R*pw#\\^`_X4X)Hm\\F-
+7$$\"$q%F*$\"?k)Hk<^4)=o-'yW5&[F-7$$\"$![F*$\"?-_joWdGp/Q0AePZF-7$$\"$
+!\\F*$\"?HRsu\\I;R\"o*GP$fi%F-7$$\"$+&F*$\"?.<A6R@8Y'))>I=h^%F-7$$\"$5
+&F*$\"?`b)))pv]_uk>1^\"3WF-7$$\"$?&F*$\"?CJ8jTxp,.v\"fV?I%F-7$$\"$I&F*
+$\"?jQz;pp4P-8fT!y>%F-7$$\"$S&F*$\"?h@x&Q4]8HbO%zV&4%F-7$$\"$]&F*$\"?z
+:z%e3>1iC8DZ\\*RF-7$$\"$g&F*$\"?Tk;n(\\3X\\,xrJj*QF-7$$\"$q&F*$\"?![\\
+3([u+33-+&)e*z$F-7$$\"$!eF*$\"?h0i(e6()\\t@)eCr/PF-7$$\"$!fF*$\"?<,:Wy
+XxqXhHjp6OF-7$$\"$+'F*$\"?ZfeN\"*GN%fn])3`?NF-7$$\"$5'F*$\"?&*[2\\$)>&
+3ex\")307V$F-7$$\"$?'F*$\"?B%o/HRj)oj'oB1PM$F-7$$\"$I'F*$\"?:xdr^2@$fD
+/5?!eKF-7$$\"$S'F*$\"?Us,7o&[BH7#[58uJF-7$$\"$]'F*$\"?6]J8:'=Cbz4<A?4$
+F-7$$\"$g'F*$\"?5@y\")R_j?'3_Rv;,$F-7$$\"$q'F*$\"?!GA>-N'4u>z!frI$HF-7
+$$\"$!oF*$\"?kRTWE+zK1Ss1>cGF-7$$\"$!pF*$\"?H,b6TwNDN&[p65y#F-7$$\"$+(
+F*$\"?/%oi#43IA>zUH^2FF-7$$\"$5(F*$\"?[J'*o68H9y%\\,scj#F-7$$\"$?(F*$
+\"?#o^Mi04[g\"G.fYlDF-7$$\"$I(F*$\"?sIiO>&H%z:Dn5(o\\#F-7$$\"$S(F*$\"?
+;xpD')Qy#GlM]j)HCF-7$$\"$](F*$\"?e=0/D()o`6&4\")=WO#F-7$$\"$g(F*$\"?g%
+p(Q%G+a^xAD70I#F-7$$\"$q(F*$\"?GgupCsgo_t5)=\"QAF-7$$\"$!yF*$\"?G**>J3
+@\"yO!zVK@x@F-7$$\"$!zF*$\"?F+7&pDliN-I8qx6#F-7$$\"$+)F*$\"?\"Q3<y.(eq
+efIRwf?F-7$$\"$5)F*$\"?jCGURaZ%3jG+pJ+#F-7$$\"$?)F*$\"?0f?\\Od3Blcq'fz
+%>F-7$$\"$I)F*$\"?*\\-G6\"o?GN]Y-6%*=F-7$$\"$S)F*$\"?8_(ooa3C(eQq]fT=F
+-7$$\"$])F*$\"?%yhrNWv<f!=T&)Q!z\"F-7$$\"$g)F*$\"?\\'pL7#oB;50Z^YS<F-7
+$$\"$q)F*$\"?yjX6\"et!4-.$\\*z\"p\"F-7$$\"$!))F*$\"??))GN'Hu(oDbEjOW;F
+-7$$\"$!*)F*$\"?+pJ)y$4[$=j4cS\")f\"F-7$$\"$+*F*$\"?Hydb\")e$yk=rH(4`:
+F-7$$\"$5*F*$\"?%)R7E(\\*pTu=V=@4:F-7$$\"$?*F*$\"?hy%zJSk!=EvK(fkY\"F-
+7$$\"$I*F*$\"?h<r')=$p@W98u;[U\"F-7$$\"$S*F*$\"?*G(>Qv,UadG,*eUQ\"F-7$
+$\"$]*F*$\"?()GU[@I$e=ob^iZM\"F-7$$\"$g*F*$\"?VJ+X8NMEHzpTI18F-7$$\"$q
+*F*$\"?;[45!zIR_0Lug)o7F-7$$\"$!)*F*$\"?>-$y&H*Qp;q*=%4CB\"F-7$$\"$!**
+F*$\"?'4Q1^c*\\k]'=pFp>\"F-7$$\"%+5F*$\"?4YDm\"o$>#)o$pP$Ri6F--%'COLOU
+RG6&%$RGBG$F)!\"\"F*F*-F$6$7`q7$F($\"?+++++vVBk&)**********F-7$F/$\"?Q
+h0OuBl02T**********F-7$F4$\"?&)G!\\)='4\")4g_(********F-7$F9$\"?Z\\=#f
+d5;Xd=h*******F-7$F>$\"?]-Rv9_]yn2ix******F-7$FC$\"?%>jK9X\")erS=&>***
+***F-7$FH$\"?%fwJjyZ>.bh)z(*****F-7$FM$\"?R$pQ_MJ&H#=ak\\*****F-7$FR$
+\"?x:+\"*\\*eN5I9Y)*)****F-7$FW$\"?G9%[2m^z9aMc8)****F-7$Ffn$\"?dr+U#y
+UbV]be\"o****F-7$F[o$\"?GNpn'Hz!*f#>Fm[****F-7$F`o$\"?w\"><chfl:>*f-@*
+***F-7$Feo$\"?pfr'ye)><(\\MdJ))***F-7$Fjo$\"?3:#)zriU!RC`DF$)***F-7$F_
+p$\"?]Y**H))p_xNq)prw***F-7$Fdp$\"?c!zM$*fC%3')\\Lr$o***F-7$Fip$\"?n+4
+#yL3!RX\\wPz&***F-7$F^q$\"?HN]kCZd$zxl**4X***F-7$Fcq$\"?](fC.h0C)ff\"
+\\_H***F-7$Fhq$\"?$eS*3/&[3tdPZ'3\"***F-7$F]r$\"?1=O@vX?V\"H3'e()))**F
+-7$Fbr$\"?\"R1E(e*3o&GqqMG')**F-7$Fgr$\"?K/@jn.cPw?<7F$)**F-7$F\\s$\"?
+ta*zNh5$4JH0.!)z**F-7$Fas$\"?2Y<eJx^[t'RUJe(**F-7$Ffs$\"?gF#*yybzVkeN
+\\Kr**F-7$F[t$\"?e&GINW>]L'Hg5Cm**F-7$F`t$\"?B[%*GDk5>)4Y0S0'**F-7$Fet
+$\"?F[L))[Pq\\pE$Q#=a**F-7$Fjt$\"?GozkR%Q<[wO))Gr%**F-7$F_u$\"?DUlE\">
+uluqB#4MR**F-7$Fdu$\"?2Ta%)y:#Q`FIa!yI**F-7$Fiu$\"?HnF/c)*>o7s01T@**F-
+7$F^v$\"?*)p*yG'\\u(*H;<\\>6**F-7$Fcv$\"?*f*Qxk$*4y`x^$)4+**F-7$Fhv$\"
+?yu(Go71u!e_jp3)))*F-7$F]w$\"?#)>yiSh5Q*3&)3G^()*F-7$Fbw$\"?sa'\\\"e\\
+**4(H$Q/>h)*F-7$Fgw$\"?3;@>BMv/0R%=Wi%)*F-7$F\\x$\"?DK,lQ-%zlJK.h-$)*F
+-7$Fax$\"?dpP5[o+wR6$H9K\")*F-7$Ffx$\"?6)GDbQ%*ekl?$*y]z*F-7$F[y$\"?Dz
+!4\"HtP0XkF;$ex*F-7$F`y$\"?R?UX[;*y`!p33Xb(*F-7$Fey$\"?9<.om-:0JO*o;Rt
+*F-7$Fjy$\"?ulN\\PqTSKx&H67r*F-7$F_z$\"?Ih`ncv1qO`&[=to*F-7$Fdz$\"?*y`
+XTYBuXe0'RAi'*F-7$Fiz$\"?y#f__$QP!f]MF:fj*F-7$F^[l$\"?0p`C)zCvv>y#=Q3'
+*F-7$Fc[l$\"?C&='Rv:uZU(G([hz&*F-7$Fh[l$\"?yr\\x))pT91j#\\2'\\&*F-7$F]
+\\l$\"?Z(fh$>#>yp#3!fa$=&*F-7$Fb\\l$\"?hv7LFOz1!om'G&e[*F-7$Fg\\l$\"?b
+^cF2!Rx^ktz+@X*F-7$F\\]l$\"?()>AN.]mI[u,')4<%*F-7$Fa]l$\"?R)fP-.K1\\28
+@[3Q*F-7$Ff]l$\"?J$e*fUdF&G(RLKNV$*F-7$F[^l$\"?[_5syTm*f<?\"*=YI*F-7$F
+`^l$\"?VWBKYVbq&Ge3_YE*F-7$Fe^l$\"?NVG\")Qm5W\\hV6YB#*F-7$Fj^l$\"?&Q%p
+*Rw\"y/t\\xf0\"=*F-7$F__l$\"?U[zJ<HO*z\\T$zWP\"*F-7$Fd_l$\"?^!\\Sdi\"z
+5nFk(\\E4*F-7$Fi_l$\"?I\\?K'\\HbJ*eqbnY!*F-7$F^`l$\"?01'e84;;X8XvS&***
+)F-7$Fc`l$\"?TTT!e%fj\">Z='>E^*)F-7$Fh`l$\"?RQu-.+83qdFq&=!*)F-7$F]al$
+\"?#yDC\\cR`))\\+#\\M^))F-7$Fbal$\"?hLj^a$R=,)o%oX(*z)F-7$Fgal$\"?JTzS
+mX')>?U(Q!3Z()F-7$F\\bl$\"?3$4>A?A1D3!e5P$p)F-7$Fabl$\"?Q)R;exN![_QL1k
+Q')F-7$Ffbl$\"?&o8F)R$y(RY@,H\"He)F-7$F[cl$\"?cg)y%Gj9u<uVC@E&)F-7$F`c
+l$\"?po]l`69h>5#ek&o%)F-7$Fecl$\"?H!yc#e-&*H*)=@`**4%)F-7$Fjcl$\"?]H.Q
+#*G3uJ>&HJ0N)F-7$F_dl$\"?;[rlh\"H&=#4Rr*>!H)F-7$Fddl$\"?_HRtQl4<D!*4$G
+!H#)F-7$Fidl$\"?0\"Q**Qi#=x'=mGXq;)F-7$F^el$\"?JS3F3M`;+^n#zU5)F-7$Fce
+l$\"?$4-XuQ\"G$3ZiCf2/)F-7$Fhel$\"?6_cnBef;d2QX^wzF-7$F]fl$\"?]9#H[kq
+\"*[tBtu:\"zF-7$Fbfl$\"?LupyEI&>&HXY'pf%yF-7$Fgfl$\"?%eC<\"4[S#*Hl!GH(
+zxF-7$F\\gl$\"?$ord\"[bt:QvuP)Gr(F-7$Fagl$\"?uYy]EgsebulLYXwF-7$Ffgl$
+\"?*pw31'=3U`(pM)\\xvF-7$F[hl$\"?>R-g*)3D`EpG!>!4vF-7$F`hl$\"?T?gjq![.
+K3+qb+W(F-7$Fehl$\"?+XI&=%)))=)zF#fQ1P(F-7$Fjhl$\"?l0a4Wrsoo\"R%yz+tF-
+7$F_il$\"?[(eDivUf))[mYj0B(F-7$Fdil$\"?\"on))\\!HA0%*=8`'*frF-7$Fiil$
+\"?'p[^goqT%yNYI.*3(F-7$F^jl$\"?+\"otVHo%4Ih4hz<qF-7$Fcjl$\"?ZQOB!)eP2
+8+*p$GYpF-Fgjl-F$6$7`qF`[m7$F/$\"?Q6$HBHe&H\\6X)*******F-7$F4$\"?R<zdc
+_^(=fL%R******F-7$F9$\"?y3o8j9Qm,@3<'*****F-7$F>$\"?#f0l)QuOv'e8xn)***
+*F-7$FC$\"?:>%zrWY1'pV3Vm****F-7$FH$\"?(*\\gk*\\H1/w%[JH****F-7$FM$\"?
+JOPOEZKu]w\"o(o)***F-7$FR$\"?Fms>K)>q#R<\"eux***F-7$FW$\"?u$4*p*zMD7C5
+Nvk***F-7$Ffn$\"?eG[vIv#=9vmr2Z***F-7$F[o$\"?rb[m#e+=<Hr'oQ#***F-7$F`o
+$\"?1D#>f%fG=\\9ilU*)**F-7$Feo$\"?'y%QM'[wR7(e9,u&)**F-7$Fjo$\"?pZ9w/)
+3iF?!e7C\")**F-7$F_p$\"?(pp+K,`T4!))3\\%e(**F-7$Fdp$\"?:ltzVwcGB#>$yYp
+**F-7$Fip$\"?!)*)HgI+n'*G0<#H?'**F-7$F^q$\"?8)Q(4*yh&QU3v6X`**F-7$Fcq$
+\"?'o81<*\\SkzVf\"fO%**F-7$Fhq$\"?#)zy/+fH<9K?BeK**F-7$F]r$\"?037L9e!Q
+'QW(z`,#**F-7$Fbr$\"?xuz8=@a**[!p&4J1**F-7$Fgr$\"?1IFC?\"f;n\"[xb*4*)*
+F-7$F\\s$\"?!yt5,ftP6h6*R:u)*F-7$Fas$\"?6ZNhoJJ&32C=Pd&)*F-7$Ffs$\"?e*
+=8)Hs.6(=.&3qN)*F-7$F[t$\"?Al&>PLks+CvV0S\")*F-7$F`t$\"?%=$>l3$)363OHh
+h!z*F-7$Fet$\"?+8t$)>yi<RiEG]l(*F-7$Fjt$\"?[%)Hy')z$G1-\\4S'Q(*F-7$F_u
+$\"?:(4$=>\")f6**G$42+r*F-7$Fdu$\"??]'*[SBtEv.&[(ez'*F-7$Fiu$\"?1OaV;*
+4M'>\\K$ptk*F-7$F^v$\"?cT4\"GkZiw\"\\y\\M8'*F-7$Fcv$\"?\"4e#*y[USS%>;4
+^x&*F-7$Fhv$\"?g/-Q&QZoE[\"\\w')R&*F-7$F]w$\"?iB-v.w%Q-kKa>/]*F-7$Fbw$
+\"?&y\\pjqm>>%>sY<f%*F-7$Fgw$\"?0\"3?\"Hh&y-%\\dY9;%*F-7$F\\x$\"?14uA7
+C2,2\"[]W8P*F-7$Fax$\"?VaZy8;jS0BPCzC$*F-7$Ffx$\"?orW(H$oH6a!os4lF*F-7
+$F[y$\"?@/fW#yvBWy^_?lA*F-7$F`y$\"?Bcp0i(oJ!f8%p^[<*F-7$Fey$\"?VQ5I:))
+yEb#ojK:7*F-7$Fjy$\"?9wtMQg>'e,.8&fm!*F-7$F_z$\"?kG;!)f&\\o5$)*fJ25!*F
+-7$Fdz$\"?XK&4gG![nLacF+_*)F-7$Fiz$\"?;$**HAz*4DfoN=U#*))F-7$F^[l$\"?5
+qeHF04bW?T+PJ))F-7$Fc[l$\"?-]e*eb@^Rq;f)))o()F-7$Fh[l$\"?r^>u<&z]TV58?
+]q)F-7$F]\\l$\"?Elrjjc$[\"[X$e3)R')F-7$Fb\\l$\"?5#)R![h!Q0GP7!*Ht&)F-7
+$Fg\\l$\"?tgWf0C%3+@V[Pb])F-7$F\\]l$\"?uY#*=Y([()4(GP4dO%)F-7$Fa]l$\"?
+;%*=qirsFu#R0ZkO)F-7$Ff]l$\"?)o6E.13NeW'RT@&H)F-7$F[^l$\"?=j%*R^LTc&*e
+05#HA)F-7$F`^l$\"?5.dPRB^*Q;m&oh\\\")F-7$Fe^l$\"?X:!oW8!)3K'>%=^`2)F-7
+$Fj^l$\"?QkajN(f8RzUmt,+)F-7$F__l$\"?>()3^w5j'[u+1MT#zF-7$Fd_l$\"?\"3t
+^**zLYe.(H@GZyF-7$Fi_l$\"?xj))Q-t+hCnQvmpxF-7$F^`l$\"?B]Z6skLR\")3x(R8
+p(F-7$Fc`l$\"?<%HBw8m3%Ga\"3[Bh(F-7$Fh`l$\"?Qdx;U2&)y\\dh8uKvF-7$F]al$
+\"?Ugz?b6\">v418oDX(F-7$Fbal$\"?7)H,]([_@]FTk(=P(F-7$Fgal$\"?sZ.!*=MI?
+B)\\#Qr!H(F-7$F\\bl$\"?r!)[ktwBXzlNs74sF-7$Fabl$\"?9GR\\O>\\k]](*H;FrF
+-7$Ffbl$\"?Qe`I&)fyLXncn'[/(F-7$F[cl$\"??x&eN\"G55'>nV$GipF-7$F`cl$\"?
+dhjxE[F-zq(>d%zoF-7$Fecl$\"?>zw+bRA]E'))RJkz'F-7$Fjcl$\"?5*)4fL%)p@Zgk
+&[Kr'F-7$F_dl$\"?'>+;r^#f0l'QN]*HmF-7$Fddl$\"?sLnndJM;\"\\D`xla'F-7$Fi
+dl$\"?0EJq$e*))f\\**[*pJY'F-7$F^el$\"?r*\\po_(*oq[B^m(zjF-7$Fcel$\"?$3
+D#=B#\\].\"ot^S'H'F-7$Fhel$\"?ho_#3<uO5^(4H78iF-7$F]fl$\"?5EZH8#))zd&G
+4d&*HhF-7$Fbfl$\"?LO-7!o\\j4a;cQp/'F-7$Fgfl$\"?ueZ%)y$)=WL#yW0T'fF-7$F
+\\gl$\"?V=\\Tf>vOVZL$*[\")eF-7$Fagl$\"?M9&yCP=d4qT;A\"*z&F-7$Ffgl$\"?p
+iH@)RA,hjC'[.<dF-7$F[hl$\"?47>QK$*zz(QoKd_j&F-7$F`hl$\"?JzAlIY=J*zBV=Q
+b&F-7$Fehl$\"?+-R>^H!RXoI.YFZ&F-7$Fjhl$\"?&zJptihm63c'p1#R&F-7$F_il$\"
+?)yqKu<7%oOoaq!=J&F-7$Fdil$\"?Tut*Q;*p-/c>6*>B&F-7$Fiil$\"?;0b9HC*yWN>
+)Hk_^F-7$F^jl$\"?]@HRsG+LY&\\Z&yt]F-7$Fcjl$\"?(f=gu;O%e=J`/W&*\\F-Fgjl
+-F$6$7`qF`[m7$F/$\"?>pNWM3Y;y#z-6*****F-7$F4$\"?p:0Uo3>))[d')\\K****F-
+7$F9$\"?>bWbCvZKZ%yg3y***F-7$F>$\"?GelULP(*[@-L\"y\\***F-7$FC$\"?8A5([
+&fH;3AMc\\!***F-7$FH$\"?IXICxD%f;]EdlS)**F-7$FM$\"?9<B?]\"4apA$p:Vv**F
+-7$FR$\"?[,jgRkQ,KYwLPk**F-7$FW$\"?/vw/G*==a&[QSq]**F-7$Ffn$\"?a9WB(e#
+3Nn(>BnU$**F-7$F[o$\"?EeoD]c0nUnuZ$\\\"**F-7$F`o$\"?LmZ\\]p/I<%RH/E*)*
+F-7$Feo$\"?$y))o3l4#G;uXq>n)*F-7$Fjo$\"?f+3Fbx(3ctb(elQ)*F-7$F_p$\"?7%
+z')*y^P\">#H8L%p!)*F-7$Fdp$\"?**oa!35#RCN9%zR?x*F-7$Fip$\"?aJ@+>[[*4h(
+)*>%Rt*F-7$F^q$\"?[JOOrxuinC08m#p*F-7$Fcq$\"?<Y#eYN]\"eY#oMA#['*F-7$Fh
+q$\"?38qdbLB&*G!*o;m+'*F-7$F]r$\"?@tsDe4]peqzk-]&*F-7$Fbr$\"?g/#Rc`zVE
+_*)[tj\\*F-7$Fgr$\"?0:#GkV*3R,NHywR%*F-7$F\\s$\"?2H(*e_Gce>'f0#G!Q*F-7
+$Fas$\"?jn%4,:(*zmf(=_*zJ*F-7$Ffs$\"?qATC\"G(oSO%R+#*HD*F-7$F[t$\"?2Uh
+YRxW'=S)R>O&=*F-7$F`t$\"?UmiB_Fw@4Uj')>:\"*F-7$Fet$\"?k`\"4ddf_E/PC*fU
+!*F-7$Fjt$\"?sp843.*))>0&eNmn*)F-7$F_u$\"?qfBlaAalZ>@P\\!*))F-7$Fdu$\"
+?$ysT#\\bfrgJaN>6))F-7$Fiu$\"?61M=iI*zJzq5o)H()F-7$F^v$\"?Jd-)omIC1DR@
+Bmk)F-7$Fcv$\"?$=:'))3H3jH]\"4l:c)F-7$Fhv$\"?`P/jN5k%4j:(**zu%)F-7$F]w
+$\"?*\\P:7rKT'*)RnPV'Q)F-7$Fbw$\"?@J+hkKprfhr<d'H)F-7$Fgw$\"?nnfG/NiEm
+7$Q=`?)F-7$F\\x$\"?+Y3v#er2p%Rhox7\")F-7$Fax$\"?fzP&Qb/?\"\\11\"\\!>!)
+F-7$Ffx$\"?MzyEQs&pWB-YNU#zF-7$F[y$\"?\"o._F0RfvOc`M%GyF-7$F`y$\"?hZAx
+Tm-rRTeIuJxF-7$Fey$\"?)Q1I'pcUk(HOtbUj(F-7$Fjy$\"?\\=_v5'4&Q=`F^1OvF-7
+$F_z$\"?Ty(fj^5%p&RgchsV(F-7$Fdz$\"?>a(G'oDh)H=$[I$zL(F-7$Fiz$\"?i%G7(
+*=&H1vGu^;QsF-7$F^[l$\"?F6q]EM(*H3*\\3T!QrF-7$Fc[l$\"?PK+$4t^d\"=#[TTw
+.(F-7$Fh[l$\"?f98A$Rk3ghYDWq$pF-7$F]\\l$\"?hTMxO8O4O/D^KOoF-7$Fb\\l$\"
+?\"[ToL;3J(f^epbNnF-7$Fg\\l$\"?u'H8a7wW$\\U!45[j'F-7$F\\]l$\"?n`O()**z
+%Q5#RdA:MlF-7$Fa]l$\"?,#e[9$HE&G0Gg[OV'F-7$Ff]l$\"?Qi(*zD3p!z'o)ohLL'F
+-7$F[^l$\"?`n-?9h0u[M8:NLiF-7$F`^l$\"?*o@)HG@,gKDMbnLhF-7$Fe^l$\"?yQ,N
+-o+V3k&p)QMgF-7$Fj^l$\"?4mBa\"3,ng3.YVb$fF-7$F__l$\"?oeZCw:$QxB_%)*=Pe
+F-7$Fd_l$\"?$f+iP\"p:[AZgaPRdF-7$Fi_l$\"?R!QYE>VRlz6bX@k&F-7$F^`l$\"?)
+**)3r;.F5)Q?/Vba&F-7$Fc`l$\"?Vtjci2D)Q2Te3'\\aF-7$Fh`l$\"?AEHkJmZvQc.1
+Qa`F-7$F]al$\"?^#46M\"fv&*G8_`*)f_F-7$Fbal$\"?&=Wy!>JX\"[7*ep=m^F-7$Fg
+al$\"?%zl^ys!eWhN$[(Gt]F-7$F\\bl$\"?.etzu=`6;=ppA\")\\F-7$Fabl$\"?17h0
+BVyTf**)\\L+*[F-7$Ffbl$\"?Q;*4;OUk]V%\\Kt*z%F-7$F[cl$\"?,LmS[)*H=!*pY0
+N5ZF-7$F`cl$\"?\"RPa*3WKQD9Az!>i%F-7$Fecl$\"?,8=-5cG)=n!ohUMXF-7$Fjcl$
+\"?=jE\"3b6rA$G$RCzW%F-7$F_dl$\"?g=eYELD[U\\y+UiVF-7$Fddl$\"?!z>'[i+:t
+DLJ\"HzF%F-7$Fidl$\"?Nj'*\\cir&\\^4%fY%>%F-7$F^el$\"?NYiK%)\\C;>3KM/7T
+F-7$Fcel$\"?SJHEhFqH,Z=JnISF-7$Fhel$\"?Hu&)=Y()\\S@ib^O]RF-7$F]fl$\"?1
+=ct#Q/*)*yy#RG6(QF-7$Fbfl$\"??%Hz99&)pKETUqHz$F-7$Fgfl$\"?KAVBw[-c*)**
+Qw*er$F-7$F\\gl$\"?QIA@I$RJYY8F:*ROF-7$Fagl$\"?70B@n$e1S3\"[u-lNF-7$Ff
+gl$\"?'e2x.dh\\)>lOsB\"\\$F-7$F[hl$\"?v\"pQOd%Rx4=\"pY&=MF-7$F`hl$\"?V
+nLcj>#HZ+\")*o&pM$F-7$Fehl$\"?*QlOXzN_$yJ?!okF$F-7$Fjhl$\"?TLW%or^=5k/
+Mzq?$F-7$F_il$\"?vr/820$)\\R-.$*yQJF-7$Fdil$\"?TI&\\)4;f\"yl`b&frIF-7$
+Fiil$\"?&\\v+*o1@zmm()\\\\0IF-7$F^jl$\"?EP+\"\\I&)>!*H<x$[SHF-7$Fcjl$
+\"?LkN*poIBG&p)Rdl(GF-Fgjl-F$6$7`q7$F($\"?+++++v$4ry\"ex@R(*F-7$F/$\"?
+5n7'oW#Ge$)pr&)G$Q*F-7$F4$\"?T^E*G>_TI;$QqOS!*F-7$F9$\"?'>)*HAl%4]T^5z
+(*4()F-7$F>$\"?BhEF#*>i%es\"zJm\"R)F-7$FC$\"?WDpeVEI>oct:)\\3)F-7$FH$
+\"?turh#3(eCek\\z]*y(F-7$FM$\"?1_3`]_MNrm+F$[](F-7$FR$\"?Q2<q4#)e)eq$*
+=h0B(F-7$FW$\"?]=*>)*>e=$Q!4?8j'pF-7$Ffn$\"?UF!y#GaO37u:Cs6nF-7$F[o$\"
+?*=&HAAO?T`'=!fVmkF-7$F`o$\"?QPZ=TAJUu]DO6IiF-7$Feo$\"?O982!Q*G*4o(zzU
+-gF-7$Fjo$\"?\")pt(3+h.3l/LjIy&F-7$F_p$\"?m$yWa,T\"z&y&ybrrbF-7$Fdp$\"
+?#oV+I\"*y$HtoQ<4o`F-7$Fip$\"?+E550Ke(=6G`4><&F-7$F^q$\"?%4)*))>Rg*Qr4
+**p*G)\\F-7$Fcq$\"?KW2v3y7fi![6#z+[F-7$Fhq$\"?Lm$fq#*p!*)*yIVU`i%F-7$F
+]r$\"?m:1*>K%H\"=vHt/jX%F-7$Fbr$\"?3^WwGSexPI#oWMH%F-7$Fgr$\"?*fF&*\\>
+['3Zx7l`OTF-7$F\\s$\"?TlB5Z7#zoAqqi`)RF-7$Fas$\"?dvBfdCVH!pqp8(RQF-7$F
+fs$\"?F')yaGw(eZ.Qd(Q*p$F-7$F[t$\"?'p0U=h`(*H$32)*=kNF-7$F`t$\"?saxWmA
+%)e;1wH$RV$F-7$Fet$\"?(\\Tef%p&yOr$4lV3LF-7$Fjt$\"?wsDfy(\\.\"R![VEv=$
+F-7$F_u$\"?F&o/x[hznO\"Q^.rIF-7$Fdu$\"?>@``vZ-1TxI6!)eHF-7$Fiu$\"?slq4
+dz)Hf!)e#)o1&GF-7$F^v$\"?w)*4#[oXI'[pA$)[YFF-7$Fcv$\"?M$4C%Gt1tns)>:hk
+#F-7$Fhv$\"?[K?0_N7#\\[&4.T\\DF-7$F]w$\"?9(zyZ%fx4D!ffRiX#F-7$Fbw$\"?K
+q'f?p2C2fy*QZmBF-7$Fgw$\"?3zC4OjH>awv())*zAF-7$F\\x$\"?T!z<k*)4agQxLkm
+>#F-7$Fax$\"?*[&eiXr4pFYt]Q;@F-7$Ffx$\"?Vcwl#z;DWgSpR!R?F-7$F[y$\"?0O<
+9\"GCH#f\"y(4_k>F-7$F`y$\"?))zRa];[No`@cs#*=F-7$Fey$\"?o\"\\@\"G;KMyM(
+4aN#=F-7$Fjy$\"?Y;Q*4,<!>zr90\"pv\"F-7$F_z$\"?lqsbo'>))4Iv[-Fp\"F-7$Fd
+z$\"?ao`GVy4F\"4g+T3j\"F-7$Fiz$\"?)y#)G:)f+j(HLJS7d\"F-7$F^[l$\"?GQqyy
+S!f]Mny<Q^\"F-7$Fc[l$\"?t8U^w#)R**f*H#Q\\e9F-7$Fh[l$\"?eR5WwswC`1G<>09
+F-7$F]\\l$\"?5g`\"*4%>j?`2hPQN\"F-7$Fb\\l$\"?*eb[V9P>u'H!GgVI\"F-7$Fg
+\\l$\"?4K)=Enf%e'pw9\"pc7F-7$F\\]l$\"?NTI'*>q4\"G*\\ITw57F-7$Fa]l$\"?=
+Z<8L\\&fSe9c:l;\"F-7$Ff]l$\"?+@\"[*)))4>30+5%)Q7\"F-7$F[^l$\"?f+5!pw&=
+\\zMZ1\"G3\"F-7$F`^l$\"?J2D$e\">[`#>XEQK/\"F-7$Fe^l$\"?%=fP)>_ei>W$47^
++\"F-7$Fj^l$\"?OQTKo]QIc\")3Gz$o*!#J7$F__l$\"?FK,^&f\")Q8r<0*))H$*Fd_q
+7$Fd_l$\"?=`.!>:(QL)*\\c!>*))*)Fd_q7$Fi_l$\"?'p<\"H7hU,U#f95/m)Fd_q7$F
+^`l$\"?OeQ?C*[*)f;u\"p!RM)Fd_q7$Fc`l$\"?57'*H!>M/Z([61(*Q!)Fd_q7$Fh`l$
+\"?lFt!e.:9XXN]y^u(Fd_q7$F]al$\"?)=Dyo\")RE?')yJB@Y(Fd_q7$Fbal$\"?8<%Q
+]NL,g(4jET*=(Fd_q7$Fgal$\"?0JIG+WJ*f)4)[om#pFd_q7$F\\bl$\"?%e*=:+[?&pd
+!el_tmFd_q7$Fabl$\"?BPNFN')GfWY\\fjHkFd_q7$Ffbl$\"?sYuTv*[\\=aOceY>'Fd
+_q7$F[cl$\"?\"[!**yFLVa76e'o#ofFd_q7$F`cl$\"?@E3mT&Qk[,\\R_,v&Fd_q7$Fe
+cl$\"?>'\\:![\"G)oug0u+SbFd_q7$Fjcl$\"?Fze<euheP;sBaP`Fd_q7$F_dl$\"?`-
+Q;B))*G(3,BmZU^Fd_q7$Fddl$\"?(>!\\^EoQI#3SuRX&\\Fd_q7$Fidl$\"?h>0uC(zJ
+mmN?rMx%Fd_q7$F^el$\"?$fr7j;A0$3[\"**>!*f%Fd_q7$Fcel$\"?MI4ei:9e3'4FW4
+V%Fd_q7$Fhel$\"?Kl!)*4BWW#3QV5,pUFd_q7$F]fl$\"?Ie-R'=jQMz_#e*H6%Fd_q7$
+Fbfl$\"?^v6p7eQ#[krL#oiRFd_q7$Fgfl$\"?;DS/m?I/;p.A'y\"QFd_q7$F\\gl$\"?
+O#G[)3t=:&)zkYLyOFd_q7$Fagl$\"?%R7]qFCfX(R(H1Ra$Fd_q7$Ffgl$\"?UhQJ<KBP
+\"Qsu!R9MFd_q7$F[hl$\"?uXj\"*=b+/,dq%3'*G$Fd_q7$F`hl$\"?\"*ouO)RqKIY_[
+'QpJFd_q7$Fehl$\"?O#QS\"H#)p<G#48eN0$Fd_q7$Fjhl$\"?!)37+s:IOB-QG'>%HFd
+_q7$F_il$\"?`a\"3SS;H3T^!fWMGFd_q7$Fdil$\"?*HH)3tJ(zi!f%Ge3t#Fd_q7$Fii
+l$\"?-.(*>IjA'GxdPc5j#Fd_q7$F^jl$\"?Oy_g>^8oE8E=!\\`#Fd_q7$Fcjl$\"?H)f
+4f^R0U>$R8EUCFd_qFgjl-F$6$7`qF`[m7$F/$\"?Qh0O#R*f+)>%**********F-7$F4$
+\"?#Qy^Dnf\\Sq*)*********F-7$F9$\"?_vu(>lRJ+[k*********F-7$F>$\"??B*z.
+r(yfN$R(********F-7$FC$\"?)zJ^3E*>3Cxk)*******F-7$FH$\"?mK)QB$y#R3AW]*
+******F-7$FM$\"?w1*)=@'=\\oY#p&)******F-7$FR$\"?9fQ1L1fsN$p]'******F-7
+$FW$\"?v?rW?Mb')HphC******F-7$Ffn$\"?BbJDe=2V$Qp>&)*****F-7$F[o$\"?zoc
+**e@d,-t<I(*****F-7$F`o$\"?A;.hqZE?g*[p`*****F-7$Feo$\"?$3(o]b4i$42CRC
+*****F-7$Fjo$\"?<$)[.+Y!)o**H*f\"))****F-7$F_p$\"?tUF([M]!R*or1@)****F
+-7$Fdp$\"?F;'p!>L!4#f-axt****F-7$Fip$\"?&R.'z3bD\"Q@^xD'****F-7$F^q$\"
+?H?e%*)*G!eWU6Oy%****F-7$Fcq$\"?=v%p\"=v)*[&\\S#yG****F-7$Fhq$\"?I=CZ%
+yL#=)y1`X!****F-7$F]r$\"?<:B`]FCO=7%)=u)***F-7$Fbr$\"?\"eclP)fDocz7jO)
+***F-7$Fgr$\"?p>Pi_X9*RKqE2z***F-7$F\\s$\"?JfDJCbUet%HA_t***F-7$Fas$\"
+?yKuQs(o#3tG$p(o'***F-7$Ffs$\"?AQe^XT?PG\"\\C**e***F-7$F[t$\"?dkrHOFRd
+=`A:(\\***F-7$F`t$\"?g'yY^r=XOs#y#))Q***F-7$Fet$\"?srL\"oz\\#*\\hmSKE*
+**F-7$Fjt$\"?vo(z&3#>vajX)f=\"***F-7$F_u$\"?'[$zveox85i:.`*)**F-7$Fdu$
+\"?QTDWP+M^&R(yfk()**F-7$Fiu$\"?**e4XaM9g'e,)G^&)**F-7$F^v$\"?K.0&yP?4
+0b'3.6$)**F-7$Fcv$\"?Krf3&\\Q3(QV$*pT!)**F-7$Fhv$\"?8\"fOwJws3uU;6u(**
+F-7$F]w$\"?V@_!*Hqf\"y2NhqS(**F-7$Fbw$\"?pkmWX7u1&G%fFPq**F-7$Fgw$\"?@
+NZ)o-]i%3u5ZHm**F-7$F\\x$\"?*QY['*y*G^:oJL\"='**F-7$Fax$\"?l\"H2L%H&[$
+=Y2`!p&**F-7$Ffx$\"?\\Au].]>4.q4sa^**F-7$F[y$\"?#>_%zvX\"QVO:c:d%**F-7
+$F`y$\"?*p'=^:Y&Q*\\8-pQR**F-7$Fey$\"?'oyHbo7U(GJ]y`K**F-7$Fjy$\"?KkOA
+,Xxw+/n^9D**F-7$F_z$\"?4#>Fj%pE6ue;e=<**F-7$Fdz$\"?Y0S$y%>+dM6Eqj3**F-
+7$Fiz$\"?&Gb\")H'HxUJ]VjZ**)*F-7$F^[l$\"?J%H)f!\\$4S&*G$p\"o*))*F-7$Fc
+[l$\"?>lr:]THR\"40VJ#z)*F-7$Fh[l$\"?\\N1`d#y&>*eBR/\"o)*F-7$F]\\l$\"?D
+(**Q`A))\\)3aZ*zi&)*F-7$Fb\\l$\"?(e\"\\;ffQ!Q'>V!QP%)*F-7$Fg\\l$\"?<0t
+6M))*fR[$\\#f/$)*F-7$F\\]l$\"?:v=vNk$[>&y+[U;)*F-7$Fa]l$\"?*[+-2fw/%HL
+Omh,)*F-7$Ff]l$\"?7j:,jh!ebyaV<gy*F-7$F[^l$\"?@`5SynJ/oJ_1hp(*F-7$F`^l
+$\"?aP'3q'pVdv!oa!Q_(*F-7$Fe^l$\"?S\"f]')Hd8SSL@7Vt*F-7$Fj^l$\"?0/()H:
+s#e:9mg\"R:(*F-7$F__l$\"?(==5LOR'R&[[c0cp*F-7$Fd_l$\"?:H*o7(p))RTNI=%
+\\n*F-7$Fi_l$\"?wUQh:z#Q/&\\n!*Q`'*F-7$F^`l$\"?RyCg8u]%*f3yo$4j*F-7$Fc
+`l$\"?y'*z;YE(pvsU\"ed2'*F-7$Fh`l$\"?[]N'))pR]b]*)Q(H$e*F-7$F]al$\"?I[
+8eu%QU)4y$3%4e&*F-7$Fbal$\"?]&ze>p:1vs[Nf>`*F-7$Fgal$\"?\"[A8!3X!R&f>O
+w)[]*F-7$F\\bl$\"?*f5'Q1(*)QX.3MuoZ*F-7$Fabl$\"?J]\"yt\"G[dh$*fe\"zW*F
+-7$Ffbl$\"?T**>H%GUz'=4g&4!=%*F-7$F[cl$\"?fDH%3PeNnR\"yP:(Q*F-7$F`cl$
+\"?tl[7/dVZPc9yMb$*F-7$Fecl$\"?C2.t[H%)3>#\\#>fA$*F-7$Fjcl$\"?)Gsj2(=f
+&Q0'4t)))G*F-7$F_dl$\"?11uC(p[6%p)>5OUD*F-7$Fddl$\"?o#)f,#p_T\"\\/b8k=
+#*F-7$Fidl$\"?yh\"Gr.Rby]l-2@=*F-7$F^el$\"?<YA8qFkiw!H'zjW\"*F-7$Fcel$
+\"?w))yLNc&GdE<))Ri5*F-7$Fhel$\"?KpiB=o>8nA`$>p1*F-7$F]fl$\"?5jF+VzJF[
+a!y$oE!*F-7$Fbfl$\"?k4We7+&zpP!z8a&)*)F-7$Fgfl$\"?:)QIsLV(p.ma6]V*)F-7
+$F\\gl$\"?:)R(Q?T9t6]\")Gd+*)F-7$Fagl$\"?hw:QM/&=#Hbyqwc))F-7$Ffgl$\"?
+h)=5'>+7@yz&)\\47))F-7$F[hl$\"?V,htq/cn;oR&olw)F-7$F`hl$\"?K@[(y,+!e30
+[.??()F-7$Fehl$\"?*z-5m2\"zpNikO+t')F-7$Fjhl$\"?fve>Oj#3CkIO#*\\i)F-7$
+F_il$\"??%[g_*HEx\"G2\"4=w&)F-7$Fdil$\"?2&H%f%G:BwS@M%eE&)F-7$Fiil$\"?
+Th)e@)[hTLFK#=iZ)F-7$F^jl$\"?wI(49Vm*Hanp')4D%)F-7$Fcjl$\"?rk9)GTj0V?&
+HACt$)F-Fgjl" 2 236 216 216 2 0 1 0 2 9 0 4 2 1.000000 45.000000 
+45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 17 0 0 0 0 0 
+0 }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 73 "The complexity of these compu
+tations grows only linearly with the number " }{XPPEDIT 18 0 "k" "I\"k
+G6\"" }{TEXT -1 95 " of occurrences under study. Other kinds of constr
+aints like number of occurrences larger than " }{XPPEDIT 18 0 "k" "I\"
+kG6\"" }{TEXT -1 11 " for fixed " }{XPPEDIT 18 0 "k" "I\"kG6\"" }
+{TEXT -1 12 " or between " }{XPPEDIT 18 0 "k[1]" "&%\"kG6#\"\"\"" }
+{TEXT -1 5 " and " }{XPPEDIT 18 0 "k[2]" "&%\"kG6#\"\"#" }{TEXT -1 
+141 " also give rise to rational generating functions that can be extr
+acted from the generating function GF and thus can be treated the same
+ way. " }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT 267 14 "Other patterns" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 241 "All the above computation was der
+ived from the grammar describing the language, a mark being appended t
+o every occurrence of the pattern. It is actually easy to write a Mapl
+e procedure taking as input a word, and producing the corresponding " 
+}{HYPERLNK 17 "combstruct grammar" 2 "combstruct[specification]" "" }
+{TEXT -1 94 ". Then the whole computation above can be reproduced for \+
+any pattern completely automatically." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 561 "gengram:=proc(pattern::list(\{identical(a),identical
+(b),identical(c),identical(d)\}))local i, eq, letter, state, j;\nfor i
+ to nops(pattern) do for letter in [a,b,c,d] do for j from 0 to i-1 do
+ if [op(1..i-j,pattern)]=[op(j+1..i-1,pattern),letter] then state[lett
+er]:=cat(w,op(1..i-j,pattern)); break fi od; if j=i then state[letter]
+:=w fi od;eq[i]:=cat(w,op(1..i-1,pattern))=Union(Epsilon,seq(Prod(lett
+er,state[letter]),letter=[a,b,c,d])) od; subs(cat(w,op(pattern))=Prod(
+Mark,w),\{seq(eq[i],i=1..nops(pattern)),seq(letter=Atom,letter=[a,b,c,
+d]),Mark=Epsilon\}) end;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%(gengram
+G:6#'%(patternG-%%listG6#<&-%*identicalG6#%\"aG-F.6#%\"bG-F.6#%\"cG-F.
+6#%\"dG6'%\"iG%#eqG%'letterG%&stateG%\"jG6\"F@C$?(8$\"\"\"FD-%%nopsG6#
+9$%%trueGC$?&8&7&F0F3F6F9FIC$?(8(\"\"!FD,&FCFD!\"\"FDFI@$/7#-%#opG6$;F
+D,&FCFDFPFSFH7$-FX6$;,&FPFDFDFDFRFHFLC$>&8'6#FL-%$catG6$%\"wGFW%&break
+G@$/FPFC>F]oFco>&8%6#FC/-Fao6$Fco-FX6$;FDFRFH-%&UnionG6$%(EpsilonG-%$s
+eqG6$-%%ProdG6$FLF]o/FLFM-%%subsG6$/-Fao6$Fco-FXFG-Fjp6$%%MarkGFco<%/F
+fqFep-Fgp6$/FL%%AtomGF\\q-Fgp6$Fio/FC;FDFEF@F@" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 120 "Given a pattern, this procedure outputs the corresp
+onding combstruct grammar. Thus for instance, using the pattern abab,
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "gengram([a,b,a,b]);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#<+/%\"wG-%&UnionG6'%(EpsilonG-%%ProdG6
+$%\"aG%#waG-F+6$%\"bGF%-F+6$%\"cGF%-F+6$%\"dGF%/F.-F'6'F)F*-F+6$F1%$wa
+bGF2F5/F=-F'6'F)-F+6$F-%%wabaGF/F2F5/FC-F'6'F)F*-F+6$F1-F+6$%%MarkGF%F
+2F5/FKF)/F-%%AtomG/F1FN/F4FN/F7FN" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+211 "we obtain the grammar we started with. It is now possible to stud
+y longer patterns easily. Here are the different states leading to the
+ probability that the pattern abacab occurs twice  in a word of length
+ 5000:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 30 "First the grammar is ge
+nerated" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "G:=gengram([a,b,
+a,c,a,b]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"GG<-/%\"wG-%&UnionG6
+'%(EpsilonG-%%ProdG6$%\"aG%#waG-F-6$%\"bGF'-F-6$%\"cGF'-F-6$%\"dGF'/F0
+-F)6'F+F,-F-6$F3%$wabGF4F7/F?-F)6'F+-F-6$F/%%wabaGF1F4F7/%%MarkGF+/F/%
+%AtomG/F3FI/F6FI/F9FI/FE-F)6'F+F,F=-F-6$F6%&wabacGF7/FR-F)6'F+-F-6$F/%
+'wabacaGF1F4F7/FX-F)6'F+F,-F-6$F3-F-6$FGF'F4F7" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 51 "then the bivariate generating functions are derived
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "gfsolve(G,unlabelled,z,
+[[u,Mark]]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<-/-%\"cG6$%\"zG%\"uGF
+(/-%\"dGF'F(/-%\"aGF'F(/-%\"bGF'F(/-%%MarkGF'F)/-%\"wGF',$*&,&\"\"\"F<
+*$F(\"\"%F<F<,.!\"\"F<F(F>F=F@*$F(\"\"&F>*$F(\"\"'F@*&F(FDF)F<F<F@F@/-
+%#waGF',$*&,*F<F<F=F<FAF@*&F(FBF)F<F<F<F?F@F@/-%&wabacGF',$*&,*F<F<F=F
+<*$F(\"\"#F@*&F(FTF)F<F<F<F?F@F@/-%'wabacaGF',$*&,.F<F<F(F@F=F<FAF@*&F
+(F<F)F<F<FLF<F<F?F@F@/-%%wabaGF',$*&,.*$F(\"\"$F@*&F(F^oF)F<F<F<F<F=F<
+FAF@FLF<F<F?F@F@/-%$wabGF',$*&,&F<F<*&F(F>F)F<F<F<F?F@F@" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 105 "the generating function is then converte
+d into a probability generating function by a simple substitution" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "normal(subs(\",z=z/4,w(z,u))
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*&,&\"$c#\"\"\"*$%\"zG\"\"%F'F
+',.!%'4%F'F)\"%'4%F(!#;*$F)\"\"&\"#;*$F)\"\"'!\"\"*&F)F3%\"uGF'F'F4F.
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 110 "extracting a coefficient we \+
+get the probability generating function of words with 2 occurrences of
+ the pattern" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "coeff(serie
+s(\",u,3),u,2);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$**,&\"$c#\"\"\"*$
+%\"zG\"\"%F'F'F)\"#7,,\"%'4%F'F)!%'4%F(\"#;*$F)\"\"&!#;*$F)\"\"'F'!\"#
+,,F.F'F)F-F(F2F0F/F3!\"\"F7F2" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 75 "
+this gives rise to a linear recurrence satisfied by the Taylor coeffic
+ients" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "diffeqtorec(y(z)-
+\",y(z),u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<5/-%\"uG6#\"\"\"\"
+\"!/-F&6#\"\"$F)/-F&6#\"\"#F)/-F&6#F)F)/-F&6#\"\"*F)/-F&6#\"#5F)/-F&6#
+\"#6F)/-F&6#\"\")F),H-F&6#%\"nGF(-F&6#,&FHF(F(F(!#[-F&6#,&FHF(F1F(\"$;
+)-F&6#,&FHF(F-F(!%Kc-F&6#,&FHF(\"\"%F(\"&cI\"-F&6#,&FHF(\"\"&F(!&wX#-F
+&6#,&FHF(\"\"'F(\"'+'4%-F&6#,&FHF(\"\"(F(!(g@$R-F&6#,&FHF(FDF(\"(+/$)*
+-F&6#,&FHF(F8F(!(%=P%*-F&6#,&FHF(F<F(\")wtZ`-F&6#,&FHF(F@F(!*k'pf!*-F&
+6#,&FHF(\"#7F(\"+_2DmC-F&6#,&FHF(\"#8F(!+/\">fT#-F&6#,&FHF(\"#9F(\"*oj
+I0)-F&6#,&FHF(\"#:F(!,OnZ>(o-F&6#,&FHF(\"#;F(\"-3-Veh?-F&6#,&FHF(\"#<F
+(!-3-Veh?-F&6#,&FHF(\"#=F(\",OnZ>(o/-F&6#FXF)/-F&6#FgnF)/-F&6#F\\oF)/-
+F&6#FaoF)/-F&6#F_r#\"%&o#\"+[O[Z@/-F&6#Fjq#\"%>>Fgs/-F&6#Feq#Fgn\"(3')
+Q)/-F&6#F[q#F-\");sx;/-F&6#F`q#F-Fat/-F&6#Ffp#F(Fft" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 110 "As before, in order to speed up the computatio
+n, we change the initial conditions into floating point numbers:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "Digits:=50:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "select(has,\"\",n) union \{seq(op(1
+,i)=evalf(op(2,i)),i=remove(has,\"\",n))\}:" }}}{EXCHG {PARA 0 "" 0 "
+" {HYPERLNK 17 "gfun[rectoproc]" 2 "gfun[rectoproc]" "" }{TEXT -1 64 "
+ then produces a procedure to evaluate this sequence efficiently" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "p:=rectoproc(\",u(n),remembe
+r):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "for i from 0 by 500 \+
+to 10000 do i,p(i) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"!F#" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"$+&$\"R#oj..Hv'*=N0T!zP<%p+!oVs6]J'!
+#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+5$\"S<s0?zhJlpF[w;V$4))[(Qxm
+pc%G#!#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+:$\"S$*4`)RH#\\Rz#[!Q7
+Xm]e!3^sZ)>$e%!#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+?$\"R1/Lv5ZU>
+29z5o8>)=/i&QSa#Rs!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+D$\"S*G.l
+yI5$onRiZhRsv*)o)3XnuN+\"!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+I$
+\"S$[&*fl-_#eE#fZSF$)*)3hE?yxv7G\"!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6$\"%+N$\"S-$z#\\*)o87w/ty/y#\\8R$GFAHeX:!#]" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"%+S$\"SWxl&*H2Vo>x$\\l1B\\@3AO/9U')y\"!#]" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"%+X$\"S(=A15$4Z$ziuB/N^SARc9-B5a+#!#]" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+]$\"S.ZskEY])4(fA0&HkiCO$*>9#z,$>#
+!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+b$\"S'[tBBA\"QI'4KfLfiLlP-s
+V2`-N#!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+g$\"SNIud*Q`*>#GqT\"o
+Dh$3+>AG]VrZ#!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+l$\"S/Z%)yRJ-v
+6?q(=)z`Etf;3fAiuD!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+q$\"S<\\n
+pmo)R/Sz*yG/-wrgdOs4EWE!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+v$\"
+S)[N*GAL6<s$)3>0[Lu7&)\\>k\"f!)o#!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6$\"%+!)$\"Sr%H,g.9m0ffd^^BkA)*\\z!R%z#3F!#]" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"%+&)$\"SM-I%f!>(Hcv%ft#RHq+@pkw6?tq#!#]" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"%+!*$\"S:48c+o=d#)=j()e#y#)\\o%oU)G=wo#!#]" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+&*$\"SAa(Hqm+*Q`\"RQm8f%eyo2tTud^E
+!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"&++\"$\"SCEWCN4uk-#zc*RJ$\\Uv
+KA)\\[^,E!#]" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 89 "The following pic
+ture shows the evolution of this probability with the length of the wo
+rd" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "plot([seq([100*i,p(10
+0*i)],i=0..100)]);" }}{PARA 13 "" 1 "" {INLPLOT "6#-%'CURVESG6$7aq7$\"
+\"!F(7$$\"$+\"F($\"SYX.5hLk[*z&)eKd_4G4(z.;D)yK#!#`7$$\"$+#F($\"SsRs4l
+03(>v%ziq$H*\\7[:rJ<G=5!#_7$$\"$+$F($\"S,kuRj+_2T6,**RHCUDfG(oi:#>BF47
+$$\"$+%F($\"SIFF3G/kNRuu)pN_T_FLF\\HAq4%F47$$\"$+&F($\"R#oj..Hv'*=N0T!
+zP<%p+!oVs6]J'!#^7$$\"$+'F($\"RS&\\W#y)=]6zb+(>%=C\"4q/*3eHQ*)FD7$$\"$
++(F($\"SeZQ>@xl&>lYktPD5mw(4UO:P$>\"FD7$$\"$+)F($\"S#G^gxJg*Q9Gjs=5eif
+!RF%zp(p_\"FD7$$\"$+*F($\"Sx%oXA<kObWN(4v]p&yzTx<$\\l\"*=FD7$$\"%+5F($
+\"S<s0?zhJlpF[w;V$4))[(Qxmpc%G#FD7$$\"%+6F($\"SQ'QqbK>)GoVc!>07J'*>_e!
+=4-.FFD7$$\"%+7F($\"SxmFPOv\")y)[U9()R-w-%>;L>[YWJFD7$$\"%+8F($\"SYQ@^
+)e[([S[.N'\\@\\w9vFq1\"[1OFD7$$\"%+9F($\"SYQs-^2i#oQD%>GUU%=oaU$)z!y'3
+%FD7$$\"%+:F($\"S$*4`)RH#\\Rz#[!Q7Xm]e!3^sZ)>$e%FD7$$\"%+;F($\"R([)Rb8
+<gp%[Bk!44[>TC(R\"o'o$4&!#]7$$\"%+<F($\"Rp!z\"p]>@<jL5]\"*)G_$3VkH36jh
+&Ffp7$$\"%+=F($\"RX.j,9pP\"[[+(RMQTkCuhohX#\\hFfp7$$\"%+>F($\"R4kI7+YW
+<Yv+T'*[iZVyw(Hyw!p'Ffp7$$\"%+?F($\"R1/Lv5ZU>29z5o8>)=/i&QSa#RsFfp7$$
+\"%+@F($\"R&QEY1twJf0#Gj\"=jV8T'y*[o<$z(Ffp7$$\"%+AF($\"R6'oh$eFiL5!)z
+)3J\\Vi!*=ydt4^$)Ffp7$$\"%+BF($\"Rlx\"=DCbv'oVgafZUf'[qz<[m6*)Ffp7$$\"
+%+CF($\"Rnrd5A>EBXxln%*=-a[OF_(4ht%*Ffp7$$\"%+DF($\"S*G.lyI5$onRiZhRsv
+*)o)3XnuN+\"Ffp7$$\"%+EF($\"S5&\\DH?*[QDQtD%z_Mb<>gi'epf5Ffp7$$\"%+FF(
+$\"S%)*3Y\"*3!o&)yj'>7Cd822f*3Z0i:6Ffp7$$\"%+GF($\"S&H<5*))4\\s!Gy-d(z
+^bZ3U-%[^7<\"Ffp7$$\"%+HF($\"SR%>YL@n,n'=5\"=Z_&H&='*>9-)\\E7Ffp7$$\"%
++IF($\"S$[&*fl-_#eE#fZSF$)*)3hE?yxv7G\"Ffp7$$\"%+JF($\"S#eP3'f!H.:B`fM
+k:ZG6!piaj]N8Ffp7$$\"%+KF($\"S>c+$>z.'4o#e:NAKuk'o_;cq6*Q\"Ffp7$$\"%+L
+F($\"SIX7,!3&e$>z'3\"Qece1<:S2iS?W\"Ffp7$$\"%+MF($\"S'p8pz`rMb_F,?tdSA
+!4:Hi\\@%\\\"Ffp7$$\"%+NF($\"S-$z#\\*)o87w/ty/y#\\8R$GFAHeX:Ffp7$$\"%+
+OF($\"SJ4*Rli?/z6PQFn0co\"*=(QJ?4'f\"Ffp7$$\"%+PF($\"Sg1>kjK%y2[]aO\\*
+oQ$G@G3G%pX;Ffp7$$\"%+QF($\"SxV'=@()Q<0%GS1VhHB+%=&o-fM%p\"Ffp7$$\"%+R
+F($\"S.PR3$4d=6.Js9sTf8jl#=fr+U<Ffp7$$\"%+SF($\"SWxl&*H2Vo>x$\\l1B\\@3
+AO/9U')y\"Ffp7$$\"%+TF($\"Som5X')3*py0@y=>(e[bgmTq&=U$=Ffp7$$\"%+UF($
+\"S1(4w'[cOz%px#f^E]dO<^#3i2(y=Ffp7$$\"%+VF($\"S-v/$*f3+e0<K0n#zj\"4=>
+fKP3A>Ffp7$$\"%+WF($\"SUqm+sVX692*HOp!4Y!>T@ZWCV'>Ffp7$$\"%+XF($\"S(=A
+15$4Z$ziuB/N^SARc9-B5a+#Ffp7$$\"%+YF($\"S0fW>_?aBjDY18!=)fNT,\")QVKX?F
+fp7$$\"%+ZF($\"SPly#\\/KxK&[#Q6E\\)*=q7%HYE0%3#Ffp7$$\"%+[F($\"So6a6:H
+:O6eAjvM@u**4b85Ne@@Ffp7$$\"%+\\F($\"S4!e0MVp[+`A_SNX/rM%[@Jw!z:#Ffp7$
+$\"%+]F($\"S.ZskEY])4(fA0&HkiCO$*>9#z,$>#Ffp7$$\"%+^F($\"SdDKGtQ/`81+A
+-&**3j&R2*oP4pA#Ffp7$$\"%+_F($\"SXJ5]Y9z$)4s%fQQ-Wv,..n&*y&fAFfp7$$\"%
++`F($\"S?n!H4eTO1tUNSkV>ixc(yma-\"H#Ffp7$$\"%+aF($\"SNMO8sfk#yk]]J<Z)z
+\\x&)))[%\\7K#Ffp7$$\"%+bF($\"S'[tBBA\"QI'4KfLfiLlP-sV2`-N#Ffp7$$\"%+c
+F($\"S86TR7-GnU-LY&4\"*)e;c2qU+/yBFfp7$$\"%+dF($\"SN-_kp.dZW\"z%\\5=f^
+Z;**R%[:YS#Ffp7$$\"%+eF($\"S)Q5,$z6+q]_^fr\\n7j>@Moe)*HCFfp7$$\"%+fF($
+\"S]\"pv:$QuK\"p%y3x![U4N%y=8*eTX#Ffp7$$\"%+gF($\"SNIud*Q`*>#GqT\"oDh$
+3+>AG]VrZ#Ffp7$$\"%+hF($\"SjwB@66^t*f?)z1i;x%*>Zj0'\\*)\\#Ffp7$$\"%+iF
+($\"S$z9RTI#G&yZsHFFp-ZBU%\\(>)e>DFfp7$$\"%+jF($\"S&3eQ!e.(*)Q$*H#Ha;7
+#[01x#)=r!RDFfp7$$\"%+kF($\"SE-X\\r`;q_o)4E>*\\5!*[r!=N6ub#Ffp7$$\"%+l
+F($\"S/Z%)yRJ-v6?q(=)z`Etf;3fAiuDFfp7$$\"%+mF($\"S(*R\"fI0`]Q_$HZFB26G
+Ysk9#=2f#Ffp7$$\"%+nF($\"SB(fyo@fj)p%yE\"fJ_YC)H2g>9dg#Ffp7$$\"%+oF($
+\"S]gd)))>6))HatY]d&G8[F&RfzD'>EFfp7$$\"%+pF($\"SmV'[LH?!>VKJy@KI+%p,4
+w;pCj#Ffp7$$\"%+qF($\"S<\\npmo)R/Sz*yG/-wrgdOs4EWEFfp7$$\"%+rF($\"SG?>
+Y3MphuY^wQ!3\"=o\"o>,L=]l#Ffp7$$\"%+sF($\"ST$=.)41)fa!)Q))y15-/(R**=s(
+eZm#Ffp7$$\"%+tF($\"S(o,hsKi(o4m`LIaAESU!Hl>+Nn#Ffp7$$\"%+uF($\"Sy\\mf
+0#euXGg0KTVXua%eAD3E\"o#Ffp7$$\"%+vF($\"S)[N*GAL6<s$)3>0[Lu7&)\\>k\"f!
+)o#Ffp7$$\"%+wF($\"S[&R?iD<GC,cc\\Rn)HkCO'\\'R\"Rp#Ffp7$$\"%+xF($\"S$H
+:T)**)\\Pmu*y.cTyPRC'p%)=W))p#Ffp7$$\"%+yF($\"S1%GRH(Gnj$)\\A&yAyp3LO)
+yq*oGq#Ffp7$$\"%+zF($\"S#GXbmzF7#)4p)\\jwg0H`%32f2gq#Ffp7$$\"%+!)F($\"
+Sr%H,g.9m0ffd^^BkA)*\\z!R%z#3FFfp7$$\"%+\")F($\"ScX))eEQ#fMVGx<#QlS@vy
+&)*)Rq4FFfp7$$\"%+#)F($\"S4y%o0`p/O>,Mo8gL'z)=zFx+.r#Ffp7$$\"%+$)F($\"
+S^K!QrE\"\\grj!>M?/9hRw)eZ$*35FFfp7$$\"%+%)F($\"S=1wv/z>mF.;%yx\"3^>oR
+wz#*34FFfp7$$\"%+&)F($\"SM-I%f!>(Hcv%ft#RHq+@pkw6?tq#Ffp7$$\"%+')F($\"
+SE:AxvjF^$)*zU>GGY%eR10r8![q#Ffp7$$\"%+()F($\"S>9.^:tL'3z8p%[9o&[mP14
+\\_:q#Ffp7$$\"%+))F($\"SoQ6nHC$)[@6Rt?T.#fJH<0&Gf(p#Ffp7$$\"%+*)F($\"S
+Y%>N>%fl\"\\Z'=x\"4_$R7j<uF<%Hp#Ffp7$$\"%+!*F($\"S:48c+o=d#)=j()e#y#)
+\\o%oU)G=wo#Ffp7$$\"%+\"*F($\"SBO$47=(\\n+lEGi6&3d_'o\"4dT;o#Ffp7$$\"%
++#*F($\"S\\xcN+<r=%*od-,q9\")*[41;ZI]n#Ffp7$$\"%+$*F($\"S6\\T-ff$z99vY
+pQ2W:To)[JP!ym#Ffp7$$\"%+%*F($\"S<,5!\\#)\\RkJ^A%=z7.Vy1mB*z*fEFfp7$$
+\"%+&*F($\"SAa(Hqm+*Q`\"RQm8f%eyo2tTud^EFfp7$$\"%+'*F($\"SU#HQzbrgBykU
+UA#=qqT!)4*[9Ek#Ffp7$$\"%+(*F($\"S:'4Px-3^(\\BFx#z//axhc!p!4Jj#Ffp7$$
+\"%+)*F($\"SRUy$)H0$fjl)3cU+%)Gu:')ov*yIi#Ffp7$$\"%+**F($\"S'**yY=&=o%
+RjYsKSdcMpP3byTDh#Ffp7$$\"&++\"F($\"SCEWCN4uk-#zc*RJ$\\UvKA)\\[^,EFfp-
+%'COLOURG6&%$RGBG$\"#5!\"\"F(F(" 2 236 204 204 2 0 1 0 2 9 0 4 2 
+1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+0 0 0 0 0 0 0 0 0 0 }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 10 "Extension
+s" }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 24 "Non uniform distribution" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 219 "The bases A,C,G,T in DNA are not \+
+equiprobable. The combstruct model can be refined as follows to take i
+nto account such irregularities. We use here the values A=0.25, C=0.18
+, G=0.24, T=0.33 which come from a viral DNA (" }{XPPEDIT 18 0 "phi" "
+I$phiG6\"" }{TEXT -1 165 "X174). The pattern is the same as above. We \+
+only have to add marks in the grammar, compute a multivariate generati
+ng function and substitute the probabilities in it." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 2 "G;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<-/%
+\"wG-%&UnionG6'%(EpsilonG-%%ProdG6$%\"aG%#waG-F+6$%\"bGF%-F+6$%\"cGF%-
+F+6$%\"dGF%/F.-F'6'F)F*-F+6$F1%$wabGF2F5/F=-F'6'F)-F+6$F-%%wabaGF/F2F5
+/%%MarkGF)/F-%%AtomG/F1FG/F4FG/F7FG/FC-F'6'F)F*F;-F+6$F4%&wabacGF5/FP-
+F'6'F)-F+6$F-%'wabacaGF/F2F5/FV-F'6'F)F*-F+6$F1-F+6$FEF%F2F5" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 327 "Marks are added by replacing a by
+ Prod(Atom,Marka) everywhere it occurs, and similarly for the other le
+tters. There Marka, Markb, Markc and Markd have size 0 and do not modi
+fy the counting sequences and the related probabilities, but make it p
+ossible to extract multivariate generating functions which contain mor
+e information." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 194 "Gprob:=s
+ubs(a=Prod(Atom,Marka),b=Prod(Atom,Markb),c=Prod(Atom,Markc),d=Prod(At
+om,Markd),G minus \{a=Atom,b=Atom,c=Atom,d=Atom\}) union \{Marka=Epsil
+on, Markb=Epsilon, Markc=Epsilon, Markd=Epsilon\};" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%&GprobG<-/%%MarkG%(EpsilonG/%&MarkaGF(/%&MarkbGF(/%
+&MarkcGF(/%&MarkdGF(/%'wabacaG-%&UnionG6'F(-%%ProdG6$-F76$%%AtomGF*%#w
+aG-F76$-F76$F;F,-F76$F'%\"wG-F76$-F76$F;F.FC-F76$-F76$F;F0FC/F<-F46'F(
+F6-F76$F?%$wabGFDFH/%&wabacG-F46'F(-F76$F9F2-F76$F?FCFDFH/FQ-F46'F(-F7
+6$F9%%wabaGFXFDFH/FC-F46'F(F6FXFDFH/Fin-F46'F(F6FO-F76$FFFSFH" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "Here is the multivariate generatin
+g function:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "gfsolve(Gpro
+b,unlabelled,z,[[u,Mark],[a,Marka],[b,Markb],[c,Markc],[d,Markd]]);" }
+}{PARA 12 "" 1 "" {XPPMATH 20 "6#<-/-%#waG6(%\"zG%\"uG%\"aG%\"bG%\"cG%
+\"dG,$*&,*\"\"\"F1*,F(\"\"&F*\"\"#F+F4F,F1F)F1F1**F(\"\"%F,F1F+F1F*F4F
+1**F(F3F,F1F+F4F*F4!\"\"F1,:*&F(F1F*F1F1*,F(\"\"'F,F1F*\"\"$F+F4F)F1F1
+*,F(F3F,F1F-F1F+F1F*F4F1**F(F3F,F4F+F1F*F4F1F7F1F5F8**F(F3F,F1F*F=F+F1
+F1**F(F<F,F1F*F=F+F4F8F8F1*&F(F1F+F1F1*&F(F1F,F1F1*&F(F1F-F1F1F8F8/-%
+\"wGF',$*&,&F1F1F5F1F1F9F8F8/-%$wabGF',$*&,&F1F1*,F(F6F*F4F,F1F+F1F)F1
+F1F1F9F8F8/-%'wabacaGF',$*&,.F7F8F5F1F1F1FBF8*(F(F1F+F1F)F1F1F2F1F1F9F
+8F8/-%%wabaGF',$*&,.F1F1**F(F=F,F1F*F1F+F1F8*,F(F=F,F1F*F1F+F1F)F1F1F7
+F8F5F1F2F1F1F9F8F8/-%&wabacGF',$*&,*F5F1F1F1*(F(F4F+F1F*F1F8**F(F4F*F1
+F+F1F)F1F1F1F9F8F8/-%&MarkbGF'F+/-%&MarkcGF'F,/-%&MarkdGF'F-/-%&MarkaG
+F'F*/-%%MarkGF'F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "GF:=su
+bs(\",w(z,u,a,b,c,d));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#GFG,$*&,&
+\"\"\"F(**%\"zG\"\"%%\"cGF(%\"bGF(%\"aG\"\"#F(F(,:*&F*F(F.F(F(*,F*\"\"
+'F,F(F.\"\"$F-F/%\"uGF(F(*,F*\"\"&F,F(%\"dGF(F-F(F.F/F(**F*F7F,F/F-F(F
+.F/F(**F*F7F,F(F-F/F.F/F(F)!\"\"**F*F7F,F(F.F4F-F(F(**F*F3F,F(F.F4F-F/
+F;F;F(*&F*F(F-F(F(*&F*F(F,F(F(*&F*F(F8F(F(F;F;" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 19 "The coefficient of " }{XPPEDIT 18 0 "a^k*b^l*c^m*d^p
+*u^q*z^n" "*.)%\"aG%\"kG\"\"\")%\"bG%\"lGF&)%\"cG%\"mGF&)%\"dG%\"pGF&)
+%\"uG%\"qGF&)%\"zG%\"nGF&" }{TEXT -1 34 " in the Taylor expansion of G
+F in " }{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT -1 34 " is the number of w
+ords of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 6 " with " }
+{XPPEDIT 18 0 "k " "I\"kG6\"" }{TEXT -1 30 " occurrences of the letter
+ a, " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 37 " occurrences of the \+
+letter b ... and " }{XPPEDIT 18 0 "q" "I\"qG6\"" }{TEXT -1 93 " occurr
+ences of the pattern. The probability generating function is obtained \+
+by substituting " }{XPPEDIT 18 0 "a,b,c,d" "6&%\"aG%\"bG%\"cG%\"dG" }
+{TEXT -1 148 " by the corresponding probability. Thus GF now takes int
+o account both the specific pattern and the biased probabilities of th
+e letters in the text." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 86 "We can \+
+again compute the probability that the pattern occurs twice in words o
+f length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 41 " and compare th
+is with the uniform model:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+34 "normal(coeff(series(GF,u,3),u,2));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#*.,&\"\"\"F%**%\"zG\"\"%%\"cGF%%\"bGF%%\"aG\"\"#F%F%F'\"#7F)F,F+
+\"\"'F*F(,8*&F'F%F+F%!\"\"F&F%*,F'\"\"&F)F%%\"dGF%F*F%F+F,F1**F'F3F)F,
+F*F%F+F,F1**F'F3F)F%F*F,F+F,F1*&F'F%F*F%F1**F'F3F)F%F+\"\"$F*F%F1**F'F
+.F)F%F+F9F*F,F%F%F%*&F'F%F)F%F1*&F'F%F4F%F1!\"$" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 140 "Again we compute a linear recurrence satisfied by t
+he Taylor coefficients from which we produce an efficient procedure fo
+r their evaluation:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "diff
+eqtorec(y(z)-\",y(z),u(n)):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+71 "nuprob:=rectoproc(subs([a=0.25,b=0.18,c=0.24,d=0.33],\"),u(n),reme
+mber);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'nuprobG:6#%\"nG6\"6#%)rem
+emberGE\\s3\"\"\"\"\"!\"#7$\"2+++++DiZ\"!#C\"\"&F-\"#9$\"6+++++++]t&))
+!#G\"\"$F-\"\"(F-\"#6F-\"#:$\"9++++++++]Aw9!#I\"#;$\";+++++++]Q.a8A!#K
+\"#<$\"=++++++++]:5o(4$!#M\"\"*F-\"#8$\"4++++++v'GW!#E\"\"#F-\"\")F-\"
+\"'F-\"#5F-\"\"%F-F-F-,F-9!6#,&9$F,!#=F,$!:+++++++]P8Oz\"!#O-FR6#,&FUF
+,!#<F,$\":++++++++DUd>\"FE-FR6#,&FUF,!#;F,$!9+++++++D#znx#FA-FR6#,&FUF
+,!#:F,$\"8++++++++T(*\\#F=-FR6#,&FUF,!#9F,$!6++++++]?1<'F6-FR6#,&FUF,!
+#8F,$\"5++++++vNL5FJ-FR6#,&FUF,!#7F,$!4+++++vpA.#F1-FR6#,&FUF,!#6F,$\"
+3++++++m!e#!#A-FR6#,&FUF,!#5F,$!1+++++$yv'!#?-FR6#,&FUF,!\"*F,$\"/++++
++hlFV-FR6#,&FUF,!\")F,$!.++++P'QF]o-FR6#,&FUF,!\"(F,$\"-++++H))Fio-FR6
+#,&FUF,!\"'F,$!,++]kY#Fep-FR6#,&FUF,!\"&F,$\"*+++V#Fbq-FR6#,&FUF,!\"%F
+,$!'++\")F_r-FR6#,&FUF,!\"$F,$\"(+++\"F[s-FR6#,&FUF,!\"#F,$!&++$Fgs-FR
+6#,&FUF,!\"\"F,$\"$+$FctF(F(" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 207 "
+The probabilities for this non-uniform model are rather different from
+ those obtained in the uniform model: the pattern abacab is now less p
+robable, since b and c are less probable than in the uniform model." }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "for i from 0 by 500 to 100
+00 do i,nuprob(i) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"!F#" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"$+&$\"S+\"[*))R%R^DT'*efa)Qa))oCVq*G
+6m\"!#_" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+5$\"R@r=I`R]'G&p/loOnM*
+zKz)R0$)Q'!#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+:$\"SN&oyL$z1h-5-
+X#\\]1\"H#3[k=(Qi8!#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+?$\"Svj\"
+GW)>&H:u>'4#eivswgJfOuvG#!#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+D$
+\"STHpgHM!*z/s$34<O_JJ\"oJ\"[n6P$!#^" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6$\"%+I$\"S\")y)z7![@pW`(z\">`+FP27m$eH`d%!#^" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"%+N$\"Ru%R$Ra'*pP!zcD0**oRlAjni#oq'e!#]" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"%+S$\"RHn*3/Y2m48;t(\\YrA4)eO^7u<s!#]" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+X$\"RuY&*y0+M^t$3+my01OHLI*o1Eg)!#
+]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+]$\"Sb+MQm^N_>5wx!>9^3z#f'4VT
+++\"!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+b$\"S9X8\\;$pd'oGA5')[C
+e&>UB6T.$R6!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+g$\"Sb5u?GjkQ%*R
+wF&[+z7&Q;.N>^w7!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+l$\"S3)*)))
+Hp*=4O+$RmNb1lD'R)R4!Q59!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+q$
+\"S6^]$p&f*eM:z(Q-v$[de;hw0T)R:!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$
+\"%+v$\"SV=IG+`YDJqeY!Qg!z@1dF8I-k;!#]" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6$\"%+!)$\"SEB+a.Z\\AARQO&Hh+p/bIY]EAy\"!#]" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"%+&)$\"S,];'QAq'p(He.)RF%yr!)3HH'R!R*=!#]" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"%+!*$\"S\">B:E0Cf\\D(oz1@xDP@e4Q7k)*>!#]" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"%+&*$\"SDqt/[)y\"p\"pa0<-'p(yMew\\
+&49'4#!#]" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"&++\"$\"Ss!Hg*)RJ\\^.w5
+L?GVYej!=Lv?'=#!#]" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 78 "Here are th
+e curves corresponding to the non-uniform and to the uniform model:" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 101 "plots[display](\{plot([se
+q([100*i,p(100*i)],i=0..100)]),plot([seq([100*i,nuprob(100*i)],i=0..10
+0)])\});" }}{PARA 13 "" 1 "" {INLPLOT "6$-%'CURVESG6$7aq7$\"\"!F(7$$\"
+$+\"F($\"SYX.5hLk[*z&)eKd_4G4(z.;D)yK#!#`7$$\"$+#F($\"SsRs4l03(>v%ziq$
+H*\\7[:rJ<G=5!#_7$$\"$+$F($\"S,kuRj+_2T6,**RHCUDfG(oi:#>BF47$$\"$+%F($
+\"SIFF3G/kNRuu)pN_T_FLF\\HAq4%F47$$\"$+&F($\"R#oj..Hv'*=N0T!zP<%p+!oVs
+6]J'!#^7$$\"$+'F($\"RS&\\W#y)=]6zb+(>%=C\"4q/*3eHQ*)FD7$$\"$+(F($\"SeZ
+Q>@xl&>lYktPD5mw(4UO:P$>\"FD7$$\"$+)F($\"S#G^gxJg*Q9Gjs=5eif!RF%zp(p_
+\"FD7$$\"$+*F($\"Sx%oXA<kObWN(4v]p&yzTx<$\\l\"*=FD7$$\"%+5F($\"S<s0?zh
+JlpF[w;V$4))[(Qxmpc%G#FD7$$\"%+6F($\"SQ'QqbK>)GoVc!>07J'*>_e!=4-.FFD7$
+$\"%+7F($\"SxmFPOv\")y)[U9()R-w-%>;L>[YWJFD7$$\"%+8F($\"SYQ@^)e[([S[.N
+'\\@\\w9vFq1\"[1OFD7$$\"%+9F($\"SYQs-^2i#oQD%>GUU%=oaU$)z!y'3%FD7$$\"%
++:F($\"S$*4`)RH#\\Rz#[!Q7Xm]e!3^sZ)>$e%FD7$$\"%+;F($\"R([)Rb8<gp%[Bk!4
+4[>TC(R\"o'o$4&!#]7$$\"%+<F($\"Rp!z\"p]>@<jL5]\"*)G_$3VkH36jh&Ffp7$$\"
+%+=F($\"RX.j,9pP\"[[+(RMQTkCuhohX#\\hFfp7$$\"%+>F($\"R4kI7+YW<Yv+T'*[i
+ZVyw(Hyw!p'Ffp7$$\"%+?F($\"R1/Lv5ZU>29z5o8>)=/i&QSa#RsFfp7$$\"%+@F($\"
+R&QEY1twJf0#Gj\"=jV8T'y*[o<$z(Ffp7$$\"%+AF($\"R6'oh$eFiL5!)z)3J\\Vi!*=
+ydt4^$)Ffp7$$\"%+BF($\"Rlx\"=DCbv'oVgafZUf'[qz<[m6*)Ffp7$$\"%+CF($\"Rn
+rd5A>EBXxln%*=-a[OF_(4ht%*Ffp7$$\"%+DF($\"S*G.lyI5$onRiZhRsv*)o)3XnuN+
+\"Ffp7$$\"%+EF($\"S5&\\DH?*[QDQtD%z_Mb<>gi'epf5Ffp7$$\"%+FF($\"S%)*3Y
+\"*3!o&)yj'>7Cd822f*3Z0i:6Ffp7$$\"%+GF($\"S&H<5*))4\\s!Gy-d(z^bZ3U-%[^
+7<\"Ffp7$$\"%+HF($\"SR%>YL@n,n'=5\"=Z_&H&='*>9-)\\E7Ffp7$$\"%+IF($\"S$
+[&*fl-_#eE#fZSF$)*)3hE?yxv7G\"Ffp7$$\"%+JF($\"S#eP3'f!H.:B`fMk:ZG6!pia
+j]N8Ffp7$$\"%+KF($\"S>c+$>z.'4o#e:NAKuk'o_;cq6*Q\"Ffp7$$\"%+LF($\"SIX7
+,!3&e$>z'3\"Qece1<:S2iS?W\"Ffp7$$\"%+MF($\"S'p8pz`rMb_F,?tdSA!4:Hi\\@%
+\\\"Ffp7$$\"%+NF($\"S-$z#\\*)o87w/ty/y#\\8R$GFAHeX:Ffp7$$\"%+OF($\"SJ4
+*Rli?/z6PQFn0co\"*=(QJ?4'f\"Ffp7$$\"%+PF($\"Sg1>kjK%y2[]aO\\*oQ$G@G3G%
+pX;Ffp7$$\"%+QF($\"SxV'=@()Q<0%GS1VhHB+%=&o-fM%p\"Ffp7$$\"%+RF($\"S.PR
+3$4d=6.Js9sTf8jl#=fr+U<Ffp7$$\"%+SF($\"SWxl&*H2Vo>x$\\l1B\\@3AO/9U')y
+\"Ffp7$$\"%+TF($\"Som5X')3*py0@y=>(e[bgmTq&=U$=Ffp7$$\"%+UF($\"S1(4w'[
+cOz%px#f^E]dO<^#3i2(y=Ffp7$$\"%+VF($\"S-v/$*f3+e0<K0n#zj\"4=>fKP3A>Ffp
+7$$\"%+WF($\"SUqm+sVX692*HOp!4Y!>T@ZWCV'>Ffp7$$\"%+XF($\"S(=A15$4Z$ziu
+B/N^SARc9-B5a+#Ffp7$$\"%+YF($\"S0fW>_?aBjDY18!=)fNT,\")QVKX?Ffp7$$\"%+
+ZF($\"SPly#\\/KxK&[#Q6E\\)*=q7%HYE0%3#Ffp7$$\"%+[F($\"So6a6:H:O6eAjvM@
+u**4b85Ne@@Ffp7$$\"%+\\F($\"S4!e0MVp[+`A_SNX/rM%[@Jw!z:#Ffp7$$\"%+]F($
+\"S.ZskEY])4(fA0&HkiCO$*>9#z,$>#Ffp7$$\"%+^F($\"SdDKGtQ/`81+A-&**3j&R2
+*oP4pA#Ffp7$$\"%+_F($\"SXJ5]Y9z$)4s%fQQ-Wv,..n&*y&fAFfp7$$\"%+`F($\"S?
+n!H4eTO1tUNSkV>ixc(yma-\"H#Ffp7$$\"%+aF($\"SNMO8sfk#yk]]J<Z)z\\x&)))[%
+\\7K#Ffp7$$\"%+bF($\"S'[tBBA\"QI'4KfLfiLlP-sV2`-N#Ffp7$$\"%+cF($\"S86T
+R7-GnU-LY&4\"*)e;c2qU+/yBFfp7$$\"%+dF($\"SN-_kp.dZW\"z%\\5=f^Z;**R%[:Y
+S#Ffp7$$\"%+eF($\"S)Q5,$z6+q]_^fr\\n7j>@Moe)*HCFfp7$$\"%+fF($\"S]\"pv:
+$QuK\"p%y3x![U4N%y=8*eTX#Ffp7$$\"%+gF($\"SNIud*Q`*>#GqT\"oDh$3+>AG]VrZ
+#Ffp7$$\"%+hF($\"SjwB@66^t*f?)z1i;x%*>Zj0'\\*)\\#Ffp7$$\"%+iF($\"S$z9R
+TI#G&yZsHFFp-ZBU%\\(>)e>DFfp7$$\"%+jF($\"S&3eQ!e.(*)Q$*H#Ha;7#[01x#)=r
+!RDFfp7$$\"%+kF($\"SE-X\\r`;q_o)4E>*\\5!*[r!=N6ub#Ffp7$$\"%+lF($\"S/Z%
+)yRJ-v6?q(=)z`Etf;3fAiuDFfp7$$\"%+mF($\"S(*R\"fI0`]Q_$HZFB26GYsk9#=2f#
+Ffp7$$\"%+nF($\"SB(fyo@fj)p%yE\"fJ_YC)H2g>9dg#Ffp7$$\"%+oF($\"S]gd)))>
+6))HatY]d&G8[F&RfzD'>EFfp7$$\"%+pF($\"SmV'[LH?!>VKJy@KI+%p,4w;pCj#Ffp7
+$$\"%+qF($\"S<\\npmo)R/Sz*yG/-wrgdOs4EWEFfp7$$\"%+rF($\"SG?>Y3MphuY^wQ
+!3\"=o\"o>,L=]l#Ffp7$$\"%+sF($\"ST$=.)41)fa!)Q))y15-/(R**=s(eZm#Ffp7$$
+\"%+tF($\"S(o,hsKi(o4m`LIaAESU!Hl>+Nn#Ffp7$$\"%+uF($\"Sy\\mf0#euXGg0KT
+VXua%eAD3E\"o#Ffp7$$\"%+vF($\"S)[N*GAL6<s$)3>0[Lu7&)\\>k\"f!)o#Ffp7$$
+\"%+wF($\"S[&R?iD<GC,cc\\Rn)HkCO'\\'R\"Rp#Ffp7$$\"%+xF($\"S$H:T)**)\\P
+mu*y.cTyPRC'p%)=W))p#Ffp7$$\"%+yF($\"S1%GRH(Gnj$)\\A&yAyp3LO)yq*oGq#Ff
+p7$$\"%+zF($\"S#GXbmzF7#)4p)\\jwg0H`%32f2gq#Ffp7$$\"%+!)F($\"Sr%H,g.9m
+0ffd^^BkA)*\\z!R%z#3FFfp7$$\"%+\")F($\"ScX))eEQ#fMVGx<#QlS@vy&)*)Rq4FF
+fp7$$\"%+#)F($\"S4y%o0`p/O>,Mo8gL'z)=zFx+.r#Ffp7$$\"%+$)F($\"S^K!QrE\"
+\\grj!>M?/9hRw)eZ$*35FFfp7$$\"%+%)F($\"S=1wv/z>mF.;%yx\"3^>oRwz#*34FFf
+p7$$\"%+&)F($\"SM-I%f!>(Hcv%ft#RHq+@pkw6?tq#Ffp7$$\"%+')F($\"SE:AxvjF^
+$)*zU>GGY%eR10r8![q#Ffp7$$\"%+()F($\"S>9.^:tL'3z8p%[9o&[mP14\\_:q#Ffp7
+$$\"%+))F($\"SoQ6nHC$)[@6Rt?T.#fJH<0&Gf(p#Ffp7$$\"%+*)F($\"SY%>N>%fl\"
+\\Z'=x\"4_$R7j<uF<%Hp#Ffp7$$\"%+!*F($\"S:48c+o=d#)=j()e#y#)\\o%oU)G=wo
+#Ffp7$$\"%+\"*F($\"SBO$47=(\\n+lEGi6&3d_'o\"4dT;o#Ffp7$$\"%+#*F($\"S\\
+xcN+<r=%*od-,q9\")*[41;ZI]n#Ffp7$$\"%+$*F($\"S6\\T-ff$z99vYpQ2W:To)[JP
+!ym#Ffp7$$\"%+%*F($\"S<,5!\\#)\\RkJ^A%=z7.Vy1mB*z*fEFfp7$$\"%+&*F($\"S
+Aa(Hqm+*Q`\"RQm8f%eyo2tTud^EFfp7$$\"%+'*F($\"SU#HQzbrgBykUUA#=qqT!)4*[
+9Ek#Ffp7$$\"%+(*F($\"S:'4Px-3^(\\BFx#z//axhc!p!4Jj#Ffp7$$\"%+)*F($\"SR
+Uy$)H0$fjl)3cU+%)Gu:')ov*yIi#Ffp7$$\"%+**F($\"S'**yY=&=o%RjYsKSdcMpP3b
+yTDh#Ffp7$$\"&++\"F($\"SCEWCN4uk-#zc*RJ$\\UvKA)\\[^,EFfp-%'COLOURG6&%$
+RGBG$\"#5!\"\"F(F(-F$6$7aqF'7$F*$\"Rz!)3.+qo5x&3=#*R4r\">:J-))z1$eF.7$
+F0$\"S_Fm#4y:\"=W5eldC#HtgpBci+?e#F.7$F6$\"RSvd!>x#QNxo8+'=q\"y\"*3N?6
+NJ&fF47$F;$\"Smn3V3&))eP)=!Revlad$314[&)fk5F47$F@$\"S+\"[*))R%R^DT'*ef
+a)Qa))oCVq*G6m\"F47$FF$\"S/H&*f-N`n56OiwAc(\\X*es.&)4!Q#F47$FK$\"SW5%[
+O%HOXbhgL1V8C4<!\\3Q=o@$F47$FP$\"S!3qQ%GWY<$4XnKiCI.\"Q'\\]'\\rmTF47$F
+U$\"R6Pt[YVP9ULYk4GCBE\\'3;uKD_FD7$FZ$\"R@r=I`R]'G&p/loOnM*zKz)R0$)Q'F
+D7$Fin$\"RJ!GLN!GQ%R_XKWlm$zQ1ZL$oS^wFD7$F^o$\"RimPS#y$=o,SD%*R/@&>>U`
+'o&\\5!*FD7$Fco$\"SGW?**\\(=><()RaHG*G@[\\=L!)R:Y5FD7$Fho$\"S\"R[*o<%z
+v)zP7u0&fKf#)p-y(31+7FD7$F]p$\"SN&oyL$z1h-5-X#\\]1\"H#3[k=(Qi8FD7$Fbp$
+\"S%RTak;)3S%3d2G7-gV]$3W#ffF`\"FD7$Fhp$\"S\\yB=ZwRj?c\"o2[&ov_3*[8M93
+r\"FD7$F]q$\"S/_oI_J2:&)[M&**f^&[4^(Q//(>'*=FD7$Fbq$\"SmTlOe%f7S9N!=V&
+3#)G_f9YYi&)3#FD7$Fgq$\"Svj\"GW)>&H:u>'4#eivswgJfOuvG#FD7$F\\r$\"Sx^A+
+Fv&H*y&>j6UjMi$f=i'G0H\\#FD7$Far$\"S+c4$*pVf]+u;f&e_>!3iIdvjB/FFD7$Ffr
+$\"SFBwAjHfG!en&fTbB7x#*4?3sD@HFD7$F[s$\"SdP@\")Q1\\O6Gav4h_1G&[d'4cmV
+JFD7$F`s$\"STHpgHM!*z/s$34<O_JJ\"oJ\"[n6P$FD7$Fes$\"S#RcdD`ly+nZI#f9WI
+2;U[ImZ.OFD7$Fjs$\"S6R90mNXs**=#4>_B%zsP7F.YJSQFD7$F_t$\"S&eG)\\/,+w#
+\\NJ%4_dl'>W$e?0T\"3%FD7$Fdt$\"SorFJ>\"HdMl8)eFunW&='p;<4]EVFD7$Fit$\"
+S\")y)z7![@pW`(z\">`+FP27m$eH`d%FD7$F^u$\"Sj%olf3P5!\\e3Q4![Z0o\"fg6uk
+F[FD7$Fcu$\"RVE4Q2G#3#**y\"Hs8[t$>e^8C7K3&Ffp7$Fhu$\"R()=y\"fDzvBzBLwM
+$)Q?4J#Gr)yT`Ffp7$F]v$\"RMaJxd`\"[$*pE_!\\^w)*yR(3>\"[Jg&Ffp7$Fbv$\"Ru
+%R$Ra'*pP!zcD0**oRlAjni#oq'eFfp7$Fgv$\"R&4M$))GSvB;s@J3\\Wt3S<YJLL8'Ff
+p7$F\\w$\"RZ!esW/+5uEkv.wms!o?DhnL<S'Ffp7$Faw$\"RNE=jFz+i!pk<e;\"*=pit
+!H%e1smFfp7$Ffw$\"RgU$G5i`oFb-<p&e$)RSpR?FKT%pFfp7$F[x$\"RHn*3/Y2m48;t
+(\\YrA4)eO^7u<sFfp7$F`x$\"R(=&4SN%)yeIk\"Rn!GTO,nx8x1F\\(Ffp7$Fex$\"RY
+:ryVQs3M4/$z?:[kMC`*R[)oxFfp7$Fjx$\"R#)\\%Quba&>_+'3$z(=[%odlp:\"*f/)F
+fp7$F_y$\"RE>upu1q&>X>0[LiO:rfb(RlRK)Ffp7$Fdy$\"RuY&*y0+M^t$3+my01OHLI
+*o1Eg)Ffp7$Fiy$\"R\\y;K/i5%[qYONmgoF\\q(zpb<)))Ffp7$F^z$\"R4&[!y]OD$Gw
+DcU*e3EOx'*H2e7;*Ffp7$Fcz$\"Rvps)G8f=B'H#z;&4#f+Ub]NV'4W*Ffp7$Fhz$\"R[
+hKxN\"*3f(zfI701(zU1(fo(H2s*Ffp7$F][l$\"Sb+MQm^N_>5wx!>9^3z#f'4VT++\"F
+fp7$Fb[l$\"SU1V%*=f8C<QoTM,\"*Gk)pzWC))z-\"Ffp7$Fg[l$\"Sv;Y!)*RZ86L32+
+$)[\"G(epH0J+f0\"Ffp7$F\\\\l$\"SU7b(3iS2HN4s#p,B4.a*4m&\\w$3\"Ffp7$Fa
+\\l$\"S3I9\\vbr+W<4^))*zkVT8CY$*p:6\"Ffp7$Ff\\l$\"S9X8\\;$pd'oGA5')[Ce
+&>UB6T.$R6Ffp7$F[]l$\"SaGJ)[1aBs?Z,B-%fvxJYtdR&p;\"Ffp7$F`]l$\"S4=bRb6
+TEj<7')\\p<*p)\\^xT0^%>\"Ffp7$Fe]l$\"Sif[Mk()GzM(R8(Re-/5290<D'>A\"Ffp
+7$Fj]l$\"Sop%)RiWMTRa+j^#[%eiDw$[h*H\\7Ffp7$F_^l$\"Sb5u?GjkQ%*RwF&[+z7
+&Q;.N>^w7Ffp7$Fd^l$\"S2SF\"3Amd4)e\\m2?4s\\MY[P**e.8Ffp7$Fi^l$\"Sfn&GJ
+j$y#fRV'3F;x&HDt,NVC0L\"Ffp7$F^_l$\"S`%R)*=i6k7I%4oh6$4hBM5vd1tN\"Ffp7
+$Fc_l$\"Sh.Q7AW0w]b4)4aG)[@=L*)ey#RQ\"Ffp7$Fh_l$\"S3)*)))Hp*=4O+$RmNb1
+lD'R)R4!Q59Ffp7$F]`l$\"SWC\"zh))yUh=7_VKP.Hi)*>#=alO9Ffp7$Fb`l$\"S@m@-
+^Ch:<i)f9&)yWw$zNXyiui9Ffp7$Fg`l$\"SHEmvz[[/puA@9miVo&z9aUX')[\"Ffp7$F
+\\al$\"S8H#y2$RJ<*onqt8.[L()\\Dj!fM9:Ffp7$Faal$\"S6^]$p&f*eM:z(Q-v$[de
+;hw0T)R:Ffp7$Ffal$\"SR&=QL](HbG'**=teEGP+*y0)\\C^c\"Ffp7$F[bl$\"Skzt^S
+`V(p35b^)\\zh3l>O@,>!f\"Ffp7$F`bl$\"S$\\EE?FmQ?!>`tDpF;J$[>)*3K]h\"Ffp
+7$Febl$\"SmpH;K6^H<A&Go!)HWv!=MSF[kR;Ffp7$Fjbl$\"SV=IG+`YDJqeY!Qg!z@1d
+F8I-k;Ffp7$F_cl$\"SaU;N?XQm?W4^EIiG<()=Qv:;)o\"Ffp7$Fdcl$\"S-cw`:&RH=q
+6tVP[A\"z'*e<%ob?r\"Ffp7$Ficl$\"SJ\"4Lw!)o5.M0nWl3g>Wlsku+dt\"Ffp7$F^d
+l$\"S:PF\"*Q$>!>8BV2r5>$f;7E%*R#4f<Ffp7$Fcdl$\"SEB+a.Z\\AARQO&Hh+p/bIY
+]EAy\"Ffp7$Fhdl$\"Sx&e1u<NWaAV\"**G#p'4)onUB9*40=Ffp7$F]el$\"S9jmupq`*
+zVj0^P)RxeaE#eg1x#=Ffp7$Fbel$\"SceamRS^LgG\\?))oV*H+c\"z&RX+&=Ffp7$Fge
+l$\"S\"o/D4'eDm5sq'oD^R*QPL+:A6s=Ffp7$F\\fl$\"S,];'QAq'p(He.)RF%yr!)3H
+H'R!R*=Ffp7$Fafl$\"S?9ub^7x5&=Hd#R[_,'[k^0t<a\">Ffp7$Fffl$\"Sk85B[_Fq`
+;$oSG`2VfSo_z]m$>Ffp7$F[gl$\"S^f$=9&f*fKdugn)zP(y%Q/!fh+w&>Ffp7$F`gl$
+\"SIKFRa)*R29IoY1H$yc_*e!y#[Ey>Ffp7$Fegl$\"S\">B:E0Cf\\D(oz1@xDP@e4Q7k
+)*>Ffp7$Fjgl$\"S]=<2\"oYf7)G$zXEH(=kg/&4#ys=?Ffp7$F_hl$\"S:X\"3%\\HFc
+\"G/$=mn'>mP?MIrA&Q?Ffp7$Fdhl$\"SFR6#[c]`.W/kB@k%)=?N2!4U-e?Ffp7$Fihl$
+\"Sd=S4,BW6%QiY)R)*pjY,H8d2Bx?Ffp7$F^il$\"SDqt/[)y\"p\"pa0<-'p(yMew\\&
+49'4#Ffp7$Fcil$\"S$3gG)fU?^\"o$R-VDr8_F%)>XNv9@Ffp7$Fhil$\"S6okc'Q+s-C
+T+0bk2q>9M9TnI8#Ffp7$F]jl$\"Su)yVA-:J4nH[#oUUs&zjkUd\"3^@Ffp7$Fbjl$\"S
+AhmLNHq8r[d$Q-&e_/]?F(=&zo@Ffp7$Fgjl$\"Ss!Hg*)RJ\\^.w5L?GVYej!=Lv?'=#F
+fpF[[m" 2 294 214 214 2 0 1 0 2 9 0 4 2 1.000000 45.000000 45.000000 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 7896 0 0 0 0 0 0 }}}
+{PARA 5 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 15 "
+Markovian model" }}{PARA 0 "" 0 "" {TEXT -1 444 "By slightly modifying
+ the automaton, it is possible to consider a Markovian model, where in
+stead of giving the probabilities of occurrence of each letter, one gi
+ves the probabilities of transition from one letter to the next one. T
+he new automaton is almost the same as the previous one, except that t
+he transitions are marked and three more states are added at the begin
+ing. Here is the procedure generating the new automaton from the patte
+rn:" }}{EXCHG {PARA 4 "> " 0 "" {MPLTEXT 1 0 858 "gengram2 := proc (pa
+ttern::list(\{identical(a), identical(b),identical(c), identical(d)\})
+)local i, eq, letter, state, j,alph;alph:=[a,b,c,d];for i to nops(patt
+ern) do for letter in alph do for j from 0 to i-1 do if [op(1 .. i-j,p
+attern)] =[op(j+1 .. i-1,pattern), letter] then state[letter] :=cat(w,
+op(1 .. i-j,pattern));break fi od;if j=i then state[letter] := cat(w,l
+etter) fi od;eq[i] := cat(w,op(1 .. i-1,pattern)) =Union(Epsilon,seq(P
+rod(letter,`if`(i>1,cat(Mark,pattern[i-1],letter),cat(Markini,letter))
+,state[letter]),    letter = alph))od;subs(cat(w,op(pattern)) =Prod(Ma
+rk,w),\{Mark = Epsilon,seq(seq(cat(Mark,i,j)=Epsilon,j=alph),i=alph),s
+eq(eq[i],i = 1 .. nops(pattern)),seq(letter = Atom,letter=alph),      \+
+seq(cat(w,i)=Union(Epsilon,seq(Prod(j,cat(Mark,i,j),cat(w,j)),j=alph))
+,i=subs(pattern[1]=NULL,alph)),seq(cat(Markini,i)=Epsilon,i=alph)\})en
+d;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%)gengram2G:6#'%(patternG-%%lis
+tG6#<&-%*identicalG6#%\"aG-F.6#%\"bG-F.6#%\"cG-F.6#%\"dG6(%\"iG%#eqG%'
+letterG%&stateG%\"jG%%alphG6\"FAC%>8)7&F0F3F6F9?(8$\"\"\"FH-%%nopsG6#9
+$%%trueGC$?&8&FDFMC$?(8(\"\"!FH,&FGFH!\"\"FHFM@$/7#-%#opG6$;FH,&FGFHFS
+FVFL7$-Fen6$;,&FSFHFHFHFUFLFPC$>&8'6#FP-%$catG6$%\"wGFZ%&breakG@$/FSFG
+>F`o-Fdo6$FfoFP>&8%6#FG/-Fdo6$Ffo-Fen6$;FHFUFL-%&UnionG6$%(EpsilonG-%$
+seqG6$-%%ProdG6%FP-%#ifG6%2FHFG-Fdo6%%%MarkG&FL6#FUFP-Fdo6$%(MarkiniGF
+PF`o/FPFD-%%subsG6$/-Fdo6$Ffo-FenFK-F_q6$FgqFfo<(/FgqFjp-F\\q6$/-Fdo6$
+F\\rFGFjp/FGFD-F\\q6$/-Fdo6$FfoFG-Fhp6$Fjp-F\\q6$-F_q6%FS-Fdo6%FgqFGFS
+-Fdo6$FfoFS/FSFD/FG-F_r6$/&FL6#FH%%NULLGFD-F\\q6$/FP%%AtomGF]r-F\\q6$-
+F\\q6$/FjsFjpF^tF^s-F\\q6$F^p/FG;FHFIFAFA" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 102 "For instance, the same pattern abacab as above yields th
+e automaton described by the following grammar" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 27 "G:=gengram2([a,b,a,c,a,b]);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%\"GG<D/%%MarkG%(EpsilonG/%\"aG%%AtomG/%\"bGF+/%\"cG
+F+/%\"dGF+/%#waG-%&UnionG6'F(-%%ProdG6%F*%'MarkaaGF3-F86%F-%'MarkabG%$
+wabG-F86%F/%'MarkacG%#wcG-F86%F1%'MarkadG%#wdG/%\"wG-F56'F(-F86%F*%)Ma
+rkiniaGF3-F86%F-%)MarkinibG%#wbG-F86%F/%)MarkinicGFB-F86%F1%)MarkinidG
+FF/%%wabaG-F56'F(F7F;-F86%F/FA%&wabacGFC/F>-F56'F(-F86%F*%'MarkbaGFY-F
+86%F-%'MarkbbGFQ-F86%F/%'MarkbcGFB-F86%F1%'MarkbdGFF/FF-F56'F(-F86%F*%
+'MarkdaGF3-F86%F-%'MarkdbGFQ-F86%F/%'MarkdcGFB-F86%F1%'MarkddGFF/FB-F5
+6'F(-F86%F*%'MarkcaGF3-F86%F-%'MarkcbGFQ-F86%F/%'MarkccGFB-F86%F1%'Mar
+kcdGFF/FTF(/FWF(/FPF(/FMF(/Fhn-F56'F(-F86%F*F\\q%'wabacaGF]qF`qFcq/F:F
+(/FAF(/F=F(/F_r-F56'F(F7-F86%F-F=-F86$F'FHF?FC/FfpF(/FeqF(/F]pF(/F`pF(
+/FcpF(/FgoF(/F\\qF(/F_qF(/FbqF(/FEF(/FaoF(/FdoF(/F^oF(/FQ-F56'F(-F86%F
+*F^oF3F_oFboFeo" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 144 "From there, g
+enerating functions follow. For instance, we recover the generating fu
+nction obtained before when all transitions are equiprobable:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 140 "subs(gfsolve(G,unlabelled,z
+,[[u,Mark],seq([1/4,cat(Markini,i)],i=[a,b,c,d]),seq(seq([1/4,cat(Mark
+,i,j)],j=[a,b,c,d]),i=[a,b,c,d])]),w(z,u));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*&,&\"$c#\"\"\"*$%\"zG\"\"%F'F',.!%'4%F'F)\"%'4%*$F)
+\"\"'!\"\"*$F)\"\"&\"#;*&F)F/%\"uGF'F'F(!#;F0F6" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 39 "The rest of the treatment is as before." }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 17 "Multiple
+ patterns" }}{PARA 0 "" 0 "" {TEXT -1 284 "It is also possible to writ
+e an automaton which will recognize not only a fixed pattern, but a se
+t of possible patterns. The procedure gengram3 below takes as input a \+
+list of patterns, and produces the minimal grammar recognizing all wor
+ds on 4 letters, the patterns being ``marked''." }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 913 "gengram3:=proc (patterns::list(list(\{identic
+al(a),identical(b),identical(c),identical(d)\}))) local alpha, states,
+ state, eq, n, trans, letter, nbst, st, indst, i; alpha:=[a,b,c,d]; nb
+st:=1; states[1]:=[]; for indst while indst<=nbst do state:=states[ind
+st]; n:=nops(state); for letter in alpha do if member([op(state),lette
+r],patterns) then trans[letter]:=Prod(Mark,w) elif member([op(state),l
+etter],map( proc(x,n) if nops(x)>n then [op(1..n+1,x)] fi end, pattern
+s,nops(state))) then trans[letter]:=cat(w,op(state),letter); nbst:=nbs
+t+1; states[nbst]:=[op(state),letter] else for i from indst by -1 to 2
+ do st:=states[i]; if st=[op(n-nops(st)+2..n,state),letter] then trans
+[letter]:=cat(w,op(st)); break fi od; if i=1 then trans[letter]:=w fi \+
+fi od; eq[indst]:=cat(w,op(state))= Union(Epsilon,seq(Prod(letter,tran
+s[letter]),letter=alpha)) od; \{seq(eq[i],i=1..nbst),Mark=Epsilon,seq(
+letter=Atom,letter=alpha)\} end;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%
+)gengram3G:6#'%)patternsG-%%listG6#-F*6#<&-%*identicalG6#%\"aG-F06#%\"
+bG-F06#%\"cG-F06#%\"dG6-%&alphaG%'statesG%&stateG%#eqG%\"nG%&transG%'l
+etterG%%nbstG%#stG%&indstG%\"iG6\"FHC'>8$7&F2F5F8F;>8+\"\"\">&8%6#FO7
+\"?(8-FOFOFH1FVFNC&>8&&FR6#FV>8(-%%nopsG6#FZ?&8*FK%%trueG@'-%'memberG6
+$7$-%#opGF[oF]o9$>&8)6#F]o-%%ProdG6$%%MarkG%\"wG-Fao6$Fco-%$mapG6%:6$%
+\"xGFAFHFHFH@$29%-Fjn6#Ffo7#-Feo6$;FO,&FjpFOFOFOFfoFHFHFfoFinC%>Fho-%$
+catG6%F_pFdoF]o>FN,&FNFOFOFO>&FR6#FNFcoC$?(8.FV!\"\"\"\"#F^oC$>8,&FR6#
+F^r@$/Fcr7$-Feo6$;,(FhnFO-Fjn6#FcrF_rF`rFOFhnFZF]oC$>Fho-Feq6$F_p-FeoF
+^s%&breakG@$/F^rFO>FhoF_p>&8'Ffn/-Feq6$F_pFdo-%&UnionG6$%(EpsilonG-%$s
+eqG6$-F\\p6$F]oFho/F]oFK<%/F^pFat-Fct6$&FjsFer/F^r;FOFN-Fct6$/F]o%%Ato
+mGFgtFHFH" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 72 "For instance, here i
+s the grammar recognizing the words abab and abacab:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 39 "G:=gengram3([[a,b,a,b],[a,b,a,c,a,b]]);" 
+}}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"GG<-/%\"wG-%&UnionG6'%(EpsilonG-
+%%ProdG6$%\"aG%#waG-F-6$%\"bGF'-F-6$%\"cGF'-F-6$%\"dGF'/F0-F)6'F+F,-F-
+6$F3%$wabGF4F7/F?-F)6'F+-F-6$F/%%wabaGF1F4F7/%%MarkGF+/F/%%AtomG/F3FI/
+F6FI/F9FI/%&wabacG-F)6'F+-F-6$F/%'wabacaGF1F4F7/FS-F)6'F+F,-F-6$F3-F-6
+$FGF'F4F7/FE-F)6'F+F,FW-F-6$F6FNF7" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 35 "Again, generating functions follow:" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 48 "subs(gfsolve(G,unlabelled,z,[[u,Mark]]),w(z,u));" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*&,(\"\"\"F&*$%\"zG\"\"#F&*$F(\"\"%
+F&F&,4!\"\"F&F(F+F'F-*$F(\"\"$F+F*!\"#*&F(F+%\"uGF&F&*$F(\"\"&F+*$F(\"
+\"'F-*&F(F6F2F&F&F-F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "The coef
+ficient of " }{XPPEDIT 18 0 "u^k*z^n" "*&)%\"uG%\"kG\"\"\")%\"zG%\"nGF
+&" }{TEXT -1 84 " in the Taylor expansion of this rational function is
+ the number of words of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 
+-1 6 " with " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 75 " occurrences
+ of the patterns abab and abacab. Here are the first few terms:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "map(expand,series(\",z,10));
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+9%\"zG\"\"\"\"\"!\"\"%\"\"\"\"#;
+\"\"#\"#k\"\"$,&\"$b#F%%\"uGF%\"\"%,&\"%;5F%F/\"\")\"\"&,&\"%[SF%F/\"#
+[\"\"',&\"&Gh\"F%F/\"$c#\"\"(,(\"&eU'F%F/\"%x7*$F/\"\"#F%\"\"),(\"'?gD
+F%F/\"%7hF@\"#7\"\"*-%\"OG6#F%\"#5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 22 "For instance the term " }{XPPEDIT 18 0 "48*u*z^6" "*(\"#[\"\"\"
+%\"uGF$%\"zG\"\"'" }{TEXT -1 364 " corresponds to the 47 words of leng
+th 6 containing abab (ababab is counted only once), plus the word abac
+ab itself. Of course, it would not be difficult to modify the grammar \+
+so as to take into accounts overlapping words differently. From this g
+enerating function, the treatment proceeds as before. Again, non-unifo
+rm and Markovian extensions could be considered." }}}}{SECT 0 {PARA 4 
+"" 0 "" {TEXT -1 20 "Patterns with errors" }}{PARA 0 "" 0 "" {TEXT -1 
+612 "It is also possible to accomodate patterns whose occurrence is ex
+act except at one unspecified position. A direct way would be to apply
+ the previous technique for multiple patterns after having generated a
+ll possible patterns obtained by introducing one error in the pattern \+
+under study. However, the number of patterns obtained this way may be \+
+much too large for this technique to be practical. A better way is to \+
+produce directly the automaton corresponding to occurrences of the pat
+tern with at most one error, and this turns out not to be too difficul
+t. The following procedure generates all words of length " }{XPPEDIT 
+18 0 "n" "I\"nG6\"" }{TEXT -1 148 ", exact occurrences of the pattern \+
+being tagged with a mark as before (Mark0err), while occurrences with \+
+one mismatch are tagged by a Mark1err mark." }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 1479 "gengram4:=proc (pattern::list(\{identical(a),iden
+tical(b),identical(c),identical(d)\})) local alpha, state, eq, n, lett
+er, st, i, eq2, staterr, j; alpha:=[a,b,c,d]; for i to nops(pattern) d
+o staterr[i]:=\{\}; for letter in alpha do for j from 0 to i do if j=i
+ or [op(1 .. i - j, pattern)] = [op(j + 1 .. i - 1, pattern), letter] \+
+then if j=0 then state[letter] := cat(w, op(1 .. i , pattern)) else st
+aterr[i]:=staterr[i] union \{[[op(1..i,pattern)], [op(1..i-j,pattern)]
+]\}; state[letter]:=cat(w,op(1..i,pattern),`|`, op(1..i-j,pattern)) fi
+; break fi od; od; eq[i] := cat(w, op(1 .. i - 1, pattern)) = Union(Ep
+silon, seq(Prod(letter, state[letter]), letter = alpha)) od; for i to \+
+nops(pattern)-1 do for st in staterr[i] do n:=nops(st[2]); for letter \+
+in alpha do for j from 0 to n+1 do if j=n+1 or [op(1..n-j+1,pattern)]=
+ [op(j+1..n,st[2]),letter] then if pattern[i+1]=letter then state[lett
+er]:=cat(w,op(1..i+1,pattern),`|`, op(1..n-j+1,pattern)); staterr[i+1]
+:=staterr[i+1] union \{[[op(1..i+1,pattern)],[op(1..n-j+1,pattern)]]\}
+ else state[letter]:=cat(w,op(1..n-j+1,pattern)) fi; break fi od od; e
+q2[st] := cat(w,op(st[1]),`|`,op(st[2])) = Union(Epsilon, seq(Prod(let
+ter, state[letter]), letter = alpha)) od od; \{seq(eq[i],i=1..nops(pat
+tern)), seq(seq(eq2[st],st=staterr[i]),i=1..nops(pattern)-1), cat(w,op
+(pattern))=Prod(Mark0err,w), seq(cat(w,op(st[1]),`|`,op(st[2]))=Prod(M
+ark1err,w), st=staterr[nops(pattern)]), Mark0err=Epsilon,Mark1err=Epsi
+lon,seq(letter=Atom,letter=alpha)\} end;" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%)gengram4G:6#'%(patternG-%%listG6#<&-%*identicalG6#%\"aG-F.6#%
+\"bG-F.6#%\"cG-F.6#%\"dG6,%&alphaG%&stateG%#eqG%\"nG%'letterG%#stG%\"i
+G%$eq2G%(staterrG%\"jG6\"FEC&>8$7&F0F3F6F9?(8*\"\"\"FL-%%nopsG6#9$%%tr
+ueGC%>&8,6#FK<\"?&8(FHFQ?(8-\"\"!FLFKFQ@$5/FenFK/7#-%#opG6$;FL,&FKFLFe
+n!\"\"FP7$-F]o6$;,&FenFLFLFL,&FKFLFaoFLFPFYC$@%/FenFfn>&8%6#FY-%$catG6
+$%\"wG-F]o6$;FLFKFPC$>FT-%&unionG6$FT<#7$7#FcpF[o>F\\p-F`p6&FbpFcp%\"|
+grGF\\o%&breakG>&8&FV/-F`p6$Fbp-F]o6$;FLFgoFP-%&UnionG6$%(EpsilonG-%$s
+eqG6$-%%ProdG6$FYF\\p/FYFH?(FKFLFL,&FMFLFaoFLFQ?&8)FTFQC%>8'-FN6#&Fjr6
+#\"\"#?&FYFHFQ?(FenFfnFL,&F]sFLFLFLFQ@$5/FenFes/7#-F]o6$;FL,(F]sFLFenF
+aoFLFLFP7$-F]o6$;FfoF]sF`sFYC$@%/&FP6#,&FKFLFLFLFYC$>F\\p-F`p6&Fbp-F]o
+6$;FLFhtFPFaqF[t>&FUFgt-Fip6$Fau<#7$7#F]uFjs>F\\p-F`p6$FbpF[tFbq>&8+6#
+Fjr/-F`p6&Fbp-F]o6#&Fjr6#FLFaq-F]oF_sF\\r<)/%)Mark0errGF_r/%)Mark1errG
+F_r-Far6$/FY%%AtomGFfr-Far6$/F_v-Fdr6$FjvFbp/Fjr&FU6#FM/-F`p6$Fbp-F]oF
+O-Fdr6$FhvFbp-Far6$-Far6$F[v/FjrFT/FK;FLFhr-Far6$Fdq/FK;FLFMFEFE" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 109 "Here is a simple example. The gen
+erated automaton is almost optimal (in general it has O(1) too many st
+ates):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "gengram4([a,b,b,c
+]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<5/%\"aG%%AtomG/%\"bGF&/%\"cGF&
+/%\"dGF&/%#waG-%&UnionG6'%(EpsilonG-%%ProdG6$F%%&wab|graG-F46$F(%$wabG
+-F46$F*%%wab|grG-F46$F,F</F9-F06'F2-F46$F%%'wabb|graG-F46$F(%%wabbG-F4
+6$F*%&wabb|grG-F46$F,FJ/FG-F06'F2-F46$F%%(wabbc|graG-F46$F(%'wabbc|grG
+-F46$F*%&wabbcG-F46$F,FU/%$wa|grG-F06'F2-F46$F%F.-F46$F(F<-F46$F*%\"wG
+-F46$F,F_o/F6-F06'F2Fin-F46$F(%(wabb|grabGF]oF`o/F<-F06'F2Fin-F46$F(FJ
+F]oF`o/FJ-F06'F2Fin-F46$F(F_o-F46$F*FUF`o/FD-F06'F2FinF7FbpF`o/FU-F46$
+%)Mark1errGF_o/FX-F46$%)Mark0errGF_o/FRFhp/Fgo-F06'F2FinFEFbpF`o/F^qF2
+/FjpF2/F_o-F06'F2Fin-F46$F(Ffn-F46$F*Ffn-F46$F,Ffn" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 452 "There are two kinds of states: states correspond
+ing to words without error, which as before are represented by w.prefi
+x, and states with one error which contain a `|', possibly followed by
+ the last few letters which were read, when these form a prefix of the
+ pattern. For instance, wabb|ab is the state reached by words which co
+ntain the string abb with one error, their last two letters being ab.
+\nFrom there, we derive trivariate generating functions:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 67 "subs(gfsolve(\",unlabelled,z,[[u,Ma
+rk0err],[v,Mark1err]]),w(z,u,v));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,
+$*&,4!\"\"\"\"\"%\"zG!\"%*$F(\"\"#!\"'*$F(\"\"$F,*$F(\"\"%F)*$F(\"\"&!
+\"$*$F(\"\")F.*$F(\"\"'!\"#*$F(\"\"*F.F',L*&F(F2%\"uGF'F)*&F(\"\"(F=F'
+!\"&F'F'F1\"#@F-!#=*&F(F2%\"vGF'!#I*&F(F7F=F'F,*&F(F7FDF'!#@F4F3F9F3F6
+\"#<*$F(F?F.*&F(F?FDF'F,*&F(F:FDF'F:*&F(\"#5FDF'F:*&F(FNF=F'F.*&F(F:F=
+F'F.*&F(F0F=F'F&F*!#5*&F(F0FDF'!#7F/!\"(F&F&" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 19 "The coefficient of " }{XPPEDIT 18 0 "u^k*v^l*z^n" "*()%
+\"uG%\"kG\"\"\")%\"vG%\"lGF&)%\"zG%\"nGF&" }{TEXT -1 54 " in the Taylo
+r expansion of this rational function at " }{XPPEDIT 18 0 "z=0" "/%\"z
+G\"\"!" }{TEXT -1 34 " is the number or words of length " }{XPPEDIT 
+18 0 "n" "I\"nG6\"" }{TEXT -1 31 " where the pattern abbc occurs " }
+{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 25 " times without error and " 
+}{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 149 " times with exactly one e
+rror. Again, the Markovian model could also be treated, and extensions
+ to multiple errors are likely to be possible as well." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}}{SECT 0 {PARA 3 "" 0 "" 
+{TEXT -1 10 "Conclusion" }}{PARA 0 "" 0 "" {TEXT -1 575 "Various proba
+bilistic parameters related to the occurrence of specific patterns in \+
+random words can be computed very easily using combstruct and gfun. He
+re, combstruct is used to model the combinatorics of the problem and g
+fun is very helpful to compute expansions to very large orders, thanks
+ to the rational type of the corresponding generating functions. The m
+odel itself can be modified in various directions, to take into accoun
+t different probability models or different ways of counting occurrenc
+es of the pattern when they overlap, or several patterns simultaneousl
+y." }}}}{MARK "5 0 0" 46 }{VIEWOPTS 0 0 0 1 1 1803 }

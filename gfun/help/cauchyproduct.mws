@@ -1,0 +1,99 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 15 "gfun[`rec+rec`]" }
+{TEXT 30 44 " - termwise sum of two holonomic recurrences" }
+}
+{PARA 3 "> " 0 "" {TEXT -1 15 "gfun[`rec*rec`]" }
+{TEXT 30 48 " - termwise product of two holonomic recurrences" }
+}
+{PARA 3 "> " 0 "" {TEXT -1 19 "gfun[cauchyproduct]" }
+{TEXT 30 46 " - Cauchy product of two holonomic recurrences" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 15 "     `rec+rec`(" }
+{TEXT 35 4 "rec1" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "rec2" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 15 "     `rec*rec`(" }
+{TEXT 35 4 "rec1" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "rec2" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 19 "     cauchyproduct(" }
+{TEXT 35 4 "rec1" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "rec2" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "rec1, rec2 - " }
+{TEXT -1 51 "two linear recurrences with polynomial coefficients" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "u, n       - " }
+{TEXT -1 36 "variable and index of the recurrence" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 4 "a(n)" }
+{TEXT -1 5 " and " }
+{TEXT 35 4 "b(n)" }
+{TEXT -1 43 " are the sequences defined respectively by " }
+{TEXT 35 4 "rec1" }
+{TEXT -1 5 " and " }
+{TEXT 35 4 "rec2" }
+{TEXT -1 2 ", " }
+{TEXT 35 15 "gfun[`rec+rec`]" }
+{TEXT -1 26 " outputs a recurrence for " }
+{TEXT 35 9 "a(n)+b(n)" }
+{TEXT -1 2 ", " }
+{TEXT 35 15 "gfun[`rec*rec`]" }
+{TEXT -1 26 " outputs a recurrence for " }
+{TEXT 35 9 "a(n)*b(n)" }
+{TEXT -1 6 ", and " }
+{TEXT 35 19 "gfun[cauchyproduct]" }
+{TEXT -1 62 " outputs a recurrence for their Cauchy product or convolution " }
+{TEXT 35 31 "c(n) = sum(a(i)*b(n-i),i=0..n)." }
+{TEXT -1 1 " " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 90 " with(gfun):\n rec1:=u(n+1)=(n+1)*u(n):\n rec2 := u(n+1)=2*u(n):\n `rec+rec`(rec1,rec2,u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<',(*&,&*$%\"nG\"\"#F)F(F)\"\"\"-%\"uG6#F(F*F**&,(F'!\"\"F(!\"$F)F*F
+*-F,6#,&F(F*F*F*F*F**&,&F(F*F0F*F*-F,6#,&F(F*F)F*F*F*/-F,6#\"
+\"!&%#_CGF</-F,6#F*&F?FB/-F,6#F),$FCF)/-F,6#\"\"$,&F>\"\"%FCF)
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 " `rec*rec`(rec1,rec2,u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#,&*&,&%\"nG!\"#F'\"\"\"F(-%\"uG6#F&F(F(-F*6#,&F&F(F(F(F(
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 " cauchyproduct(rec1,rec2,u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<%,(*&,&%\"nG\"\"#\"\"%\"\"\"F*-%\"uG6#F'F*F**&,&!\"%F*F'!\"\"F*-F,6#,
+&F'F*F*F*F*F*-F,6#,&F'F*F(F*F*/-F,6#\"\"!&%#_CGF:/-F,6#F*,$F<\"
+\"$
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[diffeq+diffeq]" 2 "gfun[diffeq+diffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[diffeq*diffeq]" 2 "gfun[diffeq*diffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[hadamardproduct]" 2 "gfun[hadamardproduct]" "" }{TEXT -1 2 "  " }
+}
+}}

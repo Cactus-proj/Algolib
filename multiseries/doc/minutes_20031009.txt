@@ -1,0 +1,70 @@
+From: Bruno Salvy <Bruno.Salvy@inria.fr>
+Date: Fri, 10 Oct 2003 09:52:27 +0200 (MEST)
+To: Michael Cherkassoff <mcherkas@maplesoft.com>
+Cc: jgerhard@maplesoft.com, lbernard@maplesoft.com, mikec@maplesoft.com
+Subject: Conference minutes
+
+Updated version:
+
+J: The goal of the conference is an update on the status of INRIA
+projects - mainly New Series.
+
+B: Started replacing limit, asympt and series by new ones approximately
+3 weeks ago the tests have been run.
+
+   limit - now has 183 test failures
+
+   asympt - weaknesses are the same as in limit, so shouldn't be hard to fix
+   (will be fixed simultaneously).
+
+   series - 466 test failures - series is most delicate of the three,
+   it is used in collect and there is an interaction with type/series.
+   The tests for series have been run for the first time last
+   Tuesday. Very many new problems came from
+       . order infinity not supported (used in collect);
+       . series not accepted as input.
+   Those 2 problems have been fixed. We couldn't run the tests
+   yesterday (smaple broken). Will do today.
+
+   There were problems with branch cuts that have been solved for the most
+   important cases - log and power.
+
+   The remaining work can be categorized as follows:
+       . support for missing functions:
+	   - Jurgen has written a first version of Zeta. Comments by
+	     BS will follow.
+	   - Ha is working on floor, ceil etc.
+	   - Most holonomic functions (Bessel) are done, but we still
+	     need to work on (i) special cases of the indices (like
+	     Bessel with half-integers); (ii) branch cuts for
+	     holonomic functions. Ludovic is working on that.
+	   - RootOf more delicate. B is working on it.
+	   - sum/int are being worked on by Alexandre.
+	   - others will be done as time permits, but we are now using
+	     the old series/... as a temporary help.
+	. performance issues with evalf/int (will be checked later);
+        . various other problems and bugs that will have to be solved.
+
+   B is optimistic that in 3 weeks most of the problems will be resolved.
+
+   No kernel support for print/newseries  - has to convert to sum, but
+   this presents ordering problems.
+
+L: Juergen to talk to Paul D.
+
+   Test Failures is the Phase One. Phase Two is reducing bug count
+
+J: Is reducing the bug count a requirement for acceptance the code for Hydra?
+
+B: The bug count will go down naturally.
+
+L: Frederic may have an access to PVCS.
+
+J: Meet again in the end of October/beginning of November. Date TBD by email
+
+   OreTools merge with OreAlgebra is not to be done in time and punted to
+   Iguana.
+
+   B will ask Frederic if he can assess ToricIdealBasis from Karin
+   Gaterman soon.
+

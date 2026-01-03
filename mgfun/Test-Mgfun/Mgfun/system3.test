@@ -1,0 +1,70 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+# Proof that
+#
+#    Sum(binomial(n,k)^2*binomial(n+k,k)^2,k=0..n)=
+#        Sum(binomial(n,k)*binomial(n+k,k)*Sum(binomial(k,j)^3,j=0..k),
+#            k=0..n)
+#
+with(Ore_algebra):
+with(Holonomy):
+with(Mgfun):
+A:=shift_algebra([Sn,n],[Sk,k]):
+f:=binomial(n,k)^3:
+G:=hypergeom_to_dfinite(f,A):
+sys1:=convert(map(applyopr,G,h(n,k),A),set):
+sys2:={h(n+1,k)-h(n,k)} union eval(subs(h=proc(k) h(n,k) end,
+    subs(n=k,sum_of_sys(sys1,k=-infinity..infinity,_natural_boundaries)))):
+f:=binomial(n,k)*binomial(n+k,k):
+G:=hypergeom_to_dfinite(f,A):
+sys3:=convert(map(applyopr,G,h(n,k),A),set):
+sys4:=`sys*sys`(sys2,sys3):
+sys5:=sum_of_sys(sys4,k=-infinity..infinity,_takayama_algo):
+# System of order 2 for the left-hand side.
+if sys5=
+{(n^3+3*n^2+3*n+1)*h(n)+(-117-34*n^3-153*n^2-231*n)*h(n+1)+(12*n+n^3+6*n^2+8)*
+h(n+2)}
+then okay else sys5 fi;
+### Formerly, the even Takayama's algorithm used to return an order 4 operator.
+###
+## System of order 4 for the left-hand side.
+#if sys5=
+#{(-112-466*n-295*n^4-775*n^2-655*n^3-6*n^6-67*n^5)*h(n)+(14280+37042*n^3+55685
+#*n^2+43966*n+13611*n^4+2612*n^5+204*n^6)*h(n+1)+(6*n^6+113*n^5+870*n^4+3495*n^
+#3+7700*n^2+8784*n+4032)*h(n+4)+(-57976*n^3-140445*n^2-167086*n-11775*n^4-942*n
+#^5-77840)*h(n+2)+(-88200-3508*n^5-204*n^6-202734*n-24811*n^4-92178*n^3-189205*
+#n^2)*h(n+3)}
+#then okay else sys5 fi;
+f:=binomial(n,k)^2*binomial(n+k,k)^2:
+G:=hypergeom_to_dfinite(f,A):
+sys6:=convert(map(applyopr,G,h(n,k),A),set):
+sys7:=sum_of_sys(sys6,k=-infinity..infinity,_takayama_algo):
+# System of order 2 for the right-hand side.
+if sys7=
+{(n^3+3*n^2+3*n+1)*h(n)+(-117-34*n^3-153*n^2-231*n)*h(n+1)+(12*n+n^3+6*n^2+8)*
+h(n+2)}
+then okay else sys7 fi;
+### This is no longer needed, because of the change in the output
+### from Takayama's algorithm.
+###
+## Proof that the low-order operator divides the other one.
+#normal(subs(
+#    seq(h(n+6-i)=solve(subs(n=n+4-i,op(sys7)),h(n+6-i)),i=0..4),
+#    sys5)):
+#if %={0} then okay else % fi;

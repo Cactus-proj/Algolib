@@ -1,0 +1,77 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 19 "gfun[algeqtoseries]" }
+{TEXT 30 44 " - Puiseux expansions of algebraic functions" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 19 "     algeqtoseries(" }
+{TEXT 35 3 "pol" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "x" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "y" }
+{TEXT -1 2 ", " }
+{TEXT 35 5 "order" }
+{TEXT -1 1 "," }
+{TEXT 35 10 "pos_slopes" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "pol        - " }
+{TEXT -1 37 "polynomial equation in two variables " }
+{TEXT 35 1 "x" }
+{TEXT -1 5 " and " }
+{TEXT 35 1 "y" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "x,y        - " }
+{TEXT -1 14 "variable names" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "order      - " }
+{TEXT -1 40 "positive integer order of the expansions" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "pos_slopes - " }
+{TEXT -1 50 "(optional) only branches tending to 0 are computed" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 13 "The equation " }
+{TEXT 35 10 "pol(x,y)=0" }
+{TEXT -1 32 " defines a multivalued function " }
+{TEXT 35 4 "y(x)" }
+{TEXT -1 2 ", " }
+{TEXT 35 13 "algeqtoseries" }
+{TEXT -1 58 " computes an expansion of all the branches at the origin. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 219 "When a fifth argument is given, only those branches tending to 0 are computed. Note that this function is not designed to compute expansions to a large order. In this case, the differential equation should be used (see " }
+{HYPERLNK 17 "algeqtodiffeq" 2 "gfun[algeqtodiffeq]" "" }{TEXT -1 3 "). " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "with(gfun):\nP:=y-x^2-x^3*y^2+x^6*y^5;" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%\"PG,*%\"yG\"\"\"*$%\"xG\"\"#!\"\"*&F)\"\"$F&F*F+*&F)\"\"'F&\"\"&F'
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "algeqtoseries(P,x,y,4);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#7$+'%\"xG\"\"\"\"\"#-%\"OG6#F&\"\"',(*&-%'RootOfG6#,&F&F&*$%#_ZG\"\"%
+F&F&F%#!\"$F'F&*$F.F'#!\"\"F4-F)6#*$F%#F&F'F&
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "algeqtoseries(P,x,y,10,true);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#7#+)%\"xG\"\"\"\"\"#F&\"\"(-%\"OG6#F&\"#7
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "solve/series" 2 "solve/series" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "RootOf" 2 "RootOf" "" }{TEXT -1 2 "  " }
+}
+}}

@@ -1,0 +1,300 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 260 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 274 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 275 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Out
+put" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "T
+itle" 0 18 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 0 0 0 0 0 0 }3 0 
+0 -1 12 12 0 0 0 0 0 0 19 0 }{PSTYLE "Author" 0 19 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 8 8 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT -1 49 "An Integral of a Product \+
+of four Bessel Functions" }}{PARA 19 "" 0 "" {TEXT -1 0 "" }}{PARA 19 
+"" 0 "" {TEXT -1 15 "Fr\351d\351ric Chyzak" }}{PARA 257 "" 0 "" {TEXT 
+-1 28 "(Version of January 8, 1998)" }}{PARA 258 "" 0 "" {TEXT -1 0 "
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 86 "In (Glasser, M. L. and Montal
+di E. (1994): Some Integrals Involving Bessel Functions, " }{TEXT 259 
+20 "J. Math. Anal. Appl." }{TEXT -1 2 ", " }{TEXT 276 3 "183" }{TEXT 
+-1 179 ":577-590), Glasser and Montaldi compute a closed form for an i
+ntegral of a product of two Bessel functions, and suggest that their t
+reatment should extend to the following example" }}}{EXCHG {PARA 256 "
+" 0 "" {XPPEDIT 18 0 "int(x*J[1](a*x)*I[1](a*x)*Y[0](x)*K[0](x),x=0..i
+nfinity)=-ln(1-a^4)/2/Pi/a^2" "/-%$intG6$*,%\"xG\"\"\"-&%\"JG6#\"\"\"6
+#*&%\"aGF(F'F(F(-&%\"IG6#\"\"\"6#*&F0F(F'F(F(-&%\"YG6#\"\"!6#F'F(-&%\"
+KG6#F<6#F'F(/F';F<%)infinityG,$**-%#lnG6#,&\"\"\"F(*$F0\"\"%!\"\"F(\"
+\"#FO%#PiGFO*$F0\"\"#FOFO" }{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 255 "which is of interest because it contains each of the fou
+r types of Bessel functions.  This integral is one of numerous integra
+ls containing four (or more) Bessel functions.  See for instance (Prud
+nikov, A. P., Brychkov, Yu. A. and Marichev, O. I. (1986): " }{TEXT 
+260 49 "Integrals and Series. Volume 2: Special functions" }{TEXT -1 
+35 ", Gordon and Breach; Sec. 2.16.47)." }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 91 "In this session, we deal with the integral above and deri
+ve a closed form for it using our " }{HYPERLNK 17 "Mgfun" 2 "Mgfun" "
+" }{TEXT -1 1 " " }{TEXT -1 44 "package in an intimate interaction wit
+h the " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 1 " " }{TEXT -1 8 "
+package." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(Mgfun);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#7(%,diag_of_sysG%+int_of_sysG%+pol_to
+_sysG%+sum_of_sysG%(sys*sysG%(sys+sysG" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 11 "with(gfun);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7V%(La
+placeG%.algebraicsubsG%.algeqtodiffeqG%.algeqtoseriesG%.algfuntoalgeqG
+%&borelG%.cauchyproductG%.diffeq*diffeqG%.diffeq+diffeqG%2diffeqtohomd
+iffeqG%,diffeqtorecG%)guesseqnG%(guessgfG%0hadamardproductG%0holexprto
+diffeqG%)invborelG%,listtoalgeqG%-listtodiffeqG%0listtohypergeomG%+lis
+ttolistG%.listtoratpolyG%*listtorecG%-listtoseriesG%5listtoseries/Lapl
+aceG%1listtoseries/egfG%4listtoseries/lgdegfG%4listtoseries/lgdogfG%1l
+isttoseries/ogfG%4listtoseries/revegfG%4listtoseries/revogfG%,maxdegco
+effG%*maxdegeqnG%,maxordereqnG%,mindegcoeffG%*mindegeqnG%,minordereqnG
+%*optionsgfG%,poltodiffeqG%)poltorecG%/ratpolytocoeffG%(rec*recG%(rec+
+recG%,rectodiffeqG%,rectohomrecG%*rectoprocG%.seriestoalgeqG%/seriesto
+diffeqG%2seriestohypergeomG%-seriestolistG%0seriestoratpolyG%,seriesto
+recG%/seriestoseriesG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 23 "More spe
+cifically, the " }{TEXT 264 4 "gfun" }{TEXT -1 74 " package will be us
+ed to prepare a system of PDE's for the application of " }{TEXT 263 5 
+"Mgfun" }{TEXT -1 55 " functions, and to solve the ODE that is output \+
+by the " }{TEXT 265 5 "Mgfun" }{TEXT -1 9 " package." }}}{SECT 1 
+{PARA 3 "" 0 "" {TEXT -1 56 "Search for a System of PDE's Satisfied by
+ the Integrand " }{XPPEDIT 18 0 "x*J[1](a*x)*I[1](a*x)*Y[0](x)*K[0](x)
+" "*,%\"xG\"\"\"-&%\"JG6#\"\"\"6#*&%\"aGF$F#F$F$-&%\"IG6#\"\"\"6#*&F,F
+$F#F$F$-&%\"YG6#\"\"!6#F#F$-&%\"KG6#F86#F#F$" }}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 11 "We use the " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT 
+-1 1 " " }{TEXT -1 98 "package to compute a system of PDE's satisfied \+
+by each factor of the integrand.  Next, we use the " }{HYPERLNK 17 "Mg
+fun" 2 "Mgfun" "" }{TEXT -1 2 " p" }{TEXT -1 62 "ackage to derive a sy
+stem of PDE's satisfied by their product." }}}{SECT 1 {PARA 4 "" 0 "" 
+{TEXT -1 29 "System of PDE's Satisfied by " }{XPPEDIT 18 0 "x" "I\"xG6
+\"" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 22 "The identity function " }
+{XPPEDIT 18 0 "x" "I\"xG6\"" }{TEXT -1 54 " trivially satisfies the fo
+llowing differential system" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 
+1 "sys1:=\{x*diff(h(x,a),x)-1,diff(h(x,a),a)\}:" ">%%sys1G<$,&*&%\"xG
+\"\"\"-%%diffG6$-%\"hG6$F'%\"aGF'F(F(\"\"\"!\"\"-F*6$-F-6$F'F/F/" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 17 "where each entry " }{XPPEDIT 18 0 
+"expr" "I%exprG6\"" }{TEXT -1 33 " in the set denotes the equation " }
+{XPPEDIT 18 0 "expr=0" "/%%exprG\"\"!" }{TEXT -1 1 "." }}}}{SECT 1 
+{PARA 4 "" 0 "" {TEXT -1 29 "System of PDE's Satisfied by " }{XPPEDIT 
+18 0 "J[1](a*x)" "-&%\"JG6#\"\"\"6#*&%\"aG\"\"\"%\"xGF*" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 32 "We compute a system of PDE's for" }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "f:=BesselJ(1,a*x):" ">%\"fG-%(
+BesselJG6$\"\"\"*&%\"aG\"\"\"%\"xGF*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 55 "by first computing an ODE with respect to the variable " }
+{XPPEDIT 18 0 "x" "I\"xG6\"" }{TEXT -1 7 " using " }{HYPERLNK 17 "gfun
+[holexprtodiffeq]" 2 "gfun[holexprtodiffeq]" "" }{TEXT -1 1 "," }
+{TEXT -1 36 " and next considering symmetries of " }{XPPEDIT 18 0 "f" 
+"I\"fG6\"" }{TEXT -1 29 " to derive a complete system." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "holexprtodiffeq(f,y(x));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#<%,(*&,&!\"\"\"\"\"*&%\"aG\"\"#%\"xGF+F(F(-%
+\"yG6#F,F(F(*&F,F(-%%diffG6$F-F,F(F(*&F,F+-F26$F1F,F(F(/-F.6#\"\"!F:/-
+-%\"DG6#F.F9,$F*#F(F+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "de
+q:=op(remove(type,\",equation)):" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "subs(y(x)=h(x,a),deq);" "-%%subsG6$/-%\"yG6#%\"xG-%\"hG
+6$F)%\"aG%$deqG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&,&!\"\"\"\"\"*&
+%\"aG\"\"#%\"xGF*F'F'-%\"hG6$F+F)F'F'*&F+F'-%%diffG6$F,F+F'F'*&F+F*-F1
+6$F0F+F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "subs(\{x=a,a=x,
+y(x)=h(x,a)\},deq);" "-%%subsG6$<%/%\"xG%\"aG/F(F'/-%\"yG6#F'-%\"hG6$F
+'F(%$deqG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&,&!\"\"\"\"\"*&%\"aG
+\"\"#%\"xGF*F'F'-%\"hG6$F+F)F'F'*&F)F'-%%diffG6$F,F)F'F'*&F)F*-F16$F0F
+)F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "x*diff(h(x,a),x)-a*d
+iff(h(x,a),a):" ",&*&%\"xG\"\"\"-%%diffG6$-%\"hG6$F$%\"aGF$F%F%*&F,F%-
+F'6$-F*6$F$F,F,F%!\"\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "s
+ys2:=\{\"\"\",\"\",\"\}:" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 29 "Sys
+tem of PDE's Satisfied by " }{XPPEDIT 18 0 "I[1](a*x)" "-&%\"IG6#\"\"
+\"6#*&%\"aG\"\"\"%\"xGF*" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 32 "We com
+pute a system of PDE's for" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 
+"f:=BesselI(1,a*x):" ">%\"fG-%(BesselIG6$\"\"\"*&%\"aG\"\"\"%\"xGF*" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 43 "in the same way as in the previo
+us section." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "holexprtodif
+feq(f,y(x));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%,(*&,&!\"\"\"\"\"*&%
+\"aG\"\"#%\"xGF+F'F(-%\"yG6#F,F(F(*&F,F(-%%diffG6$F-F,F(F(*&F,F+-F26$F
+1F,F(F(/-F.6#\"\"!F:/--%\"DG6#F.F9,$F*#F(F+" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 33 "deq:=op(remove(type,\",equation)):" }}}{EXCHG 
+{PARA 0 "> " 0 "" {XPPEDIT 19 1 "subs(y(x)=h(x,a),deq);" "-%%subsG6$/-
+%\"yG6#%\"xG-%\"hG6$F)%\"aG%$deqG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,
+(*&,&!\"\"\"\"\"*&%\"aG\"\"#%\"xGF*F&F'-%\"hG6$F+F)F'F'*&F+F'-%%diffG6
+$F,F+F'F'*&F+F*-F16$F0F+F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 
+1 "subs(\{x=a,a=x,y(x)=h(x,a)\},deq);" "-%%subsG6$<%/%\"xG%\"aG/F(F'/-
+%\"yG6#F'-%\"hG6$F'F(%$deqG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&,&!
+\"\"\"\"\"*&%\"aG\"\"#%\"xGF*F&F'-%\"hG6$F+F)F'F'*&F)F'-%%diffG6$F,F)F
+'F'*&F)F*-F16$F0F)F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "x*d
+iff(h(x,a),x)-a*diff(h(x,a),a):" ",&*&%\"xG\"\"\"-%%diffG6$-%\"hG6$F$%
+\"aGF$F%F%*&F,F%-F'6$-F*6$F$F,F,F%!\"\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "sys3:=\{\"\"\",\"\",\"\}:" }}}}{SECT 1 {PARA 4 "" 0 "
+" {TEXT -1 29 "System of PDE's Satisfied by " }{XPPEDIT 18 0 "Y[0](x)
+" "-&%\"YG6#\"\"!6#%\"xG" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 32 "We com
+pute a system of PDE's for" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 
+"f:=BesselY(0,x):" ">%\"fG-%(BesselYG6$\"\"!%\"xG" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 55 "by first computing an ODE with respect to the vari
+able " }{XPPEDIT 18 0 "x" "I\"xG6\"" }{TEXT -1 10 " by using " }
+{HYPERLNK 17 "gfun[holexprtodiffeq]" 2 "gfun[holexprtodiffeq]" "" }
+{TEXT -1 25 ", and next encoding that " }{XPPEDIT 18 0 "f" "I\"fG6\"" 
+}{TEXT -1 20 " does not depend on " }{XPPEDIT 18 0 "a" "I\"aG6\"" }
+{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "holexprtod
+iffeq(f,y(x));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&%\"xG\"\"\"-%%di
+ffG6$-F(6$-%\"yG6#F%F%F%F&F&F*F&*&F%F&F,F&F&" }}}{EXCHG {PARA 0 "> " 
+0 "" {XPPEDIT 19 1 "sys4:=\{subs(y(x)=h(x,a),\"),diff(h(x,a),a)\};" ">
+%%sys4G<$-%%subsG6$/-%\"yG6#%\"xG-%\"hG6$F,%\"aG%\"\"G-%%diffG6$-F.6$F
+,F0F0" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%sys4G<$-%%diffG6$-%\"hG6$%
+\"xG%\"aGF-,(*&F,\"\"\"-F'6$-F'6$F)F,F,F0F0F3F0*&F,F0F)F0F0" }}}}
+{SECT 1 {PARA 4 "" 0 "" {TEXT -1 29 "System of PDE's Satisfied by " }
+{XPPEDIT 18 0 "K[0](x)" "-&%\"KG6#\"\"!6#%\"xG" }}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 32 "We compute a system of PDE's for" }}}{EXCHG {PARA 0 ">
+ " 0 "" {XPPEDIT 19 1 "f:=BesselK(0,x):" ">%\"fG-%(BesselKG6$\"\"!%\"x
+G" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 43 "in the same way as in the pr
+evious section." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "holexprt
+odiffeq(f,y(x));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&%\"xG\"\"\"-%%
+diffG6$-F(6$-%\"yG6#F%F%F%F&F&F*F&*&F%F&F,F&!\"\"" }}}{EXCHG {PARA 0 "
+> " 0 "" {XPPEDIT 19 1 "sys5:=\{subs(y(x)=h(x,a),\"),diff(h(x,a),a)\};
+" ">%%sys5G<$-%%subsG6$/-%\"yG6#%\"xG-%\"hG6$F,%\"aG%\"\"G-%%diffG6$-F
+.6$F,F0F0" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%sys5G<$-%%diffG6$-%\"h
+G6$%\"xG%\"aGF-,(*&F,\"\"\"-F'6$-F'6$F)F,F,F0F0F3F0*&F,F0F)F0!\"\"" }}
+}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 40 "System of PDE's Satisfied by th
+e Product" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "Computing a system fo
+r the product is now a simple call to " }{HYPERLNK 17 "Mgfun[`sys*sys`
+]" 2 "Mgfun[`sys*sys`]" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 41 "sys:=`sys*sys`(sys1,sys2,sys3,sys4,sys5);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#>%$sysG<',D*&,(*&%\"aG\"\"%%\"xGF+!$_%\"%\"4
+#\"\"\"*$F,F+\"$S(F/-%\"hG6$F,F*F/F/*(F*\"\"#F,F6-%%diffG6$-F86$-F86$-
+F86$F2F*F*F,F,F/\"$5#*&,(*$F,\"\"$!$3\"*&F*F+F,\"\"(\"$+(*$F,FG\"#?F/-
+F86$-F86$-F86$F2F,F,F,F/F/*&F,\"\"&-F86$-F86$FKF,F,F/!#)**(F*F/F,F+-F8
+6$-F86$-F86$-F86$F>F,F,F,F,F/\"$S\"*&,(*$F,\"\"'F[o*$F,F6\"$0)*&F,F_oF
+*F+\"$?%F/FMF/F/*&F,F_o-F86$FSF,F/\"#N*&,(*&F*F/F,F/!%3>*&F*FRF,FR\"%+
+G*&F*F/F,FR\"$+%F/FinF/F/*(F*F/F,FDFenF/!$q(*&F,F+FUF/\"$v\"*&,(*&F*F/
+F,F+!%G:*&F*FRF,F+!%sKF*\"%77F/F>F/F/*&,(*$F,FR!$7%*&F*F+F,FRFHF,!%\"4
+#F/FOF/F/*&F,FG-F86$FeoF,F/FR*&,(*$F*FD!#[*&F*FGF,F+!$+%*&F*FDF,F+F_pF
+/-F86$F<F*F/F/*&,(*&F*F/F,F6\"%9:*&F*FRF,F_o!%!o\"*&F*F/F,F_o\"#!)F/Fg
+nF/F/*&,(*&F,F+F*F6\"%+5*$F*F6!#I*&F,F+F*F_o!%+EF/F<F/F/*&,(*&F*F6F,F/
+!$%R*&F,FRF*F6\"$+#*&F*F_oF,FR\"%+9F/F:F/F/,<*&,(F)F+!\"$F/F0!\"%F/F2F
+/F/F5!\"'*&F,F6FMF/!\"\"*(F*FDF,F/-F86$F[rF,F/F+*(F*F/F,F/FinF/\"#EF`p
+F+FbpF\\t*&F*F/F>F/!#E*&F,F/FOF/FD*&F*FDF[rF/!\")*(F*F/F,F6FgnF/!#7*&F
+*F6F<F/!#S*(F*F6F,F/F:F/\"#C,B*&,(F)FhtF0!#?\"#@F/F/F2F/F/F5\"#I*&F,FD
+FKF/FhsFQFhsFX\"#5F[tFduF`t!$[\"F`pF`uFbp!\"&*&,(FfpFftFhp\"\")F*\"$s
+\"F/F>F/F/*&,(F,!#@F]qFhtF_qF`uF/FOF/F/FetFftFgt\"#kFitFJF[u!#W*(F,FDF
+*F6-F86$F7F,F/!#5,B*&,(FDF/F)\"#7F0FJF/F2F/F/F5\"#;FcuFDFQFis*&,(F^oFi
+sF`o!\"#FboFJF/FMF/F/FdoF\\t*&,(F^pFftFjo!$!>F\\p!#CF/FinF/F/F`pF`uFbp
+F+*&,(Ffp!#;FhpFhvF*\"$Q#F/F>F/F/*&,(F,FhsF]qFbwF_qFhvF/FOF/F/FetF+Fgt
+\"#w*&,(Fir\"#)*F[sFiuFgrFftF/F<F/F/F[u!#m*(F*F/F,FR-F86$FYF,F/F6,,*(F
+*FDF,F+F2F/Fis*&F*FD-F86$F[rF*F/F\\tF>Fhs*&F*F6F[rF/Fis*&F*F/F<F/FD" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 22 "Note that the routine " }
+{HYPERLNK 17 "gfun[`diffeq*diffeq`]" 2 "gfun[`diffeq*diffeq`]" "" }
+{TEXT -1 1 " " }{TEXT -1 266 "performs a similar task, but is restrict
+ed to the univariate case, i.e., to functions described by a single OD
+E.  Thus, it can only compute the ODE which does not involve cross-der
+ivatives in the system above, and a similar equation with derivations \+
+with respect to " }{XPPEDIT 18 0 "x" "I\"xG6\"" }{TEXT -1 126 ".  It t
+urns out that this would induce a loss of information, precluding the \+
+following calculation of the integral.  Besides, " }{HYPERLNK 17 "Mgfu
+n[`sys*sys`]" 2 "Mgfun[`sys*sys`]" "" }{TEXT -1 1 " " }{TEXT -1 72 "wo
+uld also deal with systems of mixed differential-difference equations.
+" }}}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 11 "Integration" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 63 "Again, the integration itself is performe
+d by a single call to " }{HYPERLNK 17 "Mgfun[int_of_sys]" 2 "Mgfun[int
+_of_sys]" "" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+61 "ode:=op(int_of_sys(sys,x=-infinity..infinity,takayama_algo));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$odeG,,*&%\"aG\"\"$-%\"hG6#F'\"\"\"
+\"#K*&,&*$F'\"\"(F,*$F'F(!\"\"F,-%%diffG6$-F56$-F56$-F56$F)F'F'F'F'F,F
+,*&,&!\"$F,*$F'\"\"%\"$.\"F,F;F,F,*&,&*$F'\"\"#!\"%*$F'\"\"'\"#;F,F7F,
+F,*&,&*$F'\"\"&\"#tF'F(F,F9F,F," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+69 "However, the justification that the algorithm selected by the opti
+on " }{XPPEDIT 18 0 "takayama_algo" "I.takayama_algoG6\"" }{TEXT -1 0 
+"" }{TEXT -1 97 " applies to the integral under consideration is rathe
+r technical and is beyond this presentation." }}}}{SECT 1 {PARA 3 "" 
+0 "" {TEXT -1 27 "Resolution of the Final ODE" }}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 11 "We use the " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT 
+-1 1 " " }{TEXT -1 34 "package to solve for the solution " }{XPPEDIT 
+18 0 "h(a)" "-%\"hG6#%\"aG" }{TEXT -1 199 " which corresponds to the i
+ntegral to be computed.  Due to its integral representation, this func
+tion is analytic at 0, hence admits a Taylor expansion at 0.  We proce
+ed to compute a closed form for " }{XPPEDIT 18 0 "h(a)" "-%\"hG6#%\"aG
+" }{TEXT -1 132 " by summation of this expansion.  To this end, we det
+ermine a recurrence equation on the coefficients of the Taylor expansi
+on using " }{HYPERLNK 17 "gfun[diffeqtorec]" 2 "gfun[diffeqtorec]" "" 
+}{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "ore:=diffeq
+torec(ode,h(a),u(n));" ">%$oreG-%,diffeqtorecG6%%$odeG-%\"hG6#%\"aG-%
+\"uG6#%\"nG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$oreG<%,&*&,&%\"nG\"
+\"\"\"\"#F*F*-%\"uG6#F)F*F**&,&F)!\"\"!\"'F*F*-F-6#,&F)F*\"\"%F*F*F*/-
+F-6#F*\"\"!/-F-6#\"\"$F:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 274 5 "Maple
+" }{TEXT -1 32 " readily solves this recurrence:" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 23 "rsol:=rsolve(ore,u(n));" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%%rsolG,**(,&-%\"uG6#\"\"##\"\"\"F+-F)6#\"\"!#F-\"\"%F
+--%&GAMMAG6#,&%\"nGF-F+F-F--F46#,&F7F-\"\"$F-!\"\"F+**,&F.F1F(#F<F+F-)
+-%'RootOfG6#,&*$%#_ZGF+F-F-F-F7F-F3F-F8F<F+**F'F-)F<F7F-F3F-F8F<F+**F>
+F-),$FAF<F7F-F3F-F8F<F+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "After \+
+rearranging the terms in the sum, it is obvious that " }{XPPEDIT 18 0 
+"u(n)" "-%\"uG6#%\"nG" }{TEXT -1 22 " is non-zero for even " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 6 " only." }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 44 "collect(map(normal,rsol,expanded),u,factor);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&**,&\"\"\"F&)-%'RootOfG6#,&*$%#_
+ZG\"\"#F&F&F&%\"nGF&F&,&F&F&)!\"\"F/F&F&,&F/F&F.F&F2-%\"uG6#\"\"!F&#F&
+F.**,&F2F&F'F&F&F0F&F3F2-F56#F.F&F2" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 49 "We perform the corresponding change of variable, " }{XPPEDIT 
+18 0 "n=2*p" "/%\"nG*&\"\"#\"\"\"%\"pGF&" }{TEXT -1 1 "," }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "subs(\{n=2*p,(-1)^n=1,RootOf(_Z^2+1
+)^n=(-1)^p\},\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&*(,&\"\"\"F&)!
+\"\"%\"pGF&F&,&F)\"\"#F+F&F(-%\"uG6#\"\"!F&F&*(,&F(F&F'F&F&F*F(-F-6#F+
+F&!\"#" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 8 "so that " }{TEXT 275 5 "
+Maple" }{TEXT -1 27 " can sum the Taylor series:" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 29 "sum(\"*a^(2*p),p=0..infinity);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#-%$sumG6$*&,&*(,&\"\"\"F*)!\"\"%\"pGF*F*,&F-\"\"
+#F/F*F,-%\"uG6#\"\"!F*F**(,&F,F*F+F*F*F.F,-F16#F/F*!\"#F*)%\"aG,$F-F/F
+*/F-;F3%)infinityG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "h:=co
+llect(value(expand(\")),u);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"hG,
+&*&,&*&%\"aG!\"#-%#lnG6#,&*$F)\"\"#!\"\"\"\"\"F2F2#F1F0*&F)F*-F,6#,&F/
+F2F2F2F2#F2F0F2-%\"uG6#\"\"!F2F2*&,&F(F1F4F1F2-F:6#F0F2F2" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 28 "It only remains to evaluate " }{XPPEDIT 
+18 0 "u[0]" "&%\"uG6#\"\"!" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "u[2]" 
+"&%\"uG6#\"\"#" }{TEXT -1 20 ".  We first compute " }{XPPEDIT 18 0 "u[
+0]" "&%\"uG6#\"\"!" }{TEXT -1 46 " and find it is 0 by inversion of li
+mits.  Let" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "f:=x*BesselJ(1,
+a*x)*BesselI(1,a*x)*BesselY(0,x)*BesselK(0,x):" ">%\"fG*,%\"xG\"\"\"-%
+(BesselJG6$\"\"\"*&%\"aGF&F%F&F&-%(BesselIG6$\"\"\"*&F,F&F%F&F&-%(Bess
+elYG6$\"\"!F%F&-%(BesselKG6$F5F%F&" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 27 "be the integrand.  We have:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "int(limit(f,a=0),x=0..infinity);" "-%$intG6$-%&limitG6$
+%\"fG/%\"aG\"\"!/%\"xG;F+%)infinityG" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 124 "In the same way, each
+ coefficient of the Taylor series for the integral is obtained by inve
+rsion of limits.  In particular, " }{XPPEDIT 18 0 "kappa=u[2]" "/%&kap
+paG&%\"uG6#\"\"#" }{TEXT -1 6 ", but " }{TEXT 257 5 "Maple" }{TEXT -1 
+31 " is not capable of integrating:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 70 "kappa=int(coeff(series(normal(diff(f,a,a)),a=0),a,0)/
+2,x=0..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%&kappaG-%$intG6
+$,$*(%\"xG\"\"$-%(BesselYG6$\"\"!F*\"\"\"-%(BesselKGF.F0#F0\"\"%/F*;F/
+%)infinityG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "(This integral for
+ " }{XPPEDIT 18 0 "kappa" "I&kappaG6\"" }{TEXT -1 33 " cannot be compu
+ted by a call to " }{TEXT 258 3 "int" }{TEXT -1 82 " using the Release
+ 4, but the next release will probably be able to integrate it.)" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "We obtain the following form for \+
+" }{XPPEDIT 18 0 "h(a)" "-%\"hG6#%\"aG" }{TEXT -1 1 ":" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "-combine(normal(-subs(\{u(0)=0,u(2)
+=kappa\},h)),ln,symbolic);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*(-%#l
+nG6#*&,&*$%\"aG\"\"#!\"\"\"\"\"F.F.,&F*F.F.F.F.F.%&kappaGF.F+!\"#F-" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 34 "It only remains to be proved tha
+t " }{XPPEDIT 18 0 "kappa=1/2/Pi" "/%&kappaG*(\"\"\"\"\"\"\"\"#!\"\"%#
+PiGF(" }{TEXT -1 300 ".  We do not do it, since computing this last in
+tegral which is a constant lies outside the scope of the theory of hol
+onomy.  With this example, we have reduced the problem of evaluating a
+ parametrized integral to the evaluation of a non-parametrized integra
+l.  In case there were no closed form for " }{XPPEDIT 18 0 "kappa" "I&
+kappaG6\"" }{TEXT -1 136 ", we could at least perform a simple numeric
+al evaluation and return a result in terms of this numerical value and
+ the series above for " }{XPPEDIT 18 0 "kappa=1" "/%&kappaG\"\"\"" }
+{TEXT -1 1 "." }}}}}{MARK "0 1 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 }

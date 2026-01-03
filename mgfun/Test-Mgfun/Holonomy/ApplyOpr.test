@@ -1,0 +1,100 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+# Global names used to denote inert forms.
+macro(
+APPLYOPR	=ApplyOpr,
+ALGSUBS		=AlgSubs):
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+# Differential case.
+A:=diff_algebra([Dx,x]):
+AO:=APPLYOPR(_df,[x],1,A):
+diff(x*AO,x)-x*diff(AO,x)-AO:
+if %=0 then okay else % fi;
+
+# Recurrence case.
+A:=shift_algebra([Sn,n]):
+AO:=APPLYOPR(_df,[n],1,A):
+applyopr(Sn,n*AO,A)-(n+1)*applyopr(Sn,AO,A):
+if %=0 then okay else % fi;
+
+# Mixed difference-differential case.
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x]):
+AO:=APPLYOPR(_df,[n,x],1,A):
+diff(x*AO,x)-x*diff(AO,x)-AO:
+if %=0 then okay else % fi;
+applyopr(Sn,n*AO,A)-(n+1)*applyopr(Sn,AO,A):
+if %=0 then okay else % fi;
+
+# Differential case with algebraic substitution.
+f:=1/(1-x-y):
+A:=diff_algebra([Dx,x],[Dy,y]):
+G:=hypergeom_to_dfinite(f,A):
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+GB:=Basis(G,T):
+df:=Holonomy:-HO_Internals:-dfinite_create(f,GB,T):
+# The trivial equation y=y is crucial in the syntax of ALGSUBS.
+df:=ALGSUBS(df,[x,y],1,A,{x=x/y,y=y}):
+#diff(df,x)+df/(y^2-y+x):
+applyopr(Dx,df,A)+df/(y^2-y+x):
+if %=0 then okay else % fi;
+#diff(df,y)-x*df/(y^2-y+x)/y+y*df/(y^2-y+x):
+applyopr(Dy,df,A)-x*df/(y^2-y+x)/y+y*df/(y^2-y+x):
+if %=0 then okay else % fi;
+
+# q-Recurrence case.
+A:=skew_algebra(qdilat=[Hx,x,q]):
+AO:=APPLYOPR(_df,[x],1,A):
+applyopr(Hx,x*AO,A)-q*x*applyopr(Hx,AO,A):
+if %=0 then okay else % fi;
+
+# Recurrence case.
+f:=pochhammer(n,x):
+A:=skew_algebra(shift=[Sn,n],comm=x):
+G:=hypergeom_to_dfinite(f,A):
+T:=MonomialOrder(A,tdeg(Sn)):
+GB:=Basis(G,T):
+df:=Holonomy:-HO_Internals:-dfinite_create(f,GB,T):
+# The trivial equation n=n is crucial in the syntax of ALGSUBS.
+df:=ALGSUBS(df,[n],1,A,{n=n}):
+# Applying subs/subsop/applyopr directly is not possible to (q-)shift
+# an ALGSUBS!
+# All the following are wrong:
+#subs(n=n+1,df);
+#subsop([5,1,2]=n+1,df);
+#applyopr(Sn,df,A);
+
+# q-Recurrence case.
+f:=qpochhammer(q,n,x):
+A:=skew_algebra(qdilat=[Sn,qn=q^n],comm=x):
+G:=hypergeom_to_dfinite(f,A):
+T:=MonomialOrder(A,tdeg(Sn)):
+GB:=Basis(G,T):
+df:=Holonomy:-HO_Internals:-dfinite_create(f,GB,T):
+# The trivial equation qn=qn is crucial in the syntax of ALGSUBS.
+df:=ALGSUBS(df,[qn],1,A,{qn=qn}):
+# Applying subs/subsop/applyopr directly is not possible to (q-)shift
+# an ALGSUBS!
+# All the following are wrong:
+#subs(qn=q*qn,df);
+#subsop([5,1,2]=q*qn,df);
+#applyopr(Sn,df,A);

@@ -1,0 +1,52 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <!-- PBM_II-2.13.27.5 -->
+  <test name="prud_II_2_13_27_5">
+    <fun>Ei(-b/x)*BesselY(1,c*x)</fun>
+    <tex>\int\text{Ei}\left(-\frac{b}{x}\right)Y_1(cx)\text{d}x</tex>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="b" type="diff"/>
+  </test>
+
+
+  <!--PBM_II-2.16.20.5 -->
+
+<!--  <test name="prud1">
+    <fun>cos(b*x)*ln(a*x)*BesselK(0,c*x)</fun>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="a" type="diff"/>
+  </test>-->
+
+
+  <!-- PBM_II-2.17.12.19 -->
+  <test name="prud_II_2_17_12_19">
+    <fun>BesselJ(0,b*sqrt(x+a))^2*LegendreP(n,x/a)</fun>
+    <tex>\int J_0(b\sqrt{x+a})^2P_n(\frac{x}{a})\text{d}x</tex>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="b" type="diff"/>
+  </test>
+
+</tests>

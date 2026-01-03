@@ -1,0 +1,48 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  <test name="binom_triple">
+    <fun>binomial(n,i)*binomial(n,j)*binomial(n,k)*binomial(n,n-i-j-k)</fun>
+    <var_int name="i,j,k" />
+    <var name="n" type="shift"/>
+    <var name="i" type="shift"/>
+    <var name="j" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="15..15" />
+    <set_val name="i" type="int" inter="1..1" />
+    <set_val name="j" type="int" inter="3..3" />
+    <set_val name="k" type="int" inter="5..5" />
+  </test>
+
+  <test name="binom_triple2">
+    <fun>binomial(n-i,i)*binomial(n-j,j)*binomial(n-k,k)</fun>
+    <var_int name="i,j,k" />
+    <var name="n" type="shift"/>
+    <var name="i" type="shift"/>
+    <var name="j" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="15..15" />
+    <set_val name="i" type="int" inter="1..1" />
+    <set_val name="j" type="int" inter="3..3" />
+    <set_val name="k" type="int" inter="5..5" />
+  </test>
+
+</tests>

@@ -1,0 +1,719 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 0 
+0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" 18 267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 274 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" 18 275 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 277 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 278 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 279 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 280 
+"" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 
+0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 
+{CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple O
+utput" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 
+0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"" 3 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "
+" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 260 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 256 "" 0 "" {TEXT -1 23 "POLLARD'S RHO ALGORITHM
+" }}{PARA 0 "" 0 "" {TEXT 280 0 "" }}{PARA 257 "" 0 "" {TEXT 256 11 "B
+runo Salvy" }}{PARA 258 "" 0 "" {TEXT -1 29 "(Version of January 27, 1
+997)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 10 "P
+ollard's " }{XPPEDIT 18 0 "rho" "I$rhoG6\"" }{TEXT -1 141 "-method is \+
+an efficient technique used to find factors of integers. It is both ve
+ry efficient and very simple. We show in this worksheet how " }
+{HYPERLNK 17 "combstruct" 2 "combstruct" "" }{TEXT -1 5 " and " }
+{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 162 " can be used to analyze
+ a realistic combinatorial model of the algorithm and thus derive a pr
+obabilistic complexity analysis of this algorithm and variants of it.
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "with(combstruct): with(
+gfun):" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 33 "Algorithm and combinat
+orial model" }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 13 "The algorithm" }}
+{PARA 0 "" 0 "" {TEXT -1 3 "If " }{XPPEDIT 18 0 "N" "I\"NG6\"" }{TEXT 
+-1 94 " is the integer of which a factor is sought, the basic version \+
+of the algorithm is as follows:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 29 "Pick up an arbitrary integer " }{XPPEDIT 
+18 0 "a" "I\"aG6\"" }{TEXT -1 5 " mod " }{XPPEDIT 18 0 "N" "I\"NG6\"" 
+}{TEXT -1 6 ", set " }{XPPEDIT 18 0 "f(x)=x^2+a mod N" "/-%\"fG6#%\"xG
+-%$modG6$,&*$F&\"\"#\"\"\"%\"aGF-%\"NG" }}{PARA 0 "" 0 "" {TEXT -1 26 
+"Select at random a number " }{XPPEDIT 18 0 "x[0]" "&%\"xG6#\"\"!" }
+{TEXT -1 5 " mod " }{XPPEDIT 18 0 "N" "I\"NG6\"" }{TEXT -1 6 ", set " 
+}{XPPEDIT 18 0 "y[0]=x[0]" "/&%\"yG6#\"\"!&%\"xG6#F&" }}{PARA 0 "" 0 "
+" {TEXT -1 8 "Iterate:" }}{PARA 0 "" 0 "" {TEXT -1 6 "      " }
+{XPPEDIT 18 0 "i:=i+1; x[i]:=f(x[i-1]); y[i]:=f(f(y[i-1]))" "C%>%\"iG,
+&F$\"\"\"\"\"\"F&>&%\"xG6#F$-%\"fG6#&F*6#,&F$F&\"\"\"!\"\">&%\"yG6#F$-
+F-6#-F-6#&F66#,&F$F&\"\"\"F3" }}{PARA 0 "" 0 "" {TEXT -1 6 "until " }
+{XPPEDIT 18 0 "gcd(y[i]-x[i],N)<>1" "0-%$gcdG6$,&&%\"yG6#%\"iG\"\"\"&%
+\"xG6#F*!\"\"%\"NG\"\"\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 
+0 "" }}{PARA 0 "" 0 "" {TEXT -1 151 "This is directly translated into \+
+the following rough Maple procedure which returns a factor and the num
+ber of iterations performed to find this factor:" }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 220 "pollard:=proc(N)\nlocal rnd, a, f, x, y, i, g
+;\n    rnd:=rand(N); a:=rnd(); x:=rnd(); y:=x;\n    for i do\n        \+
+x:=x^2+a mod N; y:=(y^2+a mod N)^2+a mod N; g:=igcd(y-x,N);\n        i
+f g<>1 then RETURN(g,i) fi\n    od\nend:  " }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 33 "Here are a few examples (Maple's " }{HYPERLNK 17 "nextpri
+me" 2 "nextprime" "" }{TEXT -1 67 " routine returns the smallest prime
+ number following its argument)." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 32 "nextprime(900)*nextprime(20000);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\")x*\\\"=" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+11 "pollard(\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"$2*\"#J" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "pollard(\"\");" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"$2*\"#K" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 13 "pollard(\"\"\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"$2*\"#I
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "nextprime(10^5)*nextpri
+me(10^6);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"-4+I.+5" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "pollard(\");" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"(.++\"\"$<\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 12 "pollard(\"\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"'.+5\"$O&" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "pollard(\"\"\");" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"'.+5\"$L#" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 32 "nextprime(10^6)*nextprime(10^7);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"/d++\\++5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+11 "pollard(\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"(.++\"\"$#z" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "pollard(\"\");" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"(.++\"\"$!R" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 13 "pollard(\"\"\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$
+\")>++5\"%q8" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 23 "The combinatori
+al model" }}{PARA 0 "" 0 "" {TEXT -1 78 "The algorithm relies on the s
+tructure of the functional graph of the function " }{XPPEDIT 18 0 "f(x
+)=x^2+a mod p" "/-%\"fG6#%\"xG-%$modG6$,&*$F&\"\"#\"\"\"%\"aGF-%\"pG" 
+}{TEXT -1 8 ", where " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 33 " is
+ the smallest prime factor of " }{XPPEDIT 18 0 "N" "I\"NG6\"" }{TEXT 
+-1 47 ". In this graph, the vertices are the integers " }{XPPEDIT 18 
+0 "0..p-1" ";\"\"!,&%\"pG\"\"\"\"\"\"!\"\"" }{TEXT -1 5 " mod " }
+{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 57 " and the directed edges lin
+k each vertex to its image by " }{XPPEDIT 18 0 "f" "I\"fG6\"" }{TEXT 
+-1 236 ". Since the number of points is finite, it is not difficult to
+ see that the graph has the structure of a union of connected componen
+ts, each of these components being constituted of a cycle to which con
+verge trees. Since the polynomial " }{XPPEDIT 18 0 "f(x)" "-%\"fG6#%\"
+xG" }{TEXT -1 18 " has degree 2 and " }{XPPEDIT 18 0 "p" "I\"pG6\"" }
+{TEXT -1 36 " is prime, all the vertices (except " }{XPPEDIT 18 0 "a" 
+"I\"aG6\"" }{TEXT -1 73 ") have in-degree 0 or 2, while they have out-
+degree 1.  The prime factor " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 
+66 " is assumed to be large, therefore the special case of the vertex \+
+" }{XPPEDIT 18 0 "a" "I\"aG6\"" }{TEXT -1 125 " which has in-degree 1 \+
+can be discarded as a first approximation. The combinatorial model is \+
+thus expressed by the following " }{HYPERLNK 17 "combstruct grammar" 
+2 "combstruct[specification]" "" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 137 "G:=\{fungraph=Set(connected_component),\n    \+
+connected_component=Cycle(Prod(Z,bintree)),\n    bintree=Union(Z,Prod(
+Z,Set(bintree,card=2)))\}:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 89 "  T
+he execution of the algorithm is interpreted on this graph as follows:
+ a random point " }{XPPEDIT 18 0 "x[0]" "&%\"xG6#\"\"!" }{TEXT -1 46 "
+ of the graph is selected. Then two sequences " }{XPPEDIT 18 0 "x[i]" 
+"&%\"xG6#%\"iG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "y[i]" "&%\"yG6#%\"
+iG" }{TEXT -1 32 " of iterates with initial value " }{XPPEDIT 18 0 "x[
+0]" "&%\"xG6#\"\"!" }{TEXT -1 374 " are computed, one of them proceedi
+ng one step at a time, while the other one proceeds by steps of length
+ 2. Starting from a node of the graph, these two sequences eventually \+
+reach a cycle, where they are bound to intersect. This is where the al
+gorithm stops.\n  Under this model, the average number of steps requir
+ed by the algorithm is therefore related to two parameters: " }{TEXT 
+257 3 "(i)" }{TEXT -1 49 " the average distance from a point to its cy
+cle; " }{TEXT 258 4 "(ii)" }{TEXT -1 34 " the average length of the cy
+cles." }}}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 34 "Path length in planar
+ binary trees" }}{PARA 0 "" 0 "" {TEXT -1 23 "We start with question \+
+" }{TEXT 259 3 "(i)" }{TEXT -1 281 " above: the determination of the a
+verage distance from a point to its cycle. We first concentrate on a s
+imilar but simpler problem, the computation of the average distance fr
+om a node to the root in a planar binary tree. This is related to a cl
+assical combinatorial parameter: the " }{TEXT 260 20 "internal path le
+ngth" }{TEXT -1 136 " of the tree, which is the sum of the distances f
+rom each of the nodes to the root.\nBinary trees are described by the \+
+following grammar:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "bin:=
+\{bintree=Union(Epsilon,Prod(Z,bintree,bintree))\}:" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 31 "The counting sequence given by " }{HYPERLNK 17 
+"combstruct[count]" 2 "combstruct[count]" "" }{TEXT -1 50 " is constit
+uted by the well-known Catalan numbers:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 52 "seq(count([bintree,bin,unlabelled],size=i),i=0..15);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "62\"\"\"F#\"\"#\"\"&\"#9\"#U\"$K\"\"
+$H%\"%I9\"%i[\"&'z;\"&'ye\"'7!3#\"'+Hu\"(SWn#\"(X[p*" }}}{PARA 0 "" 0 
+"" {TEXT -1 152 "The following Maple procedure takes as input a binary
+ tree as produced by combstruct using the specification above and retu
+rns its internal path length:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 236 "ipl:=proc(t)\n   if type(t,name) then 0 # the tree is of the fo
+rm Z or Epsilon\n   else # the tree is of the form Prod(Z,t1,t2)\n    \+
+  ipl(op(2,t))+ipl(op(3,t))+size(t)-1\n   fi\nend:\nsize:=proc(t) eval
+(subs([Prod=`+`,Z=1,Epsilon=0],t)) end:" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 218 "The internal path length is computed using a simple bije
+ction: each of the nodes on a branch from the root to a leaf are count
+ed once for each of the nodes below it. Here is an example on a tree o
+f size 5 generated by " }{HYPERLNK 17 "combstruct[draw]" 2 "combstruct
+[draw]" "" }{TEXT -1 30 " from the specification above:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "T:=draw([bintree,bin,unlabelled],si
+ze=5); ipl(T);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"TG-%%ProdG6%%\"Z
+G-F&6%F(%(EpsilonG-F&6%F(-F&6%F(-F&6%F(F+F+F+F+F+" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"#5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 175 "We shall \+
+compute the average internal path length by first computing the total \+
+internal path length, i.e. the sum of the internal path lengths of all
+ the binary trees of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 
+38 " and then dividing this number by the " }{XPPEDIT 18 0 "n" "I\"nG6
+\"" }{TEXT -1 158 "th Catalan number. We first start by computing expe
+rimentally the first values of these numbers, generating all the trees
+ of fixed sizes for small sizes with " }{HYPERLNK 17 "combstruct[allst
+ructs]" 2 "combstruct[allstructs]" "" }{TEXT -1 102 ", and computing t
+he sum of the internal path lengths of all these trees with the proced
+ure ipl above. " }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 91 "for i to
+ 5 do sum_ipl[i]:=`+`(op(map(ipl,allstructs([bintree,bin,unlabelled],s
+ize=i)))) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%(sum_iplG6#\"\"\"
+\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%(sum_iplG6#\"\"#F'" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%(sum_iplG6#\"\"$\"#9" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>&%(sum_iplG6#\"\"%\"#u" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%(sum_iplG6#\"\"&\"$_$" }}}{SECT 0 {PARA 4 "" 0 "" 
+{TEXT -1 36 "Combinatorial model for path lengths" }}{PARA 0 "" 0 "" 
+{TEXT -1 290 "The numbers computed above can actually be derived more \+
+efficiently, together with many other results related to path lengths \+
+using combstruct's ability to deal with marks (atoms of size 0). The i
+dea consists in writing a combinatorial specification such that the nu
+mber of objects of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 81 "
+ is exactly the sum of the internal path lengths of all the binary tre
+es of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 136 ". The combin
+atorial technique used here extends to other combinatorial structures \+
+and leads to a combstruct-based analysis of Pollard's " }{XPPEDIT 18 
+0 "rho" "I$rhoG6\"" }{TEXT -1 437 "-algorithm.\nThe grammar for binary
+ trees is modified to take into account \"decorated\" binary trees. A \+
+binary tree is decorated by putting two marks (An for Ancestor and De \+
+for Descendant) on two nodes belonging to the same branch. The number \+
+of ways of decorating a binary tree is then exactly its internal path \+
+length. Couting the number of decorated trees therefore corresponds to
+ summing the internal path lengths of all binary trees." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 390 "bin2:=\{bintree2=Prod(Z,\n        \+
+   Union(leftright2,Prod(An,leftright1))),\n       bintree1=Prod(Z,\n \+
+          Union(leftright1,Prod(De,bintree,bintree))),\n       leftrig
+ht2=Union(Prod(bintree2,bintree),\n                        Prod(bintre
+e,bintree2)),\n       leftright1=Union(Prod(bintree1,bintree),\n      \+
+                  Prod(bintree,bintree1)),\n       An=Epsilon, De=Epsi
+lon\} union bin:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 85 "The sequence \+
+of cumulated internal path lengths is now derived in less than a secon
+d:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "seq(count([bintree2,b
+in2,unlabelled],size=i),i=1..10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6,
+\"\"!\"\"#\"#9\"#u\"$_$\"%)e\"\"%Yp\"&'yH\"'3g7\"'+z_" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 42 "Here are the 14 decorated trees of size 3
+:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "allstructs([bintree2,b
+in2,unlabelled],size=3);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#70-%%ProdG
+6$%\"ZG-F%6$%#AnG-F%6$%(EpsilonG-F%6$F'-F%6%%#DeGF--F%6%F'F-F--F%6$F'-
+F%6$F*-F%6$F.F--F%6$F'-F%6$F--F%6$F'-F%6$F*-F%6$F--F%6$F'-F%6%F2F-F--F
+%6$F'-F%6$F*-F%6$F3FE-F%6$F'-F%6$F*-F%6$F--F%6$F'-F%6$FEF--F%6$F'-F%6$
+F--F%6$F'-F%6$F*FW-F%6$F'-F%6$F*-F%6$FEF3-F%6$F'-F%6$F*-F%6$-F%6$F'-F%
+6%F2F3F-F--F%6$F'-F%6$F*-F%6$F--F%6$F'FC-F%6$F'-F%6$F*-F%6$F-Fgo-F%6$F
+'-F%6$FgnF--F%6$F'-F%6$F?F--F%6$F'-F%6$F*-F%6$FUF--F%6$F'-F%6$F*-F%6$F
+apF-" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 20 "Generating functions" }
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 151 "From the grammars describing bin
+ary trees and decorated binary trees, the average internal path length
+ can be computed via generating functions. Using " }{HYPERLNK 17 "comb
+struct[gfsolve]" 2 "combstruct[gfsolve]" "" }{TEXT -1 102 ", we first \+
+derive the generating functions for the Catalan numbers and for the cu
+mulated path lengths:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "F:
+=subs(gfsolve(bin,unlabelled,z),bintree(z));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%\"FG,$*&%\"zG!\"\",&\"\"\"F**$,&F*F*F'!\"%#F*\"\"#F(F
+*F." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "S:=series(F,z,30);" 
+}}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"SG+in%\"zG\"\"\"\"\"!F'\"\"\"\"
+\"#\"\"#\"\"&\"\"$\"#9\"\"%\"#U\"\"&\"$K\"\"\"'\"$H%\"\"(\"%I9\"\")\"%
+i[\"\"*\"&'z;\"#5\"&'ye\"#6\"'7!3#\"#7\"'+Hu\"#8\"(SWn#\"#9\"(X[p*\"#:
+\")qwNN\"#;\"*!zW'H\"\"#<\"*+(QwZ\"#=\"+!>jsw\"\"#>\"+?/7kl\"#?\",?qEm
+W#\"#@\",SOc#[\"*\"#A\"-]OhfIM\"#B\".Ct9/**G\"\"#C\"._9SY>'[\"#D\"/_@2
+`tO=\"#E\"//g\"4bL&p\"#F\"0g.v^zuj#\"#G-%\"OG6#F'\"#H" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "Fpl:=subs(gfsolve(bin2,unlabelled,z
+),bintree2(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$FplG,$*&,(*&%\"z
+G!\"\",&\"\"\"F,*$,&F,F,F)!\"%#F,\"\"#F*F,#F*F1#\"\"$F1F,F-F2F,,&F*F,F
+)\"\"%F*F1" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "Spl:=series(F
+pl,z,30);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$SplG+en%\"zG\"\"#\"\"#
+\"#9\"\"$\"#u\"\"%\"$_$\"\"&\"%)e\"\"\"'\"%Yp\"\"(\"&'yH\"\")\"'3g7\"
+\"*\"'+z_\"#5\"(!e&>#\"#6\"(s23*\"#7\")kGRP\"#8\"*OXV`\"\"#9\"*a*yxi\"
+#:\"+m9WiD\"#;\",/,MQ/\"\"#<\",O#[$\\C%\"#=\"-C>kwB<\"#>\"-c@G+\"*p\"#
+?\".C=U0A$G\"#@\"/O0GaGY6\"#A\"/k@ArXNY\"#B\"0/g&R(>J(=\"#C\"0sAL!)>Rc
+(\"#D\"1)[qYtyD0$\"#E\"2c'pVLZEJ7\"#F\"2Ot9R\"=!R'\\\"#G-%\"OG6#\"\"\"
+\"#H" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 66 "The average path length i
+s simply the ratio of these coefficients:" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 41 "seq(coeff(Spl,z,i)/coeff(S,z,i),i=0..28);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6?\"\"!F#\"\"\"#\"#9\"\"&#\"#P\"\"(#\"$w\"\"#@
+#\"$(R\"#L#\"%Yp\"$H%#\"&$*[\"\"$:(#\"&/I'\"%JC#\"'v>8\"%*>%#\"(!z(4\"
+\"&$RH#\"($>qA\"&.?&#\"(;#[$*\"'Dd=#\")<$z\">\"'0VL#\"*a*yxi\"(X[p*#\"
++L2A\"G\"\")N)yw\"#\"+_+<>_\")&RA['#\",fqL71\"\"*v'4%>\"#\",i4K)=')\"*
+&fJO))#\"-R02vZ<\"+0,.T;#\"-caN^!3(\"+bnc;h#\".n]ycGV\"\",b/KN9\"#\"/#
+36cGxJ#\"-Do!)H:<#\"/,!*[$*z#o%\"-Jo.wCK#\"0oI3&*z4*=\".j.g'[:7#\"06Q$
+=Ms:Q\".>S8>fH##\"19CfL=;yI\"/,!HxQ$Q<#\"1<MRns([?'\"/&zoR\\oH$" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "evalf([\"]);" }}{PARA 12 "" 
+1 "" {XPPMATH 20 "6#7?\"\"!F$$\"\"\"F$$\"+++++G!\"*$\"+'G9dG&F)$\"+\"Q
+_4Q)F)$\"+....7!\")$\"+>U6>;F0$\"+jq$H3#F0$\"+i1p\"f#F0$\"+T-,VJF0$\"+
+Y)o[t$F0$\"+8R]lVF0$\"+$QkL.&F0$\"+O:2PdF0$\"+#G*QvkF0$\"+[6?ZsF0$\"+h
+@\\^!)F0$\"+YVL()))F0$\"+p\\(Qv*F0$\"+*oK]1\"!\"($\"+cgfd6FM$\"+N(4ID
+\"FM$\"+%Q57N\"FM$\"+1(Q@X\"FM$\"+N!Rdb\"FM$\"+y*e>m\"FM$\"+4\"\\2x\"F
+M$\"+(pi?)=FM" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 167 "Empirically, th
+ese numbers grow slightly faster than linearly with the size of the tr
+ee. A closed-form for the average path length can be established rigor
+ously using " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 112 ". The ge
+nerating functions being algebraic, they satisfy linear differential e
+quations. These can be derived by " }{HYPERLNK 17 "gfun[holexprtodiffe
+q]" 2 "gfun[holexprtodiffeq]" "" }{TEXT -1 109 ". From these different
+ial equations, a linear recurrence satisfied by the Taylor coefficient
+s is obtained by " }{HYPERLNK 17 "gfun[diffeqtorec]" 2 "gfun[diffeqtor
+ec]" "" }{TEXT -1 74 ". It turns out that these recurrences fall into \+
+a class for which Maple's " }{HYPERLNK 17 "rsolve" 2 "rsolve" "" }
+{TEXT -1 60 " can find a solution.\n  Here are the differential equati
+ons:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "deqF:=holexprtodiff
+eq(F,y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%deqFG,(\"\"\"F&*&,&!
+\"\"F&%\"zG\"\"#F&-%\"yG6#F*F&F&*&,&F*F)*$F*F+\"\"%F&-%%diffG6$F,F*F&F
+&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "deqFpl:=holexprtodiffe
+q(Fpl,y(z));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'deqFplG<&/---%#@@G6
+$%\"DG\"\"#6#%\"yG6#\"\"!\"\"%/-F/F0F1/--F,F.F0F1,(*$%\"zGF-\"\"'*&,**
+$F:\"\"$\"\")F9!#EF:\"#5!\"\"\"\"\"FD-F/6#F:FDFD*&,**$F:F2\"#;F>!#CF9
+\"\"*F:FCFD-%%diffG6$FEF:FDFD" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "
+From there, the recurrences follow:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 34 "recF:=diffeqtorec(deqF,y(z),u(n));" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%%recFG<$/-%\"uG6#\"\"!\"\"\",&*&,&\"\"#F+%\"nG\"\"%
+F+-F(6#F0F+F+*&,&!\"#F+F0!\"\"F+-F(6#,&F0F+F+F+F+F+" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 38 "recFpl:=diffeqtorec(deqFpl,y(z),u(n));" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'recFplG<&,**&,&\"\")\"\"\"%\"nG\"#
+;F*-%\"uG6#F+F*F**&,&!#]F*F+!#CF*-F.6#,&F+F*F*F*F*F**&,&\"#GF*F+\"\"*F
+*-F.6#,&F+F*\"\"#F*F*F**&,&!\"%F*F+!\"\"F*-F.6#,&F+F*\"\"$F*F*F*/-F.6#
+F>F>/-F.6#\"\"!FM/-F.6#F*FM" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 123 "T
+he recurrence satisfied by the Catalan numbers being linear of order 1
+, it is obvious that Maple will be able to solve it:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 23 "Cat:=rsolve(recF,u(n));" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>%$CatG**)\"\"%%\"nG\"\"\"-%&GAMMAG6#,&F(F)#F)\"\"#F
+)F)-F+6#,&F(F)F/F)!\"\"%#PiG#F3F/" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+261 "It is however more surprising that rsolve can compute the solutio
+n of the 3rd order recurrence satisfied by the cumulated path lengths.
+ This is due to the implementation of the recent algorithm by M. Petko
+vsek for hypergeometric solutions of linear recurrences." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "Pl:=rsolve(recFpl,u(n));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%#PlG,&*0)\"\"%%\"nG\"\"\",&F)F*#F*\"\"$F*F
+*)#F*\"\"#F)F*)F0F)F*-%&GAMMAG6#,&F)F*F/F*F*-F36#,&F)F*F0F*!\"\"%#PiG#
+F9F0!\"$F'F*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 58 "After some cleani
+ng up, we have thus proved the following." }}}{EXCHG {PARA 259 "" 0 "
+" {TEXT 264 11 "Proposition" }{TEXT -1 2 ". " }{TEXT 261 83 "The avera
+ge internal path length in a random planar unlabelled binary tree of s
+ize " }{XPPEDIT 262 0 "n" "I\"nG6\"" }{TEXT 263 29 " under the uniform
+ model is \n" }{XPPEDIT 18 0 "4^n*(n+1)/binomial(2*n,n)-3*n-1" ",(*()
+\"\"%%\"nG\"\"\",&F&F'\"\"\"F'F'-%)binomialG6$*&\"\"#F'F&F'F&!\"\"F'*&
+\"\"$F'F&F'F/\"\"\"F/" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 45 "seq(4^i*(i+1)/binomial(2*i,i)-3*i-1,i=1..10);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6,\"\"!\"\"\"#\"#9\"\"&#\"#P\"\"(#\"$w\"
+\"#@#\"$(R\"#L#\"%Yp\"$H%#\"&$*[\"\"$:(#\"&/I'\"%JC#\"'v>8\"%*>%" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 88 "From there, the asymptotic behavio
+ur is well within the reach of Maple's asympt command:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "map(combine,asympt(Pl/Cat,n),exp);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,0*&%#PiG#\"\"\"\"\"#*$%\"nG!\"\"#
+!\"$F(F'F*F-*&F%F&F)#F+F(#\"\"*\"\")F+F'*&F%F&F)F&#\"#<\"$G\"*&F%F&F)#
+\"\"$F(#F9\"%C5-%\"OG6#*$F)#\"\"&F(F'" }}}}}{SECT 0 {PARA 3 "" 0 "" 
+{TEXT -1 40 "Average distance from a point to a cycle" }}{PARA 0 "" 0 
+"" {TEXT -1 46 "We now come back to the analysis of Pollard's " }
+{XPPEDIT 18 0 "rho" "I$rhoG6\"" }{TEXT -1 209 "-algorithm. The analysi
+s of the average distance from a node to its cycle proceeds exactly as
+ in the case of binary trees by decorating the corresponding trees. Th
+e grammar is derived from the grammar G above:" }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 2 "G;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<%/%)fungra
+phG-%$SetG6#%4connected_componentG/F)-%&CycleG6#-%%ProdG6$%\"ZG%(bintr
+eeG/F2-%&UnionG6$F1-F/6$F1-F'6$F2/%%cardG\"\"#" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 176 "The process of decoration consists in isolating the
+ path between ancestor and descendant in the combinatorial structure. \+
+For instance, non-planar binary trees are described by " }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "npbin:=\{bintree=subs(G,bintree)\};
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&npbinG<#/%(bintreeG-%&UnionG6$%
+\"ZG-%%ProdG6$F+-%$SetG6$F'/%%cardG\"\"#" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 335 "Here, Set indicates that the respective position of the \+
+two subtrees does not count. In the labelled case, we can therefore de
+cide that the decorated branch will always be the leftmost one (instea
+d of considering all the paths leftright1 and leftright2 as in the cas
+e of planar binary trees). Thus the decorated grammar in this case is
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 277 "bin3:=\{bintree2=Prod(
+Z,Union(Prod(bintree2,bintree),\n                             Prod(An,
+bintree1,bintree))),\n       bintree1=\n           Prod(Z,Union(Prod(b
+intree1,bintree),\n                        Prod(De,Set(bintree,card=2)
+),De)),\n       An=Epsilon,De=Epsilon\} union npbin:" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 149 "Again, we can check that the first values coin
+cide with the result produced by computing the internal path length on
+ all the non-planar binary trees:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 178 "ipl:=proc(t) if type(t,name) then 0 else size(t)-1+i
+pl(op([2,1],t))+ipl(op([2,2],t)) fi end:\nsize:=proc(t) local i;eval(s
+ubs([Prod=`+`,Set=`+`,seq(i=1,i=indets(t,name))],t)) end:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 81 "for i to 6 do i,`+`(op(map(ipl,alls
+tructs([bintree,npbin,labelled],size=i)))) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"\"\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"#\"
+\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$\"\"'" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"%\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"&\"$g
+$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"'\"\"!" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 52 "seq(count([bintree2,bin3,labelled],size=i),i=1
+..11);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"!F#\"\"'F#\"$g$F#\"&Sl$F
+#\"(+o*eF#\"++w2-9" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 159 "The same p
+rocess readily extends to the functional graphs involved in Pollard's \+
+algorithm by a decomposition of sets and cycles which isolates the mar
+ked part." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 296 "G1:=\{fungrap
+h=Prod(connected_component1,\n                   Set(connected_compone
+nt)),\n     connected_component1=Prod(Z,\n         Union(Prod(An,bintr
+ee1),bintree2),\n               Sequence(Prod(Z,bintree))),\n     conn
+ected_component=Cycle(Prod(Z,bintree))\}\nunion bin3:                 \+
+           " }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 229 "We first write pr
+ocedures to compute the distance from nodes to their cycles in the non
+-decorated graphs so that we can check on the first few values that ou
+r grammar for decorated graphs is consistent with the non-decorated on
+e." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 351 "iplfg:=proc(g) `+`(o
+p(map(iplcc,g))) end:\niplcc:=proc(cc) `+`(op(map(iplbt,cc))) end:\nip
+lbt:=proc(bt) if type(bt,name) then 0 else size(op(2,bt))+iplt(op(2,bt
+)) fi end:\niplt:=proc(t) if type(t,name) then 0 else size(t)-1+iplt(o
+p([2,1],t))+iplt(op([2,2],t)) fi end:\nsize:=proc(t) local i; eval(sub
+s([Set=`+`,Prod=`+`,seq(i=1,i=indets(t,name))],t)) end:" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 21 "Here are a few tests:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 68 "to 4 do t:=draw([fungraph,G,labelled],size=
+6); print(t,iplfg(t)) od:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$-%$SetG6$
+-%&CycleG6#-%%ProdG6$&%\"ZG6#\"\"\"&F-6#\"\"&-F'6#-F*6$&F-6#\"\"$-F*6$
+&F-6#\"\"%-F$6$&F-6#\"\"#&F-6#\"\"'FF" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6$-%$SetG6#-%&CycleG6$-%%ProdG6$&%\"ZG6#\"\"%&F-6#\"\"\"-F*6$&F-6#\"
+\"'-F*6$&F-6#\"\"&-F$6$&F-6#\"\"#&F-6#\"\"$F7" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$-%$SetG6$-%&CycleG6#-%%ProdG6$&%\"ZG6#\"\"&&F-6#\"\"\"-
+F'6#-F*6$&F-6#\"\"%-F*6$&F-6#\"\"'-F$6$&F-6#\"\"#&F-6#\"\"$F>" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$-%$SetG6#-%&CycleG6#-%%ProdG6$&%\"ZG6#
+\"\"&-F*6$&F-6#\"\"%-F$6$&F-6#\"\"\"-F*6$&F-6#\"\"'-F$6$&F-6#\"\"#&F-6
+#\"\"$\"#6" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 63 "The number of funct
+ional graphs of fixed size grows quite fast:" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 49 "seq(count([fungraph,G,labelled],size=i),i=1..10)
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6,\"\"!\"\"#F#\"#OF#\"%+=F#\"'+k<F#
+\")+odG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 87 "We can therefore only \+
+check the values for sizes 2 and 4 in a reasonable amount of time" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "map(iplfg,allstructs([fungra
+ph,G,labelled],size=2));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7$\"\"\"F$
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "sort(map(iplfg,allstruc
+ts([fungraph,G,labelled],size=4)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#7F\"\"#F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$F$\"\"&F%F%F%F%F%F
+%F%F%F%F%F%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "convert(\",`
++`);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$3\"" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 70 "On the other hand, here is the counting sequence for
+ decorated graphs:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "seq(c
+ount([fungraph,G1,labelled],size=i),i=1..10);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6,\"\"!\"\"#F#\"$3\"F#\"&S/\"F#\"(+!Q;F#\"*+[Q#Q" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 122 "It takes 11 minutes to check that
+ 10440 is also the value we get by generating all the binary functiona
+l graphs of size 6." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "We now com
+pute the generating functions with " }{HYPERLNK 17 "combstruct[gfsolve
+]" 2 "combstruct[gfsolve]" "" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 43 "F:=subs(gfsolve(G,labelled,z),fungraph(z));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"FG*$,&*$%\"zG\"\"#!\"#\"\"\"F+#!\"
+\"F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "Fpl:=subs(gfsolve(G
+1,labelled,z),fungraph(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$FplG
+**%\"zG\"\"\",&*&F&!\"\",&\"\"#F'*$,&*$F&F,!\"#F'F'#F'F,F0F'#F*F,F&F,F
+',(F'F'F/!\"%*$F&\"\"%F6F*F.F2" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 74 
+"Again, we obtain closed-forms from these generating functions by appl
+ying " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 110 " to find the di
+fferential equation they satisfy and from there the recurrence satisfi
+ed by their coefficients:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+30 "deqF:=holexprtodiffeq(F,y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+>%%deqFG<$,&*&%\"zG\"\"\"-%\"yG6#F(F)\"\"#*&,&!\"\"F)*$F(F-F-F)-%%diff
+G6$F*F(F)F)/-F+6#\"\"!F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 
+"deqFpl:=holexprtodiffeq(Fpl,y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>%'deqFplG<%/-%\"yG6#\"\"!F*/--%\"DG6#F(F)F*,(*&,(*$%\"zG\"\"&\"#C*$F
+4\"\"$!#CF4\"\"'\"\"\"-F(6#F4F;F;*&,**$F4\"\"#F:!\"\"F;*$F4F:\"\")*$F4
+\"\"%!#7F;-%%diffG6$F<F4F;F;F4FA" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 34 "recF:=diffeqtorec(deqF,y(z),u(n));" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%%recFG<%/-%\"uG6#\"\"!\"\"\",&*&,&%\"nG\"\"#F0F+F+-
+F(6#F/F+F+*&,&!\"#F+F/!\"\"F+-F(6#,&F/F+F0F+F+F+/-F(6#F+F*" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "recFpl:=diffeqtorec(deqFpl,y(z),u(n
+));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'recFplG<)/-%\"uG6#\"\"!F*/-F
+(6#\"\"\"F*/-F(6#\"\"$F*/-F(6#\"\"&F*/-F(6#\"\"#F./-F(6#\"\"%#\"\"*F:,
+**&,&\"#CF.%\"nG\"\")F.-F(6#FEF.F.*&,&!#[F.FE!#7F.-F(6#,&FEF.F:F.F.F.*
+&,&FE\"\"'\"#IF.F.-F(6#,&FEF.F>F.F.F.*&,&FE!\"\"!\"'F.F.-F(6#,&FEF.FRF
+.F.F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 119 "Unfortunately, due to a
+ weakness in Maple's current version of rsolve, the solutions to these
+ recurrences are not found" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+38 "rsolve(recF,u(n)),rsolve(recFpl,u(n));" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6$-%'rsolveG6$<%/-%\"uG6#\"\"!\"\"\",&*&,&%\"nG\"\"#F1F,F
+,-F)6#F0F,F,*&,&!\"#F,F0!\"\"F,-F)6#,&F0F,F1F,F,F,/-F)6#F,F+F2-F$6$<)/
+F(F+F;/-F)6#\"\"$F+/-F)6#\"\"&F+/-F)6#F1F,/-F)6#\"\"%#\"\"*F1,**&,&\"#
+CF,F0\"\")F,F2F,F,*&,&!#[F,F0!#7F,F8F,F,*&,&F0\"\"'\"#IF,F,-F)6#,&F0F,
+FPF,F,F,*&,&F0F7!\"'F,F,-F)6#,&F0F,FhnF,F,F,F2" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 113 "However, Maple can find the solution if we help it \+
+by taking into account the parity of the generating functions:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "deqF2:=holexprtodiffeq(subs(
+z=z^(1/2),F),y(z)):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "deqF
+pl2:=holexprtodiffeq(subs(z=z^(1/2),normal(Fpl)),y(z)):" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "recF2:=diffeqtorec(deqF2,y(z),u(n))
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&recF2G<$/-%\"uG6#\"\"!\"\"\",&
+*&,&F+F+%\"nG\"\"#F+-F(6#F/F+F+*&,&F/!\"\"F5F+F+-F(6#,&F/F+F+F+F+F+" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "recFpl2:=diffeqtorec(deqFp
+l2,y(z),u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(recFpl2G<&/-%\"uG
+6#\"\"!F*,**&,&\"#7\"\"\"%\"nG\"\")F/-F(6#F0F/F/*&,&F0!#7!#CF/F/-F(6#,
+&F0F/F/F/F/F/*&,&\"#:F/F0\"\"'F/-F(6#,&F0F/\"\"#F/F/F/*&,&F0!\"\"!\"$F
+/F/-F(6#,&F0F/\"\"$F/F/F//-F(6#F/F//-F(6#FB#\"\"*FB" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 38 "nb_fg:=subs(n=n/2,rsolve(recF2,u(n)));" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&nb_fgG**)\"\"#,$%\"nG#\"\"\"F'F+-%
+&GAMMAG6#,&F*F+F)F*F+-F-6#,&F+F+F)F*!\"\"%#PiG#F3F'" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 55 "tot_pl:=map(simplify,subs(n=n/2,rsolve(re
+cFpl2,u(n))));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'tot_plG,()\"\"#,$
+%\"nG#\"\"\"F'F+*&)F',&F)F*!\"\"F+F+F)F+F+**)F',&F+F+F)F*F+-%&GAMMAG6#
+,&#\"\"$F'F+F)F*F+-F46#F2F/%#PiG#F/F'F/" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 22 "This is summarized by:" }}}{EXCHG {PARA 260 "" 0 "" 
+{TEXT 265 11 "Proposition" }{TEXT -1 2 ": " }{TEXT 266 100 "The averag
+e distance from a point to a cycle in a random binary non-planar funct
+ional graph of size " }{XPPEDIT 267 0 "n" "I\"nG6\"" }{TEXT 268 13 " i
+s given by " }{XPPEDIT 18 0 "sqrt(Pi)*GAMMA(n/2+2)/n/GAMMA(n/2+1/2)-1-
+1/n" ",(**-%%sqrtG6#%#PiG\"\"\"-%&GAMMAG6#,&*&%\"nGF(\"\"#!\"\"F(\"\"#
+F(F(F.F0-F*6#,&*&F.F(\"\"#F0F(*&\"\"\"F(\"\"#F0F(F0F(\"\"\"F0*&\"\"\"F
+(F.F0F0" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 49 "From t
+here a direct asymptotic expansion follows:" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 45 "map(simplify,asympt(subs(tot_pl/nb_fg/n),n));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#,2*(\"\"##\"\"\"F%%#PiGF&*$%\"nG!\"\"#
+F+F%#F'\"\"%F+F'*(F%F&F(F&F)F&#\"\"*\"#;F)F+**F%F&F(F&F*F+F)F&#\"#<\"$
+G\"**F%F&F(F&F*!\"#F)F&#\"\"$\"$7&**F%F&F(F&F*!\"$F)F&#!$\"=\"%#>)-%\"
+OG6#*&F*!\"%F)F&F'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "as_co
+st_1:=op(1,\"):" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 65 "Thus under our
+ probabilistic model, the first stage of Pollard's " }{XPPEDIT 18 0 "r
+ho" "I$rhoG6\"" }{TEXT -1 32 "-algorithm takes asymptotically " }
+{XPPEDIT 18 0 "C*sqrt(p)" "*&%\"CG\"\"\"-%%sqrtG6#%\"pGF$" }{TEXT -1 
+14 " steps, where " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 63 " is th
+e smallest prime factor of the number to be factored and " }{XPPEDIT 
+18 0 "C=sqrt(2*Pi)/4" "/%\"CG*&-%%sqrtG6#*&\"\"#\"\"\"%#PiGF*F*\"\"%!
+\"\"" }{TEXT -1 1 "." }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 28 "Average
+ length of the cycles" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 22 "After bot
+h sequences (" }{XPPEDIT 18 0 "x[i]" "&%\"xG6#%\"iG" }{TEXT -1 5 " and
+ " }{XPPEDIT 18 0 "y[i]" "&%\"yG6#%\"iG" }{TEXT -1 438 ") have reached
+ the cycle, the number of steps before the end of Pollard's algorithm \+
+is bounded by the length of this cycle. Since this length might be cor
+related to the number of steps before, it is not a priori sufficient t
+o compute the average length of the cycles in a random graph obeying o
+ur grammar. Instead, we modify the decorated graphs so that the Ancest
+or is now an element of the cycle. The number of decorated graphs of s
+ize " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 96 " is thus the sum for
+ all the nodes of the length of their cycle, summed over all graphs of
+ size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 26 ". Here is the new \+
+grammar:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 247 "G2:=remove(typ
+e,G1,identical(connected_component1)=anything)\nunion \{connected_comp
+onent1=\n    Prod(Z,\n         Union(bintree1,Prod(De,bintree)),\n    \+
+     Sequence(Prod(Z,bintree)),\n         Prod(Z,An,bintree),\n       \+
+  Sequence(Prod(Z,bintree)))\}:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+57 "The corresponding generating function is again algebraic:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 67 "Fplcycle:=factor(normal(subs
+(gfsolve(G2,labelled,z),fungraph(z))));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%)FplcycleG,$*(%\"zG\"\"#,&!\"\"\"\"\"*$,&*$F'F(!\"#F+F+#F+F(F+
+F+,&F*F+F.F(F/F/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "series(
+Fplcycle,z,11);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+-%\"zG\"\"#\"\"%\"
+\"*\"\"'\"#H\"\")#\"$D$\"\"%\"#5-%\"OG6#\"\"\"\"#7" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 50 "Again, a closed form follows for the coefficients
+:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "holexprtodiffeq(subs(z
+=z^(1/2),Fplcycle)/z,y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$,(\"
+\"#\"\"\"*&,(\"\"$F&*$%\"zGF%\"#7F+!#7F&-%\"yG6#F+F&F&*&,*F+\"\"'!\"\"
+F&*$F+F)\"\")F*F-F&-%%diffG6$F.F+F&F&/-F/6#\"\"!F=" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 25 "diffeqtorec(\",y(z),u(n));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#<&/-%\"uG6#\"\"!F(/-F&6#\"\"\"\"\"#/-F&6#F-\"\"*,*
+*&,&\"#7F,%\"nG\"\")F,-F&6#F6F,F,*&,&F6!#7!#CF,F,-F&6#,&F6F,F,F,F,F,*&
+,&\"#:F,F6\"\"'F,-F&6#,&F6F,F-F,F,F,*&,&F6!\"\"!\"$F,F,-F&6#,&F6F,\"\"
+$F,F,F," }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "rsolve(\",u(n));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,()\"\"#%\"nGF%*,F$F%)#\"\"\"F%F&F
+*-%&GAMMAG6#,&#\"\"$F%F*F&F*F*-F,6#,&F&F*F*F*!\"\"%#PiG#F4F%!\"%*&F$F*
+F&F*F%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "T1:=map(simplify,
+subs(n=n/2-1,\")+tot_pl);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#T1G,,)
+\"\"#,$%\"nG#\"\"\"F'F'**)F',&F+F+F)F*F+-%&GAMMAG6#,&F*F+F)F*F+-F06#F(
+!\"\"%#PiG#F5F'F5*&)F',&F)F*F5F+F+,&F)F+!\"#F+F+F+*&F9F+F)F+F+**F-F+-F
+06#,&#\"\"$F'F+F)F*F+-F06#F.F5F6F7F5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 37 "We thus get the following conclusion:" }}}{EXCHG {PARA 261 "" 
+0 "" {TEXT 272 7 "Theorem" }{TEXT -1 2 ". " }{TEXT 269 41 "The average
+ number of steps of Pollard's " }{XPPEDIT 270 0 "rho" "I$rhoG6\"" }
+{TEXT 271 59 "-algorithm under the probabilistic model is bounded betw
+een" }{XPPEDIT 18 0 "sqrt(Pi)*GAMMA(n/2+2)/n/GAMMA(n/2+1/2)-1-1/n" ",(
+**-%%sqrtG6#%#PiG\"\"\"-%&GAMMAG6#,&*&%\"nGF(\"\"#!\"\"F(\"\"#F(F(F.F0
+-F*6#,&*&F.F(\"\"#F0F(*&\"\"\"F(\"\"#F0F(F0F(\"\"\"F0*&\"\"\"F(F.F0F0
+" }{TEXT -1 4 "    " }{TEXT 273 3 "and" }{TEXT -1 3 "   " }{XPPEDIT 
+18 0 "2*sqrt(Pi)/n*GAMMA(n/2+1)/GAMMA(n/2+1/2)-2-1/n" ",(*,\"\"#\"\"\"
+-%%sqrtG6#%#PiGF%%\"nG!\"\"-%&GAMMAG6#,&*&F*F%\"\"#F+F%\"\"\"F%F%-F-6#
+,&*&F*F%\"\"#F+F%*&\"\"\"F%\"\"#F+F%F+F%\"\"#F+*&\"\"\"F%F*F+F+" }
+{TEXT -1 2 ",\n" }{TEXT 274 6 "where " }{XPPEDIT 275 0 "n" "I\"nG6\"" 
+}{TEXT 276 137 " is the smallest prime factor of the integer whose fac
+torization is sought. \nAsymptotically, this number of steps therefore
+ behaves like " }{XPPEDIT 18 0 "C*sqrt(n)" "*&%\"CG\"\"\"-%%sqrtG6#%\"
+nGF$" }{TEXT -1 2 ", " }{TEXT 277 5 "with " }{XPPEDIT 278 0 "C" "I\"CG
+6\"" }{TEXT 279 3 " in" }{TEXT -1 1 " " }{XPPEDIT 18 0 "sqrt(2*Pi)/4..
+sqrt(2*Pi)/2" ";*&-%%sqrtG6#*&\"\"#\"\"\"%#PiGF)F)\"\"%!\"\"*&-F%6#*&
+\"\"#F)F*F)F)\"\"#F," }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 44 "Here is the verification of the second part:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 37 "map(simplify,asympt(T1/nb_fg/n,n,3));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#,,*(\"\"##\"\"\"F%%#PiGF&*$%\"nG!\"\"#
+F+F%F&!\"#F'*(F%F&F(F&F)F&#\"\"&\"\")F)F+-%\"OG6#*&F*F+F)F&F'" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "as_cost_2:=op(1,\"):" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "evalf(\"\");" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#,,*$*$%\"nG!\"\"#F'\"\"#$\"+PTJ`7!\"*$!\"#\"\"!\"
+\"\"*$F%#F0F)$\"+rEkm:F,F%$F'F/-%\"OG6#*&F&F'F%F2F0" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 44 "Since the smallest prime factor of a number " }
+{XPPEDIT 18 0 "N" "I\"NG6\"" }{TEXT -1 13 " is of order " }{XPPEDIT 
+18 0 "O(sqrt(N))" "-%\"OG6#-%%sqrtG6#%\"NG" }{TEXT -1 95 ", it follows
+ that the (arithmetic) complexity of Pollard's algorithm under this mo
+del grows in " }{XPPEDIT 18 0 "O(N^(1/4))" "-%\"OG6#)%\"NG*&\"\"\"\"\"
+\"\"\"%!\"\"" }{TEXT -1 1 "." }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 33 
+"Extension: polynomials of degree " }{XPPEDIT 18 0 "m" "I\"mG6\"" }
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 16 "When the factor " }
+{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 42 " to be found is known a pri
+ori to satisfy " }{XPPEDIT 18 0 "p=1 mod m" "/%\"pG-%$modG6$\"\"\"%\"m
+G" }{TEXT -1 10 " for some " }{XPPEDIT 18 0 "m" "I\"mG6\"" }{TEXT -1 
+110 " known in advance, Pollard conjectured that the number of steps i
+n his algorithm could be reduced by a factor " }{XPPEDIT 18 0 "sqrt(m-
+1)" "-%%sqrtG6#,&%\"mG\"\"\"\"\"\"!\"\"" }{TEXT -1 25 " by using the p
+olynomial " }{XPPEDIT 18 0 "f(x)=x^m+a mod N" "/-%\"fG6#%\"xG-%$modG6$
+,&)F&%\"mG\"\"\"%\"aGF-%\"NG" }{TEXT -1 12 " instead of " }{XPPEDIT 
+18 0 "f(x)=(x^2+a mod N" "/-%\"fG6#%\"xG-%$modG6$,&*$F&\"\"#\"\"\"%\"a
+GF-%\"NG" }{TEXT -1 98 ". Brent and Pollard used this idea to factor t
+he 8th Fermat number, whose factors are known to be " }{XPPEDIT 18 0 "
+1 mod 2^(8+2)" "-%$modG6$\"\"\")\"\"#,&\"\")\"\"\"\"\"#F*" }{TEXT -1 
+63 ". We know consider Pollard's under the probabilistic model for " }
+{XPPEDIT 18 0 "m=6" "/%\"mG\"\"'" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 47 "Here is the grammar for functional graphs with " }
+{XPPEDIT 18 0 "m" "I\"mG6\"" }{TEXT -1 16 " as a parameter:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 98 "Gm:=\{fg=Set(cc),cc=Cycle(Pr
+od(Z,Set(tree,card=m-1))),\n    tree=Union(Z,Prod(Z,Set(tree,card=m)))
+\}:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 76 "Here is the corresponding \+
+decorated grammar for the distances to the cycles:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 402 "Gm2:=\{fg1=Prod(cc1,Set(cc)),\n      cc1=P
+rod(Z,Union(Prod(An,tree1),tree2),\n               Set(tree,card=m-2),
+\n               Sequence(Prod(Z,Set(tree,card=m-1)))),\n      tree1=P
+rod(Z,Union(Prod(tree1,Set(tree,card=m-1)),\n                         \+
+Prod(De,Set(tree,card=m)),De)),\n      tree2=Prod(Z,Union(tree2,Prod(A
+n,tree1)),\n                 Set(tree,card=m-1)),\n      An=Epsilon,De
+=Epsilon\} union Gm:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 77 "And the g
+rammar for the distances to the cycles plus the length of the cycle:" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 300 "Gm3:=\{fg2=Prod(cc2,Set(
+cc)),\n      cc2=Prod(Z,Union(Prod(tree1,Set(tree,card=m-2)),\n       \+
+                Prod(De,Set(tree,card=m-1))),\n               Sequence
+(Prod(Z,Set(tree,card=m-1))),\n               Prod(Z,An,Set(tree,card=
+m-1)),\n               Sequence(Prod(Z,Set(tree,card=m-1))))\}\nunion \+
+Gm2:" }}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "m=2" "
+/%\"mG\"\"#" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 27 "We first check on t
+he case " }{XPPEDIT 18 0 "m=2" "/%\"mG\"\"#" }{TEXT -1 56 " that we re
+cover the generating functions we had before." }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 39 "sol:=gfsolve(subs(m=2,Gm3),labelled,z);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$solG<./-%#AnG6#%\"zG\"\"\"/-%\"ZGF)
+F*/-%#DeGF)F+/-%#ccGF)-%#lnG6#*$,&*$F*\"\"#!\"#F+F+#!\"\"F;/-%%treeGF)
+,$*&F*F>,&F;F+*$F9#F+F;F<F+FF/-%$fg1GF)**F*F+,&FCF=F*F;F+,(F+F+F:!\"%*
+$F*\"\"%FOF>F9F=/-%&tree2GF),$*&,&FCF=F*F+F+,&F>F+F:F;F>F;/-%$fg2GF)**
+F*F;FDF+,(FEF+F:F<*&F*F;FDF+F+F>F9F=/-%&tree1GF),$*(F*F>FDF+F9F=FF/-%$
+cc2GF)*(F*F;FDF+FenF>/-%$cc1GF)*(F*F+FKF+FLF>/-%#fgGF)F8" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "normal(subs(sol,fg(z))-F);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 29 "normal(subs(sol,fg1(z))-Fpl);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "nor
+mal(subs(sol,fg2(z))-Fplcycle);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"
+\"!" }}}}{SECT 0 {PARA 5 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "m=6" "
+/%\"mG\"\"'" }{TEXT -1 0 "" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "The \+
+grammar becomes" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "G6:=subs
+(m=6,Gm3);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#G6G<-/%#fgG-%$SetG6#%
+#ccG/%$fg1G-%%ProdG6$%$cc1GF(/%#AnG%(EpsilonG/%#DeGF4/%$fg2G-F/6$%$cc2
+GF(/%%treeG-%&UnionG6$%\"ZG-F/6$FA-F)6$F=/%%cardG\"\"'/F1-F/6&FA-F?6$-
+F/6$F3%&tree1G%&tree2G-F)6$F=/FG\"\"%-%)SequenceG6#-F/6$FA-F)6$F=/FG\"
+\"&/FP-F/6$FA-F?6%-F/6$FPFen-F/6$F6FDF6/FQ-F/6%FA-F?6$FQFNFen/F;-F/6'F
+A-F?6$-F/6$FPFR-F/6$F6FenFV-F/6%FAF3FenFV/F+-%&CycleGFX" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 47 "From there we compute the generating func
+tions." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "sol:=gfsolve(G6,l
+abelled,z):" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 58 "Here is the genera
+ting function for the functional graphs:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 19 "F:=subs(sol,fg(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%\"FG,$*$,&!$?\"\"\"\"*&%\"zGF)-%'RootOfG6#,(%#_ZG!$?(F+\"$?(*&F+F)
+F0\"\"'F)\"\"&F)!\"\"F(" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 232 "Again
+, the coefficients admit a closed-form which can be obtained using gfu
+n (it could also be derived by Lagrange's inversion formula). We rathe
+r compute directly the asymptotic expansion of the number of functiona
+l graphs of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 269 " whose
+ nodes have an in-degree of 0 or 6 by singularity analysis. Unfortunat
+ely, Maple's series command is not yet able to deal with algebraic fun
+ctions like the RootOf above. We therefore start from the equation in \+
+the system which is at the origin of the singularity:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "T:=subs(sol,tree(z));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%\"TG-%'RootOfG6#,(%#_ZG!$?(%\"zG\"$?(*&F+\"\"
+\"F)\"\"'F." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "tree(z)-subs
+(gfeqns(G6,labelled,z),tree(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(
+-%%treeG6#%\"zG\"\"\"-%\"ZGF&!\"\"*&F)F(F$\"\"'#F+\"$?(" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "eq:=subs(tree(z)=y,Z(z)=z,\");" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#eqG,(%\"yG\"\"\"%\"zG!\"\"*&F(F'F&
+\"\"'#F)\"$?(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "diff(eq,y)
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&\"\"\"F$*&%\"zGF$%\"yG\"\"&#!\"
+\"\"$?\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "solve(\{\"\",\"
+\},\{y,z\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$<$/%\"zG,$-%'RootOfG6#
+,&*$%#_ZG\"\"$\"\"\"!#7F.#\"\"&\"\"'/%\"yGF'<$/F4-F(6#,&F+F.\"#7F./F%,
+$F7F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 47 "It follows that the domi
+nant singularity is at " }{XPPEDIT 18 0 "z=5/6*(12)^(1/3)" "/%\"zG*(\"
+\"&\"\"\"\"\"'!\"\")\"#7*&\"\"\"F&\"\"$F(F&" }{TEXT -1 8 ", where " }
+{XPPEDIT 18 0 "y=12^(1/3)" "/%\"yG)\"#7*&\"\"\"\"\"\"\"\"$!\"\"" }
+{TEXT -1 29 ".  The singular expansion of " }{XPPEDIT 18 0 "y(z)" "-%
+\"yG6#%\"zG" }{TEXT -1 65 " can be computed at that point by power ser
+ies reversion (we set " }{XPPEDIT 18 0 "theta=sqrt(1-z/rho)" "/%&theta
+G-%%sqrtG6#,&\"\"\"\"\"\"*&%\"zGF)%$rhoG!\"\"F-" }{TEXT -1 7 " where \+
+" }{XPPEDIT 18 0 "rho" "I$rhoG6\"" }{TEXT -1 49 " is the singularity, \+
+which helps series a little)" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 19 "sing:=5/6*12^(1/3):" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 47 "series(subs(z=sing*(1-theta^2),eq),y=12^(1/3));" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#+1,&%\"yG\"\"\"*$\"#7#F&\"\"$!\"\",&F'
+F&*&F(F),&F&F&*$%&thetaG\"\"#F+F&F+\"\"!F/\"\"\",$*&F(#F1F*F.F&#!\"&\"
+#C\"\"#,$F-#F8\"#=\"\"$,&F7F&F/#\"\"&F9\"\"%,$F5#F+\"$W\"\"\"&-%\"OG6#
+F&\"\"'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "\{solve(\",y)\};
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<$+/%&thetaG*$\"#7#\"\"\"\"\"$\"\"
+!,$*&\"#5#F)\"\"#F'F(#!\"\"\"\"&\"\"\",$F&#F2\"#:\"\"#,$F-#!#r\"$+*\"
+\"$,$F&#\"\"(\"%vL\"\"%-%\"OG6#F)\"\"&+/F%F&F+,$F-#F)F3\"\"\"F5\"\"#,$
+F-#\"#rF<\"\"$F>\"\"%FC\"\"&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 71 "sery:=op(select(proc(s,u) evalb(signum(coeff(s,u,1))=-1) end,\",
+theta));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%seryG+/%&thetaG*$\"#7#
+\"\"\"\"\"$\"\"!,$*&\"#5#F*\"\"#F(F)#!\"\"\"\"&\"\"\",$F'#F3\"#:\"\"#,
+$F.#!#r\"$+*\"\"$,$F'#\"\"(\"%vL\"\"%-%\"OG6#F*\"\"&" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 48 "series(subs(T=sery,z=sing*(1-theta^2),F),
+theta);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+-%&thetaG,$*$\"#5#\"\"\"\"
+\"##F)F'!\"\"#\"\"%\"#:\"\"!,$F&#\"#Z\"$+'\"\"\"#\"$;'\"%vL\"\"#-%\"OG
+6#F)\"\"$" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "Hence the number of \+
+functional graphs with in-degree in \{0,6\} is asymptotically:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "as_fg:=coeff(\",theta,-1)/sq
+rt(Pi)*n^(-1/2)*sing^(-n);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&as_fg
+G,$**\"#5#\"\"\"\"\"#%#PiG#!\"\"F*%\"nGF,),$*$\"#7#F)\"\"$#\"\"&\"\"',
+$F.F-F)#F)F'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 42 "We next consider \+
+the distance to the cycle" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+22 "Fpl:=subs(sol,fg1(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$FplG,
+$*,%\"zG\"\"\"-%'RootOfG6#,(%#_ZG!$?(F'\"$?(*&F'F(F-\"\"'F(\"\"%,&F)!
+\"&F'F1F(,,!#IF(*&F'F(F)\"\"&!#E*&F'\"\"#F)F2\"#***&F'\"\"$F)F>!$E\"*&
+F'F2F)F;\"#a!\"\",&!$?\"F(F7F(FB\"$]\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 50 "series(subs(T=sery,z=sing*(1-theta^2),Fpl),theta);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#+'%&thetaG#\"\"\"\"#?!\"%-%\"OG6#F&!
+\"$" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 28 "And the length of the cycl
+e:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "Fpl2:=subs(sol,fg2(z)
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%Fpl2G,$*,%\"zG\"\"#-%'RootOfG
+6#,(%#_ZG!$?(F'\"$?(*&F'\"\"\"F-\"\"'F1\"\"$,&F)!\"\"F'F1F1,*!#SF1*&F'
+F1F)\"\"&\"\"(*&F'F(F)\"\"%!#=*&F'F3F)F3\"#7F5,&!$?\"F1F8F1F5!%S9" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 51 "series(subs(T=sery,z=sing*(1
+-theta^2),Fpl2),theta);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+)%&thetaG#
+\"\"\"\"#?!\"%,$*$\"#5#F&\"\"##!#6\"$+$!\"$-%\"OG6#F&!\"#" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 83 "Thus the distance to the cycle and the le
+ngth of this cycle are both asymptotic to:" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 48 "asympt(coeff(\",theta,-4)*n*sing^(-n)/as_fg/n,n);" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*(\"#5#\"\"\"\"\"#%#PiGF&*$%\"nG!
+\"\"#F,F(#F'\"#?" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 152 "Thus the rat
+io between this variant of Pollard's algorithm and the original one is
+ in both cases (number of steps to the cycle and length of the cycle):
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "ratio:=simplify(map(asy
+mpt,[as_cost_1/\",as_cost_2/\"/2],n));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%&ratioG7$*$\"\"&#\"\"\"\"\"#F&" }}}}}{SECT 0 {PARA 3 "" 0 "" 
+{TEXT -1 10 "Conclusion" }}{PARA 0 "" 0 "" {TEXT -1 374 "This workshee
+t shows that some algorithms whose complexity analysis does not reduce
+ to counting the number of subcomponents in some kind of recursive com
+binatorial structure can sometimes be treated by combstruct using seve
+ral marks. This is in particular true of many recursive searching algo
+rithms whose complexity is related to the path length of an underlying
+ structure." }}}}{MARK "1 0 0" 29 }{VIEWOPTS 1 1 0 1 1 1803 }

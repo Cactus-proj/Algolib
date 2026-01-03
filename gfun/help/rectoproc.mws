@@ -1,0 +1,368 @@
+{VERSION 4 0 "Linux" "4.0" }
+{USTYLETAB {PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times"
+ 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 2" -1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 3" -1 202 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 72 2 0 2 2 -1 1 }{PSTYLE "Ordered List 4" -1 203 
+1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3
+ 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordered List 5" -1 204 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 
+2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 -1 1 }{PSTYLE "Warning" 
+-1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 205 1 
+{CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0 0 12 
+12 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "" -1 -1 "C
+ourier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printe
+d Output" -1 6 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1
+ 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE
+ "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0
+ 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier"
+ 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 128 64 
+1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" 
+-1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 10 2 0 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Hyperl
+inkError" -1 206 1 {CSTYLE "" -1 -1 "Courier" 1 12 255 0 255 1 2 2 1 2
+ 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0
+ 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1 -1 "Tim
+es" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2
+ 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1
+ 15 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0
+ 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 
+"Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1
+ 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1
+ 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 
+0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 207 1 {CSTYLE ""
+ -1 -1 "Courier" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Output" -1 12 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{CSTYLE "Annota
+tion Text" -1 200 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Plot Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Nonterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 
+0 0 1 }{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 0 0 0 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0
+ 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 
+0 0 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 
+255 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 "Times" 
+1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Small" -1 7 "Times" 
+1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1
+ 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times"
+ 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times" 1
+ 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Time
+s" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 
+"Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Smal
+l208" -1 201 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math
+ Italic Small207" -1 202 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Maple Comment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0
+ 1 }{CSTYLE "2D Math Italic Small209" -1 203 "Times" 1 1 0 0 0 1 1 2 2
+ 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small204" -1 204 "Times" 1 1 0
+ 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Input Placeholder" -1 205 "
+Courier" 1 12 200 0 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "Code" -1 206 "
+Courier" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic S
+mall206" -1 207 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D M
+ath Italic Small205" -1 208 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Inert Output" -1 209 "Times" 1 12 144 144 144 1 2 2 2 2 1 
+2 0 0 0 1 }{CSTYLE "2D Math Italic Small" -1 210 "Times" 1 1 0 0 0 1 1
+ 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 18 "Times" 1 12 0 0 0 1 2 
+2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Times" 1 12 0
+ 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times" 1 10 0 0
+ 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128
+ 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Times" 1 
+12 0 0 0 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0
+ 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Input" -1 19 "Times" 1 12 255 0 0 1
+ 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math Italic Small210" -1 211 "Times"
+ 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Header and Footer" -1 212 "
+Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Text" -1 213 "Times"
+ 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times" 
+1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Bold" -1 39 "Times" 1 
+12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 214 "Times
+" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12
+ 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1 12 0 128
+ 128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Dictionary Hyperlink" -1 45 "Time
+s" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Co
+urier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT 215 15 "gfun[rectoproc]" }{TEXT 30 39 "
+ - convert a recurrence into a function" }}{PARA 4 "" 0 "usage" {TEXT 
+216 16 "Calling Sequence" }}{PARA 0 "" 0 "" {TEXT 217 15 "     rectopr
+oc(" }{TEXT 35 4 "eqns" }{TEXT 217 1 "," }{TEXT 35 4 "u(n)" }{TEXT 
+217 2 ", " }{TEXT 35 10 "<remember>" }{TEXT 217 2 ", " }{TEXT 35 6 "<l
+ist>" }{TEXT 217 1 "," }{TEXT 35 18 "<params=[a,b,...]>" }{TEXT 217 1 
+"," }{TEXT 35 9 "<options>" }{TEXT 217 1 ")" }}{PARA 4 "" 0 "" {TEXT 
+216 10 "Parameters" }}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 
+25 "eqns                   - " }{TEXT 217 35 "single equation or set o
+f equations" }}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "u,n  \+
+                  - " }{TEXT 217 28 "name and index of recurrence" }}
+{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "remember            \+
+   - " }{TEXT 217 10 "(optional)" }}{PARA 0 "" 0 "" {TEXT 217 5 "     
+" }{TEXT 23 25 "list                   - " }{TEXT 217 10 "(optional)" 
+}}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "params = [a,b,...]
+     - " }{TEXT 217 42 "(optional) names a,b,... for the arguments" }}
+{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "evalfun = fname     \+
+   - " }{TEXT 217 47 "(optional) a function applied at each iteration"
+ }}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "preargs=[c,d,...]
+      - " }{TEXT 217 43 "(optional) first arguments to this function" 
+}}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "postargs=[e,f,...]
+     - " }{TEXT 217 42 "(optional) last arguments to this function" }}
+{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "evalinicond         \+
+   - " }{TEXT 217 10 "(optional)" }}{PARA 0 "" 0 "" {TEXT 217 5 "     
+" }{TEXT 23 25 "whilecond=boolean_expr - " }{TEXT 217 26 "(optional) w
+hile condition" }}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "er
+rorcond=boolean_expr - " }{TEXT 217 26 "(optional) error condition" }}
+{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "index               \+
+   - " }{TEXT 217 10 "(optional)" }}{PARA 0 "" 0 "" {TEXT 217 5 "     
+" }{TEXT 23 25 "rhs=expression         - " }{TEXT 217 10 "(optional)" 
+}}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "copyright=string  \+
+     - " }{TEXT 217 54 "(optional) copyright string to be added to the
+ options" }}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "extraloc
+al=[g,h,...]   - " }{TEXT 217 42 "(optional) names for extra local var
+iables" }}{PARA 0 "" 0 "" {TEXT 217 5 "     " }{TEXT 23 25 "nosymbolsu
+ms           - " }{TEXT 217 10 "(optional)" }}{PARA 0 "" 0 "" {TEXT 
+217 5 "     " }{TEXT 23 25 "plain                  - " }{TEXT 217 10 "
+(optional)" }{TEXT 217 0 "" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT 216 
+11 "Description" }}{PARA 15 "" 0 "" {TEXT 218 75 "The procedure output
+s a Maple procedure that, given a non negative integer " }{TEXT 35 1 "
+n" }{TEXT 218 21 " as input, gives the " }{TEXT 35 1 "n" }{TEXT 218 9 
+"-th term " }{TEXT 35 4 "u(n)" }{TEXT 218 27 " of the linear recurrenc
+e. " }}{PARA 15 "" 0 "" {TEXT 218 25 "If the optional argument " }
+{TEXT 35 8 "remember" }{TEXT 218 46 " is supplied, the procedure retur
+ned will use " }{TEXT 35 15 "option remember" }{TEXT 218 2 ". " }}
+{PARA 15 "" 0 "" {TEXT 218 25 "If the optional argument " }{TEXT 35 4 
+"list" }{TEXT 218 59 " is supplied, the procedure returned will comput
+e the list " }{TEXT 35 15 "[u(0),...,u(n)]" }{TEXT 218 72 ". In this c
+ase it will run in a linear number of arithmetic operations. " }}
+{PARA 15 "" 0 "" {TEXT 218 30 "One of the optional arguments " }{TEXT 
+35 8 "remember" }{TEXT 218 4 " or " }{TEXT 35 4 "list" }{TEXT 218 181 
+" should be given each time one needs a large number of values of the \+
+sequence. When the first terms of the recurrence are not explicitly su
+pplied, they are represented symbolically." }}{PARA 15 "" 0 "" {TEXT 
+218 25 "If the optional argument " }{TEXT 35 5 "plain" }{TEXT 218 207 
+" is supplied, the procedure returned will \"unroll\" the recurrence r
+elation using a plain loop, even in cases where more efficient algorit
+hms are supported. This is allows to use the resulting procedure with 
+" }{HYPERLNK 17 "evalhf" 2 "evalhf" "" }{TEXT 218 6 ", the " }
+{HYPERLNK 17 "CodeGeneration" 2 "CodeGeneration" "" }{TEXT 218 89 " pa
+ckage, and other functions that do not support all Maple objects or la
+nguage features." }{TEXT 218 0 "" }}{PARA 15 "" 0 "" {TEXT 218 25 "If \+
+the optional argument " }{TEXT 35 6 "params" }{TEXT 218 1 "=" }{TEXT 
+35 9 "[a,b,...]" }{TEXT 218 48 " is given then the procedure will take
+ as input " }{TEXT 35 1 "n" }{TEXT 218 2 ", " }{TEXT 35 1 "a" }{TEXT 
+218 2 ", " }{TEXT 35 1 "b" }{TEXT 218 5 ",... " }}{PARA 15 "" 0 "" 
+{TEXT 218 172 "When the coefficients of the recurrence are nonconstant
+ polynomials the returned procedure will run in quasi-linear time and \+
+space if the remember option is not specified. " }}{PARA 15 "" 0 "" 
+{TEXT 218 179 "When the coefficients are constant, the procedure will \+
+run in logarithmic number of arithmetic operations and without wasting
+ extra space if the remember option is not specified. " }}{PARA 15 "" 
+0 "" {TEXT 218 25 "If the optional argument " }{TEXT 35 7 "evalfun" }
+{TEXT 218 1 "=" }{TEXT 35 5 "fname" }{TEXT 218 153 " is given, then th
+e specified procedure is used in the generated code as an evaluation r
+ule. Extra arguments can be passed to the procedure with options " }
+{TEXT 35 7 "preargs" }{TEXT 218 1 "=" }{TEXT 35 9 "[c,d,...]" }{TEXT 
+218 5 " and " }{TEXT 35 8 "postargs" }{TEXT 218 1 "=" }{TEXT 35 9 "[e,
+f,...]" }{TEXT 218 20 ". Names declared in " }{TEXT 35 7 "preargs" }
+{TEXT 218 5 " and " }{TEXT 35 8 "postargs" }{TEXT 218 106 " may appear
+ in the argument sequence of the generated procedure if they are also \+
+declared with the option " }{TEXT 35 6 "params" }{TEXT 218 111 ". The \+
+function is mapped over initial conditions and it is evaluated before \+
+procedure generation if the option " }{TEXT 35 11 "evalinicond" }{TEXT
+ 218 13 " is supplied." }}{PARA 15 "" 0 "" {TEXT 218 11 "The option " 
+}{TEXT 35 9 "whilecond" }{TEXT 218 1 "=" }{TEXT 35 12 "boolean_expr" }
+{TEXT 218 172 " defines a condition that is checked at each iteration \+
+of the loop of the generated procedure. The condition is represented b
+y a boolean expression that may be function of " }{TEXT 35 1 "n" }
+{TEXT 218 2 ", " }{TEXT 35 6 "u(n-k)" }{TEXT 218 26 " for any positive
+ integer " }{TEXT 35 1 "k" }{TEXT 218 39 " and function of the names d
+eclared in " }{TEXT 35 6 "params" }{TEXT 218 2 ", " }{TEXT 35 7 "prear
+gs" }{TEXT 218 5 " and " }{TEXT 35 8 "postargs" }{TEXT 218 96 ". Execu
+tion stops when the condition turns true. This option does not impact \+
+initial conditions." }}{PARA 15 "" 0 "" {TEXT 218 11 "The option " }
+{TEXT 35 9 "errorcond" }{TEXT 218 1 "=" }{TEXT 35 12 "boolean_expr" }
+{TEXT 218 172 " defines a condition that is checked at each iteration \+
+of the loop of the generated procedure. The condition is represented b
+y a boolean expression that may be function of " }{TEXT 35 1 "n" }
+{TEXT 218 2 ", " }{TEXT 35 6 "u(n-k)" }{TEXT 218 26 " for any positive
+ integer " }{TEXT 35 1 "k" }{TEXT 218 4 " in " }{TEXT 35 6 "0..ord" }
+{TEXT 218 9 " - where " }{TEXT 35 3 "ord" }{TEXT 218 72 " is the order
+ of the recurrence - and function of the names declared in " }{TEXT 
+35 6 "params" }{TEXT 218 2 ", " }{TEXT 35 7 "preargs" }{TEXT 218 5 " a
+nd " }{TEXT 35 8 "postargs" }{TEXT 218 51 ". An error is thrown when t
+he condition turns true." }}{PARA 15 "" 0 "" {TEXT 218 11 "The option 
+" }{TEXT 35 10 "extralocal" }{TEXT 218 1 "=" }{TEXT 35 9 "[g,h,...]" }
+{TEXT 218 57 " allows to declare and initialize extra local variables.
+ " }{TEXT 35 1 "g" }{TEXT 218 2 ", " }{TEXT 35 1 "h" }{TEXT 218 54 ", \+
+... must be either symbols or equations in the form " }{TEXT 35 6 "sym
+bol" }{TEXT 218 1 "=" }{TEXT 35 10 "expression" }{TEXT 218 58 ", in wh
+ich case the expression is used for initialization." }}{PARA 15 "" 0 "
+" {TEXT 218 11 "The option " }{TEXT 35 12 "nosymbolsubs" }{TEXT 218 
+89 " disables the name substitution that occurs for the parameters (de
+clared with the option " }{TEXT 35 6 "params" }{TEXT 218 230 "). This \+
+means that the symbols that are used in the generated procedures are t
+he same as the symbols used in the input recurrence. By default, the s
+ymbols that are used in the generated procedures are gathered in the g
+lobal table " }{TEXT 35 21 "gfun/rectoproc/symbol" }{TEXT 218 1 "." }}
+{PARA 15 "" 0 "" {TEXT 218 11 "The option " }{TEXT 35 5 "index" }{TEXT
+ 218 47 " makes the generated procedure return the list " }{TEXT 35 8 
+"[n,u(n)]" }{TEXT 218 37 ". This is useful in conjunction with " }
+{TEXT 35 9 "whilecond" }{TEXT 218 1 "." }}{PARA 15 "" 0 "" {TEXT 218 
+11 "The option " }{TEXT 35 3 "rhs" }{TEXT 218 1 "=" }{TEXT 35 10 "expr
+ession" }{TEXT 218 133 " allows to specify a right hand side of the re
+currence that does not have to be a polynomial. The right hand side ma
+y be function of " }{TEXT 35 1 "n" }{TEXT 218 42 " and of the names de
+clared in the options " }{TEXT 35 6 "params" }{TEXT 218 2 ", " }{TEXT 
+35 7 "preargs" }{TEXT 218 5 " and " }{TEXT 35 8 "postargs" }{TEXT 218 
+1 "." }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT 216 8 "Examples" }}
+{PARA 14 "" 0 "" {TEXT 40 17 "Fibonacci numbers" }}{PARA 0 "" 0 "" 
+{TEXT 217 129 "We can create different types of programs to generate F
+ibonacci numbers that are tailored to certain memory or time requireme
+nts." }}{PARA 0 "" 0 "" {TEXT 217 90 "The most obvious procedure is re
+cursive and \"remembers\" values that are already computed. " }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "fiborec:=\{f(i)=f(i-1)+f(i-2
+),f(0)=1,f(1)=1\};" }}{PARA 11 "" 1 "" {XPPMATH 20 "<%/-I\"fG6\"6#\"\"
+!\"\"\"/-F%6#F)F)/-F%6#I\"iGF&,&-F%6#,&F0F)!\"\"F)F)-F%6#,&F0F)!\"#F)F
+)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(gfun):\n" }
+{MPLTEXT 1 0 39 "fib1:=rectoproc(fiborec,f(i),remember);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "f*6#'I\"nG6\"I*nonnegintG%*protectedGF&6#I)remembe
+rGF&E\\[l#\"\"!\"\"\"F-F-,&-9!6#,&!\"#F-9$F-F--F06#,&!\"\"F-F4F-F-F&F&
+F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "fib1(100);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "\"6,T3<Q,Wy9t&" }}}{PARA 0 "" 0 "" {TEXT 217 
+55 "To create a program which computes and lists the first " }{TEXT 
+35 1 "n" }{TEXT 217 50 " terms of the recurrence, we use the list opti
+on. " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "fib2:=rectoproc(fibo
+rec,f(i),list);" }}{PARA 11 "" 1 "" {XPPMATH 20 "f*6#'I\"nG6\"I*nonneg
+intG%*protectedG6$I#i1GF&I$locGF&F&F&C&>&8%6#\"\"!\"\"\">&F/6#F2F2?(8$
+F2F2,&!\"\"F29$F2I%trueGF(>&F/6#,&F7F2F2F2,&&F/6#,&F9F2F7F2F2&F/6#F7F2
+7#-I$seqGF(6$FD/F7;F1F:F&F&F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 9 "fib2(10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "7-\"\"\"F#\"\"#\"\"$\"
+\"&\"\")\"#8\"#@\"#M\"#b\"#*)" }}}{PARA 0 "" 0 "" {TEXT 217 190 "To cr
+eate a program that is more space conscious we avoid the remember opti
+on. In this case the program exploits the fact that the recurrence has
+ constant coefficients for extra efficiency. " }}{EXCHG {PARA 0 "> " 0
+ "" {MPLTEXT 1 0 30 "fib3:=rectoproc(fiborec,f(i));" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "f*6#'I\"nG6\"I*nonnegintG%*protectedG6)I#i1GF&I%loc0GF&
+I%loc1GF&I%loc2GF&I%tmp2GF&I%tmp1GF&I#i2GF&F&E\\[l#\"\"!\"\"\"F3F3@%19
+$\"#WC&>8%F3>8&F3@%/F6F2OF:?(8$F3F3,&!\"\"F3F6F3I%trueGF(C%>8',&F:F3F<
+F3>F:F<>F<FGF<C(>8(X,I)anythingGF(F&F&[gl!\"%!!!#%\"#\"#F3F3F3F2>8)X*F
+NF&F&[gl!#%!!!\"#\"#F3F3>8*-I(convertGF(6%FBI%baseGF&\"\"#@$/&FR6#F3F3
+>FPX*FNF&F&[gl!#%!!!\"#\"#FWF3?&FA-I'subsopGF(6$/F3F&FRFDC$>FM-I5Matri
+xMatrixMultiplyG6$I(:-10259GQJ/home/mezzarob/opt/maple/13/lib/maple.ml
+aF&/I+modulenameGF&I.LinearAlgebraG6$F(I(_syslibGF&6$FMFM@$/FAF3>FP-I5
+MatrixVectorMultiplyG6$FcoF(6$FMFP&FPFenF&F&F&" }}}{EXCHG {PARA 0 "> "
+ 0 "" {MPLTEXT 1 0 10 "fib3(100);" }}{PARA 11 "" 1 "" {XPPMATH 20 "\"6
+,T3<Q,Wy9t&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "fib3(1000);"
+ }}{PARA 11 "" 1 "" {XPPMATH 20 "\"\\x,NSB`CXA!>4!pn()fDJPR\")>6\"Rt'Q
+F@TP`?,1rkB-XlKO'=)3\"*fwT#\\/v([L<hiX\\\\AuzN$p>=r`ar30\\gUFtej$)p7=q
+(\\N=x[DN=#e\"GU6xOI.(" }}}{PARA 14 "" 0 "" {TEXT 40 48 "An example of
+ right-hand side: nested procedures" }}{PARA 0 "" 0 "" {TEXT 217 124 "
+This example shows how terms of nested recurrences can be computed. Th
+e first sequence is first converted into a procedure: " }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "rec_u:=\{u(n+2)*(n^2+n+1)+u(n+1)*(n
+-2)+u(n)*n,u(0)=1,u(1)=2\};" }}{PARA 11 "" 1 "" {XPPMATH 20 "<%,(*&-I
+\"uG6\"6#,&I\"nGF'\"\"\"\"\"#F+F+,(*$F*F,F+F*F+F+F+F+F+*&-F&6#,&F*F+F+
+F+F+,&!\"#F+F*F+F+F+*&-F&6#F*F+F*F+F+/-F&6#\"\"!F+/-F&6#F+F," }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "u_n := rectoproc(rec_u,u(n),
+remember);" }}{PARA 11 "" 1 "" {XPPMATH 20 "f*6#'I\"nG6\"I*nonnegintG%
+*protectedGF&6#I)rememberGF&E\\[l#\"\"!\"\"\"F-\"\"#*&,(-9!6#,&!\"#F-9
+$F-F.-F26#,&!\"\"F-F6F-\"\"%*&,&F1F-F7F-F-F6F-F:F-,&\"\"$F-*&,&!\"$F-F
+6F-F-F6F-F-F:F&F&F&" }}}{PARA 0 "" 0 "" {TEXT 217 34 "The second seque
+nce is defined by " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 51 "rec_v:
+=v(n+3)*(n+4)+v(n+1)*(n^2+2*n)=u(n+1)-n*u(n);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/,&*&-I\"vG6\"6#,&I\"nGF'\"\"\"\"\"$F+F+,&F*F+\"\"%F+F+F+
+*&-F&6#,&F*F+F+F+F+,&*$F*\"\"#F+F*F5F+F+,&-I\"uGF'F1F+*&-F86#F*F+F*F+!
+\"\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "ini_v:=\{v(0)=1,v(1
+)=2,v(2)=3\};" }}{PARA 11 "" 1 "" {XPPMATH 20 "<%/-I\"vG6\"6#\"\"!\"\"
+\"/-F%6#F)\"\"#/-F%6#F-\"\"$" }}}{PARA 0 "" 0 "" {TEXT 217 24 "The pro
+cedure computing " }{TEXT 35 4 "v(n)" }{TEXT 217 18 " is now generated
+ " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "v_n:=rectoproc(\{op(1,r
+ec_v)\}union ini_v,v(n),rhs=subs(u=u_n,op(2,rec_v)),list);" }}{PARA 11
+ "" 1 "" {XPPMATH 20 "f*6#'I\"nG6\"I*nonnegintG%*protectedG6$I#i1GF&I$
+locGF&F&F&C'>&8%6#\"\"!\"\"\">&F/6#F2\"\"#>&F/6#F6\"\"$?(8$F6F2,&!\"\"
+F29$F2I%trueGF(>&F/6#,&F<F2F2F2*&,(-I$u_nGF&6#,&F>F2F<F2F2*&-FH6#,&!\"
+#F2F<F2F2FNF2F>*&,&F:F2*&,&!\"$F2F<F2F2FDF2F2F2&F/FIF2F>F2,&F<F2F6F2F>
+7#-I$seqGF(6$&F/6#F</F<;F1F?F&F&F&" }}}{PARA 0 "" 0 "" {TEXT 217 31 "C
+omputation of 10 first terms: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 7 "v_n(9);" }}{PARA 11 "" 1 "" {XPPMATH 20 "7,\"\"\"\"\"#\"\"$#F#F$#
+!\"(\"\"&#!#<\"\"*#\"$D\"\"#\\#\"%.o\"%#4\"#!'n&p\"\"&*><#!'(pB%\"&0T
+\"" }}}{PARA 14 "" 0 "" {TEXT 40 37 "Applying a function at each itera
+tion" }}{PARA 0 "" 0 "" {TEXT 217 108 "We illustrate several ways to c
+ompute numerical values of the sequence defined by the following recur
+rence: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "rec := \{ u(n+2)*
+(n+1) + u(n)*(n^2+1),u(0)=sin(1),u(1)=cos(1)\};" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "<%,&*&-I\"uG6\"6#,&I\"nGF'\"\"\"\"\"#F+F+,&F*F+F+F+F+F+*&
+-F&6#F*F+,&*$F*F,F+F+F+F+F+/-F&6#\"\"!-I$sinG6$%*protectedGI(_syslibGF
+'6#F+/-F&F<-I$cosGF9F<" }}}{PARA 0 "" 0 "" {TEXT 217 118 "If hardware \+
+floating point numbers give a sufficient accuracy, then it is best to \+
+produce the procedure and then call " }{HYPERLNK 17 "evalhf" 2 "evalhf
+" "" }{TEXT 217 7 " on it:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+46 "p:=subsop(4=NULL,rectoproc(rec,u(n),'plain'));" }}{PARA 11 "" 1 ""
+ {XPPMATH 20 "f*6#'I\"nG6\"I*nonnegintG%*protectedG6&I#i1GF&I%loc0GF&I
+%loc1GF&I%loc2GF&F&F&C&>8%-I$sinG6$F(I(_syslibGF&6#\"\"\">8&-I$cosGF3F
+5@%/9$\"\"!OF0?(8$F6F6,&!\"\"F6F=F6I%trueGF(C%>8',$*(,&\"\"&F6*&,&!\"$
+F6FAF6F6,&FAF6F6F6F6F6F6F0F6FAFCFC>F0F8>F8FGF8F&F&F&" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 15 "evalhf(p(100));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "$\"3Y(R'pQ:Rx_\"#f" }}}{PARA 0 "" 0 "" {TEXT 217 36 "If m
+ore precision is required, then " }{HYPERLNK 17 "evalf" 2 "evalf" "" }
+{TEXT 217 40 " can be applied at each iteration using " }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "p2:=rectoproc(rec,u(n),evalfun='eva
+lf');" }}{PARA 11 "" 1 "" {XPPMATH 20 "f*6#'I\"nG6\"I*nonnegintG%*prot
+ectedG6&I#i1GF&I%loc0GF&I%loc1GF&I%loc2GF&F&F&C&>8%-I&evalfGF(6#-I$sin
+G6$F(I(_syslibGF&6#\"\"\">8&-F26#-I$cosGF6F8@%/9$\"\"!OF0?(8$F9F9,&!\"
+\"F9FBF9I%trueGF(C%>8'-F26#,$*(,&\"\"&F9*&,&!\"$F9FFF9F9,&FFF9F9F9F9F9
+F9F0F9FFFHFH>F0F;>F;FLF;F&F&F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 20 "Digits:=30: p2(100);" }}{PARA 11 "" 1 "" {XPPMATH 20 "$\"?'*o&
+HC1#p(R'pQ:Rx_\"#Z" }}}{PARA 0 "" 0 "" {TEXT 217 58 "It is also possib
+le to give the precision as an argument: " }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 66 "p3 := rectoproc(rec,u(n),evalfun='evalf',params=[d],p
+ostargs=[d]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "f*6$'I\"nG6\"I*nonnegin
+tG%*protectedGI#b1GF&6&I#i1GF&I%loc0GF&I%loc1GF&I%loc2GF&F&F&C&>8%-I&e
+valfGF(6$-I$sinG6$F(I(_syslibGF&6#\"\"\"9%>8&-F36$-I$cosGF7F9F;@%/9$\"
+\"!OF1?(8$F:F:,&!\"\"F:FDF:I%trueGF(C%>8'-F36$,$*(,&\"\"&F:*&,&!\"$F:F
+HF:F:,&FHF:F:F:F:F:F:F1F:FHFJFJF;>F1F=>F=FNF=F&F&F&" }}}{EXCHG {PARA 0
+ "> " 0 "" {MPLTEXT 1 0 11 "p3(100,40);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "$\"I@o3q,**o&HC1#p(R'pQ:Rx_\"#P" }}}{PARA 14 "" 0 "" {TEXT 40 21 "
+Extra local variables" }}{PARA 0 "" 0 "" {TEXT 217 11 "The option " }
+{TEXT 35 10 "extralocal" }{TEXT 217 245 " is useful when the values of
+ some parameters are not known until the procedure is executed. In the
+ example below, the recurrence is provided with generic intial conditi
+ons. The values of these initial conditions are computed at execution-
+time. " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "rec := \{ u(n)*n +
+ u(n+2),u(0)=A,u(1)=B\}:\n" }{MPLTEXT 1 0 5 "p := " }{MPLTEXT 1 0 64 "
+rectoproc(rec,u(n),params=[p],extralocal=[A='f'(p),B='g'(A,p)]);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "f*6$'I\"nG6\"I*nonnegintG%*protectedGI#b
+1GF&6+I#i1GF&I%loc0GF&I%loc1GF&I%loc2GF&I%tmp2GF&I%tmp1GF&I#i2GF&I&xlo
+c1GF&I&xloc2GF&F&F&C%>8+-I\"fGF&6#9%>8,-I\"gGF&6$F6F:@%19$\"#?C&>8%F6>
+8&F<@%/FB\"\"!OFF?(8$\"\"\"FO,&!\"\"FOFBFOI%trueGF(C%>8',$*&,&FQFOFNFO
+FOFFFOFQ>FFFH>FHFUFHC%>8)-I8gfun/rectoproc/binsplitGI&:-100GQA/home/ma
+rc/cur/gfun/lib/gfun.mlaF&6$7(-.I)ndmatrixGF&6$-I'MatrixG6$F(I(_syslib
+GF&6#7$7$FKFO7$,$8*FQFKFOF[pFKFB-I,matrix_ringGF&6&I#adGF&I#prGF&I#zeG
+F&-F`o6$X,I)anythingGF(6#I)identityGF&F&[gl!\"\"!!!#!\"#\"#FOI4expecte
+d_entry_sizeGF&X*FdpF&F&[gl!#%!!!\"#\"#-I\"uGF&6#FK-Fip6#FO>Fgn-I%subs
+GF(6$<$/FhpF6/F[qF<FgnFgnF&F&F&" }}}}{SECT 0 {PARA 4 "" 0 "seealso" 
+{TEXT 216 9 "See Also " }}{PARA 0 "" 0 "" {TEXT 217 0 "" }{HYPERLNK 
+17 "gfun" 2 "gfun" "" }{TEXT 217 2 ", " }{HYPERLNK 17 "remember" 2 "re
+member" "" }{TEXT 217 2 ", " }{HYPERLNK 17 "nth_term" 2 "gfun[nth_term
+]" "" }{TEXT 217 2 ", " }{HYPERLNK 17 "diffeqtoproc" 2 "NumGfun[diffeq
+toproc]" "" }{TEXT 217 0 "" }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

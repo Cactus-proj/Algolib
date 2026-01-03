@@ -1,0 +1,56 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <test name="gegen1">
+    <fun>(x*(2*a-x))^(nu-1/2)*GegenbauerC(n,nu,x/a-1)*exp(-b*x)</fun>
+    <tex>\int (x(2a-x))^{\nu-1/2} C_n^{(\nu)}\left(\frac{x}{a}-1\right)e^{-bx}\text{d}x</tex>
+    <var_int name="x" />
+    <var name="x" type="diff"/>
+    <var name="a" type="diff" />
+    <set_val name="n" type="int" inter="1..10"/>
+    <set_val name="x" type="float" inter="0..2"/>
+    <set_val name="a" type="float" inter="0..2"/>
+    <set_val name="b" type="float" inter="0..2"/>
+    <set_val name="nu" type="int" inter="1..5"/>
+  </test>
+
+<!--
+  <test>
+    <fun>GegenbauerC(l,lambda,x)*GegenbauerC(m,lambda,x)*GegenbauerC(n,lambda,x)*(1-x^2)^(lambda-1/2)</fun>
+    <var_int name="x" />
+    <var name="x" type="diff"/>
+    <var name="l" type="shift" />
+    <set_val name="l" type="int" inter="1..10"/>
+    <set_val name="lambda" type="float" inter="0.5..10"/>
+ </test>
+-->
+
+<!--
+ <test>
+   <fun>GAMMA((k+n)/2)*GAMMA((k+1)/2)/GAMMA(n/2+k-1)*t^k*hypergeom([k,k+n-1],[k+n/2],(1-sqrt(1-t^2))/2)*GegenbauerC(k,(n-2)/2,x)</fun>
+   <var_int name="k" />
+   <var name="k" type="shift"/>
+   <var name="t" type="diff" />
+ </test>
+-->
+
+</tests>

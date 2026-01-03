@@ -1,0 +1,50 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<!-- 
+     Examples from Elliptic integral evaluations of Bessel moments and
+     applications
+     Bailey, Borwein, Boradhurst, Glasser
+  -->
+
+
+<tests>
+  
+  <!-- Equ. (14) page 3 -->
+  <test name="bbbg1">
+    <tex>\int tK_0(at)J_0(wt)dt</tex>
+    <fun>t*BesselK(0,a*t)*BesselJ(0,w*t)</fun>
+    <var_int name="t"/>
+    <var name="t" type="diff" />
+    <var name="a" type="diff" />
+    <var name="w" type="diff" />
+  </test>
+
+
+  <!-- Equ. (11) p 3, p 20 -->
+  <test name="bbbg2">
+    <tex>\int t^{2k+1}I_0(t)K_0(t)^4dt</tex>
+    <fun>t^(2*k+1)*BesselI(0,t)*BesselK(0,t)^4</fun>
+    <var_int name="t" />
+    <var name="t" type="diff" />
+    <var name="k" type="shift" />
+  </test>
+
+</tests>

@@ -1,0 +1,72 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 23 "Courier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" 
+-1 256 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 
+1 0 0 0 0 0 1 3 0 3 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Headi
+ng 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 
+0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "
+" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 2 6 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Warning" 2 7 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 255 1 0 0 0 0 0 0 1 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 
+0 -1 0 }{PSTYLE "Error" 7 8 1 {CSTYLE "" -1 -1 "" 0 1 255 0 255 1 0 0 
+0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item
+" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 36 "DocumentGenerator[DefineMathKeywo
+rd]" }{TEXT 30 55 " - define a new keyword for the mathematical MAD fo
+rmat" }}{PARA 3 "" 0 "" {TEXT -1 38 "DocumentGenerator[UndefineMathKey
+word]" }{TEXT 30 32 " - opposite of DefineMathKeyword" }}{PARA 4 "" 0 
+"usage" {TEXT -1 16 "Calling Sequence" }}{PARA 0 "" 0 "" {TEXT -1 23 "
+     DefineMathKeyword(" }{TEXT 35 7 "keyword" }{TEXT -1 1 "," }{TEXT 
+35 8 " MADproc" }{TEXT -1 27 ")\n     UndefineMathKeyword(" }{TEXT 35 
+7 "keyword" }{TEXT -1 1 ")" }}{PARA 4 "" 0 "" {TEXT -1 10 "Parameters
+" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 23 14 "keyword     - " }
+{TEXT -1 6 "symbol" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 23 14 
+"MADproc     - " }{TEXT -1 39 "procedure that outputs a Maple MAD tree
+" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 11 "Description" }}{PARA 15 "
+" 0 "" {TEXT -1 14 "The procedure " }{TEXT 35 17 "DefineMathKeyword" }
+{TEXT -1 41 " is designed to extend the syntax of the " }{TEXT 35 3 "M
+AD" }{TEXT -1 1 " " }{HYPERLNK 17 "math format" 2 "DocumentGenerator,m
+ath" "" }{TEXT -1 5 ". By " }{TEXT 256 10 "convention" }{TEXT -1 45 ",
+ the name of a keyword starts by the symbol " }{HYPERLNK 17 "&" 2 "&" 
+"" }{TEXT -1 113 ". A new keyword is to be defined in terms of the exi
+sting keywords and the Maple expressions that are handled by " }
+{HYPERLNK 17 "Math" 2 "DocumentGenerator,Math" "" }{TEXT -1 2 ". " }
+{TEXT 257 5 "\nNote" }{TEXT -1 16 ": the procedure " }{TEXT 35 7 "MADp
+roc" }{TEXT -1 47 " inputs the keyword with its argument sequence." }}
+{PARA 15 "" 0 "" {TEXT -1 14 "The procedure " }{TEXT 35 19 "UndefineMa
+thKeyword" }{TEXT -1 35 " removes a keyword from the system." }}}
+{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 8 "Examples" }}{PARA 0 "" 0 "
+" {TEXT -1 33 "This example defines the keyword " }{TEXT 35 9 "&contfr
+ac" }{TEXT -1 61 " that is meant to represent a continued fraction dev
+elopment." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 183 "contfractoMAD_
+rec := proc(l)\n  if nops(l) > 0 then\n    l[1] + `&frac`(1,procname(l
+[2..-1]));\n  else\n    'ldots';\n  fi;\nend:\ncontfractoMAD := proc(x
+)\n  contfractoMAD_rec([op(x)]);\nend:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 70 "with(DocumentGenerator):\nDefineMathKeyword(`&contfra
+c`,contfractoMAD);" }{TEXT -1 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 14 "Tes
+t in LaTeX." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "LaTeX:-latex(
+`&contfrac`(seq(a[i],i=0..3)));" }}{PARA 6 "" 1 "" {TEXT -1 82 "a _\{0
+\} + \\frac\{1\}\{a _\{1\} + \\frac\{1\}\{a _\{2\} + \\frac\{1\}\{a _
+\{3\} + \\frac\{1\}\{\\ldots\}\}\}\}" }}}{PARA 0 "" 0 "" {TEXT -1 7 "R
+emove " }{TEXT 35 9 "&contfrac" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 78 "UndefineMathKeyword(`&contfrac`);\nLaTeX:-latex(
+`&contfrac`(seq(a[i],i=0..3)));" }}{PARA 8 "" 1 "" {TEXT -1 68 "Error,
+ (in symbol/string) only ANSI-C compliant symbols are handled\n" }}}}
+{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 9 "See Also " }}{PARA 0 "" 0 "
+" {HYPERLNK 17 "DocumentGenerator" 2 "DocumentGenerator" "" }{TEXT -1 
+2 ", " }{HYPERLNK 17 "DefineMathType" 2 "DocumentGenerator,DefineMathT
+ype" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "DefineMathAlias" 2 "DocumentGe
+nerator,DefineMathAlias" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "NeedParens
+AsProduct" 2 "DocumentGenerator,NeedParensAsProduct" "" }{TEXT -1 2 ",
+ " }{HYPERLNK 17 "NeedParensAsExponent" 2 "DocumentGenerator,NeedParen
+sAsExponent" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "HasLeadingMinus" 2 "Do
+cumentGenerator,HasLeadingMinus" "" }}}}{MARK "7 1 5" 4 }{VIEWOPTS 1 
+1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

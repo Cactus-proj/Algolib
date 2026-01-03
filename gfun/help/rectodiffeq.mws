@@ -1,0 +1,87 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 17 "gfun[rectodiffeq]" }
+{TEXT 30 59 " - convert a linear recurrence into a differential equation" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 18 "     rectodiffeq (" }
+{TEXT 35 4 "eqns" }
+{TEXT -1 2 ", " }
+{TEXT 35 3 "u,n" }
+{TEXT -1 2 ", " }
+{TEXT 35 3 "f,z" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "eqns - " }
+{TEXT -1 39 "a single equation or a set of equations" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "u,n  - " }
+{TEXT -1 36 "the name and index of the recurrence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "f,z  - " }
+{TEXT -1 37 "the name and variable of the function" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 4 "Let " }
+{TEXT 35 1 "f" }
+{TEXT -1 56 " be the generating function associated to the sequence (" }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 3 "): " }
+{TEXT 35 32 "f(z)=sum(u(n)*z^n,n=0..infinity)" }
+{TEXT -1 96 ". The procedure outputs a linear differential equation with polynomial coefficients verified by " }
+{TEXT 35 1 "f" }
+{TEXT -1 2 ". " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 36 "The input syntax is the same as for " }
+{HYPERLNK 17 "rsolve" 2 "rsolve" "" }{TEXT -1 186 ": the first argument should be a single recurrence relation or a set containing one recurrence relation and boundary conditions. The recurrence relation should be linear in the variable " }
+{TEXT 35 1 "u" }
+{TEXT -1 34 ", with polynomial coefficients in " }
+{TEXT 35 1 "n" }
+{TEXT -1 76 ". The terms of the sequence appearing in the relation should be of the form " }
+{TEXT 35 6 "u(n+k)" }
+{TEXT -1 7 ", with " }
+{TEXT 35 1 "k" }
+{TEXT -1 13 " an integer. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 121 "The output is either a single differential equation, or a set containing a differential equation and initial conditions. " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 86 "with(gfun):\ndeq:=rectodiffeq({(5*n+10)*u(n)+a*u(n+1)-u(n+2),u(0)=0,u(1)=0},u(n),f(t));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%$deqG,&*&,(*$%\"tG\"\"#\"#5*&%\"aG\"\"\"F)F.F.!\"\"F.F.-%\"fG6#F)F.
+F.*&F)\"\"$-%%diffG6$F0F)F.\"\"&
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "diffeqtorec(deq,f(t),u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<%,(*&,&%\"nG\"\"&\"#5\"\"\"F*-%\"uG6#F'F*F**&%\"aGF*-F,6#,&F'F*F*F
+*F*F*-F,6#,&F'F*\"\"#F*!\"\"/-F,6#\"\"!F;/-F,6#F*F;
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "deq:=rectodiffeq((n-10)*u(n+1)-u(n),u(n),y(z));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%$deqG<//--%\"DG6#%\"yG6#\"\"!F-/---%#@@G6$F)\"\"'F*F,F-/---F26
+$F)\"\"$F*F,F-/-F+F,F-/---F26$F)\"\"#F*F,F-/---F26$F)\"\"%F*F,F-/-
+--F26$F)\"\"&F*F,F-/---F26$F)\"\"(F*F,F-/---F26$F)\"\")F*F,F-/---F
+26$F)\"\"*F*F,F-/---F26$F)\"#5F*F,F-,&*&,&%\"zG!\"\"!#6\"\"\"Fgo-F+6#
+FdoFgoFgo*&FdoFgo-%%diffG6$FhoFdoFgoFgo/---F26$F)\"#6F*F,&%#_
+CGF,
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "dsolve(deq,y(z));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#/-%\"yG6#%\"zG,$*(&%#_CG6#\"\"!\"\"\"-%$expGF&F.F'\"#6#F.\")+o\"*R
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[diffeqtorec]" 2 "gfun[diffeqtorec]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "rsolve" 2 "rsolve" "" }{TEXT -1 2 "  " }
+}
+}}

@@ -1,0 +1,538 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 1 18 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 1 18 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 268 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 270 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 272 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 274 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 277 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 282 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 283 "" 1 18 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 
+0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Headi
+ng 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 
+0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 
+1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 
+0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Dash \+
+Item" 0 16 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 3 3 0 0 0 0 0 0 16 3 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 260 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 262 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 264 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 265 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 256 "" 0 "" {TEXT 257 46 "A PROBLEM IN STATISTICAL CLASS
+IFICATION THEORY" }}{PARA 263 "" 0 "" {TEXT 283 0 "" }}{PARA 257 "" 0 
+"" {TEXT 276 17 "Philippe Flajolet" }{TEXT -1 1 " " }}{PARA 260 "" 0 "
+" {TEXT -1 29 "(Version of January 14, 1997)" }}{PARA 265 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 59 "This problem discussed he
+re is at the origin  of the whole " }{HYPERLNK 17 "Combstruct" 2 "comb
+struct" "" }{TEXT -1 108 " package. On October 8, 1992, Bernard Van Cu
+tsem, a statistician at the University of Grenoble wrote to us:\n" }}
+{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 258 250 "In classification t
+heory, we make use of hierarchical classification trees. I would need \+
+to generate at random such classification trees according to the unifo
+rm law. The elements to be classified may be taken as distinguished in
+tegers say from 1 to " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 277 46 ". \+
+Do you know of an algorithm for doing this?\n" }}{PARA 0 "" 0 "" 
+{TEXT -1 174 "This led to a cooperation involving Paul Zimmermann, Ber
+nard Van Cutsem, and Philippe Flajolet, out of which the general theor
+y and the algorithms of Combstruct evolved, see " }{TEXT 259 28 "Theor
+etical Computer Science" }{TEXT -1 107 ", vol. 132, pp. 1-35. A first \+
+implementation was designed by Paul Zimmermann in 1993, under the name
+ Gaia (" }{TEXT 260 26 "Maple Technical Newsletter" }{TEXT -1 553 ", 1
+994 (1), pp. 38-46).\n\nVan Cutsem's original question was motivated b
+y the following problem: Classification programmes in statistics build
+ classification trees, usually proceeding by successive aggregations o
+f closest neighbours amongst existing classes. How can we measure the \+
+way a classification carries useful information and not just \"random \+
+noise\"? Certainly, \"good\" classification trees should exhibit chara
+cteristics that depart significantly from random ones. Hence the need \+
+to simulate and analyse parameters of random classification trees." }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 36 "S
+tatistics and classification theory" }}{SECT 1 {PARA 0 "" 0 "" {TEXT 
+256 13 "Specification" }}{PARA 0 "" 0 "" {TEXT -1 43 "We start by load
+ing the combstruct package." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+17 "with(combstruct);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7.%+allstruct
+sG%&countG%%drawG%)finishedG%'gfeqnsG%)gfseriesG%(gfsolveG%,iterstruct
+sG%+nextstructG%,prog_gfeqnsG%.prog_gfseriesG%-prog_gfsolveG" }}}
+{PARA 0 "" 0 "" {TEXT -1 140 " A classification is either: 1) an atom;
+ 2) a set of classification trees of degree at least 2. Atoms are dist
+iguishable, hence we are in a " }{HYPERLNK 17 "labelled" 2 "combstruct
+[specification]" "" }{TEXT -1 25 " universe. Note that the " }
+{HYPERLNK 17 "Set" 2 "combstruct[specification]" "" }{TEXT -1 105 " co
+nstruction translates a pure graph-theoretic structure with no orderin
+g between descendents of a node." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 46 "hier:=[H,\{H=Union(Z,Set(H,card>1))\},labelled]:" }}}{PARA 0 "
+" 0 "" {TEXT -1 68 "The original problem of Van Cutsem is solved by si
+ngle commands like" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "draw(h
+ier,size=10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%$SetG6%-F$6$-F$6$-F
+$6%&%\"ZG6#\"\"'&F-6#\"\"#-F$6$&F-6#\"\"%&F-6#\"\")&F-6#\"\"(&F-6#\"\"
+\"-F$6%&F-6#\"\"&&F-6#\"\"$&F-6#\"#5&F-6#\"\"*" }}}{PARA 0 "" 0 "" 
+{TEXT -1 50 "We may adopt a more concise representation format:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 87 "lreduce:=proc(e) eval(subs(
+\{Set=proc() \{args\} end, Sequence=proc() [args] end\},e)) end:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "lreduce(draw(hier,size=20));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$<$<$<$<$<$<$<$<$<%<$<$<$<$<$<$&%
+\"ZG6#\"\"*&F46#\"#8<$&F46#\"\"(&F46#\"#<&F46#\"#9<$&F46#\"\"#&F46#\"#
+;&F46#\"#?&F46#\"\"'&F46#\"#:&F46#\"#>&F46#\"\"$&F46#\"#7&F46#\"#5&F46
+#\"\"&&F46#\"\")&F46#\"#=&F46#\"#6&F46#\"\"\"&F46#\"\"%" }}}{PARA 0 "
+" 0 "" {TEXT -1 137 "Random generation takes only a few seconds while \+
+counting tables (that serve to determine splitting probabilities) are \+
+set up on the fly." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "for j \+
+from 20 by 20 to 100 do j,lreduce(draw(hier,size=j)) od;" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$\"#?<%<%&%\"ZG6#\"\"'&F'6#\"\"$&F'6#\"#8<$<$<$&F
+'6#\"\"(&F'6#\"#6&F'6#\"#;<$<$<$<$&F'6#\"\"#&F'6#\"#=&F'6#\"#<<$<$<$&F
+'6#\"\"%&F'6#F#&F'6#\"#5<%<$<%&F'6#\"\"&&F'6#\"#>&F'6#\"#7&F'6#\"\"*&F
+'6#\"\")&F'6#\"\"\"&F'6#\"#:&F'6#\"#9" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6$\"#S<$<%&%\"ZG6#\"#O<%&F'6#\"#:&F'6#\"#;<$<$&F'6#\"#5&F'6#\"#I<$&F'
+6#\"\"#<%&F'6#\"#?&F'6#\"#J<$&F'6#\"#6<$&F'6#\"#D<$<$&F'6#\"\"%&F'6#\"
+#7<%&F'6#\"\"&<$<$&F'6#\"#B&F'6#\"#L<$&F'6#\"\"\"&F'6#\"#M<$&F'6#\"#H<
+$&F'6#\"#<<$&F'6#\"#G<&&F'6#\"\"$&F'6#\"#F&F'6#\"#@<%&F'6#\"\")&F'6#\"
+\"*&F'6#\"#E<$&F'6#\"#C<$&F'6#\"#A<$&F'6#\"#N<$<$&F'6#F#&F'6#\"#P<$<$&
+F'6#\"#>&F'6#\"#K<$&F'6#\"\"'<%&F'6#\"\"(&F'6#\"#R&F'6#\"#Q<%&F'6#\"#9
+&F'6#\"#8&F'6#\"#=" }}{PARA 12 "" 1 "" {XPPMATH 20 "6$\"#g<%<$&%\"ZG6#
+\"\"*<$<$&F'6#\"#K<%<$&F'6#\"#T&F'6#\"#R<$&F'6#\"#A&F'6#\"#X<$&F'6#\"#
+D<$&F'6#\"#Z&F'6#\"#c<%&F'6#\"#><$<$&F'6#\"#G<$&F'6#\"#=<&&F'6#\"#6&F'
+6#\"#L&F'6#\"#]<$&F'6#\"#7&F'6#\"#I&F'6#\"#S<%&F'6#F#&F'6#\"#O<$&F'6#
+\"#[<$&F'6#\"#V&F'6#\"#Q<$<$&F'6#\"\")&F'6#\"#?&F'6#\"#\\<%&F'6#\"#F<'
+&F'6#\"#@<$<$&F'6#\"#8<&&F'6#\"#5&F'6#\"#H&F'6#\"#N<$&F'6#\"#J<%&F'6#
+\"#e<$<%&F'6#\"#M<$&F'6#\"\"(&F'6#\"#`<$&F'6#\"#P&F'6#\"#_&F'6#\"#Y<$&
+F'6#\"#;&F'6#\"#d<$&F'6#\"\"&<$&F'6#\"\"$&F'6#\"#B<$&F'6#\"\"%<$<$&F'6
+#\"\"#&F'6#\"#9<%&F'6#\"#:&F'6#\"#<<$<$&F'6#\"#U<$<%&F'6#\"\"'&F'6#\"
+\"\"&F'6#\"#C&F'6#\"#a&F'6#\"#^&F'6#\"#f&F'6#\"#W<$&F'6#\"#E&F'6#\"#b
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6$\"#!)<$<$<$<$<%&%\"ZG6#\"#u<%<$<%&
+F*6#\"#q<%&F*6#\"#p<%&F*6#F#<$&F*6#\"#>&F*6#\"#T<%&F*6#\"#7&F*6#\"#H&F
+*6#\"#R<$&F*6#\"#v<$&F*6#\"#o&F*6#\"#G<$&F*6#\"#s<%&F*6#\"#t&F*6#\"#f&
+F*6#\"#^&F*6#\"#W<$&F*6#\"#i<%<$<%<$&F*6#\"\")<$<$<$<$&F*6#\"#=<%&F*6#
+\"#k<&&F*6#\"#8<$&F*6#\"#K&F*6#\"#U&F*6#\"#C&F*6#\"#c&F*6#\"#J&F*6#\"#
+I&F*6#\"#X&F*6#\"#]<$&F*6#\"\"&&F*6#\"#N<$&F*6#\"#w<%<$&F*6#\"#z&F*6#
+\"#Z<$&F*6#\"#x&F*6#\"#m<$&F*6#\"#O&F*6#\"#e<$&F*6#\"#M<%&F*6#\"#9&F*6
+#\"#j<$<$<$&F*6#\"\"%&F*6#\"#y&F*6#\"#@<%&F*6#\"#B&F*6#\"#E&F*6#\"#F<$
+&F*6#\"#:&F*6#\"#`<$&F*6#\"#<&F*6#\"#;<$&F*6#\"\"(&F*6#\"#l<$&F*6#\"\"
+*<$&F*6#\"\"#<$<$<%&F*6#\"#r<$<$&F*6#\"#?<&&F*6#\"\"$&F*6#\"#5&F*6#\"#
+6<$<$&F*6#\"#V&F*6#\"#A&F*6#\"#d<$&F*6#\"#h&F*6#\"#Q<$<$&F*6#\"#n<$<$&
+F*6#\"\"\"&F*6#\"#[<$<$&F*6#\"#g&F*6#\"#Y<$&F*6#\"\"'&F*6#\"#\\&F*6#\"
+#_&F*6#\"#b&F*6#\"#S&F*6#\"#P&F*6#\"#L&F*6#\"#a&F*6#\"#D" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6$\"$+\"<%<$<&<$&%\"ZG6#\"\"$<$<%<$<$<$<$<$<%<$<$&
+F)6#\"#Z&F)6#\"#_<$<$&F)6#\"#\"*<$<$&F)6#\"#%)&F)6#\"#N&F)6#\"#d&F)6#
+\"#v<$<%<$<%<$<%<$<$<$<$<$<$&F)6#\"\"&<%<$<$<$<$&F)6#\"#l&F)6#\"#b<$&F
+)6#\"#:&F)6#\"#;&F)6#\"#'*&F)6#\"#R<$&F)6#\"#$*&F)6#\"#c&F)6#\"#Q<%&F)
+6#\"#**&F)6#\"#(*&F)6#\"#Y<$<$<$&F)6#\"\"#<$<%<$<$<%&F)6#\"#s&F)6#\"#L
+&F)6#\"#H&F)6#\"#F<%<$&F)6#\"\"\"&F)6#\"#=&F)6#\"#O&F)6#\"#e<$&F)6#\"#
+8&F)6#\"#`&F)6#\"#)*&F)6#\"#P&F)6#\"#g<%<$&F)6#\"#a&F)6#F#&F)6#\"#k&F)
+6#\"#))<$&F)6#\"#o&F)6#\"#C&F)6#\"#B<$<%<$<%&F)6#\"\")<$<$&F)6#\"\"(&F
+)6#\"#G<$&F)6#\"#y&F)6#\"#V&F)6#\"#i<$&F)6#\"#\")&F)6#\"#x&F)6#\"#E&F)
+6#\"#U&F)6#\"#[<$<$&F)6#\"#()&F)6#\"#j&F)6#\"#z&F)6#\"#t&F)6#\"#$)<$&F
+)6#\"#n&F)6#\"#&)&F)6#\"#9&F)6#\"#f<$<$<$&F)6#\"#!)&F)6#\"#]&F)6#\"#@<
+$<$<$&F)6#\"\"*<%&F)6#\"\"'&F)6#\"#I&F)6#\"#X&F)6#\"#D&F)6#\"#T&F)6#\"
+#M&F)6#\"#p&F)6#\"#^&F)6#\"#h&F)6#\"#K<$<$<$<&<$&F)6#\"#')&F)6#\"#\\<$
+<$&F)6#\"#r&F)6#\"#J&F)6#\"#5<%&F)6#\"\"%&F)6#\"#?&F)6#\"#&*&F)6#\"#w&
+F)6#\"#<<$&F)6#\"##*&F)6#\"#%*&F)6#\"#!*&F)6#\"#*)&F)6#\"#>&F)6#\"#m&F
+)6#\"#u&F)6#\"#q&F)6#\"#7&F)6#\"#A&F)6#\"#W&F)6#\"##)&F)6#\"#6&F)6#\"#
+S" }}}{PARA 0 "" 0 "" {TEXT -1 30 "The number of objects of size " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 11 " grows fast" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "seq(count(hier,size=j),j=0..40);" }
+}{PARA 12 "" 1 "" {XPPMATH 20 "6K\"\"!\"\"\"F$\"\"%\"#E\"$O#\"%_F\"&3#
+R\"'K+m\")7*=G\"\"*Cy8#G\"+cy*)Rp\"-%y#=m')=\".W0-\\th&\"0G(4Kq!z\"=\"
+1si[Ugs`j\"3GxDl4(R^Q#\"43E,>ke?5d*\"6'\\5SWgc!z$)3%\"8Cm!p)\\O5aIA&=
+\"9;%)QZ$>TI6Z4())\";;%3x)\\z_x&)=AyW\"=K;a&yjK')G>k8mP#\"?Gt#ei(>RbzW
+k5!GK\"\"@KgRKx_j*\\(Hnr3]q(\"B_zNN$o#eDdE,!e8W(o%\"Dkoz0?Q9xZ*4L+Ra+t
+H\"FciXN:**es=tnhPJ.'ei>\"HC--[(*\\q_L\"oddi/%fwjM\"\"I%=`m=B?\"GGdk:5
+=)[kj\\e*\"Ko^8g<uh:OLi5>9E^/Mtrq\"M#**G)f\")p()[)4#G*4w#fy\"\\8[0S&\"
+O)3&=W1Xj!\\B#p#=sMLx%G_q4kU\"Q3e`O)*o$H0Fu%y4'*)el37W%\\<xM\"S'Hz-eMI
+\\YOPmon=1#HD8Uu#)[DH\"U/nd\"e+^0hUR<]SM4))HATKs\"G1PD\"W'\\e'>,u7-pY#
+Hao#z/HUNN(*z!o&)eE#\"Ycq.x'=hEzg)fFqV?r8E9JHu\\0)\\B3#\"ens1!zW!p5e?_
+<1e)*y::)o\"=Ln]gN`en>\"gnoN,wob1SU!z2;!o?kjKGh'Q/8!*Q6!35>\"in7h]GK#[
+X&>(f8Nmw^aTKgd\\\\,w)[37q.>" }}}{PARA 0 "" 0 "" {TEXT -1 28 "This app
+ears to be sequence " }{TEXT 273 5 "M3613" }{TEXT -1 8 " of the " }
+{TEXT 274 33 "Encyclopedia of Integer Sequences" }{TEXT -1 241 " and i
+t corresponds to \"Schroeder's fourth problem\". When the count is not
+ too large, we can do exhaustive listings. This is made possible by Co
+mbstruct that is able to build canonical forms and generate elements u
+nder unique standard forms." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+54 "for j to 4 do map(lreduce,allstructs(hier,size=j)) od;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#7#&%\"ZG6#\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7#<$&%\"ZG6#\"\"#&F&6#\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7&<$<$&%\"ZG6#\"\"\"&F'6#\"\"$&F'6#\"\"#<$F*<$F-F&<%F-F
+&F*<$<$F-F*F&" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7<<$&%\"ZG6#\"\"\"<%&
+F&6#\"\"#&F&6#\"\"%&F&6#\"\"$<$F%<$F*<$F-F0<$F0<%F*F-F%<$F%<$F0<$F*F-<
+$F%<$<$F*F0F-<$F5<$F*F%<$F*<$<$F%F0F-<$F*<%F-F%F0<$F0<$F-F?<%F-F0F?<%F
+*F%F5<%FBF*F-<$<$F=F%F-<$F*<$F%F5<&F*F-F%F0<$<%F*F%F0F-<$<$F0F?F-<$F=<
+$F-F%<$FBF:<$F*<$F0FT<%F=F-F%<$F0<$F*FT<$F0<$F%F:<%F%F0F:<$<$FBF*F-<%F
+*F0FT" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 19 "Asymptotic analysis" }
+}{PARA 0 "" 0 "" {TEXT -1 40 "We get generating function equations by \+
+" }{HYPERLNK 17 "combstruct[gfeqns]" 2 "combstruct[gfeqns]" "" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "gfeqns(op(2..3,hier),z);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#7$/-%\"ZG6#%\"zGF(/-%\"HGF',*F%\"\"\"-
+%$expG6#F*F-!\"\"F-F*F1" }}}{PARA 0 "" 0 "" {TEXT -1 4 "And " }
+{HYPERLNK 17 "combstruct[gfsolve]" 2 "combstruct[gfsolve]" "" }{TEXT 
+-1 50 " attempts different strategies to solve the system" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "gfsolve(op(2..3,hier),z);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#<$/-%\"ZG6#%\"zGF(/-%\"HGF',(-%)LambertWG6#,
+$-%$expG6#,&F(#\"\"\"\"\"##!\"\"F7F6F8F9F(F5F8F6" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 22 "The solution involves " }{HYPERLNK 17 "Lambert's W
+ function" 2 "LambertW" "" }{TEXT -1 63 " that is known to Maple: by d
+efinition, this is the solution of" }}{PARA 264 "" 0 "" {XPPEDIT 18 0 
+"W(z)*exp(W(z))=z" "/*&-%\"WG6#%\"zG\"\"\"-%$expG6#-F%6#F'F(F'" }
+{TEXT -1 1 "." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "H_z:=subs(\",H(z))
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$H_zG,(-%)LambertWG6#,$-%$expG6
+#,&%\"zG#\"\"\"\"\"##!\"\"F1F0F2F3F.F/F2F0" }}}{PARA 0 "" 0 "" {TEXT 
+-1 73 "Objects being labelled, this is an exponential generating funct
+ion (EGF)." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "H_ztayl:=serie
+s(H_z,z=0,20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%(H_ztaylG+K%\"zG\"
+\"\"\"\"\"#F'\"\"#\"\"##F*\"\"$\"\"$#\"#8\"#7\"\"%#\"#f\"#I\"\"&#\"$s
+\"\"#X\"\"'#\"%,\\\"$I'\"\"(#\"&8.\"F=\"\")#\"'\"f+%\"&S8\"\"\"*#\"(2o
+\"))\"'+M6\"#5#\")w*3r#\"'Df:\"#6#\"+`X&RZ\"\"(+Au$\"#7#\",B#Rb)Q%\")+
+'['[\"#8#\"-8W$*>,r\"*+-aS$\"#9#\"/Jn<@'4C\"\"++:0aD\"#:#\"/jRtIW$e$\"
+++![M9$\"#;#\"1<[U\"z*pY$*\"-+S+^tM\"#<#\"3xOEBO)yi*>\".+g.fh7$\"#=#\"
+3^P@/Ad*p&p\".+!o;+pX\"#>-%\"OG6#F'\"#?" }}}{PARA 0 "" 0 "" {TEXT -1 
+79 " As usual, we also obtain the corresponding ordinary generating fu
+nctions by a " }{HYPERLNK 17 "Laplace transform" 2 "inttrans[laplace]
+" "" }{TEXT -1 32 " applied to the series expansion" }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 58 "series(subs(w=1/w,w*inttrans[laplace](H_zta
+yl,z,w)),w,20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+I%\"wG\"\"\"\"\"\"
+F%\"\"#\"\"%\"\"$\"#E\"\"%\"$O#\"\"&\"%_F\"\"'\"&3#R\"\"(\"'K+m\"\")\"
+)7*=G\"\"\"*\"*Cy8#G\"#5\"+cy*)Rp\"#6\"-%y#=m')=\"#7\".W0-\\th&\"#8\"0
+G(4Kq!z\"=\"#9\"1si[Ugs`j\"#:\"3GxDl4(R^Q#\"#;\"43E,>ke?5d*\"#<\"6'\\5
+SWgc!z$)3%\"#=-%\"OG6#F%\"#>" }}}{PARA 0 "" 0 "" {TEXT -1 68 "The resu
+lt is then directly comparable to the counting coefficients:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "seq(count(hier,size=j),j=1..
+18);" }}{PARA 12 "" 1 "" {XPPMATH 20 "64\"\"\"F#\"\"%\"#E\"$O#\"%_F\"&
+3#R\"'K+m\")7*=G\"\"*Cy8#G\"+cy*)Rp\"-%y#=m')=\".W0-\\th&\"0G(4Kq!z\"=
+\"1si[Ugs`j\"3GxDl4(R^Q#\"43E,>ke?5d*\"6'\\5SWgc!z$)3%" }}}{PARA 0 "" 
+0 "" {TEXT -1 155 "In order to analyse the number of hierarchies, we m
+ust find the dominant singularity of their generating function. A plot
+ detects a vertical slope near 0.4" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "plot(H_z,z=0..1);" }}{PARA 13 "" 1 "" {INLPLOT "6%-%'
+CURVESG6$797$\"\"!F(7$$\"+;arz@!#6$\"*4(=/A!#57$$\"+XTFwSF,$\"*z#>kTF/
+7$$\"+\"z_\"4iF,$\"*`'p>kF/7$$\"+S&phN)F,$\"*&eV]()F/7$$\"+*=)H\\5F/$
+\"+L+o86F/7$$\"+[!3uC\"F/$\"+!4g:M\"F/7$$\"+J$RDX\"F/$\"+B22&e\"F/7$$
+\"+)R'ok;F/$\"+kQ2Y=F/7$$\"+1J:w=F/$\"+Y1!p6#F/7$$\"+3En$4#F/$\"+;ZY3C
+F/7$$\"+/RE&G#F/$\"+VW<yEF/7$$\"+D.&4]#F/$\"+b+H**HF/7$$\"+vB_<FF/$\"+
+(f(*[M$F/7$$\"+v'Hi#HF/$\"+O.[1PF/7$$\"+(y#*4-$F/$\"+`YX#)QF/7$$\"+(*e
+v:JF/$\"+dOenSF/7$$\"+.%Q%GKF/$\"+48>-VF/7$$\"+347TLF/$\"+*3Wnb%F/7$$
+\"+rxdOMF/$\"+nV.$z%F/7$$\"+LY.KNF/$\"+go^b]F/7$$\"+\"o7Tv$F/$\"++Hzpe
+F/7$%%FAILGF_r-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+AXESLABELSG6$%\"zG%!G
+-%%VIEWG6$;F($\"\"\"F(%(DEFAULTG" 2 264 264 264 2 0 1 0 2 9 0 4 2 
+1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+0 0 0 0 0 0 0 0 0 0 }}}{PARA 0 "" 0 "" {TEXT -1 137 "Here is a cute wa
+y to get the singularity \"automatically\".  We express that the funct
+ion ceases to be differentiable at its singularity. " }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 12 "diff(H_z,z);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,&*&-%)LambertWG6#,$-%$expG6#,&%\"zG#\"\"\"\"\"##!\"\"F
+0F/F1F/,&F/F/F%F/F2F1F.F/" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "rho:=solve(denom(\")=0); evalf(rho,
+30);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$rhoG,&!\"\"\"\"\"-%#lnG6#\"
+\"#F+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\">#HCkW$)=1*)>6O%H'Q!#H" }}
+}{PARA 0 "" 0 "" {TEXT -1 106 "Next, we know that the singular expansi
+on determines the asymptotic form of coefficients. Thus, we look at" }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "H_s:=subs(z=rho*(1-Delta^2)
+,H_z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$H_sG,(-%)LambertWG6#,$-%$
+expG6#,&*&,&!\"\"\"\"\"-%#lnG6#\"\"#F5F1,&F1F1*$%&DeltaGF5F0F1#F1F5#F0
+F5F1F:F0F.F9F:F1" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 68 "H_sing:
+=map(simplify,series(H_s,Delta=0,5));Delta=sqrt(``(1-z/rho));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'H_singG+-%&DeltaG-%#lnG6#\"\"#\"\"!
+,$*$,&!\"\"\"\"\"F'F*#F0F*F/\"\"\",&#F0\"\"'F0F'#F/\"\"$\"\"#,$*$F.#F7
+F*#F/\"#O\"\"$-%\"OG6#F0\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%&De
+ltaG*$-%!G6#,&\"\"\"F**&%\"zGF*,&!\"\"F*-%#lnG6#\"\"#F2F.F.#F*F2" }}}
+{PARA 0 "" 0 "" {TEXT -1 136 "With this, we can get an asymptotic expa
+nsion for coefficients to any order, which is an interesting fact per \+
+se. Here is the first one:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+131 "H_n_asympt:=n!*asympt(coeff(H_sing,Delta,1)*rho^(-n)*subs(\{cos(P
+i*n)=1,O=0\},simplify(asympt(binomial(1/2,n),n,2))),n);\nevalf(\",20);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+H_n_asymptG,$*,-%*factorialG6#%
+\"nG\"\"\",&!\"\"F+-%#lnG6#\"\"#F1#F+F1%#PiG#F-F1*$F*F-#\"\"$F1)F,F*F-
+F2" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$**%\"nG\"\"\"-%&GAMMAG6#F%F&*$
+F%!\"\"#\"\"$\"\"#)$\"4)=1*)>6O%H'Q!#>F%F+$\"58lT$)\\/?H`<!#?" }}}
+{PARA 0 "" 0 "" {TEXT -1 20 "And for n=50, we get" }}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 73 "round(evalf(subs(n=50,H_n_asympt),20)); count
+(hier,size=50); evalf(\"\"/\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"]
+p+++++++++++++++++++++++++++++++(y\"okm.Ct+o" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"]pw4ZPlj'*oyfv=q=n$4$=N1^R$4zu\")zgOw&*[Z!R(R<,+&o" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"++[2G**!#5" }}}{PARA 0 "" 0 "" 
+{TEXT -1 29 "The error is of about 1% for " }{XPPEDIT 18 0 "n=50" "/%
+\"nG\"#]" }{TEXT -1 115 ". A complete asymptotic expansion can be obta
+ined by this method, by taking successive singular terms into account.
+" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT 261 35 "The number of classificati
+on stages" }}{PARA 0 "" 0 "" {TEXT -1 256 "We examine the number of in
+ternal nodes in a classification. This corresponds to the number of cl
+asses actually created. The idea is to make use of \"marks\" in the fo
+rm of Epsilon structures that have size 0 (and thus do not affect the \+
+combinatorial model)." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 73 "hie
+r2:=[H,\{H=Union(Z,Prod(class,Set(H,card>1))),class=Epsilon\},labelled
+]:" }}}{PARA 0 "" 0 "" {TEXT -1 49 "Such marks do not affect the combi
+natorial model:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "seq(count
+(hier,size=j),j=0..11);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6.\"\"!\"\"\"
+F$\"\"%\"#E\"$O#\"%_F\"&3#R\"'K+m\")7*=G\"\"*Cy8#G\"+cy*)Rp" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "seq(count(hier2,size=j),j=0.
+.11);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6.\"\"!\"\"\"F$\"\"%\"#E\"$O#\"
+%_F\"&3#R\"'K+m\")7*=G\"\"*Cy8#G\"+cy*)Rp" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 63 "(We change the formatting procedure to take Prod into acc
+ount.)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 96 "lreduce:=proc(e) \+
+eval(subs(\{Set=proc() \{args\} end, Sequence=proc() [args] end, Prod=
+``\},e)) end:" }}}{PARA 0 "" 0 "" {TEXT -1 66 "Here is a random object
+ with \"class\" marking classification nodes:" }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 29 "lreduce(draw(hier2,size=20));" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#-%!G6$%&classG<%-F$6$F&<$-F$6$F&<$-F$6$F&<%-F$6$F&<%&
+%\"ZG6#\"#5&F56#\"#<-F$6$F&<$&F56#\"#>-F$6$F&<$&F56#\"#6&F56#\"#7-F$6$
+F&<$&F56#\"#:-F$6$F&<%-F$6$F&<%&F56#\"\"%&F56#\"\"(-F$6$F&<$&F56#\"\"$
+&F56#\"#8-F$6$F&<$&F56#\"\"'&F56#\"#9-F$6$F&<$&F56#\"#?&F56#\"\"*-F$6$
+F&<$&F56#\"#=&F56#\"#;&F56#\"\"#&F56#\"\"&&F56#\"\"\"&F56#\"\")" }}}
+{PARA 0 "" 0 "" {TEXT -1 94 "The system determined by equations over b
+ivariate generating functions can be solved by Maple:" }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 37 "gfeqns(op(2..3,hier2),z,[[u,class]]);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#7%/-%\"ZG6$%\"zG%\"uGF(/-%&classGF'F)/
+-%\"HGF',&F%\"\"\"*&F+F1,(-%$expG6#F.F1!\"\"F1F.F7F1F1" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "H_zu:=solve(H=z+u*(exp(H)-1-H),H);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%H_zuG*&,*-%)LambertWG6#,$*(%\"u
+G\"\"\",&F-F-F,F-!\"\"-%$expG6#*&,&%\"zGF-F,F/F-F.F/F-F/F/*&F'F-F,F-F/
+F5F-F,F/F-F.F/" }}}{PARA 0 "" 0 "" {TEXT -1 37 "One gets averages by d
+ifferentiation:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "H1_z:=sub
+s(u=1,diff(H_zu,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%H1_zG,(**-%
+)LambertWG6#,$-%$expG6#,&%\"zG#\"\"\"\"\"##!\"\"F2F1F3F1,&F1F1F'F1F4F+
+F4,&F+#F4\"\"%*&,&F7F1F/F7F1F+F1F3F1F2F7F1F/F7" }}}{PARA 0 "" 0 "" 
+{TEXT -1 78 "Numerically, the mean number of nodes in a random classif
+ication tree of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 18 ", w
+hen divided by " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 9 ", is for \+
+" }{XPPEDIT 18 0 "n=1..20" "/%\"nG;\"\"\"\"#?" }{TEXT -1 1 "," }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 89 "Digits:=5: evalf(series(H1_z
+,z=0,22)): seq(coeff(\",z,j)/count(hier,size=j)/j*j!,j=1..20);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "66\"\"!$\"&++&!\"&$\"&O$eF&$\"&jM'F&$\"&
+5m'F&$\"&F(oF&$\"&[-(F&$\"&(QrF&$\"&rA(F&$\"&!*H(F&$\"&nN(F&$\"&jS(F&$
+\"&pW(F&$\"&C[(F&$\"&M^(F&$\"&)RvF&$\"&Mc(F&$\"&\\e(F&$\"&Rg(F&$\"&1i(
+F&" }}}{PARA 0 "" 0 "" {TEXT -1 58 "This suggests that a random classi
+fication may have about " }{XPPEDIT 18 0 "0.76*n" "*&$\"#w!\"#\"\"\"%
+\"nGF&" }{TEXT -1 23 " classification stages." }}{PARA 0 "" 0 "" 
+{TEXT -1 96 "We can in fact analyse this rigorously, using the asympto
+tic method already employed for counts." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 205 "H1_s:=subs(z=rho*(1-Delta^2),H1_z):\nH1_sing:=map(si
+mplify,series(H1_s,Delta=0,5));\nH1_n_asympt:=n!*asympt(coeff(H1_sing,
+Delta,-1)*rho^(-n)*subs(\{cos(Pi*n)=1,O=0\},simplify(asympt(binomial(-
+1/2,n),n,2))),n);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(H1_singG++%&De
+ltaG,$*&,&-%#lnG6#\"\"#\"\"\"!\"\"F.F.,&F/F.F*F-#F/F-F1!\"\",&F*#F/\"
+\"'#F/\"\"$F.\"\"!,$*&,(F*!#:*$F*F-F-\"\"(F.F.F0F1#F/\"#C\"\"\"-%\"OG6
+#F.\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%,H1_n_asymptG,$*.-%*fact
+orialG6#%\"nG\"\"\",&-%#lnG6#\"\"#F+!\"\"F+F+,&F1F+F-F0#F1F0%#PiGF3*$F
+*F1#F+F0)F2F*F1F3" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "C_clas
+sif:=asympt(H1_n_asympt/H_n_asympt,n,1); evalf(\",20);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%*C_classifG,$*(,&-%#lnG6#\"\"#\"\"\"!\"\"F,F,,&F
+-F,F(F+F-%\"nGF,F-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$%\"nG$\"5Z:\\/
+\"yC(\\Vz!#?" }}}{PARA 0 "" 0 "" {TEXT -1 40 "Thus, we have obtained (
+easily!)  a new " }{TEXT 262 7 "Theorem" }{TEXT -1 2 ". " }{TEXT 263 
+102 "In a random classification tree, the number of classification sta
+ges (internal nodes) is asymptotic to" }{TEXT -1 1 " " }}{PARA 258 "" 
+0 "" {XPPEDIT 18 0 "-(log(2)-1)/(2*log(2)-1)*n=0.794349724*n" "/,$*(,&
+-%$logG6#\"\"#\"\"\"\"\"\"!\"\"F*,&*&\"\"#F*-F'6#\"\"#F*F*\"\"\"F,F,%
+\"nGF*F,*&$\"*C(\\Vz!\"*F*F4F*" }{TEXT -1 1 "." }}}{SECT 1 {PARA 4 "" 
+0 "" {TEXT 264 38 "Degrees in random classification trees" }}{PARA 0 "
+" 0 "" {TEXT -1 310 "The corresponding generating functions are now ou
+tside of the range of implicit functions that Maple knows about. Thus,
+ a separate mathematical analysis is needed. However, an empirical ana
+lysis based on small sizes is already quite informative. The following
+ code builds a specification where nodes of degree " }{XPPEDIT 18 0 "k
+" "I\"kG6\"" }{TEXT -1 65 " are marked. The principle is the obvious s
+et-theoretic equation " }}{PARA 262 "" 0 "" {XPPEDIT 18 0 "Set(X)=Unio
+n(Set(X,card<k),Set(X,card=k),Set(X,card>=k" "/-%$SetG6#%\"XG-%&UnionG
+6%-F$6$F&2%%cardG%\"kG-F$6$F&/F-F.-F$6$F&1F.F-" }{TEXT -1 1 "." }}
+{PARA 0 "" 0 "" {TEXT -1 170 "The code uses combstruct[gfeqns] to gene
+rate the system of equations for each  degree that is then  expanded. \+
+In passing, it prints the corresponding generating function:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 440 "deg_hier:=proc(k) local j,s
+pec,n,dHH;\n    spec:=[H,\{\n        H=Union(Z,Union(Set(H,card>k)),Pr
+od(classif,Set(H,card=k)),seq(Set(H,card=j),j=2..k-1)),\n        class
+if=Epsilon\},labelled];\n    dHH:=subs(u=1,diff(RootOf(subs(\{Z(z,u)=z
+,classif(z,u)=u,H(z,u)=H\},\n        H(z,u)=subs(gfeqns(op(2..3,spec),
+z,[[u,classif]]),H(z,u))),H),u));\n    print(dHH);\n    seq(evalf(coef
+f(series(subs(u=1,dHH),z,27),z,n)/count(spec,size=n)*n!/n,5),n=1..25)
+\nend:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "deg_hier(2);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-%'RootOfG6#,*%#_ZG\"\"%%\"zG!\"#-%$
+expG6#F(F+\"\"#\"\"\"F/,&F)F0-F-6#F$F+!\"\"" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6;\"\"!$\"&++&!\"&F$$\"&&)G&F&$\"&hY&F&$\"&ve&F&$\"&an&F&
+$\"&>u&F&$\"&Sz&F&$\"&e$eF&$\"&-(eF&$\"&*)*eF&$\"&L#fF&$\"&U%fF&$\"&B'
+fF&$\"&#yfF&$\"&A*fF&$\"&Z+'F&$\"&f,'F&$\"&g-'F&$\"&^.'F&$\"&M/'F&$\"&
+50'F&$\"&!egF&$\"&W1'F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "
+deg_hier(3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-%'RootOfG6#,*%#_ZG
+\"#7%\"zG!\"'-%$expG6#F(F+\"\"'\"\"\"\"\"$,&F)F0-F-6#F$F+!\"\"" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6;\"\"!F#$\"&LL)!\"'$\"&ah*F&$\"&$f5!\"&
+$\"&M7\"F+$\"&*o6F+$\"&G?\"F+$\"&\"H7F+$\"&,D\"F+$\"&sE\"F+$\"&:G\"F+$
+\"&NH\"F+$\"&QI\"F+$\"&FJ\"F+$\"&0K\"F+$\"&uK\"F+$\"&NL\"F+$\"&!R8F+$
+\"&RM\"F+$\"&%[8F+$\"&CN\"F+$\"&hN\"F+$\"&&f8F+$\"&EO\"F+" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "deg_hier(4);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*&-%'RootOfG6#,*%#_ZG\"#[%\"zG!#C-%$expG6#F(F+\"#C\"\"
+\"\"\"%,&F)F0-F-6#F$F+!\"\"" }}{PARA 12 "" 1 "" {XPPMATH 20 "6;\"\"!F#
+F#$\"&ah*!\"($\"&7F\"!\"'$\"&Q[\"F)$\"&Bj\"F)$\"&Cu\"F)$\"&s#=F)$\"&Z*
+=F)$\"&(\\>F)$\"&a*>F)$\"&R.#F)$\"&o1#F)$\"&`4#F)$\"&-7#F)$\"&A9#F)$\"
+&<;#F)$\"&\"z@F)$\"&Z>#F)$\"&*3AF)$\"&<A#F)$\"&NB#F)$\"&UC#F)$\"&TD#F)
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "deg_hier(5);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#*&-%'RootOfG6#,*%#_ZG\"$S#%\"zG!$?\"-%$expG6
+#F(F+\"$?\"\"\"\"\"\"&,&F)F0-F-6#F$F+!\"\"" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6;\"\"!F#F#F#$\"&YZ)!\")$\"&=F\"!\"($\"&8e\"F)$\"&N\"=F)$
+\"&W*>F)$\"&$R@F)$\"&!eAF)$\"&qN#F)$\"&3W#F)$\"&F^#F)$\"&^d#F)$\"&(HEF
+)$\"&yn#F)$\"&2s#F)$\"&\"fFF)$\"&Oz#F)$\"&[#GF)$\"&L&GF)$\"&#zGF)$\"&I
+!HF)$\"&\\#HF)" }}}{PARA 0 "" 0 "" {TEXT -1 32 "Thus a random classifi
+cation on " }{XPPEDIT 18 0 "n  " "I\"nG6\"" }{TEXT -1 40 " elements se
+ems to have on average about" }}{PARA 16 "" 0 "" {TEXT -1 6 "about " }
+{XPPEDIT 18 0 "0.6*n" "*&$\"\"'!\"\"\"\"\"%\"nGF&" }{TEXT -1 14 " bina
+ry nodes;" }}{PARA 16 "" 0 "" {TEXT -1 6 "about " }{XPPEDIT 18 0 "0.14
+*n " "*&$\"#9!\"#\"\"\"%\"nGF&" }{TEXT -1 15 " ternary nodes;" }}
+{PARA 16 "" 0 "" {TEXT -1 6 "about " }{XPPEDIT 18 0 "0.02*n " "*&$\"\"
+#!\"#\"\"\"%\"nGF&" }{TEXT -1 18 " quaternary nodes." }}{PARA 0 "" 0 "
+" {TEXT -1 106 "These results are consistent with the proved result th
+at the total number of internal nodes is on average " }{XPPEDIT 18 0 "
+0.79*n" "*&$\"#z!\"#\"\"\"%\"nGF&" }{TEXT -1 257 ". The simple pattern
+ revealed by this computation suggests a formal proof (by singularity \+
+analysis) that the distribution of degrees in fact obeys a modified Po
+isson law. The following theorem, first found while developing this wo
+rksheet, appears to be new:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT 268 7 "Theorem" }{TEXT -1 2 ". " }{TEXT 269 74 "The pr
+obability that a random internal node in a random hierarchy of size " 
+}{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 282 12 " has degree " }{XPPEDIT 
+270 0 "k" "I\"kG6\"" }{TEXT 271 49 " satisfies asymptotically a trunca
+ted Poisson law" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 130 "tau:=sqr
+t(2*log(2)-1);\nS:=expand(sum(exp(-tau)*tau^(k-1)/(k-1)!,k=2..infinity
+));\nPr(deg=k)=normal(1/S*exp(-tau)*tau^(k-1)/(k-1)!);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%$tauG*$,&!\"\"\"\"\"-%#lnG6#\"\"#F,#F(F," }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"SG,&\"\"\"F&*$-%$expG6#*$,&!\"\"F&
+-%#lnG6#\"\"#F1#F&F1F-F-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%#PrG6#/
+%$degG%\"kG*,-%$expG6#*$,&!\"\"\"\"\"-%#lnG6#\"\"#F5#F1F5F1-F,6#,$F.F0
+F1)F.,&F)F1F0F1F1,&F+F1F0F1F0-%*factorialG6#F;F0" }}}{PARA 261 "" 0 "
+" {TEXT -1 49 "Equivalently, the mean number of nodes of degree " }
+{XPPEDIT 18 0 "k>=2" "1\"\"#%\"kG" }{TEXT -1 17 " is asymptotic to" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "C_classif/S*exp(-tau)*tau^(k
+-1)/(k-1)!;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*0,&-%#lnG6#\"\"#\"\"
+\"!\"\"F*F*,&F+F*F&F)F+%\"nGF*,&F*F**$-%$expG6#*$F,#F*F)F+F+F+-F16#,$F
+3F+F*)F3,&%\"kGF*F+F*F*-%*factorialG6#F9F+F+" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT 272 30 "Numerically, this evaluates to" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 24 "evalf([seq(\",k=2..10)]);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#7+,$%\"nG$\"+MA.Hd!#5,$F%$\"+l2P!y\"F(,$F%$\"+x!)[)o$!#
+6,$F%$\"+jlAJd!#7,$F%$\"+@2@Cr!#8,$F%$\"+q;!)zt!#9,$F%$\"+q>[_l!#:,$F%
+$\"+@5n!4&!#;,$F%$\"+us`:N!#<" }}}{PARA 0 "" 0 "" {TEXT -1 148 "These \+
+figures are consistent with what was found on sizes near 20. They show
+ that nodes of degree 5 and higher have negligible chances of occurrin
+g." }}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 18 "Alternative models" }}
+{SECT 1 {PARA 4 "" 0 "" {TEXT -1 22 "Unlabelled hierarchies" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 71 "A number of related models can be similar
+ly analyzed. We examine here:\n" }}{PARA 16 "" 0 "" {TEXT -1 264 "Unla
+belled hierarchies: these represent the types of trees when one consid
+ers the elements to be classified as \"indistinguishable\". What we ob
+tain is then reminiscent of chemical molecules (with an unrealistic el
+ement that would be capable of an arbitray valency)." }}{PARA 16 "" 0 
+"" {TEXT -1 97 "Planar hierarchies, where one distinguishes the order \+
+between decsendents of classification node." }}{PARA 0 "" 0 "" {TEXT 
+-1 101 "\nFor unlabelled, hierarchies, we just need to change the qual
+ifier of specifications to \"unlabelled\"." }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 49 "hier4:=[H,\{H=Union(Z,Set(H,card>1))\},unlabelled]:
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 114 "ureduce:=proc(e) eval(
+subs(\{Set=proc() \{[args]\} end,Prod=proc() ``(args) end, Sequence=pr
+oc() [args] end\},e)) end:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+29 "ureduce(draw(hier4,size=20));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<
+#7$<#7$<#7'<#7%%\"ZGF+<#7$F+<#7$F+F+<#7%F+F+F+F+F+F+<#7%F+F+F.<#7$F.F,
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 205 "Notice that internally, the \+
+setting up of counting tables is more complex as it involves a fragmen
+t of Polya's theory. The counting results grow much more slowly, since
+ we distinguish fewer configurations." }}{PARA 0 "> " 0 "" {MPLTEXT 1 
+0 33 "seq(count(hier4,size=j),j=0..30);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6A\"\"!\"\"\"F$\"\"#\"\"&\"#7\"#L\"#!*\"$h#\"$m(\"%7B\"%oq\"&l>#\"
+&a*o\"'^(=#\"'M&*p\"(wOD#\"()y0t\")Vn\"Q#\")-O-y\"*^(QnD\"*kG:[)\"+sp*
+>\"G\"+klO`$*\",\"Q)3/7$\"-q+i%Q/\"\"-:o&[1]$\".c>O$pw6\".?B+_P'R\"/!o
+'yB'yL\"\"/@6l)eR_%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 57 "for \+
+j to 6 do j,map(ureduce,allstructs(hier4,size=j)) od;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$\"\"\"7#%\"ZG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$
+\"\"#7#<#7$%\"ZGF'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$7$<#7%%\"ZG
+F'F'<#7$F'<#7$F'F'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%7'<#7%%\"ZG
+F'<#7$F'F'<#7$F(F(<#7&F'F'F'F'<#7$F'<#7$F'F(<#7$<#7%F'F'F'F'" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6$\"\"&7.<#7%%\"ZGF'<#7$F'<#7$F'F'<#7$F*F(<#7$
+<#7$F*F*F'<#7$F'<#7&F'F'F'F'<#7'F'F'F'F'F'<#7%<#7%F'F'F'F'F'<#7$<#7%F'
+F'F*F'<#7$F'<#7$F'F(<#7$F:F*<#7&F'F'F'F*<#7%F'F*F*<#7$F'<#7$F:F'" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6$\"\"'7C<#7$<#7%%\"ZGF)<#7$F)<#7$F)F)F)
+<#7$<#7$F,F*F)<#7$<#7%F)F)F)F*<#7%F)F)<#7$F)F*<#7$F*F*<#7%F)F)<#7$F4F)
+<#7$F,F8<#7$<#7%F)F)F,F,<#7$F)<#7&F)F)F)F,<#7$<#7$<#7$F,F,F)F)<#7&F4F)
+F)F)<#7%F4F)F,<#7$F4F4<#7$F,<#7&F)F)F)F)<#7$F)<#7$F)F8<#7$F)<#7$F)FX<#
+7%FDF)F)<#7%FNF)F)<#7$F)<#7'F)F)F)F)F)<#7$F)<#7$F)F><#7&F)F)F,F,<#7$FN
+F,<#7'F)F)F)F)F,<#7$F)<#7$F4F,<#7%F)F,F*<#7$F)<#7%F)F,F,<#7%F,F,F,<#7$
+F,F><#7$F)<#7%F4F)F)<#7&F)F)F)F*<#7$F)<#7$FDF)<#7(F)F)F)F)F)F)<#7%F)F)
+FX" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 18 "Planar hierarchies" }}
+{PARA 0 "" 0 "" {TEXT -1 73 "We only need to change Set into Sequence \+
+to get the right classification:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 54 "hier5:=[H,\{H=Union(Z,Sequence(H,card>1))\},unlabelled]:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 114 "ureduce:=proc(e) eval(subs(
+\{Set=proc() \{[args]\} end,Prod=proc() ``(args) end, Sequence=proc() \+
+[args] end\},e)) end:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "ur
+educe(draw(hier5,size=50));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7$7'%\"
+ZGF%7$F%F%F%7$7%F%F%7%7'F%F%7&F%F%F%F&F%7%F&F%7%F%F%F%F%F&7$7$7$F%7$F%
+7$F&F%7%7&F-7&F-F%F%F%F%F%7$7$F&F&F2F%F%F%" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 24 "The counting sequence is" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 33 "seq(count(hier5,size=j),j=0..30);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6A\"\"!\"\"\"F$\"\"$\"#6\"#X\"$(>\"$.*\"%zU\"&$z?\"'\\I
+5\"'f)=&\"(Bnk#\")p)[O\"\")t$R5(\"*>Nps$\"+>:!)o>\",`$yNY5\",4I,4f&\"-
+jpUf,I\".(ee@O=;\".X/m4$f()\"/\")4gF[dZ\"0j%4x$f@f#\"1r[Yv;Y;9\"1XvVCQ
+tgx\"2dc[%Hr\\iU\"3$o=f$R2VYB\"4**)=.[X%zVH\"\"48=#*[X0.U:(\"5Dtc'**4f
+,9'R" }}}{PARA 0 "" 0 "" {TEXT -1 26 "This is found as Sequence " }
+{TEXT 265 6 "M2898 " }{TEXT -1 7 "in the " }{TEXT 266 33 "Encyclopedia
+ of Integer Sequences" }{TEXT -1 151 " by Sloane and Plouffe and is kn
+own as Schroeder's second sequence.This sequence has a dignified histo
+ry and Stanley noticed recently that the element " }{XPPEDIT 18 0 "cou
+nt(hier5,size=10)=  103049" "/-%&countG6$%&hier5G/%%sizeG\"#5\"'\\I5" 
+}{TEXT -1 82 " already appears in Plutarch's [AD50- AD120 (!)] biograp
+hical notes on Hipparchus." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+26 "gfsolve(op(2..3,hier5),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$/-
+%\"ZG6#%\"zGF(/-%\"HGF',(#\"\"\"\"\"%F.F(F-*$,(F.F.F(!\"'*$F(\"\"#F.#F
+.F4#!\"\"F/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "H5_z:=subs(
+\",H(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%H5_zG,(#\"\"\"\"\"%F'%
+\"zGF&*$,(F'F'F)!\"'*$F)\"\"#F'#F'F.#!\"\"F(" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 20 "series(H5_z,z=0,11);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+9%\"zG\"\"\"\"\"\"F%\"\"#\"\"$\"\"$\"#6\"\"%\"#X\"\"&
+\"$(>\"\"'\"$.*\"\"(\"%zU\"\")\"&$z?\"\"*\"'\\I5\"#5-%\"OG6#F%\"#6" }}
+}{PARA 0 "" 0 "" {TEXT -1 182 "Here is finally one quick way to obtain
+ a simple recurrence for these numbers: first guess the recurrence, th
+en check your guess. This, and many alternatives are encapsulated in t
+he " }{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT -1 9 " package." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 63 "with(gfun):\nlisttorec([seq(
+count(hier5,size=j),j=0..30)],u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#7$<&,**&,&%\"nG\"\"\"*$F(\"\"#!\"\"F)-%\"uG6#F(F)F)*&,&F(\"\"&F*\"\"
+(F)-F.6#,&F(F)F)F)F)F)*&,(!#=F)F(!#BF*!\"(F)-F.6#,&F(F)F+F)F)F)*&,(\"
+\"'F)F(F2F*F)F)-F.6#,&F(F)\"\"$F)F)F)/-F.6#F+F)/-F.6#\"\"!FL/-F.6#F)F)
+%$ogfG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "rectodiffeq(op(1,
+\"),u(n),Y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%/-%\"YG6#\"\"!F(/
+--%\"DG6#F&F'\"\"\",(-F&6#%\"zG!\"#*&,&F2\"\"#F6F.F.-%%diffG6$F0F2F.F.
+*&,**$F2\"\"$F.*$F2F6!\"(F2\"\"(!\"\"F.F.-F86$F7F2F.F." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "dsolve(\",Y(z));" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/-%\"YG6#%\"zG,(#\"\"\"\"\"%F*F'F)*$,(F*F*F'!\"'*$F'
+\"\"#F*#F*F0#!\"\"F+" }}}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 10 "Conclu
+sion" }}{PARA 0 "" 0 "" {TEXT -1 428 "Various models of random classif
+ication trees can be analysed both theoretically and empirically. Rand
+om generation is easy and the experiments lead to new conjectures (lik
+e the degree distribution) and even theorems (like the analysis of the
+ number of classification stages). Returning to statistics, some prope
+rties of random trees appear to be present accross all models: for ins
+tance nodes of even moderately large degrees, " }{XPPEDIT 18 0 "deg>=5
+" "1\"\"&%$degG" }{TEXT -1 219 ", are highly infrequent, and branching
+ is predominantly binary. General observations of this type may be use
+d to help distinguish classification trees without informational conte
+nt (\"random\" trees) from meaningful ones." }}}}{MARK "1 0" 0 }
+{VIEWOPTS 1 1 0 3 2 1804 }

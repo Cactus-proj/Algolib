@@ -1,0 +1,73 @@
+table.main {
+    border: solid;
+    padding: 10px;
+    border-spacing: 0px;
+    border-collapse: collapse
+}
+
+table.profile {
+    padding: 4px;
+    border-spacing: 0px;
+    border-collapse: collapse
+}
+
+td {
+    padding: 10px;
+    border: solid;
+}
+
+th {
+    padding: 10px;
+    border: solid;
+}
+
+
+td.profile {
+    border-width: 0px;
+}
+
+td.pprofile {
+    padding: 0px;
+    background-color: green;
+    border-bottom-width: 5px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+td.fail {
+    background-color: red;
+    border-color: red;
+}
+
+td.not_run {
+    background-color: grey;
+    border-color: grey;
+}
+
+
+td.success {
+    background-color: green;
+    padding: 10px;
+    border: solid;
+}
+
+td.time_success {
+    background-color: green;
+    padding: 10px;
+    border: solid;
+    border-right-width: 1px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}
+
+td.profile_success {
+    background-color: green;
+    padding: 10px;
+    border: solid;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 1px;
+}

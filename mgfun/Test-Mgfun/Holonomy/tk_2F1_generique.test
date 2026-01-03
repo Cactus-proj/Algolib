@@ -1,0 +1,29 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+A:=diff_algebra([Ds,s],[Dx,x],comm={alpha,beta,delta}):
+G:=hypergeom_to_dfinite((1-x*s)^(-alpha)*s^(beta-1)*(1-s)^(delta-beta-1),A):
+B:=diff_algebra([Dx,x],comm={alpha,beta,delta,s},polynom=s):
+T:=MonomialOrder(B,lexdeg([s],[Dx]),[s]):
+holon_defint(G,A,[s],T):
+if nops(%)=1 and remove(member,remove(member,
+[Dx*delta-x*Dx*beta+Dx^2*x-Dx^2*x^2-Dx*x-beta*alpha-Dx*alpha*x]
+,%),-%)=[] then okay else % fi;

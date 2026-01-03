@@ -1,0 +1,70 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 13 "gfun[gftypes]" }
+{TEXT 30 52 " - describes available types of generating functions" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 315 "A generating function is an analytic encoding of numerical data. It is a formal power series which can be manipulated algebraically in ways which parallel the manipulation of the (often combinatorial) objects they represent. The package gfun recognises several different ways to represent the information in a list " }
+{TEXT 35 1 "l" }
+{TEXT -1 1 "." }
+}
+{PARA 15 "> " 0 "" {TEXT -1 62 "The following types of generating functions are known in gfun:" }
+}
+{PARA 17 "> " 0 "wmitable" {TEXT -1 58 "ogf   egf   revogf   revegf   lgdogf   lgdegf   Laplace.  " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 5 "'ogf'" }
+{TEXT -1 95 " (ordinary generating function), then the coefficients are the elements of l. For example, the " }
+{TEXT 39 3 "ogf" }
+{TEXT -1 48 " which corresponds to the list [1,1,2,3,5,8] is " }
+{TEXT 35 27 "1+x+2*x^2+3*x^3+5*x^4+8*x^5" }
+{TEXT -1 2 ". " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 5 "'egf'" }
+{TEXT -1 45 " (exponential generating function), then the " }
+{TEXT 35 1 "i" }
+{TEXT -1 19 "-th coefficient is " }
+{TEXT 35 10 "op(i,l)/i!" }
+{TEXT -1 19 ". For example, the " }
+{TEXT 39 3 "egf" }
+{TEXT -1 51 " which corresponds to to the list [1,1,2,3,5,8] is " }
+{TEXT 35 39 "1+x+2*x^2/2!+3*x^3/3!+5*x^4/4!+8*x^5/5!" }
+{TEXT -1 2 ". " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 8 "'revogf'" }
+{TEXT -1 73 ", then the series is the reciprocal of the ordinary generating function. " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 8 "'revegf'" }
+{TEXT -1 76 ", then the series is the reciprocal of the exponential generating function. " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 8 "'lgdogf'" }
+{TEXT -1 85 ", then the series is the logarithmic derivative of the ordinary generating function. " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 8 "'lgdegf'" }
+{TEXT -1 88 ", then the series is the logarithmic derivative of the exponential generating function. " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 11 "If type is " }
+{TEXT 39 9 "'Laplace'" }
+{TEXT -1 11 ", then the " }
+{TEXT 35 1 "i" }
+{TEXT -1 18 "th coefficient is " }
+{TEXT 35 10 "op(i,l)*i!" }
+{TEXT -1 2 ". " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 57 "The user can define his own type by creating a procedure " }
+{TEXT 35 33 "gfun[``listtoseries/mytypeofgf``]" }
+{TEXT -1 112 ", which takes a list and a variable as input, and yields a series in this variable. This series must be of type " }
+{TEXT 35 6 "taylor" }
+{TEXT -1 52 ". In particular, it cannot have negative exponents. " }
+}
+
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "series" 2 "series" "" }{TEXT -1 3 ",  " }
+}
+}}

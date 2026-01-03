@@ -1,0 +1,63 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+with(Mgfun):
+
+# Integral of exp(-p*x)/sqrt(1-x^2)*T[n](x)
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p,func={u,v}):
+T:=MonomialOrder(A,tdeg(Sn,Dx)):
+f:=exp(-p*x)/sqrt(1-x^2):
+GB[1]:=Basis(hypergeom_to_dfinite(f,A),T):
+GB[2]:=Basis({(1-x^2)*Dx^2-x*Dx+n^2,Sn^2-2*x*Sn+1,
+    (1-x^2)*Dx*Sn+(n+1)*x*Sn-(n+1)},T):
+GB[prod]:=Basis(dfinite_mul([[GB[1],T],[GB[2],T]],T),T):
+if %=
+[-p*x^2-x+p-x^2*Dx+Dx-x*n+Sn*n, p^2*x^2+x^2*Dx^2+2*x^2*Dx*p+3*x*Dx+3*p*x-Dx^2-
+n^2-2*Dx*p+1-p^2]
+then okay else % fi;
+# Elimination by naive Groebner basis methods:
+A2:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p,polynom={n,x}):
+T2:=MonomialOrder(A2,tdeg(Sn,Dx,n,x)):
+GB2:=Basis(GB[prod],T2):
+collect(GB2,{Sn,Dx},distributed,factor):
+if %=
+[x-p+p*x^2+x*n+(x-1)*(x+1)*Dx-n*Sn, -n*(p*x+1+n)-Dx*x*n+p*n*Sn+Dx*n*Sn, n*(n+1
+)-2*x*n*(n+1)*Sn+n*(n+1)*Sn^2]
+then okay else % fi;
+HilbertDimension(GB2,T2):
+if %=2 then okay else % fi;
+A3:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p,polynom=x):
+T3:=MonomialOrder(A3,lexdeg([x],[Sn,Dx])):
+GB3:=Basis(GB[prod],T3):
+collect(GB3,{Sn,Dx},distributed,factor):
+if %=
+[-p-Dx+(-2*n-2)*Sn+Dx*Sn^2+p*Sn^2, -Dx*Sn+x*Dx-p*Sn+n+p*x+1, -Sn^2+2*x*Sn-1]
+then okay else % fi;
+A4:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p,polynom={n,x}):
+T4:=MonomialOrder(A4,lexdeg([x],[Sn,Dx,n])):
+GB4:=Basis(GB[prod],T4):
+collect(GB4,{Sn,Dx},distributed,factor):
+if %=
+[-p*n*(n+1)-n*(n+1)*Dx-2*n*(n+1)^2*Sn+n*(n+1)*Dx*Sn^2+p*n*(n+1)*Sn^2, n*(p*x+1
++n)+Dx*x*n-p*n*Sn-Dx*n*Sn, p*n+Dx*n+(2*n^2+3*n+2+p*x)*Sn+(-1-n)*Dx*Sn^2-p*(n+1
+)*Sn^2+x*Dx*Sn, -n*(n+1)+2*x*n*(n+1)*Sn-n*(n+1)*Sn^2, x-p+p*x^2+x*n+(x-1)*(x+1
+)*Dx-n*Sn]
+then okay else % fi;

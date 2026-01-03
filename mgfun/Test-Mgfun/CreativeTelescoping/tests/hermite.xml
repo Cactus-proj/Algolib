@@ -1,0 +1,46 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  
+  <!-- Mehler formula for Hermite polynomials -->
+  <test name="hermite_mehler">
+    <fun>HermiteH(n,x)*HermiteH(n,y)*u^n/n!</fun>
+    <tex>\sum_n H_n(x)H_n(y)\frac{u^n}{n!}</tex>
+    <var_int name="n" />
+    <var name="u" type="diff" />
+    <var name="n" type="shift" />
+    <set_val name="n" type="int" inter="1..30"/>
+    <set_val name="x" type="float" inter="0..50"/>
+    <set_val name="y" type="float" inter="0..50"/>
+    <set_val name="u" type="float" inter="0..50"/>
+  </test>
+
+
+  <!-- Doetsch formula for Hermite polynomials -->
+  <test name="hermite_doetsh">
+    <fun>(1+2*x*y+4*y^2)*exp((4*x^2*y^2)/(1+4*y^2))/y^(n+1)/(1+4*y^2)^(3/2)</fun>
+    <tex>\int\frac{(1+2xy+4y^2)\exp\left(\frac{4x^2y^2}{1+4y^2}\right)}{y^{n+1}(1+4y^2)^{\frac{3}{2}}} \text{d}x</tex>
+    <var_int name="y"/>
+    <var name="x" type="diff"/>
+    <var name="y" type="diff"/>
+  </test>
+
+</tests>

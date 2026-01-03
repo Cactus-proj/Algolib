@@ -1,0 +1,75 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <!-- xZeilb_2.test -->
+
+  <test name="binom6">
+    <fun>(-1)^k*binomial(n,k)*binomial(2*k,n)</fun>
+    <tex>\sum_{k}(-1)^k{n \choose k}{2k \choose n}</tex>
+    <var_int name="k" />
+    <var name="n" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="20..100" />
+    <set_val name="k" type="int" inter="2..19" />
+  </test>
+
+  <test name="binom7">
+    <fun>(-1)^k*binomial(n,k)*binomial(3*k,n)</fun>
+    <tex>\sum_{k}(-1)^k{n \choose k}{3k \choose n}</tex>
+    <var_int name="k" />
+    <var name="n" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="20..100" />
+    <set_val name="k" type="int" inter="2..19" />
+  </test>
+
+  <test name="binom8">
+    <fun>(-1)^k*binomial(n,k)*binomial(4*k,n)</fun>
+    <tex>\sum_{k}(-1)^k{n \choose k}{4k \choose n}</tex>
+    <var_int name="k" />
+    <var name="n" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="20..100" />
+    <set_val name="k" type="int" inter="2..19" />
+  </test>
+
+  <test name="binom9">
+    <fun>(-1)^k*binomial(n,k)*binomial(5*k,n)</fun>
+    <tex>\sum_{k}(-1)^k{n \choose k}{5k \choose n}</tex>
+    <var_int name="k" />
+    <var name="n" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="20..100" />
+    <set_val name="k" type="int" inter="2..19" />
+  </test>
+
+  <test name="binom10">
+    <fun>(-1)^k*binomial(n,k)*binomial(6*k,n)</fun>
+    <tex>\sum_{k}(-1)^k{n \choose k}{6k \choose n}</tex>
+    <var_int name="k" />
+    <var name="n" type="shift" />
+    <var name="k" type="shift" />
+    <set_val name="n" type="int" inter="20..100" />
+    <set_val name="k" type="int" inter="2..19" />
+  </test>
+
+</tests>

@@ -1,0 +1,81 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 17 "gfun[poltodiffeq]" }
+{TEXT 30 87 " - determine the differential equation satisfied by a polynomial in holonomic functions" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 17 "     poltodiffeq(" }
+{TEXT 35 1 "P" }
+{TEXT -1 2 ", " }
+{TEXT 35 10 "listdiffeq" }
+{TEXT -1 2 ", " }
+{TEXT 35 13 "list_unknowns" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "P             - " }
+{TEXT -1 14 "polynomial in " }
+{TEXT 35 1 "z" }
+{TEXT -1 48 " and the (possibly differentiated) variables in " }
+{TEXT 35 13 "list_unknowns" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "listdiffeq    - " }
+{TEXT -1 46 "list containing, for each of the variables in " }
+{TEXT 35 13 "list_unknowns" }
+{TEXT -1 105 ", either a linear differential equation or a set containing the equation together with initial conditions" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "list_unknowns - " }
+{TEXT -1 21 "list of the unknowns " }
+{TEXT 35 18 "[y1(z), y2(z),...]" }
+{TEXT -1 26 ", in the same order as in " }
+{TEXT 35 10 "listdiffeq" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "y,z           - " }
+{TEXT -1 59 "the name of the holonomic function and the generic variable" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 5 "y1(z)" }
+{TEXT -1 2 ", " }
+{TEXT 35 5 "y2(z)" }
+{TEXT -1 42 ",... are holonomic functions solutions of " }
+{TEXT 35 13 "listdiffeq[1]" }
+{TEXT -1 2 ", " }
+{TEXT 35 13 "listdiffeq[2]" }
+{TEXT -1 6 ",..., " }
+{TEXT 35 11 "poltodiffeq" }
+{TEXT -1 52 " outputs a linear differential equation verified by " }
+{TEXT 35 14 "P(z,y1(z),...)" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 170 "with(gfun):\nSin:={diff(y1(z),z,z)=-y1(z),y1(0)=0,D(y1)(0)=1}:\nCos:={diff(y2(z),z,z)=-y2(z),y2(0)=1,D(y2)(0)=0}:\npoltodiffeq(y1(z)^2+y2(z)^2,[Sin,Cos],[y1(z),y2(z)],y(z));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<&/--%\"DG6#%\"yG6#\"\"!F+/-F)F*\"\"\"/---%#@@G6$F'\"\"#F(F*F+,&-%%
+diffG6$-F)6#%\"zG-%\"$G6$F<\"\"$F.-F86$F:F<\"\"%
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 56 "poltodiffeq(y1(z)^2+diff(y1(z),z)^2,[Sin],[y1(z)],y(z));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<$-%%diffG6$-%\"yG6#%\"zGF*/-F(6#\"\"!\"\"\"
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[diffeq+diffeq]" 2 "gfun[diffeq+diffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[diffeq*diffeq]" 2 "gfun[diffeq*diffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[poltorec]" 2 "gfun[poltorec]" "" }{TEXT -1 2 "  " }
+}
+}}

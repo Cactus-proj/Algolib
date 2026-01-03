@@ -1,0 +1,149 @@
+{VERSION 3 0 "IBM INTEL LINUX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 23 "Courier" 1 
+10 0 0 0 0 0 0 0 0 0 0 3 0 0 }{CSTYLE "Help Heading" -1 26 "" 1 14 0 
+0 0 0 0 1 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 
+1 0 0 0 0 0 1 3 0 3 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Warning
+" 2 7 1 {CSTYLE "" -1 -1 "" 0 1 0 0 255 1 0 0 0 0 0 0 1 0 0 }0 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Error" 7 8 1 {CSTYLE "" -1 -1 "" 0 1 
+255 0 255 1 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {SECT 0 {PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 69 
+"Holonomy[dfinite_add] - Compute a system of equations for the sum of \+
+" }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 18 "-finite functions " }}
+{PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 73 "Holonomy[dfinit
+e_mul] - Compute a system of equations for the product of " }{XPPEDIT 
+18 0 "d;" "6#%\"dG" }{TEXT -1 17 "-finite functions" }}{PARA 0 "" 0 "u
+sage" {TEXT 26 17 "Calling Sequence:" }{TEXT -1 16 "\n   dfinite_add(
+" }{XPPEDIT 18 0 "[DFD[1], `...`, DFD[n]];" "6#7%&%$DFDG6#\"\"\"%$...G
+&F%6#%\"nG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "T;" "6#%\"TG" }{TEXT -1 
+17 ")\n   dfinite_mul(" }{XPPEDIT 18 0 "[DFD[1], `...`, DFD[n]];" "6#7
+%&%$DFDG6#\"\"\"%$...G&F%6#%\"nG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "T;" 
+"6#%\"TG" }{TEXT -1 1 ")" }}{PARA 0 "" 0 "" {TEXT 26 11 "Parameters:" 
+}{TEXT -1 4 "\n   " }{XPPEDIT 18 0 "DFD[i];" "6#&%$DFDG6#%\"iG" }
+{TEXT 23 3 " - " }{TEXT -1 18 "lists of the form " }{XPPEDIT 18 0 "[GB
+[i], T[i]];" "6#7$&%#GBG6#%\"iG&%\"TG6#F'" }{TEXT -1 4 "\n   " }
+{XPPEDIT 18 0 "T;" "6#%\"TG" }{TEXT 23 7 "     - " }{TEXT -1 50 "a ter
+m order for the Groebner basis to be computed" }}}{SECT 0 {PARA 0 "" 
+0 "synopsis" {TEXT 26 12 "Description:" }}{PARA 15 "" 0 "" {TEXT -1 
+108 "The functions dfinite_add and dfinite_mul compute systems satisfi
+ed by the sum and the product of a list of " }{XPPEDIT 18 0 "d;" "6#%
+\"dG" }{TEXT -1 32 "-finite functions, respectively." }}{PARA 15 "" 0 
+"" {TEXT -1 143 "All functions under consideration are generic solutio
+ns of systems of linear homogeneous equations. These systems are repre
+sented by the lists " }{XPPEDIT 18 0 "GB[i];" "6#&%#GBG6#%\"iG" }
+{TEXT -1 41 " of skew polynomials of a common algebra " }{XPPEDIT 18 
+0 "A;" "6#%\"AG" }{TEXT -1 14 " of operators." }}{PARA 15 "" 0 "" 
+{TEXT -1 9 "The list " }{XPPEDIT 18 0 "GB[i];" "6#&%#GBG6#%\"iG" }
+{TEXT -1 14 " defining the " }{XPPEDIT 18 0 "i;" "6#%\"iG" }{TEXT -1 
+69 "-th function must be a Groebner basis with respect to the term ord
+er " }{XPPEDIT 18 0 "T[i];" "6#&%\"TG6#%\"iG" }{TEXT -1 18 " over the \+
+algebra " }{XPPEDIT 18 0 "A;" "6#%\"AG" }{TEXT -1 1 "." }}{PARA 15 "" 
+0 "" {TEXT -1 14 "The structure " }{XPPEDIT 18 0 "T;" "6#%\"TG" }
+{TEXT -1 51 " is a table defining a term order over the algebra " }
+{XPPEDIT 18 0 "A;" "6#%\"AG" }{TEXT -1 38 ", which has to be an Ore al
+gebra. See " }{HYPERLNK 17 "Ore_algebra[skew_algebra]" 2 "Ore_algebra[
+skew_algebra]" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "Groebner[termorde
+r]" 2 "Groebner[termorder]" "" }{TEXT -1 13 " for details." }}{PARA 
+15 "" 0 "" {TEXT -1 142 "The system which is returned is a system of e
+quations involving possibly cross derivatives of the functions. Be awa
+re that the Groebner bases " }{XPPEDIT 18 0 "GB[i];" "6#&%#GBG6#%\"iG
+" }{TEXT -1 13 " must define " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT 
+-1 65 "-finite functions, i.e., that the derivatives of any solution o
+f " }{XPPEDIT 18 0 "GB[i];" "6#&%#GBG6#%\"iG" }{TEXT -1 88 " must span
+ a finite-dimensional vector space. Otherwise, the algorithm cannot te
+rminate." }}{PARA 15 "" 0 "" {TEXT -1 117 "So far, dfinite_add and dfi
+nite_mul only work with skew polynomials of algebras over differential
+ or shift operators." }}{PARA 15 "" 0 "" {TEXT -1 305 "These function \+
+are part of the Holonomy package, and so can be used in the form dfini
+te_add(..) and dfinite_mul(..) only after performing the command with(
+Holonomy) or with(Holonomy,<function>). The functions can always be ac
+cessed in the long form Holonomy[dfinite_add](..) and Holonomy[dfinite
+_mul](..)." }}}{SECT 0 {PARA 0 "" 0 "examples" {TEXT 26 9 "Examples:" 
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "with(Ore_algebra):\nwith(G
+roebner):\nwith(Holonomy):" }}}{PARA 0 "" 0 "" {TEXT -1 30 "Compute a \+
+system satisfied by " }{XPPEDIT 18 0 "exp(mu*x+nu*y)+BesselJ(mu,x)*Bes
+selJ(nu,y);" "6#,&-%$expG6#,&*&%#muG\"\"\"%\"xGF*F**&%#nuGF*%\"yGF*F*F
+**&-%(BesselJG6$F)F+F*-F16$F-F.F*F*" }{TEXT -1 2 ": " }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 73 "A:=diff_algebra([Dx,x],[Dy,y],comm=\{mu,n
+u\}):\nT:=termorder(A,tdeg(Dx,Dy)):" }}}{EXCHG {PARA 0 "> " 0 "" 
+{XPPEDIT 19 1 "f:=exp(mu*x+nu*y):" "6#>%\"fG-%$expG6#,&*&%#muG\"\"\"%
+\"xGF+F+*&%#nuGF+%\"yGF+F+" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 
+"g:=BesselJ(mu,x)*BesselJ(nu,y):" "6#>%\"gG*&-%(BesselJG6$%#muG%\"xG\"
+\"\"-F'6$%#nuG%\"yGF+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "G[
+f]:=gbasis(hypergeom_to_dfinite(f,A),T);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>&%\"GG6#-%$expG6#,&*&%#muG\"\"\"%\"xGF-F-*&%#nuGF-%\"yGF-F-7$,&
+%#DyGF-F0!\"\",&%#DxGF-F,F5" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 
+1 "G[g]:=gbasis([x^2*Dx^2+x*Dx+x^2-mu^2,y^2*Dy^2+y*Dy+y^2-nu^2],T);" "
+6#>&%\"GG6#%\"gG-%'gbasisG6$7$,**&%\"xG\"\"#%#DxG\"\"#\"\"\"*&F.F2F0F2
+F2*$F.\"\"#F2*$%#muG\"\"#!\"\",**&%\"yG\"\"#%#DyG\"\"#F2*&F<F2F>F2F2*$
+F<\"\"#F2*$%#nuG\"\"#F9%\"TG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"G
+G6#*&-%(BesselJG6$%#muG%\"xG\"\"\"-F)6$%#nuG%\"yGF-7$,**&)F1\"\"#\"\"
+\")%#DyGF6F7F-*&F1F-F9F-F-*$F5F7F-*$)F0F6F7!\"\",**&)F,F6F7)%#DxGF6F7F
+-*&F,F-FCF-F-*$FAF7F-*$)F+F6F7F>" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 69 "sys:=collect(dfinite_add([[G[f],T],[G[g],T]],T),\{Dx,
+Dy\},distributed);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$sysG7%,:*()%
+\"yG\"\"#\"\"\")%#nuGF*F+)%\"xGF*F+\"\"\"*(F(F+F,F+)%#muGF*F+!\"\"*(F-
+F0F)F0F.F+F0*(F-F+F)F+F2F+F4*(F.F+F2F+F(F+F4*(F.F+F2F+F,F+F0*(F/F0F(F+
+F3F0F4*(F/F+F,F+F3F+F0*&,**&F(F+F/F+F0*(F(F+F,F+F/F+F0*(F-F+F)F+F/F+F0
+*&F,F+F/F+F4F0%#DxGF0F0*&,**&F.F+F)F+F4*&F2F+F)F+F0*(F.F+F2F+F)F+F4*(F
+/F+F)F+F3F+F4F0%#DyGF0F0*&,**&F(F+F.F+F4*&F2F+F(F+F0F7F4F9F4F0)FHF*F+F
+0*&,*FKF0F'F0F5F0*&F,F+F.F+F4F0)FAF*F+F0,:*&F(F+)F-\"\"$F+F**&F(F+F-F+
+F0*$FTF+F0*&)F)FUF+F,F+F4*$)F-\"\"&F+F4*&)F)\"\"%F+F-F+F4*&FhnF+FTF+F4
+*&F(F+FenF+F0*&)F-FinF+F)F+FU*&,2*$F(F+F4*$F,F+F4*$FhnF+F0*&F(F+F,F+!
+\"%*&F(F+F]oF+F4*&FhnF+F,F+F0*&FYF+FTF+F4*$F]oF+F0F0FHF+F0*&,.*$FYF+F0
+*&F,F+F)F+!\"$FVF*FgnF4FSF0FjnF4F0FMF+F0*&,*FcoF4FfoF0*&F-F+FYF+F0FboF
+0F0)FHFUF+F0,0*&F(F+F3F+F4*&F,F+F3F+F0*(FAF+F)F+FHF+F0*&,&F`oF0FaoF4F0
+FAF+F0*(F3F+F)F+FHF+F4*(FAF+F(F+FMF+F0*(F3F+F(F+FMF+F4" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "normal(map(applyopr,sys,f+g,A),expa
+nded);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7%\"\"!F$F$" }}}{PARA 0 "" 
+0 "" {TEXT -1 22 "The following product " }{XPPEDIT 18 0 "f*g*h;" "6#*
+(%\"fG\"\"\"%\"gGF%%\"hGF%" }{TEXT -1 29 " would never return, because
+ " }{XPPEDIT 18 0 "h;" "6#%\"hG" }{TEXT -1 8 " is not " }{XPPEDIT 18 
+0 "d;" "6#%\"dG" }{TEXT -1 43 "-finite: it is any function independent
+ of " }{XPPEDIT 18 0 "y;" "6#%\"yG" }{TEXT -1 2 ". " }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 11 "G[h]:=[Dy];" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>&%\"GG6#%\"hG7#%#DyG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+44 "dfinite_mul([[G[f],T],[G[g],T],[G[h],T]],T);" }}{PARA 8 "" 1 "" 
+{TEXT -1 218 "Error, dfinite_mul expects its 1st argument, descr_list,
+ to be of type list(DFiniteDescr), but received [[[Dy-nu, Dx-mu], term
+_order], [[y^2*Dy^2+y*Dy+y^2-nu^2, x^2*Dx^2+x*Dx+x^2-mu^2], term_order
+], [[Dy], term_order]]" }}}{PARA 0 "" 0 "" {TEXT -1 45 "Compute a syst
+em satisfied by the product of " }{XPPEDIT 18 0 "exp(-p*x)/sqrt(1-x^2)
+;" "6#*&-%$expG6#,$*&%\"pG\"\"\"%\"xGF*!\"\"F*-%%sqrtG6#,&\"\"\"F**$F+
+\"\"#F,F," }{TEXT -1 8 " by the " }{HYPERLNK 17 "Chebyshev polynomials
+" 2 "orthopoly[T]" "" }{TEXT -1 1 " " }{XPPEDIT 18 0 "orthopoly[T](n,x
+);" "6#-&%*orthopolyG6#%\"TG6$%\"nG%\"xG" }{TEXT -1 2 ": " }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 148 "A:=skew_algebra(shift=[Sn,n],diff=
+[Dx,x],comm=p):\nT:=termorder(A,tdeg(Sn,Dx)):\nf:=exp(-p*x)/sqrt(1-x^2
+):\nGB[1]:=gbasis(hypergeom_to_dfinite(f,A),T);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%#GBG6#\"\"\"7$,,*&%#DxGF')%\"xG\"\"#\"\"\"F'F+!\"\"*
+&%\"pGF'F,F/F'F2F0F-F',&%#SnGF'F0F'" }}}{PARA 0 "" 0 "" {XPPEDIT 18 0 
+"orthopoly[T](n,x);" "6#-&%*orthopolyG6#%\"TG6$%\"nG%\"xG" }{TEXT -1 
+33 " satisfies the following system: " }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 91 "GB[2]:=gbasis(\{(1-x^2)*Dx^2-x*Dx+n^2,Sn^2-2*x*Sn+1,
+\n    (1-x^2)*Dx*Sn+(n+1)*x*Sn-(n+1)\},T);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%#GBG6#\"\"#7$,**&%\"nG\"\"\"%#SnGF,F,*&%\"xGF,F+\"\"
+\"!\"\"*&%#DxGF,)F/F'F0F1F3F,,**$)F3F'F0F1*&F4F0F7F0F,*&F/F0F3F0F,*$)F
++F'F0F1" }}}{PARA 0 "" 0 "" {TEXT -1 32 "Finally, the product satisfie
+s: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "gbasis(dfinite_mul([[
+GB[1],T],[GB[2],T]],T),T);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7$,0*&%
+\"xG\"\"\"%\"nGF'!\"\"*&F(\"\"\"%#SnGF'F'*&%#DxGF')F&\"\"#F+F)F.F'*&%
+\"pGF'F/F+F)F2F'F&F),6*&)F2F0F+F/F+F'*&F/F+)F.F0F+F'*(F.F+F/F+F2F+F0*&
+F2F+F&F+\"\"$*&F&F+F.F+F:*$)F(F0F+F)*$F5F+F)*$F7F+F)*&F.F+F2F+!\"#F'F'
+" }}}}{SECT 0 {PARA 0 "" 0 "seealso" {TEXT 26 10 "See Also: " }
+{HYPERLNK 17 "Holonomy" 2 "Holonomy" "" }{TEXT -1 2 ", " }{HYPERLNK 
+17 "Ore_algebra[skew_algebra]" 2 "Ore_algebra[skew_algebra]" "" }
+{TEXT -1 2 ", " }{HYPERLNK 17 "Groebner[termorder]" 2 "Groebner[termor
+der]" "" }{TEXT -1 1 " " }}}}{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 
+1803 }

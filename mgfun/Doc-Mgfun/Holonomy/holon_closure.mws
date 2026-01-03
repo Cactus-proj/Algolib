@@ -1,0 +1,90 @@
+{VERSION 3 0 "IBM INTEL LINUX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 23 "C
+ourier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 }{CSTYLE "Help Heading" -1 26 "
+" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "List Item" 0 
+14 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 
+0 0 0 0 0 0 14 5 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }{PSTYLE "
+" 14 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {SECT 0 {PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 
+100 "Holonomy[holon_closure] - Perform extension/contraction of an ide
+al of linear differential operators" }}{PARA 0 "" 0 "usage" {TEXT 26 
+17 "Calling Sequence:" }{TEXT -1 18 "\n   holon_closure(" }{XPPEDIT 
+18 0 "G;" "6#%\"GG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "T_poly;" "6#%'T_po
+lyG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "T_loc;" "6#%&T_locG" }{TEXT -1 1 
+")" }}{PARA 0 "" 0 "" {TEXT 26 11 "Parameters:" }{TEXT -1 4 "\n   " }
+{XPPEDIT 18 0 "G;" "6#%\"GG" }{TEXT 23 8 "      - " }{TEXT -1 74 "set \+
+or list of generators of an ideal of linear differential operators\n  \+
+ " }{XPPEDIT 18 0 "T_poly;" "6#%'T_polyG" }{TEXT 23 3 " - " }{TEXT -1 
+50 "a term order over the Weyl algebra which contains " }{XPPEDIT 18 
+0 "G;" "6#%\"GG" }{TEXT -1 4 "\n   " }{XPPEDIT 18 0 "T_loc;" "6#%&T_lo
+cG" }{TEXT 23 4 "  - " }{TEXT -1 53 "a term order over a localization \+
+of this Weyl algebra" }}}{SECT 0 {PARA 0 "" 0 "synopsis" {TEXT 26 12 "
+Description:" }}{PARA 15 "" 0 "" {TEXT -1 216 "The command holon_closu
+re performs the extension/contraction of an ideal of linear differenti
+al operators. It only implements a heuristical method whose terminatio
+n is not guaranteed, and may disappear in the future." }}{PARA 15 "" 
+0 "" {TEXT -1 23 "More specifically, let " }{XPPEDIT 18 0 "A;" "6#%\"A
+G" }{TEXT -1 6 " be a " }{HYPERLNK 17 "Weyl algebra" 2 "Ore_algebra[We
+yl_algebra]" "" }{TEXT -1 1 " " }{XPPEDIT 18 0 "K*[x[1], `...`, x[n]]*
+[D[1], `...`, D[n]];" "6#*(%\"KG\"\"\"7%&%\"xG6#\"\"\"%$...G&F(6#%\"nG
+F%7%&%\"DG6#\"\"\"F+&F16#F.F%" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "I;
+" "6#%\"IG" }{TEXT -1 13 " an ideal of " }{XPPEDIT 18 0 "A;" "6#%\"AG
+" }{TEXT -1 34 ". We consider the localization of " }{XPPEDIT 18 0 "A;
+" "6#%\"AG" }{TEXT -1 17 " by a polynomial " }{XPPEDIT 18 0 "p(x[1],`.
+..`,x[n]);" "6#-%\"pG6%&%\"xG6#\"\"\"%$...G&F'6#%\"nG" }{TEXT -1 4 ". \+
+If" }}{PARA 256 "" 0 "" {XPPEDIT 18 0 "H = `intersect`(`&tensor`(``(K*
+[x[1], `...`, x[n], p^(-1)]),I),A);" "6#/%\"HG-%*intersectG6$-%(&tenso
+rG6$-%!G6#*&%\"KG\"\"\"7&&%\"xG6#\"\"\"%$...G&F36#%\"nG)%\"pG,$\"\"\"!
+\"\"F0%\"IG%\"AG" }}{PARA 14 "" 0 "" {TEXT -1 87 "is holonomic, then a
+ call to holon_closure (sometimes) returns a holonomic subideal of " }
+{XPPEDIT 18 0 "H;" "6#%\"HG" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT 
+-1 93 "To declare localizations of Weyl algebras, use the predefined l
+oc_diff commutation type (see " }{HYPERLNK 17 "Ore_algebra[commutation
+_rules]" 2 "Ore_algebra[commutation_rules]" "" }{TEXT -1 14 " for deta
+ils)." }}{PARA 15 "" 0 "" {TEXT -1 111 "A call to holon_closure is typ
+ically useful before appealing to integration algorithms based on holo
+nomy, like " }{HYPERLNK 17 "Holonomy[holon_defint]" 2 "Holonomy[holon_
+defint]" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 259 "This func
+tion is part of the Holonomy package, and so can be used in the form h
+olon_closure(..) only after performing the command with(Holonomy) or w
+ith(Holonomy,holon_closure). The function can always be accessed in th
+e long form Holonomy[holon_closure](..)." }}}{SECT 0 {PARA 0 "" 0 "exa
+mples" {TEXT 26 9 "Examples:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+50 "with(Ore_algebra):\nwith(Groebner):\nwith(Holonomy):" }}}{PARA 0 "
+" 0 "" {TEXT -1 68 "We study the linear differential operators that ca
+ncel the function " }{XPPEDIT 18 0 "f;" "6#%\"fG" }{TEXT -1 8 " below;
+ " }{XPPEDIT 18 0 "f;" "6#%\"fG" }{TEXT -1 14 " is trivially " }
+{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 9 "-finite. " }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 19 "p:=1-(x+y): f:=1/p;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%\"fG*&\"\"\"F&,(\"\"\"F(%\"xG!\"\"%\"yGF*!\"\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "A_poly:=diff_algebra([Dx,x],
+[Dy,y],polynom=\{x,y\}):\nG:=hypergeom_to_dfinite(f,A_poly);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%\"GG<$,&*&%#DxG\"\"\",(!\"\"F)%\"xGF)%\"yG
+F)F)F)F)F),&*&%#DyGF)F*\"\"\"F)F)F)" }}}{PARA 0 "" 0 "" {TEXT -1 28 "T
+he quotient of the algebra " }{XPPEDIT 18 0 "A_poly;" "6#%'A_polyG" }
+{TEXT -1 27 " by its ideal generated by " }{XPPEDIT 18 0 "G;" "6#%\"GG
+" }{TEXT -1 19 " is not holonomic: " }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 64 "T_poly:=termorder(A_poly,tdeg(Dx,Dy,x,y)):\nhilbertdi
+m(G,T_poly);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}}{PARA 0 "" 
+0 "" {TEXT -1 60 "Since we know that there is a holonomic ideal which \+
+cancels " }{XPPEDIT 18 0 "f;" "6#%\"fG" }{TEXT -1 49 ", the following \+
+call to holon_closure finds one [" }{XPPEDIT 18 0 "u;" "6#%\"uG" }
+{TEXT -1 9 " denotes " }{XPPEDIT 18 0 "p^(-1);" "6#)%\"pG,$\"\"\"!\"\"
+" }{TEXT -1 3 "]: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 171 "A_loc
+:=skew_algebra(loc_diff=[Dx,x],loc_diff=[Dy,y],\n    polynom=\{x,y\},l
+ocalization=[u,p]):\nT_loc:=termorder(A_loc,lexdeg([Dx,Dy],[x,y,u])):
+\nholon_closure(G,T_poly,T_loc);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7$
+,&%#DxG\"\"\"%#DyG!\"\",*F'F(*&F'F&%\"xGF&F&*&F'\"\"\"%\"yGF&F&F&F&" }
+}}}{SECT 0 {PARA 0 "" 0 "seealso" {TEXT 26 10 "See Also: " }{HYPERLNK 
+17 "Holonomy" 2 "Holonomy" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Holonomy
+[holon_defint]" 2 "Holonomy[holon_defint]" "" }{TEXT -1 1 " " }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

@@ -1,0 +1,69 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+
+expr:=WhittakerM(mu,nu,z):
+sys:=dfinite_expr_to_sys(expr,f(mu::shift,nu::shift,z::diff)):
+subs([mu=rand(10)(),nu=rand(10)()],eval(subs(f=unapply(expr,mu,nu,z),sys))):
+convert(map(series,%,z,20),polynom):
+if %={0} then okay else sys fi;
+#
+expr:=WhittakerW(mu,nu,z):
+sys:=dfinite_expr_to_sys(expr,f(mu::shift,nu::shift,z::diff)):
+subs([mu=rand(10)(),nu=rand(10)(),z=1/10],
+    eval(subs(f=unapply(expr,mu,nu,z),sys))):
+max(op(map(abs,evalf(%,50)))):
+if %<1/10^15 then okay else sys fi;
+
+expr:=WhittakerM(1/2,m,x):
+sys:=dfinite_expr_to_sys(expr,f(m::shift,x::diff)):
+subs(m=1/(rand(10)()+1),eval(subs(f=unapply(expr,m,x),sys))):
+convert(map(series,%,x,20),polynom):
+if %={0} then okay else sys fi;
+#
+expr:=WhittakerW(1/2,m,x):
+sys:=dfinite_expr_to_sys(expr,f(m::shift,x::diff)):
+subs([m=1/(rand(10)()+1),x=1/10],eval(subs(f=unapply(expr,m,x),sys))):
+max(op(map(abs,evalf(%,25)))):
+if %<1/10^15 then okay else sys fi;
+
+# We are not asking for the dependency in y, which caused a bug.
+expr:=WhittakerW(1/2,m,y):
+sys:=dfinite_expr_to_sys(expr,f(m::shift)):
+subs([m=1/(rand(10)()+1),y=1/10],eval(subs(f=unapply(expr,m,x),sys))):
+max(op(map(abs,evalf(%,25)))):
+if %<1/10^15 then okay else sys fi;
+
+# So far it is not possible to find a recurrence satisfied by cos(n).
+#expr:=cos(m*theta)/4^m/m!*WhittakerM(1/2,m,x)*WhittakerW(1/2,m,y)/(m-1/2):
+#sys:=dfinite_expr_to_sys(expr,f(m::shift,x::diff)):
+expr:=1/4^m/m!*WhittakerM(1/2,m,x)*WhittakerW(1/2,m,y)/(m-1/2):
+sys:=dfinite_expr_to_sys(expr,f(m::shift,x::diff)):
+subs([m=1/(rand(10)()+1),x=1/(rand(10)()+1),y=1/(rand(10)()+1)],
+    eval(subs(f=unapply(expr,m,x),sys))):
+max(op(map(abs,evalf(%,25)))):
+if %<1/10^15 then okay else sys fi;
+#
+expr:=binomial(n,1/2)*GAMMA(n+1/2-B)
+	*WhittakerW(B-n+1/4,1/4,beta/B)*WhittakerM(B-n+1/4,1/4,alpha/B):
+expr:=subs([alpha=v+sqrt(v^2-4*B^2*u^2),beta=v-sqrt(v^2-4*B^2*u^2)],expr):
+# This is a bug, but not mine!
+sys:=traperror(dfinite_expr_to_sys(expr,f(n::shift,u::diff,v::diff))):
+if op(1,[%])="reducible RootOf detected.  Substitutions are %1"
+then okay else % fi;

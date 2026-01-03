@@ -1,0 +1,87 @@
+{VERSION 5 0 "IBM INTEL LINUX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 23 "Courier" 1 10 0 0 0 0 0 0 0 0 0 0 3 0 0 1 }{CSTYLE "
+Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }{CSTYLE "
+" -1 35 "" 0 1 104 64 92 1 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 256 "cou
+rier" 1 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 
+1 0 0 0 0 0 1 3 0 3 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Headi
+ng 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 
+0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "
+" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 2 6 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet It
+em" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 26 "DocumentGenerator[Section]" }
+{TEXT 30 23 " - create a MAD section" }}{PARA 4 "" 0 "usage" {TEXT -1 
+16 "Calling Sequence" }}{PARA 0 "" 0 "" {TEXT -1 13 "     Section(" }
+{TEXT 35 5 "title" }{TEXT -1 1 "," }{TEXT 35 8 " MADtree" }{TEXT -1 2 
+", " }{TEXT 35 7 "options" }{TEXT -1 1 ")" }}{PARA 4 "" 0 "" {TEXT -1 
+10 "Parameters" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 23 14 "tit
+le       - " }{TEXT -1 14 "Maple MAD tree" }}{PARA 0 "" 0 "" {TEXT -1 
+5 "     " }{TEXT 23 14 "MADtree     - " }{TEXT -1 14 "Maple MAD tree" 
+}}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT 23 14 "options     - " }
+{TEXT -1 34 "optional arguments, in the format " }{TEXT 256 12 "name =
+ value" }}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 11 "Description" }}
+{PARA 15 "" 0 "" {TEXT -1 14 "The procedure " }{TEXT 35 7 "Section" }
+{TEXT -1 38 " returns a tree data structure in the " }{TEXT 35 3 "MAD
+" }{TEXT -1 80 " format that represents a section. This output is mean
+t for being nested into a " }{TEXT 35 3 "MAD" }{TEXT -1 10 " chapter (
+" }{HYPERLNK 17 "Chapter" 2 "DocumentGenerator,Chapter" "" }{TEXT -1 
+15 ") or document (" }{HYPERLNK 17 "Document" 2 "DocumentGenerator,Doc
+ument" "" }{TEXT -1 2 ")." }}{PARA 15 "" 0 "" {TEXT -1 19 "The first a
+rgument " }{TEXT 35 5 "title" }{TEXT -1 70 " represents the title of t
+he section, and it is to be supplied in the " }{TEXT 35 3 "MAD" }
+{TEXT -1 8 " format." }}{PARA 15 "" 0 "" {TEXT -1 10 "Note that " }
+{TEXT 35 7 "Section" }{TEXT -1 80 " also handles subsections. The subs
+ectioning is computed from the nesting level." }}{SECT 0 {PARA 4 "" 0 
+"" {TEXT -1 18 "Optional arguments" }}{PARA 15 "" 0 "" {TEXT 35 6 "lab
+el " }{TEXT -1 2 "= " }{HYPERLNK 17 "DocumentGenerator/Label" 2 "Docum
+entGenerator,Label" "" }{TEXT -1 73 ": label of the section. This labe
+l can then be used for cross-references;" }}{PARA 15 "" 0 "" {TEXT 35 
+16 "displaynumbering" }{TEXT -1 44 " = boolean: this option turns on o
+r off the " }{TEXT 257 7 "display" }{TEXT -1 18 " of the numbering." }
+}}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 8 "Examples" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 141 "with(DocumentGenerator):\nssect :=
+ Section(\"A subsection\",Paragraph(\"...\")):\nsect := Section(\"My F
+irst Section\",ssect,Paragraph(\"Some text\"));" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%%sectG-%*&sequenceG6$-%-&declareitemG6%7#Q31966567467
+538305386\"%)&sectionGQ1My~First~SectionF--F.6&F+%%trueGF/-%.&subnumbe
+ringG6$-F&6$-F)6%7#Q3196656558458718976F-F.Q-A~subsectionF--F.6&F:F2F<
+-F46#-%+&paragraphG6#Q$...F--FB6#Q*Some~textF-" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 29 "Export(Document(sect),LaTeX);" }}{PARA 6 "" 1 
+"" {TEXT -1 25 "\\documentclass[]\{amsbook\}" }}{PARA 6 "" 1 "" {TEXT 
+-1 20 "\\usepackage\{amsmath\}" }}{PARA 6 "" 1 "" {TEXT -1 19 "\\usepa
+ckage\{amsopn\}" }}{PARA 6 "" 1 "" {TEXT -1 21 "\\usepackage\{graphicx
+\}" }}{PARA 6 "" 1 "" {TEXT -1 24 "% BEGIN SPECIAL COMMANDS" }}{PARA 
+6 "" 1 "" {TEXT -1 116 "\\newcommand\{\\MADerror\}[1]\{\\begin\{flushl
+eft\}\\fbox\{\\begin\{minipage\}\{\\textwidth\}\{\\tt #1\}\\end\{minip
+age\}\}\\end\{flushleft\}\}" }}{PARA 6 "" 1 "" {TEXT -1 41 "\\newcomma
+nd\{\\MADierror\}[1]\{\\fbox\{\\tt #1\}\}" }}{PARA 6 "" 1 "" {TEXT -1 
+22 "% END SPECIAL COMMANDS" }}{PARA 6 "" 1 "" {TEXT -1 21 "% BEGIN STA
+TIC HEADER" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT 
+-1 19 "% END STATIC HEADER" }}{PARA 6 "" 1 "" {TEXT -1 22 "% BEGIN DYN
+AMIC HEADER" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT 
+-1 20 "% END DYNAMIC HEADER" }}{PARA 6 "" 1 "" {TEXT -1 16 "\\begin\{d
+ocument\}" }}{PARA 6 "" 1 "" {TEXT -1 29 "\\section*\{1 My First Secti
+on\}" }}{PARA 6 "" 1 "" {TEXT -1 26 "\\label\{196656746753830538\}" }}
+{PARA 6 "" 1 "" {TEXT -1 30 "\\subsection*\{1.1 A subsection\}" }}
+{PARA 6 "" 1 "" {TEXT -1 26 "\\label\{196656558458718976\}" }}{PARA 6 
+"" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "
+" {TEXT -1 3 "..." }}{PARA 6 "" 1 "" {TEXT -1 0 "" }}{PARA 6 "" 1 "" 
+{TEXT -1 0 "" }}{PARA 6 "" 1 "" {TEXT -1 9 "Some text" }}{PARA 6 "" 1 
+"" {TEXT -1 14 "\\end\{document\}" }}}}{SECT 0 {PARA 4 "" 0 "seealso" 
+{TEXT -1 9 "See Also " }}{PARA 0 "" 0 "" {HYPERLNK 17 "DocumentGenerat
+or" 2 "DocumentGenerator" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Document
+" 2 "DocumentGenerator,Document" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Pa
+ragraph" 2 "DocumentGenerator,Paragraph" "" }}}}{MARK "9 0 0" 1 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

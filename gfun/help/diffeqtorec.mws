@@ -1,0 +1,74 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 17 "gfun[diffeqtorec]" }
+{TEXT 30 59 " - convert a linear differential equation into a recurrence" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 17 "     diffeqtorec(" }
+{TEXT 35 3 "deq" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "deq - " }
+{TEXT -1 32 "linear differential equation in " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 29 " with polynomial coefficients" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "y,z - " }
+{TEXT -1 33 "name and variable of the function" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "u,n - " }
+{TEXT -1 32 "name and index of the recurrence" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 4 "Let " }
+{TEXT 35 1 "f" }
+{TEXT -1 61 " be a power series solution of the differential equation. If " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 35 " is the n-th Taylor coefficient of " }
+{TEXT 35 1 "f" }
+{TEXT -1 72 " around zero, the procedure outputs a linear recurrence for the numbers " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 32 ", with rational coefficients in " }
+{TEXT 35 1 "n" }
+{TEXT -1 2 ". " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 34 "The syntax is the same as that of " }
+{HYPERLNK 17 "dsolve" 2 "dsolve" "" }{TEXT -1 16 ". Combined with " }
+{HYPERLNK 17 "algeqtodiffeq" 2 "algeqtodiffeq" "" }{TEXT -1 119 "gfun[algeqtodiffeq], this procedure produces a linear recurrence for the Taylor coefficients of an algebraic function. " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "with(gfun):\ndiffeqtorec(y(z)=a*diff(y(z),z),y(z),v(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#,&-%\"vG6#%\"nG\"\"\"*&,&*&%\"aGF(F'F(!\"\"F,F-F(-F%6#,&F'F(F(F(F(
+F(
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "deq:=algeqtodiffeq(y=1+z*(y^2+y^3),y(z),{}):\ndiffeqtorec(deq,y(z),u(m));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<&/-%\"uG6#\"\"!\"\"\",**&,&%\"mG!\"\"*$F-\"\"#!\"#F)-F&6#F-F)F)*&,(!\"
+*F)F-!#IF/!#=F)-F&6#,&F-F)F)F)F)F)*&,(\"$z#F)F-\"$F#F/\"#YF)-F&
+6#,&F-F)F0F)F)F)*&,(F-!#E!#UF)F/!\"%F)-F&6#,&F-F)\"\"$F)F)F)/-F
+&6#F)F0/-F&6#F0\"#5
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[algeqtodiffeq]" 2 "gfun[algeqtodiffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[rectodiffeq]" 2 "gfun[rectodiffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "dsolve" 2 "dsolve" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "dsolve[formal_series]" 2 "dsolve[formal_series]" "" }{TEXT -1 1 " " }
+}
+}}

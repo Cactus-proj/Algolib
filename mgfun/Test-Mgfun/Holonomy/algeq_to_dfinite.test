@@ -1,0 +1,62 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+# A bug in algeq_to_dfinite was reported by Glenn P. Tesler,
+# on Wed, 25 Oct 1995 11:59:11 -0700 (PDT).
+# If the leading coefficient of the polynomial that defines f is a
+# polynomial in x, reductions modulo P introduce fractions in x that
+# have to be dealt with.  This was solved by changing the algorithm on
+# Thu Nov  2 23:05:28 MET 1995.
+cmp:=proc(z) if z=0 then okay else z fi end:
+with(Ore_algebra):
+A:=diff_algebra([Dx,x]):
+with(Groebner):
+T:=MonomialOrder(A,tdeg(Dx)):
+with(Holonomy):
+
+G:=algeq_to_dfinite(x-f^2,f,T):
+cmp(applyopr(op(G),sqrt(x),A));
+
+G:=algeq_to_dfinite(x-f^3,f,T):
+cmp(applyopr(op(G),x^(1/3),A));
+
+G:=algeq_to_dfinite(1-x*f,f,T):
+cmp(applyopr(op(G),1/x,A));
+
+G:=algeq_to_dfinite(x-x^2*f,f,T):
+cmp(applyopr(op(G),1/x,A));
+
+G:=algeq_to_dfinite(x+1-x*f^2,f,T):
+cmp(normal(applyopr(op(G),sqrt((x+1)/x),A)));
+
+G:=algeq_to_dfinite(x^2+1-x^3*f^5,f,T):
+cmp(normal(applyopr(op(G),((x^2+1)/x^3)^(1/5),A)));
+
+G:=algeq_to_dfinite(x*f^2-f-1,f,T):
+cmp(normal(applyopr(op(G),(1+sqrt(4*x+1))/2/x,A)));
+
+P:=randpoly(f,coeffs=proc() randpoly(x) end,degree=2):
+F:=solve(P,f)[1]:
+G:=algeq_to_dfinite(P,f,T):
+cmp(normal(applyopr(op(G),F,A)));
+
+A:=diff_algebra([Dx,x],[Dy,y]):
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+G:=algeq_to_dfinite(f^3-x*y^2,f,T):
+map(cmp,normal(map(applyopr,G,(x*y^2)^(1/3),A))):
+if %=[okay,okay] then okay else % fi;

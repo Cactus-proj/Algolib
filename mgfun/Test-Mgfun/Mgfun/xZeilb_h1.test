@@ -1,0 +1,58 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+
+# Calkin, d'apres ~/Maple/calkin.mpl
+# Somme interne : [Sn*n-2*n-1+Sk*k+Sk-Sn*k+k, -Sk-1-Sk*n+n-k+Sk^2*k+2*Sk^2]
+sys:=[(k-2*n-1)*u(n,k)+(n-k)*u(n+1,k)+(k+1)*u(n,k+1), (-k-1+n)*u(n,k)+(-n-1)*u(n,k+1)+(k+2)*u(n,k+2)]:
+sys:=pol_to_sys(h(n,k)=u(n,k)^3,{[u(n,k),sys]}):
+ct:=creative_telescoping(LFSol(sys),n::shift,k::shift,{"start"=2,"stop"=2}):
+if normal(ct[1]/((8*n+4)*_f(n,k)+(7*n+12)*_f(n+1,k)+(-n-1)*_f(n+2,k)))^2=1
+then okay else ct fi;
+# External sum is NOT over natural boundaries: its summand is stationnary
+# on 4^n.
+# Performing summation over k=0..n+2, we get ct[1]=nh, where nh is obtained
+# below.
+subs(k=n+2,ct[2])-subs(k=0,ct[2]):
+# [k=n+3=(n+2)+1 required here because ct[1] contains _f(n+2,k).]
+#simplify(subs([_f(n,n+2)=4^n,_f(n+1,n+2)=4*4^n,_f(n+2,n+2)=16*4^n,_f(n,0)=1,_f(n+1,0)=1,_f(n+2,0)=1],%));
+value(eval(subs(_f=unapply(Sum(binomial(n,j),j=0..k)^3,n,k),%))):
+nh:=simplify(normal(expand(%))):
+if nh=2*(27*n+44)*8^n then okay else nh fi;
+# The following recurrence cancels nh.
+dfinite_expr_to_rec(nh,_g(n)):
+# Summing ct[1] over k=0..n+2: mind that _f(n,n+1)<>0 !
+expand(eval(subs(_g=unapply(subs([_f(n,k)=_f(n)+2*8^n,_f(n+1,k)=_f(n+1)+8*8^n,_f(n+2,k)=_f(n+2)],ct[1]),n),op(%)))):
+rec:=collect(primpart(%,_f(n+3)),_f,factor):
+# Sign of expression varies with the version of Maple.
+if rec=
+(6288+1296*n^2+5892*n)*_f(n+1)+(n+2)*(27*n+44)*_f(n+3)+(-1605*n-405*n^2-1404)*
+_f(n+2)+32*(27*n+71)*(2*n+1)*_f(n)-2880*8^n
+or rec=
+-(n+2)*(27*n+44)*_f(n+3)+(1605*n+405*n^2+1404)*_f(n+2)+(-5892*n-6288-1296*n^2)*
+_f(n+1)-32*(27*n+71)*(2*n+1)*_f(n)+2880*8^n
+then okay else rec fi;
+remove(has,rec,8^n):
+hrec:=collect(subs(n=n+1,%)-8*%,_f(n+3),_f,factor):
+# Final resolution.
+{seq(_f(n)=add(add(binomial(n,j),j=0..k)^3,k=0..n),n=0..3)}:
+LREtools[hypergeomsols](hrec,_f(n),%,output=gensol):
+# (Maple10 had (1/2)^n*2^n in the output.)
+if %=1/2*8^n*n+8^n-3/4*8^n*GAMMA(n+1/2)/GAMMA(n)/Pi^(1/2)
+then okay else % fi;

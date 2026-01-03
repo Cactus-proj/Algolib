@@ -1,0 +1,454 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 271 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 274 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{PSTYLE "Norm
+al" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 
+"" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 
+0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Title" 0 18 
+1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 0 0 0 0 0 0 }3 0 0 -1 12 12 
+0 0 0 0 0 0 19 0 }{PSTYLE "Author" 0 19 1 {CSTYLE "" -1 -1 "" 0 1 0 0 
+0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 8 8 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+260 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+262 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+264 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 265 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+266 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 267 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+268 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 269 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT -1 43 "Variations on the Sequenc
+e of Ap\351ry Numbers" }}{PARA 19 "" 0 "" {TEXT -1 0 "" }}{PARA 19 "" 
+0 "" {TEXT -1 15 "Fr\351d\351ric Chyzak" }}{PARA 268 "" 0 "" {TEXT -1 
+28 "(Version of January 9, 1998)" }}{PARA 269 "" 0 "" {TEXT -1 0 "" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 234 "In the early 1990's, Doron Zeilb
+erger and Herbert Wilf, developped a new methodology for symbolic summ
+ation and integration (Wilf, Herbert S. and Zeilberger, Doron (1992):A
+n algorithmic proof theory for hypergeometric (ordinary and ``" }
+{XPPEDIT 18 0 "q" "I\"qG6\"" }{TEXT -1 34 "'') multisum/integral ident
+ities, " }{TEXT 269 24 "Inventiones Mathematicae" }{TEXT -1 2 ", " }
+{TEXT 270 3 "108" }{TEXT -1 143 ":575-633).  One of the most famous su
+ccesses of this so-called ``WZ-method'' has been to provide a computer
+ proof of the combinatorial identity" }}}{EXCHG {PARA 256 "" 0 "" 
+{XPPEDIT 18 0 "sum(binomial(n,k)^2*binomial(n+k,k)^2,k=0..n)=sum(binom
+ial(n,k)*binomial(n+k,k)*sum(binomial(k,j)^3,j=0..k),k=0..n)" "/-%$sum
+G6$*&-%)binomialG6$%\"nG%\"kG\"\"#-F(6$,&F*\"\"\"F+F0F+\"\"#/F+;\"\"!F
+*-F$6$*(-F(6$F*F+F0-F(6$,&F*F0F+F0F+F0-F$6$*$-F(6$F+%\"jG\"\"$/FB;F4F+
+F0/F+;F4F*" }{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 48 "and
+ to prove that the sequence of these numbers " }{XPPEDIT 18 0 "a[n]" "
+&%\"aG6#%\"nG" }{TEXT -1 47 " satisfies the second order recurrence eq
+uation" }}}{EXCHG {PARA 257 "" 0 "" {XPPEDIT 18 0 "(n+2)^3*u[n+2]-((n+
+2)^3+(n+1)^3+4*(2*n+3)^3)*u[n+1]+(n+1)^3*u[n]=0" "/,(*&,&%\"nG\"\"\"\"
+\"#F'\"\"$&%\"uG6#,&F&F'\"\"#F'F'F'*&,(*$,&F&F'\"\"#F'\"\"$F'*$,&F&F'
+\"\"\"F'\"\"$F'*&\"\"%F'*$,&*&\"\"#F'F&F'F'\"\"$F'\"\"$F'F'F'&F+6#,&F&
+F'\"\"\"F'F'!\"\"*&,&F&F'\"\"\"F'\"\"$&F+6#F&F'F'\"\"!" }{TEXT -1 1 ".
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 84 "Proving this recurrence was a
+ crucial step of Ap\351ry's proof for the irrationality of" }}}{EXCHG 
+{PARA 259 "" 0 "" {XPPEDIT 18 0 "Zeta(3)=sum(1/k^3,k=1..infinity)" "/-
+%%ZetaG6#\"\"$-%$sumG6$*&\"\"\"\"\"\"*$%\"kG\"\"$!\"\"/F.;\"\"\"%)infi
+nityG" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 160 "On the \+
+other hand, the identity itself stems from a number-theoretic question
+ raised by Schmidt in (Schmidt, Asmus L. (1990): Generalized Legendre \+
+polynomials, " }{TEXT 256 21 "J. reine angew. Math." }{TEXT -1 2 ", " 
+}{TEXT 272 3 "404" }{TEXT -1 10 ":192-202)." }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 69 "Several proofs of the identity above, that relates the \+
+Ap\351ry numbers " }{XPPEDIT 18 0 "a[n]" "&%\"aG6#%\"nG" }{TEXT -1 22 
+" to the Franel numbers" }}}{EXCHG {PARA 258 "" 0 "" {XPPEDIT 18 0 "f[
+n]=sum(binomial(n,k)^3,k=0..n)" "/&%\"fG6#%\"nG-%$sumG6$*$-%)binomialG
+6$F&%\"kG\"\"$/F.;\"\"!F&" }{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 98 "were given in (Strehl, Volker (1994): Binomial Identities
+, Combinatorial and Algorithmic Aspects, " }{TEXT 257 14 "Discrete Mat
+h." }{TEXT -1 2 ", " }{TEXT 271 3 "136" }{TEXT -1 380 ":309-346).  One
+ of them in particular is based on Zeilberger's algorithm for hypergeo
+metric summation, and yields the recurrence equation above as a by-pro
+duct.  In the following sections, we first recall how Ap\351ry was led
+ to the identity, borrowing from Van der Poorten's report (Van der Poo
+rten, Alfred (1979): A Proof that Euler missed... Ap\351ry's Proof of \+
+the Irrationality of " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" }
+{TEXT -1 2 ", " }{TEXT 259 19 "Math. Intelligencer" }{TEXT -1 2 ", " }
+{TEXT 273 1 "1" }{TEXT -1 67 ":195-203); we next give a proof for both
+ results using our package " }{HYPERLNK 17 "Mgfun" 2 "Mgfun" "" }
+{TEXT -1 54 ", and finally exploit the recurrence equation to beat " }
+{TEXT 258 5 "Maple" }{TEXT -1 26 " computing many digits of " }
+{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" }{TEXT -1 1 "." }}}{SECT 1 
+{PARA 3 "" 0 "" {TEXT -1 23 "Sketch of Ap\351ry's Proof" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 48 "Ap\351ry's first remark is that the doubl
+e sequence" }}}{EXCHG {PARA 262 "" 0 "" {XPPEDIT 18 0 "c[n,k]=sum(1/m^
+3,m=1..n)+sum((-1)^(m+1)/(2*m^3*binomial(n,m)*binomial(n+m,m)),m=1..k)
+" "/&%\"cG6$%\"nG%\"kG,&-%$sumG6$*&\"\"\"\"\"\"*$%\"mG\"\"$!\"\"/F0;\"
+\"\"F&F.-F*6$*&),$\"\"\"F2,&F0F.\"\"\"F.F.**\"\"#F.*$F0\"\"$F.-%)binom
+ialG6$F&F0F.-FC6$,&F&F.F0F.F0F.F2/F0;\"\"\"F'F." }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 9 "tends to " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$
+" }{TEXT -1 14 " uniformly in " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT 
+-1 5 " for " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 4 " in " }
+{XPPEDIT 18 0 "``(1..infinity)" "-%!G6#;\"\"\"%)infinityG" }{TEXT -1 
+6 " when " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 87 " tends to infin
+ity.  This stems from the alternating series being uniformly bounded b
+y " }{XPPEDIT 18 0 "1/n" "*&\"\"\"\"\"\"%\"nG!\"\"" }{TEXT -1 99 ".  H
+owever, the convergence of this series is not strong enough so as to s
+how the irrationality of " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" 
+}{TEXT -1 78 ".  Ap\351ry used summation methods to accelerate the con
+vergence.  Namely, define" }}}{EXCHG {PARA 263 "" 0 "" {XPPEDIT 18 0 "
+a[n]=sum(binomial(n,k)^2*binomial(n+k,k)^2*c[n,k],k=0..n)" "/&%\"aG6#%
+\"nG-%$sumG6$*(-%)binomialG6$F&%\"kG\"\"#-F,6$,&F&\"\"\"F.F3F.\"\"#&%
+\"cG6$F&F.F3/F.;\"\"!F&" }{TEXT -1 11 "    and    " }{XPPEDIT 18 0 "b[
+n]=sum(binomial(n,k)^2*binomial(n+k,k)^2,k=0..n" "/&%\"bG6#%\"nG-%$sum
+G6$*&-%)binomialG6$F&%\"kG\"\"#-F,6$,&F&\"\"\"F.F3F.\"\"#/F.;\"\"!F&" 
+}{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 5 "then " }
+{XPPEDIT 18 0 "a[n]/b[n]" "*&&%\"aG6#%\"nG\"\"\"&%\"bG6#F&!\"\"" }
+{TEXT -1 15 " also tends to " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"
+$" }{TEXT -1 100 ".  Here appears the crucial recurrence of Ap\351ry: \+
+one remarks that it is satisfied by both sequences " }{XPPEDIT 18 0 "a
+" "I\"aG6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT 
+-1 25 ", with initial conditions" }}}{EXCHG {PARA 264 "" 0 "" 
+{XPPEDIT 18 0 "a[0]=0" "/&%\"aG6#\"\"!F&" }{TEXT -1 5 ",    " }
+{XPPEDIT 18 0 "a[1]=6" "/&%\"aG6#\"\"\"\"\"'" }{TEXT -1 11 ",    and  \+
+ " }{XPPEDIT 18 0 "b[0]=1" "/&%\"bG6#\"\"!\"\"\"" }{TEXT -1 5 ",    " 
+}{XPPEDIT 18 0 "b[1]=5" "/&%\"bG6#\"\"\"\"\"&" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 68 "By a number-theoretic argument, it
+ follows from this recurrence that" }}}{EXCHG {PARA 265 "" 0 "" 
+{XPPEDIT 18 0 "Zeta(3)-a[n]/b[n]=O(q[n]^(-1+delta)" "/,&-%%ZetaG6#\"\"
+$\"\"\"*&&%\"aG6#%\"nGF(&%\"bG6#F-!\"\"F1-%\"OG6#)&%\"qG6#F-,&\"\"\"F1
+%&deltaGF(" }{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 4 "with
+" }}}{EXCHG {PARA 266 "" 0 "" {XPPEDIT 18 0 "q[n]=2*lcm(1,2,``..``,n)^
+3*b[n]" "/&%\"qG6#%\"nG*(\"\"#\"\"\"*$-%$lcmG6&\"\"\"\"\"#;%!GF1F&\"\"
+$F)&%\"bG6#F&F)" }{TEXT -1 11 "    and    " }{XPPEDIT 18 0 "delta=(4*l
+n(1+sqrt(2))-3)/(4*ln(1+sqrt(2))+3)" "/%&deltaG*&,&*&\"\"%\"\"\"-%#lnG
+6#,&\"\"\"F(-%%sqrtG6#\"\"#F(F(F(\"\"$!\"\"F(,&*&\"\"%F(-F*6#,&\"\"\"F
+(-F/6#\"\"#F(F(F(\"\"$F(F3" }{TEXT -1 20 ", which is positive." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "This is sufficient to prove that \+
+" }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" }{TEXT -1 63 " is irratio
+nal, and yields an irrationality measure of at least" }}}{EXCHG {PARA 
+267 "" 0 "" {XPPEDIT 18 0 "1+1/delta=13.417820..``" "/,&\"\"\"\"\"\"*&
+\"\"\"F%%&deltaG!\"\"F%;$\")?yT8!\"'%!G" }}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 27 "Proof of Ap\351ry's Recurrence" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 58 "In this session, we chiefly use the user-oriented package
+ " }{HYPERLNK 17 "Mgfun" 2 "Mgfun" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 12 "with(Mgfun);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7(%,diag_of_sysG%+int_of_sysG%+pol_to_sysG%+sum_of_sysG
+%(sys*sysG%(sys+sysG" }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 33 "Recurren
+ce for the Left-Hand Side" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 71 "We fi
+rst prove that the Ap\351ry numbers, as defined by the left-hand side
+" }}}{EXCHG {PARA 260 "" 0 "" {XPPEDIT 18 0 "a[n]=sum(binomial(n,k)^2*
+binomial(n+k,k)^2,k=0..n)" "/&%\"aG6#%\"nG-%$sumG6$*&-%)binomialG6$F&%
+\"kG\"\"#-F,6$,&F&\"\"\"F.F3F.\"\"#/F.;\"\"!F&" }{TEXT -1 1 "," }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "satisfy the announced recurrence.
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 11 "The summand" }}}{EXCHG {PARA 
+0 "> " 0 "" {XPPEDIT 19 1 "f:=binomial(n,k)^2*binomial(n+k,k)^2:" ">%
+\"fG*&-%)binomialG6$%\"nG%\"kG\"\"#-F&6$,&F(\"\"\"F)F.F)\"\"#" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "satisfies both following equations
+:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 57 "h(n+1,k)/h(n,k)=factor
+(normal(subs(n=n+1,f)/f,expanded));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#/*&-%\"hG6$,&%\"nG\"\"\"F*F*%\"kGF*-F&6$F)F+!\"\"*&,(F)F*F*F*F+F*\"\"
+#,(F)F.F.F*F+F*!\"#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 57 "h(n,
+k+1)/h(n,k)=factor(normal(subs(k=k+1,f)/f,expanded));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/*&-%\"hG6$%\"nG,&%\"kG\"\"\"F+F+F+-F&6$F(F*!\"\"*
+(,(F(F+F+F+F*F+\"\"#,&F(F.F*F+F1F)!\"%" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 32 "This yields the following system" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 61 "sys:=collect(map(numer,map(eq->op(1,eq)-op(2,eq)
+,\{\"\",\"\})),h);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$sysG<$,&*&,.*
+$%\"nG\"\"#\"\"\"F*F+*&F*F,%\"kGF,!\"#F,F,F.F/*$F.F+F,F,-%\"hG6$,&F*F,
+F,F,F.F,F,*&,.F-F/!\"\"F,F)F7F*F/F.F/F0F7F,-F26$F*F.F,F,,&*&,6*$F*\"\"
+%F7*$F*\"\"$F/F)F7*&F*F+F.F,F+*&F*F+F.F+F+F-F+*&F*F,F.F+F+F0F7*$F.F@F/
+*$F.F>F7F,F8F,F,*&,,FEF,FDF>F0\"\"'F.F>F,F,F,-F26$F*,&F.F,F,F,F,F," }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "where each element " }{XPPEDIT 
+18 0 "expr" "I%exprG6\"" }{TEXT -1 33 " in the set denotes the equatio
+n " }{XPPEDIT 18 0 "expr=0" "/%%exprG\"\"!" }{TEXT -1 31 ".  The defin
+ite summation over " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 4 " in " 
+}{XPPEDIT 18 0 "``(0,n)" "-%!G6$\"\"!%\"nG" }{TEXT -1 39 " is performe
+d by the following call to " }{HYPERLNK 17 "Mgfun[sum_of_sys]" 2 "Mgfu
+n[sum_of_sys]" "" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 52 "sum_of_sys(sys,k=-infinity..infinity,takayama_algo);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<#,(*&,**$%\"nG\"\"$\"\"\"*$F(\"\"
+#F)F(F)F*F*F*-%\"hG6#F(F*F**&,*F'!#MF(!$J#F+!$`\"!$<\"F*F*-F.6#,&F(F*F
+*F*F*F**&,*F'F*F+\"\"'F(\"#7\"\")F*F*-F.6#,&F(F*F,F*F*F*" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "rec[left]:=op(collect(\",h,factor))
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%$recG6#%%leftG,(*&,&%\"nG\"\"
+\"F,F,\"\"$-%\"hG6#F+F,F,*&,&F+F,\"\"#F,F--F/6#F2F,F,*(,&F+F3F-F,F,,(*
+$F+F3\"#<F+\"#^\"#RF,F,-F/6#F*F,!\"\"" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 45 "This is the announced recurrence in disguise." }}}}{SECT 
+1 {PARA 4 "" 0 "" {TEXT -1 28 "Recurrence for the Inner Sum" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 71 "We next compute the right-hand side, begi
+nning with the Franel numbers " }{XPPEDIT 18 0 "f[n]" "&%\"fG6#%\"nG" 
+}{TEXT -1 9 " given by" }}}{EXCHG {PARA 261 "" 0 "" {XPPEDIT 18 0 "f[n
+]=sum(binomial(n,k)^3,k=0..n)" "/&%\"fG6#%\"nG-%$sumG6$*$-%)binomialG6
+$F&%\"kG\"\"$/F.;\"\"!F&" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 49 "We first obtain a system to describe the summand:" }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "f:=binomial(n,k)^3:" ">%\"fG*$
+-%)binomialG6$%\"nG%\"kG\"\"$" }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 
+19 1 "h(n+1,k)/h(n,k)-factor(normal(subs(n=n+1,f)/f,expanded)):" ",&*&
+-%\"hG6$,&%\"nG\"\"\"\"\"\"F)%\"kGF)-F%6$F(F+!\"\"F)-%'factorG6#-%'nor
+malG6$*&-%%subsG6$/F(,&F(F)\"\"\"F)%\"fGF)F<F.%)expandedGF." }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "h(n,k+1)/h(n,k)-factor(normal(
+subs(k=k+1,f)/f,expanded)):" ",&*&-%\"hG6$%\"nG,&%\"kG\"\"\"\"\"\"F*F*
+-F%6$F'F)!\"\"F*-%'factorG6#-%'normalG6$*&-%%subsG6$/F),&F)F*\"\"\"F*%
+\"fGF*F<F.%)expandedGF." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "
+sys:=collect(map(numer,\{\"\",\"\}),h);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%$sysG<$,&*&,**$%\"nG\"\"$!\"\"*&F*\"\"#%\"kG\"\"\"F+*&F*F0F/F.
+!\"$*$F/F+F0F0-%\"hG6$F*F/F0F0*&,*F3F0*$F/F.F+F/F+F0F0F0-F56$F*,&F/F0F
+0F0F0F0,&*&,6F)F,*$F*F.F2F-F+F*F2*&F*F0F/F0\"\"'F1F2F,F0F/F+F9F2F3F0F0
+-F56$,&F*F0F0F0F/F0F0*&,*F)F0F@F+F*F+F0F0F0F4F0F0" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 52 "Summing, we get a recurrence for the Franel number
+s " }{XPPEDIT 18 0 "f[n]" "&%\"fG6#%\"nG" }{TEXT -1 1 "." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "sys:=sum_of_sys(sys,k=-infinity..in
+finity,natural_boundaries);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$sysG
+<#,**&,*!#c\"\"\"%\"nG!$O\"*$F+\"\"#!$/\"*$F+\"\"$!#CF*-%\"hG6#F+F*F**
+&,*F0F1F-\"#AF+\"#^\"#OF*F*-F46#,&F+F*F1F*F*F**&,*F0!#X!$S#F*F-FAF+!$>
+%F*-F46#,&F+F*F*F*F*F**&,*F0!#=!$[\"F*F-!$9\"F+!$K#F*-F46#,&F+F*F.F*F*
+F*" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 33 "System for the Right-Hand
+ Product" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "Let us multiply the " 
+}{XPPEDIT 18 0 "f[k]" "&%\"fG6#%\"kG" }{TEXT -1 4 " by " }{XPPEDIT 18 
+0 "binomial(n,k)*binomial(n+k,k)" "*&-%)binomialG6$%\"nG%\"kG\"\"\"-F$
+6$,&F&F(F'F(F'F(" }{TEXT -1 81 ".  To do so, we prepare two systems of
+ recurrence equations, one for each factor." }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 31 "The following system describes " }{XPPEDIT 18 0 "f[k]" 
+"&%\"fG6#%\"kG" }{TEXT -1 28 ", which is independent from " }{XPPEDIT 
+18 0 "n" "I\"nG6\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 77 "sys1:=\{h(n+1,k)-h(n,k)\} union eval(subs(h=proc(k) h
+(n,k) end,subs(n=k,sys)));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%sys1G
+<$,&-%\"hG6$,&%\"nG\"\"\"F,F,%\"kGF,-F(6$F+F-!\"\",**&,*!#cF,F-!$O\"*$
+F-\"\"#!$/\"*$F-\"\"$!#CF,F.F,F,*&,*F9F:F6\"#AF-\"#^\"#OF,F,-F(6$F+,&F
+-F,F:F,F,F,*&,*F9!#X!$S#F,F6FGF-!$>%F,-F(6$F+,&F-F,F,F,F,F,*&,*F9!#=!$
+[\"F,F6!$9\"F-!$K#F,-F(6$F+,&F-F,F7F,F,F," }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 39 "We next obtain a system that describes " }{XPPEDIT 18 0 "
+binomial(n,k)*binomial(n+k,k)" "*&-%)binomialG6$%\"nG%\"kG\"\"\"-F$6$,
+&F&F(F'F(F'F(" }{TEXT -1 30 ", the weight to multiply with:" }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "f:=binomial(n,k)*binomial(n+k,
+k):" ">%\"fG*&-%)binomialG6$%\"nG%\"kG\"\"\"-F&6$,&F(F*F)F*F)F*" }}}
+{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "h(n+1,k)/h(n,k)-factor(normal(
+subs(n=n+1,f)/f,expanded)):" ",&*&-%\"hG6$,&%\"nG\"\"\"\"\"\"F)%\"kGF)
+-F%6$F(F+!\"\"F)-%'factorG6#-%'normalG6$*&-%%subsG6$/F(,&F(F)\"\"\"F)%
+\"fGF)F<F.%)expandedGF." }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "h(
+n,k+1)/h(n,k)-factor(normal(subs(k=k+1,f)/f,expanded)):" ",&*&-%\"hG6$
+%\"nG,&%\"kG\"\"\"\"\"\"F*F*-F%6$F'F)!\"\"F*-%'factorG6#-%'normalG6$*&
+-%%subsG6$/F),&F)F*\"\"\"F*%\"fGF*F<F.%)expandedGF." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 35 "sys2:=collect(map(numer,\{\"\",\"\}),h);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%sys2G<$,&*&,**$%\"nG\"\"#!\"\"F
+*F,%\"kG\"\"\"*$F-F+F.F.-%\"hG6$F*F-F.F.*&,(F/F.F-F+F.F.F.-F16$F*,&F-F
+.F.F.F.F.,&*&,(F*F,F,F.F-F.F.-F16$,&F*F.F.F.F-F.F.*&,(F*F.F.F.F-F.F.F0
+F.F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 44 "We finally perform the pr
+oduct by a call to " }{HYPERLNK 17 "Mgfun[`sys*sys`]" 2 "Mgfun[`sys*sy
+s`]" "" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "s
+ys:=`sys*sys`(sys1,sys2);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$sysG<$
+,&*&,(%\"nG!\"\"F*\"\"\"%\"kGF*F+-%\"hG6$F)F,F+F+*&,(F)F+F+F+F,F*F+-F.
+6$,&F)F+F+F+F,F+F+,**&,jnF,!$s'F)\"$s'*$F,\"\"'!$s#*$F)\"\"#\"$C#*&F)F
++F,F+\"%/B*$F,F>!%GD*&F)F>F,F+\"%3;*&F)F>F,F>\"%kE*&F)F+F,F>\"%[I*$F,
+\"\"$!%;Q*$F,\"\"%!%gH*&F,FNF)F>\"$+'*&F,\"\"&F)F+\"#s*$F)FN!$!G*$F)FK
+!$S)*&F,FKF)F+\"%W>*&F)FSF,F+FT*$F)F;\"#c*&F)FNF,F>!$%Q*&F)FKF,F+!%o8*
+$F)FS\"$o\"*&F)F;F,F+\"#C*&F)FKF,F>!$o(*&F)FNF,F+!$C'*&F,FKF)FN!#s*&F,
+FKF)FK!$W\"*&F,FNF)F+FQ*$F,\"\"(!#C*&F,FKF)F>\"%s=*$F,FS!%[7*&F,FSF)F>
+FTF+F-F+F+*&,Z\"%!)GF+F,\"&[<\"F)!%?>F:FQF=!%!o\"F@!%s_FB\"&K,#FD!%`[F
+F!%7bFH!%_dFJ\"&<)=FM\"&s.\"FPFXFR!#!*FU\"$S#FW\"$![FY!%=JFhnF_qFjn\"$
+Q)F`oF`qFbo\"$>%Fdo\"#XFfo\"#!*FhoFXFioFdqF\\p!%tIF^p\"%uLF`pF^qF+-F.6
+$F),&F,F+F+F+F+F+*&,JFB!&%Q<F^p!%)z\"FF\"%K:F`p\"#=FRF`rF\\p\"$g(FHF_r
+FD\"%?:Fho\"$'=FYFarF)\"$#fF@FbrFio!#=F:!$w#FJ!&SP\"F=FdrF,!&!37!%_NF+
+FM!%[kFPFcrF+-F.6$F),&F,F+F>F+F+F+*&,2FB!%%=&F:!#_Fio!\"$FJ!%vOFM!%S:F
+,!%'*R!%'H\"F+F^p!$#QF+-F.6$F),&F,F+FKF+F+F+" }}}}{SECT 1 {PARA 4 "" 
+0 "" {TEXT -1 34 "Recurrence for the Right-Hand Side" }}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 59 "We obtain a recurrence for the right-hand side \+
+by applying " }{HYPERLNK 17 "Mgfun[sum_of_sys]" 2 "Mgfun[sum_of_sys]" 
+"" }{TEXT -1 48 " on the system computed in the previous section." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "sum_of_sys(sys,k=-infinity..
+infinity,takayama_algo);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<#,,*&,0!$
+7\"\"\"\"%\"nG!$m%*$F)\"\"#!$v(*$F)\"\"%!$&H*$F)\"\"$!$b'*$F)\"\"'!\"'
+*$F)\"\"&!#nF(-%\"hG6#F)F(F(*&,0F1\"&Uq$\"&!G9F(F4\"$/#F.\"&6O\"F7\"%7
+EF+\"&&obF)\"&mR%F(-F;6#,&F)F(F(F(F(F(*&,0F4F5F7\"$8\"F.\"$q)F1\"%&\\$
+F+\"%+xF)\"%%y)\"%KSF(F(-F;6#,&F)F(F/F(F(F(*&,0!&+#))F(F1!&y@*F+!'0#*=
+F4!$/#F7!%3NF)!'MF?F.!&6[#F(-F;6#,&F)F(F2F(F(F(*&,.F1!&wz&!&Sy(F(F+!'X
+/9F)!''3n\"F.!&v<\"F7!$U*F(-F;6#,&F)F(F,F(F(F(" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 74 "This recurrence is different from the one obtained f
+or the left-hand side." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "r
+ec[right]:=op(collect(\",h,factor));" }}{PARA 12 "" 1 "" {XPPMATH 20 "
+6#>&%$recG6#%&rightG,,*,,&%\"nG\"\"#\"\"(\"\"\"F.,&F+F,\"\"$F.F.,&F+F.
+F0F.F.,**$F+F0\"#^*$F+F,\"$p%F+\"%=9\"%+9F.F.-%\"hG6#F1F.!\"\"*,F/F.,&
+F+F0F-F.F.F1F.,&F+F.\"\"%F.F0-F:6#F?F.F.*,,&F+F0\"\")F.F.F*F.,&F+F.F,F
+.F.,&F+F.F.F.F0-F:6#F+F.F<*(,&F+F,\"\"&F.F.,,*$F+F@\"$r%F3\"%5ZF5\"&8s
+\"F+\"&!>F\"&ob\"F.F.-F:6#FFF.F<*,F*F.F/F.FFF.,*F3F4F5\"$'HF+\"$`&\"$S
+$F.F.-F:6#FGF.F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 54 "We thus need \+
+more work to prove that both sides agree." }}}}{SECT 1 {PARA 4 "" 0 "
+" {TEXT -1 62 "Final Proof of the Identity and of the Second Order Rec
+urrence" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 4 "Let " }{XPPEDIT 18 0 "h[
+n]" "&%\"hG6#%\"nG" }{TEXT -1 95 " be any solution of the second order
+ recurrence which has been obtained for the left-hand side:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "rec[left];" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#,(*&,&%\"nG\"\"\"F'F'\"\"$-%\"hG6#F&F'F'*&,&F&F'\"\"
+#F'F(-F*6#F-F'F'*(,&F&F.F(F'F',(*$F&F.\"#<F&\"#^\"#RF'F'-F*6#F%F'!\"\"
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 5 "Thus:" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 41 "h(n+2)=collect(solve(\",h(n+2)),h,normal);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"hG6#,&%\"nG\"\"\"\"\"#F),&*(,**$F
+(\"\"$F)*$F(F*F/F(F/F)F)F),*F.F)F0\"\"'F(\"#7\"\")F)!\"\"-F%6#F(F)F5*(
+,*F.\"#MF0\"$`\"F(\"$J#\"$<\"F)F)F1F5-F%6#,&F(F)F)F)F)F)" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "subs(n=n+1,\");" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/-%\"hG6#,&%\"nG\"\"\"\"\"$F),&*(,**$,&F(F)F)F)F*F)*$
+F/\"\"#F*F(F*\"\"%F)F),*F.F)F0\"\"'F(\"#7\"#?F)!\"\"-F%6#F/F)F7*(,*F.
+\"#MF0\"$`\"F(\"$J#\"$[$F)F)F3F7-F%6#,&F(F)F1F)F)F)" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 3 "and" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+14 "subs(n=n+1,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"hG6#,&%\"n
+G\"\"\"\"\"%F),&*(,**$,&F(F)\"\"#F)\"\"$F)*$F/F0F1F(F1\"\"(F)F),*F.F)F
+2\"\"'F(\"#7\"#KF)!\"\"-F%6#F/F)F8*(,*F.\"#MF2\"$`\"F(\"$J#\"$z&F)F)F4
+F8-F%6#,&F(F)F1F)F)F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 6 "Then, " }
+{XPPEDIT 18 0 "h[n]" "&%\"hG6#%\"nG" }{TEXT -1 52 " also solves the re
+currence for the right-hand side:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 44 "collect(subs(\",\"\",\"\"\",rec[right]),h,normal);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 241 "At this point, we have proved that both sides of the equ
+ation satisfy the same recurrence of order 4.  To prove the announced \+
+equality, we simply need to check 4 initial conditions, since the lead
+ing coefficient of the recurrence of order 4," }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 25 "coeff(rec[right],h(n+3));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$**,&%\"nG\"\"#\"\"(\"\"\"F),&F&F'\"\"$F)F),&F&F)F+F)F
+),**$F&F+\"#^*$F&F'\"$p%F&\"%=9\"%+9F)F)!\"\"" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 32 "never vanishes for non-negative " }{XPPEDIT 18 0 "n" "
+I\"nG6\"" }{TEXT -1 32 ".  Now the proof of the identity" }}}{EXCHG 
+{PARA 0 "> " 0 "" {XPPEDIT 19 1 "eq:=Sum(binomial(n,k)^2*binomial(n+k,
+k)^2,k=0..n)=Sum(binomial(n,k)*binomial(n+k,k)*Sum(binomial(k,j)^3,j=0
+..k),k=0..n):" ">%#eqG/-%$SumG6$*&-%)binomialG6$%\"nG%\"kG\"\"#-F*6$,&
+F,\"\"\"F-F2F-\"\"#/F-;\"\"!F,-F&6$*(-F*6$F,F-F2-F*6$,&F,F2F-F2F-F2-F&
+6$*$-F*6$F-%\"jG\"\"$/FD;F6F-F2/F-;F6F," }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 21 "simplify follows from" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 27 "eval(subs(n=0,Sum=add,eq));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"\"\"F$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 
+"eval(subs(n=1,Sum=add,eq));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"&
+F$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "eval(subs(n=2,Sum=add
+,eq));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"#tF$" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 27 "eval(subs(n=3,Sum=add,eq));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/\"%X9F$" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "T
+herefore, the Ap\351ry numbers also satisfy the announced second order
+ recurrence." }}}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 15 "Computation of
+ " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" }{TEXT -1 48 " Using Sta
+ndard Maple and the Holonomic Approach" }}{SECT 1 {PARA 4 "" 0 "" 
+{TEXT -1 14 "Standard Maple" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 121 "Ma
+ple has numerical routines for almost all special functions it knows a
+bout.  Here is the corresponding calculation for " }{XPPEDIT 18 0 "Zet
+a(3)" "-%%ZetaG6#\"\"$" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 14 "ti[0]:=time():" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 33 "Z3[standard]:=evalf(Zeta(3),332);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>&%#Z3G6#%)standardG$\"g_l`yBvt*\\R'ydr9q06=mT\\)pLANg(
+ymD`F)R?5\"y4rV:!))fD:d50%=*z7l9b'4y&4f6H.Tm4RchRC%\\UA_v:>>n1g$\\HyTR
+Xh,!z?PoRwP@$Gt')*f*>\\=%>2E&zd\"*>Y\"e_L4O(eX'=!48jy0#Q=Mb:F#z\")))\\
+SBH')\\w!**\\9^h\"Q(*R&G%ffJ!p0-7!$J$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 27 "ti[standard]:=time()-ti[0];" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%#tiG6#%)standardG$\"&:$Q!\"$" }}}}{SECT 1 {PARA 4 "
+" 0 "" {TEXT -1 18 "Holonomic Approach" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 31 "We compute an approximation of " }{XPPEDIT 18 0 "Zeta(3)
+" "-%%ZetaG6#\"\"$" }{TEXT -1 61 " using Ap\351ry's recurrence.  More \+
+precisely, we compute it as " }{XPPEDIT 18 0 "a[200]/b[200]" "*&&%\"aG
+6#\"$+#\"\"\"&%\"bG6#\"$+#!\"\"" }{TEXT -1 18 ".  (Remember that " }
+{XPPEDIT 18 0 "a[n]/b[n]" "*&&%\"aG6#%\"nG\"\"\"&%\"bG6#F&!\"\"" }
+{TEXT -1 10 " tends to " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" }
+{TEXT -1 2 ".)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "ti[0]:=ti
+me():" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "N:=200:" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 21 "To do so, we use the " }{HYPERLNK 17 "gfu
+n" 2 "gfun" "" }{TEXT -1 174 " package by Salvy and Zimmermann (Salvy,
+ Bruno and Zimmermann, Paul (1994): Gfun: a Maple package for the mani
+pulation of generating and holonomic functions in one variable, " }
+{TEXT 261 25 "ACM Trans. Math. Software" }{TEXT -1 2 ", " }{TEXT 274 
+2 "20" }{TEXT -1 13 "(2):163-177)." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 11 "with(gfun);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7V%(La
+placeG%.algebraicsubsG%.algeqtodiffeqG%.algeqtoseriesG%.algfuntoalgeqG
+%&borelG%.cauchyproductG%.diffeq*diffeqG%.diffeq+diffeqG%2diffeqtohomd
+iffeqG%,diffeqtorecG%)guesseqnG%(guessgfG%0hadamardproductG%0holexprto
+diffeqG%)invborelG%,listtoalgeqG%-listtodiffeqG%0listtohypergeomG%+lis
+ttolistG%.listtoratpolyG%*listtorecG%-listtoseriesG%5listtoseries/Lapl
+aceG%1listtoseries/egfG%4listtoseries/lgdegfG%4listtoseries/lgdogfG%1l
+isttoseries/ogfG%4listtoseries/revegfG%4listtoseries/revogfG%,maxdegco
+effG%*maxdegeqnG%,maxordereqnG%,mindegcoeffG%*mindegeqnG%,minordereqnG
+%*optionsgfG%,poltodiffeqG%)poltorecG%/ratpolytocoeffG%(rec*recG%(rec+
+recG%,rectodiffeqG%,rectohomrecG%*rectoprocG%.seriestoalgeqG%/seriesto
+diffeqG%2seriestohypergeomG%-seriestolistG%0seriestoratpolyG%,seriesto
+recG%/seriestoseriesG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 4 "The " }
+{TEXT 262 4 "gfun" }{TEXT -1 79 " package provides us with a routine f
+or transforming a recurrence equation like" }}}{EXCHG {PARA 0 "> " 0 "
+" {XPPEDIT 19 1 "eq:=n^3*u(n)-(34*n^3-51*n^2+27*n-5)*u(n-1)+(n-1)^3*u(
+n-2):" ">%#eqG,(*&%\"nG\"\"$-%\"uG6#F&\"\"\"F+*&,**&\"#MF+*$F&\"\"$F+F
++*&\"#^F+*$F&\"\"#F+!\"\"*&\"#FF+F&F+F+\"\"&F6F+-F)6#,&F&F+\"\"\"F6F+F
+6*&,&F&F+\"\"\"F6\"\"$-F)6#,&F&F+\"\"#F6F+F+" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 90 "into a procedure.  Each of the following procedures enc
+odes the calculation of a sequence " }{XPPEDIT 18 0 "u[n]" "&%\"uG6#%
+\"nG" }{TEXT -1 23 " given by the equation " }{XPPEDIT 18 0 "eq" "I#eq
+G6\"" }{TEXT -1 24 " and its initial values " }{XPPEDIT 18 0 "u[0]" "&
+%\"uG6#\"\"!" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "u[1]" "&%\"uG6#\"\"
+\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "A:=re
+ctoproc(\{eq,u(0)=0,u(1)=6\},u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6
+#>%\"AG:6#%\"nG6&%\"iG%#u0G%#u1G%#u2G6\"E\\s#\"\"\"\"\"'\"\"!F1C&>8%F1
+>8&F0?(8$\"\"#F/,&9$F/!\"\"F/%%trueGC%>8',$*&,(F4F<F6\"\"&*&,(F4\"\"$F
+6!#F*&,(F4!\"$F6\"#^*&,&F4F/F6!#MF/F8F/F/F/F8F/F/F/F8F/F/F/F8FKF<>F4F6
+>F6F@,$*&,(F4F<F6FD*&,(F4FGF6FH*&,(F4FKF6FL*&FNF/F;F/F/F/F;F/F/F/F;F/F
+/F/F;FKF<F-F-" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "B:=rectopr
+oc(\{eq,u(0)=1,u(1)=5\},u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"
+BG:6#%\"nG6&%\"iG%#u0G%#u1G%#u2G6\"E\\s#\"\"\"\"\"&\"\"!F/C&>8%F/>8&F0
+?(8$\"\"#F/,&9$F/!\"\"F/%%trueGC%>8',$*&,(F4F<F6F0*&,(F4\"\"$F6!#F*&,(
+F4!\"$F6\"#^*&,&F4F/F6!#MF/F8F/F/F/F8F/F/F/F8F/F/F/F8FJF<>F4F6>F6F@,$*
+&,(F4F<F6F0*&,(F4FFF6FG*&,(F4FJF6FK*&FMF/F;F/F/F/F;F/F/F/F;F/F/F/F;FJF
+<F-F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 8 "Compute " }{XPPEDIT 18 0 
+"a[200]" "&%\"aG6#\"$+#" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "b[200]" "
+&%\"bG6#\"$+#" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 8 "a:=A(N);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"aG#\"]^m*HbNsb*zn
+4KF)QKPAj@Xex]&G%y`$fh&Q!y?!ez5!pY0N)\\i0hqbzyeMh(>\\o%o(fXN9LQ5C$*4!H
+CkZ0sh\\$))p_kRtK+'*G;OG&34:%)3K6!z+v?ca&Q#>@vw>X'*R\\_'=b>NuiNZSKa>Z0
+BS1HDNfy]T(Gs0yRJ2'4d<]syf&Qqpb*p2fm@m8sC\")fb-ie4=t(*3'*=MvE-A&\\c'H4
+%)>Dg)[pY8&oR5w*>^%pJeX:SefU;r\\QB'4T/Oy,:g#G#ps4)[z3'RGT*QShXAWRyPo%*
+oq#pt'e!HstpN(Q!\\0\"=e['z/a_9-7F\"_[l++++#RfsaYgl=SYT\\5%>-![;W$RWZ0f
+a&pBU[2/!QK1XVx$4m'fyY@'\\/v!=F.qRy8][]x%*yYoN%*\\,;\\f>z@6%oo*3sr9$oh
+*fz5P&=>$))=4#>\"\\*))f*G*QLZuMT*=9Xh)Q[Es\"=Mo%)*)[<" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "b:=B(N);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%\"bG\"j]lDu?l%eHmOf:Ow9LZb%f'p23Li]gMN1\\]$o>0QBk&*)3
+!fPMA.M@fdRZ![0y8N9<#)fOuuBf/2-9X;Yt=;]\"Hb(Gw#*4XP7\"QM9-hXFIII$p[)\\
+'*3zCyC*3>z![\"QA#>1aUt6?Am%=+VI(G]azsa'Qf%e?o,Ek#Rm\\4/!H\"" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT 263 8 "A priori" }{TEXT -1 51 ", it is no
+t clear how many digits we can guarantee." }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 34 "P:=round(evalf(ln(a)/ln(10))*1.1);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%\"PG\"$K$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 27 "Z3[holonomy]:=evalf(a/b,P);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6
+#>&%#Z3G6#%)holonomyG$\"g_l`yBvt*\\R'ydr9q06=mT\\)pLANg(ymD`F)R?5\"y4r
+V:!))fD:d50%=*z7l9b'4y&4f6H.Tm4RchRC%\\UA_v:>>n1g$\\HyTRXh,!z?PoRwP@$G
+t')*f*>\\=%>2E&zd\"*>Y\"e_L4O(eX'=!48jy0#Q=Mb:F#z\")))\\SBH')\\w!**\\9
+^h\"Q(*R&G%ffJ!p0-7!$J$" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 16 "The ti
+me used is" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "ti[holonomy]:
+=time()-ti[0];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#tiG6#%)holonomyG
+$\"%'G(!\"$" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 10 "Comparison" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 46 "The holonomic approach is several \+
+time faster." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "ti[standard
+]/ti[holonomy];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+W`re_!\"*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 110 "Moreover, this ratio would increa
+se with the accuracy of the calculations.  In this session, we have ob
+tained " }{XPPEDIT 18 0 "Zeta(3)" "-%%ZetaG6#\"\"$" }{TEXT -1 18 " up \+
+to 332 digits." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "Z3[standa
+rd]-Z3[holonomy];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 9 "However, " }{TEXT 268 5 "Maple" }{TEXT -1 
+26 " would be able to compute " }{XPPEDIT 18 0 "Zeta(z)" "-%%ZetaG6#%
+\"zG" }{TEXT -1 5 " for " }{TEXT 267 3 "any" }{TEXT -1 15 " complex va
+lue " }{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT -1 46 ", while the holonomi
+c approach only works for " }{XPPEDIT 18 0 "z=3" "/%\"zG\"\"$" }{TEXT 
+-1 1 "." }}}}}}{MARK "0 1 0" 0 }{VIEWOPTS 1 1 0 3 2 1804 }

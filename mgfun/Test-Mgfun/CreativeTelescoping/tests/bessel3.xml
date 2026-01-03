@@ -1,0 +1,31 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <test name="bessel_big">
+    <fun>x*BesselJ(1,a*x)*BesselI(1,a*x)*BesselY(0,x)*BesselK(0,x)</fun>
+    <tex>\int x J_1(ax)I_1(ax)Y_0(x)K_0(x)\text{d}x</tex>
+    <var_int name="x" />
+    <var name="a" type="diff" />
+    <var name="x" type="diff" />
+  </test>
+
+</tests>

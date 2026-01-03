@@ -1,0 +1,88 @@
+From: Michael Cherkassoff [mcherkas@maplesoft.com]
+Sent: August 13, 2003 16:18
+To: jgerhard@maplesoft.com
+Cc: Bruno.Salvy@inria.fr; jgerhard@maplesoft.com;
+lbernardin@maplesoft.com; mikec@maplesoft.com
+Subject: Re: Summary: series
+
+Categories: X - pending
+
+Hi,
+
+I would like to add another point that needs to be addressed
+
+- the code organization and maintainability.
+  Once the newseries are moved into main, we have to be able to maintain
+  it in house. For it to be possible, the code should be 
+
+  a) reorganized - src directories should be last leaves in the tree, e.g.
+  MultiSeries/src/functions/holonomic should become
+  MultiSeries/functions/holonomic/src
+  The include files should be renamed from .mpl to .mm (note that
+  these requirements are dictated by the necessity of proper processing
+  by the scripts).
+
+  b) properly formatted - the (presumably) automatically generated
+  source files (e.g. MultiSeries/src/functions/holonomic/arccoth.mpl)
+  are impossible to read/edit.
+
+  c) (debatable) the use of huge table `multiseries/function` and 
+  necessity of exporting it.
+
+Thanks,
+Michael.
+
+
+> 
+> 
+> Hi Bruno,
+> 
+> here's a summary of our discussion about the series project
+> at ISSAC. Please correct me if I got something wrong or forgot
+> anything.
+> 
+> - Code complete for the Labs for Hydra is
+>   October 31, 2003. This is a pretty hard deadline,
+>   as Code complete for Maplesoft internal projects
+>   is mid December, and series has a high impact
+>   on other parts of Maple, notable int.
+> 
+> - newseries must pass our test suite before it can
+>   completely replace series.
+> 
+> - If there are test failures resulting from the
+>   changed semantics (one-sided expansion), it is
+>   acceptable to change the test files.
+>   On the long run (not necessarily for Hydra),
+>   series and limit should accept arguments
+>   indicating the scope of the expansion
+>   (e.g., as in MuPAD: left, right, real, undirected)
+> 
+> - currently the main issues in multiseries are:
+>   * about 30 missing special functions
+>   * wrong behavior at branch cuts and branch points
+>   I sent you a list of all the issues I found
+>   two days ago.
+> 
+> - INRIA will work on these issues and on resulting
+>   test failures. By the end of September 2003,
+>   we'll decide whether multiseries can replace
+>   series for Hydra.
+> 
+> - I can devote about one month of my time
+>   to this project in September and October.
+> 
+> Cheers,
+> 
+> Jürgen
+> 
+> ------------------------------------------------------------
+> Jürgen Gerhard
+> Team Lead, Mathematical Software
+> Maplesoft
+> 57 Erb St W
+> Waterloo ON, N2L 6C2
+> Canada
+> jgerhard@maplesoft.com
+> (519) 747-1278 ext. 317
+> 

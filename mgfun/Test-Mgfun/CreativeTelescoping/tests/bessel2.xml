@@ -1,0 +1,65 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <!-- xZeilb_7.test -->
+  <test name="bessel4">
+    <fun>x*exp(-p*x^2)*BesselJ(n,b*x)*BesselI(n,c*x)</fun>
+    <tex>\int xe^{-px^2}J_n(bx)I_n(cx)\text{d}x</tex>
+    <var_int name="x" />
+    <var name="p" type="diff" />
+    <var name="x" type="diff" />
+    <set_val name="n" type="int" inter="1..100"/>
+  </test>
+
+
+  <!-- these p 207 -->
+  <test name="bessel5">
+    <fun>x*exp(-p*x^2)*BesselJ(nu,a*x)*BesselJ(nu,b*x)</fun>
+    <tex>\int xe^{-px^2}J_{\nu}(ax)J_{\nu}(bx)\text{d}x</tex>
+    <var_int name="x" />
+    <var name="p" type="diff" />
+    <var name="x" type="diff" />
+    <set_val name="nu" type="int" inter="1..100"/>
+  </test>
+
+  <!-- McPhedran 1992 BFI -->
+  <test name="bessel_mcphedran">
+    <fun>x*exp(-eta*x^2)*BesselJ(b,K*x)*BesselY(b,k*x)</fun>
+    <tex>\int xe^{-\eta x^2}J_b(Kx)Y_b(kx)\text{d}x</tex>
+    <var_int name="x" />
+    <var name="eta" type="diff" />
+    <var name="x" type="diff" />
+    <set_val name="b" type="int" inter="1..100"/>
+  </test>
+
+
+  <!-- Ne fonctionne pas. Probleme avec le I
+  <test name="bessel6">
+    <fun>exp(RootOf(S^2-1,S)*t)*t^n*BesselJ(n,t)</fun>
+    <tex>\int e^{it}t^nJ_n(t)\text{d}t</tex>
+    <var_int name="t"/>
+    <var name="t" type="diff"/>
+    <var name="n" type="shift"/>
+  </test>
+  -->
+
+</tests>

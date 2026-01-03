@@ -1,0 +1,109 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 19 "gfun[algebraicsubs]" }
+{TEXT 30 57 " - substitute an algebraic function into an holonomic one" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 19 "     algebraicsubs(" }
+{TEXT 35 3 "deq" }
+{TEXT -1 2 ", " }
+{TEXT 35 2 "eq" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 2 ", " }
+{TEXT 35 3 "ini" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "deq - " }
+{TEXT -1 32 "linear differential equation in " }
+{TEXT 35 4 "y(z)" }
+{TEXT -1 29 " with polynomial coefficients" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "eq  - " }
+{TEXT -1 22 "algebraic equation in " }
+{TEXT 35 4 "y(z)" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "y   - " }
+{TEXT -1 30 "name of the holonomic function" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "z   - " }
+{TEXT -1 45 "name of the generic variable associated with " }
+{TEXT 35 1 "y" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "ini - " }
+{TEXT -1 55 "(optional) initial conditions to specify a solution of " }
+{TEXT 35 2 "eq" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 4 "Let " }
+{TEXT 35 1 "f" }
+{TEXT -1 51 " be the holonomic function defined by the equation " }
+{TEXT 35 3 "deq" }
+{TEXT -1 6 ", and " }
+{TEXT 35 1 "g" }
+{TEXT -1 38 " be the algebraic equation defined by " }
+{TEXT 35 2 "eq" }
+{TEXT -1 7 ", then " }
+{TEXT 35 19 "gfun[algebraicsubs]" }
+{TEXT -1 62 " outputs a differential equation satisfied by the composition " }
+{TEXT 35 3 "f@g" }
+{TEXT -1 67 ", which is holonomic by closure properties of holonomic functions. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 4 "Let " }
+{TEXT 35 2 "d1" }
+{TEXT -1 30 " be the differential order of " }
+{TEXT 35 3 "deq" }
+{TEXT -1 6 ", and " }
+{TEXT 35 2 "d2" }
+{TEXT -1 18 " be the degree of " }
+{TEXT 35 2 "eq" }
+{TEXT -1 18 ". If the equation " }
+{TEXT 35 3 "deq" }
+{TEXT -1 35 " is homogeneous, then the order of " }
+{TEXT 35 3 "f@g" }
+{TEXT -1 12 " is at most " }
+{TEXT 35 5 "d1*d2" }
+{TEXT -1 25 " otherwise it is at most " }
+{TEXT 35 9 "(d1+1)*d2" }
+{TEXT -1 1 " " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 47 "The differential equation satisfied by cos(t): " }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "with(gfun):\ndeq := (D@@2)(f)(t)+f(t):" }
+}
+}
+{PARA 0 "> " 0 "" {TEXT -1 49 "The algebraic equation satisfied by sqrt(1-4*t): " }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "eq := algfuntoalgeq(sqrt(1-4*t),f(t)):" }
+}
+}
+{PARA 0 "> " 0 "" {TEXT -1 57 "The differential equation satisfied by cos(sqrt(1-4*t)): " }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "algebraicsubs(deq,eq,f(t));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#,(-%\"fG6#%\"tG!\"%-%%diffG6$F$F'\"\"#*&,&!\"\"\"\"\"F'\"\"%F0-F*6$F$-
+%\"$G6$F'F,F0F0
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[algfuntoalgeq]" 2 "gfun[algfuntoalgeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[diffeq+diffeq]" 2 "gfun[diffeq+diffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[rec+rec]" 2 "gfun[rec+rec]" "" }{TEXT -1 2 "  " }
+}
+}}

@@ -1,0 +1,728 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 256 "" 1 20 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 
+0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 0 1 0 0 0 
+0 0 0 0 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 260 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 
+0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" 20 262 "" 1 8 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 }{CSTYLE "" 
+-1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 3
+" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 
+0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Plot" 0 13 1 {CSTYLE "
+" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 
+-1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 256 "" 0 "" {TEXT 256 21 "Monomer-Dimer Tilings" 
+}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 257 "" 0 "" {TEXT -1 25 "F. Ca
+zals, December 1997." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 247 "A fundamental problem \+
+in lattice statistics is the monomer-dimer problem, in which the sites
+ of a regular lattice are covered by non-overlapping monomers and dime
+rs, that is squares and pairs of neighbor squares. An example of such \+
+a tiling for a " }{XPPEDIT 18 0 "mxn" "I$mxnG6\"" }{TEXT -1 17 " chess
+board with " }{XPPEDIT 18 0 "m=4" "/%\"mG\"\"%" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "n=5" "/%\"nG\"\"&" }{TEXT -1 119 " is depicted below.  \+
+The relative number of monomers and dimers can be arbitrary or may be \+
+constrained to some density " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 
+60 ", and the problem can be generalized to any fixed dimension " }
+{XPPEDIT 18 0 "d" "I\"dG6\"" }{TEXT -1 551 ". This model was introduce
+d long ago to investigate the properties of adsorbed diatomic molecule
+s on a crystal surface [Rob35], and its three-dimensional version occu
+rs in the theory of mixtures of molecules of different sizes [Gug52] a
+s well as the cell cluster theory of the liquid state  [CoAl55].  Prac
+tically, most of the thermodynamic properties of these physical system
+s can be derived from the number of  ways a given lattice can be cover
+ed, so that a considerable attention has been devoted to this counting
+ question. For any fixed dimension " }{XPPEDIT 18 0 "d" "I\"dG6\"" }
+{TEXT -1 25 " and any monomer density " }{XPPEDIT 18 0 "p" "I\"pG6\"" 
+}{TEXT -1 4 ", a " }{TEXT 257 54 "provably good polynomial time approx
+imation algorithm " }{TEXT -1 93 "is exposed in [KenAl95]. But exact c
+ounting results are still unknown even in dimension two. " }}{PARA 13 
+"" 1 "" {INLPLOT "61-%'CURVESG6#7'7$\"\"!F(7$$\"\"\"F(F(7$F*$\"\"#F(7$
+F(F-F'-F$6#7'F/F,7$F*$\"\"$F(7$F(F4F/-F$6#7'F6F37$F*$\"\"%F(7$F(F;F6-F
+$6#7'F)7$F-F(7$F-F*7$F*F*F)-F$6#7'FCFB7$F-F4F3FC-F$6#7'F37$F4F47$F4F;F
+:F3-F$6#7'FA7$F4F(7$F4F-7$F-F-FA-F$6#7'FRFQFKFGFR-F$6#7'FP7$F;F(7$F;F*
+7$F4F*FP-F$6#7'FenFZ7$F;F-FQFen-F$6#7'FQFin7$F;F;FLFQ-F$6#7'F=7$F-F;7$
+F-$\"\"&F(7$F(FcoF=-F$6#7'FaoF]o7$F;FcoFboFao-%'COLOURG6&%$RGBGF(F($\"
+*++++\"!\")-%(SCALINGG6#%,CONSTRAINEDG" 2 277 262 262 2 0 1 0 2 6 0 4 
+1 1.000000 45.000000 45.000000 10030 10061 10056 10074 0 0 0 20030 0 
+12010 0 0 0 0 0 0 0 1 1 0 0 0 218 45 0 0 0 0 0 0 }}{PARA 0 "" 0 "" 
+{TEXT -1 78 "The goal of this worksheet is to show that these question
+s are amenable to an " }{TEXT 263 36 "automated computer algebra treat
+ment" }{TEXT -1 311 " which goes from the specifications of the coveri
+ngs constructions in terms of Combstruct grammars, to the asymptotics \+
+using rational generating functions and the numeric-symbolic method ex
+posed in [GoSa96]. In particular we shall be interested in enumerating
+ the tilings for a vertical strip of constant width " }{XPPEDIT 18 0 "
+m" "I\"mG6\"" }{TEXT -1 193 " in terms of multivariate rational genera
+ting functions, from which the average number of pieces or the expecte
+d proportions of the three types of pieces in a random tiling are easi
+ly derived. " }}{PARA 0 "" 0 "" {TEXT -1 40 "This will also enable us \+
+to establish a " }{TEXT 265 13 "provably good" }{TEXT -1 67 " sequence
+ of upper and lower bounds for the connectivity constant  " }{XPPEDIT 
+18 0 "tau=limit(g(n)^(1/n^2),n=infinity" "/%$tauG-%&limitG6$)-%\"gG6#%
+\"nG*&\"\"\"\"\"\"*$F+\"\"#!\"\"/F+%)infinityG" }{TEXT -1 7 " where " 
+}{XPPEDIT 18 0 "g(n)" "-%\"gG6#%\"nG" }{TEXT -1 38 " counts the number
+ of ways to tile an " }{XPPEDIT 18 0 "nxn" "I$nxnG6\"" }{TEXT -1 12 " \+
+cheesboard." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 
+-1 141 "But before getting started, we need to load the Combstruct lib
+rary, as well as the piece of code doing the asymptotics of rational f
+ractions:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "with(combstruc
+t): with(gfun): read `ratasympt.mpl`;read `./gfsolve.mpl`;" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT 258 10 "References" }}{PARA 0 "" 0 "" {TEXT -1 
+95 "[CoAl55] E.G.D. Cohen et al., A cell-cluster theory for the liquid
+ state II, Physica XXI, 1955." }}{PARA 0 "" 0 "" {TEXT -1 240 "[Fin97]
+S. Finch, Favorite Mathematical Constants,  http://www.mathsoft.com/cg
+i-shl/constant.bat.\n[GoSa96] X. Gourdon and B. Salvy, Effective Asymp
+totics of linear recurrences with rational coefficients, Discrete Math
+ematics, Vol. 153, 1996." }}{PARA 0 "" 0 "" {TEXT -1 316 "[Gug52] E.A.
+ Guggenheim, Mixtures, Clarendon Press, 1952.\n[Ken95] C. Kenyon et al
+., Approximating the number of Monomer-Dimer Coverings of a Lattice, P
+roc. of the 25th ACM STOC, 1993.\n[Rob35]J.K. Robert, Some properties \+
+of adsorbed films of oxygen on tungsten, Proc. of the Royal Society of
+ London, Vol. A 152, 1935." }}{PARA 0 "" 0 "" {TEXT -1 99 "[Sloa95] N.
+J.A. Sloane and S. Plouffe, The Encyclopedia of Integer Sequences, Aca
+demic Press, 1995." }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 22 "A step-by-
+step example" }}{PARA 0 "" 0 "" {TEXT -1 33 "We first observe that the
+ number " }{XPPEDIT 18 0 "T[n]" "&%\"TG6#%\"nG" }{TEXT -1 108 " counti
+ng the different tilings of a vertical slice of width 1  has a well kn
+own expression: since  height  " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT 
+-1 28 " can be reached from height " }{XPPEDIT 18 0 "n-1" ",&%\"nG\"\"
+\"\"\"\"!\"\"" }{TEXT -1 37 " by adding a monomer and from height " }
+{XPPEDIT 18 0 "n-2" ",&%\"nG\"\"\"\"\"#!\"\"" }{TEXT -1 33 " with a ve
+rtical dimer, we  have " }{XPPEDIT 18 0 "T[n]=T[n-1]+T[n-2]" "/&%\"TG6
+#%\"nG,&&F$6#,&F&\"\"\"\"\"\"!\"\"F+&F$6#,&F&F+\"\"#F-F+" }{TEXT -1 7 
+"  with " }{XPPEDIT 18 0 "T[0]=1,T[1]=1" "6$/&%\"TG6#\"\"!\"\"\"/&F%6#
+\"\"\"\"\"\"" }{TEXT -1 82 ", that is the Fibonacci recurrence.  This \+
+can be checked directly with Combstruct:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 66 "TGr:=\{T=Sequence(Union(monomer,dimer)),monomer=Z,dim
+er=Prod(Z,Z)\};" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$TGrG<%/%\"TG-%)S
+equenceG6#-%&UnionG6$%(monomerG%&dimerG/F.%\"ZG/F/-%%ProdG6$F1F1" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "And we can retrieve the correspond
+ing rational Generating Function with gfsolve:" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 27 "gfsolve(TGr,unlabelled, z);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#<&/-%\"ZG6#%\"zGF(/-%(monomerGF'F(/-%&dimerGF'*$F(\"
+\"#/-%\"TGF',$*$,(!\"\"\"\"\"F(F8F/F8F7F7" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 62 "More interesting is the case m=2 which we examine examine
+ now." }}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 24 "Tiling a slice of width
+ " }{XPPEDIT 18 0 "m=2" "/%\"mG\"\"#" }}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 442 "An example covering of a 2x6 lattice is depicted below. If we \+
+draw a horizontal line at height 0, it turns out that we do not `cut' \+
+any piece, which we encode by MM. At height 1, we cut the lefmost vert
+ical dimer but just touch the monomer topmost side, which we encode by
+ PM. At height 2 the leftmost P turned into an M since  we now touch t
+he dimer boundary, while on the right side  we added a dimer and have \+
+a P. More generally, we shall " }{TEXT 260 80 "assign to each height o
+f the construction containing a monomer or dimer boundary" }{TEXT -1 
+19 "  a word of length " }{XPPEDIT 18 0 "m" "I\"mG6\"" }{TEXT -1 18 " \+
+on the alphabet  " }{XPPEDIT 18 0 "\{M,P" "<$%\"MG%\"PG" }{TEXT -1 18 
+" as follows:  the " }{XPPEDIT 18 0 "i" "I\"iG6\"" }{TEXT -1 24 "th di
+git of the word is " }{XPPEDIT 18 0 "P" "I\"PG6\"" }{TEXT -1 89 " if a
+n horizontal line at this particular height splits a vertical domino l
+ocated in the " }{XPPEDIT 18 0 "i" "I\"iG6\"" }{TEXT -1 15 "th column,
+ and " }{XPPEDIT 18 0 "M" "I\"MG6\"" }{TEXT -1 146 " otherwise. To sum
+marize our example we therefore have MM, PM, MP, MM, MM,MM at the heig
+hts 0,1,2,3,4,6. (BTW, M stands for Minus and P for Plus!)" }}{PARA 
+13 "" 1 "" {INLPLOT "6+-%'CURVESG6#7'7$\"\"!F(7$$\"\"\"F(F(7$F*$\"\"#F
+(7$F(F-F'-F$6#7'F)7$F-F(7$F-F*7$F*F*F)-F$6#7'F5F47$F-$\"\"$F(7$F*F:F5-
+F$6#7'F/F,F<7$F(F:F/-F$6#7'F@F97$F-$\"\"%F(7$F(FEF@-F$6#7'FG7$F*FE7$F*
+$\"\"'F(7$F(FMFG-F$6#7'FKFD7$F-FMFLFK-%(SCALINGG6#%,CONSTRAINEDG-%'COL
+OURG6&%$RGBGF(F($\"*++++\"!\")" 2 260 275 275 2 0 1 0 2 6 0 4 1 
+1.000000 45.000000 45.000000 10030 10061 10056 10074 0 0 0 20030 0 
+12010 0 0 0 0 0 0 0 1 1 0 0 0 18 32 0 0 0 0 0 0 }}{PARA 0 "" 0 "" 
+{TEXT -1 263 "This encoding is not one-to-one since whenever we find t
+wo consecutive Ms, we do not know wether they are on top of two monome
+rs or of a horizontal dimer. But it is sufficient  to incrementally bu
+ild all the possible configurations by recording the status of the " }
+{TEXT 259 7 "fringe." }{TEXT -1 4 " If " }{XPPEDIT 18 0 "m=2" "/%\"mG
+\"\"#" }{TEXT -1 203 ", the possible fringes are MM,MP,PM and each of \+
+them can  be derived from a combination of the others and of monomers \+
+and dimers. For example, the configuration MM can  be reached in 5 dif
+ferent ways by:" }}{PARA 0 "" 0 "" {TEXT -1 111 "     -stacking a hori
+zontal dimer H, two monomers C,C, or two vertical dimers V,V on top of
+ a MM configuration," }}{PARA 0 "" 0 "" {TEXT -1 95 "     -adding a mo
+nomer C to the right column of a PM configuration or to the left one o
+f a MP. " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 
+295 "The remaining transitions follow similar rules. And in order to c
+haracterize the ordinate reached by the construction, we can mark the \+
+height reached by the bottommost piece whose elevation gain is 1 or 2 \+
+at each step of the construction. Putting everything together and asso
+ciating the symbols " }{XPPEDIT 18 0 "H,V,C" "6%%\"HG%\"VG%\"CG" }
+{TEXT -1 5 " and " }{XPPEDIT 18 0 "S" "I\"SG6\"" }{TEXT -1 118 " to th
+e number of horizontal dimers, vertical dimers, monomers and the heigh
+t yields the following Combstruct grammar:" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 263 "Gr2:=\{MM=Union(Epsilon,Prod(S, MM, H), Prod(S, MM
+, C,C),\n                Prod(S,PM, C),Prod(S,MP, C),Prod(S,S,MM,V,V))
+,\n       PM=Union(Prod(S,MM, V, C), Prod(S,MP,V)),\n       MP=Union(P
+rod(S,MM, C, V), Prod(S,PM,V)),\n       H=Epsilon,V=Epsilon,C=Epsilon,
+S=Atom\}:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 72 "The ordinary generat
+ing functions can be derived by Combstruct[gfsolve]:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 59 "GF2Sys:=gfsolve(Gr2, unlabelled, z, [[h,H
+], [v,V], [c,C]]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'GF2SysG<)/-%#
+PMG6&%\"zG%\"hG%\"vG%\"cG**F*\"\"\"F,F/F-F/,2*&F*F/F,F/!\"\"F/F/*(F+F/
+F*\"\"#F,F/F/*&F*F/F+F/F2*(F*F4F-F4F,F/F2*&F*F/F-F4F2*&F*\"\"$F,F9F/*&
+F*F4F,F4F2F2/-%#MPGF)F./-%#MMGF),$*&F0F2,&F1F/F2F/F/F2/-%\"CGF)F-/-%\"
+HGF)F+/-%\"VGF)F,/-%\"SGF)F*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 87 "F
+urthermore we can isolate the GF corresponding to the MM fringes; the \+
+ coefficient of " }{XPPEDIT 18 0 "z^n*h^i*v^j*c^l" "**)%\"zG%\"nG\"\"
+\")%\"hG%\"iGF&)%\"vG%\"jGF&)%\"cG%\"lGF&" }{TEXT -1 59 " in this GF c
+ounts the number of ways to tile a chessboard " }{XPPEDIT 18 0 "2xn" "
+*&\"\"#\"\"\"%#xnGF$" }{TEXT -1 19 " with respectively " }{XPPEDIT 18 
+0 "j,k" "6$%\"jG%\"kG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "l" "I\"lG6
+\"" }{TEXT -1 45 " horizontal and vertical dimers and monomers:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "GF2:=subs(GF2Sys,MM(z,h,v,c)
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$GF2G,$*&,2*&%\"zG\"\"\"%\"vGF
+*!\"\"F*F**(%\"hGF*F)\"\"#F+F*F**&F)F*F.F*F,*(F)F/%\"cGF/F+F*F,*&F)F*F
+2F/F,*&F)\"\"$F+F5F**&F)F/F+F/F,F,,&F(F*F,F*F*F," }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 193 "The number of configurations up to a given height
+ independently of the number and kind of pieces used can be retrieved \+
+by erasing the dimers and monomers markers followed by a Taylor expans
+ion:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "GF2h:=subs([h=1,v=1
+,c=1],GF2);series(GF2h,z=0,11);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%
+GF2hG,$*&,*%\"zG!\"$\"\"\"F**$F(\"\"#!\"\"*$F(\"\"$F*F-,&F(F*F-F*F*F-
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+;%\"zG\"\"\"\"\"!\"\"#\"\"\"\"\"(
+\"\"#\"#A\"\"$\"#r\"\"%\"$G#\"\"&\"$L(\"\"'\"%cB\"\"(\"%tv\"\")\"&UV#
+\"\"*\"&V#y\"#5-%\"OG6#F%\"#6" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 147 
+"This sequence does not appear in [Sloa95]. It can be checked that the
+se values match those computed directly from the grammer by Combstruct
+[count]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "seq(count([MM,G
+r2], size=i), i=0..10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-\"\"\"\"\"#
+\"\"(\"#A\"#r\"$G#\"$L(\"%cB\"%tv\"&UV#\"&V#y" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 71 "Another way to compute the exact number of tilings for
+ large values of " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 107 " is th
+rough the recurrence equation satisfied by the Taylor coefficients and
+ computed by gfun[diffeqtorec]:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 33 "diffeqtorec(y(z)-GF2h,y(z),u(n));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#<&,*-%\"uG6#%\"nG\"\"\"-F&6#,&F(F)F)F)!\"\"-F&6#,&F(F)
+\"\"#F)!\"$-F&6#,&F(F)\"\"$F)F)/-F&6#\"\"!F)/-F&6#F)F1/-F&6#F1\"\"(" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "p2:=rectoproc(\",u(n)):" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "for i from 1 to 10 do i,p2
+(i) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"\"\"\"#" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$\"\"#\"\"(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"
+$\"#A" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%\"#r" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6$\"\"&\"$G#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"'\"
+$L(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"(\"%cB" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\")\"%tv" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"*\"&U
+V#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#5\"&V#y" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 12 "For example:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 18 "p2(1000);evalf(\");" }}{PARA 12 "" 1 "" {XPPMATH 20 "
+6#\"fjl&o^*pV?W$>sV#>V'yw`\\P[MD(f-:;pr2Z$3HZ&*z]s<]sr264FFcnLNvwX*QD;
+yN&*y.r)*>PUH\"z3d!RbB.kSNt=ioC$[,km?x$>`z\"oByy%fuy,(GIi(36(G&G=<VueY
+*R6;8Vf7637M`4C\"QU1d*)GZMtJ1NpNDX?ld)=vGsn\\'GypO;O?\"GRvx8%\\k]\"z:D
+,?#)4g9#\\g1=KdA\"H3GDXydK'4t(oW^<#Q,!Gk7eNLF#o!p^e>Mh$\\[[xofF^^^f2B6
+/C&p!p,2cTm!))e\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+k1))e\")\"$(
+\\" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 73 "But as we shall see now, as
+ymptotic estimates can be derived much faster." }}}}{SECT 0 {PARA 4 "
+" 0 "" {TEXT -1 45 "Asymptotic estimates of the number of tilings" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 245 "We have just seen that the number
+ of configurations is encoded by the rational generating function GF2h
+(z). An elegant way to access its Taylor coefficients is therefore thr
+ough a full partial fraction decomposition yielding linear denominator
+s:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "fpf:=convert(GF2h,ful
+lparfrac,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$fpfG-%$SumG6$*&,(%'
+_alphaG#!\")\"#P*$F*\"\"##\"\"(\"#u#!#6F2\"\"\"F5,&%\"zGF5F*!\"\"F8/F*
+-%'RootOfG6#,*%#_ZG!\"$F5F5*$F>F/F8*$F>\"\"$F5" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 12 "The term in " }{XPPEDIT 18 0 "z^n" ")%\"zG%\"nG" }
+{TEXT -1 47 " comes from the contributions of the roots of  " }
+{XPPEDIT 18 0 "Z^3-Z^2-3*Z+1=0" "/,**$%\"ZG\"\"$\"\"\"*$F%\"\"#!\"\"*&
+\"\"$F'F%F'F*\"\"\"F'\"\"!" }{TEXT -1 20 " in the expansion of" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "el:=op(1,fpf);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%#elG*&,(%'_alphaG#!\")\"#P*$F'\"\"##\"\"(\"#u#
+!#6F/\"\"\"F2,&%\"zGF2F'!\"\"F5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+111 "and since there are 3 singularities, the main asymptotic contribu
+tion comes from the one with smallest modulus:" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 29 "fsolve(-3*_Z+1+_Z^3-_Z^2,_Z);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6%$!+/V>\"[\"!\"*$\"+v\"y56$!#5$\"+(['3q@F%" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 139 "root1:=RootOf(-3*_Z+1+_Z^3-
+_Z^2,.3111078175);\nroot2:=RootOf(-3*_Z+1+_Z^3-_Z^2,-1.481194304);\nro
+ot3:=RootOf(-3*_Z+1+_Z^3-_Z^2,2.170086487); " }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%&root1G-%'RootOfG6$,*%#_ZG!\"$\"\"\"F+*$F)\"\"#!\"\"*
+$F)\"\"$F+$\"+v\"y56$!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&root2G-
+%'RootOfG6$,*%#_ZG!\"$\"\"\"F+*$F)\"\"#!\"\"*$F)\"\"$F+$!+/V>\"[\"!\"*
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&root3G-%'RootOfG6$,*%#_ZG!\"$\"
+\"\"F+*$F)\"\"#!\"\"*$F)\"\"$F+$\"+(['3q@!\"*" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 45 "On this example the dominant pole is clearly " }
+{XPPEDIT 18 0 "0.31" "$\"#J!\"#" }{TEXT -1 45 " so that the main contr
+ibution is encoded by:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "e
+l1:=subs(_alpha=root1,el);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$el1G*
+&,(-%'RootOfG6$,*%#_ZG!\"$\"\"\"F-*$F+\"\"#!\"\"*$F+\"\"$F-$\"+v\"y56$
+!#5#!\")\"#P*$F'F/#\"\"(\"#u#!#6F<F-F-,&%\"zGF-F'F0F0" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "evalf(\");" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*$,&%\"zG\"\"\"$!+v\"y56$!#5F'!\"\"$!+^dfn?F*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 23 "Extracting the term in " }
+{XPPEDIT 18 0 "z^n" ")%\"zG%\"nG" }{TEXT -1 50 " in the previous expre
+ssion produces the estimate:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 42 "es2:=n->.2067595751*(1/.3111078175)^(n+1);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$es2G:6#%\"nG6\"6$%)operatorG%&arrowGF(,$)$\"+V(>V@$!
+\"*,&9$\"\"\"F3F3$\"+^dfn?!#5F(F(" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 20 "seq(es2(i),i=1..10);" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6,$\"+3#4i8#!\"*$\"+J%fk'oF%$\"+7'*42A!\")$\"+bQK%4(F*$\"+BDM!G#!\"($
+\"+#**\\(HtF/$\"+6g,cB!\"'$\"+!y))Hd(F4$\"+O2?MC!\"&$\"+\"[*HCyF9" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 57 "To sum up, from the rational gener
+ating function we have:" }}{PARA 0 "" 0 "" {TEXT -1 49 "-performed a f
+ull partial fraction decomposition," }}{PARA 0 "" 0 "" {TEXT -1 65 "-c
+omputed the singularities and sorted them by increasing moduli," }}
+{PARA 0 "" 0 "" {TEXT -1 69 "-extracted the contribution of the singul
+arity with smallest modulus." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 227 "The key step consists in deciding which are th
+e singularity (ies) with smallest modulus (i), and can be performed nu
+merically using properties of polynomials with integer coefficients --
+see [GoSa96]. This is implemented by the " }{TEXT 261 9 "ratasympt" }
+{TEXT -1 27 " function --whose optional " }{XPPEDIT 18 0 "4" "\"\"%" }
+{TEXT -1 157 "th argument corresponds to the number of singularity lay
+ers the user wants to take into account. In particular to retrieve the
+ main contribution, one writes:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 52 "layer1:=ratasympt(GF2h,z,n,1);nbCfs1:=evalf(layer1);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#>%'layer1G,$*&,(-%'RootOfG6$,*%#_ZG!\"$\"\"
+\"F.*$F,\"\"#!\"\"*$F,\"\"$F.$\"-mu\"y56$!#7#!\")\"#P*$F(F0#\"\"(\"#u#
+!#6F=F.F.)F(,&%\"nGF.F.F.F1F1" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'nb
+Cfs1G,$*$)$\"+v\"y56$!#5,&%\"nG\"\"\"$F-\"\"!F-!\"\"$\"+^dfn?F*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 40 "And to take into account all the l
+ayers:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "layers:=ratasympt
+(GF2h,z,n);nbCfs:=evalf(layers);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%
+'layersG,(*&,(-%'RootOfG6$,*%#_ZG!\"$\"\"\"F.*$F,\"\"#!\"\"*$F,\"\"$F.
+$\"-mu\"y56$!#7#!\")\"#P*$F(F0#\"\"(\"#u#!#6F=F.F.)F(,&%\"nGF.F.F.F1F1
+*&,(-F)6$F+$!-4/V>\"[\"F?F7*$FEF0F;F>F.F.)FEFAF1F1*&,(-F)6$F+$\"-j'['3
+q@F?F7*$FMF0F;F>F.F.)FMFAF1F1" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&nb
+CfsG,(*$)$\"+v\"y56$!#5,&%\"nG\"\"\"$F-\"\"!F-!\"\"$\"+^dfn?F**$)$!+/V
+>\"[\"!\"*F+F0$!+$>T9z$F**$)$\"+(['3q@F7F+F0$\"+Sa%Qs\"F*" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 60 "We can check that the second approximatio
+n is more accurate:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "eval
+f(seq(subs(n=i, layer1), i=1..10));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6
+,$\"+3#4i8#!\"*$\"+I%fk'oF%$\"+6'*42A!\")$\"+cQK%4(F*$\"+BDM!G#!\"($\"
++#**\\(HtF/$\"+7g,cB!\"'$\"+\"y))Hd(F4$\"+N2?MC!\"&$\"+#[*HCyF9" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "evalf(seq(subs(n=i, layers),
+ i=1..10));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6,$\"+++++?!\"*$\"+&*****
+**pF%$\"+)******>#!\")$\"+&******4(F*$\"+)*****zA!\"($\"+\"*****HtF/$
+\"+(****fN#!\"'$\"+\"****Hd(F4$\"+'***>MC!\"&$\"+*)**HCyF9" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "seq(p2(i),i=1..10);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6,\"\"#\"\"(\"#A\"#r\"$G#\"$L(\"%cB\"%tv\"&UV#\"&V#y
+" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 37 "The proportion of monomers \+
+and dimers" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 125 "We now address the \+
+computation of the average number of pieces in a random tiling. From t
+he multivariate generating function " }{XPPEDIT 18 0 "GF2(z,h,v,c)" "-
+%$GF2G6&%\"zG%\"hG%\"vG%\"cG" }{TEXT -1 51 " we can merge the three ty
+pes of pieces as follows:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+35 "GF2;stij:=subs([h=t,v=t,c=t], GF2);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,$*&,2*&%\"zG\"\"\"%\"vGF(!\"\"F(F(*(%\"hGF(F'\"\"#F)F(F(*&F'F(F
+,F(F**(F'F-%\"cGF-F)F(F**&F'F(F0F-F**&F'\"\"$F)F3F(*&F'F-F)F-F*F*,&F&F
+(F*F(F(F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%stijG,$*&,,*&%\"zG\"\"
+\"%\"tGF*!\"#F*F**&F)\"\"#F+\"\"$!\"\"*&F)F*F+F.F0*&F)F/F+F/F*F0,&F(F*
+F0F*F*F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "The coefficient  of \+
+" }{XPPEDIT 18 0 "z^i*t^j" "*&)%\"zG%\"iG\"\"\")%\"tG%\"jGF&" }{TEXT 
+-1 4 " in " }{XPPEDIT 18 0 "stij" "I%stijG6\"" }{TEXT -1 40 " counts t
+he number of tilings at height " }{XPPEDIT 18 0 "i" "I\"iG6\"" }{TEXT 
+-1 14 " with exactly " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 110 " p
+ieces of any type. To get the total number of pieces we just have to c
+ompute the derivative with respect to " }{XPPEDIT 18 0 "t" "I\"tG6\"" 
+}{TEXT -1 16 " and substitute " }{XPPEDIT 18 0 "t=1" "/%\"tG\"\"\"" }
+{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "sstij:=sub
+s(t=1, diff(stij,t));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&sstijG,&*(
+,*%\"zG!\"$\"\"\"F**$F(\"\"#!\"\"*$F(\"\"$F*!\"#,&F(F*F-F*F*,(F(!\"%F+
+F)F.F/F*F**&F'F-F(F*F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 103 "For ex
+ample, the total number of dimers and monomers used in all the configu
+rations tilling the square " }{XPPEDIT 18 0 "2x2" "*&\"\"#\"\"\"%#x2GF
+$" }{TEXT -1 7 " is 20:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "
+series(\",z=0,5);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+-%\"zG\"\"$\"\"
+\"\"#?\"\"#\"#%*\"\"$\"$-%\"\"%-%\"OG6#\"\"\"\"\"&" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 112 "As before, we can compute an estimate of the tot
+al number of pieces in all the configurations at a given height:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "ratasympt(sstij,z,n,1);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#,(*(,(*$-%'RootOfG6$,*%#_ZG!\"$\"\"\"F
+-*$F+\"\"#!\"\"*$F+\"\"$F-$\"-mu\"y56$!#7F/#\"\"(\"#u#\"\"&\"#PF-F'#!#
+8F8F-,&%\"nGF-F-F-F-)F',&F?F-F/F-F0F-*&,(F'#!$w$\"%p8F&#\"$^&\"%QF#!%N
+5FIF-F-)F'F>F0F0*&,(F'#\"#RF8F&#F5F;#\"#VF8F-F-FLF0F0" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "nBDPiecesN:=evalf(\");" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%+nBDPiecesNG,&*&,&%\"nG\"\"\"$F)\"\"!F)F))$\"
++v\"y56$!#5,&F(F)$\"\"#F+F)!\"\"$\"+l(oO'*)!#6*$)F-F'F3$!+O`q'p#F/" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 69 "So that the average number of pie
+ces is asymptotically equivalent to:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 33 "avNbD:=expand(nBDPiecesN/nbCfs1);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%&avNbDG,&%\"nG$\"+)G2NR\"!\"*$\"+d6iB*)!#6\"\"\"" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 65 "And the average number of pieces
+ per layer in a tiling of height " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 14 " is therefore:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+14 "asympt(\"/n,n);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&$\"+)G2NR\"!
+\"*\"\"\"*$%\"nG!\"\"$\"+d6iB*)!#6" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 142 "The number of occurrences and the proportions of dimers and mo
+nomers can be computed in the same way by erasing the irrelevant indet
+erminates:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 270 "pieceProport
+ion:=proc(MGF, keptPiece)\n local forSubs, stij, sstij, nbp;\n\n forSu
+bs:=\{h=1,v=1,c=1\} minus \{keptPiece=1\}; \n stij:=subs([op(forSubs)]
+, MGF);\n sstij:=subs(keptPiece=1, diff(stij,keptPiece));\n nbp:=evalf
+(ratasympt(sstij,z,n,1));\n asympt(nbp/nBDPiecesN,n,2)\nend:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "And we end up with:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 86 "nbh:=pieceProportion(GF2,h);\nnbv:=
+pieceProportion(GF2,v);\nnbc:=pieceProportion(GF2,c);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%$nbhG,&$\"+b^t$[\"!#5\"\"\"-%\"OG6#*$%\"nG!\"\"F
+)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$nbvG,&$\"+s*R&oG!#5\"\"\"-%\"O
+G6#*$%\"nG!\"\"F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$nbcG,&$\"+%)[s
+Zc!#5\"\"\"-%\"OG6#*$%\"nG!\"\"F)" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT 
+-1 25 "Plotting routines archive" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+60 "The figures above were plotted with the following functions:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 203 "dominoH:=proc(x,y) [[x,y], \+
+[x+2,y], [x+2,y+1], [x,y+1], [x,y]] end:\ndominoV:=proc(x,y) [[x,y], [
+x+1,y], [x+1,y+2], [x,y+2], [x,y]] end:\ndominoC:=proc(x,y) [[x,y], [x
++1,y], [x+1,y+1], [x,y+1], [x,y]] end:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 238 "plot([dominoV(0,0), dominoC(0,2),dominoC(0,3),\n    \+
+  dominoC(1,0),dominoV(1,1),dominoH(1,3),\n      dominoV(2,0),dominoC(
+2,2), \n      dominoC(3,0),dominoC(3,1),dominoV(3,2),\n      dominoH(0
+,4),dominoH(2,4)],scaling=constrained,color=blue);" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+132 "plot([dominoV(0,0), dominoC(1,0),dominoV(1,1),dominoC(0,2),domino
+H(0,3),dominoV(0,4),dominoV(1,4)], scaling=constrained,color=blue);" }
+}}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 
+39 "Automatic counting in a slice of width " }{XPPEDIT 18 0 "m" "I\"mG
+6\"" }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 34 "Computing the generating f
+unctions" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 70 "We now show how to aut
+omate the previous computations for any integer " }{XPPEDIT 18 0 "m" "
+I\"mG6\"" }{TEXT -1 44 ". The first task consists in generating the " 
+}{XPPEDIT 18 0 "2^m-1" ",&)\"\"#%\"mG\"\"\"\"\"\"!\"\"" }{TEXT -1 30 "
+ words on the binary alphabet " }{XPPEDIT 18 0 "\{M,P\}" "<$%\"MG%\"PG
+" }{TEXT -1 63 ", and this is easily done with a Combstruct grammar as
+ follows:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 273 "allMPWords:=p
+roc(m::integer)\n local i, MPGr, mps1, mps2, Pm;\n\n MPGr:=\{AllMP=Seq
+uence(MP), MP=Union(M,P), M=Atom, P=Atom\};\n mps1:=allstructs([AllMP,
+ MPGr], size=m);\n mps2:=convert(map(proc(x) cat(op(x)) end, mps1), se
+t);\n Pm:=cat(seq(P,i=1..m)); \n [op(mps2 minus \{Pm\})]\nend:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 15 "For example if " }{XPPEDIT 18 0 "m
+=3" "/%\"mG\"\"$" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 14 "allMPWords(3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7)%
+$PMMG%$MMPG%$MMMG%$PPMG%$MPPG%$MPMG%$PMPG" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 79 "More interesting is the generation of the transitions bet
+ween these words. Let " }{XPPEDIT 18 0 "pattern" "I(patternG6\"" }
+{TEXT -1 66 " be one of them and suppose we want to figure out all the
+ fringes " }{XPPEDIT 18 0 "pattern" "I(patternG6\"" }{TEXT -1 46 " can
+ be derived from. Suppose for example the " }{XPPEDIT 18 0 "i" "I\"iG6
+\"" }{TEXT -1 13 "th letter of " }{XPPEDIT 18 0 "pattern" "I(patternG6
+\"" }{TEXT -1 6 " is a " }{XPPEDIT 18 0 "P" "I\"PG6\"" }{TEXT -1 22 ";
+ this means that the " }{XPPEDIT 18 0 "i" "I\"iG6\"" }{TEXT -1 24 "th \+
+letter of the fringe " }{XPPEDIT 18 0 "pattern" "I(patternG6\"" }
+{TEXT -1 22 " was derived from was " }{XPPEDIT 18 0 "M" "I\"MG6\"" }
+{TEXT -1 50 " and that a vertical dimer was put on top of this " }
+{XPPEDIT 18 0 "M" "I\"MG6\"" }{TEXT -1 31 ". Similar rules applies if \+
+the " }{XPPEDIT 18 0 "i" "I\"iG6\"" }{TEXT -1 14 "th digit is a " }
+{XPPEDIT 18 0 "M" "I\"MG6\"" }{TEXT -1 86 ". And since the letter of a
+ given fringe are independent --except for two consecutive " }
+{XPPEDIT 18 0 "M" "I\"MG6\"" }{TEXT -1 118 "s that may come from an ho
+rizontal dimer, it suffices to recursively examine the digits from lef
+t to right as follows:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 1186 
+"#--pattern is the fringe to be built, e.g. MMPMM\nrecComesFrom:=proc(
+pattern::string, idx::integer, prefix::string, mul::list, result::tabl
+e)\n local prodRes, m, Mm, Pm;\n \n if (idx>length(pattern)) then #--s
+tores the result into an indexed table\n  prodRes:=Prod(S,prefix, op(m
+ul));  \n  if not assigned(result[pattern]) then result[pattern]:=\{pr
+odRes\}\n  else                                  result[pattern]:=resu
+lt[pattern] union \{prodRes\}\n  fi\n else\n  #--we examine the idx^\{
+th\} letter of the target\n  if substring(pattern,idx)=P then\n   recC
+omesFrom(pattern, idx+1, cat(prefix,M), [op(mul), V], result) \n  else
+ #target=M\n   recComesFrom(pattern, idx+1, cat(prefix,P), mul, result
+);\n   recComesFrom(pattern, idx+1, cat(prefix,M), [op(mul), C], resul
+t);\n    \n   #--we may have MM=Prod(MM,H)\n   if (length(pattern)>idx
+) and (substring(pattern,idx+1)=M) then\n    recComesFrom(pattern, idx
++2, cat(prefix,M,M), [op(mul), H], result)\n   fi\n  fi\n fi;\n\n #--s
+ome extra work for M^m\n m:=length(pattern);\n Mm:=cat(seq(M,i=1..m));
+\n if pattern=Mm then\n  Pm:=cat(seq(P,i=1..m));\n  result[Mm]:=result
+[Mm] minus \{Prod(S,Pm)\} \n                         union \{Epsilon,P
+rod(S,S,Mm,seq(V,i=1..m))\}\n fi\nend: " }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 22 "Here is the table for " }{XPPEDIT 18 0 "m=3" "/%\"mG\"\"$
+" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 94 "table3:
+=table():for i in allMPWords(3) do recComesFrom(i, 1, ``, [], table3) \+
+od:print(table3);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%&TABLEG6#7)/%$M
+PMG<&-%%ProdG6%%\"SG%$PMPG%\"VG-F+6'F-%$MMMG%\"CGF/F3-F+6&F-%$MMPGF3F/
+-F+6&F-%$PMMGF/F3/F2</%(EpsilonG-F+6(F-F-F2F/F/F/-F+6%F-%$PPMGF3-F+6&F
+-F9F3F3-F+6%F-F.F3-F+6&F-F(F3F3-F+6%F-%$MPPGF3-F+6%F-F9%\"HG-F+6&F-F6F
+3F3-F+6'F-F2F3F3F3-F+6&F-F2F3FM-F+6%F-F6FM-F+6&F-F2FMF3/F.<$-F+6'F-F2F
+/F3F/-F+6&F-F(F/F//FA<$-F+6'F-F2F/F/F3-F+6&F-F6F/F//F9<'-F+6%F-FJF/-F+
+6&F-F(F/F3-F+6'F-F2F/F3F3-F+6&F-F2F/FM-F+6&F-F6F/F3/FJ<$-F+6'F-F2F3F/F
+/-F+6&F-F9F/F//F6<'-F+6&F-F9F3F/-F+6&F-F(F3F/-F+6'F-F2F3F3F/-F+6&F-F2F
+MF/-F+6%F-FAF/" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 41 "The tables entr
+ies are merged as follows:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+242 "setGrammarFromTable:=proc(aTable)\n local aList, transitions, x;
+\n aList:=op(op(aTable));#--[a=\{Prod(...), Prod(...)\}, ...]\n transi
+tions:=seq(op(1,x)=Union(op(op(2,x))), x=aList);\n \{transitions\} uni
+on \{H=Epsilon,V=Epsilon,C=Epsilon,S=Atom\}\nend:" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 24 "This yields the grammar:" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 33 "Gr3:=setGrammarFromTable(table3);" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6#>%$Gr3G<-/%$MMPG-%&UnionG6'-%%ProdG6&%\"SG%$PMMG
+%\"CG%\"VG-F,6&F.%$MPMGF0F1-F,6'F.%$MMMGF0F0F1-F,6&F.F7%\"HGF1-F,6%F.%
+$PPMGF1/F/-F)6'-F,6%F.%$MPPGF1-F,6&F.F4F1F0-F,6'F.F7F1F0F0-F,6&F.F7F1F
+:-F,6&F.F'F1F0/FC-F)6$-F,6'F.F7F0F1F1-F,6&F.F/F1F1/%$PMPG-F)6$-F,6'F.F
+7F1F0F1-F,6&F.F4F1F1/F=-F)6$-F,6'F.F7F1F1F0-F,6&F.F'F1F1/F4-F)6&-F,6%F
+.FTF1-F,6'F.F7F0F1F0-F,6&F.F'F0F1-F,6&F.F/F1F0/F7-F)6/%(EpsilonG-F,6(F
+.F.F7F1F1F1-F,6%F.F=F0-F,6&F.F/F0F0-F,6%F.FTF0-F,6&F.F4F0F0-F,6%F.FCF0
+-F,6%F.F/F:-F,6&F.F'F0F0-F,6'F.F7F0F0F0-F,6&F.F7F0F:-F,6%F.F'F:-F,6&F.
+F7F:F0/F:Fjo/F1Fjo/F0Fjo/F.%%AtomG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 24 "This is solved as usual:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 97 "MM3GFSys:=gfsolve(Gr3, unlabelled, z, [[h,H], [v,V], [c,C]]);
+\nMM3GF:=subs(MM3GFSys,MMM(z,h,v,c));" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6#>%)MM3GFSysG<-/-%$PMMG6&%\"zG%\"hG%\"vG%\"cG**F*\"\"\"F,F/,.*(F*F/F
+-F/F,\"\"#!\"\"*$F-F2F3F+F3*(F*\"\"$F,\"\"&F-F/F/*(F*F2F,F6F+F/F/*(F*F
+/F-F6F,F/F3F/,LF3F/*&F*F2F,F6F6*(F*F2F-F2F,F2F7*&F*\"\"%F,\"\"'!\"$*(F
+*F/F-F/F,F/F/*(F*F6F,F>F-F/!\"#*(F*F>F-F>F,F>FC*(F*F/F-F/F+F/F2*(F*F6F
+-F6F,F6F/**F*F>F,F>F+F/F-F2F2*(F*F7F,F?F-F6F/*(F-F2F*F>F,F7!\"&**F*F7F
+,F?F-F/F+F/FC*(F-F>F*F2F,F/F2*(F*F7F-F/F,\"\"(F/*(F*F>F,F>F+F2FC**F-F2
+F*F2F+F/F,F/F2*&F*F?F,\"\"*F/*&F*F/F-F6F/*(F*F2F+F2F,F/F2*(F*F6F-F7F,F
+2F/F3/-%\"CGF)F-/-%\"HGF)F+/-%\"SGF)F*/-%\"VGF)F,/-%$PMPGF),$*,F*F/F-F
+/F,F2,,F/F/F;F3FBF/F<F3*(F*F2F,F2F+F/F2F/F:F3F3/-%$MPPGF),$**F*F/F,F2,
+.F-F/*(F*F2F,F6F-F/F3*(F*F6F,F>F-F2F/*(F*F2F-F6F,F2F3*(F*F/F+F/F,F/F/*
+(F*F6F,F>F+F/F3F/F:F3F3/-%$PPMGF)Ffo/-%$MMMGF),$*&,.F/F/F;FCFAF3F=F/FB
+F/F<FCF/F:F3F3/-%$MPMGF)*,F*F/F,F/F-F/,,F-F3*&F*F/F,F2F3*&F*F6F,F7F/*(
+F*F/F-F2F,F/F3F\\pFCF/F:F3/-%$MMPGF)F." }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%&MM3GFG,$*&,.\"\"\"F(*&%\"zG\"\"#%\"vG\"\"$!\"#*(F*F(%\"cGF(F,
+F(!\"\"*&F*\"\"%F,\"\"'F(*(F*F-F,F3F0F(F(*(F*F+F0F+F,F+F.F(,LF1F(F)F-F
+6\"\"&F2!\"$F/F(F5F.*(F*F3F0F3F,F3F.*(F*F(F0F(%\"hGF(F+*(F*F-F0F-F,F-F
+(**F*F3F,F3F<F(F0F+F+*(F*F8F,F4F0F-F(*(F0F+F*F3F,F8!\"&**F*F8F,F4F0F(F
+<F(F.*(F0F3F*F+F,F(F+*(F*F8F0F(F,\"\"(F(*(F*F3F,F3F<F+F.**F0F+F*F+F<F(
+F,F(F+*&F*F4F,\"\"*F(*&F*F(F0F-F(*(F*F+F<F+F,F(F+*(F*F-F0F8F,F+F(F1F1
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 68 "Putting everything together, \+
+we end up with a procedure which takes " }{XPPEDIT 18 0 "m" "I\"mG6\"
+" }{TEXT -1 34 " as entry and returns the grammar:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 356 "getGrammar:=proc(m::integer)\n local i, MP
+Table;\n \nMPTable:=table();\nfor i in allMPWords(m) do recComesFrom(i
+,1,``,[],MPTable) od;\nsetGrammarFromTable(MPTable)\nend:\n\ngetMmGFun
+:=proc(m::integer)\n local i, MPTable,Grm,MMmGFSys;\n\nGrm:=getGrammar
+(m);\nMMmGFSys:=gfsolve(Grm, unlabelled, z, [[h,H], [v,V], [c,C]]);\ns
+ubs(MMmGFSys,cat(seq(M,i=1..m))(z,h,v,c));\nend:" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 182 "The computation to be carried out being quite hea
+vy for 4-variate generating functions, we can alleviate it be keeping \+
+only the markers for the total number of pieces and the height:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 263 "getMmGFunZ:=proc(m::integer
+)\n local i, MPTable,Grm,GrmM,MMmGFSys;\n\nMPTable:=table();\nfor i in
+ allMPWords(m) do recComesFrom(i,1,``,[],MPTable) od;\nGrm:=setGrammar
+FromTable(MPTable);\nMMmGFSys:=gfsolve(Grm, unlabelled, z);\nsubs(MMmG
+FSys,cat(seq(M,i=1..m))(z));\nend:" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT 
+-1 11 "Asymptotics" }}{EXCHG {PARA 12 "" 1 "" {TEXT -1 64 "We can now \+
+compute the generating functions for small values of " }{XPPEDIT 18 0 
+"m" "I\"mG6\"" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 9 "gf:='gf':" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 67 "for i fro
+m 1 to 5 do i,time(assign(gf[i],getMmGFunZ(i))),gf[i]  od;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6%\"\"\"$\"$`&!\"$,$*$,(!\"\"F#*$%\"zG\"\"#F#F
+,F#F*F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"#$\"$a&!\"$,$*&,*%\"zGF
+&\"\"\"F+*$F*F#!\"\"*$F*\"\"$F+F-,&F*F+F-F+F+F-" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6%\"\"$$\"%$f$!\"$,$*&,,*$%\"zG\"\"%\"\"\"*$F+F#F-*$F+\"
+\"#!\"%F+!\"\"F-F-F-,,F/\"#9F2F-F+F,*$F+\"\"'F-F*!#5F2F2" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6%\"\"%$\"&Eg\"!\"$,$*&,2\"\"\"F*%\"zG!\"%*$F+\"\"
+#!#:*$F+\"\"$\"#?*$F+\"\"(F**$F+\"\"&!#6*$F+\"\"'!\"#*$F+F#\"#5F*,6*$F
++\"\"*F**$F+\"\")!\"\"F3!#BF8\"#HF5\"#\"*F;!$6\"F0!#TF-\"#TF+F?FBF*FBF
+B" }}{PARA 12 "" 1 "" {XPPMATH 20 "6%\"\"&$\"&tz)!\"$,$*&,H*$%\"zG\"#=
+\"\"\"*$F+\"#<\"\"#*$F+\"#;!#X*$F+\"#:!#o*$F+\"#9\"$a'*$F+\"#8\"$q)*$F
++\"#7!%?Q*$F+\"#6!%+Z*$F+\"#5\"%b#**$F+\"\"*\"%[%**$F+\"\")!&v6\"*$F+
+\"\"(!%Kv*$F+\"\"'\"%cp*$F+F#\"%%*>*$F+\"\"%!%%z\"*$F+\"\"$!#))*$F+F0
+\"$8\"F+FP!\"\"F-F-,L*$F+\"#?F-*$F+\"#>F0F*!#lF.!$S\"F1\"%\"G\"F4\"%QD
+F7!&m.\"F:!&/w\"F=\"&`&QF@\"&e,&FC!&BO(FF!&#[gFI\"&lY(FL\"&kl#FO!&1^$F
+R!$)*)FT\"%dZFWF2FZ!$H#F+!#9F-F-FfnFfn" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 43 "For bigger ones, the grammar size, that is " }{XPPEDIT 
+18 0 "2^m-1" ",&)\"\"#%\"mG\"\"\"\"\"\"!\"\"" }{TEXT -1 36 ", inherent
+ly yields a linear system " }{XPPEDIT 18 0 "(2^m-1)*x*(2^m-1)" "*(,&)
+\"\"#%\"mG\"\"\"\"\"\"!\"\"F'%\"xGF',&)\"\"#F&F'\"\"\"F)F'" }{TEXT -1 
+84 " with large coefficients whose resolution is very much time consum
+ing.  So that for " }{XPPEDIT 18 0 "m >=6" "1\"\"'%\"mG" }{TEXT -1 95 
+", a better alternative to running getMmGFunZ(m) is to retrieve the re
+sult in the archive below!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 134 "Fr
+om these generating functions we can easily isolate the main contribut
+ion to the asymptotic equivalent with the ratasympt procedure:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "asGf:='asGf':" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 78 "for i from 1 to 6 do assign(asGf[i]
+,ratasympt(gf[i],z,n,1)),evalf(asGf[i]) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*$)$\"+())R.='!#5,&%\"nG\"\"\"$F+\"\"!F+!\"\"$\"+bf8s
+WF(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*$)$\"+v\"y56$!#5,&%\"nG\"\"
+\"$F+\"\"!F+!\"\"$\"+^dfn?F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*$)$
+\"+/$p(4;!#5,&%\"nG\"\"\"$F+\"\"!F+!\"\"$\"+cYAu))!#6" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#,$*$)$\"+>Y\\#H)!#6,&%\"nG\"\"\"$F+\"\"!F+!\"\"$\"
++k[%*=RF(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*$)$\"+i-NuU!#6,&%\"nG
+\"\"\"$F+\"\"!F+!\"\"$\"+*pr]r\"F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+,$*$)$\"+bP+.A!#6,&%\"nG\"\"\"$F+\"\"!F+!\"\"$\"+,oREv!#7" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 79 "It should be observed that these estimate
+s correspond to huge expressions. For " }{XPPEDIT 18 0 "m=5" "/%\"mG\"
+\"&" }{TEXT -1 13 " for example:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 8 "asGf[5];" }}{PARA 12 "" 1 "" {XPPMATH 262 "6#,$*&,J-%'
+RootOfG6$,L*$%#_ZG\"#?\"\"\"*$F+\"#>\"\"#*$F+\"#=!#l*$F+\"#<!$S\"*$F+
+\"#;\"%\"G\"*$F+\"#:\"%QD*$F+\"#9!&m.\"*$F+\"#8!&/w\"*$F+\"#7\"&`&Q*$F
++\"#6\"&e,&*$F+\"#5!&BO(*$F+\"\"*!&#[g*$F+\"\")\"&lY(*$F+\"\"(\"&kl#*$
+F+\"\"'!&1^$*$F+\"\"&!$)*)*$F+\"\"%\"%dZ*$F+\"\"$F8*$F+F0!$H#F+!#9F-F-
+$\"-Ai-NuU!#8#!]q2*QCB)*)>M^G>'=<G'R+2,.A!**4-#=X)eDH`K4oeAb?<7)**=R2
+\"*zJY\"^qjAJD&\\K3Z!3\\!)pJeX;bl%H`K$3.sPbPxKRl\\p2&3$Q(f%[@&e!e0&37*
+$F&F0#!^q&G+6*R]Yzx61f*>rn3;l??<Oye%RGec\\^kHT9g5buQ&>r3`u*GoJ*\"^q_!
+\\75)*HL)=K'>#zEL#e1A'yJ,LL7)3:-&4Jdh)z2.MK&*QQf3MAB-M[*$F&FV#!_qNb$[(
+Qbg0-8[R1(4AmF/BB+*=8'o&*Q*>wzWk$\\#GRu\"3e:Z%>GvR9b=\"]qU[(o,L))QJ?F.
+K6APwn.J')o@A(o9Dq\"\\=i-Jj%QB()eJ(*)4o0(Qqc!)*$F&Fin#\"^q%[%y#*=5W8\"
+f-#4V)y$RV*y(Hy#*[:J-lZu'*G$4r^Es&>Eyv>\\#))HUDO*)Fbo*$F&F/#\"[qIZ*\\4
+\"[kW,,dx'QuK@M8KBxlyd33%=%3Na/dq/Bv*p$\\J()\\>$3P>Fbo#\"\\qzQ2#o]hEO]
+sO!yC6EgQFfWh%f#flN7\"f&fUHa\"G#)=%eScA;?$*=_,\"FfoF-*$F&FS#\"`q\"e:1J
+8h`;i\"pC/'zA)H!f;;(QKSGQ8dtoNTq<ih**)3C0)yFtwrXq)>X\"^qEXi]!*\\mT4;)4
+'Rj;\"H.6$*e1lmhSa2^Zb'yI**Q:qhw%>pH/<h6,<C*$F&FM#!`q.2$4([;_0z1H!=tuM
+o-&oQ!*RCK(\\;b`FIy)yjaJgqHzJ3[-q64_CD%Ffp*$F&FP#!_qfxZ`'euPc_&oLqBk%>
+\\,D9tnBCKec@\"\\`s:Ypo9jhO&z\")4CenlQZ%\"^q%o\\P.mwxiSa1kAWu_N2isPVWu
+$H]S$)pV_?m#pnWxJYz>O6u2M6;*$F&F>#\"^qX&>zOJ'z0g<d4qGL9cg\"f3s>aK5L2T0
+U!z!y&[o\"*oN@H=VNAkvVA$Fbo*$F&FD#!_qT&RWrFlWOGVXS[toN[6km@n1&G)*38=(y
+DtC5#HA<\\b,sLH*3\"zimTFfp*$F&FG#\"`qRhD)\\H=\\a46\">&Gy=^*fn]r0,oO2yn
+)*e_8\"e(zw4$)\\gNTuiiL4PS*>Ffp*$F&FJ#\"`qn$*\\!*\\@>98>'Hp&*GL=-tLN@(
+*R%>Idx\"RkstTk4SnT(>6nOV)*oY=`,#Ffo*$F&FA#!^qJ#y!G[_PMNPb!G,#ybgdRQ&p
+jb(\\p!*[.5W#fsg,()*=*[JyQX#)emY(Q$\"]q4Y/vqg(HNaT'o&f(z?XO4U!zh(HVn>A
+[#=c]*\\Q:7!pnlS;$pVlVE<*$F&F5#!]qi`-X^RULB.t>@v7df&3$p%)yhOr6!y'[s!=W
+R!GM*=k.)*o[\\[,G!)G\"Fbo*$F&F2#\"[qt,k5uH&)zVz;i<Nn6kw\"43&\\+>f+g5m?
+#f<Z'z3M'ft$)4WsX.:O$F]q*$F&F8#!]qp-$=W64s,H&e**G0V.K>Q/H5)e'QXGUc[XfR
+#[qst-uqw:HMW=UN(Ffo*$F&F;#\"^q4$e@sf%)=g@'*3rtZ^*4G7q`6z'39!R>**fD(*f
+$z>(zs*=PcXA?RRN#o#Fbo*$F&FY#!_q-3_sh\"eh[X%HtT&=E>1`/hPg+`o@!HAp!QF+B
+m7&\\!z0X9+GLfOFO$\"]q@uV3lT%p:gj,m0h=)Q=bJW36OMd7&eC4J^lJ#phVzl[\\SGN
+>NGS*$F&Ffn#\"_qw$*HGh)*yl!)=Z=$)e:>B=Y8%*[\\ZDj(pW0Q9()o^[9rks*GyFZYb
+K%Q:$FboF-)F&,&%\"nGF-F-F-!\"\"Fds" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 27 "As observed in [Fin97], if " }{XPPEDIT 18 0 "g(n)" "-%\"gG6#%\"
+nG" }{TEXT -1 36 " denotes the number of tilings of a " }{XPPEDIT 18 
+0 "nxn" "I$nxnG6\"" }{TEXT -1 67 " chessboard, an interesting value fo
+r the physical applications is " }{XPPEDIT 18 0 "tau=Limit((g(n))^(1/n
+^2),n=infinity)" "/%$tauG-%&LimitG6$)-%\"gG6#%\"nG*&\"\"\"\"\"\"*$F+\"
+\"#!\"\"/F+%)infinityG" }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT -1 
+219 "No exact expression for this limit is known, although the approxi
+mation 1.940215531 is generally agreed on.  The first terms of the seq
+uence can be computed from the previous approximations and are consist
+ent with 1.94:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "nn:='nn':
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 96 "for i from 1 to 6 do as
+sign(nn[i],coeff(series(gf[i],z=0,i+1),z,i)),evalf((nn[i])^(1/(i*i))) \+
+od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"\"\"\"\"!" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#$\"+ildE;!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+
+Xp!*=<!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+1FTy<!\"*" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#$\"+q@96=!\"*" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#$\"+-))>L=!\"*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 71 "But more \+
+interesting is the following observation. Suppose for example " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 31 " is a multiple of 6. To til
+e a " }{XPPEDIT 18 0 "nxn" "I$nxnG6\"" }{TEXT -1 36 " chessboard we ca
+n put side by side " }{XPPEDIT 18 0 "n/6" "*&%\"nG\"\"\"\"\"'!\"\"" }
+{TEXT -1 33 " slices of width 6. In this case " }{XPPEDIT 18 0 "tau=al
+pha^(1/6)" "/%$tauG)%&alphaG*&\"\"\"\"\"\"\"\"'!\"\"" }{TEXT -1 7 "  w
+ith " }{XPPEDIT 18 0 "alpha" "I&alphaG6\"" }{TEXT -1 59 " the singular
+ity of smallest modulus of the denominator of " }{XPPEDIT 18 0 "gf[6]
+" "&%#gfG6#\"\"'" }{TEXT -1 5 ". If " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 281 " is not a multiple of 6, it suffices to complete with at
+ most 5 vertical stripes of width 1, but this does not change the limi
+t. The interest in using as many slices of maximal  width is to minimi
+ze the number of joints where the overlaps are not taken into account.
+  The sequence " }{XPPEDIT 18 0 "\{alpha[i]^(1/i),i=1..6\}" "<$)&%&alp
+haG6#%\"iG*&\"\"\"\"\"\"F'!\"\"/F';\"\"\"\"\"'" }{TEXT -1 50 " therefo
+re provides lower bounds for the constant " }{XPPEDIT 18 0 "tau" "I$ta
+uG6\"" }{TEXT -1 134 ". An upper bound can be obtained in the same way
+ by having slices of width 6 overlap on a position, and the correspond
+ing sequence is " }{XPPEDIT 18 0 "\{alpha[i]^(1/(i-1)),i=2..6" "<$)&%&
+alphaG6#%\"iG*&\"\"\"\"\"\",&F'F*\"\"\"!\"\"F-/F';\"\"#\"\"'" }{TEXT 
+-1 2 ". " }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 108 "for i from 2 t
+o 6 do i,(1/op(1,denom(evalf(asGf[i]))))^(1./i),(1/op(1,denom(evalf(as
+Gf[i]))))^(1./(i-1)) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"#$\"+/
+C&Gz\"!\"*$\"+V(>V@$F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"$$\"+N>G
+Q=!\"*$\"+0DS#\\#F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"%$\"+5q\\j=
+!\"*$\"+V1=$H#F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"&$\"+FRcy=!\"*
+$\"+m)*G*>#F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"'$\"+()\\q))=!\"*
+$\"+N,&[9#F&" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 56 "At last a trick w
+e can use to try to guess the value of " }{XPPEDIT 18 0 "tau" "I$tauG6
+\"" }{TEXT -1 44 " is Romberg's convergence acceleration. Let " }
+{XPPEDIT 18 0 "u[n]" "&%\"uG6#%\"nG" }{TEXT -1 36 " be a sequence know
+n to converge to " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 44 ". If th
+e rate of convergence is of the form " }{XPPEDIT 18 0 "u[n]=l+a[1]/n+O
+(1/n^2)" "/&%\"uG6#%\"nG,(%\"lG\"\"\"*&&%\"aG6#\"\"\"F)F&!\"\"F)-%\"OG
+6#*&\"\"\"F)*$F&\"\"#F/F)" }{TEXT -1 7 ", then " }{XPPEDIT 18 0 "2*u[2
+*n]-u[n]" ",&*&\"\"#\"\"\"&%\"uG6#*&\"\"#F%%\"nGF%F%F%&F'6#F+!\"\"" }
+{TEXT -1 4 " is " }{XPPEDIT 18 0 "l+O(1/n^2)" ",&%\"lG\"\"\"-%\"OG6#*&
+\"\"\"F$*$%\"nG\"\"#!\"\"F$" }{TEXT -1 178 ". On our example, although
+ the upper bound does not make sense due to too erroneous initial valu
+es, after a single step the lower bound gets close to the commonly acc
+epted value:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 199 "u[2]:=1.79
+2852404:u[4]:=1.863497010:\nv[2]:=3.214319743:v[4]:=2.293180643:\n2*u[
+4]-u[2],2*v[4]-v[2];\n\n\nu[3]:=1.838281935:u[6]:=1.888704987:\nv[3]:=
+2.492402505:v[6]:=2.144850135:\n2*u[6]-u[3],2*v[6]-v[3];" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$$\"+;;9M>!\"*$\"+V:/s8F%" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$$\"+R!G\"R>!\"*$\"+lxH(z\"F%" }}}{SECT 1 {PARA 5 "" 0 "
+" {TEXT -1 28 "Generating functions archive" }}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 22 "gf[1]:=-1/(-1+z^2+z);\n" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%#gfG6#\"\"\",$*$,(!\"\"F'*$%\"zG\"\"#F'F-F'F+F+" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "gf[2]:=-1/(-3*z+1-z^2+z^3)*(
+z-1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#gfG6#\"\"#,$*&,*%\"zG!\"$
+\"\"\"F-*$F+F'!\"\"*$F+\"\"$F-F/,&F+F-F/F-F-F/" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 54 "gf[3]:=-(z^4+z^3-4*z^2-z+1)/(14*z^2-1+4*z+z^6-
+10*z^4);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#gfG6#\"\"$,$*&,,*$%\"z
+G\"\"%\"\"\"*$F,F'F.*$F,\"\"#!\"%F,!\"\"F.F.F.,,F0\"#9F3F.F,F-*$F,\"\"
+'F.F+!#5F3F3" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 113 "gf[4]:=-(1
+-4*z-15*z^2+20*z^3+z^7-11*z^5-2*z^6+10*z^4)/(z^9-z^8-23*z^7+29*z^6+91*
+z^5-111*z^4-41*z^3+41*z^2+9*z-1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+&%#gfG6#\"\"%,$*&,2\"\"\"F+%\"zG!\"%*$F,\"\"#!#:*$F,\"\"$\"#?*$F,\"\"(
+F+*$F,\"\"&!#6*$F,\"\"'!\"#*$F,F'\"#5F+,6*$F,\"\"*F+*$F,\"\")!\"\"F4!#
+BF9\"#HF6\"#\"*F<!$6\"F1!#TF.\"#TF,F@FCF+FCFC" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 347 "gf[5]:=-(z^18+2*z^17-45*z^16-68*z^15+654*z^14+8
+70*z^13-3820*z^12-4700*z^11+9255*z^10+9448*z^9-11175*z^8-7532*z^7+6956
+*z^6+1994*z^5-1794*z^4-88*z^3+113*z^2+6*z-1)/(z^20+2*z^19-65*z^18-140*
+z^17+1281*z^16+2538*z^15-10366*z^14-17604*z^13+38553*z^12+50158*z^11-7
+3623*z^10-60482*z^9+74665*z^8+26564*z^7-35106*z^6-898*z^5+4757*z^4+16*
+z^3-229*z^2-14*z+1);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%#gfG6#\"\"&
+,$*&,H*$%\"zG\"#=\"\"\"*$F,\"#<\"\"#*$F,\"#;!#X*$F,\"#:!#o*$F,\"#9\"$a
+'*$F,\"#8\"$q)*$F,\"#7!%?Q*$F,\"#6!%+Z*$F,\"#5\"%b#**$F,\"\"*\"%[%**$F
+,\"\")!&v6\"*$F,\"\"(!%Kv*$F,\"\"'\"%cp*$F,F'\"%%*>*$F,\"\"%!%%z\"*$F,
+\"\"$!#))*$F,F1\"$8\"F,FQ!\"\"F.F.,L*$F,\"#?F.*$F,\"#>F1F+!#lF/!$S\"F2
+\"%\"G\"F5\"%QDF8!&m.\"F;!&/w\"F>\"&`&QFA\"&e,&FD!&BO(FG!&#[gFJ\"&lY(F
+M\"&kl#FP!&1^$FS!$)*)FU\"%dZFXF3Fen!$H#F,!#9F.F.FgnFgn" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 882 "gf[6]:=-(-1+311*z^2-3891*z^3-12057
+*z^4-315889*z^6-2997721*z^7+218447*z^5+13467571*z^9+8754480*z^8+23*z-4
+58919487*z^18-303976032*z^17+612805499*z^16+207743591*z^15-496137395*z
+^14-56233657*z^13+240612231*z^12-14684235*z^11-66016499*z^10+206819317
+*z^20+249194245*z^19-109*z^32-36273*z^29+861*z^31+7443809*z^24+3722360
+1*z^23-123372421*z^21-54160427*z^22-6708699*z^25+z^34-29377*z^28+68651
+7*z^27-338040*z^26+3521*z^30-7*z^33)/(1-576*z^2+6080*z^3+42422*z^4-443
+404*z^6+12931566*z^7-453004*z^5-83558644*z^9-25517604*z^8-36*z+4169343
+006*z^18+2978277152*z^17-4669345206*z^16-1630080704*z^15+3235975264*z^
+14+274712602*z^13-1335612340*z^12+154307596*z^11+295510396*z^10-231032
+7672*z^20-2919950172*z^19+5736*z^32+1503868*z^29-62874*z^31-149620588*
+z^24-626694028*z^23+1717916424*z^21+777289050*z^22+141424642*z^25-8*z^
+35-138*z^34+z^36-94620*z^28-19237868*z^27+13835164*z^26-81796*z^30+122
+4*z^33);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%#gfG6#\"\"',$*&,bo*$%\"
+zG\"#=!*([>*e%*$F,\"#:\"*\"fVx?*$F,\"#<!*Kg(RIF,\"#B*$F,\"\"#\"$6$*$F,
+\"\"*\")rvY8*$F,\"\")\"(![a()*$F,\"\"(!(@x*H*$F,\"\"&\"'Z%=#*$F,F'!'*)
+eJ*$F,\"\"$!%\"*Q*$F,\"\"%!&d?\"*$F,\"#?\"*<$>o?*$F,\"#>\"*XU>\\#*$F,
+\"#5!)*\\;g'*$F,\"#9!*&RPh\\*$F,\"#8!)dOBc*$F,\"#7\"*JAhS#*$F,\"#6!)NU
+o9*$F,\"#;\"**\\0Gh*$F,\"#K!$4\"*$F,\"#H!&ti$*$F,\"#J\"$h)*$F,\"#C\"(4
+QW(*$F,F5\"),OAP*$F,\"#A!)F/;a*$F,\"#D!(*p3n*$F,\"#M\"\"\"*$F,\"#G!&x$
+H*$F,\"#F\"'<lo*$F,\"#E!'S!Q$*$F,\"#I\"%@N*$F,\"#L!\"(*$F,\"#@!*@CPB\"
+!\"\"FepFep,foF+\"+1IMpTF/!+/23I;F2\"+_rFyHF,!#OF6!$w&F9!)W'eN)F<!)/w^
+DF?\")m:$H\"FB!'/IXFE!'/MWFG\"%!3'FJ\"&AC%FM!+swK5BFP!+s,&*>HFS\"*'R5b
+HFV\"+k_(fB$FY\"*-Eru#Ffn!+SBhN8Fin\"*'f2V:F\\o!+1_MpY*$F,\"#N!\")*$F,
+\"#OFepF_o\"%OdFbo\"(oQ]\"Feo!&uG'Fho!*)e?'\\\"F[p!*GSpE'F]p\"*]!*Gx(F
+`p\"*UYUT\"Fcp!$Q\"Ffp!&?Y*Fip!)oyB>F\\q\")k^$Q\"F_q!&'z\")Fbq\"%C7Feq
+\"+Ck\"zr\"FepFepFhqFhq" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 0 "" }}}}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 10 "Co
+nclusion" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 191 "We showed that variou
+s parameters related to dimer-monomer tilings such as the average numb
+er of pieces or the relative numbers of horizontal dimers and monomers
+ in a random tiling of height " }{XPPEDIT 18 0 "n " "I\"nG6\"" }{TEXT 
+-1 21 " in a strip of width " }{XPPEDIT 18 0 "m" "I\"mG6\"" }{TEXT -1 
+251 " can be computed very easily using Combstruct and ratasympt. More
+ precisely Combstruct is used to define the grammars the tilings are d
+erived from, and ratasympt is used to perform asymptotic expansions on
+ rational fractions with rational coeficients." }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 17 "About the number " }
+{XPPEDIT 18 0 "g(n)" "-%\"gG6#%\"nG" }{TEXT -1 27 " of different tilin
+gs of a " }{XPPEDIT 18 0 "nxn" "I$nxnG6\"" }{TEXT -1 167 " chessboard,
+ altough the method presented here is limited due to the exponential g
+rowth of the grammar describing these tilings, the very first terms co
+mputed provide " }{TEXT 264 36 "provably good upper and lower bounds" 
+}{TEXT -1 31 " for the connectivity constant " }{XPPEDIT 18 0 "g(n)^(1
+/n^2)" ")-%\"gG6#%\"nG*&\"\"\"\"\"\"*$F&\"\"#!\"\"" }{TEXT -1 17 ". Mo
+re precisely:" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT 266 7 "Theorem" }{TEXT -1 80 ". The connectvity constant for two
+ dimensional monomer-dimer tilings satisfies  " }}{PARA 0 "" 0 "" 
+{TEXT -1 1 " " }}{PARA 258 "" 0 "" {XPPEDIT 18 0 "tau>=1.888" "1$\"%))
+=!\"$%$tauG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "tau<=2.144" "1%$tauG$
+\"%W@!\"$" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}}{MARK "3 5 0 0" 50 }{VIEWOPTS 1 1 0 1 1 1803 }

@@ -1,0 +1,27 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+# 1/(1-x)/(1-p*x-y)
+sys:={(-1+x)*(-1+y+p*x)*diff(h(x,y),x)+(-1+y+2*p*x-p)*h(x,y),
+    (-1+y+p*x)*diff(h(x,y),y)+h(x,y)}:
+diag_of_sys(sys,x,y):
+if %=
+[6*p*h(x)+(14*p*x-6*p+6*p^2-2)*diff(h(x),x)+(4*p*x^2+4*p^2*x-4*p*x-x-p+1)*diff
+(diff(h(x),x),x)]
+then okay else % fi;

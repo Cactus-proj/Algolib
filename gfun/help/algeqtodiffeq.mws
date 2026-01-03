@@ -1,0 +1,163 @@
+{VERSION 4 0 "Mac OS X" "4.0" }
+{USTYLETAB {PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 
+0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Or
+dered List 5" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2
+ 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 1" -1 201 1 {CSTYLE ""
+ -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2
+ 2 -1 1 }{PSTYLE "Left Justified Maple Output" -1 12 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" 
+-1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 
+128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "H
+eading 2" -1 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0
+ 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 72 2 0 2 2 -1 1 }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Tim
+es" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 0 0 1 }1 1 0 0 0 10 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title"
+ -1 203 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3
+ 1 0 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0
+ 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkError" -1 205 1 {CSTYLE "" -1 -1 
+"Courier" 1 12 255 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Line Printed Output" -1 6 1 {CSTYLE "" -1 -1 "Courier
+" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 
+2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" 
+-1 17 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3
+ 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "
+Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2
+ -1 1 }{PSTYLE "Warning" -1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 
+255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Head
+ing 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 
+1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1
+ -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Ordered List 2" -1 206 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE
+ "HyperlinkWarning" -1 207 1 {CSTYLE "" -1 -1 "Courier" 1 12 0 0 255 1
+ 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{CSTYLE "Help Vari
+able" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Text"
+ -1 200 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Bold" 
+-1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Page Number" 
+-1 33 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Itali
+c Small" -1 201 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help
+ Nonterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Maple Comment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0
+ 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 1 2 1 2 2 1 2 0 
+0 0 1 }{CSTYLE "2D Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 2 2 2 0 
+0 0 1 }{CSTYLE "2D Inert Output" -1 202 "Times" 1 12 144 144 144 1 2 2
+ 2 2 1 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0 1 2 
+2 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1 12 0 128 128 1 1 2 
+1 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times" 1 10 0 0 0 1 2 1 2
+ 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times" 1 10 0 0 0 1 2 2 2 2
+ 2 2 0 0 0 1 }{CSTYLE "2D Input" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 
+1 2 0 0 0 1 }{CSTYLE "Maple Input Placeholder" -1 203 "Courier" 1 12 
+200 0 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 "T
+imes" 1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 
+1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Annotation Text" -1 204 "Ti
+mes" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Tim
+es" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" 
+-1 41 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1
+ 17 "Times" 1 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Sym
+bol 2" -1 16 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equati
+on Label" -1 205 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Pl
+ot Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Code"
+ -1 206 "Courier" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help It
+alic" -1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Header \+
+and Footer" -1 207 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "
+Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE 
+"Output Labels" -1 29 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE
+ "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE
+ "2D Comment" -1 18 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE 
+"Help Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Dictionary Hyperlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Times" 1 12 0 0 0 1 1 2 2
+ 2 2 2 0 0 0 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 
+1 2 2 2 2 2 0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1 2 2 2 
+2 2 2 0 0 0 1 }{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2
+ 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2
+ 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 0 0 1 2 2 1 2
+ 2 2 0 0 0 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 
+0 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 
+0 0 1 1 2 2 2 2 2 0 0 0 1 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT 208 19 "gfun[algeqtodiffeq]" }{TEXT 30 
+70 " - compute a differential equation satisfied by an algebraic funct
+ion " }}{PARA 4 "" 0 "usage" {TEXT 209 16 "Calling Sequence" }}{PARA 0
+ "" 0 "" {TEXT 210 19 "     algeqtodiffeq(" }{TEXT 35 1 "p" }{TEXT 
+210 2 ", " }{TEXT 35 4 "y(z)" }{TEXT 210 2 ", " }{TEXT 35 12 "ini, opt
+ions" }{TEXT 210 1 ")" }}{PARA 4 "" 0 "" {TEXT 209 10 "Parameters" }}
+{PARA 0 "" 0 "" {TEXT 210 5 "     " }{TEXT 23 6 "p   - " }{TEXT 210 
+14 "polynomial in " }{TEXT 35 1 "y" }{TEXT 210 5 " and " }{TEXT 35 1 "
+z" }{TEXT 210 27 " (or a polynomial equation)" }}{PARA 0 "" 0 "" {TEXT
+ 210 5 "     " }{TEXT 23 6 "y   - " }{TEXT 210 30 "name of the holonom
+ic function" }}{PARA 0 "" 0 "" {TEXT 210 5 "     " }{TEXT 23 6 "z   - 
+" }{TEXT 210 45 "name of the generic variable associated with " }{TEXT
+ 35 1 "y" }}{PARA 0 "" 0 "" {TEXT 210 5 "     " }{TEXT 23 6 "ini - " }
+{TEXT 210 55 "(optional) initial conditions to specify a solution of "
+ }{TEXT 35 8 "eq    " }{TEXT 23 10 "options - " }{TEXT 210 73 "(opti
+onal) equation(s) of the form homogeneous=true and/or ini_cond=false" 
+}}{SECT 0 {PARA 4 "" 0 "info" {TEXT 209 11 "Description" }}{PARA 15 ""
+ 0 "" {TEXT 211 15 "The polynomial " }{TEXT 35 1 "p" }{TEXT 211 32 " d
+efines an algebraic function, " }{TEXT 35 11 "RootOf(p,y)" }{TEXT 211 
+126 " in Maple terms. This procedure computes a linear differential eq
+uation with polynomial coefficients verified by the function " }{TEXT 
+35 4 "y(z)" }{TEXT 211 36 ". This equation is of order at most " }
+{TEXT 35 13 "degree(p,y)-1" }{TEXT 211 2 ". " }}{PARA 15 "" 0 "" {TEXT
+ 211 48 "The output contains initial conditions in zero (" }{TEXT 35 
+4 "y(0)" }{TEXT 211 2 ", " }{TEXT 35 7 "D(y)(0)" }{TEXT 211 68 ", and \+
+so on), and can thus be given directly to dsolve. In general, " }{TEXT
+ 35 4 "y(0)" }{TEXT 211 6 " is a " }{TEXT 35 6 "RootOf" }{TEXT 211 15 
+" a polynomial, " }{TEXT 35 7 "D(y)(0)" }{TEXT 211 26 " a rational exp
+ression in " }{TEXT 35 4 "y(0)" }{TEXT 211 2 ", " }{TEXT 35 12 "(D@@2)
+(y)(0)" }{TEXT 211 26 " a rational expression in " }{TEXT 35 4 "y(0)" 
+}{TEXT 211 1 "," }{TEXT 35 7 "D(y)(0)" }{TEXT 211 13 ", and so on. " }
+}{PARA 15 "" 0 "" {TEXT 211 113 "If the optional argument \"homoegenou
+s=true\" is given, the differential equation will be forced to be homo
+geneous." }}{PARA 15 "" 0 "" {TEXT 211 174 "If the optional argument \+
+\"ini_cond=false\" is given, no attempt at computing initial condition
+s at 0 will be made and the equation will be returned without initial \+
+conditions." }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT 209 8 "Examples"
+ }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(gfun):\n" }{MPLTEXT 
+1 0 30 "algeqtodiffeq(y=1+z*y^2,y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20
+ "6#,(\"\"\"\"\"\"*&,&\"\"\"!\"\"*&\"\"#\"\"\"%\"zG\"\"\"\"\"\"\"\"\"-
+%\"yG6#%\"zG\"\"\"\"\"\"*&,&%\"zG!\"\"*&\"\"%\"\"\")%\"zG\"\"#\"\"\"\"
+\"\"\"\"\"-%%diffG6$-%\"yG6#%\"zG%\"zG\"\"\"\"\"\"" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 54 "algeqtodiffeq(56*a^3+7*a^3*y^3-14*y*z,y(z),
+\{y(0)=-2\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<%,(*&-%\"yG6#%\"zG\"
+\"\"%\"zG\"\"\"!\"\"*(\"\"$\"\"\"-%%diffG6$-%\"yG6#%\"zG%\"zG\"\"\")%
+\"zG\"\"#\"\"\"\"\"\"*&,&*&\"$3\"\"\"\")%\"aG\"\"*\"\"\"!\"\"*&\"\"#\"
+\"\")%\"zG\"\"$\"\"\"\"\"\"\"\"\"-%%diffG6$-%\"yG6#%\"zG-%\"$G6$%\"zG
+\"\"#\"\"\"\"\"\"/-%\"yG6#\"\"!!\"#/--%\"DG6#%\"yG6#\"\"!,$*&#\"\"\"\"
+\"$\"\"\")%\"aG\"\"$!\"\"!\"\"" }}}{PARA 0 "" 0 "" {TEXT 210 11 "We ca
+n use " }{TEXT 35 13 "algeqtodiffeq" }{TEXT 210 6 " with " }{TEXT 35 
+11 "diffeqtorec" }{TEXT 210 38 " to determine fast Taylor expansions. 
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "p:=y=1+z*y+z*y^5;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"pG/%\"yG,(\"\"\"\"\"\"*&%\"zG\"\"
+\"%\"yG\"\"\"\"\"\"*&%\"zG\"\"\")%\"yG\"\"&\"\"\"\"\"\"" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "deq:=algeqtodiffeq(p,y(z)):\n" }
+{MPLTEXT 1 0 33 "rec:=diffeqtorec(deq,y(z),u(n)):\n" }{MPLTEXT 1 0 39 
+"p_generator:=rectoproc(rec,u(n),list):\n" }{MPLTEXT 1 0 15 "p_geneato
+r(30);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%+p_geneatorG6#\"#I" }}}}
+{SECT 0 {PARA 4 "" 0 "seealso" {TEXT 209 9 "See Also " }}{PARA 0 "" 0 
+"" {TEXT 210 0 "" }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT 210 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT 210 2 "
+, " }{HYPERLNK 17 "dsolve" 2 "dsolve" "" }{TEXT 210 2 ", " }{HYPERLNK 
+17 "gfun[diffeqtorec]" 2 "gfun[diffeqtorec]" "" }{TEXT 210 2 "  " }}}}
+
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

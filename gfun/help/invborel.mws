@@ -1,0 +1,77 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 14 "gfun[invborel]" }
+{TEXT 30 50 " - convert an exponential into ordinary recurrence" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 14 "     invborel(" }
+{TEXT 35 4 "expr" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "a(n)" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "t" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "expr - " }
+{TEXT -1 46 "linear recurrence with polynomial coefficients" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "a,n  - " }
+{TEXT -1 32 "name and index of the recurrence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "t    - " }
+{TEXT -1 19 "(optional) 'diffeq'" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 20 "(a(n),n=0..infinity)" }
+{TEXT -1 54 " is the sequence of numbers defined by the recurrence " }
+{TEXT 35 4 "expr" }
+{TEXT -1 56 ", the procedure computes the recurrence for the numbers " }
+{TEXT 35 7 "n!*a(n)" }
+{TEXT -1 1 "." }
+}
+{PARA 15 "> " 0 "" {TEXT -1 51 "If the optional fourth argument 'diffeq' is given, " }
+{TEXT 35 4 "expr" }
+{TEXT -1 173 " is taken as a linear differential equation with polynomial coefficients, and the procedure outputs a linear differential equation satisfied by its inverse Borel transform. " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 32 "Laplace is used as a synonym of " }
+{TEXT 35 9 "invborel." }
+{TEXT -1 1 " " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 80 "with(gfun):\nrec:={a(n)=n*a(n-1)+a(n-2),a(0)=0,a(1)=1}:\ndeq:=invborel(rec,a(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%$deqG<%/-%\"aG6#\"\"!F*/-F(6#\"\"\"F.,(*&,(!\"#F.*$%\"nG\"\"#!\"\"F4
+!\"$F.-F(6#F4F.F.*&,(F4!\"%F<F.F3F6F.-F(6#,&F4F.F.F.F.F.-F(6#,
+&F4F.F5F.F.
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "rec2:=rectodiffeq(deq,a(n),f(t));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%%rec2G<%,**&,(*$%\"tG\"\"#!\"#F*!\"\"\"\"\"F.F.-%\"fG6#F*F.F.*&,&*
+$F*\"\"$!\"%F)!\"$F.-%%diffG6$F/F*F.F.*&,&*$F*\"\"%F-F4F-F.-F96$F/
+-%\"$G6$F*F+F.F.F*F-/-F06#\"\"!FG/--%\"DG6#F0FFF.
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "deq2:=borel(rec2,f(t),'diffeq');" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%%deq2G<%,(*&,(*$%\"tG\"\"#!\"\"F*F,\"\"\"F-F--%\"fG6#F*F-F-*&-%%d
+iffG6$F.F*F-F*F+F,F*F,/-F/6#\"\"!F8/--%\"DG6#F/F7F-
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "diffeqtorec(deq2,f(t),a(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<%/-%\"aG6#\"\"!F(/-F&6#\"\"\"F,,(-F&6#%\"nG!\"\"*&,&F0F1!\"#F,F,-F&
+6#,&F0F,F,F,F,F,-F&6#,&F0F,\"\"#F,F,
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[borel]" 2 "gfun[borel]" "" }{TEXT -1 2 "  " }
+}
+}}

@@ -1,0 +1,130 @@
+{VERSION 4 0 "IBM INTEL LINUX22" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{PSTYLE "Normal
+" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 
+"" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }3 3 0 -1 -1 -1 
+0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 0 1 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet \+
+Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }0 0 
+0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT -1 32 "regexpcount[regexptomatche
+sgram]" }{TEXT 30 104 " - transform a grammar defining a (several) reg
+ular expression(s) to a marked automaton counting matches" }}{PARA 4 "
+" 0 "usage" {TEXT -1 17 "Calling Sequence:" }}{PARA 0 "" 0 "" {TEXT 
+-1 42 "     regexptomatchesgram(spec, name, list)" }}{PARA 0 "" 0 "" 
+{TEXT -1 1 " " }}{PARA 4 "" 0 "" {TEXT -1 11 "Parameters:" }}{PARA 0 "
+" 0 "" {TEXT -1 5 "     " }{TEXT -1 14 "spec        - " }{TEXT -1 54 "
+a combinatorial specification for a regular expression" }}{PARA 0 "" 
+0 "" {TEXT -1 5 "     " }{TEXT -1 13 "name       - " }{TEXT -1 52 "the
+ name of the start state in the output automaton " }}{PARA 0 "" 0 "" 
+{TEXT -1 628 "     list            -  list of lists. Each list is the \+
+name of a regular expression of the grammar followed by the name of as
+sociated  mark letter, followed by the tag                            \+
+                                                                      \+
+                                                                      \+
+                                                                      \+
+                                                                      \+
+      'overlap' (allow overlapping matches) or 'renewal' (start afresh
+ after a match),  followed by an optional parameter 'error'[k,errs] wh
+ere k is the" }}{PARA 0 "" 0 "" {TEXT -1 190 "                        \+
+                   number of errors allowed and errs is a subset of th
+e set of errors \{'subst','ins','del'\}, for substitutions, insertions
+ and deletions respectively " }}}{SECT 0 {PARA 4 "" 0 "info" {TEXT -1 
+12 "Description:" }}{PARA 15 "" 0 "" {TEXT -1 145 "This function retur
+ns a set containing the grammar specification of a marked deterministi
+c finite automaton recognizing the marked language MARK(" }{XPPEDIT 
+19 1 "Sigma^`*`;" "6#)%&SigmaG%\"*G" }{TEXT -1 28 ") where, in each wo
+rd w of  " }{XPPEDIT 19 1 "Sigma^`*`;" "6#)%&SigmaG%\"*G" }{TEXT -1 
+230 ", marks associated with the regular expressions are inserted afte
+r matches with these regular expressions.  The construction for matche
+s with one regular expression R is as follows. Construct a determinist
+ic automaton recognizing " }{XPPEDIT 19 1 "Sigma^`*`*R;" "6#*&)%&Sigma
+G%\"*G\"\"\"%\"RGF'" }{TEXT -1 396 ". Notice that in this automaton, e
+ach time the regular expression matches a text, while reading this tex
+t, one goes through a transition to a final state. Mark these transiti
+ons. If you are in the 'renewal' case, set each transition from a fina
+l state with letter l to the state accessed from 'init' with the same \+
+letter. Set every state of the automaton to final to recognize all the
+ texts MARK(" }{XPPEDIT 19 1 "Sigma^`*`;" "6#)%&SigmaG%\"*G" }{TEXT 
+-1 181 ").  If  the input list regs-tags contains several lists, build
+ the marked automaton for each regular expression in the list and make
+ the cartesian product of the resulting automata." }}{PARA 15 "" 0 "" 
+{TEXT -1 4 "See " }{HYPERLNK 17 "regexpcount[specification]" 2 "regexp
+count[specification]" "" }{TEXT -1 112 " for complete specifications o
+f the input regular expression and of the output automaton specified a
+s a grammar." }}{PARA 15 "" 0 "" {TEXT -1 2 "A " }{TEXT 256 17 "marked
+ transition" }{TEXT -1 183 " is of the form Prod(l,m[j(1)],...,m[j(k)]
+,s), where l is in Sigma, m[j(i)] are marks, and s is a state. In the \+
+grammar of the output automaton, the marks are associated with Epsilon
+." }}{PARA 15 "" 0 "" {TEXT -1 45 " When the output automaton is proce
+ssed with " }{HYPERLNK 17 "combstruct[gfsolve]" 2 "combstruct[gfsolve]
+" "" }{TEXT -1 10 ", or with " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "c
+ombstruct[gfeqns]" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "solve/linear
+" 2 "solve,linear" "" }{TEXT -1 123 ", the resulting multivariate gene
+rating functions counts the number of matches of the regular expressio
+ns in a random text." }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 9 "E
+xamples:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "with(regexpcount
+):" }}}{PARA 0 "" 0 "" {TEXT -1 1 " " }}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 57 "Regular expressions R[1]=ab and R[2]=b, with Sigma=\{a,b\} " }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 117 "Greg:=\{R[1]=Prod(a,b),R[2
+]=b,a=Atom,b=Atom\}:\nMG:=regexptomatchesgram(Greg,S,[[R[1],m,'overlap
+'],[R[2],p,'overlap']]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#MGG<*/%
+\"bG%%AtomG/%\"aGF(/%#w2G-%&UnionG6%%(EpsilonG-%%ProdG6$F*F,-F26&F'%\"
+mG%\"pG%#w4G/%\"SG-F.6%F0F1-F26%F'F7%#w3G/F?F;/F8F;/F6F0/F7F0" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "Co
+mpute the corresponding multivariate generating function " }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 66 "subs(combstruct[gfsolve](MG,unlabel
+led,z,[[u,m],[v,p]]),S(z,u,v));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*
+&\"\"\"F%,,*()%\"zG\"\"#F%%\"uGF%%\"vGF%F%F%!\"\"*&F)F%F,F%F%F)F%*&F(F
+%F,F%F-F-F-" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 29 "Expand the first c
+oefficients" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "expand(serie
+s(%,z=0,5));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+/%\"zG\"\"\"\"\"!,&F%
+F%%\"vGF%F%,*F%F%*&%\"uGF%F(F%F%F(F%*$)F(\"\"#F%F%F.,.F%F%*(F.F%F+F%F(
+F%F%*(F.F%F+F%F-F%F%F(F%F,F%*$)F(\"\"$F%F%F4,4F%F%*(F4F%F+F%F(F%F%*(\"
+\"%F%F+F%F-F%F%*&)F+F.F%F-F%F%*(F4F%F+F%F3F%F%F(F%F,F%F2F%*$)F(F8F%F%F
+8-%\"OG6#F%\"\"&" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 94 "In this examp
+le, there are 4 words of size 4 with one match with 'ab' and two match
+es with 'b'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 71 "Regular expression R=aa with one insertion allowed (aa+
+aaa+aab+aba+baa)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 110 "Greg:=
+\{R=Prod(a,a),a=Atom,b=Atom\}:\nG_R_ins1:=regexptomatchesgram(Greg,S,[
+[R,m,'renewal','Error'[1,\{'ins'\}]]]);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%)G_R_ins1G<+/%#w2G-%&UnionG6%-%%ProdG6$%\"aG%#w1G-F,6$%\"bG%\"
+SG%(EpsilonG/%#w4GF(/%#w6GF(/F/-F)6%-F,6%F.%\"mGF6-F,6$F2%#w5GF4/F3F(/
+FA-F)6%F0F4-F,6%F.F>F'/F2%%AtomG/F.FI/F>F4" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 64 "subs(combstruct[gfsolve](G_R_ins1,unlabelled,z,[[u,
+m]]),S(z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*&,(%\"zG\"\"\"F'F'
+*$)F&\"\"#F'F'F',,*&F)F'%\"uGF'F'*$)F&\"\"$F'F'F'!\"\"F&F'*&F/F'F-F'F'
+F1F1" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 98 "The generating function f
+or the expectation of the number of matches in the uniform Bernoulli c
+ase" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "normal(subs(u=1,z=z/
+2,diff(%,u)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*&*&)%\"zG\"\"#\"
+\"\",&F(F)F'F)F)F)*&,&F'F)F)!\"\"F),**$F&F)F)*$)F'\"\"$F)F)\"\"%F-*&F(
+F)F'F)F)F)F-#F)F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "series
+(%,z=0,9);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+3%\"zG#\"\"\"\"\"%\"\"#
+#F&F(\"\"$#\"#6\"#;F'#\"#H\"#K\"\"&#\"\"*\"\")\"\"'#\"$r\"\"$G\"\"\"(#
+\"$(R\"$c#F4-%\"OG6#F&F3" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 129 "In a
+ random text of size 3 the expectation of number of matches without ov
+erlap of the word ab with one insertion allowed is 1/2." }}}}{SECT 0 
+{PARA 4 "" 0 "seealso" {TEXT -1 10 "See Also: " }}{PARA 0 "" 0 "" 
+{HYPERLNK 17 "regexpcount" 2 "regexpcount" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "regexpcount[specification]" 2 "regexpcount[specification
+]" "" }{TEXT -1 3 ",  " }{HYPERLNK 17 "regexpcount[markovgram]" 2 "reg
+expcount[grammarkov]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "regexpcount[w
+eightgram]" 2 "regexpcount[gramweight]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "regexpcount[regexpstowaitgram]" 2 "regexpcount[regexpsto
+waitgram]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "c
+ombstruct[gfeqns]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "combstruct[gfser
+ies]" 2 "combstruct[gfseries]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "" 1 
+"" "" }{HYPERLNK 17 "solve/linear" 2 "solve,linear" "" }{TEXT -1 1 " \+
+" }}}}{MARK "2 17 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

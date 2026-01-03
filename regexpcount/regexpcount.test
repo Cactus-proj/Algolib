@@ -1,0 +1,505 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+
+with(regexpcount):
+
+with(combstruct,gfsolve):
+
+
+##############################################################################
+# TEST PROGRAMS
+# FROM HOPCROFT PAPER
+# Hopcroft (1971) "An n log(n) algorithm for minimizing states in a finite
+#    automaton", The theory of machines and computations, edited by Z. Kohavi,
+#    Academic Press
+# Auto1 is a typical O(n^2) automaton for classical minimization
+# Auto2 is an automaton where the splitting processing halves the sets
+##############################################################################
+GenAuto1:=proc(n::integer)
+   local T, i, t, H;
+   T:=table([]):
+   T['liststates']:={seq(i,i=1..n-1)} union {'init'}:
+   T['alphabet']:={a,b};
+   T['final']:={1}:
+   T[1][a]:={1}: T[1][b]:={1}:
+   T[1]['trans']:={a,b}:
+   for i from 2 to n-1 do 
+       T[i][a]:={i-1}; T[i][b]:={i};
+       T[i]['trans']:={a,b}:
+   od:
+   T['init']['trans']:={a,b}:
+   T['init'][a]:={n-1}: T['init'][b]:={'init'}:
+   T['final']:={1}:
+   T['checked']:=true;
+   T['pruned']:=true;
+   H:=autominimize(T):
+   t:=time(autominimize(T)):
+   # print(n, t, evalf(t/n/log(n)), t/n^2):
+   n
+end:
+
+GenAuto2:=proc(N::integer)
+   local T, i, j, t, n, H;
+   n:=4*trunc(N/4);
+   T:=table([]):
+   T['liststates']:={seq(i,i=1..n-1)} union {'init'}:
+   T['alphabet']:={a,b};
+   for i from 1 to n-1 do T[i]['trans']:={a,b}; od;
+   for i from 1 to n/4 do
+       j:=n/4+i;
+       T[i][a]:={n/2+2*i-1}; T[i][b]:={n/2+2*i-1};
+       T[j][a]:={2*i-1};     T[j][b]:={2*i-1};
+   od;
+   for i from 1 to n/2-1 do
+       T[n/2+i][a]:={2*i-1}; T[n/2+i][b]:={2*i-1};
+   od;
+   T['init']['trans']:={a,b};
+   T['init'][a]:={n/2};  T['init'][b]:={n/2};
+   T['final']:={seq(i,i=1..n/2)}; 
+   T['checked']:=true;
+   T['pruned']:=true;
+   H:=autominimize(T):
+   t:=time(autominimize(T)):
+   # print(n, t, evalf(t/n/log(n)), t/n^2):
+   n
+end: 
+
+
+#######################################################################
+# Beautify random regular expression
+#######################################################################
+beautifyregexp:=proc(R,alphabet::set)
+    local i;
+      if member(R,alphabet union {'Epsilon'})  then R
+    elif  op(0,R)=Sequence                     then  beautifyregexp(op(R),alphabet)^s
+    elif  op(0,R)=Prod     then  Prod (seq(beautifyregexp(i,alphabet),i=[op(R)]));
+    elif  op(0,R)=Union    then  Union(seq(beautifyregexp(i,alphabet),i=[op(R)]));
+    else                              ERROR(`unrecognizable expression`,R) fi
+end:
+
+
+
+verifvalue:=proc(id,good,test)
+   if evalb(normal(good-test)=0)<>true then 
+        print("testid",id): print("good",good): print("test", test): 
+   else print(okay):
+   fi
+end:
+verifvalue2:=proc(id,good,test)
+   if evalb(good=test)<>true then 
+        print("testid",id): print("good",good): print("test", test): 
+   else print(okay):
+   fi
+end:
+
+checktrap:=proc(test,id,str,i,j)
+   local st, tst:
+   tst:=convert(test,string):
+   if i=0 then st:=tst else st:=substring(tst,i..j) fi:
+   if st<>str then
+       print("testid",id): print("good",str): print("teststr",st):
+       if i<>0 then print("testmessage",tst) fi
+   fi
+end:
+
+checktrap:=proc() NULL end:
+A:=table([]):traperror(autocheck(A)): 
+checktrap(lasterror,"ch1",`wrong number (or type) of parameters in function member`,0):
+A:=table([]): A['alphabet']:=[a]: traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`entry should be of type set, alphabet, A`,0):
+A:=table([]): A['alphabet']:={a}: traperror(autocheck(A)):
+# A VOIR checktrap(lasterror,"ch1",`entry not assigned, liststates, A, table([(alphabet)={a}])`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={w1}: traperror(autocheck(A)):
+# A VOIR checktrap(lasterror,"ch1",`entry not assigned, final, A, table([(alphabet)={a},(liststates)={w1}])`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={w1}: A['final']:={w1}: traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`'init' does not belong to the list of states, {w1}`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['final']:={w1}: traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`state in 'final' does not belong to list of states, {w1}, {init}`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['final']:={}: traperror(autocheck(A)):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['init']['trans']:=[1]:A['final']:={}: traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`type should be set, A[init][trans], [1]`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['init']['trans']:={1}:A['final']:={}: traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`transition not belonging to the alphabet, 1`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['init']['trans']:={a}:A['final']:={}: traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`transition from state should be assigned, init, a`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['init']['trans']:={a}:A['final']:={}: A['init'][a]:=[1]:traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`should be of type set, A[init][a], [1]`,0):
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init'}:A['init']['trans']:={a}:A['final']:={}: A['init'][a]:={1}:traperror(autocheck(A)):
+checktrap(lasterror,"ch1",`state not belonging to the list of states, 1`,0):
+A:=table([]): A['alphabet']:={a}:
+A['liststates']:={'init',1}:A['init']['trans']:={a}:A['final']:={}:
+A['init'][a]:={1}:
+traperror(autotocheck(A)):
+if lasterror<>'lasterror' then 
+   print("ch1",lasterror,"good=NULL"): 
+fi:
+A:=table([]): A['alphabet']:={a}:
+A['mfinal'][2]:={1}:A['liststates']:={'init',1}:A['init']['trans']:={a}:A['final']:={}:
+A['init'][a]:={1}:
+traperror(autotocheck(A)):
+if lasterror<>'lasterror' then 
+   print("ch1",lasterror,"good=NULL"): 
+fi:
+A:=table([]): A['alphabet']:={a}:
+A['mfinal'][1]:={1}:A['liststates']:={'init',1}:A['init']['trans']:={a}:A['final']:={}:
+A['init'][a]:={1}:
+traperror(autotocheck(A)):
+if lasterror<>'lasterror' then 
+   print("ch1",lasterror,"good=NULL"): 
+fi:
+
+A:=table([]): A['alphabet']:={a}:
+A['mfinal'][1]:={1}:A['mfinal'][2]:={'init'}:A['liststates']:={'init',1}:A['init']['trans']:={a}:A['final']:={'init',1}:
+A['init'][a]:={1}:
+traperror(autotocheck(A)):
+if lasterror<>'lasterror' then 
+   print("ch1",lasterror,"good=NULL"): 
+fi:
+
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init',1}:A['init']['trans']:={a}:A['init'][a]:={'init',1}:A['final']:={1}:
+GR:=autotogram(A,R):
+DFA:=autodeterminize(A):
+UU:=autorenumber(DFA,1):
+DGR:=autotogram(UU,R):
+GFu:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+verifvalue("autotogram1",GFu,z/(1-z)):
+A['init']['trans']:={a,b}: A['init'][b]:={'init'}:A['alphabet']:={a,b}:
+MAU:=automarkov(A,1,M): 
+NGAU:=autotogram(MAU,R):
+NNAU:=gramtoauto(NGAU,R):
+DNGAU:=autotogram(autorenumber(autodeterminize(NNAU),1),R):
+GFNDGAU:=subs(combstruct[gfsolve](DNGAU,unlabelled,z),R(z)):
+evalb(normal(GFNDGAU-z/(1-2*z))=0):
+verifvalue("automarkov1",GFNDGAU,z/(1-2*z)):
+DAU:=autodeterminize(MAU):
+GAU:=autotogram(autorenumber(DAU,1),R):
+GFU:=subs(combstruct[gfsolve](GAU,unlabelled,z),R(z)):
+evalb(normal(GFU-z/(1-2*z))=0):
+verifvalue("detergram",GFU,z/(1-2*z)): 
+A:=table([]): A['alphabet']:={a}: A['liststates']:={'init',1}:A['init']['trans']:={a}:A['final']:={'init'}: A['init'][a]:={'init',1}:
+GFP:=autotogram(eval(autoprune(A)),R):
+evalb(normal(subs(combstruct[gfsolve](GFP,unlabelled,z),R(z))-1/(1-z))=0):
+verifvalue("autotogram2",subs(combstruct[gfsolve](GFP,unlabelled,z),R(z)),1/(1-z)):
+G:={R=Prod(a,b,Not(a)),a=Atom,b=Atom}:
+regexptogram(G,R):
+GF0:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(normal(GF0+z^2*(1-z+2*z^2)/(-1+2*z))=0):
+verifvalue("regexptogram1",GF0,z^2*(1-z+2*z^2)/(1-2*z)):
+H:={R=Prod(a,b,Sequence(Prod(b,a)),b),a=Atom,b=Atom}:
+AHBer:=regexptogram(H,R):
+FHBer:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+verifvalue("regexptogram2",FHBer,z^3/(1-z^2)):
+Hnot:=H union {N=Not(R),NN=Not(N)}:
+AHN:=regexptogram(Hnot,N):
+FHN:=subs(combstruct[gfsolve](%,unlabelled,z),N(z)):
+evalb(normal(1/(1-2*z)-FHBer-FHN)=0):
+verifvalue("regexptogram3",FHBer+FHN,1/(1-2*z)):
+AHNN:=regexptogram(Hnot,NN):
+FHNN:=subs(combstruct[gfsolve](%,unlabelled,z),NN(z)):
+evalb(normal(FHBer-FHNN)=0):
+verifvalue("regexptogram4",FHBer-FHNN,0):
+G:={R=Prod(a,b,a),a=Atom,b=Atom}:
+Fnew(z,u):=(-1-z)/(-1+2*z+z^3+u*z^3-z^2):
+GN:=G union {N=Not(R)}:
+Fnono(z,u):=(1+z^2-u*z^2)/(1-2*z+z^2-z^3-u*z^2+u*z^3):
+evalb(normal(Fnono(z,u)+(-1+z^2*u-z^2)/(1-2*z+z^2-z^3-z^2*u+z^3*u))=0):
+traperror(regexptomatchesgram(G,[[R,m,'Error']])):
+checktrap(lasterror,"matches1",`regexpcount/regexptomatchesgram uses a 3rd argument, L (of type list), which is missing`,0):
+Gaba:={R=Prod(a,b,a),a=Atom,b=Atom}:
+Maovaba:=regexptomatchesgram(Gaba,R,[[R,m,'overlap']]):
+Fovaba(z,u):=subs(combstruct[gfsolve](Maovaba,unlabelled,z,[[u,m]]),R(z,u)):
+evalb(normal(Fovaba(z,u)+(-1+z^2*u-z^2)/(1-2*z+z^2-z^3-z^2*u+z^3*u))=0):
+verifvalue("matches2",Fovaba(z,u),-1*(-1+z^2*u-z^2)/(1-2*z+z^2-z^3-z^2*u+z^3*u)):
+MaovabaN:=regexptomatchesgram(Gaba union
+{S=Not(R)},R,[[R,m,'overlap']]):
+FovabaN(z,u):=subs(combstruct[gfsolve](MaovabaN,unlabelled,z,[[u,m]]),R(z,u)):
+evalb(normal(Fovaba(z,u)-FovabaN(z,u))=0):
+verifvalue("matches3",FovabaN(z,u),Fovaba(z,u)):
+Gabb:={R=Prod(a,b,b),a=Atom,b=Atom}:
+Maovabb:=regexptomatchesgram(Gabb,R,[[R,m,'overlap']]):
+Fovabb(z,v):=subs(combstruct[gfsolve](Maovabb,unlabelled,z,[[v,m]]),R(z,v)):
+MaovabbN:=regexptomatchesgram(Gabb union {S=Not(R)},R,[[R,m,'overlap']]):
+FovabbN(z,v):=subs(combstruct[gfsolve](MaovabbN,unlabelled,z,[[v,m]]),R(z,v)):
+verifvalue("matches4",Fovabb(z,v),-1/(-1+2*z+v*z^3-z^3)):
+verifvalue("matches5",FovabbN(z,v),Fovabb(z,v)):
+evalb(normal(Fovabb(z,v)-FovabbN(z,v))=0):
+GM:={R=Prod(a,b,a),S=Prod(a,b,b),a=Atom,b=Atom}:
+MMovov:=regexptomatchesgram(GM,RR,[[R,m,'overlap'],[S,p,'overlap']]):
+Fmul:=subs(combstruct[gfsolve](MMovov,unlabelled,z,[[u,m],[v,p]]),RR(z,u,v)):
+FmulGOOD:=-(-1+z^2*u-z^2)/(1-2*z+z^2-z^3*v-z^2*u+z^3*u):
+evalb(normal(Fmul-FmulGOOD)=0):
+verifvalue("matches6",Fmul,FmulGOOD):
+evalb(normal(subs(v=1,Fmul)-Fovaba(z,u))=0):
+verifvalue("matches7",subs(v=1,Fmul),Fovaba(z,u)):
+evalb(normal(subs(u=1,Fmul)-Fovabb(z,v))=0):
+verifvalue("matches71",subs(u=1,Fmul),Fovabb(z,v)):
+G2:={R=Sequence(Prod(Union(Epsilon,a),Union(Epsilon,b))),a=Atom,b=Atom}:
+regexptogram(G2,R):
+F2(z):=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(normal(F2(z)-1/(1-2*z))=0):
+verifvalue("regexptogram6",F2(z),1/(1-2*z)):
+G3:=G2 union {N=Not(R)}:
+evalb(normal(subs(combstruct[gfsolve](regexptogram(G3,R),unlabelled,z),R(z))-1/(1-2*z))=0):
+verifvalue("regexptogram7",subs(combstruct[gfsolve](regexptogram(G3,R),unlabelled,z),R(z)),1/(1-2*z)):
+evalb(regexptogram(G3,N)={}):
+if regexptogram(G3,N)<>{} then print("testid=regexptogram7","test",regexptogram(G3,N),"good","{}") fi:
+G:={R=Union(Epsilon,a),S=Not(R),a=Atom,b=Atom}:
+regexptogram(G,R):
+GFu:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(normal(GFu-1-z)=0):
+verifvalue("regexptogram8",GFu,1+z):
+# MINIMIZATION
+for i from 200 to 1000 by 200 do verifvalue("minimiz1",GenAuto1(i),i) od:
+for i from 200 to 1000 by 200 do verifvalue("minimiz2",GenAuto2(i),i) od:
+G:={R=Prod(a,b,a),a=Atom,b=Atom}:
+A0o:=regexptomatchesgram(G,RR,[[R,m,'overlap']]):
+grammarkov(A0o,RR,3,nu):
+gfoo:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),RR(z,u)):
+verifvalue("grammarkov1",gfoo,-1*(-z^2-1+u*z^2)/(1-2*z+z^2-z^3-u*z^2+u*z^3)):
+gfbb:=subs(combstruct[gfsolve](A0o,unlabelled,z,[[u,m]]),RR(z,u)):
+evalb(normal(gfoo-gfbb)=0):
+verifvalue("matches10",gfbb,gfoo):
+G:={R=Union(Prod(a,b,a),Prod(a,a),Prod(b,b)),a=Atom,b=Atom}:
+A0o:=regexptomatchesgram(G,RR,[[R,m,'overlap']]):
+A0r:=regexptomatchesgram(G,RR,[[R,m,'renewal']]):
+GFB:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),RR(z,u)):
+verifvalue("matches11",GFB,-1*(z^3+2*z^2+2*z+1)/(-1+3*z^3*u+2*z^2*u+2*z^4*u)):
+grammarkov(A0r,RR,3,nu):
+GFM:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),RR(z,u)):
+evalb(normal(GFB-GFM)=0):
+verifvalue("grammarkov2",GFM,GFB):
+G:={R=Union(Prod(a,a),c),S=Union(Prod(a,b),c),a=Atom,b=Atom,c=Atom}:
+AM:=regexptomatchesgram(G,RR,[[R,m,'overlap'],[S,p,'overlap']]):
+GFR:=subs(combstruct[gfsolve](regexptomatchesgram(G,RR,[[R,m,'overlap']]),unlabelled,z,[[u,m]]),RR(z,u)):
+verifvalue("matches12",GFR,-1*(-1-z+z*u)/(1-2*z*u-z-z^2+z^2*u^2)):
+GFS:=subs(combstruct[gfsolve](regexptomatchesgram(G,RR,[[S,p,'overlap']]),unlabelled,z,[[v,p]]),RR(z,v)):
+verifvalue("matches13",GFS,-1/(-1+2*z+z*v+z^2*v-z^2)):
+GFRS:=subs(combstruct[gfsolve](AM,unlabelled,z,[[u,m],[v,p]]),RR(z,u,v)):
+verifvalue("matches14",GFRS,-1*(-1-z+z*u)/(1-v*z^2-z^2*u*v-z*v*u-z-z*u+z^2*u^2*v+z^2*u)):
+evalb(normal(subs(v=1,GFRS)-GFR)=0):
+verifvalue("matches15",subs(v=1,GFRS),GFR);
+evalb(normal(subs(u=1,GFRS)-GFS)=0):
+verifvalue("matches16",subs(u=1,GFRS),GFS);
+G:={R=Prod(X,a,b),X=Sequence(Union(a,b)),a=Atom,b=Atom}:
+GR:=regexptogram(G,R):
+evalb(normal(subs(combstruct[gfsolve](GR,unlabelled,z),R(z))-z^2/(1-2*z))=0):
+verifvalue("regexptogram10",subs(combstruct[gfsolve](GR,unlabelled,z),R(z)),z^2/(1-2*z)):
+M1:=grammarkov(GR,R,1,M):
+F:=subs(combstruct[gfsolve](M1,unlabelled,z),R(z)):
+evalb(normal(F-z^2/(1-2*z))=0):
+verifvalue("grammarkov6",F,z^2/(1-2*z)):
+M2:=grammarkov(GR,R,3,M):
+evalb(normal(subs(combstruct[gfsolve](M2,unlabelled,z),R(z))-z^2/(1-2*z))=0):
+verifvalue("grammarkov7",subs(combstruct[gfsolve](M2,unlabelled,z),R(z)),z^2/(1-2*z)):
+Au:=gramtoauto(GR,R):
+autocomplete(Au,{a,b}):
+AuR:=autorenumber(Au,1):
+Mau:=automarkov(AuR,2,m):
+autotogram(Mau,R):
+UU:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(normal(UU-z^2/(1-2*z))=0):
+verifvalue("automarkov5",UU,z^2/(1-2*z)):
+G1:={R=Prod(a,a,b),a=Atom,b=Atom}:
+GG1:=regexptogram(G1,R):
+G2:={R=Prod(b,b),a=Atom,b=Atom}:
+GG2:=regexptogram(G2,R):
+CP:=autocarprod([gramtoauto(GG1,R),gramtoauto(GG2,R)],{a,b}):
+autotogram(eval(CP),R,[[1,m],[2,p]]):
+traperror(gfsolve(%,unlabelled,z,[[u,m],[v,p]])):
+# Error, (in combstruct/checkgrammar) undefined non-terminal, w3
+checktrap(lasterror,"autotogram20", `undefined non-terminal`,1,22):
+G:={R=Prod(a,b,c,d,a,b,c,d),S=Prod(a,d,c,a,b,d,c,c),a=Atom,b=Atom,c=Atom,d=Atom}:
+AADN:=grammarkov(regexptomatchesgram(G,RR,[[R,m,'overlap'],[S,p,'overlap']]),RR,1,'k'): 
+subs(combstruct[gfsolve](AADN,unlabelled,z,[[u,m],[v,p]]),RR(z,u,v)): 
+G:={R=Prod(a,a,b,b),a=Atom,b=Atom,S=Prod(a,b)}:
+U:=regexpstowaitgram(G,['Epsilon'],[R]):
+GFW:=subs(combstruct[gfsolve](U,unlabelled,z),R(z)):
+evalb(normal(16-subs(z=1,diff(subs(z=z/2,GFW),z)))=0):
+verifvalue("wait1",GFW,z^4/(1-2*z+z^4)):
+verifvalue("wait2",subs(z=1,diff(subs(z=z/2,GFW),z)),16):
+U:=grammarkov(regexpstowaitgram(G,['Epsilon'],[R]),R,2,M):
+GFW:=subs(combstruct[gfsolve](U,unlabelled,z),R(z)):
+evalb(normal(16-subs(z=1,diff(subs(z=z/2,GFW),z)))=0):
+verifvalue("wait3",GFW,z^4/((-1+z)*(z^3+z^2+z-1))):
+Gabab:={R=Prod(a,b,a,b),a=Atom,b=Atom,S=Prod(a,b)}:
+U:=regexpstowaitgram(Gabab,['Epsilon'],[R]):
+GFW:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(normal(20-subs(z=1,diff(subs(z=z/2,GFW),z)))=0):
+verifvalue("wait4",GFW,z^4/(1-2*z^3-2*z+z^4+z^2)):
+verifvalue("wait5",subs(z=1,diff(subs(z=z/2,GFW),z)),20):
+G_a_ab:={R=a,S=Prod(a,b),a=Atom,b=Atom}:
+W3:=regexpstowaitgram(G_a_ab,[R],[S],m,'rematch'):
+GFWS(z,u):=subs(combstruct[gfsolve](W3,unlabelled,z,[[u,m]]),S(z,u)):
+verifvalue("wait6",GFWS(z,u),z^2*u/(1-z*u)):
+FW:=subs(z=1/2,%):
+RR(z):=subs(combstruct[gfsolve](regexptogram(G_a_ab,R),unlabelled,z),R(z)):
+verifvalue("regexptogram30",RR(z),z):
+FW:=FW/subs(z=1/2,RR(z)):
+evalb(normal(FW-u/(2-u))=0):
+verifvalue("wait7",FW,u/(2-u)):
+W4:=regexpstowaitgram(G_a_ab,[R],[S],m,'norematch'):
+GFWSN:=subs(combstruct[gfsolve](W4,unlabelled,z,[[u,m]]),S(z,u)):
+evalb(normal(GFWSN-z^2*u)=0):
+verifvalue("wait8",GFWSN,u*z^2):
+WMar3b:=grammarkov(W3,S,1,'k'):
+GFWSMarb(z,u):=subs(combstruct[gfsolve](WMar3b,unlabelled,z,[[u,m]]),S(z,u)):
+evalb(normal(GFWSMarb(z,u)-GFWS(z,u))=0):
+verifvalue("grammarkov20",GFWSMarb(z,u),u*z^2/(1-z*u)):
+RRMar(z):=subs(combstruct[gfsolve](grammarkov(regexptogram(G_a_ab,R),R,1,'k'),unlabelled,z),R(z)):
+evalb(normal(RR(z)-RRMar(z))=0):
+verifvalue("grammarkov21",RRMar(z),z):
+G_a_ba:={R=a,S=Prod(b,a),a=Atom,b=Atom}:
+W4b:=regexpstowaitgram(G_a_ba,[R],[S],m,'norematch'):
+GF4b:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),R(z)):
+evalb(GF4b-R(z)=0):
+verifvalue("wait9",GF4b,R(z)):
+G_a_b:={R=a,S=b,a=Atom,b=Atom}:
+W6:=regexpstowaitgram(G_a_b,[R],[S],m,'norematch'):
+GF6:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),S(z,u)):
+evalb(normal(GF6-z^2*u)=0):
+verifvalue("wait10",GF6,z^2*u):
+G:=randregexp(R,{a,b,c,d},30,{'Union','Prod','Sequence','Not'},5/8):
+G:=randregexp(R,{a,b,c,d},30,{'Union','Sequence','Not'}):
+G:=randregexp(R,{a,b,c,d},30,{'Prod'}):
+G:=randregexp(R,{a,b,c,d},30,{'Union','Prod','Sequence'}):
+G:=randregexp(R,{a,b,c,d},30,{'Union','Sequence'}):
+regexptogram(G,R):
+G:={a = Atom, b = Atom, d = Atom, R = Prod(a,Union(a,d,Epsilon),Union(a,d,Epsilon,c,Sequence(Prod(a,Sequence(Sequence(Union(a,Epsilon,Sequence(b)))),b))),d,b), c = Atom}:
+A:=regexptogram(G,R):
+GFBS:=subs(combstruct[gfsolve](A,unlabelled,z),R(z)):
+verifvalue("regexptogram40",GFBS,z^3*(-z^2+11*z^3-z-1)/(-1+2*z)):
+GN:=G union {S=Not(R)}:
+AN:=regexptogram(GN,R):
+GFNot:=subs(combstruct[gfsolve](AN,unlabelled,z),R(z)):
+evalb(normal(GFNot-GFBS)=0):
+verifvalue("regexptogram41",GFNot,GFBS):
+AM2:=grammarkov(regexptogram(G,R),R,2,'k'):
+ANM2:=grammarkov(regexptogram(GN,R),R,2,'k'):
+GFBSM:=subs(combstruct[gfsolve](AM2,unlabelled,z),R(z)):
+verifvalue("grammarkov40",GFBSM,GFBS):
+GFNot:=subs(combstruct[gfsolve](ANM2,unlabelled,z),R(z)):
+verifvalue("grammarkov41",GFNot,GFBS):
+evalb(normal(GFNot-GFBS)=0):
+G:={R=Prod(a,a),a=Atom,b=Atom}:
+ANM1:=grammarkov(regexptogram(G,R),R,1,'k'):
+EANM1:=gramweight(ANM1):
+  
+EQA:=combstruct[gfeqns](EANM1,unlabelled,z,[[ka,k[a]], [kaa,k[a,a]]]):
+RR:=subs(ka=1/3,kaa=1/6,R(z,ka,kaa)):
+EQAA:=subs(ka=1/3,kaa=1/6,EQA):
+WW1:=subs(solve({op(%)},{seq(op(1,i),i=%)}),RR):
+
+evalb(WW1-z^2/18=0):
+verifvalue("gramweight1",z^2/18,WW1):
+GG:={RR=Prod(a,a),a=Atom,b=Atom}:
+AU:=regexptomatchesgram(GG,R,[[RR,m,'overlap']]):
+WAU:=gramweight(AU):
+##Maple 6 : gfe:=combstruct[gfeqns](WAU,unlabelled,z,[[1/3,a],[2/3,b],[u,m]]):
+gfe:=combstruct[gfeqns](WAU,unlabelled,z,[[va,a],[vb,b],[u,m]]):
+gfe:=subs(va=1/3,vb=2/3,gfe):
+EXVA:=eqnstoasympexp(gfe,R,z,u,n):
+evalb(EXVA=[1/9*n-1/9, 4/27*n-10/81]):
+verifvalue2("eqnsto1",EXVA,[1/9*n-1/9, 4/27*n-10/81]):
+# TESTS WITH ERRORS
+G:={R=Prod(a,a),a=Atom,b=Atom}:
+#  -aa+ba+ab
+Au:=regexptogram(G,R,'Error'[1,{'subst'}]):
+gf1:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(gf1-3*z^2=0):
+verifvalue("error1",gf1,3*z^2):
+# -a+aa
+Au:=regexptogram(G,R,'Error'[1,{'del'}]):
+evalb(subs(combstruct[gfsolve](%,unlabelled,z),R(z))-z-z^2=0):
+verifvalue("error2",subs(combstruct[gfsolve](Au,unlabelled,z),R(z)),z+z^2):
+# -aa+aaa+baa+aba+aab
+Au:=regexptogram(G,R,'Error'[1,{'ins'}]):
+evalb(subs(combstruct[gfsolve](%,unlabelled,z),R(z))-z^2-4*z^3=0):
+verifvalue("error3",subs(combstruct[gfsolve](Au,unlabelled,z),R(z)),z^2+4*z^3):
+Au:=regexptogram(G,R,'Error'[2,{'ins'}]):
+evalb(subs(combstruct[gfsolve](%,unlabelled,z),R(z))-z^2-4*z^3-11*z^4=0):
+verifvalue("error3",subs(combstruct[gfsolve](Au,unlabelled,z),R(z)),z^2+4*z^3+11*z^4):
+# -aa+ba+ab
+AU:=regexptomatchesgram(G,reg,[[R,m,'overlap','Error'[1,{'subst'}]]]):
+gfsub1:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),reg(z,u)):
+verifvalue("matcheserror1",gfsub1,(-z-2*z^2*u+z^2-1+z^2*u^2+z*u)/(-1+z^2*u^2+z*u+z-z^2*u)):
+Gersub1:={R=Union(Prod(a,a),Prod(b,a),Prod(a,b)),a=Atom,b=Atom}:
+AUsub1:=regexptomatchesgram(Gersub1,reg,[[R,m,'overlap']]):
+gfsub1b:=subs(combstruct[gfsolve](%,unlabelled,z,[[u,m]]),reg(z,u)):
+evalb(normal(gfsub1-gfsub1b)=0):
+verifvalue("matcheserror2",gfsub1b,gfsub1):
+G:={R=Prod(a,a,a,a),a=Atom,b=Atom}:
+regexptogram(%,R):
+gramerror(%,R,1,{'del'}):
+GF34:=subs(combstruct[gfsolve](%,unlabelled,z),R(z)):
+evalb(GF34-z^3-z^4=0):
+verifvalue("error4",GF34,z^3+z^4):
+G:={R=Prod(a,a,a),S=Prod(b,b,b),a=Atom,b=Atom}:
+A0:=regexpstowaitgram(G,[R],[S],m,'rematch'):
+subs(combstruct[gfsolve](A0,unlabelled,z,[[u,m]]),z=1/2,S(z,u))/(1/8):
+EX0:=subs(u=1,diff(%,u)):
+verifvalue("wait60",EX0,14):
+AE:=regexpstowaitgram(G,['Epsilon'],[S]):
+subs(combstruct[gfsolve](AE,unlabelled,z),S(z)):
+EXE:=subs(z=1,diff(subs(z=z/2,%),z)):
+evalb(EX0-EXE=0):
+verifvalue("wait61",EXE,EX0):
+A1:=regexpstowaitgram(G,[R],[S],m,'norematch'):
+gfu:=subs(combstruct[gfsolve](A1,unlabelled,z,[[u,m]]),z=1/2,S(z,u))/(1/8):
+defect:=subs(u=1,%):
+evalb(defect-2/7=0):
+verifvalue("wait62",defect,2/7):
+evalb(subs(u=1,diff(gfu/defect,u))-45/7=0):
+verifvalue("wait63",subs(u=1,diff(gfu/defect,u)),45/7):
+# ERRORS
+# E->err(bbb,1,subst)
+AER0:=regexpstowaitgram(G,['Epsilon'],[S,'Error'[1,{'subst'}]]):
+FER0:=subs(combstruct[gfsolve](AER0,unlabelled,z),S(z)):
+verifvalue("waiterror1",FER0,z^3*(-4+2*z^3+2*z-z^2)/(-1+z^3+z)):
+GERR:={R=Prod(a,a,a),S=Prod(b,b,b),ERR=Union(R,Prod(b,a,a),Prod(a,b,a),Prod(a,a,b)),ERS=Union(S,Prod(a,b,b),Prod(b,a,b),Prod(b,b,a)),a=Atom,b=Atom}:
+AERV0:=regexpstowaitgram(GERR,['Epsilon'],[ERS]):
+FERV0:=subs(combstruct[gfsolve](AERV0,unlabelled,z),ERS(z)):
+evalb(normal(FER0-FERV0)=0):
+verifvalue("waiterror2",FERV0,FER0):
+AER1:=regexpstowaitgram(G,[R],[S,'Error'[1,{'subst'}]],m,'rematch'):
+FER1:=subs(combstruct[gfsolve](AER1,unlabelled,z,[[u,m]]),S(z,u)):
+verifvalue("waiterror3",FER1,-z^5*u^2*(1+z*u)/(-1+z*u+z^3*u^3)):
+AERV1:=regexpstowaitgram(GERR,[R],[ERS],m,'rematch'):
+FERV1:=subs(combstruct[gfsolve](AERV1,unlabelled,z,[[u,m]]),ERS(z,u)):
+evalb(normal(FER1-FERV1)=0):
+verifvalue("waiterror4",FERV1,FER1):
+AER2:=regexpstowaitgram(G,[R,'Error'[1,{'subst'}]],[S],m,'rematch'):
+FER2:=subs(combstruct[gfsolve](AER2,unlabelled,z,[[u,m]]),S(z,u)):
+verifvalue("waiterror5",FER2,-z^5*u^2*(1+2*z*u)/(-1+z*u+z^2*u^2+z^3*u^3)):
+AERV2:=regexpstowaitgram(GERR,[ERR],[S],m,'rematch'):
+FERV2:=subs(combstruct[gfsolve](AERV2,unlabelled,z,[[u,m]]),S(z,u)):
+evalb(normal(FER2-FERV2)=0):
+verifvalue("waiterror6",FERV2,FER2):
+AER3:=regexpstowaitgram(G,[R,'Error'[1,{'subst'}]],[S,'Error'[1,{'subst'}]],m,'rematch'):
+FER3:=subs(combstruct[gfsolve](AER3,unlabelled,z,[[u,m]]),S(z,u)):
+verifvalue("waiterror7",FER3,-z^4*u*(2*z^2*u^2+2+z*u)/(-1+z*u+z^3*u^3)):
+AERV3:=regexpstowaitgram(GERR,[ERR],[ERS],m,'rematch'):
+FERV3:=subs(combstruct[gfsolve](AERV3,unlabelled,z,[[u,m]]),ERS(z,u)):
+evalb(normal(FER3-FERV3)=0):
+AER4:=regexpstowaitgram(G,[R,'Error'[1,{'subst'}]],[S,'Error'[1,{'subst'}]],m,'norematch'):
+FER4:=subs(combstruct[gfsolve](AER4,unlabelled,z,[[u,m]]),S(z,u)):
+verifvalue("waiterror8",FER4,2*z^4*u):
+AERV4:=regexpstowaitgram(GERR,[ERR],[ERS],m,'norematch'):
+FERV4:=subs(combstruct[gfsolve](AERV4,unlabelled,z,[[u,m]]),ERS(z,u)):
+evalb(normal(FER4-FERV4)=0):
+verifvalue("waiterror9",FERV4,FER4):

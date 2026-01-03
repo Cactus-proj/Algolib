@@ -1,0 +1,165 @@
+{VERSION 3 0 "IBM INTEL LINUX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 23 "Courier" 1 
+10 0 0 0 0 0 0 0 0 0 0 3 0 0 }{CSTYLE "Help Heading" -1 26 "" 1 14 0 
+0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "" 0 1 0 0 0 0 0 1 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 259 "" 0 1 0 0 
+0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 
+0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 266 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 267 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 270 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 271 "" 0 1 0 0 
+0 0 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 "" 0 1 0 0 0 0 1 1 0 0 0 0 0 
+0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 
+11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "List It
+em" 0 14 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 
+-1 3 3 0 0 0 0 0 0 14 5 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 
+-1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {SECT 0 {PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 
+111 "Mgfun[dfinite_expr_to_sys] - Compute linear functional (different
+ial and/or difference) equations satisfied by " }{XPPEDIT 18 0 "d;" "6
+#%\"dG" }{TEXT -1 17 "-finite functions" }}{PARA 0 "" 0 "" {TEXT 26 
+10 "Function: " }{TEXT -1 94 "Mgfun[dfinite_expr_to_diffeq] - Compute \+
+linear functional differential equations satisfied by " }{XPPEDIT 18 
+0 "d;" "6#%\"dG" }{TEXT -1 17 "-finite functions" }}{PARA 0 "" 0 "" 
+{TEXT 26 10 "Function: " }{TEXT -1 78 "Mgfun[dfinite_expr_to_rec] - Co
+mpute linear difference equations satisfied by " }{XPPEDIT 18 0 "d;" "
+6#%\"dG" }{TEXT -1 17 "-finite functions" }}{PARA 0 "" 0 "usage" 
+{TEXT 26 17 "Calling Sequence:" }{TEXT -1 24 "\n   dfinite_expr_to_sys
+(" }{XPPEDIT 18 0 "expr;" "6#%%exprG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "
+f(x[1]::tau[1],`...`,x[r]::tau[r]);" "6#-%\"fG6%'&%\"xG6#\"\"\"&%$tauG
+6#\"\"\"%$...G'&F(6#%\"rG&F,6#F3" }{TEXT -1 1 ")" }}{PARA 0 "" 0 "" 
+{TEXT -1 25 "  dfinite_expr_to_diffeq(" }{XPPEDIT 18 0 "expr;" "6#%%ex
+prG" }{TEXT -1 1 "," }{XPPEDIT 18 0 "f(x[1],`...`,x[r]);" "6#-%\"fG6%&
+%\"xG6#\"\"\"%$...G&F'6#%\"rG" }{TEXT -1 1 ")" }}{PARA 0 "" 0 "" 
+{TEXT -1 22 "  dfinite_expr_to_rec(" }{XPPEDIT 18 0 "expr;" "6#%%exprG
+" }{TEXT -1 1 "," }{XPPEDIT 18 0 "f(x[1],`...`,x[r]);" "6#-%\"fG6%&%\"
+xG6#\"\"\"%$...G&F'6#%\"rG" }{TEXT -1 1 ")" }}{PARA 0 "" 0 "" {TEXT 
+26 11 "Parameters:" }{TEXT -1 4 "\n   " }{XPPEDIT 18 0 "expr;" "6#%%ex
+prG" }{TEXT 23 3 " - " }{TEXT -1 29 "a (polynomial) expression in " }
+{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 38 "-finite functions (see list
+ below)\n   " }{XPPEDIT 18 0 "x[i];" "6#&%\"xG6#%\"iG" }{TEXT 23 5 "  \+
+ - " }{TEXT -1 74 "names of variables with respect to which the equati
+ons have to be computed" }}{PARA 0 "" 0 "" {TEXT -1 3 "   " }{XPPEDIT 
+18 0 "tau[i];" "6#&%$tauG6#%\"iG" }{TEXT 23 5 "   - " }{TEXT -1 21 "ty
+pe of the variable " }{XPPEDIT 18 0 "x[i];" "6#&%\"xG6#%\"iG" }{TEXT 
+-1 17 ", chosen amongst " }{XPPEDIT 18 0 "diff;" "6#%%diffG" }{TEXT 
+-1 5 " and " }{XPPEDIT 18 0 "shift;" "6#%&shiftG" }{TEXT -1 0 "" }}}
+{SECT 0 {PARA 0 "" 0 "synopsis" {TEXT 26 12 "Description:" }}{PARA 15 
+"" 0 "" {TEXT -1 118 "The command dfinite_expr_to_sys computes a syste
+m of linear differential and/or difference equations satisfied by the \+
+" }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 19 "-finite expression " }
+{XPPEDIT 18 0 "expr;" "6#%%exprG" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" 
+{TEXT -1 102 "The command dfinite_expr_to_diffeq computes a system of \+
+linear differential quations satisfied by the " }{XPPEDIT 18 0 "d;" "6
+#%\"dG" }{TEXT -1 19 "-finite expression " }{XPPEDIT 18 0 "expr;" "6#%
+%exprG" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 98 "The command df
+inite_expr_to_rec computes a system of linear difference equations sat
+isfied by the " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 19 "-finite ex
+pression " }{XPPEDIT 18 0 "expr;" "6#%%exprG" }{TEXT -1 1 "." }}{PARA 
+15 "" 0 "" {TEXT -1 83 "Note: these functions are still not stable; th
+eir names could change in the future." }}{PARA 15 "" 0 "" {TEXT -1 4 "
+The " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 77 "-finite functions pr
+esent in Maple and recognized by dfinite_expr_to_sys are:" }}{PARA 14 
+"" 0 "" {TEXT 256 0 "" }{TEXT 257 21 "Elementary functions:" }{TEXT 
+-1 38 " exp, ln, dilog, cos, sin, cosh, sinh;" }}{PARA 14 "" 0 "" 
+{TEXT -1 0 "" }{TEXT 258 0 "" }{TEXT 259 14 "Their inverse:" }{TEXT 
+-1 101 " arccos, arcsin, arctan, arcsc, arcsec, arccot, arccosh, arcsi
+nh, arctanh, arccsch, arcsech, arccoth;" }}{PARA 14 "" 0 "" {TEXT -1 
+0 "" }{TEXT 260 0 "" }{TEXT 261 15 "Their integral:" }{TEXT -1 88 " er
+f, erfc, erfi, Ci, Si, Ssi, Chi, Shi, FresnelC, FresnelS, Fresnelf (?)
+, Fresnelg (?);" }}{PARA 14 "" 0 "" {TEXT -1 0 "" }{TEXT 262 0 "" }
+{TEXT 263 17 "Bessel functions:" }{TEXT -1 56 " BesselJ, BesselY, Bess
+elI, BesselK, HankelH1, HankelH2;" }}{PARA 14 "" 0 "" {TEXT -1 0 "" }
+{TEXT 264 33 "Classical orthogonal polynomials:" }{TEXT -1 97 " Chebys
+hevT, ChebyshevU, GegenbauerC, HermiteH, JacobiP, LaguerreL, LegendreP
+ (?), LegendreQ (?);" }}{PARA 14 "" 0 "" {TEXT -1 0 "" }{TEXT 265 0 "
+" }{TEXT 266 18 "Special functions:" }{TEXT -1 177 " AiryAi, AiryBi, A
+ngerJ, KelvinBer,KelvinBei, KelvinKer, KelvinKei, KelvinHer, KelvinHei
+, KummerM, KummerU, LommelS1, LommelS2, StruveH, StruveL, WhittakerM, \+
+WhittakerW, WeberE;" }}{PARA 14 "" 0 "" {TEXT -1 0 "" }{TEXT 267 0 "" 
+}{TEXT 268 29 "Hypergeometric functions and " }{XPPEDIT 18 0 "q;" "6#%
+\"qG" }{TEXT -1 0 "" }{TEXT 272 11 "-analogues:" }{TEXT -1 40 " hyperg
+eom, MeijerG (?), qhypergeom (?);" }}{PARA 14 "" 0 "" {TEXT -1 0 "" }
+{TEXT 269 0 "" }{TEXT 270 28 "Combinatorial sequences and " }{XPPEDIT 
+18 0 "q;" "6#%\"qG" }{TEXT -1 0 "" }{TEXT 271 11 "-analogues:" }{TEXT 
+-1 88 " factorial, GAMMA, pochhammer, binomial, qfactorial (?), qpochh
+ammer (?), qbinomial (?)." }}{PARA 15 "" 0 "" {TEXT -1 104 "Note: the \+
+functions above marked with the sign (?) are not implemented yet, or o
+nly partially supported." }}{PARA 15 "" 0 "" {TEXT -1 106 "The above n
+otation for classical orthogonal polynomials has been preferred over t
+he Maple notation of the " }{HYPERLNK 17 "orthopoly package" 2 "orthop
+oly" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 4 "The " }
+{XPPEDIT 18 0 "q;" "6#%\"qG" }{TEXT -1 11 "-functions " }{HYPERLNK 17 
+"qfactorial, qpochhammer, qbinomial" 2 "qpochhammer" "" }{TEXT -1 47 "
+, and qhypergeom are part of the Mgfun package." }}{PARA 15 "" 0 "" 
+{TEXT -1 5 "When " }{XPPEDIT 18 0 "tau[i] = diff;" "6#/&%$tauG6#%\"iG%
+%diffG" }{TEXT -1 77 ", dfinite_expr_to_sys will search for differenti
+al equations with respect to " }{XPPEDIT 18 0 "x[i];" "6#&%\"xG6#%\"iG
+" }{TEXT -1 7 "; when " }{XPPEDIT 18 0 "tau[i] = shift;" "6#/&%$tauG6#
+%\"iG%&shiftG" }{TEXT -1 58 ", it will search for difference equations
+ with respect to " }{XPPEDIT 18 0 "x[i];" "6#&%\"xG6#%\"iG" }{TEXT -1 
+138 ".  Both commands dfinite_expr_to_diffeq and dfinite_expr_to_rec a
+re meant as shortcuts for the more general syntax of dfinite_expr_to_s
+ys." }}{PARA 15 "" 0 "" {TEXT -1 265 "This function is part of the Mgf
+un package, and so can be used in the form dfinite_expr_to_sys(..) onl
+y after performing the command with(Mgfun) or with(Mgfun,dfinite_expr_
+to_sys). The function can always be accessed in the long form Mgfun[df
+inite_expr_to_sys](..)." }}}{SECT 0 {PARA 0 "" 0 "examples" {TEXT 26 
+9 "Examples:" }}{PARA 0 "" 0 "" {TEXT -1 26 "Let us verify the identit
+y" }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "Int(x*exp(-p*x^2)*BesselJ
+(n,b*x)*BesselI(n,c*x),x=0..infinity)=1/(2*p)*exp((c^2-b^2)/(4*p))*Bes
+selJ(n,b*c/(2*p)):" "6#/-%$IntG6$**%\"xG\"\"\"-%$expG6#,$*&%\"pGF)*$F(
+\"\"#F)!\"\"F)-%(BesselJG6$%\"nG*&%\"bGF)F(F)F)-%(BesselIG6$F6*&%\"cGF
+)F(F)F)/F(;\"\"!%)infinityG**\"\"\"F)*&\"\"#F)F/F)F2-F+6#*&,&*$F=\"\"#
+F)*$F8\"\"#F2F)*&\"\"%F)F/F)F2F)-F46$F6*(F8F)F=F)*&\"\"#F)F/F)F2F)" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(Mgfun):" }}}{PARA 0 "
+" 0 "" {TEXT -1 32 "Let us introduce the integrand: " }}{EXCHG {PARA 
+0 "> " 0 "" {XPPEDIT 19 1 "expr:=x*exp(-p*x^2)*BesselJ(n,b*x)*BesselI(
+n,c*x):" "6#>%%exprG**%\"xG\"\"\"-%$expG6#,$*&%\"pGF'*$F&\"\"#F'!\"\"F
+'-%(BesselJG6$%\"nG*&%\"bGF'F&F'F'-%(BesselIG6$F4*&%\"cGF'F&F'F'" }}}
+{PARA 0 "" 0 "" {XPPEDIT 18 0 "expr;" "6#%%exprG" }{TEXT -1 39 " is ca
+ncelled by the following system: " }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 59 "sys:=dfinite_expr_to_sys(expr,f(x::diff,p::diff,n::sh
+ift));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$sysG<%,***%\"cG\"\"\")%\"
+xG\"\"#\"\"\"%\"bGF)-%\"fG6%F+%\"pG%\"nGF)F)*&,**(F2F)F*F-F3F)!\"%F3F,
+*&F2F-F*F-F7F,F)F)-F06%F+F2,&F3F)F)F)F)F)*&,&*&F3F-F+F)!\"#F+F?F)-%%di
+ffG6$F9F+F)F)**F(F-F*F-F.F--F06%F+F2,&F3F)F,F)F)F),**&,.F3F,F6F7*&)F.F
+,F-F*F-F)*&)F2F,F-)F+\"\"%F-FO*&)F(F,F-F*F-!\"\"F)F)F)F/F-F)*&F*F--FA6
+$F/-%\"$G6$F+F,F)F)**F(F-F*F-F.F-F9F-F,*&,(F>F?F+FR*&)F+\"\"$F-F2F-FOF
+)-FA6$F/F+F)F),&*&F*F-F/F-F)-FA6$F/F2F)" }}}{PARA 0 "" 0 "" {TEXT -1 
+20 "And its integral by:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "
+sys:=int_of_sys(sys,x=0..infinity,takayama_algo);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%$sysG<%,,**%\"cG\"\"\"%\"bGF))%\"pG\"\"#\"\"\"-%%diff
+G6$-%\"fG6$F,%\"nGF,F)\"\"%*&,***F*F.F(F.F5F)F,F)!\"%*&)F(\"\"$F.F*F.!
+\"\"*(F*F.F(F.F,F.!\")*&F(F.)F*F=F.F)F)-F36$F,,&F5F)F-F)F)F)*&,&F?F6F9
+F6F)F2F)F)*()F*F-F.)F(F-F.-F36$F,,&F5F)F=F)F)F)*&,,*&FIF.FJF.F>*&F,F.F
+JF.F6*&F,F.FIF.F:*(F5F.F,F.FJF.F6*(F5F.F,F.FIF.F:F)-F36$F,,&F5F)F)F)F)
+F),,*&,**&F+F.FJF.F-*&F+F.FIF.!\"#*&)F,F=F.F5F.\"\")*$FinF.\"#CF)F/F.F
+)*(FIF.FJF.FCF.F>*&,(*&F5F.F+F.FjnFPF)*$F+F.FjnF)F2F.F)*&)F,F6F.-F06$F
+2-%\"$G6$F,F-F)Fjn*&,(FAF>F?F6F;F)F)FUF.F),**(F(F.F*F.FCF.F>*(F(F.F*F.
+F2F.F)*&F+F.-F06$FUF,F)F6*&,(*$FIF.F>*$FJF.F)F,F6F)FUF.F)" }}}{PARA 0 
+"" 0 "" {TEXT -1 69 "We now check that this system also cancels the an
+nounced closed form." }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "simpli
+fy(eval(subs(f=unapply(1/(2*p)*exp((c^2-b^2)/(4*p))*BesselJ(n,b*c/(2*p
+)),p,n),sys)));" "6#-%)simplifyG6#-%%evalG6#-%%subsG6$/%\"fG-%(unapply
+G6%**\"\"\"\"\"\"*&\"\"#F3%\"pGF3!\"\"-%$expG6#*&,&*$%\"cG\"\"#F3*$%\"
+bG\"\"#F7F3*&\"\"%F3F6F3F7F3-%(BesselJG6$%\"nG*(FAF3F>F3*&\"\"#F3F6F3F
+7F3F6FH%$sysG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<#\"\"!" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 86 "One would end the proof by cheking suffic
+iently many initial conditions to the system " }{XPPEDIT 18 0 "sys;" "
+6#%$sysG" }{TEXT -1 1 "." }}}}{SECT 0 {PARA 0 "" 0 "seealso" {TEXT 26 
+10 "See Also: " }{HYPERLNK 17 "Mgfun[pol_to_sys]" 2 "Mgfun[pol_to_sys]
+" "" }}}}{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

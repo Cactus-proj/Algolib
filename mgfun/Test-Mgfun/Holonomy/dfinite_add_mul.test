@@ -1,0 +1,184 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+# binomial(n,k)+binomial(n+k,k) using the FGLM algorithm.
+A:=shift_algebra([Sn,n],[Sk,k]):
+T:=MonomialOrder(A,tdeg(Sn,Sk)):
+G1:=Basis(hypergeom_to_dfinite(binomial(n,k),A),T):
+G2:=Basis(hypergeom_to_dfinite(binomial(n+k,k),A),T):
+s:=dfinite_add([[G1,T],[G2,T]],T):
+normal(map(applyopr,s,binomial(n,k)+binomial(n+k,k),A),expanded):
+if %=[0,0] then okay else % fi;
+HilbertSeries(s,T,u):
+if %=u+1 then okay else % fi;
+
+# exp(mu*x+nu*y)+BesselJ(mu,x)*BesselJ(nu,y) using the FGLM algorithm.
+A:=diff_algebra([Dx,x],[Dy,y],comm={mu,nu}):
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+fun[f]:=exp(mu*x+nu*y):
+fun[g]:=BesselJ(mu,x)*BesselJ(nu,y):
+G[f]:=Basis(hypergeom_to_dfinite(fun[f],A),T):
+G[g]:=[x^2*Dx^2+x*Dx+x^2-mu^2,y^2*Dy^2+y*Dy+y^2-nu^2]:
+s:=dfinite_add([[G[f],T],[G[g],T]],T):
+normal(map(applyopr,s,fun[f]+fun[g],A),expanded):
+if %=[0,0,0] then okay else % fi;
+HilbertSeries(s,T,u):
+if %=2*u^2+2*u+1 then okay else % fi;
+
+# Functions with singularities at 0.
+A:=diff_algebra([Dx,x]):
+T:=MonomialOrder(A,tdeg(Dx)):
+G1:=Basis(hypergeom_to_dfinite(exp(1/x^2),A),T):
+G2:=Basis(hypergeom_to_dfinite(exp(-1/x),A),T):
+s:=dfinite_add([[G1,T],[G2,T]],T):
+normal(map(applyopr,s,exp(1/x^2)+exp(-1/x),A),expanded):
+if %=[0] then okay else % fi;
+HilbertSeries(s,T,u):
+if %=u+1 then okay else % fi;
+
+# exp(2*x)*exp(3*x)
+A:=diff_algebra([Dx,x]):
+T:=MonomialOrder(A,tdeg(Dx)):
+G1:=[Dx-2]:
+G2:=[Dx-3]:
+dfinite_mul([[G1,T],[G2,T]],T):
+Basis(%,T):
+if %=[Dx-5] then okay else % fi;
+applyopr(op(%%),exp(5*x),A):
+if %=0 then okay else % fi;
+
+# BesselJ(3,x)^2
+G1:=[x^2*Dx^2+x*Dx+(x^2-9)]:
+G2:=G1:
+dfinite_mul([[G1,T],[G2,T]],T):
+Basis(%,T):
+if %=[4*x^2*Dx+Dx^3*x^2+4*x+3*x*Dx^2-35*Dx] then okay else % fi;
+collect(expand(applyopr(op(%%),BesselJ(3,x)^2,A)),BesselJ,normal):
+if %=0 then okay else % fi;
+
+# BesselJ(mu,x)^2
+A:=diff_algebra([Dx,x],comm=mu):
+T:=MonomialOrder(A,tdeg(Dx)):
+G1:=[x^2*Dx^2+x*Dx+(x^2-mu^2)]:
+G2:=G1:
+dfinite_mul([[G1,T],[G2,T]],T):
+Basis(%,T):
+if %=[4*x^2*Dx+Dx^3*x^2+4*x+3*x*Dx^2+Dx-4*mu^2*Dx] then okay else % fi;
+collect(applyopr(op(%%),BesselJ(mu,x)^2,A),BesselJ,normal):
+if %=0 then okay else % fi;
+
+# BesselJ(mu,x)*BesselJ(mu,y)*BesselJ(mu,x+y)
+A:=diff_algebra([Dx,x],[Dy,y],comm=mu):
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+G1:=Basis({x^2*Dx^2+x*Dx+(x^2-mu^2),Dy},T):
+G2:=Basis({y^2*Dy^2+y*Dy+(y^2-mu^2),Dx},T):
+G3:=Basis({(x+y)^2*Dx^2+(x+y)*Dx+((x+y)^2-mu^2),Dx-Dy},T):
+dfinite_mul([[G1,T],[G2,T],[G3,T]],T):
+Basis(%,T):
+if %=
+[2*x^3*mu^2-2*x^2*Dx*y^4*Dy^2-3*x^2*y^3*Dy^2-y^4*Dy^2*x-3*x*y^2*mu^2-2*y^3*mu^
+2+3*x^2*mu^2*y-2*x^3*y^2*Dy^2-2*Dy*y^4*mu^2+2*x^2*Dy*Dx*y^3+2*x*Dy*Dx*y^4-4*x*
+Dy*y^3*mu^2-2*x^3*Dy*Dx*y^2+4*x^3*y*mu^2*Dx+2*x^2*Dx^2*Dy*y^4+x^4*y*Dx^2-2*x^4
+*y*Dy*Dx+2*x^4*mu^2*Dx+3*x^3*Dx^2*y^2-2*x^3*y*Dy+x^3*Dx*y+2*x^2*Dx^2*y^3+3*x^2
+*y^2*Dx-3*x^2*y^2*Dy+2*x*Dx*y^3-2*x^4*y^2*Dy^2*Dx+2*x^4*y^2*Dx^2*Dy-x*Dy*y^3-4
+*x^3*y^3*Dy^2*Dx+4*x^3*y^3*Dx^2*Dy, -6*x^3*mu^2+28*x^4*y+16*x^3*Dx*y^3+32*x^5*
+Dx*y-4*x*Dx*y^3*mu^2-10*x^2*y^2*mu^2*Dx+40*x^4*y^2*Dx+8*Dx*x^6-21*x^2*y^3*Dy^2
+-21*y^4*Dy^2*x+9*x*y^2*mu^2+20*x^3*y^2-20*x^2*y^3+6*y^3*mu^2-28*y^4*x-9*x^2*mu
+^2*y-6*x^3*y^2*Dy^2+8*x^5+8*Dy*y^4*mu^2+6*x^5*Dx^2-6*y^5*Dy^2-8*y^5+2*Dx*x^4-2
+*Dy*y^4+4*Dx^3*x^3*y^3+8*Dx^3*x^5*y+10*Dx^3*x^4*y^2+2*Dx^3*x^6+4*Dy*x^3*mu^2*y
++10*Dy*x^2*mu^2*y^2-16*Dy*y^3*x^3+20*x*Dy*y^3*mu^2-20*x^3*y*mu^2*Dx+21*x^4*y*
+Dx^2-8*x^4*mu^2*Dx+21*x^3*Dx^2*y^2+2*x^3*y*Dy+5*x^3*Dx*y+6*x^2*Dx^2*y^3+x^2*y^
+2*Dx-x^2*y^2*Dy-2*x*Dx*y^3-4*x^3*y^3*Dy^3-10*x^2*y^4*Dy^3-8*x*y^5*Dy^3-5*x*Dy*
+y^3-2*y^6*Dy^3-40*Dy*y^4*x^2-32*Dy*y^5*x-8*Dy*y^6, -8*x^2*y^3*mu^2-12*x^3*y^2*
+mu^2+3*x^5*y^2+24*x^4*y^3+252*Dy*y^6*x^2+160*Dy*y^7*x+76*Dy*x^4*y^4+84*y^6*x-x
+^5*mu^2-6*x^4*mu^2*y+114*x^2*y^5+75*x^3*y^4+x^5*mu^4+8*x^2*mu^4*y^3+12*x^3*mu^
+4*y^2+6*x^4*mu^4*y+24*y^7+2*x^4*y^2*Dy+8*Dy*y^3*x^3+14*Dy*y^4*x^2+12*Dy*y^5*x+
+4*Dy*y^6+14*x^3*y^6*Dy^4+16*x^2*y^7*Dy^4+9*x*y^8*Dy^4+x^5*y^4*Dy^4+6*x^4*y^5*
+Dy^4+2*y^9*Dy^4+36*x*y^8*Dy^2+56*x^3*y^6*Dy^2+24*x^4*y^5*Dy^2+4*x^5*y^4*Dy^2+8
+*y^9*Dy^2-12*x^4*y^3*Dy^2*mu^2-8*y^7*Dy^2*mu^2+64*x^2*y^7*Dy^2+18*x^4*y^3*Dy^2
++60*x^3*y^4*Dy^2-28*y^6*Dy^2*x*mu^2-30*x^3*y^4*Dy^2*mu^2-40*x^2*y^5*Dy^2*mu^2-\
+50*Dy*y^4*x^2*mu^2+196*Dy*x^3*y^5-16*Dy*y^6*mu^2+40*Dy*y^8+88*x^2*y^6*Dy^3+56*
+x*y^7*Dy^3+12*Dy*y^3*x^5+4*x^5*y^3*Dy^3+26*x^4*y^4*Dy^3+14*y^8*Dy^3+2*x^5*y^2*
+Dy^2-2*x^5*y^2*Dy^2*mu^2-48*Dy*y^5*mu^2*x+70*y^6*Dy^2*x+94*x^2*y^5*Dy^2-2*Dy*x
+^4*y^2*mu^2-20*Dy*x^3*y^3*mu^2+20*y^7*Dy^2+68*x^3*y^5*Dy^3, -4*y^5*mu^2+16*y^5
+*mu^4+Dx^2*x^6*y+6*Dx^2*x^5*y^2+27*x^2*y^3*mu^2+58*x^3*y^2*mu^2-12*y^4*x*mu^2+
+13*Dx^2*x^4*y^3+4*Dx^2*x^2*y^5+48*x*y^4*mu^4+4*Dx*y^5*x-2*Dy*x^5*y+128*Dx*y^6*
+x^2+12*Dx*y^4*x^2+32*Dx*y^7*x+152*Dx*x^4*y^4+200*Dx*y^5*x^3+8*x^5*y^2+44*x^4*y
+^3+12*Dx^2*x^3*y^4+88*Dy*y^6*x^2-8*Dy*y^7*x+88*Dy*x^4*y^4-16*y^6*x+13*x^3*Dx*y
+^3+x^5*Dx*y+6*x^5*mu^2+6*x^4*y^2*Dx+33*x^4*mu^2*y+44*x^2*y^5+80*x^3*y^4+36*x^2
+*mu^4*y^3+8*x^3*mu^4*y^2-16*y^7-11*x^4*y^2*Dy-16*Dy*y^3*x^3-11*Dy*y^4*x^2-8*Dy
+*y^5*x-4*Dy*y^6+4*Dx*Dy^3*x^6*y^3+24*Dy^2*Dx*y^7*x+114*Dy^2*Dx*x^4*y^4+150*Dy^
+2*Dx*y^5*x^3+96*Dy^2*Dx*y^6*x^2+6*Dy^2*Dx*x^6*y^2+42*Dy^2*Dx*x^5*y^3+26*Dx*x^5
+*y*mu^2+24*Dx*x^4*y^2*mu^2-28*Dx*x^3*mu^2*y^3-48*Dx*x^2*mu^2*y^4-16*Dx*x*mu^2*
+y^5+8*Dx*x^6*y^2+56*Dx*x^5*y^3+6*Dx*x^6*mu^2+32*Dy*Dx*y^8*x-32*Dy*Dx*y^6*x*mu^
+2+8*Dy*Dx*y^6*x-68*Dy*Dx*x^4*y^3*mu^2+22*Dy*Dx*x^3*y^4-112*Dy*Dx*x^3*y^4*mu^2+
+144*Dy*Dx*y^7*x^2-96*Dy*Dx*x^2*y^5*mu^2+24*Dy*Dx*x^2*y^5-24*Dy*Dx*x^5*y^2*mu^2
+-6*Dy*Dx*x^5*y^2+224*Dy*Dx*x^4*y^5+2*Dy*Dx*x^4*y^3+256*Dy*Dx*y^6*x^3-2*Dy*Dx*x
+^6*y-4*Dy*Dx*x^6*mu^2*y+96*Dy*Dx*x^5*y^4-16*Dx^2*x^2*y^5*mu^2-4*Dx^2*x^6*mu^2*
+y-24*Dx^2*x^5*y^2*mu^2-52*Dx^2*x^4*y^3*mu^2-48*Dx^2*x^3*y^4*mu^2+16*Dy*Dx*x^6*
+y^3-4*Dy*x^5*y*mu^2+36*Dx*Dy^3*y^7*x^2+8*Dx*Dy^3*y^8*x+33*x^4*y^3*Dy^2+60*x^3*
+y^4*Dy^2+8*Dy*y^4*x^2*mu^2+152*Dy*x^3*y^5+16*Dy*y^6*mu^2+24*Dx*Dy^3*x^5*y^4+56
+*Dx*Dy^3*x^4*y^5+64*Dx*Dy^3*y^6*x^3-16*Dy*y^8+22*x^2*y^6*Dy^3-2*x*y^7*Dy^3+16*
+Dy*y^3*x^5+4*x^5*y^3*Dy^3+22*x^4*y^4*Dy^3-4*y^8*Dy^3+6*x^5*y^2*Dy^2+32*Dy*y^5*
+mu^2*x-12*y^6*Dy^2*x+33*x^2*y^5*Dy^2-22*Dy*x^4*y^2*mu^2-26*Dy*x^3*y^3*mu^2-12*
+y^7*Dy^2+38*x^3*y^5*Dy^3]
+then okay else % fi;
+collect(expand(map(applyopr,%%,
+    BesselJ(mu,x)*BesselJ(mu,y)*BesselJ(mu,x+y),A)),BesselJ,normal):
+if %=[0,0,0,0] then okay else % fi;
+
+# 2^n*3^n
+A:=shift_algebra([Sn,n]):
+T:=MonomialOrder(A,tdeg(Sn)):
+G1:=[Sn-2]:
+G2:=[Sn-3]:
+dfinite_mul([[G1,T],[G2,T]],T):
+Basis(%,T):
+if %=[Sn-6] then okay else % fi;
+expand(applyopr(op(%%),6^n,A)):
+if %=0 then okay else % fi;
+
+# (exp(-7*x)/sqrt(1-x^2))*T[n](x)
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x]):
+T:=MonomialOrder(A,tdeg(Sn,Dx)):
+f:=exp(-7*x)/sqrt(1-x^2):
+GB[1]:=Basis(hypergeom_to_dfinite(f,A),T):
+GB[2]:=Basis({(1-x^2)*Dx^2-x*Dx+n^2,Sn^2-2*x*Sn+1,
+    (1-x^2)*Dx*Sn+(n+1)*x*Sn-(n+1)},T):
+Basis(dfinite_mul([[GB[1],T],[GB[2],T]],T),T):
+if %=
+[n*Sn-x*n+Dx-Dx*x^2+7-7*x^2-x, 49*x^2+Dx^2*x^2+14*Dx*x^2+21*x+3*x*Dx-Dx^2-n^2-\
+14*Dx-48]
+then okay else % fi;
+
+# (exp(-p*x)/sqrt(1-x^2))*T[n](x)
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p):
+T:=MonomialOrder(A,tdeg(Sn,Dx)):
+f:=exp(-p*x)/sqrt(1-x^2):
+GB[1]:=Basis(hypergeom_to_dfinite(f,A),T):
+GB[2]:=Basis({(1-x^2)*Dx^2-x*Dx+n^2,Sn^2-2*x*Sn+1,
+    (1-x^2)*Dx*Sn+(n+1)*x*Sn-(n+1)},T):
+Basis(dfinite_mul([[GB[1],T],[GB[2],T]],T),T):
+if %=
+[-x+p-p*x^2+Dx-Dx*x^2+n*Sn-x*n, p^2*x^2+Dx^2*x^2+2*Dx*p*x^2+3*x*Dx+3*p*x-n^2-
+Dx^2-2*Dx*p-p^2+1]
+then okay else % fi;

@@ -1,0 +1,50 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+# Apéry-Franel identity
+
+
+with(Mgfun):
+read "Test-Mgfun/CreativeTelescoping/creative_telescoping_tools.mpl":
+
+f := binomial(n+k,n)^2*binomial(n,k)^2:
+ct1 := creative_telescoping(f, n::shift, k::shift):
+check_ct(f, [n::shift], k::shift, ct1, [[n::int, 20..100], [k::int, 2..19]]);
+
+f := binomial(k,j)^3:
+ct2 := creative_telescoping(f, k::shift, j::shift):
+check_ct(f, [k::shift], j::shift, ct2, [[k::int, 20..100], [j::int, 2..19]]);
+
+
+sys := {h(n+1,k)-h(n,k), eval(ct2[1][1], _F = unapply(h(n,k), k))}:
+sys2 := dfinite_expr_to_sys(binomial(n,k)*binomial(n+k,k),h(n::shift,k::shift)):
+sys3 := `sys*sys`(sys, sys2):
+
+ct3 := creative_telescoping(LFSol(sys3), n::shift, k::shift):
+
+
+# We normalize the operators.
+
+dom1 := coeff(ct1[1][1], _F(n+2)):
+dom3 := coeff(ct3[1][1], _F(n+2)):
+
+if normal(ct3[1][1]/dom3 / (ct1[1][1]/dom1)) = 1 then
+  okay
+else
+  ct3
+end if;

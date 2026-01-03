@@ -1,0 +1,288 @@
+{VERSION 3 0 "Mac OS X" "3.0" }
+{USTYLETAB {PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 
+0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Or
+dered List 5" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Ordered List 1" 
+-1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 
+1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1
+ -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 
+2 2 -1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 12 
+0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Le
+ft Justified Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0
+ 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" 
+-1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 
+128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "H
+eading 2" -1 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0
+ 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 72 2 0 2 2 -1 1 }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Tim
+es" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" 
+-1 203 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 
+1 0 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0
+ 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Line Printed Output" -1 6 1 {CSTYLE "" -1 -1 "Courier" 1 10 0
+ 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "F
+ixed Width" -1 17 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 
+2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Warning" -1 7 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0
+ 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Courie
+r" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 
+}{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 
+2 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1
+ {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12
+ 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 2" -1 205 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 
+-1 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2 2
+ 0 0 0 1 }{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Nonterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 
+2 2 2 0 0 0 1 }{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 2 
+2 0 0 0 1 }{CSTYLE "Maple Comment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2 
+2 2 2 0 0 0 1 }{CSTYLE "2D Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 
+2 2 2 0 0 0 1 }{CSTYLE "2D Inert Output" -1 200 "Times" 1 12 144 144 
+144 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1 12 0 128 
+128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times" 1 10 0 0 
+0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Input" -1 19 "Times" 1 12 255 0 0
+ 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "Maple Input Placeholder" -1 201 "Cour
+ier" 1 12 200 0 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "Annotation Text" 
+-1 202 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underli
+ned Bold" -1 41 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Plo
+t Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help I
+talic" -1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help H
+eading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help \+
+Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Dicti
+onary Hyperlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "Help Emphasized" -1 22 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0
+ 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 
+0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 
+1 }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 0 0 1 2 2 1 2 2 2 0 
+0 0 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0 1 1 2
+ 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 0 1 2 1
+ 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 0 0 1 1
+ 2 2 2 2 2 0 0 0 1 }{CSTYLE "Text" -1 203 "Times" 1 12 0 0 0 1 2 2 2 2
+ 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small" -1 204 "Times" 1 1 0 0 0 
+1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0
+ 0 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 
+0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times" 1 10 0 0
+ 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 "Times" 1
+ 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 1 12 0 
+0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times" 1 12 0 0
+ 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128
+ 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 "Times" 1
+ 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 205 "Cour
+ier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "
+Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 18 "Ti
+mes" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Output" -1 20 "Time
+s" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Maple Name" -1 35
+ "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Menus" -1
+ 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "C
+ourier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 206 "Times" 1 
+12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 207 "Times" 1 12 0 0 0 1
+ 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 208 "Times" 1 12 0 0 0 1 1 1 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 209 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 210 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 211 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 212 
+"Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 213 "Times" 1 
+12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 214 "Times" 1 12 0 0 0 1
+ 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 215 "Times" 1 12 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 216 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 217 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 218 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 219 
+"Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 220 "Times" 1 
+12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 221 "Times" 1 12 0 0 0 1
+ 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 222 "Times" 1 12 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 223 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 224 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 225 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 226 
+"Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 227 "Times" 1 
+12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 228 "Times" 1 12 0 0 0 1
+ 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 229 "Times" 1 12 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 230 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 231 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 232 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 233 
+"Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 234 "Times" 1 
+12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 235 "Times" 1 12 0 0 0 1
+ 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 236 "Times" 1 12 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 237 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 238 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 239 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 240 
+"Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 241 "Times" 1 
+12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 242 "Times" 1 12 0 0 0 1
+ 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 243 "Times" 1 12 0 0 0 1 1 1 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 244 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 245 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 246 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 247 
+"Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 248 "Times" 1 
+12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 249 "Times" 1 12 0 0 0 1
+ 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 250 "Times" 1 12 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 251 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 252 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 253 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 254 
+"Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 255 "Times" 1 
+12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 256 "Times" 1 12 0 0 0 1
+ 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 257 "Times" 1 12 0 0 0 1 1 1 2 2 2
+ 2 0 0 0 1 }{CSTYLE "" -1 258 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "" -1 259 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE 
+"" -1 260 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 261 
+"Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 262 "Times" 1 
+12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 263 "Times" 1 12 0 0 0 1
+ 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "" -1 264 "Times" 1 12 0 0 0 1 1 2 2 2 2
+ 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT 265 46 "Research Papers Related
+ to the algolib Library" }}{PARA 19 "" 0 "" {TEXT 266 29 "(sorted by r
+elevant packages)" }}{PARA 0 "" 0 "" {TEXT 267 0 "" }}}{SECT 0 {PARA 3
+ "" 0 "" {TEXT 268 10 "combstruct" }}{EXCHG {PARA 15 "" 0 "" {TEXT 
+206 64 "A calculus for the random generation of combinatorial structur
+es" }{TEXT 269 59 ", by P. Flajolet, P. Zimmermann, and B. V. Cutsem, \+
+(1994), " }{TEXT 207 28 "Theoretical Computer Science" }{TEXT 269 78 "
+, vol. 135.  Gives the theoretical background of the labelled structur
+es case." }}{PARA 15 "" 0 "" {TEXT 208 52 "Attribute grammars and auto
+matic complexity analysis" }{TEXT 269 24 ", by M. Mishna, (2003), " }
+{TEXT 209 31 "Advances in Applied Mathematics" }{TEXT 269 20 ", vol. 3
+0, number 1." }}{PARA 15 "" 0 "" {TEXT 210 48 "Attribute grammars are \+
+useful for combinatorics!" }{TEXT 269 42 ", by M. P. Delest and J. M F
+edou, (1992), " }{TEXT 211 28 "Theoretical Computer Science" }{TEXT 
+269 20 ", vol. 98, p. 65-76." }}{PARA 15 "" 0 "" {TEXT 212 45 "Automat
+ic average-case analysis of algorithms" }{TEXT 269 55 ", by P. Flajole
+t, B. Salvy, and P. Zimmermann, (1991), " }{TEXT 213 38 "Theoretical C
+omputer Science, Series A" }{TEXT 269 20 ", vol. 79, number 1." }}
+{PARA 15 "" 0 "" {TEXT 214 69 "Gaia: a package for the random generati
+on of combinatorial structures" }{TEXT 269 30 ", by Paul Zimmermann, (
+1994), " }{TEXT 215 26 "Maple Technical Newsletter" }{TEXT 269 44 ".  \+
+Gaia is an earlier version of combstruct." }}{PARA 15 "" 0 "" {TEXT 
+216 39 "Lambda-Upsilon-Omega, the 1989 cookbook" }{TEXT 269 110 ", by \+
+P. Flajolet, B. Salvy and P. Zimmermann, (1989), INRIA Research Report
+, vol. 1073.  Lamba-Upsilon-Omega, " }{TEXT 269 1 "-" }{TEXT 269 2 "- 
+" }{TEXT 269 59 " or LUO for short, is a previous incarnation of combs
+truct." }}{PARA 15 "" 0 "" {TEXT 217 54 "Lambda-Upsilon-Omega: an assi
+stant algorithms analyzer" }{TEXT 269 59 ", by P. Flajolet, B. Salvy, \+
+and P. Zimmermann, (1989). In: " }{TEXT 218 64 "Applied Algebra, Algeb
+raic Algorithms and Error-Correcting Codes" }{TEXT 269 64 ", T. Mora (
+editor), Lecture Notes in Computer Science, vol. 357." }}{PARA 15 "" 0
+ "" {TEXT 219 37 "Object grammars and random generation" }{TEXT 269 
+39 ", by I. Dutour and J. M Fedou, (1998), " }{TEXT 220 53 "Discrete M
+athematics and Theoretical Computer Science" }{TEXT 269 19 ", vol. 2, \+
+p. 49-63." }}{PARA 15 "" 0 "" {TEXT 221 56 "Random generation of unlab
+elled combinatorial structures" }{TEXT 269 79 ", by Eithne Murray, (19
+93), summary of a seminar talk by Paul Zimmermann.  In: " }{TEXT 222 
+29 "Algorithms Seminar, 1993-1994" }{TEXT 269 68 ", by Bruno Salvy (ed
+itor), (1994), INRIA Research Report, vol. 2381." }}}}{SECT 0 {PARA 3 
+"" 0 "" {TEXT 268 4 "gdev" }}{EXCHG {PARA 15 "" 0 "" {TEXT 223 43 "Exa
+mples of automatic asymptotic expansions" }{TEXT 269 26 ", by Bruno Sa
+lvy, (1991), " }{TEXT 224 15 "SIGSAM Bulletin" }{TEXT 269 20 ", vol. 2
+5, number 2." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT 268 4 "gfun" }}{EXCHG 
+{PARA 15 "" 0 "" {TEXT 225 96 "Gfun: a Maple package for the manipulat
+ion of generating and holonomic functions in one variable" }{TEXT 269 
+41 ", by B. Salvy and P. Zimmermann, (1994), " }{TEXT 226 41 "ACM Tran
+sactions on Mathematical Software" }{TEXT 269 16 ", vol. 20, n\342\210
+\236 2." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT 268 38 "Ore_algebra, Groebn
+er, Holonomy, Mgfun" }}{SECT 1 {PARA 4 "" 0 "" {TEXT 270 12 "Publicati
+ons" }}{EXCHG {PARA 0 "" 0 "" {TEXT 267 97 "The following are publicat
+ions that describe the theoretical aspects implemented in the packages
+." }}}{EXCHG {PARA 15 "" 0 "" {TEXT 269 0 "" }{TEXT 227 36 "Fonctions \+
+holonomes en calcul formel" }{TEXT 269 108 ", by Fr\303\210d\303\210ri
+c Chyzak, (1998), \"Th\303\213se universitaire\" n\342\210\236\342\200
+\240TU\342\200\2400531, INRIA.  Defended on May\342\200\24027, 1998. 2
+27\342\200\240pages." }}{PARA 15 "" 0 "" {TEXT 228 58 "Gr\313\206bner \+
+Bases, Symbolic Summation and Symbolic Integration" }{TEXT 269 77 ", b
+y Fr\303\210d\303\210ric Chyzak, (1998). In: Buchberger, B. and Winkle
+r, F., (editors), " }{TEXT 229 86 "Gr\313\206bner Bases and Applicatio
+ns (Proc. of the Conference ``33\342\200\240Years of Gr\313\206bner Ba
+ses'')" }{TEXT 269 167 ", Cambridge University Press (London Mathemati
+cal Society Lecture Notes Series, vol.\342\200\240251), p.\342\200\240
+32-60.  Preliminary version available as: Research Report n\342\210\23
+6 3297, INRIA." }}{PARA 15 "" 0 "" {TEXT 230 74 "An Extension of Zeilb
+erger's Fast Algorithm to General Holonomic Functions" }{TEXT 269 34 "
+, by Fr\303\210d\303\210ric Chyzak, (1997). In: " }{TEXT 231 63 "Forma
+l Power Series and Algebraic Combinatorics, 9th Conference" }{TEXT 
+269 122 ", Universit\342\200\260t Wien, p.\342\200\240172-183, Confere
+nce Proceedings.  Preliminary version available as: Research Report n
+\342\210\236\342\200\2403195, INRIA." }}{PARA 15 "" 0 "" {TEXT 232 74 
+"Non-Commutative Elimination in Ore Algebras Proves Multivariate Ident
+ities" }{TEXT 269 46 ", by Fr\303\210d\303\210ric Chyzak and Bruno Sal
+vy, (1998), " }{TEXT 233 31 "Journal of Symbolic Computation" }{TEXT 
+269 28 ", vol.\342\200\24026, n\342\210\236\342\200\2402, p.\342\200\2
+40187-227." }}{PARA 15 "" 0 "" {TEXT 234 52 "Holonomic Systems and Aut
+omatic Proofs of Identities" }{TEXT 269 72 ", by Fr\303\210d\303\210ri
+c Chyzak, (1994), Research Report n\342\210\236\342\200\2402371, INRIA
+.  61\342\200\240pages." }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT 270 17 "Sem
+inar Summaries" }}{EXCHG {PARA 0 "" 0 "" {TEXT 267 120 "Holonomy is a \+
+recurrent topic discussed at the Algorithm Seminar.  Here are a few su
+mmaries of sessions dedicated to it." }}}{EXCHG {PARA 15 "" 0 "" {TEXT
+ 235 52 "Introduction aux fonctions holonomes en une variable" }{TEXT 
+269 37 ", by Philippe Flajolet, (1992).  In: " }{TEXT 236 29 "Algorith
+ms Seminar, 1991-1992" }{TEXT 269 95 ", Ph. Flajolet and P. Zimmermann
+, (editors), (1992), Research Report n\342\210\236 1779, INRIA.  p. 41
+-45." }}{PARA 15 "" 0 "" {TEXT 237 41 "Fonctions holonomes \342\200\24
+1 plusieurs variables" }{TEXT 269 33 ", by Kevin Compton, (1992).  In:
+ " }{TEXT 238 29 "Algorithms Seminar, 1991-1992" }{TEXT 269 95 ", Ph. \+
+Flajolet and P. Zimmermann, (editors), (1992), Research Report n\342\2
+10\236 1779, INRIA.  p. 47-49." }}{PARA 15 "" 0 "" {TEXT 239 29 "Holon
+omic Symmetric Functions" }{TEXT 269 47 ", by Dominique Gouyou-Beaucha
+mps, (1992).  In: " }{TEXT 240 29 "Algorithms Seminar, 1991-1992" }
+{TEXT 269 95 ", Ph. Flajolet and P. Zimmermann, (editors), (1992), Res
+earch Report n\342\210\236 1779, INRIA.  p. 51-55." }}{PARA 15 "" 0 ""
+ {TEXT 241 52 "Holonomic Systems and Automatic Proofs of Identities" }
+{TEXT 269 35 ", by Fr\303\210d\303\210ric Chyzak, (1995).  In: " }
+{TEXT 242 29 "Algorithms Seminar, 1994-1995" }{TEXT 269 22 ", B. Salvy
+, (editor),\n" }{TEXT 269 50 "(1995), Research Report n\342\210\236 26
+69, INRIA.  p. 39-42." }}{PARA 15 "" 0 "" {TEXT 243 37 "Creative Teles
+coping and Applications" }{TEXT 269 35 ", by Fr\303\210d\303\210ric Ch
+yzak, (1996).  In: " }{TEXT 244 29 "Algorithms Seminar, 1995-1996" }
+{TEXT 269 72 ", B. Salvy, (editor), (1996), Research Report n\342\210
+\236 2992, INRIA.  p. 39-42." }}{PARA 15 "" 0 "" {TEXT 245 17 "-Finite
+ Functions" }{TEXT 269 35 ", by Fr\303\210d\303\210ric Chyzak, (1996).
+  In: " }{TEXT 246 29 "Algorithms Seminar, 1995-1996" }{TEXT 269 72 ",
+ B. Salvy, (editor), (1996), Research Report n\342\210\236 2992, INRIA
+.  p. 43-46." }}{PARA 15 "" 0 "" {TEXT 247 53 "New Algorithms for Defi
+nite Summation and Integration" }{TEXT 269 35 ", by Fr\303\210d\303\21
+0ric Chyzak, (1997).  In: " }{TEXT 248 29 "Algorithms Seminar, 1996-19
+97" }{TEXT 269 72 ", B. Salvy, (editor), (1997), Research Report n\342
+\210\236 3267, INRIA.  p. 27-30." }}}{EXCHG {PARA 0 "" 0 "" {TEXT 267 
+0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 267 131 "Here are also seminar su
+mmaries of sessions about related topics, either applications or algor
+ithms to be used internally in Mgfun." }}}{EXCHG {PARA 15 "" 0 "" 
+{TEXT 249 99 "Un algorithme efficace pour le calcul des solutions rati
+onnelles d'un syst\303\213me diff\303\210rentiel lin\303\210aire" }
+{TEXT 269 35 ", by Moulay Barkatou, (1997).  In: " }{TEXT 250 29 "Algo
+rithms Seminar, 1996-1997" }{TEXT 269 72 ", B. Salvy, (editor), (1997)
+, Research Report n\342\210\236 3267, INRIA.  p. 31-32." }}{PARA 15 ""
+ 0 "" {TEXT 251 48 "Short and Easy Computer Proofs of Partition and " 
+}{TEXT 252 11 "-Identities" }{TEXT 269 31 ", by Peter Paule, (1995).  \+
+In: " }{TEXT 253 29 "Algorithms Seminar, 1994-1995" }{TEXT 269 22 ", B
+. Salvy, (editor),\n" }{TEXT 269 50 "(1995), Research Report n\342\210
+\236 2669, INRIA.  p. 43-46." }}{PARA 15 "" 0 "" {TEXT 254 26 "Symboli
+c Computation with " }{TEXT 255 17 "-finite Sequences" }{TEXT 269 35 "
+, by Marko Petkovsek, (1993).  In: " }{TEXT 256 29 "Algorithms Seminar
+, 1992-1993" }{TEXT 269 72 ", B. Salvy, (editor), (1992), Research Rep
+ort n\342\210\236 2130, INRIA.  p. 51-54." }}{PARA 15 "" 0 "" {TEXT 
+257 49 "Polynomial Solutions of Linear Operator Equations" }{TEXT 269 
+35 ", by Marko Petkovsek, (1995).  In: " }{TEXT 258 29 "Algorithms Sem
+inar, 1994-1995" }{TEXT 269 22 ", B. Salvy, (editor),\n" }{TEXT 269 
+50 "(1995), Research Report n\342\210\236 2669, INRIA.  p. 31-34." }}
+{PARA 15 "" 0 "" {TEXT 259 70 "Linear Recurrences, Linear Differential
+ Equations and Fast Computation" }{TEXT 269 31 ", by Bruno Salvy, (199
+6).  In: " }{TEXT 260 29 "Algorithms Seminar, 1995-1996" }{TEXT 269 
+72 ", B. Salvy, (editor), (1996), Research Report n\342\210\236 2992, \+
+INRIA.  p. 31-38." }}}}}{SECT 0 {PARA 3 "" 0 "" {TEXT 268 11 "regexpco
+unt" }}{EXCHG {PARA 15 "" 0 "" {TEXT 261 40 "Regular expressions into \+
+finite automata" }{TEXT 269 35 ", by A. Brueggemann-Klein, (1993), " }
+{TEXT 262 28 "Theoretical Computer Science" }{TEXT 269 21 ", vol. 120,
+ number 2." }}{PARA 15 "" 0 "" {TEXT 263 16 "Motif Statistics" }{TEXT 
+269 53 ", by P. Nicodeme, B. Salvy, and P. Flajolet, (2002), " }{TEXT 
+264 30 "Theoretical Computer Science, " }{TEXT 269 19 "vol. 287, numbe
+r 2." }}}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 15 10 1804 1 1 1 1 }{PAGENUMBERS 0 1
+ 2 33 1 1 }

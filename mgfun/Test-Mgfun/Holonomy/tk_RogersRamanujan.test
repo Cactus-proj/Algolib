@@ -1,0 +1,84 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+# One would expect to use the simpler algebra
+#
+#	A:=qshift_algebra([Sn,q^n],[Sk,q^k]):
+#
+# This is not possible due to weaknesses in the way powers q^n are
+# dealt with in the qshift predefined commutation type.  We therefore
+# use the following algebra, changing its default action to the one of
+# the algebra above.
+A:=skew_algebra(qdilat=[Sn,qn,q],qdilat=[Sk,qk,q]):
+A_poly:=skew_algebra(qdilat=[Sn,qn,q],qdilat=[Sk,qk,q],action={
+    Sn=proc(u,order) global n; subs(n=n+order,u) end,
+    qn=proc(u,order) global q,n; (q^n)^order*u end,
+    Sk=proc(u,order) global k; subs(k=k+order,u) end,
+    qk=proc(u,order) global q,k; (q^k)^order*u end},
+    polynom={qn,qk}):
+G:=subs([q^n=qn,q^k=qk],hypergeom_to_dfinite(
+    q^(k^2)/qfactorial(q,k)/qfactorial(q,n-k),A_poly)):
+T_poly:=MonomialOrder(A_poly,tdeg(Sn,Sk,qn,qk)):
+GB:=Basis(G,T_poly):
+B:=skew_algebra(qdilat=[Sn,qn,q],comm=qk,polynom=qk):
+T:=MonomialOrder(B,lexdeg([qk],[Sn]),[qk]):
+holon_defqsum(map(op,{GB,G}),A,[qk],T):
+if nops(%)=1 and remove(member,remove(member,
+[-qn^2*q^3*Sn+Sn^2-Sn-Sn^2*qn*q^2-Sn*q+q+Sn*qn*q^2]
+,%),-%)=[] then okay else % fi;
+
+h:=(-1)^k*q^((5*k^2-k)/2)/qfactorial(q,n-k)/qfactorial(q,n+k):
+G:=subs([q^n=qn,q^k=qk],hypergeom_to_dfinite(h,A_poly)):
+GB:=Basis(G,T_poly):
+holon_defqsum(map(op,{GB,G}),A,[qk],T):
+if nops(%)=1 and remove(member,remove(member,
+[Sn^4-qn^4*q^17*Sn^3-q^10*qn^2*Sn^3+Sn^4*q+q^2*Sn^4-2*q^5*Sn^3+2*
+q^6*Sn^2+q^3*Sn^4-2*q^4*Sn^3-q^18*qn^4*Sn^3+q^14*qn^2*Sn^2+q^13*
+qn^2*Sn^2-q^14*qn^2*Sn-q^13*qn^2*Sn-q^11*qn^2*Sn^3+qn^2*q^10*Sn^5
+-qn^5*q^22*Sn^4-qn^6*q^25*Sn^3+qn^2*q^9*Sn^5-qn^4*q^19*Sn^5-qn^5*
+q^23*Sn^4+q^10*qn^2*Sn^2+q^3*Sn^2-Sn^3*q-q^2*Sn^3+q^9*Sn^2-q^8*Sn
+-q^10*Sn-q^7*Sn^3+q^8*Sn^2-q^9*Sn-q^12*qn^2*Sn^4+q^10-q^11*qn^2*
+Sn^4-q^7*Sn+q^4*Sn^4+2*q^7*Sn^2-q^6*Sn^3+2*q^5*Sn^2+2*q^11*qn^2*
+Sn^2-q^12*qn^2*Sn-q^6*Sn-2*q^3*Sn^3+q^4*Sn^2+2*q^12*qn^2*Sn^2+qn^
+4*q^18*Sn^2+q^17*qn^4*Sn^2-qn^2*q^9*Sn^3-Sn^5-qn^2*q^10*Sn^4+qn^4
+*q^19*Sn^2]
+,%),-%)=[] then okay else % fi;
+
+G:=subs([q^n=qn,q^k=qk],hypergeom_to_dfinite(h*(1+q^k),A_poly)):
+GB:=Basis(G,T_poly):
+GB2:=Basis(G,MonomialOrder(A,tdeg(Sn,Sk))):
+holon_defqsum(map(op,{GB,GB2,G}),A,[qk],T):
+if nops(%)=1 and remove(member,remove(member,
+[-qn^4*q^10*Sn^2-qn^3*q^8*Sn^3-qn^3*q^7*Sn^2-qn^2*q^6*Sn^3+qn^2*q
+^6*Sn-Sn^2*qn^2*q^5+qn^2*q^5*Sn-q^3*Sn^2*qn+qn*q^3*Sn-q^2*Sn^2*qn
++Sn^3*qn*q^2-q^3+q^3*Sn-q^2*Sn^2+q^2*Sn-q*Sn^2+q*Sn-Sn^2+Sn^3]
+,%),-%)=[] then okay else % fi;
+
+takayama_algo(map(op,{GB,G}),A,[qk],T,
+    [[],[],0,proc(elim_GB,GB,N) elim_GB=[] end]):
+takayama_algo(map(op,{GB,G}),A,[qk],T,
+    [op(%),proc(elim_GB,GB,N) N<=10 end]):
+if nops(%[1])=1 and remove(member,remove(member,
+[-qn^4*q^10*Sn^2-qn^3*q^8*Sn^3-qn^3*q^7*Sn^2-qn^2*q^6*Sn^3+qn^2*q
+^6*Sn-Sn^2*qn^2*q^5+qn^2*q^5*Sn-q^3*Sn^2*qn+qn*q^3*Sn-q^2*Sn^2*qn
++Sn^3*qn*q^2-q^3+q^3*Sn-q^2*Sn^2+q^2*Sn-q*Sn^2+q*Sn-Sn^2+Sn^3]
+,%[1]),-%[1])=[] then okay else %[1] fi;

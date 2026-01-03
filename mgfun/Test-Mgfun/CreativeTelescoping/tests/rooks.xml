@@ -1,0 +1,36 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  <test name="erickson">
+    <fun>(s-t)*(-1+s)*(t-x)/s/t/(-s*t+2*s^2*t+2*t^2+2*x*s-3*s*t^2-3*x*t-3*x*s^2+4*x*s*t)</fun>
+    <var_int name="s,t"/>
+    <var name="x" type="diff"/>
+    <var name="s" type="diff"/>
+    <var name="t" type="diff"/>
+  </test>
+  <test name="erickson2">
+    <fun>(s-t)*(-1+s)*(t-x)/s/t/(-s*t+2*s^2*t+2*t^2+2*x*s-3*s*t^2-3*x*t-3*x*s^2+4*x*s*t)</fun>
+    <var_int name="t,s"/>
+    <var name="x" type="diff"/>
+    <var name="s" type="diff"/>
+    <var name="t" type="diff"/>
+  </test>
+</tests>

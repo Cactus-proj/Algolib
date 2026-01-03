@@ -1,0 +1,33 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+
+  <!-- Relation de contiguite pour la fonction F4 d'Appell -->
+  <test name="f4_appell">
+    <fun>pochhammer(m+n,a)*pochhammer(m+n,b)/m!/n!/pochhammer(m,c)/pochhammer(n,
+      d)*x^m*y^n</fun>
+    <tex>\sum_m\frac{(a)_{m+n}(b)_{m+n}}{m!n!(c)_m(d)_n}x^my^n</tex>
+    <var_int name="m"/>
+    <var name="x" type="diff"/>
+    <var name="m" type="shift"/>
+  </test>
+
+</tests>

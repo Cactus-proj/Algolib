@@ -1,0 +1,240 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+
+# Powers.
+expr:=x^2:
+sys:=dfinite_expr_to_sys(expr,f(x::diff)):
+if %={x*diff(f(x),x)-2*f(x)} then okay else % fi;
+#
+expr:=x^a:
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+expr:=x^(2*a)/(1-x):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+#
+expr:=2^x:
+sys:=dfinite_expr_to_sys(expr,f(x::diff)):
+if %={-ln(2)*f(x)+diff(f(x),x)} then okay else % fi;
+#
+expr:=exp(n+x):
+dfinite_expr_to_sys(expr,f(x::diff,n::shift)):
+if %={f(x,n+1)-exp(1)*f(x,n),diff(f(x,n),x)-f(x,n)} then okay else % fi;
+
+# Gamma function.
+expr:=GAMMA(a):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+expr:=GAMMA(a+1/2):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+expr:=GAMMA(a-1):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+
+# Factorial.
+expr:=factorial(a):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+expr:=factorial(a+1/2):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+expr:=factorial(a-1):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,x::diff)):
+simplify(eval(subs(f=unapply(expr,a,x),sys))):
+if %={0} then okay else % fi;
+
+# Pochhammer symbols.
+expr:=pochhammer(a,n):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,n::shift)):
+simplify(eval(subs(f=unapply(expr,a,n),sys))):
+if %={0} then okay else % fi;
+expr:=pochhammer(a+1/2,n-2):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,n::shift)):
+simplify(eval(subs(f=unapply(expr,a,n),sys))):
+if %={0} then okay else % fi;
+
+# Binomial coefficients.
+expr:=binomial(n,m):
+sys:=dfinite_expr_to_sys(expr,f(n::shift,m::shift)):
+# Strangely enough, ``simplify'' is not sufficient here!
+normal(eval(subs(f=unapply(expr,n,m),sys)),expanded):
+if %={0} then okay else % fi;
+
+# Algebraic functions.
+expr:=((v-(v^2-4*B^2*u^2)^(1/2))/B)^(3/4):
+sys:=dfinite_expr_to_sys(expr,f(v::diff)):
+simplify(eval(subs(f=unapply(expr,v),sys))):
+if %={0} then okay else % fi;
+sys:=dfinite_expr_to_sys(expr,f(v::diff,B::diff)):
+simplify(eval(subs(f=unapply(expr,v,B),sys))):
+if %={0} then okay else % fi;
+
+# Gauss hypergeometric 2F1.
+expr:=hypergeom([a,b],[c],x):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,c::shift,x::diff)):
+rand(10)()+1: rand(10)()+1: rand(10)()+2:
+subs([a=%%%,b=%+%%-%%%,c=%%],eval(subs(f=unapply(expr,a,b,c,x),sys))):
+map(series,%,x,20):
+if map(convert,%,polynom)={0} then okay else % fi;
+
+# Legendre orthogonal polynomials.
+expr:=LegendreP(n,x):
+sys:=dfinite_expr_to_sys(expr,f(n::shift,x::diff)):
+evalf(subs(x=1/(1+rand(10)()),eval(subs(n=rand(10)(),f=LegendreP,sys))),50):
+if max(op(map(abs,%)))<1/10^30 then okay else % fi;
+
+# Whittaker functions.
+# WhittakerM(a,b,x)
+expr:=exp(-x/2)*x^(b+1/2)*hypergeom([b-a+1/2],[2*b+1],x):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff)):
+rand(10)()+1: rand(10)()+1:
+eval(subs([a=%%,b=%],f=unapply(expr,a,b,x),sys)):
+map(series,%,x,20):
+if map(convert,%,polynom)={0} then okay else % fi;
+# WhittakerW(a,b,x)
+expr:=exp(-x/2)*x^(b+1/2)*hypergeom([b-a+1/2],[2*b+1],x)
+    *KummerU(b-a+1/2,2*b+1,x):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff)):
+# Make 10 attempts to obtain 0 SYMBOLICALLY for randomized
+# values of the parameters.
+for attempt to 10 do
+    rand(10)()+1: rand(10)()+1;
+    eval(subs([a=1/%%,b=1/%],f=unapply(expr,a,b,x),sys));
+    eval(subs(`&where`=proc(a,b) subs(b,a) end,convert(%,'diff')));
+    traperror(simplify(map(series,%,x,20)));
+    if %<>lasterror then
+	break
+    fi
+od:
+if map(convert,%,polynom)={0} then okay else % fi;
+
+#expr:=hypergeom([1,(a-b+3)/2],[(a+b+3)/2],-x^2/4):
+#sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff));
+## Erroneous expression for LommelS1(a,b,x).
+#expr:=x^(a+1)/(a-b+1)/(a+b+1)*hypergeom([1,(a-b+3)/2],[(a+b+3)/2],-x^2/4):
+#sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff));
+
+expr:=hypergeom([1,a-b+3/2],[a+b+3/2],-x^2/4):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff)):
+rand(10)()+1: rand(10)()+1:
+subs([a=%%,b=%/20],eval(subs(f=unapply(expr,a,b,x),sys))):
+map(series,%,x,20):
+if map(convert,%,polynom)={0} then okay else % fi;
+# Erroneous expression for LommelS1(2*a,2*b,x).
+expr:=x^(2*a+1)/(a-b+1/2)/(a+b+1/2)*hypergeom([1,a-b+3/2],[a+b+3/2],-x^2/4)/4:
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff)):
+rand(10)()+1: rand(10)()+1:
+subs([a=%%,b=%/20],eval(subs(f=unapply(expr,a,b,x),sys))):
+map(series,%,x,20):
+if map(convert,%,polynom)={0} then okay else % fi;
+
+#expr:=hypergeom([1],[(a-b+3)/2,(a+b+3)/2],-x^2/4):
+#sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff));
+## Expression for LommelS1(a,b,x).
+#expr:=x^(a+1)/(a-b+1)/(a+b+1)*hypergeom([1],[(a-b+3)/2,(a+b+3)/2],-x^2/4):
+#sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff));
+
+expr:=hypergeom([1],[a-b+3/2,a+b+3/2],-x^2/4):
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff)):
+rand(10)()+1: rand(10)()+1:
+#subs([a=-%%,b=%],eval(subs(f=unapply(expr,a,b,x),sys))):
+eval(subs([a=-%%,b=%],f=unapply(expr,a,b,x),sys)):
+eval(subs(`&where`=proc(a,b) subs(b,a) end,convert(%,'diff'))):
+map(series,%,x,20):
+if map(convert,%,polynom)={0} then okay else % fi;
+# Expression for LommelS1(2*a,2*b,x).
+expr:=x^(2*a+1)/(a-b+1/2)/(a+b+1/2)*hypergeom([1],[a-b+3/2,a+b+3/2],-x^2/4)/4:
+sys:=dfinite_expr_to_sys(expr,f(a::shift,b::shift,x::diff)):
+rand(10)()+1: rand(10)()+1:
+#subs([a=-%%,b=%],eval(subs(f=unapply(expr,a,b,x),sys))):
+eval(subs([a=-%%,b=%],f=unapply(expr,a,b,x),sys)):
+eval(subs(`&where`=proc(a,b) subs(b,a) end,convert(%,'diff'))):
+map(series,%,x,20):
+if map(convert,%,polynom)={0} then okay else % fi;
+
+# Former bug in dfinite_expr_to_sys was that ``1+'' was erroneous
+# viewed as an integer shift by `Holonomy/AlgSubs`.
+f:=1+2*x*y+4*y^2:
+dfinite_expr_to_sys(f,F(x::diff,y::diff)):
+normal(eval(subs(F=unapply(f,x,y),%))):
+if %={0} then okay else % fi;
+#
+f:=(1+2*x*y+4*y^2)*exp((4*x^2*y^2)/(1+4*y^2))/y^(n+1)/(1+4*y^2)^(3/2):
+dfinite_expr_to_sys(f,F(x::diff,y::diff)):
+normal(eval(subs(F=unapply(f,x,y),%))):
+if %={0} then okay else % fi;
+
+# Another former bug (an incorrect algebraic relation was derived).
+f:=1/(1+4*y^2)^(3/2):
+dfinite_expr_to_sys(%,F(x::diff,n::shift)):
+normal(eval(subs(F=unapply(f,x,n),%))):
+if %={0} then okay else % fi;
+#
+f:=(n*y-x)*1/(1+4*y^2)^(3/2):
+dfinite_expr_to_sys(%,F(x::diff,n::shift)):
+normal(eval(subs(F=unapply(f,x,n),%))):
+if %={0} then okay else % fi;
+
+# The following tests various limiting cases of powers of hypergeometric
+# and q-hypergeometric expressions.
+Mgfun:-MG_Internals:-type_checking(a^n,{n::shift}):
+if %=`Mgfun/POWER`(n,a) then okay else % fi;
+dfinite_expr_to_sys(a^n,F(n::shift)):
+if %={F(n+1)-a*F(n)} then okay else % fi;
+#
+Mgfun:-MG_Internals:-type_checking(1/a^n,{n::shift}):
+if %=`Mgfun/POWER`(-n,a) then okay else % fi;
+dfinite_expr_to_sys(1/a^n,F(n::shift)):
+if %={a*F(n+1)-F(n)} then okay else % fi;
+#
+Mgfun:-MG_Internals:-type_checking(n!,{n::shift}):
+if %=`Mgfun/GAMMA`(n+1,1) then okay else % fi;
+dfinite_expr_to_sys(n!,F(n::shift)):
+if %={F(n+1)+(-n-1)*F(n)} then okay else % fi;
+#
+Mgfun:-MG_Internals:-type_checking(1/n!,{n::shift}):
+if %=`Mgfun/GAMMA`(n+1,-1) then okay else % fi;
+dfinite_expr_to_sys(1/n!,F(n::shift)):
+if %={(n+1)*F(n+1)-F(n)} then okay else % fi;
+#
+Mgfun:-MG_Internals:-type_checking(qfactorial(q,n),{n::qshift}):
+if %=`Mgfun/qPOCHHAMMER`(n,q,q,1) then okay else % fi;
+dfinite_expr_to_sys(qfactorial(q,n),F(n::qshift)):
+if %={F(n+1)+(q*q^n-1)*F(n)} then okay else % fi;
+#
+Mgfun:-MG_Internals:-type_checking(1/qfactorial(q,n),{n::qshift}):
+if %=`Mgfun/qPOCHHAMMER`(n,q,q,-1) then okay else % fi;
+dfinite_expr_to_sys(1/qfactorial(q,n),F(n::qshift)):
+if %={(q*q^n-1)*F(n+1)+F(n)} then okay else % fi;
+#
+Mgfun:-MG_Internals:-type_checking(qfactorial(q,n-m),{n::qshift,m::qshift}):
+if %=`Mgfun/qPOCHHAMMER`(n-m,q,q,1) then okay else % fi;
+dfinite_expr_to_sys(qfactorial(q,n-m),F(n::qshift,m::qshift)):
+if %={q^m*F(n+1,m)+(q*q^n-q^m)*F(n,m),(q^m-q^n)*F(n,m+1)-q^m*F(n,m)}
+or %={q^m*F(n+1,m)+(q*q^n-q^m)*F(n,m),(q^n-q^m)*F(n,m+1)+q^m*F(n,m)}
+then okay else % fi;

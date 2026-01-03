@@ -1,0 +1,39 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+unprotect(Si): Si:='Si':
+h:=q^((i+j)^2+j^2+i+2*j)/qfactorial(q,n-i-j)/qfactorial(q,i)/qfactorial(q,j):
+A:=skew_algebra(comm=q,qdilat=[Sn,qn=q^n],
+    qdilat=[Si,qi=q^i],qdilat=[Sj,qj=q^j],polynom={qn,qi,qj}):
+G:=hypergeom_to_dfinite(h,A):
+T:=MonomialOrder(A,tdeg(qn,qi,qj,Sn,Si,Sj)):
+GB:=Basis(G,T):
+HilbertDimension(GB,T):
+if %=3 then okay else % fi;
+Ak:=skew_algebra(comm={q,qi,qj},qdilat=[Sn,qn=q^n],polynom={qi,qj}):
+Tk:=MonomialOrder(Ak,lexdeg([qi,qj],[Sn]),[qi,qj]):
+TAK:=takayama_algo(map(op,{GB,G}),A,[qi,qj],Tk,
+    [[],[],0,proc(elim_GB,GB,N) elim_GB=[] end]):
+collect(TAK[1],Sn,factor):
+if %=[(q^3*qn-1)*Sn^3+(-q^9*qn^3+q^12*qn^4+q+q^6*qn^2-q^4*qn-q^3*qn
++q^7*qn^2+q^2+1)*Sn^2-q*(1+q^6*qn^2+q^5*qn^2-q^3*qn+q^2+q)*Sn+q^3]
+then okay else % fi;

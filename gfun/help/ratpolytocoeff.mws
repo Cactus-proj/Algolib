@@ -1,0 +1,53 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 20 "gfun[ratpolytocoeff]" }
+{TEXT 30 54 " - computes the nth coefficient of a rational function" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 20 "     ratpolytocoeff(" }
+{TEXT 35 1 "f" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "x" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "n" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "f   - " }
+{TEXT -1 22 "rational function in x" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 6 "x,n - " }
+{TEXT -1 5 "names" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 14 "The procedure " }
+{TEXT 35 14 "ratpolytocoeff" }
+{TEXT -1 33 " computes the expression for the " }
+{TEXT 35 1 "n" }
+{TEXT -1 60 "-th coefficient of the Taylor expansion about the origin of " }
+{TEXT 35 1 "f" }
+{TEXT -1 18 " as a function of " }
+{TEXT 35 1 "x" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "with(gfun):\nratpolytocoeff(1/(1-x-x^2),x,n);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#-%$SumG6$,$*(,&#!\"\"\"\"&\"\"\"%'_alphaG#!\"#F+F,F-F*)F-,$%\"nGF*F
+,F*/F--%'RootOfG6#,(F*F,%#_ZGF,*$F8\"\"#F,
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 3 ",  " }
+}
+}}

@@ -1,0 +1,1569 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 0 
+0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" 18 265 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 268 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 272 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 274 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 275 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 277 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" 18 278 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 279 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 280 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 281 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 282 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 283 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 284 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 
+0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 
+{CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple O
+utput" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 
+0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+}3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 
+"" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 260 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 262 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 264 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 265 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 266 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 267 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 268 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 269 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 270 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 271 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 272 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 273 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 274 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 256 "" 0 "" {TEXT -1 62 "Staircase polygons, a si
+mplified model for self-avoiding walks" }}{PARA 257 "" 0 "" {TEXT -1 
+0 "" }}{PARA 258 "" 0 "" {TEXT 282 15 "Fr\351d\351ric Chyzak" }}{PARA 259 "
+" 0 "" {TEXT -1 30 "(Version of January 16, 1997)\n" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 67 "A combinatorial problem in statistical physics \+
+is that of counting " }{TEXT 258 19 "self-avoiding walks" }{TEXT -1 
+465 " in an integer lattice.  In particular, the cases of dimensions 2
+ and 3 are related to problems of phase transitions in the classical I
+sing model of statistical physics.  Solving the general model for self
+-avoiding walks is an old open problem so that one focusses on approxi
+mate models.  Exactly solvable models exist for various models obtaine
+d by constraining the admissible walks.  More and more is known about \+
+self-avoiding walks by relaxing these constraints." }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 68 "Here we follow a thread started by A. J. Guttmann
+ and T. Prellberg [" }{TEXT 262 83 "Staircase polygons, elliptic integ
+rals, Heun functions, and lattice Green functions" }{TEXT -1 67 ", (19
+93), Physical Review E, (47) 4, R2233-2236].  We show how the " }
+{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT -1 311 " package may be used to
+ derive in a matter of seconds differential equations that were previo
+usly guessed in the article above, and how to establish rigorously the
+ singular structure of the ODE's.  As a by-product, we derive effectiv
+e asymptotic estimates.  Early results on this subject date back to G.
+ Polya [" }{TEXT 263 41 "On the number of certain lattice polygons" }
+{TEXT -1 67 ", (1969), Journal of Combinatorial Theory, Series A, (6),
+ 102-105]." }}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 12 "Introduction" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 184 "A strong but simple constraint on
+ the walks is to require them to proceed by positive steps.  Throughou
+t the remainder of this session, we only consider such paths with posi
+tive steps." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 2 "A " }{XPPEDIT 278 
+0 "d" "I\"dG6\"" }{TEXT 279 30 "-dimensional staircase polygon" }
+{TEXT -1 40 " is a special self-avoiding walk in the " }{XPPEDIT 18 0 
+"d" "I\"dG6\"" }{TEXT -1 162 "-dimensional integer lattice where all p
+ositive steps precede all negative steps.  This can be interpreted as \+
+an (unordered) pair of non-crossing paths of length " }{XPPEDIT 18 0 "
+n" "I\"nG6\"" }{TEXT -1 69 " from the same origin to the same end.  He
+re is an example of length " }{XPPEDIT 18 0 "n=7" "/%\"nG\"\"(" }
+{TEXT -1 14 " in dimension " }{XPPEDIT 18 0 "d=2" "/%\"dG\"\"#" }
+{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 74 "plot([[0,0
+],[2,0],[2,1],[4,1],[4,3],[2,3],[2,2],[1,2],[1,1],[0,1],[0,0]]);" }}
+{PARA 0 "" 0 "" {INLPLOT "6#-%'CURVESG6$7-7$\"\"!F(7$$\"\"#F(F(7$F*$\"
+\"\"F(7$$\"\"%F(F-7$F0$\"\"$F(7$F*F37$F*F*7$F-F*7$F-F-7$F(F-F'-%'COLOU
+RG6&%$RGBG$\"#5!\"\"F(F(" 2 345 212 212 2 0 1 0 2 9 0 4 1 1.000000 
+45.000000 45.000000 10030 10061 10056 10074 0 0 0 20030 0 12010 0 0 0 
+0 0 0 0 1 1 0 0 0 197 251 0 0 0 0 0 0 }}{PARA 13 "" 1 "" {TEXT -1 0 "
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 2 "A " }{XPPEDIT 280 0 "d" "I\"dG
+6\"" }{TEXT 281 20 "-dimensional festoon" }{TEXT -1 97 " is obtained f
+rom a sequence of staircase polygons, with the possible introduction o
+f unit steps." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 100 "Here is an exam
+ple in dimension 2, involving 3 polygons (thick lines) and 5 unit step
+s (thin lines)." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 729 "\014plo
+ts[display](\n    plot([[0,0],[2,0],[2,2],[1,2],[1,1],[0,1],[0,0]],thi
+ckness=3),\n    plots[textplot]([1/2,3/2,`+`],font=[TIMES,BOLD,18]),\n
+    plots[textplot]([5/2,1/2,`-`],font=[TIMES,BOLD,18]),\n    plot([[2
+,2],[3,2]]),\n    plot([[3,2],[5,2],[5,5],[6,5],[6,6],[4,6],[4,4],[3,4
+],[3,2]],thickness=3),\n    plots[textplot]([7/2,9/2,`+`],font=[TIMES,
+BOLD,18]),\n    plots[textplot]([11/2,7/2,`-`],font=[TIMES,BOLD,18]),
+\n    plot([[6,6],[7,6],[7,7]]),\n    plot([[7,7],[10,7],[10,8],[11,8]
+,[11,9],[8,9],[8,8],[7,8],[7,7]],thickness=3),\n    plots[textplot]([2
+1/2,15/2,`+`],font=[TIMES,BOLD,18]),\n    plots[textplot]([15/2,17/2,`
+-`],font=[TIMES,BOLD,18]),\n    plot([[11,9],[13,9]]),\nscaling=constr
+ained,title=`A 2-dimensional festoon`);" }}{PARA 13 "" 1 "" {INLPLOT "
+60-%'CURVESG6%7)7$\"\"!F(7$$\"\"#F(F(7$F*F*7$$\"\"\"F(F*7$F.F.7$F(F.F'
+-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%*THICKNESSG6#\"\"$-%%TEXTG6%7$$\"+++
+++]!#5$\"+++++:!\"*%\"+G-%%FONTG6%%&TIMESG%%BOLDG\"#=-F>6%7$$\"+++++DF
+FFA%\"-GFH-F$6$7$F,7$$F<F(F*F2-F$6%7+FW7$$\"\"&F(F*7$FgnFgn7$$\"\"'F(F
+gn7$F[oF[o7$$\"\"%F(F[o7$F_oF_o7$FXF_oFWF2F9-F>6%7$$\"+++++NFF$\"+++++
+XFFFGFH-F>6%7$$\"+++++bFFFfoFSFH-F$6$7%F]o7$$\"\"(F(F[o7$FcpFcpF2-F$6%
+7+Fep7$$F7F(Fcp7$Fjp$\"\")F(7$$\"#6F(F\\q7$F_q$\"\"*F(7$F\\qFbq7$F\\qF
+\\q7$FcpF\\qFepF2F9-F>6%7$$\"++++]5!\")$\"+++++vFFFGFH-F>6%7$F]r$\"+++
+++&)FFFSFH-F$6$7$Faq7$$\"#8F(FbqF2-%&TITLEG6#%8A~2-dimensional~festoon
+G-%(SCALINGG6#%,CONSTRAINEDG" 2 606 606 606 2 0 1 0 2 9 0 4 1 
+1.000000 45.000000 45.000000 10030 10061 10056 10074 0 0 0 20030 0 
+12010 0 0 0 0 0 0 0 1 1 0 0 0 333 223 0 0 0 0 0 0 }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 247 "We orient each of the staircase polygon (i.e., we
+ distinguish between its two consisting paths), so that a festoon beco
+mes a sequence of oriented polygons, unit steps remaining non-oriented
+.  On the previous display, this orientation is marked by " }{XPPEDIT 
+18 0 "`+`" "I\"+G6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "`-`" "I\"-G6
+\"" }{TEXT -1 86 " signs.  In this way, we interpret a festoon as an (
+oriented) pair of paths of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 26 " with same origin and end." }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 10 "Denote by " }{XPPEDIT 18 0 "q[d,n]" "&%\"qG6$%\"dG%\"nG" 
+}{TEXT -1 41 " the number of staircase polygons in the " }{XPPEDIT 18 
+0 "d" "I\"dG6\"" }{TEXT -1 39 "-dimensional integer lattice, and call \+
+" }{XPPEDIT 18 0 "Q[d](z)" "-&%\"QG6#%\"dG6#%\"zG" }{TEXT -1 33 " the \+
+ordinary generating function" }}}{EXCHG {PARA 260 "" 0 "" {XPPEDIT 18 
+0 "Q[d](z)=Sum(q[d,n]*z^n,n=0..infinity)" "/-&%\"QG6#%\"dG6#%\"zG-%$Su
+mG6$*&&%\"qG6$F'%\"nG\"\"\")F)F1F2/F1;\"\"!%)infinityG" }{TEXT -1 1 ".
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 71 "This function has a simple re
+lation to the ordinary generating function" }}}{EXCHG {PARA 261 "" 0 "
+" {XPPEDIT 18 0 "P[d](z)=Sum(p[d,n]*z^n,n=0..infinity)" "/-&%\"PG6#%\"
+dG6#%\"zG-%$SumG6$*&&%\"pG6$F'%\"nG\"\"\")F)F1F2/F1;\"\"!%)infinityG" 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 52 "of the number of (ordered) pair
+s of paths of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 43 " wi
+th same origin and end.  More precisely," }}}{EXCHG {PARA 262 "" 0 "" 
+{XPPEDIT 18 0 "P[d](z)=1/(1+d*z-2*Q[d](z))" "/-&%\"PG6#%\"dG6#%\"zG*&
+\"\"\"\"\"\",(\"\"\"F,*&F'F,F)F,F,*&\"\"#F,-&%\"QG6#F'6#F)F,!\"\"F7" }
+{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 98 "since any pair o
+f paths can be viewed as a sequence of pairs of non-crossing paths.  E
+quivalently," }}}{EXCHG {PARA 263 "" 0 "" {XPPEDIT 18 0 "Q[d](z)=(1+d*
+z)/2-1/(2*P[d](z)" "/-&%\"QG6#%\"dG6#%\"zG,&*&,&\"\"\"\"\"\"*&F'F.F)F.
+F.F.\"\"#!\"\"F.*&\"\"\"F.*&\"\"#F.-&%\"PG6#F'6#F)F.F1F1" }{TEXT -1 1 
+"." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 76 "In this session, we proceed
+ to compute the singularities and asymptotics of " }{XPPEDIT 18 0 "Q[d
+](z)" "-&%\"QG6#%\"dG6#%\"zG" }{TEXT -1 22 " for small dimensions." }}
+}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 29 "Dimension 2: an explicit case" 
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 247 "The case of dimension 2 is simp
+le and yields explicit closed forms for generating functions and count
+ing sequences, already known to Polya.  It is usually solved by hand u
+sing a Vandermonde convolution.  It is readily solved by Maple.  The n
+umber " }{XPPEDIT 18 0 "p[2,n]" "&%\"pG6$\"\"#%\"nG" }{TEXT -1 28 " of
+ pairs of path of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 29 
+" with same origin and end is:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 35 "p[2,n]=Sum(binomial(n,k)^2,k=0..n);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/&%\"pG6$\"\"#%\"nG-%$SumG6$*$-%)binomialG6$F(%\"kGF'/F
+0;\"\"!F(" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 50 "because a path is de
+termined by the choice of its " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT 
+-1 60 " steps in one of the directions of the lattice.  The number " }
+{XPPEDIT 18 0 "p[2,n]" "&%\"pG6$\"\"#%\"nG" }{TEXT -1 69 " of pairs of
+ paths is thus given by the central binomial coefficient:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "p[2,n]=normal(convert(sum(binomial(
+n,k)^2,k=0..n),factorial),expanded);" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#/&%\"pG6$\"\"#%\"nG*&-%*factorialG6#,$F(F'\"\"\"-F+6#F(!\"#" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 24 "The generating function " }
+{XPPEDIT 18 0 "P[2](z)" "-&%\"PG6#\"\"#6#%\"zG" }{TEXT -1 32 " of thes
+e numbers is well-known:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 
+"P[2](z)=sum(op(2,\")*z^n,n=0..infinity);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/-&%\"PG6#\"\"#6#%\"zG*$,&\"\"\"F-F*!\"%#!\"\"F(" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 98 "Another closed form for the coeffi
+cients of this series are gotten by Newton's binomial expansion:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "p[2,n]=binomial(-1/2,n)*(-4)
+^n;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"pG6$\"\"#%\"nG*&-%)binomia
+lG6$#!\"\"F'F(\"\"\")!\"%F(F/" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 30 "
+The following asymptotics for " }{XPPEDIT 18 0 "p[2,n]" "&%\"pG6$\"\"#
+%\"nG" }{TEXT -1 22 " is obtained by Maple:" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 100 "asympt_p[2]:=expand(simplify(subs(cos(Pi*n)=(-1)^
+n,convert(asympt(op(2,\"),n,2),polynom)),symbolic));" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>&%)asympt_pG6#\"\"#*(%#PiG#!\"\"F'%\"nGF*)\"\"%F,\"
+\"\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 25 "From the value found for \+
+" }{XPPEDIT 18 0 "P[2](z)" "-&%\"PG6#\"\"#6#%\"zG" }{TEXT -1 60 ", we \+
+get the generating function for the non-crossing paths:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "Q[2](z)=(1+2*z-1/op(2,\"\"\"))/2;" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-&%\"QG6#\"\"#6#%\"zG,(#\"\"\"F(F-F
+*F-*$,&F-F-F*!\"%F,#!\"\"F(" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 32 "wh
+ich Maple easily expands into:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 21 "series(op(2,\"),z,10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+7%
+\"zG\"\"#\"\"\"\"\"\"\"\"#F%\"\"$\"\"&\"\"%\"#9\"\"&\"#U\"\"'\"$K\"\"
+\"(\"$H%\"\")\"%I9\"\"*-%\"OG6#F'\"#5" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 92 "A closed form for the coefficients of this series are got
+ten by Newton's binomial expansion:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 56 "q[2,n]=delta[n,0]/2+delta[n,1]-binomial(1/2,n)*(-4)^n
+/2;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"qG6$\"\"#%\"nG,(&%&deltaG6
+$F(\"\"!#\"\"\"F'&F+6$F(F/F/*&-%)binomialG6$F.F(F/)!\"%F(F/#!\"\"F'" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 6 "where " }{XPPEDIT 18 0 "delta[x,y
+]" "&%&deltaG6$%\"xG%\"yG" }{TEXT -1 31 " denotes the Kronecker symbol
+, " }{XPPEDIT 18 0 "delta[x,y]=1" "/&%&deltaG6$%\"xG%\"yG\"\"\"" }
+{TEXT -1 16 " if and only if " }{XPPEDIT 18 0 "x=y" "/%\"xG%\"yG" }
+{TEXT -1 69 ", 0 otherwise.  The following evaluation corroborates thi
+s expansion:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "seq(-binomi
+al(1/2,i)*(-4)^i/2,i=2..9);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6*\"\"\"
+\"\"#\"\"&\"#9\"#U\"$K\"\"$H%\"%I9" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 30 "The following asymptotics for " }{XPPEDIT 18 0 "q[2,n]" "&%\"qG
+6$\"\"#%\"nG" }{TEXT -1 22 " is obtained by Maple:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 122 "asympt_q[2]:=expand(simplify(subs(cos(Pi*n
+)=(-1)^n,convert(asympt(-(-1)^n*4^n*binomial(1/2,n)/2,n,2),polynom)),s
+ymbolic));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%)asympt_qG6#\"\"#,$*(
+%#PiG#!\"\"F'%\"nG#!\"$F')\"\"%F-\"\"\"#F2F1" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 40 "We check this asymptotic estimate using " }{HYPERLNK 
+17 "Gfun" 2 "gfun" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 11 "with(gfun);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7T%(La
+placeG%.algebraicsubsG%.algeqtodiffeqG%.algeqtoseriesG%.algfuntoalgeqG
+%&borelG%.cauchyproductG%.diffeq*diffeqG%.diffeq+diffeqG%,diffeqtorecG
+%)guesseqnG%(guessgfG%0hadamardproductG%0holexprtodiffeqG%)invborelG%,
+listtoalgeqG%-listtodiffeqG%0listtohypergeomG%+listtolistG%.listtoratp
+olyG%*listtorecG%-listtoseriesG%5listtoseries/LaplaceG%1listtoseries/e
+gfG%4listtoseries/lgdegfG%4listtoseries/lgdogfG%1listtoseries/ogfG%4li
+sttoseries/revegfG%4listtoseries/revogfG%,maxdegcoeffG%*maxdegeqnG%,ma
+xordereqnG%,mindegcoeffG%*mindegeqnG%,minordereqnG%*optionsgfG%,poltod
+iffeqG%)poltorecG%/ratpolytocoeffG%(rec*recG%(rec+recG%,rectodiffeqG%*
+rectoprocG%.seriestoalgeqG%/seriestodiffeqG%2seriestohypergeomG%-serie
+stolistG%0seriestoratpolyG%,seriestorecG%/seriestoseriesG" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 88 "The following first order differential eq
+uation is satisfied by the generating function " }{XPPEDIT 18 0 "Q[2](
+z)=1/2+z-sqrt(1-4*z)/2" "/-&%\"QG6#\"\"#6#%\"zG,(*&\"\"\"\"\"\"\"\"#!
+\"\"F-F)F-*&-%%sqrtG6#,&\"\"\"F-*&\"\"%F-F)F-F/F-\"\"#F/F/" }{TEXT -1 
+1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "2*f(z)+(1-4*z)*diff
+(f(z),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&-%\"fG6#%\"zG\"\"#*&,&
+\"\"\"F+F'!\"%F+-%%diffG6$F$F'F+F+" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 39 "normal(eval(subs(f(z)=sqrt(1-4*z),\")));" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 43 "W
+e compute a recursion on the coefficients " }{XPPEDIT 18 0 "q[2,n]" "&
+%\"qG6$\"\"#%\"nG" }{TEXT -1 21 " of the series using " }{HYPERLNK 17 
+"gfun[diffeqtorec]" 2 "gfun[diffeqtorec]" "" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "diffeqtorec(\"\",f(z),u(n));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&*&,&\"\"#\"\"\"%\"nG!\"%F'-%\"uG
+6#F(F'F'*&,&F(F'F'F'F'-F+6#F.F'F'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+6 "Next, " }{HYPERLNK 17 "gfun[rectoproc]" 2 "gfun[rectoproc]" "" }
+{TEXT -1 72 " returns a procedure that computes the coefficients in an
+ efficient way." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "coeff_of
+_Q:=rectoproc(\{\",u(0)=1,u(1)=1,u(2)=1\},u(n));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%+coeff_of_QG:6#%\"nG6%%\"iG%#u0G%#u1G6\"E\\s$\"\"#\"
+\"\"\"\"!F/F/F/C%>8%F/?(8$\"\"$F/,&9$F/!\"\"F/%%trueGC$>8&,$*(,&\"\"'F
+/F5!\"%F/F3F/F5F9F9>F3F=,$*(,&FAF/F8FBF/F3F/F8F9F9F,F," }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 77 "We finally check our asymptotic estimate:
+ the following ratio goes to 1 when " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 18 " goes to infinity." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 84 "for i from 100 to 1000 by 100 do i=evalf(coeff_of_Q(i)/subs(n=
+i,asympt_q[2]),10) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+\"$\"+M
+'pP+\"!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+#$\"+'*)z=+\"!\"*" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+$$\"+u@D,5!\"*" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/\"$+%$\"+A(Q4+\"!\"*" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"$+&$\"+$y]2+\"!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#/\"$+'$\"+Vbi+5!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+($\"+8h`
++5!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+)$\"+b!p/+\"!\"*" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+*$\"+3pT+5!\"*" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/\"%+5$\"+&>v.+\"!\"*" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 6 "Using " }{HYPERLNK 17 "series" 2 "series" "" }{TEXT -1 11 
+" to expand " }{XPPEDIT 18 0 "P[2](z)" "-&%\"PG6#\"\"#6#%\"zG" }{TEXT 
+-1 30 " and compute the coefficients " }{XPPEDIT 18 0 "p[2,n]" "&%\"pG
+6$\"\"#%\"nG" }{TEXT -1 57 " would be less efficient and require more \+
+time and space." }}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 108 "In higher di
+mensions, the problem no longer has a known explicit solution.  A natu
+ral tool to attack it are " }{TEXT 259 27 "Bessel generating functions
+" }{TEXT -1 48 ".  The Bessel generating function of a sequence " }
+{XPPEDIT 18 0 "s[n]" "&%\"sG6#%\"nG" }{TEXT -1 33 " of numbers is defi
+ned as the sum" }}}{EXCHG {PARA 264 "" 0 "" {XPPEDIT 18 0 "Sum(s[n]*z^
+n/n!^2,n=0..infinity)" "-%$SumG6$*(&%\"sG6#%\"nG\"\"\")%\"zGF)F**$-%*f
+actorialG6#F)\"\"#!\"\"/F);\"\"!%)infinityG" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 70 "For instance, the Bessel generatin
+g function of the constant sequence " }{XPPEDIT 18 0 "s[n]=1" "/&%\"sG
+6#%\"nG\"\"\"" }{TEXT -1 17 " is given by the " }{HYPERLNK 17 "modifie
+d Bessel function" 2 "BesselJ" "" }}}{EXCHG {PARA 265 "" 0 "" 
+{XPPEDIT 18 0 "I[0](2*sqrt(z))=Sum(z^n/n!^2,n=0..infinity)" "/-&%\"IG6
+#\"\"!6#*&\"\"#\"\"\"-%%sqrtG6#%\"zGF+-%$SumG6$*&)F/%\"nGF+*$-%*factor
+ialG6#F5\"\"#!\"\"/F5;F'%)infinityG" }{TEXT -1 1 "," }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 139 "which we denote by j(z).  The Bessel generatin
+g function of the numbers of pairs of paths with same origin and end a
+nd positive steps in a " }{XPPEDIT 18 0 "d" "I\"dG6\"" }{TEXT -1 44 "-
+dimensional lattice is given by the product" }}}{EXCHG {PARA 266 "" 0 
+"" {XPPEDIT 18 0 "Product(j(z[i]),i=1..d)" "-%(ProductG6$-%\"jG6#&%\"z
+G6#%\"iG/F+;\"\"\"%\"dG" }{TEXT -1 1 "," }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 6 "where " }{XPPEDIT 18 0 "z[i]" "&%\"zG6#%\"iG" }{TEXT -1 
+30 " marks the steps in dimension " }{XPPEDIT 18 0 "i" "I\"iG6\"" }
+{TEXT -1 65 ".  It follows that the Bessel generating function of the \+
+numbers " }{XPPEDIT 18 0 "p[d,n]" "&%\"pG6$%\"dG%\"nG" }{TEXT -1 28 " \+
+with respect to the length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 
+17 " of the paths is " }{XPPEDIT 18 0 "j(z)^d" ")-%\"jG6#%\"zG%\"dG" }
+{TEXT -1 1 "." }}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 58 "Higher dimensio
+nal cases: computing differential equations" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 40 "In dimension 2, the generating function " }{XPPEDIT 18 0 
+"P[2](z)" "-&%\"PG6#\"\"#6#%\"zG" }{TEXT -1 38 " is algebraic.  In hig
+her dimensions, " }{XPPEDIT 18 0 "P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }
+{TEXT -1 32 " belongs to the larger class of " }{TEXT 260 19 "holonomi
+c functions" }{TEXT -1 14 ".  A function " }{XPPEDIT 18 0 "f(z)" "-%\"
+fG6#%\"zG" }{TEXT -1 232 " is called holonomic when it satisfies a lin
+ear differential equation with rational function coefficients.  This c
+lass of functions benefits from numerous closure properties for which \+
+algorithms have been implemented in the package " }{HYPERLNK 17 "Gfun
+" 2 "gfun" "" }{TEXT -1 100 ".  In particular, this class is closed un
+der sum, product, Borel and inverse Borel transforms.  The " }
+{HYPERLNK 17 "Borel transform" 2 "gfun[borel]" "" }{TEXT -1 35 " defin
+ed in Gfun is related to the " }{HYPERLNK 17 "inverse Laplace transfor
+m" 2 "inttrans[invlaplace]" "" }{TEXT -1 50 ": formally applied on a f
+ormal power series, it is" }}}{EXCHG {PARA 267 "" 0 "" {XPPEDIT 18 0 "
+Borel(Sum(s[n]*z^n,n=0..infinity))=Sum(s[n]*z^n/n!,n=0..infinity)" "/-
+%&BorelG6#-%$SumG6$*&&%\"sG6#%\"nG\"\"\")%\"zGF-F./F-;\"\"!%)infinityG
+-F'6$*(&F+6#F-F.)F0F-F.-%*factorialG6#F-!\"\"/F-;F3F4" }{TEXT -1 1 ".
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 73 "This is enough for us to comp
+ute differential equations satisfied by the " }{XPPEDIT 18 0 "P[d](z)
+" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 1 "." }}}{SECT 1 {PARA 4 "" 0 "" 
+{TEXT -1 21 "Dimension 2 revisited" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+46 "This case was solved above in an explicit way." }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 18 "We proceed to get " }{XPPEDIT 18 0 "P[2](z)" "-&%
+\"PG6#\"\"#6#%\"zG" }{TEXT -1 21 ", and more generally " }{XPPEDIT 18 
+0 "P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 16 ", by the formula" }}
+}{EXCHG {PARA 268 "" 0 "" {XPPEDIT 18 0 "P[d](z)=(Borel@@(-2))(j(z)^d)
+" "/-&%\"PG6#%\"dG6#%\"zG--%#@@G6$%&BorelG,$\"\"#!\"\"6#)-%\"jG6#F)F'
+" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 54 "We first comp
+ute a differential equation satisfied by " }{XPPEDIT 18 0 "j" "I\"jG6
+\"" }{TEXT -1 58 " starting from a recurrence satisfied by its coeffic
+ients " }{XPPEDIT 18 0 "u[n]=1/n!^2" "/&%\"uG6#%\"nG*&\"\"\"\"\"\"*$-%
+*factorialG6#F&\"\"#!\"\"" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 63 "diff_eq_j:=rectodiffeq(\{(n+1)^2*u(n+1)=u(n),u(0)=1
+\},u(n),j(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*diff_eq_jG<$/-%\"
+jG6#\"\"!\"\"\",(-F(6#%\"zGF+-%%diffG6$F-F/!\"\"*&F/F+-F16$F0F/F+F3" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "We compute equations satisfied b
+y the powers " }{XPPEDIT 18 0 "j(z)^d" ")-%\"jG6#%\"zG%\"dG" }{TEXT 
+-1 7 " using " }{HYPERLNK 17 "gfun[poltodiffeq]" 2 "gfun[poltodiffeq]
+" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 82 "powe
+r_j:=proc(d) option remember; poltodiffeq(j(z)^d,[diff_eq_j],[j(z)],j(
+z)) end:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 26 "For instance, in the \+
+case " }{XPPEDIT 18 0 "d=2" "/%\"dG\"\"#" }{TEXT -1 39 ", the followin
+g system is satisfied by " }{XPPEDIT 18 0 "j(z)^2" "*$-%\"jG6#%\"zG\"
+\"#" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "powe
+r_j(2);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<&/-%\"jG6#\"\"!\"\"\"/---%
+#@@G6$%\"DG\"\"#6#F&F'\"\"$/--F0F2F'F1,*-F&6#%\"zG!\"#*&,&F)F)F:!\"%F)
+-%%diffG6$F8F:F)F)*&-F@6$-F@6$F?F:F:F)F:F1F)*&F:F)FEF)F3" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 49 "We now derive a differential system satis
+fied by " }{XPPEDIT 18 0 "P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 
+42 ", the ordinary generating function of the " }{XPPEDIT 18 0 "p[d,n]
+" "&%\"pG6$%\"dG%\"nG" }{TEXT -1 49 ", by computing two inverse Borel \+
+transforms with " }{HYPERLNK 17 "gfun[invborel]" 2 "gfun[invborel]" "
+" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 101 "double
+_inv_borel:=proc(sys,f,z) option remember; invborel(invborel(sys,f(z),
+diffeq),f(z),diffeq) end:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 12 "In t
+he case " }{XPPEDIT 18 0 "d=2" "/%\"dG\"\"#" }{TEXT -1 10 ", we have:
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "double_inv_borel(power_
+j(2),j,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$/-%\"jG6#\"\"!\"\"\",&
+-F&6#%\"zG\"\"#*&,&!\"\"F)F-\"\"%F)-%%diffG6$F+F-F)F)" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 25 "The equation is solve by " }{HYPERLNK 17 
+"dsolve" 2 "dsolve" "" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 15 "dsolve(\",j(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/
+-%\"jG6#%\"zG*&%\"IG\"\"\",&!\"\"F*F'\"\"%#F,\"\"#" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 115 "The possible singularities of a holonomic equati
+on are given by its leading coefficient (on the previous equation, " }
+{XPPEDIT 18 0 "4*z-1" ",&*&\"\"%\"\"\"%\"zGF%F%\"\"\"!\"\"" }{TEXT -1 
+75 ") and these singularities yield the asymptotic form of coefficient
+s by the " }{TEXT 261 30 "method of singularity analysis" }{TEXT -1 
+55 ".  The singularity read on the previous equation is in " }
+{XPPEDIT 18 0 "1/4" "*&\"\"\"\"\"\"\"\"%!\"\"" }{TEXT -1 39 ", so that
+ the exponential behaviour of " }{XPPEDIT 18 0 "p[2,n]" "&%\"pG6$\"\"#
+%\"nG" }{TEXT -1 4 " is " }{XPPEDIT 18 0 "4^n" ")\"\"%%\"nG" }{TEXT 
+-1 41 ", which we found in the previous section." }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 55 "In the case of dimension 2, we read the singularit
+y by:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "solve(coeff(op(rem
+ove(type,\"\",equation)),diff(j(z),z)),z);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6##\"\"\"\"\"%" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 11 "
+Dimension 3" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 61 "We perform the same
+ calculations for dimensions 3 and higher." }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 20 "System satisfied by " }{XPPEDIT 18 0 "j(z)^3" "*$-%\"jG6#
+%\"zG\"\"$" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+11 "power_j(3);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<'/-%\"jG6#\"\"!\"
+\"\",,*&,&!\"$F)%\"zG\"\"*F)-F&6#F.F)F)*&,&F.!#?F)F)F)-%%diffG6$F0F.F)
+F)*&,&F.\"\"(*$F.\"\"#!#5F)-F66$F5F.F)F)*&-F66$-F66$F>F.F.F)F.\"\"$F)*
+&FCF)F.F<\"\"'/--%\"DG6#F&F'FE/---%#@@G6$FKF<FLF'#\"#:F</---FQ6$FKFEFL
+F'#\"#JF<" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System satisfied by \+
+" }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "double_inv_borel(\",j,z);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#<'/-%\"jG6#\"\"!\"\"\",(*&,&%\"zG!\"*
+\"\"$F)F)-F&6#F-F)F)*&,(*$F-\"\"#!#FF-\"#?!\"\"F)F)-%%diffG6$F0F-F)F)*
+&,(*$F-F/F.F4\"#5F-F8F)-F:6$F9F-F)F)/---%#@@G6$%\"DGF56#F&F'\"#I/---FF
+6$FHF/FIF'\"$e&/--FHFIF'F/" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "Ord
+er and possible singularities." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 71 "op(sort([solve(coeff(op(remove(type,\",equation)),diff(j(z),z,
+z)),z)]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"!#\"\"\"\"\"*F%" }}}
+}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 11 "Dimension 4" }}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 20 "System satisfied by " }{XPPEDIT 18 0 "j(z)^4" "*$-
+%\"jG6#%\"zG\"\"%" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 11 "power_j(4);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<(/-%
+\"jG6#\"\"!\"\"\"/--%\"DG6#F&F'\"\"%/---%#@@G6$F-F/F.F'#\"$z'\"\"'/---
+F46$F-\"\"$F.F'#\"$G\"F>/---F46$F-\"\"#F.F'\"#9,.*&,&%\"zG\"#k!\"%F)F)
+-F&6#FKF)F)*&,(FK!#o*$FKFFFLF)F)F)-%%diffG6$FNFKF)F)*&,&FS!#!*FK\"#:F)
+-FU6$FTFKF)F)*&,&*$FKF>!#?FS\"#DF)-FU6$FenFKF)F)*&-FU6$-FU6$F\\oFKFKF)
+FKF/F)*&FaoF)FKF>\"#5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System s
+atisfied by " }{XPPEDIT 18 0 "P[4](z)" "-&%\"PG6#\"\"%6#%\"zG" }{TEXT 
+-1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "double_inv_borel
+(\",j,z);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<(/-%\"jG6#\"\"!\"\"\"/--
+-%#@@G6$%\"DG\"\"$6#F&F'\"%O:/---F.6$F0\"\"#F2F'\"#c/---F.6$F0\"\"%F2F
+'\"&%=l,**&,&%\"zG!#kF@F)F)-F&6#FEF)F)*&,(*$FEF9!$[%FE\"#o!\"\"F)F)-%%
+diffG6$FGFEF)F)*&,(*$FEF1!$%QFK\"#!*FE!\"$F)-FP6$FOFEF)F)*&,(*$FEF@FFF
+T\"#?FKFNF)-FP6$FXFEF)F)/--F0F2F'F@" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 33 "Order and possible singularities." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 71 "op(sort([solve(coeff(op(remove(type,\",equation)),dif
+f(j(z),z$3)),z)]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6&\"\"!F##\"\"\"
+\"#;#F%\"\"%" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 11 "Dimension 5" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System satisfied by " }{XPPEDIT 
+18 0 "j(z)^5" "*$-%\"jG6#%\"zG\"\"&" }{TEXT -1 1 "." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 11 "power_j(5);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#<)/-%\"jG6#\"\"!\"\"\"/--%\"DG6#F&F'\"\"&/---%#@@G6$F-F/F.F'#\"%
+F&)\"\")/---F46$F-\"\"%F.F'#\"%&)y\"#C/---F46$F-\"\"$F.F'#\"$X&\"\"'/-
+--F46$F-\"\"#F.F'#\"#XFP,0*&,(%\"zG\"$&G!\"&F)*$FVFP!$D#F)-F&6#FVF)F)*
+&,(FY\"$x(FV!$'>F)F)F)-%%diffG6$FenFVF)F)*&,(FV\"#J*$FVFG\"$f#FY!$=&F)
+-F\\o6$F[oFVF)F)*&,&FY\"#!*Fao!$!GF)-F\\o6$FdoFVF)F)*&,&Fao\"#l*$FVF>!
+#NF)-F\\o6$FjoFVF)F)*&-F\\o6$-F\\o6$FapFVFVF)FVF/F)*&FfpF)FVF>\"#:" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System satisfied by " }{XPPEDIT 
+18 0 "P[5](z)" "-&%\"PG6#\"\"&6#%\"zG" }{TEXT -1 1 "." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "double_inv_borel(\",j,z);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#<)/-%\"jG6#\"\"!\"\"\"/---%#@@G6$%\"DG\"\"%6
+#F&F'\"'S#*=/--F0F2F'\"\"&/---F.6$F0\"\"$F2F'\"%qK/---F.6$F0\"\"#F2F'
+\"#!*/---F.6$F0F7F2F'\")+'[`\",,*&,(*$%\"zGFD\"$+*FP!$&GF7F)F)-F&6#FPF
+)F)*&,**$FPF=\"%+sFO!%jRFP\"$'>!\"\"F)F)-%%diffG6$FSFPF)F)*&,**$FPF1\"
+%]&)FW!%,lFO\"$=&FP!\"(F)-Fgn6$FfnFPF)F)*&,**$FPF7\"%+FF[o!%!f#FW\"$!G
+FO!\"'F)-Fgn6$F`oFPF)F)*&,**$FP\"\"'\"$D#Fdo!$f#F[o\"#NFWFenF)-Fgn6$Fi
+oFPF)F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "Order and possible sin
+gularities." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "op(sort([sol
+ve(coeff(op(remove(type,\",equation)),diff(j(z),z$4)),z)]));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6(\"\"!F#F##\"\"\"\"#D#F%\"\"*F%" }}}}{SECT 1 
+{PARA 4 "" 0 "" {TEXT -1 11 "Dimension 6" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 20 "System satisfied by " }{XPPEDIT 18 0 "j(z)^6" "*$-%\"jG6#
+%\"zG\"\"'" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+11 "power_j(6);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<*/-%\"jG6#\"\"!\"
+\"\"/--%\"DG6#F&F'\"\"'/---%#@@G6$F-\"\"$F.F'\"$m\"/---F46$F-\"\"#F.F'
+\"#L/---F46$F-F/F.F'#\"'`tt\"#g/---F46$F-\"\"%F.F'#\"%^IFL/---F46$F-\"
+\"&F.F'#\"&8?$\"#5,2*&,(%\"zG\"%?5!\"'F)*$FenF=!%cMF)-F&6#FenF)F)*&,*F
+en!$;&Fhn\"%CdF)F)*$FenF6!%/BF)-%%diffG6$FjnFenF)F)*&,(F`o\"%/ZFhn!%OC
+Fen\"#jF)-Fco6$FboFenF)F)*&,(Fhn\"$,$*$FenFL\"$%yF`o!%3CF)-Fco6$FjoFen
+F)F)*&,&F`o\"$]$F_p!$+(F)-Fco6$FbpFenF)F)*&,&*$FenFT!#cF_p\"$S\"F)-Fco
+6$FhpFenF)F)*&-Fco6$-Fco6$F_qFenFenF)FenF/F)*&FdqF)FenFT\"#@" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System satisfied by " }{XPPEDIT 
+18 0 "P[6](z)" "-&%\"PG6#\"\"'6#%\"zG" }{TEXT -1 1 "." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "double_inv_borel(\",j,z);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#<*/-%\"jG6#\"\"!\"\"\"/---%#@@G6$%\"DG\"\"#6
+#F&F'\"$K\"/---F.6$F0\"\"$F2F'\"%wf/---F.6$F0\"\"%F2F'\"'W$R%/---F.6$F
+0\"\"&F2F'\")?()4Y,.*&,(*$%\"zGF1\"&CQ\"FM!%?5\"\"'F)F)-F&6#FMF)F)*&,*
+*$FMF9\"'ON>FL!&cf#FM\"$;&!\"\"F)F)-%%diffG6$FQFMF)F)*&,**$FMF@\"'g,QF
+U!&w>(FL\"%OCFM!#:F)-Fen6$FZFMF)F)*&,*FL!#DFU\"%3C*$FMFG\"'o>@Fin!&'>^
+F)-Fen6$F^oFMF)F)*&,*FU!#5Fin\"$+(*$FMFP\"&?.%Fdo!&g<\"F)-Fen6$FgoFMF)
+F)*&,*FinFY*$FM\"\"(\"%/BF]p!$%yFdo\"#cF)-Fen6$F`pFMF)F)/--F0F2F'FP/--
+-F.6$F0FPF2F'\"+?*H2P'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "Order a
+nd possible singularities." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+71 "op(sort([solve(coeff(op(remove(type,\",equation)),diff(j(z),z$5)),
+z)]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6)\"\"!F#F#F##\"\"\"\"#O#F%\"#
+;#F%\"\"%" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 11 "Dimension 7" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System satisfied by " }{XPPEDIT 
+18 0 "j(z)^7." ")-%\"jG6#%\"zG$\"\"(\"\"!" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 11 "power_j(7);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<+/-
+%\"jG6#\"\"!\"\"\"/---%#@@G6$%\"DG\"\"%6#F&F'#\"&:n$\"#C/---F.6$F0\"\"
+$F2F'#\"%X;\"\"'/---F.6$F0\"\"#F2F'#\"#\"*FD/--F0F2F'\"\"(/---F.6$F0FJ
+F2F'#\"*,-n?\"\"$?(/---F.6$F0F>F2F'#\")p,@FFR/---F.6$F0\"\"&F2F'#\"'d
+\"[*\"$?\",4*&,**$%\"zGF;\"&D5\"!\"(F)Fao\"%8K*$FaoFD!&55$F)-F&6#FaoF)
+F)*&,*Fao!%%G\"F`o!&k;&Feo\"&uJ$F)F)F)-%%diffG6$FgoFaoF)F)*&,*Fao\"$F
+\"F`o\"&Q0&*$FaoF1!&;H\"Feo!&=-\"F)-F_p6$F^pFaoF)F)*&,(F`o!&kk\"Feo\"$
+m*Fep\"&S(>F)-F_p6$FhpFaoF)F)*&,(Fep!%e$)F`o\"%,<*$FaoFin\"%u>F)-F_p6$
+F_qFaoF)F)*&,&Fep\"%]5Feq!%7:F)-F_p6$FgqFaoF)F)*&,&Feq\"$m#*$FaoF>!#%)
+F)-F_p6$F]rFaoF)F)*&-F_p6$-F_p6$FdrFaoFaoF)FaoFJF)*&FirF)FaoF>\"#G" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "System satisfied by " }{XPPEDIT 
+18 0 "P[7](z)" "-&%\"PG6#\"\"(6#%\"zG" }{TEXT -1 1 "." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "double_inv_borel(\",j,z);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#<+/---%#@@G6$%\"DG\"\"'6#%\"jG6#\"\"!\",!o@8
+f>/-F-F.\"\"\",0*&,**$%\"zG\"\"$!'+Qz*$F8\"\"#\"'!3[#F8!%Ek\"#9F3F3-F-
+6#F8F3F3*&,,*$F8\"\"%!)+q!>\"F7\"([Wq&F;!'qYGF8\"%oD!\"#F3F3-%%diffG6$
+F@F8F3F3*&,,*$F8\"\"&!)+hQFFD\")#*fB<F7!(]yC\"F;\"&O/#F8!#iF3-FL6$FKF8
+F3F3*&,,*$F8F+!)+\"[%>FP\")/N+:FD!(gbS\"F7\"&GH$F;!$!=F3-FL6$FWF8F3F3*
+&,,*$F8\"\"(!(]\"e`Fen\"(sn'[FP!''4b&FD\"&;n\"F7!$I\"F3-FL6$F[oF8F3F3*
+&,,*$F8\"\")!']`fF_o\"'o*>'Fen!&3H)FP\"%CIFD!#IF3-FL6$FfoF8F3F3*&,,*$F
+8\"\"*!&]?#Fjo\"&Ke#F_o!%[RFen\"$o\"FPFJF3-FL6$FapF8F3F3/---F(6$F*FQF,
+F.\"*S)yP6/---F(6$F*FEF,F.\"'g6))/---F(6$F*F9F,F.\"%q)*/---F(6$F*F<F,F
+.\"$#=/---F(6$F*F`oF,F.\".!G\"pWsD%/--F*F,F.F`o" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 33 "Order and possible singularities." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 71 "op(sort([solve(coeff(op(remove(type,\",eq
+uation)),diff(j(z),z$6)),z)]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6+\"
+\"!F#F#F#F##\"\"\"\"#\\#F%\"#D#F%\"\"*F%" }}}}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 96 "These experimental results suggest a pattern for the sing
+ularities of the equation in dimension " }{XPPEDIT 18 0 "d" "I\"dG6\"
+" }{TEXT -1 86 ".  More specifically, the leading coefficient of the d
+ifferential equation is given by" }}}{EXCHG {PARA 272 "" 0 "" 
+{XPPEDIT 18 0 "z^(d-2)*Product(1-(2*k+1)*z,k=0..p)" "*&)%\"zG,&%\"dG\"
+\"\"\"\"#!\"\"F'-%(ProductG6$,&\"\"\"F'*&,&*&\"\"#F'%\"kGF'F'\"\"\"F'F
+'F$F'F)/F3;\"\"!%\"pGF'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 5 "when " 
+}{XPPEDIT 18 0 "d=2*p+1" "/%\"dG,&*&\"\"#\"\"\"%\"pGF'F'\"\"\"F'" }
+{TEXT -1 8 ", and by" }}}{EXCHG {PARA 273 "" 0 "" {XPPEDIT 18 0 "z^(d-
+2)*Product(1-2*k*z,k=1..p)" "*&)%\"zG,&%\"dG\"\"\"\"\"#!\"\"F'-%(Produ
+ctG6$,&\"\"\"F'*(\"\"#F'%\"kGF'F$F'F)/F1;\"\"\"%\"pGF'" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 5 "when " }{XPPEDIT 18 0 "d=2*p" "/%\"dG*&\"
+\"#\"\"\"%\"pGF&" }{TEXT -1 1 "." }}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 
+33 "The singular structure of the ODE" }}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 30 "The equation used to describe " }{XPPEDIT 18 0 "j(z)" "-%\"jG6#
+%\"zG" }{TEXT -1 36 " introduces a \"parasitic\" function, " }
+{XPPEDIT 18 0 "k(z)=K[0](2*sqrt(z))" "/-%\"kG6#%\"zG-&%\"KG6#\"\"!6#*&
+\"\"#\"\"\"-%%sqrtG6#F&F/" }{TEXT -1 56 ", also expressed in terms of \+
+a modified Bessel function." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+36 "op(remove(type,diff_eq_j,equation));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,(-%\"jG6#%\"zG\"\"\"-%%diffG6$F$F'!\"\"*&F'F(-F*6$F)F'F(F," }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 5 "Both " }{XPPEDIT 18 0 "j(z)" "-%\"j
+G6#%\"zG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "k(z)" "-%\"kG6#%\"zG" }
+{TEXT -1 30 " are solutions found my Maple:" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 15 "dsolve(\",j(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#/-%\"jG6#%\"zG,&*&%$_C1G\"\"\"-%(BesselIG6$\"\"!,$*$F'#F+\"\"#F3F+F+
+*&%$_C2GF+-%(BesselKGF.F+F+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "Th
+e equation above is satisfied by " }{TEXT 256 3 "any" }{TEXT -1 23 " l
+inear combination of " }{XPPEDIT 18 0 "j(z)" "-%\"jG6#%\"zG" }{TEXT 
+-1 5 " and " }{XPPEDIT 18 0 "k(z)" "-%\"kG6#%\"zG" }{TEXT -1 51 ".  In
+ the same way, the equation used to described " }{XPPEDIT 18 0 "j(z)^d
+" ")-%\"jG6#%\"zG%\"dG" }{TEXT -1 17 " is satisfied by " }{TEXT 257 3 
+"any" }{TEXT -1 36 " linear combination of the products " }{XPPEDIT 
+18 0 "j(z)^l*k(z)^(d-l)" "*&)-%\"jG6#%\"zG%\"lG\"\"\")-%\"kG6#F',&%\"d
+GF)F(!\"\"F)" }{TEXT -1 54 ".  For instance, this is easily checked fo
+r the cases " }{XPPEDIT 18 0 "d=2" "/%\"dG\"\"#" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "d=3" "/%\"dG\"\"$" }{TEXT -1 1 "." }}}{SECT 1 {PARA 4 "
+" 0 "" {TEXT -1 11 "Dimension 2" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 47 
+"Here is the differential equation satisfied by " }{XPPEDIT 18 0 "j(z)
+^2" "*$-%\"jG6#%\"zG\"\"#" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 37 "op(remove(type,power_j(2),equation));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#,*-%\"jG6#%\"zG!\"#*&,&\"\"\"F+F'!\"%F+-%%diffG6
+$F$F'F+F+*&-F.6$-F.6$F-F'F'F+F'\"\"#F+*&F'F+F3F+\"\"$" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 63 "Maple is no longer able to solve in terms
+ of special functions:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "d
+solve(\",j(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"jG6#%\"zG-%&DE
+SolG6$<#,**&F'\"\"#-%%diffG6$-F06$-F06$-%#_YGF&F'F'F'\"\"\"F8*&F'F8F2F
+8\"\"$*&,&F8F8F'!\"%F8F4F8F8F6!\"#<#F6" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 52 "(The development version of Maple is able to solve.)" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 21 "We successively plug " }{XPPEDIT 
+18 0 "j(z)^2" "*$-%\"jG6#%\"zG\"\"#" }{TEXT -1 2 ", " }{XPPEDIT 18 0 "
+k(z)^2" "*$-%\"kG6#%\"zG\"\"#" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "j(z
+)*k(z)" "*&-%\"jG6#%\"zG\"\"\"-%\"kG6#F&F'" }{TEXT -1 28 " into the pr
+evious equation:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "op(remo
+ve(type,power_j(2),equation)):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 58 "normal(eval(subs(j=unapply(BesselI(0,2*sqrt(z))^2,z),\")));" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 59 "normal(eval(subs(j=unapply(BesselK(0,2*sqrt(z))^2,z),
+\"\")));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 79 "normal(eval(subs(j=unapply(BesselI(0,2*sqrt(
+z))*BesselK(0,2*sqrt(z)),z),\"\"\")));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 66 "Each evaluation yi
+elds 0, proving that the function is a solution." }}}}{SECT 1 {PARA 4 
+"" 0 "" {TEXT -1 11 "Dimension 3" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+47 "Here is the differential equation satisfied by " }{XPPEDIT 18 0 "j
+(z)^3" "*$-%\"jG6#%\"zG\"\"$" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 37 "op(remove(type,power_j(3),equation));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#,,*&,&!\"$\"\"\"%\"zG\"\"*F'-%\"jG6#F(F'F'*&
+,&F(!#?F'F'F'-%%diffG6$F*F(F'F'*&,&F(\"\"(*$F(\"\"#!#5F'-F16$F0F(F'F'*
+&-F16$-F16$F9F(F(F'F(\"\"$F'*&F>F'F(F7\"\"'" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 21 "We successively plug " }{XPPEDIT 18 0 "j(z)^3" "*$-%\"j
+G6#%\"zG\"\"$" }{TEXT -1 2 ", " }{XPPEDIT 18 0 "j(z)^2*k(z)" "*&-%\"jG
+6#%\"zG\"\"#-%\"kG6#F&\"\"\"" }{TEXT -1 2 ", " }{XPPEDIT 18 0 "j(z)*k(
+z)^2" "*&-%\"jG6#%\"zG\"\"\"*$-%\"kG6#F&\"\"#F'" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "k(z)^3" "*$-%\"kG6#%\"zG\"\"$" }{TEXT -1 28 " into the \+
+previous equation:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "norma
+l(eval(subs(j=unapply(BesselI(0,2*sqrt(z))^3,z),\")));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+80 "normal(eval(subs(j=unapply(BesselI(0,2*sqrt(z))^2*BesselK(0,2*sqrt
+(z)),z),\"\")));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 4 "\"\"\":" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 79 "normal(eval(subs(j=unapply(BesselI(0,2*sqrt(z))*Bes
+selK(0,2*sqrt(z))^2,z),\")));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"!
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "normal(eval(subs(j=unap
+ply(BesselK(0,2*sqrt(z))^3,z),\"\")));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"!" }}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 33 "The ordinary gene
+rating function " }{XPPEDIT 18 0 "P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }
+{TEXT -1 42 " is the double inverse Borel transform of " }{XPPEDIT 18 
+0 "j(z)^d" ")-%\"jG6#%\"zG%\"dG" }{TEXT -1 72 ".  In the same way as a
+bove, the differential equation that vanishes at " }{XPPEDIT 18 0 "P[d
+](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 62 " also vanishes at each of \+
+the double inverse Borel transforms " }{XPPEDIT 18 0 "(Borel@@(-2))(j(
+z)^l*k(z)^(d-l))" "--%#@@G6$%&BorelG,$\"\"#!\"\"6#*&)-%\"jG6#%\"zG%\"l
+G\"\"\")-%\"kG6#F0,&%\"dGF2F1F)F2" }{TEXT -1 62 ".  Those transform ha
+ve a nice integral representation, namely" }}}{EXCHG {PARA 269 "" 0 "
+" {XPPEDIT 18 0 "(Borel@@(-2))(j(z)^l*k(z)^(d-l))=2*Int(j(z*t)^l*k(z*t
+)^(d-l)*k(t),t=0...infinity)" "/--%#@@G6$%&BorelG,$\"\"#!\"\"6#*&)-%\"
+jG6#%\"zG%\"lG\"\"\")-%\"kG6#F1,&%\"dGF3F2F*F3*&\"\"#F3-%$IntG6$*()-F/
+6#*&F1F3%\"tGF3F2F3)-F66#*&F1F3FDF3,&F9F3F2F*F3-F66#FDF3/FD;\"\"!%)inf
+inityGF3" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 103 "This
+ integral is always convergent at its lower bound.  At infinity howeve
+r, the integrand behaves like" }}}{EXCHG {PARA 270 "" 0 "" {XPPEDIT 
+18 0 "exp(2*((2*l-d)*sqrt(z)-1)*sqrt(t))/t^((d+1)/4)" "*&-%$expG6#*(\"
+\"#\"\"\",&*&,&*&\"\"#F(%\"lGF(F(%\"dG!\"\"F(-%%sqrtG6#%\"zGF(F(\"\"\"
+F0F(-F26#%\"tGF(F()F8*&,&F/F(\"\"\"F(F(\"\"%F0F0" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 23 "It follows that either " }
+{XPPEDIT 18 0 "2l<=d" "1*&\"\"#\"\"\"%\"lGF%%\"dG" }{TEXT -1 50 " and \+
+the integral is defined for any non-negative " }{XPPEDIT 18 0 "z" "I\"
+zG6\"" }{TEXT -1 5 ", or " }{XPPEDIT 18 0 "d<2*l" "2%\"dG*&\"\"#\"\"\"
+%\"lGF&" }{TEXT -1 33 " and the integral is defined for " }{XPPEDIT 
+18 0 "z" "I\"zG6\"" }{TEXT -1 15 " between 0 and " }{XPPEDIT 18 0 "(d-
+2*l)^(-2)" "),&%\"dG\"\"\"*&\"\"#F%%\"lGF%!\"\",$\"\"#F)" }{TEXT -1 
+63 ".  We thus obtain all positive singularities of the conjecture." }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT 264 8 "Theorem:" }{TEXT -1 66 "  Any homogeneous linear ODE sati
+sfied by the generating function " }{XPPEDIT 265 0 "P[d](z)" "-&%\"PG6
+#%\"dG6#%\"zG" }{TEXT 267 20 " of festoons on the " }{XPPEDIT 268 0 "d
+" "I\"dG6\"" }{TEXT 269 49 "-dimensional integer lattice is singular a
+t each " }{XPPEDIT 270 0 "(d-2*l)^(-2)" "),&%\"dG\"\"\"*&\"\"#F%%\"lGF
+%!\"\",$\"\"#F)" }{TEXT 271 6 ", for " }{XPPEDIT 272 0 "d<2*l" "2%\"dG
+*&\"\"#\"\"\"%\"lGF&" }{TEXT -1 35 ".  More specifically, the function
+ " }{XPPEDIT 266 0 "P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT 273 16 " i
+s singular at " }{XPPEDIT 274 0 "d^(-2)" ")%\"dG,$\"\"#!\"\"" }{TEXT 
+275 1 "." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}}}{SECT 1 {PARA 3 
+"" 0 "" {TEXT -1 47 "Computing the asymptotics: a connection problem" 
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 13 "The function " }{XPPEDIT 18 0 "P
+[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 269 " is analytic  in a neig
+hbourhoud of 0, where it is given by its Taylor expansion.  On the oth
+er hand, its dominant singularity (i.e., its singularity closest to 0)
+ and its asymptotic behaviour there are a priori not known.  It is nat
+ural to estimate the asymptotics of " }{XPPEDIT 18 0 "P[d](z)" "-&%\"P
+G6#%\"dG6#%\"zG" }{TEXT -1 39 " at the smallest positive singularity, \+
+" }{XPPEDIT 18 0 "s=d^(-2)" "/%\"sG)%\"dG,$\"\"#!\"\"" }{TEXT -1 60 ",
+ of the equation defining this function.  To do so, we use " }{TEXT 
+283 20 "singularity analysis" }{TEXT -1 3 ".  " }{HYPERLNK 17 "First" 
+1 "" "evaluating the Taylor series" }{TEXT -1 39 ", we evaluate the Ta
+ylor series at 0.  " }{HYPERLNK 17 "Next" 1 "" "computing a basis" }
+{TEXT -1 78 ", we algorithmically compute a basis of all possible asym
+ptotic behaviours at " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 32 " of
+ solutions of the equation.  " }{HYPERLNK 17 "Finally" 1 "" "the conne
+ction" }{TEXT -1 105 ", we numerically connect the Taylor series at 0 \+
+and a generic linear combination of these asymptotics at " }{XPPEDIT 
+18 0 "s" "I\"sG6\"" }{TEXT -1 50 ", i.e., we equate values at a point \+
+between 0 and " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 64 "A common case of singularity of ho
+lonomic function is that of a " }{TEXT 276 22 "regular singular point
+" }{TEXT -1 134 ". This is a singular point where the function has a p
+olynomial behaviour: at such points, the theory expects an expansion o
+f the form " }{XPPEDIT 18 0 "kappa*z^(p/r)*phi(z^(1/r))" "*(%&kappaG\"
+\"\")%\"zG*&%\"pGF$%\"rG!\"\"F$-%$phiG6#)F&*&\"\"\"F$F)F*F$" }{TEXT 
+-1 8 ", where " }{XPPEDIT 18 0 "phi" "I$phiG6\"" }{TEXT -1 149 " is a \+
+formal power series.  It is therefore natural to look for such an asym
+ptotics by a method of \"undetermined exponent\".  The possible values
+ for " }{XPPEDIT 18 0 "eta=p/r" "/%$etaG*&%\"pG\"\"\"%\"rG!\"\"" }
+{TEXT -1 32 " are given by a polynomial, the " }{TEXT 277 19 "indicial
+ polynomial" }{TEXT -1 9 ": a zero " }{XPPEDIT 18 0 "eta" "I$etaG6\"" 
+}{TEXT -1 17 " of multiplicity " }{XPPEDIT 18 0 "m+1" ",&%\"mG\"\"\"\"
+\"\"F$" }{TEXT -1 68 " of the indicial polynomial indicates solutions \+
+with the behaviours " }{XPPEDIT 18 0 "z^eta" ")%\"zG%$etaG" }{TEXT -1 
+2 ", " }{XPPEDIT 18 0 "z^eta*ln(z)" "*&)%\"zG%$etaG\"\"\"-%#lnG6#F$F&
+" }{TEXT -1 11 ", ..., and " }{XPPEDIT 18 0 "z^eta*ln(z)^m" "*&)%\"zG%
+$etaG\"\"\")-%#lnG6#F$%\"mGF&" }{TEXT -1 88 ".   The following procedu
+re computes the indicial polynomial of a differential equation." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 247 "indicial_poly:=proc(sys,f,z
+) local zero; global eta; option remember;\n    zero:=collect(normal(e
+val(subs(f=proc(z) global eta; z^eta end,op(remove(type,sys,equation))
+)))/z^eta,z,normal);\n    factor(primpart(coeff(zero,z,ldegree(zero,z)
+),eta))\nend:" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 29 "As a first remar
+k, note that " }{XPPEDIT 18 0 "P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }
+{TEXT -1 66 " is the only solution of the equation analytic at 0 and s
+uch that " }{XPPEDIT 18 0 "P[d](0)=1" "/-&%\"PG6#%\"dG6#\"\"!\"\"\"" }
+{TEXT -1 89 ".  To obtain this, let us compute the indicial polynomial
+s at 0 for the first dimensions:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 78 "for i from 2 to 7 do i=indicial_poly(double_inv_borel
+(power_j(i),j,z),j,z) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"#,$%
+$etaG!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"$,$*$%$etaG\"\"#!\"
+\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"%,$*$%$etaG\"\"$!\"\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"\"&,$*$%$etaG\"\"%!\"\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/\"\"',$*$%$etaG\"\"&!\"\"" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#/\"\"(,$*$%$etaG\"\"'!\"\"" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 37 "Therefore, the equation satisfied by " }{XPPEDIT 18 0 "
+P[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 14 " in dimension " }
+{XPPEDIT 18 0 "d" "I\"dG6\"" }{TEXT -1 45 " has one solution which is \+
+analytic at 0 and " }{XPPEDIT 18 0 "d-1" ",&%\"dG\"\"\"\"\"\"!\"\"" }
+{TEXT -1 56 " that are singular at 0, with logarithmic singularities.
+" }}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 41 "Connection and asymptotics i
+n dimension 3" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 28 "The smallest sing
+ularity is " }{XPPEDIT 18 0 "s=1/9" "/%\"sG*&\"\"\"\"\"\"\"\"*!\"\"" }
+{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 102 "op(sort([
+solve(coeff(op(remove(type,double_inv_borel(power_j(3),j,z),equation))
+,diff(j(z),z,z)),z)]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"!#\"\"
+\"\"\"*F%" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 44 "We first expand the \+
+series at 0 to evaluate " }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%
+\"zG" }{TEXT -1 10 " at, say, " }{XPPEDIT 18 0 "1/18" "*&\"\"\"\"\"\"
+\"#=!\"\"" }{TEXT -1 41 ".  Next, we recenter the equation around " }
+{XPPEDIT 18 0 "1/9" "*&\"\"\"\"\"\"\"\"*!\"\"" }{TEXT -1 69 " to study
+ the local behaviour of the solutions there more explicitly." }}}
+{SECT 1 {PARA 5 "" 0 "evaluating the Taylor series" {TEXT -1 28 "Evalu
+ating the Taylor series" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 248 "To eva
+luate the Taylor series, we compute a truncation of it.  We actually n
+eed truncations to several orders to illustrate the slow convergence o
+f the series close to its singularity.  We base on the following ident
+ity to compute such truncations:" }}}{EXCHG {PARA 271 "" 0 "" 
+{XPPEDIT 18 0 "[z^n]*(phi(t*z)/(1-z))=Sum(c[k]*t^k,k=0..n)" "/*&7#)%\"
+zG%\"nG\"\"\"*&-%$phiG6#*&%\"tGF(F&F(F(,&\"\"\"F(F&!\"\"F1F(-%$SumG6$*
+&&%\"cG6#%\"kGF()F.F9F(/F9;\"\"!F'" }{TEXT -1 1 "," }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 6 "where " }{XPPEDIT 18 0 "[z^n]*f(z)" "*&7#)%\"zG%\"
+nG\"\"\"-%\"fG6#F%F'" }{TEXT -1 28 " denotes the coefficient of " }
+{XPPEDIT 18 0 "z^n" ")%\"zG%\"nG" }{TEXT -1 15 " in the series " }
+{XPPEDIT 18 0 "f(z)" "-%\"fG6#%\"zG" }{TEXT -1 5 " and " }{XPPEDIT 18 
+0 "phi" "I$phiG6\"" }{TEXT -1 15 " is any series " }{XPPEDIT 18 0 "phi
+(z)=Sum(c[n]*z^n,n=0..infinity)" "/-%$phiG6#%\"zG-%$SumG6$*&&%\"cG6#%
+\"nG\"\"\")F&F.F//F.;\"\"!%)infinityG" }{TEXT -1 1 "." }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 31 "We start from the equation for " }
+{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 1 ":" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "double_inv_borel(power_j(3),
+j,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<'/-%\"jG6#\"\"!\"\"\",(*&,&%
+\"zG!\"*\"\"$F)F)-F&6#F-F)F)*&,(*$F-\"\"#!#FF-\"#?!\"\"F)F)-%%diffG6$F
+0F-F)F)*&,(*$F-F/F.F4\"#5F-F8F)-F:6$F9F-F)F)/---%#@@G6$%\"DGF56#F&F'\"
+#I/---FF6$FHF/FIF'\"$e&/--FHFIF'F/" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 11 "We compute " }{XPPEDIT 18 0 "P[3](t*z)" "-&%\"PG6#\"\"$6#*&%\"t
+G\"\"\"%\"zGF*" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 28 "algebraicsubs(\",j=z*t,j(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#<$/-%\"jG6#\"\"!\"\"\",(*&,&%\"tG!\"$*&F-\"\"#%\"zGF)\"\"*F)-F&6#F1
+F)F)*&,(F)F)*&F1F)F-F)!#?*&F1F0F-F0\"#FF)-%%diffG6$F3F1F)F)*&,(F1F)*&F
+1F0F-F)!#5*&F1\"\"$F-F0F2F)-F<6$F;F1F)F)" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 13 "We divide by " }{XPPEDIT 18 0 "(1-z)" ",&\"\"\"\"\"\"%\"z
+G!\"\"" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "p
+oltodiffeq(j(z)/(1-z),[\"],[j(z)],j(z));" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#<%/-%\"jG6#\"\"!\"\"\"/--%\"DG6#F&F',&%\"tG\"\"$F)F),(*&,,*&%\"z
+G\"\"#F0F7\"#O*&F0F7F6F)!\"**&F6F)F0F)!#BF)F)F0F1F)-F&6#F6F)F)*&,.*&F6
+F1F0F7\"#XF5!#F*&F6F7F0F)!#SF;\"#?F6F1!\"\"F)F)-%%diffG6$F=F6F)F)*&,.*
+$F6F7F)*&F6F1F0F)!#5*&F6\"\"%F0F7\"\"*F6FGFD\"#5FAF:F)-FI6$FHF6F)F)" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 28 "We extract its coefficients:" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "rec_j:=diffeqtorec(\",j(z),
+u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&rec_jG<&/-%\"uG6#\"\"#,(*
+$%\"tGF*\"#:F-\"\"$\"\"\"F0,**&,(F,\"#O*&F-F*%\"nGF0F4*&F-F*F6F*\"\"*F
+0-F(6#F6F0F0*&,**&,&F-!#5F,!\"*F0F6F*F0*&,&F-!#]F,!#OF0F6F0F0F,FDF-!#j
+F0-F(6#,&F6F0F0F0F0F0*&,**&,&F0F0F-\"#5F0F6F*F0*&,&\"\"'F0F-\"#]F0F6F0
+F0F-\"#jF8F0F0-F(6#,&F6F0F*F0F0F0*&,(F6!\"'F@F0*$F6F*!\"\"F0-F(6#,&F6F
+0F/F0F0F0/-F(6#F0,&F-F/F0F0/-F(6#\"\"!F0" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 37 "And we compute a procedure, which to " }{XPPEDIT 18 0 "``
+(n,t)" "-%!G6$%\"nG%\"tG" }{TEXT -1 36 " associates the truncated seri
+es at " }{XPPEDIT 18 0 "t" "I\"tG6\"" }{TEXT -1 14 " to the order " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 43 "series_j:=rectoproc(rec_j,u(n),params=[t]):" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "Next, the series can be computed f
+ormally at " }{XPPEDIT 18 0 "t" "I\"tG6\"" }{TEXT -1 1 ":" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "normal(series_j(4,t));" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#,,*$%\"tG\"\"$\"#$**$F%\"\"#\"#:*$F%\"\"%\"$R'F
+%F&\"\"\"F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 36 "or numerically at \+
+a rational number:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "serie
+s_j(4,1/16);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6##\"&\"z$)\"&Ob'" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 87 "(This is more efficient than compu
+ting the series, and next evaluating it numerically.)" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 143 "The following plots display the Taylor e
+xpansion for increasing an number of terms.  Note the behaviour of the
+ series close to the singularity " }{XPPEDIT 18 0 "1/9" "*&\"\"\"\"\"
+\"\"\"*!\"\"" }{TEXT -1 38 " when we increase the number of terms." }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 300 "pl[Taylor]:=plots[display]
+(\n    plot('series_j'(10,z),z=0..1/9,y=0..5,style=point,color=red),\n
+    plot('series_j'(20,z),z=0..1/9,y=0..5,style=point,color=green),\n \+
+   plot('series_j'(100,z),z=0..1/9,y=0..5,style=point,color=blue),\nti
+tle=`Taylor series (red=10 terms, green=20 terms, blue=100 terms)`):" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "pl[Taylor];" }}{PARA 13 "
+" 1 "" {INLPLOT "6(-%'CURVESG6%7S7$\"\"!$\"\"\"F(7$$\"3lFjF=g!>U#!#?$
+\"3&3`Cg/bt+\"!#<7$$\"3r]u\"\\\\$>HXF.$\"3%[k-J?/R,\"F17$$\"39,vrc'e!*
+*oF.$\"3VM0L%>V9-\"F17$$\"3q6c9BGj%G*F.$\"31\"\\<M\\E#H5F17$$\"3/E#)>x
+o)e;\"!#>$\"3<MXPNe<P5F17$$\"3hG5*>%*3gQ\"FD$\"3lO-GdctW5F17$$\"3W%Q;,
+fKRh\"FD$\"3(*eIps_w_5F17$$\"3bvd0`:l\\=FD$\"3*pNXGQ'Hh5F17$$\"3CQ:HiX
+h%3#FD$\"3,HVTy</q5F17$$\"3'y^:z*GIEBFD$\"3m!Hs!eIIz5F17$$\"3VAo[:@=RD
+FD$\"3pdZwZcp(3\"F17$$\"3/hl;%pL)yFFD$\"3Un]<bAU(4\"F17$$\"3Z3OD0$p%>I
+FD$\"3TC9:cG]26F17$$\"3q=/B0jO^KFD$\"3P61)oRLv6\"F17$$\"3i*)*Qt*4&>Y$F
+D$\"3?q,8Oq#p7\"F17$$\"3nyNWklN7PFD$\"3q;YW(Gs%Q6F17$$\"3hxM`DH[CRFD$
+\"3[_%)Qf<f[6F17$$\"3!f(G37jBrTFD$\"3.[([^N\"yg6F17$$\"3Z/9$*p[l*Q%FD$
+\"3$)eHg]=(><\"F17$$\"36//PXYHHYFD$\"3z8IFYQr%=\"F17$$\"3F&pe9Q)[d[FD$
+\"35xTWe;L(>\"F17$$\"3'G#>(fg%e&4&FD$\"31XcC3)R5@\"F17$$\"3_!GscEJUJ&F
+D$\"371p&)=U:C7F17$$\"3$R%oHE72]bFD$\"3g')oQL,\"*Q7F17$$\"31ZBxjE/&z&F
+D$\"3LZqsKX'\\D\"F17$$\"3].DB?5H3gFD$\"3:=F)G5&fp7F17$$\"3Y-\"Rt30'QiF
+D$\"3&=V%>?<9'G\"F17$$\"3'3!z!\\0UlZ'FD$\"3)3z1!p:7/8F17$$\"3m+CmdpJ4n
+FD$\"3IBEkM[mA8F17$$\"3$)y)R^kQX$pFD$\"3%yKxTq!fT8F17$$\"34%4P)H*3Y=(F
+D$\"3TW2\"fN`QO\"F17$$\"3:sF'H?3$4uFD$\"3))f;+QD4&Q\"F17$$\"38mR7QEA\\
+wFD$\"3a)*R#><)>49F17$$\"30+jnu2imyFD$\"3#*Rc9ftWK9F17$$\"3t\"o+.O%H/
+\")FD$\"3b9[^_!f&f9F17$$\"3!edP?oEzK)FD$\"3<:HU:w&o[\"F17$$\"3!\\;x\\*
+ooh&)FD$\"36sWV@AX<:F17$$\"3%oX-1BI-z)FD$\"3f`A;7ci\\:F17$$\"3\"3;3F#R
+\\H!*FD$\"3a^BAq)zfe\"F17$$\"3e-.P&HL*f#*FD$\"3K1lC2f(Qi\"F17$$\"3,/M,
+P3f&\\*FD$\"3:&)Hg9.!fm\"F17$$\"3Bu2B:qHH(*FD$\"3$3X#RiuA6<F17$$\"3_<y
+A@([S%**FD$\"32I(3R-akv\"F17$$\"3%>!=5Ty,>5!#=$\"3]nz#ot(*H\"=F17$$\"3
+$3(*pR(>.T5Fby$\"3-i`(>AE$o=F17$$\"3i\\N9JO]k5Fby$\"3Y'p!o!obG$>F17$$
+\"3UOY(>+pp3\"Fby$\"3^g!p9B#f+?F17$$\"3$******46666\"Fby$\"3RjX)*)fx13
+#F1-%'COLOURG6&%$RGBG$\"*++++\"!\")F(F(-%&STYLEG6#%&POINTG-F$6%7UF'7$F
+,$\"3jIX-Y]N25F1F27$F8$\"3wN0L%>V9-\"F17$F=$\"38YvT$\\E#H5F17$FB$\"31C
+_PNe<P5F17$FH$\"3)*f\\GdctW5F17$FM$\"3#>#)=FFlF0\"F17$FR$\"3xEM'HQ'Hh5
+F17$FW$\"37kY')y</q5F17$Ffn$\"36/[hfIIz5F17$F[o$\"3]Fl*=l&p(3\"F17$F`o
+$\"3+fcgmAU(4\"F17$Feo$\"3FL*3a)G]26F17$Fjo$\"37#>\\YYLv6\"F17$F_p$\"3
+yYHgur#p7\"F17$Fdp$\"3d#R\\\\fs%Q6F17$Fip$\"3gc,'3M#f[6F17$F^q$\"3V1x0
+GDyg6F17$Fcq$\"3'[>Id'R(><\"F17$Fhq$\"3o=')zkxr%=\"F17$F]r$\"3'=m<I_Qt
+>\"F17$Fbr$\"34M5MG=067F17$Fgr$\"31mB8BR<C7F17$F\\s$\"3?eDUgI%*Q7F17$F
+as$\"3dB)p(o&>]D\"F17$Ffs$\"3#4')HM!*z'p7F17$F[t$\"3&>@r[2viG\"F17$F`t
+$\"36JRHW9L/8F17$Fet$\"3/Zra`x)HK\"F17$Fjt$\"3%H5![%Gv?M\"F17$F_u$\"3N
+#)o&\\.0YO\"F17$Fdu$\"3(*y)>$3r>'Q\"F17$Fiu$\"3#Q9@B&*[3T\"F17$F^v$\"3
+.)fU,L0[V\"F17$Fcv$\"3@rb`P\\,j9F17$Fhv$\"3`Wvj\\ox\"\\\"F17$F]w$\"3HB
+tCFD_C:F17$Fbw$\"3G^:$G$ykf:F17$Fgw$\"37bM6T*R.g\"F17$F\\x$\"3kJ+7?&yS
+k\"F17$Fax$\"3)y'RG9$3Wp\"F17$Ffx$\"3AK1jma;^<F17$F[y$\"3Mn*3k^+2\"=F1
+7$F`y$\"3`+[W[cu*)=F17$Ffy$\"3$*o**po%\\E(>F17$F[z$\"3)>i^/[#4x?F17$$
+\"3-$4flJOd2\"Fby$\"3O\\@Tj4=M@F17$F`z$\"3[N?#o#*fm>#F17$$\"3<=t[c+/*4
+\"Fby$\"3hRlW*4#fqAF17$Fez$\"3Oc!pc#f]_BF1-Fjz6&F\\[lF(F][lF(F`[l-F$6%
+7XF'7$F,$\"3jGX-Y]N25F17$F3$\"3iWE5.U!R,\"F17$F8$\"35N0L%>V9-\"F17$F=$
+\"3oXvT$\\E#H5F17$FB$\"3tA_PNe<P5F1Fc\\l7$FM$\"3.@)=FFlF0\"F17$FR$\"3a
+EM'HQ'Hh5F17$FW$\"3BjY')y</q5F17$Ffn$\"3x-[hfIIz5F1Fb]l7$F`o$\"3*=m0mE
+Au4\"F17$Feo$\"3pj*3a)G]26F17$Fjo$\"3wf$\\YYLv6\"F17$F_p$\"3#ye.Y<Fp7
+\"F17$Fdp$\"3QpA&\\fs%Q6F17$Fip$\"3P;'p3M#f[6F17$F^q$\"3\")HH4GDyg6F17
+$Fcq$\"31)>Oe'R(><\"F17$Fhq$\"3q]L8lxr%=\"F17$F]r$\"3T>$oR_Qt>\"F17$Fb
+r$\"33XG.J=067F17$Fgr$\"3.TK')HR<C7F17$F\\s$\"3ij*Gy2V*Q7F17$Fas$\"3=^
+jq8'>]D\"F17$Ffs$\"3.'GwI+!op7F17$F[t$\"3%QGsQIviG\"F17$F`t$\"3Pq&*Gq>
+L/8F17$Fet$\"3B\\0W5*))HK\"F17$Fjt$\"3dx=16x2U8F17$F_u$\"3$e<J@V5YO\"F
+17$Fdu$\"3*f![#)pz?'Q\"F17$Fiu$\"3-tq!>Yr3T\"F17$F^v$\"3ixG\"fE[[V\"F1
+7$Fcv$\"3G\"*)34p+JY\"F17$Fhv$\"3ibQ6%HR>\\\"F17$F]w$\"3<Xjeye$[_\"F17
+$Fbw$\"3jiF/(=Q-c\"F17$Fgw$\"3FFRY=tZ,;F17$F\\x$\"3JWfN3t?Y;F17$Fax$\"
+3NDB$>BU%)p\"F17$Ffx$\"32AksLXye<F17$F[y$\"3'o*QPF]XC=F17$F`y$\"3#oF9f
+vXs\">F17$Ffy$\"3`cA=\"f4^-#F17$$\"3Agnb-yw_5Fby$\"3HDZ^2kz(4#F17$F[z$
+\"3oBNw@Yz'=#F17$F_dl$\"3OaIUaj![H#F17$F`z$\"3^7$QG*>.QCF17$$\"3Ix4BHX
++$4\"Fby$\"3i8n*\\5rq`#F17$Fgdl$\"3`-eC.*=&eEF17$$\"30fOu$ev]5\"Fby$\"
+3B/0F<'>2\"GF17$Fez$\"3xMaU'zKe+$F1-Fjz6&F\\[lF(F(F][lF`[l-%&TITLEG6#%
+gnTaylor~series~(red=10~terms,~green=20~terms,~blue=100~terms)G-%+AXES
+LABELSG6$%\"zG%\"yG-%%VIEWG6$;F($\"+66666!#5;F($\"\"&F(" 2 574 574 
+574 2 0 1 0 2 9 0 4 2 1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 }}}}{SECT 1 {PARA 5 "" 0 "co
+mputing a basis" {TEXT -1 43 "Computing a basis of asymptotics expansi
+ons" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 52 "To compute asymptotic expan
+sions at the singularity " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 54 
+", we find it convenient to center the equation around " }{XPPEDIT 18 
+0 "s" "I\"sG6\"" }{TEXT -1 39 ".  We thus make the change of variable \+
+" }{XPPEDIT 18 0 "u=1-9*z" "/%\"uG,&\"\"\"\"\"\"*&\"\"*F&%\"zGF&!\"\"
+" }{TEXT -1 8 ", i.e., " }{XPPEDIT 18 0 "f(u)=j((1-u)/9)" "/-%\"fG6#%
+\"uG-%\"jG6#*&,&\"\"\"\"\"\"F&!\"\"F-\"\"*F." }{TEXT -1 6 " (and " }
+{XPPEDIT 18 0 "z=(1-u)/9" "/%\"zG*&,&\"\"\"\"\"\"%\"uG!\"\"F'\"\"*F)" 
+}{TEXT -1 139 ").  To perform this rational change of variable, we app
+eal to the closure of the class of holonomic functions under algebraic
+ substitution:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 106 "d_eq:=co
+llect(subs(\{j=f,z=u\},algebraicsubs(double_inv_borel(power_j(3),j,z),
+j-(1-z)/9,j(z))),diff,factor);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%d
+_eqG,(**%\"uG\"\"\",&F'F(\"\")F(F(,&F'F(!\"\"F(F(-%%diffG6$-F.6$-%\"fG
+6#F'F'F'F(F,*&,(F*F(F'!#9*$F'\"\"#!\"$F(F0F(F(*&,&F9F(F'F(F(F2F(F," }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 58 "Let us compute the indicial polyn
+omial at the singularity " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 12 
+" (now in 0):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "indicial_p
+oly(\{d_eq\},f,u);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*$%$etaG\"\"#" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 88 "Hence, we expect one regular sol
+ution at 0, and one singular with logarithmic behaviour." }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 122 "We therefore expect an analytic solution
+ and a logarithmic solution.  This is confirmed by the following forma
+l expansion:" }}}{EXCHG }{EXCHG }{EXCHG }{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 35 "Order:=3: dsolve(d_eq,f(u),series);" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#/-%\"fG6#%\"uG,&*&%$_C1G\"\"\"++F'F+\"\"!#F+\"\"%\"
+\"\"#\"\"&\"#K\"\"#-%\"OG6#F+\"\"$F+F+*&%$_C2GF+,&*&-%#lnGF&F+F,F+F++)
+F'#\"\"$\"\")\"\"\"#\"#L\"$G\"\"\"#F5\"\"$F+F+F+" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 129 "We compute but do not display the series for a la
+rger order, so as to increase the precision in the numerical calculati
+ons below." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "Order:=15: ds
+ol_ser_f:=dsolve(d_eq,f(u),series):" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 91 "Note that there exist algorithms to perform the previous calcul
+ation much more efficiently." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 57 "T
+he following plot displays the asymptotic behaviours at " }{XPPEDIT 
+18 0 "s" "I\"sG6\"" }{TEXT -1 18 " of the solutions." }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 364 "plots[display](\n    plot(subs(u=1-9*z,c
+onvert(subs(\{_C1=1,_C2=0\},op(2,dsol_ser_f)),polynom)),\n        z=0.
+.1/5,y=0..5,color=blue),\n    plot(subs(u=1-9*z,convert(subs(\{_C1=0,_
+C2=-1\},op(2,dsol_ser_f)),polynom)),\n        z=0..1/9,y=-2..5,color=g
+reen),\n    plot([[1/9,-2],[1/9,5]],color=black),\ntitle=`Asymptotic b
+ehaviours at 1/9 (blue=analytic, green=logarithmic)`);" }}{PARA 13 "" 
+1 "" {INLPLOT "6(-%'CURVESG6$7V7$\"\"!$\"3_0,6z!H6,#!#<7$$\"3\\mmm;arz
+@!#?$\"3:z[!='QcB>F+7$$\"3(HLLL$3VfVF/$\"3(RXPXw!fY=F+7$$\"3q****\\i&*
+)fD'F/$\"3`Ejm\"oJqy\"F+7$$\"3Hnmm\"H[D:)F/$\"3Jf'[(>dXL<F+7$$\"3:++v$
+pU&G5!#>$\"3j]`Jh\">%z;F+7$$\"3SLLLe0$=C\"FD$\"3w@'*p,-3J;F+7$$\"3ILLL
+3RBr;FD$\"3J$QKv/&)za\"F+7$$\"3hmm;zjf)4#FD$\"3m0s=P#f,[\"F+7$$\"3LLL$
+e4;[\\#FD$\"3MQ%QW]dtU\"F+7$$\"3$)****\\i'y]!HFD$\"3!G1(4&\\$e!Q\"F+7$
+$\"3:LL$ezs$HLFD$\"3)[7$Q!HN)Q8F+7$$\"3$*****\\7iI_PFD$\"3$*y8(*y7_-8F
++7$$\"3?nmm;_M(=%FD$\"3QQEN`\"z&p7F+7$$\"3_LLL3y_qXFD$\"3#[s3d<)eV7F+7
+$$\"3X+++]1!>+&FD$\"3#QTc*)pJr@\"F+7$$\"3f******\\Z/NaFD$\"3N!oRW9sI>
+\"F+7$$\"3&*******\\$fC&eFD$\"3SF'p2R$*=<\"F+7$$\"3ELL$ez6:B'FD$\"3\"4
+]>+pGT:\"F+7$$\"36mmm;=C#o'FD$\"3[,l?r6eM6F+7$$\"37nmmm#pS1(FD$\"3bYWm
+4\")>>6F+7$$\"3y****\\i`A3vFD$\"3\"=BgL!o\\-6F+7$$\"3Wlmmm(y8!zFD$\"3X
+y7FCgm)3\"F+7$$\"3:++]i.tK$)FD$\"3'[g=>14W2\"F+7$$\"39++](3zMu)FD$\"3(
+3nfNmN;1\"F+7$$\"3>nmm\"H_?<*FD$\"3q0=&zBg!\\5F+7$$\"3dmm;zihl&*FD$\"3
+-k;\"=mE\"Q5F+7$$\"3VLLL3#G,***FD$\"3U\\c0cV$p-\"F+7$$\"3GLLezw5V5!#=$
+\"3!)=kZyB\"f,\"F+7$$\"3)****\\PQ#\\\"3\"Fbt$\"3vi.Setx15F+7$$\"3MLL$e
+\"*[H7\"Fbt$\"3P>b3%)4at**Fbt7$$\"3!*******pvxl6Fbt$\"3.$o**))=d1))*Fb
+t7$$\"3'*****\\_qn27Fbt$\"3*fp#z*ebQz*Fbt7$$\"3$****\\i&p@[7Fbt$\"3)y;
+Nh5EMr*Fbt7$$\"3$*****\\2'HKH\"Fbt$\"3>BfgOD$zi*Fbt7$$\"3UmmmwanL8Fbt$
+\"3m8C+'\\-Vb*Fbt7$$\"38+++v+'oP\"Fbt$\"3f#fiUD)zy%*Fbt7$$\"3CLLeR<*fT
+\"Fbt$\"3NF%)ypX)HT*Fbt7$$\"3-+++&)Hxe9Fbt$\"3U\\m8uOpV$*Fbt7$$\"3Ymm
+\"H!o-*\\\"Fbt$\"3#\\DP<e()3G*Fbt7$$\"35++DTO5T:Fbt$\"3D\"3$3QGd<#*Fbt
+7$$\"3kmmmT9C#e\"Fbt$\"3vsont<&y:*Fbt7$$\"3!)***\\i!*3`i\"Fbt$\"3,!oY(
+\\H^(4*Fbt7$$\"3]LLL$*zym;Fbt$\"3@1)p5&**RT!*Fbt7$$\"3GLL$3N1#4<Fbt$\"
+3R8Db\"yVf)*)Fbt7$$\"3!om;HYt7v\"Fbt$\"3n`xuANyK*)Fbt7$$\"3&*******p(G
+**y\"Fbt$\"3dl#)e7s[&)))Fbt7$$\"3wmm;9@BM=Fbt$\"3)fsF>6nI$))Fbt7$$\"3?
+LLL`v&Q(=Fbt$\"3@F%4nP1yy)Fbt7$$\"3;++DOl5;>Fbt$\"3'3x!z&**H8u)Fbt7$$
+\"3*****\\P?Wl&>Fbt$\"3X-ZT`'*y)p)Fbt7$$\"36+++++++?Fbt$\"33,gd)G0dl)F
+bt-%'COLOURG6&%$RGBGF(F($\"*++++\"!\")-F$6$7gn7$F($!3$el]D:(Q)y\"F+7$$
+\"3lFjF=g!>U#F/$!3t[PGr$GHc\"F+7$$\"3r]u\"\\\\$>HXF/$!3Q(o_/$Gv*Q\"F+7
+$$\"39,vrc'e!**oF/$!3yB_7=MX;7F+7$$\"3q6c9BGj%G*F/$!3B1#p#3THh5F+7$$\"
+3/E#)>xo)e;\"FD$!3c4Zrx'y#H#*Fbt7$$\"3hG5*>%*3gQ\"FD$!3.cY&f\\(fm!)Fbt
+7$$\"3W%Q;,fKRh\"FD$!3'eB$G@kPlpFbt7$$\"3bvd0`:l\\=FD$!3#*>um<.B>fFbt7
+$$\"3CQ:HiXh%3#FD$!3@v'yD80a&\\Fbt7$$\"3'y^:z*GIEBFD$!3)\\#*>7c.I.%Fbt
+7$$\"3VAo[:@=RDFD$!3Ol0x9lWpKFbt7$$\"3/hl;%pL)yFFD$!3`#H\"***[0gX#Fbt7
+$$\"3Z3OD0$p%>IFD$!3(*[08Oje!o\"Fbt7$$\"3q=/B0jO^KFD$!3(=%GgYfOg'*FD7$
+$\"3i*)*Qt*4&>Y$FD$!3:l:*e/^SS$FD7$$\"3nyNWklN7PFD$\"3k^k`JU.(z$FD7$$
+\"3hxM`DH[CRFD$\"3$e![ZO>%3t*FD7$$\"3!f(G37jBrTFD$\"3xk!*3Ch+[;Fbt7$$
+\"3Z/9$*p[l*Q%FD$\"3zK#f,.nYB#Fbt7$$\"36//PXYHHYFD$\"3@pz(G%RwpGFbt7$$
+\"3F&pe9Q)[d[FD$\"3d'ohlux)oMFbt7$$\"3'G#>(fg%e&4&FD$\"3p\\d+$*\\\"34%
+Fbt7$$\"3_!GscEJUJ&FD$\"3q<zh#=^8m%Fbt7$$\"3$R%oHE72]bFD$\"3a@!=.:6&y_
+Fbt7$$\"31ZBxjE/&z&FD$\"3KBZ-#ofT#fFbt7$$\"3].DB?5H3gFD$\"3'zo!))>)QA
+\\'Fbt7$$\"3Y-\"Rt30'QiFD$\"3'[]P?)*)\\9rFbt7$$\"3'3!z!\\0UlZ'FD$\"3*p
+%R^$*ehpxFbt7$$\"3m+CmdpJ4nFD$\"3&f%Gf6^eD%)Fbt7$$\"3$)y)R^kQX$pFD$\"3
+p^Ia)4Xv2*Fbt7$$\"34%4P)H*3Y=(FD$\"3.q*3ct<a#)*Fbt7$$\"3:sF'H?3$4uFD$
+\"3$[\"f7'*pI_5F+7$$\"38mR7QEA\\wFD$\"3blw!)o&*)*H6F+7$$\"30+jnu2imyFD
+$\"3kHk)QTXP?\"F+7$$\"3t\"o+.O%H/\")FD$\"3([ooADE()G\"F+7$$\"3!edP?oEz
+K)FD$\"3cfnokRht8F+7$$\"3!\\;x\\*ooh&)FD$\"3ns<phm[o9F+7$$\"3%oX-1BI-z
+)FD$\"3Kuk1(y'fo:F+7$$\"3\"3;3F#R\\H!*FD$\"3%Qny!)H@Io\"F+7$$\"3e-.P&H
+L*f#*FD$\"3yG`nnc!\\!=F+7$$\"3,/M,P3f&\\*FD$\"3*G_\">kn#[%>F+7$$\"3Bu2
+B:qHH(*FD$\"3'HZ'ea1%Q5#F+7$$\"3_<yA@([S%**FD$\"3MJX^UZMuAF+7$$\"3%>!=
+5Ty,>5Fbt$\"34F;J-Gy6DF+7$$\"3$3(*pR(>.T5Fbt$\"3)QT!y^L8%y#F+7$$\"3i\\
+N9JO]k5Fbt$\"36V_\"H_6$*=$F+7$$\"3-$4flJOd2\"Fbt$\"3d.HW8Y!HY$F+7$$\"3
+UOY(>+pp3\"Fbt$\"3Oam%z@t>%QF+7$$\"3Ix4BHX+$4\"Fbt$\"35p%oWr/w7%F+7$$
+\"3<=t[c+/*4\"Fbt$\"3)H!)GsGn0`%F+7$$\"3h)[:,#y0-6Fbt$\"3'p5W'HGw;[F+7
+$$\"30fOu$ev]5\"Fbt$\"3:!=1&=Y^?_F+7$$\"3?WxblWe16Fbt$\"36J_->=A2bF+7$
+$\"3\\H=PZL436Fbt$\"3qFQ*R1)f6fF+7$$\"3?s)y#)yZ)36Fbt$\"3(Q#eR.jn)>'F+
+7$$\"3y9f=HAg46Fbt$\"3)Gh#>G.[.mF+7$$\"3NdH4qmN56Fbt$\"3sIa]d!yeH(F+7$
+$\"3$******46666\"Fbt$\"3rBQx%3&e-B!#;-Fi[l6&F[\\lF(F\\\\lF(-F$6$7$7$$
+\"3066666666Fbt$!\"#F(7$F^_m$\"\"&F(-Fi[l6&F[\\lF(F(F(-%&TITLEG6#%jnAs
+ymptotic~behaviours~at~1/9~(blue=analytic,~green=logarithmic)G-%+AXESL
+ABELSG6$%\"zG%\"yG-%%VIEWG6$;F($\"+++++?!#5;F`_mFc_m" 2 574 574 574 2 
+0 1 0 2 9 0 4 2 1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 13 "The function " }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%\"zG
+" }{TEXT -1 44 " is a linear combination of both behaviours." }}}}
+{SECT 1 {PARA 5 "" 0 "the connection" {TEXT -1 14 "The connection" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 51 "To perform the connection, we dete
+rmine values for " }{XPPEDIT 18 0 "_C1" "I$_C1G6\"" }{TEXT -1 5 " and \+
+" }{XPPEDIT 18 0 "_C2" "I$_C2G6\"" }{TEXT -1 15 " above so that " }
+{XPPEDIT 18 0 "dsol_ser_f" "I+dsol_ser_fG6\"" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "ser_j[precise]" "&%&ser_jG6#%(preciseG" }{TEXT -1 12 " \+
+agree when " }{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT -1 21 " takes values
+ around " }{XPPEDIT 18 0 "1/18" "*&\"\"\"\"\"\"\"#=!\"\"" }{TEXT -1 1 
+"." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "Digits:=25:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 25 "We graphically determine " }
+{XPPEDIT 18 0 "_C1" "I$_C1G6\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 153 "plot(subs(_C1=x,map(solve,\{seq(series_j(50,(
+1-(.5+.01*i))/9)=eval(subs(u=.5+.01*i,convert(op(2,dsol_ser_f),polynom
+))),i=1..9)\},_C2)),x=0.85984.. .85986);" }}{PARA 13 "" 1 "" {INLPLOT 
+"6--%'CURVESG6$7S7$$\"&%)f)!\"&$!96)G^lr@@E[]8%!#C7$$\":LLLLL$3VfVS)f)
+!#D$!9w\"\\))p(fL%QO]8%F-7$$\":nmmm;H[D:3%)f)F1$!9-O,<:\"Q&\\g-NTF-7$$
+\":LLLLLe0$=CT)f)F1$!9*o1*yOq(pU9]8%F-7$$\":LLLLL3RBr;%)f)F1$!9d415zSP
+FF+NTF-7$$\":nmmm;zjf)4U)f)F1$!9e3#3?HxL3\"*\\8%F-7$$\":LLLL$e4;[\\U)f
+)F1$!9ceS.N<!zG!)\\8%F-7$$\":++++]i'y]!H%)f)F1$!9;w`8%47)4\"p\\8%F-7$$
+\":LLLL$ezs$HL%)f)F1$!9/ya4(z:%\\v&\\8%F-7$$\":++++]7iI_P%)f)F1$!9#Gs$
+fPQ4Eg%\\8%F-7$$\":nmmmm;_M(=W)f)F1$!9;f?$f!3%H<M\\8%F-7$$\":LLLLL3y_q
+X%)f)F1$!9Zk(QQ;xEtB\\8%F-7$$\":+++++]1!>+X)f)F1$!9T)**fD28%z>\"\\8%F-
+7$$\":+++++]Z/Na%)f)F1$!9oe?p\\*))y<+\\8%F-7$$\":+++++]$fC&e%)f)F1$!9E
+Fg1)oL\\!)))[8%F-7$$\":LLLL$ez6:BY)f)F1$!9H]R#>w+sZy[8%F-7$$\":nmmmm;=
+C#oY)f)F1$!9R6e-$RFl>m[8%F-7$$\":nmmmmm#pS1Z)f)F1$!9P58*4>'=$zb[8%F-7$
+$\":++++]i`A3v%)f)F1$!9pW0V'>F;pV[8%F-7$$\":nmmmmm(y8!z%)f)F1$!9O3])f&
+ppzH$[8%F-7$$\":++++]i.tK$[)f)F1$!9T,SgK<,F7#[8%F-7$$\":++++](3zMu[)f)
+F1$!9c\"o#*>8wc.5[8%F-7$$\":nmmmm\"H_?<\\)f)F1$!9DbX&4[\"pe$)zMTF-7$$
+\":nmmm;zihl&\\)f)F1$!9'\\H+7Tubj(yMTF-7$$\":LLLLL3#G,**\\)f)F1$!9k2Bn
+3SCpgxMTF-7$$\":LLLL$ezw5V])f)F1$!9\")y]Qyt2bSwMTF-7$$\":++++]PQ#\\\"3
+&)f)F1$!9xt*4*3+r'f`Z8%F-7$$\":LLLLLe\"*[H7&)f)F1$!9F_-aLnQ,BuMTF-7$$
+\":++++++dxd;&)f)F1$!9eCb!>a7AjIZ8%F-7$$\":+++++D0xw?&)f)F1$!9$32i\"y@
+?;#>Z8%F-7$$\":++++]i&p@[_)f)F1$!9-NS#4:D1<3Z8%F-7$$\":+++++vgHKH&)f)F
+1$!9PUc]\"3&R1fpMTF-7$$\":nmmmmmZvOL&)f)F1$!9Y%*[Y!*)Qk)[oMTF-7$$\":++
++++]2goP&)f)F1$!9XWo(R\\$G?JnMTF-7$$\":LLLL$eR<*fT&)f)F1$!9?\"=9-\"zRe
+CmMTF-7$$\":+++++])Hxea)f)F1$!9%HPQTzS@!3lMTF-7$$\":nmmm;H!o-*\\&)f)F1
+$!9Q&ep7C6X$)RY8%F-7$$\":++++]7k.6a&)f)F1$!9s$H7(z\"y,PGY8%F-7$$\":nmm
+mm;WTAe&)f)F1$!9u()ztArphrhMTF-7$$\":++++]i!*3`i&)f)F1$!90\\n//iXFagMT
+F-7$$\":LLLLLL*zymc)f)F1$!98NAt^v)f7%fMTF-7$$\":LLLLL3N1#4d)f)F1$!9Nba
+XZNgoDeMTF-7$$\":nmmm;HYt7v&)f)F1$!99%QJz^?p5rX8%F-7$$\":++++++xG**y&)
+f)F1$!9wm\"\\\"yT#[dgX8%F-7$$\":nmmmmT6KU$e)f)F1$!9p&['HEK&Q][X8%F-7$$
+\":LLLLLLbdQ(e)f)F1$!9Xg+(y!HV2x`MTF-7$$\":++++]i`1h\"f)f)F1$!9P2eH:q>
+'>EX8%F-7$$\":++++]P?Wl&f)f)F1$!9fS$)\\laZy^^MTF-7$$\"&')f)F*$!9G!f/R)
+*G%QL]MTF--%'COLOURG6&%$RGBG$\"#5!\"\"\"\"!F`[l-F$6$7S7$F($!9fW3KYO.GF
+=NTF-7$F/$!9*)ym$)y3O`X;NTF-7$F5$!9A=fH$Gv'R([^8%F-7$F:$!9(H$ROH>`b48N
+TF-7$F?$!9x3J<HP]`I6NTF-7$FD$!9gg;2W2cO_4NTF-7$FI$!93ytUpQ(zry]8%F-7$F
+N$!9T8iiaR$Rhh]8%F-7$FS$!9*f*o:29\"\\#R/NTF-7$FX$!97?lLzxh#HE]8%F-7$Fg
+n$!9'f%>u)\\Oc:3]8%F-7$F\\o$!9s?&HY^t0=#*\\8%F-7$Fao$!9B(*f*yFOk>u\\8%
+F-7$Ffo$!9i'3)yXWXQh&\\8%F-7$F[p$!9Wpr)y)GCO(Q\\8%F-7$F`p$!9=b;lJwOLH#
+\\8%F-7$Fep$!9[o$o^Y?A9/\\8%F-7$Fjp$!9S)HDj(RlB#))[8%F-7$F_q$!9AIg%Q%o
+d1(p[8%F-7$Fdq$!9?P(GO)f#eJ`[8%F-7$Fiq$!9<-!3d\\uDLN[8%F-7$F^r$!9+\"f
+\"o5kE3#=[8%F-7$Fcr$!9z47%=QZ3M+[8%F-7$Fhr$!9w%[&z3\"zH$RyMTF-7$F]s$!9
+5>dI]l([BmZ8%F-7$Fbs$!9j2O9`>_^yuMTF-7$Fgs$!9UOp7Nxv[=tMTF-7$F\\t$!9Y7
+shpRLlXrMTF-7$Fat$!9IwKhNg')4npMTF-7$Fft$!9UE-6_TxT#zY8%F-7$F[u$!9\"Q*
+4Fiq\\SBmMTF-7$F`u$!9;yR'GW5XdVY8%F-7$Feu$!93RPN9oV7niMTF-7$Fju$!9gMzO
+ySd3(3Y8%F-7$F_v$!9s?(>%R&)R%R#fMTF-7$Fdv$!9&y&e!p`&peXdMTF-7$Fiv$!9g^
+xP!)*)owxbMTF-7$F^w$!9$GY:MhcYBSX8%F-7$Fcw$!9=kc6$e8T3BX8%F-7$Fhw$!9q3
+^**fW3H^]MTF-7$F]x$!9-f\"*f3uDOy[MTF-7$Fbx$!9evS>!4W=:qW8%F-7$Fgx$!92Y
+ItUm'Qh_W8%F-7$F\\y$!9g!e#R#z'G)\\OW8%F-7$Fay$!9t)>\\;k8!G!=W8%F-7$Ffy
+$!9U'f**)\\6)z],W8%F-7$F[z$!9*e@$=%*3=%*QQMTF-7$F`z$!9u&\\\">zl_NqOMTF
+-7$Fez$!9gKad_,g=*[V8%F--Fjz6&F\\[lF`[lF][lF`[l-F$6$7S7$F($!96Tj&\\2<n
+DP^8%F-7$F/$!9Mc4)))G)p,37NTF-7$F5$!9\"H5CwUuU[1^8%F-7$F:$!9G@S-$)Q$GQ
+!4NTF-7$F?$!9;IwmQDmuT2NTF-7$FD$!9Mn9W.e_V!e]8%F-7$FI$!9/)[_17(*y3V]8%
+F-7$FN$!9AheW$))4AgF]8%F-7$FS$!9zWAA!***)oe6]8%F-7$FX$!9LU)35VJHi&*\\8
+%F-7$Fgn$!99\\K#H$y.-#z\\8%F-7$F\\o$!9gL2l8e]QZ'\\8%F-7$Fao$!9+:;>QW*f
+X[\\8%F-7$Ffo$!9S^Lj1bi1@$\\8%F-7$F[p$!9`\\Now!z4N;\\8%F-7$F`p$!9:\")f
+Q+FMV?!\\8%F-7$Fep$!9J4(\\Z=z,.&)[8%F-7$Fjp$!9I$\\tm1)z<1([8%F-7$F_q$!
+9Kj&QWesF&Q&[8%F-7$Fdq$!9H*y9%3V)G,R[8%F-7$Fiq$!9\")[6&Q([<JF#[8%F-7$F
+^r$!9))=\\E.s8Fs![8%F-7$Fcr$!9'RhkVP+.0\"zMTF-7$Fhr$!9$)*R5NI9\\>wZ8%F
+-7$F]s$!9\\*oWJ`t8<gZ8%F-7$Fbs$!9Tsn#o+=u_VZ8%F-7$Fgs$!9H:tD$z0)Q!HZ8%
+F-7$F\\t$!9)3C+Tn22R8Z8%F-7$Fat$!9bJ#3&\\6pCspMTF-7$Fft$!9v)4I(oyR49oM
+TF-7$F[u$!9(o(zM7%)G2hmMTF-7$F`u$!9FruF*z/p6\\Y8%F-7$Feu$!9=TY4X%*G]Qj
+MTF-7$Fju$!9)\\N.2'*=*\\vhMTF-7$F_v$!9D%*4V!fg$zFgMTF-7$Fdv$!9d3M+w)Q7
+j'eMTF-7$Fiv$!9^'Qz_z9rVrX8%F-7$F^w$!9o232Vr([bbX8%F-7$Fcw$!9oZaHHo3F+
+aMTF-7$Fhw$!9tr9[6%H4xBX8%F-7$F]x$!9Dku)zs<V63X8%F-7$Fbx$!9[JS3Z4<.@\\
+MTF-7$Fgx$!9***3!QXXgCiZMTF-7$F\\y$!9`5hK16&QjhW8%F-7$Fay$!9y&G*[*4,7
+\"\\WMTF-7$Ffy$!9+`k@\"ejU&*HW8%F-7$F[z$!9;IGQ&e[q+9W8%F-7$F`z$!9Jmke:
+!HNu)RMTF-7$Fez$!9jhJA=FzSBQMTF--Fjz6&F\\[lF][lF][lF`[l-F$6$7S7$F($!9?
+w\">84@!)G/^8%F-7$F/$!9+DaFJu&RE*3NTF-7$F5$!9I9K!R(**f\">w]8%F-7$F:$!9
+Z$e,z\"oO!\\h]8%F-7$F?$!9*y2BcM%o\"pY]8%F-7$FD$!9UzO!zUPL'>.NTF-7$FI$!
+9K)HRbZu#3$=]8%F-7$FN$!9^L-[?xCpT+NTF-7$FS$!9c`8JCgkY&*)\\8%F-7$FX$!9*
+ysJs>R4(\\(\\8%F-7$Fgn$!99RUZVJ.y*f\\8%F-7$F\\o$!9xUd^ILFsn%\\8%F-7$Fa
+o$!9Ro$Hob:d!>$\\8%F-7$Ffo$!9E^ZdoU6yp\"\\8%F-7$F[p$!9x))e35Wg#f-\\8%F
+-7$F`p$!9!H?/@I$=H&*)[8%F-7$Fep$!9jyFd$37b*R([8%F-7$Fjp$!9As%ok+bk$3'[
+8%F-7$F_q$!9X?%QaLV$Hb%[8%F-7$Fdq$!9#[W>j\"e&*z>$[8%F-7$Fiq$!9$\\TZaCI
+T6<[8%F-7$F^r$!9WlCYS)[$eH![8%F-7$Fcr$!9/=pM$)fF)=)yMTF-7$Fhr$!9r(fvFQ
+QZiuZ8%F-7$F]s$!98RjF52j%**fZ8%F-7$Fbs$!96oRSb01)zWZ8%F-7$Fgs$!9Jb#GDc
+,%p:tMTF-7$F\\t$!9yQoERu3#G<Z8%F-7$Fat$!90c[CNR*=_-Z8%F-7$Fft$!9P>9$G@
+C>3)oMTF-7$F[u$!9^Pp)p,606uY8%F-7$F`u$!9h**=uB(QwfeY8%F-7$Feu$!9fZHR0I
+jeYkMTF-7$Fju$!9^wr&)z\"pdxHY8%F-7$F_v$!9&eWAa_#o*G;Y8%F-7$Fdv$!9QY]%)
+pw#ea,Y8%F-7$Fiv$!9K3PAm#4In(eMTF-7$F^w$!9pkF^jn\"><tX8%F-7$Fcw$!9=(f?
+PG[W**eX8%F-7$Fhw$!9OaEx%o_>:WX8%F-7$F]x$!9xj#R0Nlo&)HX8%F-7$Fbx$!97>Q
+2mQ2Q_^MTF-7$Fgx$!9/O$ofNL.u+X8%F-7$F\\y$!9(\\\"RE/bT=u[MTF-7$Fay$!9*e
+E_&oU**\\@ZMTF-7$Ffy$!9gD3;*HOP\\eW8%F-7$F[z$!9y=!H!))pJLRWMTF-7$F`z$!
+9t![M'Ry8(**HW8%F-7$Fez$!9%4tu#)453-:W8%F--Fjz6&F\\[lF`[lF`[lF][l-F$6$
+7S7$F($!9z\"Hd#QEi\"yP]8%F-7$F/$!9Cx^*HA@9pE]8%F-7$F5$!9VY.cqi*=/<]8%F
+-7$F:$!9x)HP#\\i***=1]8%F-7$F?$!98-uM!zihE&*\\8%F-7$FD$!978F/0%[UR%)\\
+8%F-7$FI$!9[OE&z1#f9V(\\8%F-7$FN$!94YlPn<pxQ'\\8%F-7$FS$!9@\"e!QYX$Q3`
+\\8%F-7$FX$!9ULVQiLfCB%\\8%F-7$Fgn$!9%pr&zD8Rd7$\\8%F-7$F\\o$!9d2['zu$
+R4:#\\8%F-7$Fao$!9h1TF#Gda`5\\8%F-7$Ffo$!9Za65z2Y;&**[8%F-7$F[p$!9!\\8
+$*y(eh(*)))[8%F-7$F`p$!96\\U2/uoa#z[8%F-7$Fep$!9?,JpkFJ)yn[8%F-7$Fjp$!
+9'zo*H)R*yu!e[8%F-7$F_q$!9Gv(Rj`_cxY[8%F-7$Fdq$!94%*QW[=+un$[8%F-7$Fiq
+$!9<KIYneg+e#[8%F-7$F^r$!9>\"Hp9\"zL^`\"[8%F-7$Fcr$!9K0<e**Hi[W![8%F-7
+$Fhr$!9h4:A^s_OWzMTF-7$F]s$!9t\"3h%*RHrj$yMTF-7$Fbs$!9&Hpap9!f>CxMTF-7
+$Fgs$!9c\"pn;D*oaEwMTF-7$F\\t$!9C')fbm(G$3@vMTF-7$Fat$!9\"4b>LU1H@TZ8%
+F-7$Fft$!9xvh4*GhQbIZ8%F-7$F[u$!9>Pd%Q/(oS-sMTF-7$F`u$!9tI'oDRl'*y3Z8%
+F-7$Feu$!9ssL8MJT+&)pMTF-7$Fju$!99EKL^,W9voMTF-7$F_v$!9GD%yAz:&fvnMTF-
+7$Fdv$!9C^ytFS:wmmMTF-7$Fiv$!9>20_n(edVcY8%F-7$F^w$!9P,1#[3&fJdkMTF-7$
+Fcw$!9nD;*>a=jENY8%F-7$Fhw$!9Z$)4+tQ95ViMTF-7$F]x$!9$zZ:X\\X!ePhMTF-7$
+Fbx$!9^%pv\"H3+nHgMTF-7$Fgx$!9LOe%>Y6`E#fMTF-7$F\\y$!9:CO#zOq:V#eMTF-7
+$Fay$!9]m41PL*4;rX8%F-7$Ffy$!9i>K8$)[X!3hX8%F-7$F[z$!9^h&p6P)\\K.bMTF-
+7$F`z$!9R$*3(3eK`/SX8%F-7$Fez$!9B\"HPR.o.**GX8%F--Fjz6&F\\[lF][lF`[lF]
+[l-F$6$7S7$F($!9MK1[b?vJ+3NTF-7$F/$!9t_;a_Qm<i1NTF-7$F5$!9?\"p#pq&*4)>
+a]8%F-7$F:$!9*=#zw[C%3oS]8%F-7$F?$!90YqEsT)R2F]8%F-7$FD$!9L`a'z\"pzJN,
+NTF-7$FI$!9)oD&f7eXw4+NTF-7$FN$!9A3LsJt7wz)\\8%F-7$FS$!9zeMk>!p6`u\\8%
+F-7$FX$!97\\ZQf)G$H6'\\8%F-7$Fgn$!93<p+f*))QMZ\\8%F-7$F\\o$!9g^F=\"*fm
+,_$\\8%F-7$Fao$!9\\m452))RK:#\\8%F-7$Ffo$!9Uo^k)H/q!y!\\8%F-7$F[p$!98p
+;*fVV+e%*[8%F-7$F`p$!9oRe?2epoD)[8%F-7$Fep$!9_AQ;9</'Go[8%F-7$Fjp$!9?[
+b`Q-w'=c[8%F-7$F_q$!9G%y'[J&>C6U[8%F-7$Fdq$!9z)Q#\\+KCa'H[8%F-7$Fiq$!9
+ryDm]#\\c)f\"[8%F-7$F^r$!99\"\\D&pa\"*pH![8%F-7$Fcr$!9DWe/4FO*Q*yMTF-7
+$Fhr$!9PFD<&)e<=pxMTF-7$F]s$!9q`h!o4;jYjZ8%F-7$Fbs$!9$=r7IN9O\\\\Z8%F-
+7$Fgs$!9ixJw4kLIttMTF-7$F\\t$!9-Pc;2Im$>CZ8%F-7$Fat$!9Rs\\'y&R>A1rMTF-
+7$Fft$!9BGKq,#f^M(pMTF-7$F[u$!9Z>\"4FQX*)\\%oMTF-7$F`u$!9')zV@c^TN-nMT
+F-7$Feu$!9HoPd^))**=ulMTF-7$Fju$!9j+V3P)QZtVY8%F-7$F_v$!9(=o6IQlZLJY8%
+F-7$Fdv$!9%Q**>b8>$yxhMTF-7$Fiv$!9QP1>&pfF-0Y8%F-7$F^w$!9')>qlKZ_*o\"f
+MTF-7$Fcw$!9kX=Jj/&QlyX8%F-7$Fhw$!9.j=s'e2n+lX8%F-7$F]x$!9%*G-;&*p)G'=
+bMTF-7$Fbx$!9Bim@O?V@%QX8%F-7$Fgx$!9;[tx5\"z74DX8%F-7$F\\y$!9S_bU))HDU
+G^MTF-7$Fay$!9ch:K]n[.))\\MTF-7$Ffy$!9dcShpo/Zi[MTF-7$F[z$!9<Wq\\KIEfG
+ZMTF-7$F`z$!9@,(\\wlXa/gW8%F-7$Fez$!9k*G)\\@*[_FYW8%F--Fjz6&F\\[lF`[lF
+][lF][l-F$6$7S7$F($!9'\\$H+e`CR>1NTF-7$F/$!9HSb>;iAi\"\\]8%F-7$F5$!9gL
+!f#z,,X!Q]8%F-7$F:$!9.#=&RK!QDaD]8%F-7$F?$!9%y!4\\%Q\">dH,NTF-7$FD$!95
+Y%GBpg;V+]8%F-7$FI$!9kE)f6O!*)=)))\\8%F-7$FN$!90MO9@$RXzw\\8%F-7$FS$!9
+!\\'pau#Q*eV'\\8%F-7$FX$!9Mh*>#e$=K'>&\\8%F-7$Fgn$!90>Ri'z'p7#R\\8%F-7
+$F\\o$!9u\\l\"\\YI?)z#\\8%F-7$Fao$!9\"R@+::g*Q`\"\\8%F-7$Ffo$!9Z%ybm<w
+Rk-\\8%F-7$F[p$!9NGdc$z1+T!*[8%F-7$F`p$!9(HM2&e0R+$z[8%F-7$Fep$!9!o&\\
+$*4B)**3m[8%F-7$Fjp$!9oF9H6P.**[&[8%F-7$F_q$!9RJIIx+I\")=%[8%F-7$Fdq$!
+9>Ac9T+Se.$[8%F-7$Fiq$!9+q/2?C&fr<[8%F-7$F^r$!9tyhP1ENxc![8%F-7$Fcr$!9
+%))eQGjOj6$zMTF-7$Fhr$!9%[#zJWGS\"e\"yMTF-7$F]s$!9f16(zV=%R\"pZ8%F-7$F
+bs$!9e'[!z&R$p:ivMTF-7$Fgs$!9Xb6&\\v_b'\\uMTF-7$F\\t$!9)3\\q^l#4:GtMTF
+-7$Fat$!9pz2s[%yCE?Z8%F-7$Fft$!9aFD4%Q%>#)zqMTF-7$F[u$!9<LF76\")Q+hpMT
+F-7$F`u$!9&fj-v.ow!HoMTF-7$Feu$!9$yVD9GAM0rY8%F-7$Fju$!9h%*)=()p%['ReY
+8%F-7$F_v$!9X.t(z0=u#pkMTF-7$Fdv$!9$zOn@%))p)QMY8%F-7$Fiv$!9#>LG`AT2fA
+Y8%F-7$F^w$!9)pal()3w%e-hMTF-7$Fcw$!9,$fL\\yK9?)fMTF-7$Fhw$!9lT%QW$e#)
+ybeMTF-7$F]x$!96h$*o3^v@MdMTF-7$Fbx$!9O9,)pS%R*)4cMTF-7$Fgx$!9)4_W)G*z
+*f'[X8%F-7$F\\y$!9TD.*o]G0LPX8%F-7$Fay$!9p\"p$R\\')pXV_MTF-7$Ffy$!9+7#
+o:.7>t7X8%F-7$F[z$!9$*ox%R=$>\\.]MTF-7$F`z$!9YP;XZ7N(\\)[MTF-7$Fez$!9@
+j4e&\\G4wvW8%F-Fiz-F$6$7S7$F($!9;hf_QK4#[Y_8%F-7$F/$!9]f(fu\\A0?E_8%F-
+7$F5$!9\"p^F1COOb3_8%F-7$F:$!9:08g9q'yq)=NTF-7$F?$!9([z&yZraI(o^8%F-7$
+FD$!9y8>4&*f<[)[^8%F-7$FI$!9(Ra!)e\"Gn9/8NTF-7$FN$!9z)H\")R)z%yK6^8%F-
+7$FS$!9V5g%)QkA)e\"4NTF-7$FX$!91*o^.65>\">2NTF-7$Fgn$!9potyR-Ss;0NTF-7
+$F\\o$!9d?%*>H*Ga%Q.NTF-7$Fao$!9#Hj[,a\"[wP,NTF-7$Ffo$!9v/O$\\7H^i$*\\
+8%F-7$F[p$!9@uD2=rc0U(\\8%F-7$F`p$!9frVb)QW2dc\\8%F-7$Fep$!9DpZe'[M7gN
+\\8%F-7$Fjp$!9SkVZC!4t$y\"\\8%F-7$F_q$!9MB(=1rSO<(*[8%F-7$Fdq$!9xS_+HH
+z#))y[8%F-7$Fiq$!9dP7:pR$[\")e[8%F-7$F^r$!9(yvr/Q\"R0(R[8%F-7$Fcr$!9,+
+TN^Fpm(>[8%F-7$Fhr$!9?'yS<AVnX,[8%F-7$F]s$!9m31zl!*)pq\"yMTF-7$Fbs$!9o
+?S/l]a#>hZ8%F-7$Fgs$!9\")G`[c7mMLuMTF-7$F\\t$!9t-$G0^dw/CZ8%F-7$Fat$!9
+WV,G1aHATqMTF-7$Fft$!9>Mnd+f@HYoMTF-7$F[u$!9-!3NL;f'odmMTF-7$F`u$!9\\
+\"*G_VlAF[kMTF-7$Feu$!9Fj*yn#zT5giMTF-7$Fju$!9ouX-h$e%>fgMTF-7$F_v$!9y
+xSs!*G19xeMTF-7$Fdv$!9#)ztfmpv5ycMTF-7$Fiv$!99A^*G>(H$3\\X8%F-7$F^w$!9
+!f[@rl0x]HX8%F-7$Fcw$!9\"*QO`Qo)*o.^MTF-7$Fhw$!9A(p<'>>_K.\\MTF-7$F]x$
+!9=*QeB\"[-N5ZMTF-7$Fbx$!9xq8#4#oa+8XMTF-7$Fgx$!9:Mk(4F![H<VMTF-7$F\\y
+$!9b*>>Ro-du8W8%F-7$Fay$!9Ve>*35kU8$RMTF-7$Ffy$!96\\#*[@x9*puV8%F-7$F[
+z$!9pLhF3'oM/bV8%F-7$F`z$!9=L%)y)ov/BOV8%F-7$Fez$!9feI3IbM8gJMTF-Fgdl-
+F$6$7S7$F($!9?-o!z.nqjH]8%F-7$F/$!9>LR$*>'\\FC>]8%F-7$F5$!9ug*oEh4()>5
+]8%F-7$F:$!9y))H)ytSx-+]8%F-7$F?$!9]iz<z?N*y*)\\8%F-7$FD$!9i()Gd%pC'*f
+z\\8%F-7$FI$!9E*)e9LIW_,(\\8%F-7$FN$!9#o&f&[iL/Pg\\8%F-7$FS$!9SRM\\,b'
+QD]\\8%F-7$FX$!9Lz[SS8up,%\\8%F-7$Fgn$!9n]sIW,)pzH\\8%F-7$F\\o$!9=LGxO
+kkg1#\\8%F-7$Fao$!9G?B%oh)Hv.\"\\8%F-7$Ffo$!9g$Gn0<=x/+\\8%F-7$F[p$!9k
+b-Yc2=&4!*[8%F-7$F`p$!9.;rK9LKd5)[8%F-7$Fep$!9h\"[V`lO/Jq[8%F-7$Fjp$!9
+cA0u$)RT17'[8%F-7$F_q$!9kSK&eKrih][8%F-7$Fdq$!9qxi+V1?U7%[8%F-7$Fiq$!9
+=xSk$Rft&4$[8%F-7$F^r$!9v`7;r$eP;@[8%F-7$Fcr$!9t-UT?J;X4\"[8%F-7$Fhr$!
+95^i-!y-8c,[8%F-7$F]s$!9$z^>uoT&R9zMTF-7$Fbs$!9>(>K8ewe#4yMTF-7$Fgs$!9
+Q@!o'*>+PxrZ8%F-7$F\\t$!9aSbSv*)4*)=wMTF-7$Fat$!92Bm\"=qQtn^Z8%F-7$Fft
+$!9'p1dX_BroTZ8%F-7$F[u$!9;kZE`m2@?tMTF-7$F`u$!9%[Gr&='z&)G@Z8%F-7$Feu
+$!9#4w4eo`\\k6Z8%F-7$Fju$!9Gsi%=hC$[8qMTF-7$F_v$!9,Kw%3H[!=?pMTF-7$Fdv
+$!9nv-2B=f<=oMTF-7$Fiv$!98nG0Fsv>AnMTF-7$F^w$!9Fy9)Qeas=iY8%F-7$Fcw$!9
+^HBlv%\\'yBlMTF-7$Fhw$!9[mlaT*[*4@kMTF-7$F]x$!9d'G%>j)p*>AjMTF-7$Fbx$!
+9B/-D9y.1@iMTF-7$Fgx$!9/1b3HU&e27Y8%F-7$F\\y$!9\\E&)))3s:fGgMTF-7$Fay$
+!9,(f<+K#y&H#fMTF-7$Ffy$!9h!>0D*QxZGeMTF-7$F[z$!9[%4zoJEUxsX8%F-7$F`z$
+!9([v'HJfbKJcMTF-7$Fez$!9>jTA^VErFbMTF-F_^m-%+AXESLABELSG6$%\"xG%!G-%%
+VIEWG6$;F(Fez%(DEFAULTG" 2 576 576 576 2 0 1 0 2 9 0 4 2 1.000000 
+45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 28 "This determines a val
+ue for " }{XPPEDIT 18 0 "_C2" "I$_C2G6\"" }{TEXT -1 1 "." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 133 "map(solve,subs(_C1=.85985,\{seq(se
+ries_j(50,(1-(.5+.01*i))/9)=eval(subs(u=.5+.01*i,convert(op(2,dsol_ser
+_f),polynom))),i=1..9)\}),_C2);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<+$
+!:#))4XI%Q>xC\"yMT!#D$!:y8v*e'*[v)zfZ8%F&$!:1:H(4O`*fQ$yMTF&$!:(3\\>zE
+p3])oZ8%F&$!:!p#[lXplT?\"zMTF&$!:+5Y*[)[+N:jZ8%F&$!:vN&pz%f:WlfZ8%F&$!
+:(=RzA]`F+exMTF&$!:!fQ\"[%**oJBewMTF&" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 46 "fsol:=\{_C1=.85985,_C2=convert(\",`+`)/nops(\")\};" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fsolG<$/%$_C1G$\"&&)f)!\"&/%$_C2G$
+!:X&3Y.>c--@xMT!#D" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 34 "Plugging th
+e previous values into " }{XPPEDIT 18 0 "dsol_ser_f" "I+dsol_ser_fG6\"
+" }{TEXT -1 56 " yields the following truncated asymptotic expansion o
+f " }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 1 ":" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 101 "subs(fsol,collect(subs(u=
+1-9*z,convert(series(op(2,dsol_ser_f),u,3),polynom)),[ln(1-9*z),z],nor
+mal));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,**&,(*$%\"zG\"\"#$!:Skn!4uh
+iT42L_!#CF'$\":w0FO'p/lw$GK4#F+$!:m#=uwENZoK_9e!#D\"\"\"F1-%#lnG6#,&F1
+F1F'!\"*F1F1F&$\":uQQ]F\"o\")3&4zC#F+F'$!:)erDu*3q>O7(Q5F+$\":!yhY&H\"
+p=a^5v%*F0F1" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 71 "Once again, we co
+mpute a more precise expansion, but do not display it." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 96 "j_num:=subs(fsol,collect(subs(u=1-9
+*z,convert(op(2,dsol_ser_f),polynom)),[ln(1-9*z),z],normal)):" }}}}
+{SECT 1 {PARA 5 "" 0 "" {TEXT -1 9 "Plotting " }{XPPEDIT 18 0 "P[3](z)
+" "-&%\"PG6#\"\"$6#%\"zG" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 52 "We hav
+e three means to evaluate numerical values of " }{XPPEDIT 18 0 "P[3](z
+)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 94 ": its Taylor series at 0, the
+ differential equation it satisfies, the asymptotic expansion at " }
+{XPPEDIT 18 0 "1/9" "*&\"\"\"\"\"\"\"\"*!\"\"" }{TEXT -1 1 "." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "The following plot is the numerica
+lly unstable result of following the graph of " }{XPPEDIT 18 0 "P[3]" 
+"&%\"PG6#\"\"$" }{TEXT -1 103 " by using the differential equation.  T
+he method used is the fourth-order classical Runge-Kutta method." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 221 "pl[RungeKutta]:=subs(\{LINE
+=POINT,COLOR(RGB,.9,.9,.2)=COLOR(RGB,0,0,0)\},DEtools[DEplot](remove(t
+ype,double_inv_borel(power_j(3),j,z),equation),j(z),z=0.0001.. 1/9,[[j
+(.0000001)=1,D(j)(.0000001)=3]],j=0..5,stepsize=.0005)):" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 51 "The following plot is the result of the c
+onnection." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 68 "pl[connection
+]:=plot(j_num,z=0..1/9,y=0..5,style=point,color=green):" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 162 "plots[display](eval(subs(COLOUR=pr
+oc() COLOUR(RGB,1.,0,0) end,pl[Taylor])),pl[RungeKutta],pl[connection]
+,title=`black=Runge-Kutta, red=Taylor, green=connection`);" }}{PARA 
+13 "" 1 "" {INLPLOT "6*-%'CURVESG6%7S7$\"\"!$\"\"\"F(7$$\"3lFjF=g!>U#!
+#?$\"3&3`Cg/bt+\"!#<7$$\"3r]u\"\\\\$>HXF.$\"3%[k-J?/R,\"F17$$\"39,vrc'
+e!**oF.$\"3VM0L%>V9-\"F17$$\"3q6c9BGj%G*F.$\"31\"\\<M\\E#H5F17$$\"3/E#
+)>xo)e;\"!#>$\"3<MXPNe<P5F17$$\"3hG5*>%*3gQ\"FD$\"3lO-GdctW5F17$$\"3W%
+Q;,fKRh\"FD$\"3(*eIps_w_5F17$$\"3bvd0`:l\\=FD$\"3*pNXGQ'Hh5F17$$\"3CQ:
+HiXh%3#FD$\"3,HVTy</q5F17$$\"3'y^:z*GIEBFD$\"3m!Hs!eIIz5F17$$\"3VAo[:@
+=RDFD$\"3pdZwZcp(3\"F17$$\"3/hl;%pL)yFFD$\"3Un]<bAU(4\"F17$$\"3Z3OD0$p
+%>IFD$\"3TC9:cG]26F17$$\"3q=/B0jO^KFD$\"3P61)oRLv6\"F17$$\"3i*)*Qt*4&>
+Y$FD$\"3?q,8Oq#p7\"F17$$\"3nyNWklN7PFD$\"3q;YW(Gs%Q6F17$$\"3hxM`DH[CRF
+D$\"3[_%)Qf<f[6F17$$\"3!f(G37jBrTFD$\"3.[([^N\"yg6F17$$\"3Z/9$*p[l*Q%F
+D$\"3$)eHg]=(><\"F17$$\"36//PXYHHYFD$\"3z8IFYQr%=\"F17$$\"3F&pe9Q)[d[F
+D$\"35xTWe;L(>\"F17$$\"3'G#>(fg%e&4&FD$\"31XcC3)R5@\"F17$$\"3_!GscEJUJ
+&FD$\"371p&)=U:C7F17$$\"3$R%oHE72]bFD$\"3g')oQL,\"*Q7F17$$\"31ZBxjE/&z
+&FD$\"3LZqsKX'\\D\"F17$$\"3].DB?5H3gFD$\"3:=F)G5&fp7F17$$\"3Y-\"Rt30'Q
+iFD$\"3&=V%>?<9'G\"F17$$\"3'3!z!\\0UlZ'FD$\"3)3z1!p:7/8F17$$\"3m+CmdpJ
+4nFD$\"3IBEkM[mA8F17$$\"3$)y)R^kQX$pFD$\"3%yKxTq!fT8F17$$\"34%4P)H*3Y=
+(FD$\"3TW2\"fN`QO\"F17$$\"3:sF'H?3$4uFD$\"3))f;+QD4&Q\"F17$$\"38mR7QEA
+\\wFD$\"3a)*R#><)>49F17$$\"30+jnu2imyFD$\"3#*Rc9ftWK9F17$$\"3t\"o+.O%H
+/\")FD$\"3b9[^_!f&f9F17$$\"3!edP?oEzK)FD$\"3<:HU:w&o[\"F17$$\"3!\\;x\\
+*ooh&)FD$\"36sWV@AX<:F17$$\"3%oX-1BI-z)FD$\"3f`A;7ci\\:F17$$\"3\"3;3F#
+R\\H!*FD$\"3a^BAq)zfe\"F17$$\"3e-.P&HL*f#*FD$\"3K1lC2f(Qi\"F17$$\"3,/M
+,P3f&\\*FD$\"3:&)Hg9.!fm\"F17$$\"3Bu2B:qHH(*FD$\"3$3X#RiuA6<F17$$\"3_<
+yA@([S%**FD$\"32I(3R-akv\"F17$$\"3%>!=5Ty,>5!#=$\"3]nz#ot(*H\"=F17$$\"
+3$3(*pR(>.T5Fby$\"3-i`(>AE$o=F17$$\"3i\\N9JO]k5Fby$\"3Y'p!o!obG$>F17$$
+\"3UOY(>+pp3\"Fby$\"3^g!p9B#f+?F17$$\"3$******46666\"Fby$\"3RjX)*)fx13
+#F1-%'COLOURG6&%$RGBGF)F(F(-%&STYLEG6#%&POINTG-F$6%7UF'7$F,$\"3jIX-Y]N
+25F1F27$F8$\"3wN0L%>V9-\"F17$F=$\"38YvT$\\E#H5F17$FB$\"31C_PNe<P5F17$F
+H$\"3)*f\\GdctW5F17$FM$\"3#>#)=FFlF0\"F17$FR$\"3xEM'HQ'Hh5F17$FW$\"37k
+Y')y</q5F17$Ffn$\"36/[hfIIz5F17$F[o$\"3]Fl*=l&p(3\"F17$F`o$\"3+fcgmAU(
+4\"F17$Feo$\"3FL*3a)G]26F17$Fjo$\"37#>\\YYLv6\"F17$F_p$\"3yYHgur#p7\"F
+17$Fdp$\"3d#R\\\\fs%Q6F17$Fip$\"3gc,'3M#f[6F17$F^q$\"3V1x0GDyg6F17$Fcq
+$\"3'[>Id'R(><\"F17$Fhq$\"3o=')zkxr%=\"F17$F]r$\"3'=m<I_Qt>\"F17$Fbr$
+\"34M5MG=067F17$Fgr$\"31mB8BR<C7F17$F\\s$\"3?eDUgI%*Q7F17$Fas$\"3dB)p(
+o&>]D\"F17$Ffs$\"3#4')HM!*z'p7F17$F[t$\"3&>@r[2viG\"F17$F`t$\"36JRHW9L
+/8F17$Fet$\"3/Zra`x)HK\"F17$Fjt$\"3%H5![%Gv?M\"F17$F_u$\"3N#)o&\\.0YO
+\"F17$Fdu$\"3(*y)>$3r>'Q\"F17$Fiu$\"3#Q9@B&*[3T\"F17$F^v$\"3.)fU,L0[V
+\"F17$Fcv$\"3@rb`P\\,j9F17$Fhv$\"3`Wvj\\ox\"\\\"F17$F]w$\"3HBtCFD_C:F1
+7$Fbw$\"3G^:$G$ykf:F17$Fgw$\"37bM6T*R.g\"F17$F\\x$\"3kJ+7?&ySk\"F17$Fa
+x$\"3)y'RG9$3Wp\"F17$Ffx$\"3AK1jma;^<F17$F[y$\"3Mn*3k^+2\"=F17$F`y$\"3
+`+[W[cu*)=F17$Ffy$\"3$*o**po%\\E(>F17$F[z$\"3)>i^/[#4x?F17$$\"3-$4flJO
+d2\"Fby$\"3O\\@Tj4=M@F17$F`z$\"3[N?#o#*fm>#F17$$\"3<=t[c+/*4\"Fby$\"3h
+RlW*4#fqAF17$Fez$\"3Oc!pc#f]_BF1FizF][l-F$6%7XF'7$F,$\"3jGX-Y]N25F17$F
+3$\"3iWE5.U!R,\"F17$F8$\"35N0L%>V9-\"F17$F=$\"3oXvT$\\E#H5F17$FB$\"3tA
+_PNe<P5F1F`\\l7$FM$\"3.@)=FFlF0\"F17$FR$\"3aEM'HQ'Hh5F17$FW$\"3BjY')y<
+/q5F17$Ffn$\"3x-[hfIIz5F1F_]l7$F`o$\"3*=m0mEAu4\"F17$Feo$\"3pj*3a)G]26
+F17$Fjo$\"3wf$\\YYLv6\"F17$F_p$\"3#ye.Y<Fp7\"F17$Fdp$\"3QpA&\\fs%Q6F17
+$Fip$\"3P;'p3M#f[6F17$F^q$\"3\")HH4GDyg6F17$Fcq$\"31)>Oe'R(><\"F17$Fhq
+$\"3q]L8lxr%=\"F17$F]r$\"3T>$oR_Qt>\"F17$Fbr$\"33XG.J=067F17$Fgr$\"3.T
+K')HR<C7F17$F\\s$\"3ij*Gy2V*Q7F17$Fas$\"3=^jq8'>]D\"F17$Ffs$\"3.'GwI+!
+op7F17$F[t$\"3%QGsQIviG\"F17$F`t$\"3Pq&*Gq>L/8F17$Fet$\"3B\\0W5*))HK\"
+F17$Fjt$\"3dx=16x2U8F17$F_u$\"3$e<J@V5YO\"F17$Fdu$\"3*f![#)pz?'Q\"F17$
+Fiu$\"3-tq!>Yr3T\"F17$F^v$\"3ixG\"fE[[V\"F17$Fcv$\"3G\"*)34p+JY\"F17$F
+hv$\"3ibQ6%HR>\\\"F17$F]w$\"3<Xjeye$[_\"F17$Fbw$\"3jiF/(=Q-c\"F17$Fgw$
+\"3FFRY=tZ,;F17$F\\x$\"3JWfN3t?Y;F17$Fax$\"3NDB$>BU%)p\"F17$Ffx$\"32Ak
+sLXye<F17$F[y$\"3'o*QPF]XC=F17$F`y$\"3#oF9fvXs\">F17$Ffy$\"3`cA=\"f4^-
+#F17$$\"3Agnb-yw_5Fby$\"3HDZ^2kz(4#F17$F[z$\"3oBNw@Yz'=#F17$F\\dl$\"3O
+aIUaj![H#F17$F`z$\"3^7$QG*>.QCF17$$\"3Ix4BHX+$4\"Fby$\"3i8n*\\5rq`#F17
+$Fddl$\"3`-eC.*=&eEF17$$\"30fOu$ev]5\"Fby$\"3B/0F<'>2\"GF17$Fez$\"3xMa
+U'zKe+$F1FizF][l-F$6&7\\y7$$F*!\"%$\":['o^=^>p%))*H+5!#C7$$\"\"'Fb_m$
+\":HiOQ?jGJ:0=+\"Fe_m7$$\"#6Fb_m$\":PCx#*3Ywq+=L+\"Fe_m7$$\"#;Fb_m$\":
+L;X'yv#Hq^Q[+\"Fe_m7$$\"#@Fb_m$\":WPi*\\joIbnO15Fe_m7$$\"#EFb_m$\":LuJ
+=-`4`z-z+\"Fe_m7$$\"#JFb_m$\":;E4!4\\m[6nW45Fe_m7$$\"#OFb_m$\":-(\\K;)
+zY$z&)*4,\"Fe_m7$$\"#TFb_m$\":173\\Y1vaZeD,\"Fe_m7$$\"#YFb_m$\":4P2/0
+\\_vZET,\"Fe_m7$$\"#^Fb_m$\":roKWg`wVm-d,\"Fe_m7$$\"#cFb_m$\":D6f+JC#)
+e6(G<5Fe_m7$$\"#hFb_m$\":NxJUg*R;8*z)=5Fe_m7$$\"#mFb_m$\":+.1Z$\\y\\Q6
+[?5Fe_m7$$\"#rFb_m$\":**z&[r;WOv34A5Fe_m7$$\"#wFb_m$\":mCgUyKs%3#4P-\"
+Fe_m7$$\"#\")Fb_m$\":!eH&RUE#yBiLD5Fe_m7$$\"#')Fb_m$\":h*[HG)eJ&3?(p-
+\"Fe_m7$$\"#\"*Fb_m$\":z7yO9ef7l;'G5Fe_m7$$\"#'*Fb_m$\":[\"oaw3L$=Cq-.
+\"Fe_m7$$\"$,\"Fb_m$\":\"H]$Qy7u9(G$>.\"Fe_m7$$\"$1\"Fb_m$\":wR^j4'[yK
+YgL5Fe_m7$$\"$6\"Fb_m$\":&[n5[]wx>cGN5Fe_m7$$\"$;\"Fb_m$\":Qf**=w^-z#f
+(p.\"Fe_m7$$\"$@\"Fb_m$\":6a%**=Ym2acnQ5Fe_m7$$\"$E\"Fb_m$\":ReE'>8Wr'
+*[QS5Fe_m7$$\"$J\"Fb_m$\":P?$3A*=edv.@/\"Fe_m7$$\"$O\"Fb_m$\":pQh<B$*4
+FLKQ/\"Fe_m7$$\"$T\"Fb_m$\":PMR#)**fj1tqb/\"Fe_m7$$\"$Y\"Fb_m$\":M$*Q$
+o/%QV0>t/\"Fe_m7$$\"$^\"Fb_m$\":=rQm$RH65u2\\5Fe_m7$$\"$c\"Fb_m$\":k;h
+@.?gg!f%30\"Fe_m7$$\"$h\"Fb_m$\":2.B7e`$)>lCE0\"Fe_m7$$\"$m\"Fb_m$\":a
+\"R#>*\\NXfPTa5Fe_m7$$\"$r\"Fb_m$\":f_xc@*f%=M8i0\"Fe_m7$$\"$w\"Fb_m$
+\":Jy)ybk1Q9N-e5Fe_m7$$\"$\"=Fb_m$\":cg%e7z8;%RW)f5Fe_m7$$\"$'=Fb_m$\"
+:UAh#z**p@+hnh5Fe_m7$$\"$\">Fb_m$\":[JtEVgVNv=N1\"Fe_m7$$\"$'>Fb_m$\":
+$f#H!*H!y9xCPl5Fe_m7$$\"$,#Fb_m$\":_ebh@D\"4'RPs1\"Fe_m7$$\"$1#Fb_m$\"
+:&p,&>ESOvj8\"p5Fe_m7$$\"$6#Fb_m$\":uBsJP_$zI8+r5Fe_m7$$\"$;#Fb_m$\":h
+$)[,k/ptg+H2\"Fe_m7$$\"$@#Fb_m$\":'e>mJp_,,;\"[2\"Fe_m7$$\"$E#Fb_m$\":
+=*pe![Z\"yZWtw5Fe_m7$$\"$J#Fb_m$\":Dmr^C]mgGp'y5Fe_m7$$\"$O#Fb_m$\":jG
+(e`IGncih!3\"Fe_m7$$\"$T#Fb_m$\":\\g')4u@iG]vD3\"Fe_m7$$\"$Y#Fb_m$\":)
+\\cA*p&HTqra%3\"Fe_m7$$\"$^#Fb_m$\":jTQ,[!)ywSJl3\"Fe_m7$$\"$c#Fb_m$\"
+:%['3VKj\\cOG&)3\"Fe_m7$$\"$h#Fb_m$\":>)*3#HxQ,)>Q04\"Fe_m7$$\"$m#Fb_m
+$\":-f_RU$GAh5c#4\"Fe_m7$$\"$r#Fb_m$\":\"G#RLQ)ob9rf%4\"Fe_m7$$\"$w#Fb
+_m$\":$3d-#zp$>?lk'4\"Fe_m7$$\"$\"GFb_m$\":=**)>h6&yKW4()4\"Fe_m7$$\"$
+'GFb_m$\":b\\3e5`'*>0'y+6Fe_m7$$\"$\"HFb_m$\":fn(*4hbZw^wG5\"Fe_m7$$\"
+$'HFb_m$\":wi&o_**Gs95)\\5\"Fe_m7$$\"$,$Fb_m$\":PBg,zo%)4s*426Fe_m7$$
+\"$1$Fb_m$\":eL#)*=Lwa<GB46Fe_m7$$\"$6$Fb_m$\":gK]9wOj*)[!Q66Fe_m7$$\"
+$;$Fb_m$\":yA$Q!)QuIBHa86Fe_m7$$\"$@$Fb_m$\":ceg6j1pAJ?d6\"Fe_m7$$\"$E
+$Fb_m$\":S(H*z^wV7&G\"z6\"Fe_m7$$\"$J$Fb_m$\":U0ZXp%*G%R27?6Fe_m7$$\"$
+O$Fb_m$\":EPawMhA*zTMA6Fe_m7$$\"$T$Fb_m$\":x#4KFk_#)zLeC6Fe_m7$$\"$Y$F
+b_m$\":j\\X\"QV^M]&Qo7\"Fe_m7$$\"$^$Fb_m$\":#Q#p\")y&p!p!*4\"H6Fe_m7$$
+\"$c$Fb_m$\":kuWGg?k#pwRJ6Fe_m7$$\"$h$Fb_m$\":h,sg&f_hh?qL6Fe_m7$$\"$m
+$Fb_m$\":Mtn!\\^Ls7L-O6Fe_m7$$\"$r$Fb_m$\":\\S6LyiSglh$Q6Fe_m7$$\"$w$F
+b_m$\":YA)=GHk$)HtrS6Fe_m7$$\"$\"QFb_m$\":.[='zw*Htd!4V6Fe_m7$$\"$'QFb
+_m$\":c\"e[XVw#ok\"[X6Fe_m7$$\"$\"RFb_m$\":_C)yz.]'=z!*y9\"Fe_m7$$\"$'
+RFb_m$\":%**Q1BhQNr#=.:\"Fe_m7$$\"$,%Fb_m$\":*H7#\\RYM(\\Vw_6Fe_m7$$\"
+$1%Fb_m$\":Sy&yGIJ8(HH_:\"Fe_m7$$\"$6%Fb_m$\":SscGa^D&*Q8x:\"Fe_m7$$\"
+$;%Fb_m$\":b8)f3jd!*3p@g6Fe_m7$$\"$@%Fb_m$\":pZ.I\")zhM9SF;\"Fe_m7$$\"
+$E%Fb_m$\":mv(z<Hqv(Q$Gl6Fe_m7$$\"$J%Fb_m$\":W!yV-W(=H%p%y;\"Fe_m7$$\"
+$O%Fb_m$\":w[WLa\\Lo6J/<\"Fe_m7$$\"$T%Fb_m$\":RSSZ.z\\VAOI<\"Fe_m7$$\"
+$Y%Fb_m$\":2nsE?T)[(eic<\"Fe_m7$$\"$^%Fb_m$\":.0>'4A2mN0Jy6Fe_m7$$\"$c
+%Fb_m$\":+@O$*zI&*eS!)4=\"Fe_m7$$\"$h%Fb_m$\":b([m(4OtIasO=\"Fe_m7$$\"
+$m%Fb_m$\":S2!ys!>t,I(Q'=\"Fe_m7$$\"$r%Fb_m$\":$=]Sw/V_Q]7*=\"Fe_m7$$
+\"$w%Fb_m$\":Qb/]W]r!Gh)=>\"Fe_m7$$\"$\"[Fb_m$\":,lxoWZ\\w%4n%>\"Fe_m7
+$$\"$'[Fb_m$\":`N5\"Gp$o_))zu>\"Fe_m7$$\"$\"\\Fb_m$\":/KE\"\\G4TQLJ+7F
+e_m7$$\"$'\\Fb_m$\":u%phE$oTVrrJ?\"Fe_m7$$\"$,&Fb_m$\":&)e2l\"[)G/Vbg?
+\"Fe_m7$$\"$1&Fb_m$\":2q(*pq_zW\"\\'*37Fe_m7$$\"$6&Fb_m$\":2x)\\_)*))3
+01!>@\"Fe_m7$$\"$;&Fb_m$\":?_8n[3/?&H'[@\"Fe_m7$$\"$@&Fb_m$\":YcQ[7X.l
+T_y@\"Fe_m7$$\"$E&Fb_m$\":#\\w?@D@zr%p3A\"Fe_m7$$\"$J&Fb_m$\":g<W;^d9M
+g9RA\"Fe_m7$$\"$O&Fb_m$\":bg)GjO^o4$))pA\"Fe_m7$$\"$T&Fb_m$\":(z.t/Ju8
+-64I7Fe_m7$$\"$Y&Fb_m$\":V\"=AWxO*f]BKB\"Fe_m7$$\"$^&Fb_m$\":b=?WL'\\l
+ggQO7Fe_m7$$\"$c&Fb_m$\":&G**4U0O@?$z&R7Fe_m7$$\"$h&Fb_m$\":pS]sO!)))R
+&Q!GC\"Fe_m7$$\"$m&Fb_m$\":')3Gz'po3Z-1Y7Fe_m7$$\"$r&Fb_m$\":aKe)G#R()
+45\\$\\7Fe_m7$$\"$w&Fb_m$\":HiV3JzcT.rED\"Fe_m7$$\"$\"eFb_m$\":(eXy')>
+3p#oEgD\"Fe_m7$$\"$'eFb_m$\":!*3nd'Gw)4q;%f7Fe_m7$$\"$\"fFb_m$\":R_2>p
+@`CwTGE\"Fe_m7$$\"$'fFb_m$\":`bH#[)3T-c-jE\"Fe_m7$$\"$,'Fb_m$\":SKZK2;
+G!3)*zp7Fe_m7$$\"$1'Fb_m$\":tHf?H1H3CMLF\"Fe_m7$$\"$6'Fb_m$\":6h$zlC6&
+eh1pF\"Fe_m7$$\"$;'Fb_m$\":^_LNd^#R8x^!G\"Fe_m7$$\"$@'Fb_m$\":$3s$*pth
+yP$oTG\"Fe_m7$$\"$E'Fb_m$\":#oYaJXBR=$fyG\"Fe_m7$$\"$J'Fb_m$\":$emx\\t
+Fk5:f\"H\"Fe_m7$$\"$O'Fb_m$\":-()=vRyRrzl`H\"Fe_m7$$\"$T'Fb_m$\":HGQLv
+w8))3$=*H\"Fe_m7$$\"$Y'Fb_m$\":\\V&y%f\"G9EV/.8Fe_m7$$\"$^'Fb_m$\":@2z
+:ZbQ/[]pI\"Fe_m7$$\"$c'Fb_m$\":'zV\\kDD?bD!4J\"Fe_m7$$\"$h'Fb_m$\":i&o
+(\\(4yb(e,\\J\"Fe_m7$$\"$m'Fb_m$\":tom,&[4w\\'[*=8Fe_m7$$\"$r'Fb_m$\":
+3*znNA'*z][/B8Fe_m7$$\"$w'Fb_m$\":!\\([oI)>3Q8>F8Fe_m7$$\"$\"oFb_m$\":
+m`L1W,C#*H*QJ8Fe_m7$$\"$'oFb_m$\":W.*)>)==%R'*RcL\"Fe_m7$$\"$\"pFb_m$
+\":M*RB3+j01Y%*R8Fe_m7$$\"$'pFb_m$\":2t[u$R$=ca/VM\"Fe_m7$$\"$,(Fb_m$
+\":%)>>C1Dj6:@([8Fe_m7$$\"$1(Fb_m$\":(zc]$p0/@%e>`8Fe_m7$$\"$6(Fb_m$\"
+:%oHX>hRF\"4IxN\"Fe_m7$$\"$;(Fb_m$\":&e&Gs*)HHwUDBO\"Fe_m7$$\"$@(Fb_m$
+\":!RJ'=-FD\"RM)pO\"Fe_m7$$\"$E(Fb_m$\":^:90*eyxvdqr8Fe_m7$$\"$J(Fb_m$
+\":C0R\"*)yl#H:%\\w8Fe_m7$$\"$O(Fb_m$\":@pObQ/9ZN]8Q\"Fe_m7$$\"$T(Fb_m
+$\":'=([h[')*zPiF'Q\"Fe_m7$$\"$Y(Fb_m$\":M*>q(*[!G`tt7R\"Fe_m7$$\"$^(F
+b_m$\":T+bwm#*o6'[M'R\"Fe_m7$$\"$c(Fb_m$\":J'4/%ypeWr\"\\,9Fe_m7$$\"$h
+(Fb_m$\":!**[@]#)>Y%[;nS\"Fe_m7$$\"$m(Fb_m$\":Xz*)*\\B`yb9-79Fe_m7$$\"
+$r(Fb_m$\":I-GT'[C(R,4uT\"Fe_m7$$\"$w(Fb_m$\":#yje')*H::l\")GU\"Fe_m7$
+$\"$\"yFb_m$\":q1dh@U=V(>WG9Fe_m7$$\"$'yFb_m$\":7%)Rl'G$e'3F4M9Fe_m7$$
+\"$\"zFb_m$\":Dc2\"o\")Ro3n$)R9Fe_m7$$\"$'zFb_m$\":qIh_Ji4X'pnX9Fe_m7$
+$\"$,)Fb_m$\":`^*omMp&4h;;X\"Fe_m7$$\"$1)Fb_m$\":<%=K#>+5q$*ewX\"Fe_m7
+$$\"$6)Fb_m$\":t=i=K\"R0'R2QY\"Fe_m7$$\"$;)Fb_m$\"::&f%3g;wphl+Z\"Fe_m
+7$$\"$@)Fb_m$\":a;jGCa>iTPkZ\"Fe_m7$$\"$E)Fb_m$\":E.\\]F#f)3\"o#H[\"Fe
+_m7$$\"$J)Fb_m$\":*Q!Q9d%G+L!Q&*[\"Fe_m7$$\"$O)Fb_m$\":=Cxh^uy]avi\\\"
+Fe_m7$$\"$T)Fb_m$\":2qf7w)*)3dS9.:Fe_m7$$\"$Y)Fb_m$\":kH1-ZX`]a[,^\"Fe
+_m7$$\"$^)Fb_m$\":o()4gN(yQrUH<:Fe_m7$$\"$c)Fb_m$\":792XR*eB2oeC:Fe_m7
+$$\"$h)Fb_m$\":g'fpHQw,d?.K:Fe_m7$$\"$m)Fb_m$\":)f@^?DQY&GO'R:Fe_m7$$
+\"$r)Fb_m$\":w\\sC5XVu91ua\"Fe_m7$$\"$w)Fb_m$\":5G1JKXQ4s[`b\"Fe_m7$$
+\"$\"))Fb_m$\":w(\\g2U?dV:Zj:Fe_m7$$\"$'))Fb_m$\":G8TzG-gJl#yr:Fe_m7$$
+\"$\"*)Fb_m$\":U2>LnLGGj!H!e\"Fe_m7$$\"$'*)Fb_m$\":pE.:dbF8m/!*e\"Fe_m
+7$$\"$,*Fb_m$\":g*QhPi!z#pX$zf\"Fe_m7$$\"$1*Fb_m$\":SF+L(*p6A!442;Fe_m
+7$$\"$6*Fb_m$\":EWt*[eiR\"*\\[;;Fe_m7$$\"$;*Fb_m$\":.m1QS'QmL!Hhi\"Fe_
+m7$$\"$@*Fb_m$\":UtZ!H\"=5;=Ogj\"Fe_m7$$\"$E*Fb_m$\":9-q\"\\%H\\ek?ik
+\"Fe_m7$$\"$J*Fb_m$\":sO?o>^+8\"ypc;Fe_m7$$\"$O*Fb_m$\":n91#4nF))pV[n;
+Fe_m7$$\"$T*Fb_m$\":bwHv#QNZs%)fy;Fe_m7$$\"$Y*Fb_m$\":]]&o$*4ne.*f+p\"
+Fe_m7$$\"$^*Fb_m$\":VgRPyZoHG!*=q\"Fe_m7$$\"$c*Fb_m$\":S=2#pWVC*H8Tr\"
+Fe_m7$$\"$h*Fb_m$\":7D`L*Q$H>)\\vE<Fe_m7$$\"$m*Fb_m$\":**zB4'fEh>S%)R<
+Fe_m7$$\"$r*Fb_m$\":+KLs%=\"[S87Mv\"Fe_m7$$\"$w*Fb_m$\":B:xK[#4OAX\\n<
+Fe_m7$$\"$\")*Fb_m$\":t;4Ab_4GQI@y\"Fe_m7$$\"$')*Fb_m$\":Do;_j\"HyVNO(
+z\"Fe_m7$$\"$\"**Fb_m$\":[<//$*oT8AVK\"=Fe_m7$$\"$'**Fb_m$\":!>#[r`Oc
+\"Q\\#)H=Fe_m7$$\"%,5Fb_m$\":p&=%H3#p#pkrr%=Fe_m7$$\"%15Fb_m$\":3-W3,'
+yS:^Nl=Fe_m7$$\"%65Fb_m$\":+>cza4)o\\wX%)=Fe_m7$$\"%;5Fb_m$\":;E!GSm#=
+*fUd/>Fe_m7$$\"%@5Fb_m$\":57#zWAa97a\"e#>Fe_m7$$\"%E5Fb_m$\":G&R_(*\\k
+Wn0J[>Fe_m7$$\"%J5Fb_m$\":!p>sE`Y,&z7A(>Fe_m7$$\"%O5Fb_m$\":P5`A+>$\\v
+[q(*>Fe_m7$$\"%T5Fb_m$\":l(pRe$*\\87v+D?Fe_m7$$\"%Y5Fb_m$\":a+2b3;n\")
+e!Ra?Fe_m7$$\"%^5Fb_m$\":cQ*\\Tf'4`$*)='3#Fe_m7$$\"%c5Fb_m$\":yr6V3/^A
+(\\#37#Fe_m7$$\"%h5Fb_m$\":*oN%Hiz>*[@%)e@Fe_m7$$\"%m5Fb_m$\":B;!)y\"z
+2bUg&4?#Fe_m7$$\"%r5Fb_m$\":<cy-c/%o8c8[AFe_m7$$\"%w5Fb_m$\":Ea'o0/vFo
+)Q<I#Fe_m7$$\"%\"3\"Fb_m$\":pEgM(=$Q*pMvjBFe_m7$$\"%'3\"Fb_m$\":D!H`<M
+%R%)zdsV#Fe_m7$$\"%\"4\"Fb_m$\":\"H%*)\\$f]R!4+u_#Fe_m7$$\"%'4\"Fb_m$
+\":0uz)QX,z)4,Qk#Fe_m7$$\"%,6Fb_m$\":)QA))p;'[0u6z!GFe_m7$$\"%16Fb_m$
+\":Rv)ol,,*e(pd'3$Fe_m7$$\"%66Fb_m$\":%QqDp\\$\\`<b)fSFe_m7$$\"%;6Fb_m
+$\":k#y\\%*pJ69D-J;!#AF][l-%*THICKNESSG6#\"\"$-%&COLORG6&F\\[lF(F(F(-F
+$6%7gn7$F($\":o9.\")[vS23?\")*)*!#D7$$\":>&=&=&=&=&=g!>U#!#F$\":'e#>OS
+U>g0N'****F_fq7$$\":r.Pq.Pq`\\$>HXFcfq$\":QLL&\\%>hAnZ$35Fe_m7$$\":3uS
+2uS2ule!**oFcfq$\":\">\\'4=Q]L;Tu,\"Fe_m7$$\":vS2uS2uS#Gj%G*Fcfq$\":Mh
+WlK>Lp\"RPE5Fe_m7$$\"::[\"[\"[\"[Jxo)e;\"!#E$\":9:p<!)**\\F4d^.\"Fe_m7
+$$\":I'H'H'H'H@%*3gQ\"Fhgq$\":JTo\\lu+W%GGV5Fe_m7$$\":yxxxxxx-fKRh\"Fh
+gq$\":io5MT@ziQT<0\"Fe_m7$$\":T2uS2uSKb^'\\=Fhgq$\":\"*[C9[E*)G3\"fg5F
+e_m7$$\":+++++++Dc9Y3#Fhgq$\":<5PHy\\#)eGh&p5Fe_m7$$\":[\"[\"[\"[\"[\"
+)*GIEBFhgq$\":Sq1y0O5,(R)*y5Fe_m7$$\":T2uS2uSd6#=RDFhgq$\":b)>-iipzxiZ
+(3\"Fe_m7$$\":XWWWWWWWpL)yFFhgq$\":(HdKi4Yuy5G(4\"Fe_m7$$\":cbbbbbbbIp
+%>IFhgq$\":+#RmB)>lyR9u5\"Fe_m7$$\":cbbbbbbbIm8D$Fhgq$\":w<6rPs^Ntyu6
+\"Fe_m7$$\":&=&=&=&=&o(*4&>Y$Fhgq$\":\"H!\\#4bxk$)H*o7\"Fe_m7$$\"::[\"
+[\"[\"[\"[ccBr$Fhgq$\":[30d&4x[*>a%Q6Fe_m7$$\":Ef#f#f#f#f#H[CRFhgq$\":
+Hks=uW/;G#e[6Fe_m7$$\":+++++++DJO7<%Fhgq$\":_fS#z,$GFHy2;\"Fe_m7$$\":r
+.Pq.Pq.([l*Q%Fhgq$\":O3;\"=$zV&fD(><\"Fe_m7$$\":MLLLLLLek%HHYFhgq$\":,
+F'p!>2fI$yr%=\"Fe_m7$$\":XWWWWWW>Q)[d[Fhgq$\":*[8b?Dp#*p*Qt>\"Fe_m7$$
+\":#[\"[\"[\"[\"[1Ye&4&Fhgq$\":BDR!)3ya/+_5@\"Fe_m7$$\":/Pq.Pq.iEJUJ&F
+hgq$\":=BPF)QT*eYtTA\"Fe_m7$$\":_=&=&=&=&oAr+b&Fhgq$\":s-m1\\\"HUy;%*Q
+7Fe_m7$$\":_=&=&=&=NkE/&z&Fhgq$\":X+=5[+>:2<]D\"Fe_m7$$\":MLLLLLL3-\"H
+3gFhgq$\":Qc512>:oPw'p7Fe_m7$$\":jH'H'H'H'z30'QiFhgq$\":0(pu^QFbW/F'G
+\"Fe_m7$$\":cbbbbbbb0UlZ'Fhgq$\":Sep\"3.!*o'yDVI\"Fe_m7$$\":MLLLLLL$ep
+J4nFhgq$\":+ki(\\y)\\#*Q\")HK\"Fe_m7$$\":MLLLLLLekQX$pFhgq$\":@\"zvot3
+0d)o?M\"Fe_m7$$\":cbbbbbb0$*3Y=(Fhgq$\":x%f=UM%>,0+YO\"Fe_m7$$\":/Pq.P
+q.P?3$4uFhgq$\":Qe\"*\\V,Ob;'>'Q\"Fe_m7$$\":!*)))))))))))))QEA\\wFhgq$
+\":TI#3b]n]y!e3T\"Fe_m7$$\":kH'H'H'HYv2imyFhgq$\":1U7%4+<\"zQL[V\"Fe_m
+7$$\":76666666O%H/\")Fhgq$\":F&3T%Q9kj4%3j9Fe_m7$$\":r.Pq.PqGoEzK)Fhgq
+$\":w>?Smxh/*4#>\\\"Fe_m7$$\":MLLLLLLe*ooh&)Fhgq$\":$z`\\Yuz$3n:[_\"Fe
+_m7$$\":#[\"[\"[\"[\"[J-B!z)Fhgq$\":)*\\_V;\"pOwf@g:Fe_m7$$\":7666666O
+#R\\H!*Fhgq$\":4))p1Q%4bDGX,;Fe_m7$$\":(H'H'H'H'H'HL*f#*Fhgq$\":.brv^^
+T>R!=Y;Fe_m7$$\":kH'H'H'H'z$3f&\\*Fhgq$\":kvlfD+\"RWDT)p\"Fe_m7$$\":/P
+q.Pq.i,(HH(*Fhgq$\":%>_3\\7'\\\\u^(e<Fe_m7$$\":BAAAAAAAs[S%**Fhgq$\":D
+8TKH*)\\&>$>W#=Fe_m7$$\":/Pq.Pq.7%y,>5F_fq$\":q/gAD01E27s\">Fe_m7$$\":
+uS2uS2uS(>.T5F_fq$\":G5$z@*prZ*G9D?Fe_m7$$\":++++++]7j.X1\"F_fq$\":+Yr
+(e4Kmv\"=y=#Fe_m7$$\":nmmmmmmmJOd2\"F_fq$\":?Y`HY&o4h_m)H#Fe_m7$$\":LL
+LLLL$3-!pp3\"F_fq$\":vQ*z\\WNuhM:`CFe_m7$$\":yxxxxFS$HX+$4\"F_fq$\":mI
+.G`9-tef+d#Fe_m7$$\":AAAAAA(fc+/*4\"F_fq$\":m\"*p[w_ckk([NFFe_m7$$\":X
+WWWWpD-#y0-6F_fq$\":j:'HG:Z&*Q@B`GFe_m7$$\":nmmmm;aQev]5\"F_fq$\":3\"Q
+%[n65!yae>IFe_m7$$\":yxxxFSocY%e16F_fq$\":?)o[rJ![JrQy8$Fe_m7$$\":*)))
+)))))QE[ZL436F_fq$\":uzIz\"eH%)=fu/LFe_m7$$\":XWWWpv*Q)yZ)36F_fq$\":#p
+r%GFB?*R)*HBMFe_m7$$\":++++](oHHAg46F_fq$\":.<)4t.&)z>3`!f$Fe_m7$$\":c
+bbbI*R?qmN56F_fq$\":.:Uv$)RBoQvm(QFe_m7$$\":666666666666\"F_fq$\":WXRQ
+9'HE^6:mC!#B-Fjz6&F\\[lF($\"*++++\"!\")F(F][l-%&TITLEG6#%Pblack=Runge-
+Kutta,~red=Taylor,~green=connectionG-%+AXESLABELSG6$%\"zG%\"yG-%%VIEWG
+6$;$!:bbbbbbbbbb0X&Fcfq$\":nmmmmmmmm;m;\"F_fq;$!:+++++++++++]#F_fq$\":
++++++++++++D&Fe_m" 2 574 574 574 2 0 1 0 2 9 0 4 2 1.000000 45.000000 
+45.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 65 "While the Taylor series converg
+es rather slowly to the values of " }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6
+#\"\"$6#%\"zG" }{TEXT -1 298 " at the singularity, the numerical conne
+ction computed agrees with the curve obtained by following the differe
+ntial equation.  More specifically, the best approximation by the Tayl
+or series is obtained for a truncation of order 100, whereas the expan
+sion obtained by connection is of order 15 only." }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 53 "We are now able to give an equivalent for the numb
+er " }{XPPEDIT 18 0 "p[3,n]" "&%\"pG6$\"\"$%\"nG" }{TEXT -1 84 " of pa
+irs of paths with same origin and end.  Retaining only the singular pa
+rt when " }{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 14 " tends to 0 of" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "Order:=3: dsolve(d_eq,f(u
+),series);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"fG6#%\"uG,&*&%$_C1G
+\"\"\"++F'F+\"\"!#F+\"\"%\"\"\"#\"\"&\"#K\"\"#-%\"OG6#F+\"\"$F+F+*&%$_
+C2GF+,&*&-%#lnGF&F+F,F+F++)F'#\"\"$\"\")\"\"\"#\"#L\"$G\"\"\"#F5\"\"$F
++F+F+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 22 "we get the equivalent " 
+}{XPPEDIT 18 0 "_C2*ln(1-9*z)" "*&%$_C2G\"\"\"-%#lnG6#,&\"\"\"F$*&\"\"
+*F$%\"zGF$!\"\"F$" }{TEXT -1 4 " of " }{XPPEDIT 18 0 "P[3](z)" "-&%\"P
+G6#\"\"$6#%\"zG" }{TEXT -1 22 ".  An asymptotics for " }{XPPEDIT 18 0 
+"p[3,n]" "&%\"pG6$\"\"$%\"nG" }{TEXT -1 12 " follows by " }{TEXT 284 
+23 "transfer of singularity" }{TEXT -1 24 ": an asymptotic for the " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 63 "-th coefficient a series is
+ computed using the following table:" }}}{EXCHG {PARA 0 "> " 0 "transf
+er of singularity" {MPLTEXT 1 0 308 "matrix([[Function,`Asymptotic coe
+fficient`,` `],[(1-z/rho)^(-alpha)*ln(1-z/rho)^beta,rho^n*n^(alpha-1)*
+ln(n)^beta/GAMMA(alpha),``(beta>=0 and alpha*` non integer`)],[(1-z/rh
+o)^(-p)*ln(1-z/rho)^beta,rho^n*n^(p-1)*ln(n)^(beta-1)/GAMMA(alpha),``(
+beta>=0 and p*` integer`)],[1/ln(1-z/rho),rho^n/n/ln(n)^2,` `]]);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#-%'MATRIXG6#7&7%%)FunctionG%7Asymptoti
+c~coefficientG%\"~G7%*&),&\"\"\"F/*&%\"zGF/%$rhoG!\"\"F3,$%&alphaGF3F/
+)-%#lnG6#F.%%betaGF/**)F2%\"nGF/)F=,&F5F/F3F/F/)-F86#F=F:F/-%&GAMMAG6#
+F5F3-%!G6#31,$F:F3\"\"!*&F5F/%-~non~integerGF/7%*&)F.,$%\"pGF3F/F6F/**
+F<F/)F=,&FSF/F3F/F/)FA,&F:F/F3F/F/FCF3-FG6#3FJ*&FSF/%)~integerGF/7%*$F
+7F3*(F<F/F=F3FA!\"#F*" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 15 "In the c
+ase of " }{XPPEDIT 18 0 "p[3,n]" "&%\"pG6$\"\"$%\"nG" }{TEXT -1 15 ", \+
+the result is" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "asympt_p[3
+]:=-subs(fsol,_C2)*9^n/n;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%)asymp
+t_pG6#\"\"$,$*&)\"\"*%\"nG\"\"\"F,!\"\"$\":X&3Y.>c--@xMT!#D" }}}}
+{SECT 1 {PARA 5 "" 0 "" {TEXT -1 16 "Asymptotics for " }{XPPEDIT 18 0 
+"Q[3](z)" "-&%\"QG6#\"\"$6#%\"zG" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+64 "We now turn to our original goal: evaluating the coefficients of" 
+}}}{EXCHG {PARA 274 "" 0 "" {XPPEDIT 18 0 "Q[3](z)=(1+3*z-1/P[3](z))/2
+" "/-&%\"QG6#\"\"$6#%\"zG*&,(\"\"\"\"\"\"*&\"\"$F-F)F-F-*&\"\"\"F--&%
+\"PG6#\"\"$6#F)!\"\"F8F-\"\"#F8" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 29 "It follows from the value of " }{XPPEDIT 18 0 "P[3](
+z)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 39 " that the ordinary generatin
+g function " }{XPPEDIT 18 0 "Q[3](z)" "-&%\"QG6#\"\"$6#%\"zG" }{TEXT 
+-1 14 " behaves like " }{XPPEDIT 18 0 "2/3-1/(2*alpha*ln(1-9*z))" ",&*
+&\"\"#\"\"\"\"\"$!\"\"F%*&\"\"\"F%*(\"\"#F%%&alphaGF%-%#lnG6#,&\"\"\"F
+%*&\"\"*F%%\"zGF%F'F%F'F'" }{TEXT -1 7 " where " }{XPPEDIT 18 0 "z" "I
+\"zG6\"" }{TEXT -1 13 " is close to " }{XPPEDIT 18 0 "1/9" "*&\"\"\"\"
+\"\"\"\"*!\"\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "alpha=.413477" "/%
+&alphaG$\"'xMT!\"'" }{TEXT -1 52 ".  Because of the positivity of the \+
+coefficients of " }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }
+{TEXT -1 2 ", " }{XPPEDIT 18 0 "P[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }
+{TEXT -1 39 " never vanishes before its singularity " }{XPPEDIT 18 0 "
+s=1/9" "/%\"sG*&\"\"\"\"\"\"\"\"*!\"\"" }{TEXT -1 10 ", so that " }
+{XPPEDIT 18 0 "Q[3](z)" "-&%\"QG6#\"\"$6#%\"zG" }{TEXT -1 32 " also ha
+s no singularity before " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 33 "
+, as visualized on the next plot." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 62 "plot(2/3-1/2/j_num,z=0..1/9,y=-.1..1,style=point,colo
+r=green);" }}{PARA 13 "" 1 "" {INLPLOT "6'-%'CURVESG6#7gn7$\"\"!$\":_y
+$zIMdR*Q-_h\"!#D7$$\":>&=&=&=&=&=g!>U#!#F$\":(znU?Ip,)=%[m;F+7$$\":r.P
+q.Pq`\\$>HXF/$\":J<G'H2V@%\\f!3<F+7$$\":3uS2uS2ule!**oF/$\":H(H\"=U-'G
+&exBv\"F+7$$\":vS2uS2uS#Gj%G*F/$\":P_vc%e*[JqZ^z\"F+7$$\"::[\"[\"[\"[J
+xo)e;\"!#E$\":Iywa,[6)>>[O=F+7$$\":I'H'H'H'H@%*3gQ\"FD$\":w(ep9*>ynZ-T
+(=F+7$$\":yxxxxxx-fKRh\"FD$\":HZnI\")GsAFYE\">F+7$$\":T2uS2uSKb^'\\=FD
+$\":B&3sUmz,xVJ_>F+7$$\":+++++++Dc9Y3#FD$\":EGq!z^Q,NF&=*>F+7$$\":[\"[
+\"[\"[\"[\")*GIEBFD$\":]6/6lD7k_xE.#F+7$$\":T2uS2uSd6#=RDFD$\":Ty1&)RZ
+2IAl)o?F+7$$\":XWWWWWWWpL)yFFD$\":(G@^d1X+q!\\*4@F+7$$\":cbbbbbbbIp%>I
+FD$\":XKd]G,2.+X;:#F+7$$\":cbbbbbbbIm8D$FD$\":v4V/4*))G(e3B>#F+7$$\":&
+=&=&=&=&o(*4&>Y$FD$\":4&Gm%4<TO6)oHAF+7$$\"::[\"[\"[\"[\"[ccBr$FD$\":
+\"o(enOC=FYYZF#F+7$$\":Ef#f#f#f#f#H[CRFD$\":\\Ej??$p#)pRZ8BF+7$$\":+++
+++++DJO7<%FD$\":n_os<4L9*=@fBF+7$$\":r.Pq.Pq.([l*Q%FD$\":14YQt[!*Q<b.S
+#F+7$$\":MLLLLLLek%HHYFD$\":M`N]8QgwV_iW#F+7$$\":XWWWWWW>Q)[d[FD$\":n'
+p*p*R2Zx(R2\\#F+7$$\":#[\"[\"[\"[\"[1Ye&4&FD$\":5q#z>T\">KzC!QDF+7$$\"
+:/Pq.Pq.iEJUJ&FD$\":/f,#=e(*)z=yAe#F+7$$\":_=&=&=&=&oAr+b&FD$\":f)GY1Q
+f/!>k4j#F+7$$\":_=&=&=&=NkE/&z&FD$\":EovY)exM:rl#o#F+7$$\":MLLLLLL3-\"
+H3gFD$\":t+quW\"41.`lGFF+7$$\":jH'H'H'H'z30'QiFD$\":h]g\"zz]Df#f%zFF+7
+$$\":cbbbbbbb0UlZ'FD$\":*=\"H>'=r*3coK$GF+7$$\":MLLLLLL$epJ4nFD$\":GS!
+=iolw3SK()GF+7$$\":MLLLLLLekQX$pFD$\":%*Qj8dhc(4a2THF+7$$\":cbbbbbb0$*
+3Y=(FD$\":)3rVA2w#fT*e-IF+7$$\":/Pq.Pq.P?3$4uFD$\":#**=C\")HQzpNnfIF+7
+$$\":!*)))))))))))))QEA\\wFD$\":J?aqDXh**4CF7$F+7$$\":kH'H'H'HYv2imyFD
+$\":IC#\\PM#H<^T>=$F+7$$\":76666666O%H/\")FD$\":R]+i=;]<6G#\\KF+7$$\":
+r.Pq.PqGoEzK)FD$\":d6Gk^*>HeFG:LF+7$$\":MLLLLLLe*ooh&)FD$\":\">O$eqa,R
+z\"e(Q$F+7$$\":#[\"[\"[\"[\"[J-B!z)FD$\":]R+-@TR&Q@)>Y$F+7$$\":7666666
+O#R\\H!*FD$\":.Sj5YknBk,Xa$F+7$$\":(H'H'H'H'H'HL*f#*FD$\":QotU:;$)*oCL
+HOF+7$$\":kH'H'H'H'z$3f&\\*FD$\":&)\\p2j%*\\g;TFs$F+7$$\":/Pq.Pq.i,(HH
+(*FD$\":Vwp6(G>Ar7uBQF+7$$\":BAAAAAAAs[S%**FD$\":2NP6$Q&eGjog#RF+7$$\"
+:/Pq.Pq.7%y,>5F+$\":#e\">z;xgF88(eSF+7$$\":uS2uS2uS(>.T5F+$\":*4vZWj)f
+s30x>%F+7$$\":++++++]7j.X1\"F+$\":agU_-_.Pz%G\"Q%F+7$$\":nmmmmmmmJOd2
+\"F+$\":I[*od+soA8\\\"\\%F+7$$\":LLLLLL$3-!pp3\"F+$\":z,Rl]CfPvt%GYF+7
+$$\":yxxxxFS$HX+$4\"F+$\":%yout;!)>#['=@ZF+7$$\":AAAAAA(fc+/*4\"F+$\":
+UiF-vvP2+R)Q[F+7$$\":XWWWWpD-#y0-6F+$\":x\"p#pg<#po!oU\"\\F+7$$\":nmmm
+m;aQev]5\"F+$\":A3GpRo,lC53,&F+7$$\":yxxxFSocY%e16F+$\":*GqBFW/8#>8K2&
+F+7$$\":*))))))))QE[ZL436F+$\":&p/LD=@L[5p`^F+7$$\":XWWWpv*Q)yZ)36F+$
+\":#o-<oAA'[i(31_F+7$$\":++++](oHHAg46F+$\":J&*o\"HIE85\\6u_F+7$$\":cb
+bbI*R?qmN56F+$\":F6@?3qpgs,pP&F+7$$\":666666666666\"F+$\":d'z%Gk+<<f@R
+Y'F+-%'COLOURG6&%$RGBGF($\"*++++\"!\")F(-%+AXESLABELSG6$%\"zG%\"yG-%&S
+TYLEG6#%&POINTG-%%VIEWG6$;F(Ff]l;$!\"\"F`_l$\"\"\"F(" 2 616 616 616 5 
+0 1 0 2 6 0 4 2 1.000000 45.000000 45.000000 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 1 1 0 0 0 0 20304 0 0 0 0 0 0 }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 54 "Correspondingly, we get the following asymptotics for " }
+{XPPEDIT 18 0 "q[3](n)" "-&%\"qG6#\"\"$6#%\"nG" }{TEXT -1 40 ", by tra
+nsfer of singularity, using the " }{HYPERLNK 17 "table above" 1 "" "tr
+ansfer of singularity" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 47 "asympt_q[3]:=-subs(fsol,1/_C2)*9^n/n/ln(n)^2/2;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%)asympt_qG6#\"\"$,$*()\"\"*%\"nG\"
+\"\"F,!\"\"-%#lnG6#F,!\"#$\":6\\7Pf'3B!\\c#47!#C" }}}}{SECT 1 {PARA 5 
+"" 0 "" {TEXT -1 38 "Numerical check of the asymptotics of " }
+{XPPEDIT 18 0 "p[3,n]" "&%\"pG6$\"\"$%\"nG" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "q[3,n]" "&%\"qG6$\"\"$%\"nG" }}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 55 "To get satisfactory results, we have to work for large " 
+}{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 10 "NMax:=250;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+%NMaxG\"$]#" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 70 "We create another \+
+procedure to compute the coefficients of the series " }{XPPEDIT 18 0 "
+P[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 1 "." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 89 "proc_p:=rectoproc(diffeqtorec(double_inv_borel
+(power_j(3),j,z),j(z),u(n)),u(n),remember);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%'proc_pG:6#%\"nG6\"6#%)rememberGE\\s%\"\"\"\"\"$\"\"!
+F,\"\"#\"#:F-\"#$**&,(-9!6#,&9$F,!\"#F,!\"*-F56#,&F8F,!\"\"F,F-*&,(F4
+\"#=F;!#5*&,&F4F:F;\"#5F,F8F,F,F,F8F,F,F,F8F9F(F(" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 31 "We get a precise expansion for " }{XPPEDIT 18 0 "P
+[3](z)" "-&%\"PG6#\"\"$6#%\"zG" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 54 "series_p:=convert([seq(proc_p(i)*z^i,i=0..NMax
+)],`+`):" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 43 "from which follows a \+
+precise expansion for " }{XPPEDIT 18 0 "Q[3](z)" "-&%\"QG6#\"\"$6#%\"z
+G" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "series
+_q:=series(1/2+3*z/2-1/series_p/2,z,NMax+1):" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 28 "The asymptotic behaviour of " }{XPPEDIT 18 0 "p[3,n]" "
+&%\"pG6$\"\"$%\"nG" }{TEXT -1 20 " is easily attained." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "for i from 50 to NMax by 50 do i=ev
+alf(subs(n=i,asympt_p[3])/coeff(series_p,z,i)) od;" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/\"#]$\":PfXLK6*f;B&\\+\"!#C" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"$+\"$\":QfG`F$>kpFX-5!#C" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"$]\"$\":>ijOk%p*)3&>;+\"!#C" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"$+#$\":P\"H\"Hz,M*pG?,5!#C" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/\"$]#$\":%>@tzYqd%)G&4+\"!#C" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 17 "The behaviour of " }{XPPEDIT 18 0 "q[3,n]" "&%\"qG6$\"
+\"$%\"nG" }{TEXT -1 79 ", however, is not observed so obviously, due t
+o a slow logarithmic convergence." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 85 "for i from 50 to NMax by 50 do i=evalf(subs(n=i,asymp
+t_q[3])/coeff(series_q,z,i)) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/
+\"#]$\":hwdc8R*[g_DOK!#C" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+\"$\"
+:,eUX!QY%R%=U&y#!#C" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$]\"$\":3w8V
+T.5&oYW#f#!#C" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$+#$\":!)ovJkK*=]T
+dxC!#C" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/\"$]#$\"::9SU_=63xL')R#!#C
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 10 "Enlarging " }{XPPEDIT 18 0 "n
+" "I\"nG6\"" }{TEXT -1 49 ", of course, would lead to a limiting value
+ of 1." }}}}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 10 "Conclusion" }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 139 "To conclude, we compute the table
+ indicating the indicial polynomial at the dominant singularity and th
+e possible asymptotic behaviours of " }{XPPEDIT 18 0 "P[d](z)" "-&%\"P
+G6#%\"dG6#%\"zG" }{TEXT -1 7 " there." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 168 "behaviours:=proc(f,x,u) local L,i;\n    L:=sort([sol
+ve(f,x)]);\n    convert([seq(u^L[i]*ln(u)^nops(select(type,map(`+`,L[1
+..i-1],-L[i]),integer)),i=1..nops(L))],`+`)\nend:" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 71 "M[1]:=d,s,`indicial polynomial at s`,`possib
+le behaviours for P[d](z)`:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+189 "for i from 2 to 7 do\n    M[i]:=i,1/i^2,\n        indicial_poly(
+\{algebraicsubs(double_inv_borel(power_j(i),j,z),j=(1-z)/i^2,j(z))\},j
+,z);\n    B:=behaviours(M[i][3],eta,u);\n    M[i]:=M[i],B\nod:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "matrix([seq([M[i]],i=1..7)])
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%'MATRIXG6#7)7&%\"dG%\"sG%9indic
+ial~polynomial~at~sG%@possible~behaviours~for~P[d](z)G7&\"\"##\"\"\"\"
+\"%,&F/F/%$etaGF-*$%\"uG#!\"\"F-7&\"\"$#F/\"\"**$F2F-,&F/F/-%#lnG6#F4F
+/7&F0#F/\"#;,$*(F2F/,&F2F-F6F/F/,&F2F/F6F/F/F6,(F/F/*$F4#F/F-F/*&F4F/F
+=F/F/7&\"\"&#F/\"#D,$*(F2F/,&F2F/!\"#F/F/FFF-F6,*F/F/FJF/*&F4F/F=F-F/*
+&F4F-F=F8F/7&\"\"'#F/\"#O*,F2F/FFF/FQF/,&F2F/!\"$F/F/,&F2F-FfnF/F/,,F/
+F/FJF/*$F4#F8F-F/*&F4F-F=F-F/*&F4F8F=F8F/7&\"\"(#F/\"#\\*,F2F/FFF/FenF
+/,&F2F/!\"%F/F/FQF-,.F/F/FJF/F[oF/FUF/*&F4F8F=F0F/*&F4F0F=FLF/" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 13 "The function " }{XPPEDIT 18 0 "P[d
+](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 146 " is a linear combination \+
+of the possible behaviours.  Solving the connection would indicate whi
+ch of them appear (with a non-zero coefficient) in " }{XPPEDIT 18 0 "P
+[d](z)" "-&%\"PG6#%\"dG6#%\"zG" }{TEXT -1 9 ".  Next, " }{HYPERLNK 17 
+"transfer of singularity" 1 "" "transfer of singularity" }{TEXT -1 62 
+" on the dominant behaviour would yield an asymptotic form for " }
+{XPPEDIT 18 0 "p[d,n]" "&%\"pG6$%\"dG%\"nG" }{TEXT -1 1 "." }}}}}
+{MARK "3" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

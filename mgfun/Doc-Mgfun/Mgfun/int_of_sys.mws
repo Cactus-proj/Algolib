@@ -1,0 +1,144 @@
+{VERSION 3 0 "IBM INTEL LINUX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2D Output" 
+2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 23 "Courier" 1 
+10 0 0 0 0 0 0 0 0 0 0 3 0 0 }{CSTYLE "Help Heading" -1 26 "" 1 14 0 
+0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "Courier" 1 10 0 0 0 0 0 0 
+0 0 0 0 3 0 0 }{CSTYLE "" -1 257 "Courier" 1 10 0 0 0 0 0 0 0 0 0 0 3 
+0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 3
+" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 
+0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE 
+"" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 
+15 2 }}
+{SECT 0 {SECT 0 {PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT -1 77 
+"Mgfun[int_of_sys] - Compute a system of equations for integrals of ho
+lonomic " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 1 "-" }{TEXT -1 17 "
+finite functions " }}{PARA 0 "" 0 "" {TEXT 26 10 "Function: " }{TEXT 
+-1 72 "Mgfun[sum_of_sys] - Compute a system of equations for sums of h
+olonomic " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 0 "" }{TEXT -1 17 "
+-finite sequences" }}{PARA 0 "" 0 "usage" {TEXT 26 17 "Calling Sequenc
+e:" }{TEXT -1 15 "\n   int_of_sys(" }{XPPEDIT 18 0 "sys;" "6#%$sysG" }
+{TEXT -1 1 "," }{XPPEDIT 18 0 "x = a .. b;" "6#/%\"xG;%\"aG%\"bG" }
+{TEXT -1 1 "," }{XPPEDIT 18 0 "opts;" "6#%%optsG" }{TEXT -1 16 ")\n   \+
+int_of_sys(" }{XPPEDIT 18 0 "sys;" "6#%$sysG" }{TEXT -1 1 "," }
+{XPPEDIT 18 0 "x = ('residues');" "6#/%\"xG.%)residuesG" }{TEXT -1 1 "
+," }{XPPEDIT 18 0 "opts;" "6#%%optsG" }{TEXT -1 16 ")\n   sum_of_sys(
+" }{XPPEDIT 18 0 "sys;" "6#%$sysG" }{TEXT -1 0 "" }{TEXT -1 1 "," }
+{XPPEDIT 18 0 "k = a .. b;" "6#/%\"kG;%\"aG%\"bG" }{TEXT -1 0 "" }
+{TEXT -1 1 "," }{XPPEDIT 18 0 "opts;" "6#%%optsG" }{TEXT -1 0 "" }
+{TEXT -1 1 ")" }}{PARA 0 "" 0 "" {TEXT 26 11 "Parameters:" }{TEXT -1 
+4 "\n   " }{XPPEDIT 18 0 "sys;" "6#%$sysG" }{TEXT 23 15 "             \+
+- " }{TEXT -1 48 "system of linear equations in the same function " }
+{XPPEDIT 18 0 "f(x[1],`...`,x[n]);" "6#-%\"fG6%&%\"xG6#\"\"\"%$...G&F'
+6#%\"nG" }}{PARA 0 "" 0 "" {TEXT -1 3 "   " }{XPPEDIT 18 0 "x;" "6#%\"
+xG" }{TEXT 23 17 "               - " }{TEXT -1 39 "name of the variabl
+e of integration\n   " }{XPPEDIT 18 0 "k;" "6#%\"kG" }{TEXT 256 17 "  \+
+             - " }{TEXT -1 35 "name of the indice of summation\n   " }
+{XPPEDIT 18 0 "a,b;" "6$%\"aG%\"bG" }{TEXT 23 15 "             - " }
+{TEXT -1 49 "algebraic, bounds of integration or summation\n   " }
+{TEXT 23 11 "(optional) " }{XPPEDIT 18 0 "opts;" "6#%%optsG" }{TEXT 
+-1 0 "" }{TEXT 257 3 " - " }{TEXT -1 28 "names of options (see below)
+" }}}{SECT 0 {PARA 0 "" 0 "synopsis" {TEXT 26 12 "Description:" }}
+{PARA 15 "" 0 "" {TEXT -1 116 "The functions int_of_sys and sum_of_sys
+ compute systems satisfied by the integral and the sum, respectively, \+
+of the " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT -1 54 "-finite function \+
+and sequence described by the system " }{XPPEDIT 18 0 "sys;" "6#%$sysG
+" }{TEXT -1 46 ". Additionally, the input has to be holonomic." }}
+{PARA 15 "" 0 "" {TEXT -1 214 "In the current version of the functions
+, the values of the boundaries of the summation or integration interva
+l is actually not taken into account. They are part of the syntax for \+
+further evolution of the functions." }}{PARA 15 "" 0 "" {TEXT -1 210 "
+The form using residues indicates that the integration takes place ove
+r a contour around 0. It is used to compute residues, constant terms, \+
+diagonals... This form implies an integration over natural boundaries.
+" }}{PARA 15 "" 0 "" {TEXT -1 394 "The option takayama_algo indicates \+
+that the summation or integration has to be performed using an optimiz
+ed version of Takayama's algorithm dedicated to the case of natural bo
+undaries and without checking the holonomy of the system. The calculat
+ion is not guaranteed to terminate. Setting the option takayama_algo i
+s equivalent to setting both the incautious and the natural_boundaries
+ options." }}{PARA 15 "" 0 "" {TEXT -1 355 "The option incautious indi
+cates not to try to ensure the holonomy of the system to be integrated
+ (in the differential case). Otherwise, a heuristic method for holonom
+ic completion will be used. If the input system is not holonomic and t
+he incautious option is set, the computation may fail to find a system
+ for the integral, or may even fail to terminate." }}{PARA 15 "" 0 "" 
+{TEXT -1 424 "The option natural_boundaries indicates that the summati
+on or integration is over natural boundaries: the summand or integrand
+, together with all its shifts or derivatives, vanish at the boundarie
+s of summation or integration. This allows the use of a version of Tak
+ayama's algorithm. In the case of an integral and unless the option in
+cautious is set, Takayama's algorithm is used after ensuring the holon
+omy of the system." }}{PARA 15 "" 0 "" {TEXT -1 187 "All these options
+ and variations should disappear in a future version of the package in
+cluding an implementation of Zeilberger's fast algorithm together with
+ Chyzak's extension of it for " }{XPPEDIT 18 0 "d;" "6#%\"dG" }{TEXT 
+-1 14 "-finite inputs" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 
+287 "These functions are part of the Mgfun package, and so can be used
+ in the form int_of_sys(..) and sum_of_sys(..) only after performing t
+he command with(Mgfun) or with(Mgfun,<function>). The functions can al
+ways be accessed in the long form Mgfun[int_of_sys](..) and Mgfun[sum_
+of_sys](..)." }}}{SECT 0 {PARA 0 "" 0 "examples" {TEXT 26 9 "Examples:
+" }}{PARA 5 "" 0 "" {TEXT -1 19 "Binomial summation " }}{EXCHG {PARA 
+0 "> " 0 "" {XPPEDIT 19 1 "Sum(binomial(n,k)^2*binomial(n+k,k)^2,k=-n.
+.n):" "6#-%$SumG6$*&-%)binomialG6$%\"nG%\"kG\"\"#-F(6$,&F*\"\"\"F+F0F+
+\"\"#/F+;,$F*!\"\"F*" }}}{PARA 0 "" 0 "" {TEXT -1 40 "which is known t
+o admit no closed form. " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 106 
+"with(Mgfun):\nsys:=\{(-n-1+k)^2*h(n+1,k)-(n+1+k)^2*h(n,k),\n    -(n+1
++k)^2*(-n+k)^2*h(n,k)+(k+1)^4*h(n,k+1)\};" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%$sysG<$,&*&),(%\"nG!\"\"F+\"\"\"%\"kGF,\"\"#\"\"\"-%
+\"hG6$,&F*F,F,F,F-F,F,*&),(F*F,F,F,F-F,F.F/-F16$F*F-F,F+,&*(F5F/),&F*F
++F-F,F.F/F7F/F+*&),&F-F,F,F,\"\"%F/-F16$F*F?F,F," }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 82 "normal(eval(subs(h=unapply(binomial(n,k)^2*bi
+nomial(n+k,k)^2,n,k),sys)),expanded);" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#<#\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "sum_of_sys(sy
+s,k=-infinity..infinity,takayama_algo);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#<#,(*&,*\"\"\"F'%\"nG\"\"$*$)F(\"\"#\"\"\"F)*$)F(F)F-F'F'-%\"hG6
+#F(F'F'*&,*F(!$J#F*!$`\"F.!#M!$<\"F'F'-F16#,&F(F'F'F'F'F'*&,*F*\"\"'F(
+\"#7F.F'\"\")F'F'-F16#,&F(F'F,F'F'F'" }}}{PARA 0 "" 0 "" {TEXT -1 63 "
+This second-order recurrence equation is satisfied by the sum. " }}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}}{PARA 5 "" 0 "" {TEXT -1 20 "C
+ontour integration " }}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "Int(y/(
+-y+x)/(-y+y^2+p*x),y):" "6#-%$IntG6$*(%\"yG\"\"\",&F'!\"\"%\"xGF(F*,(F
+'F**$F'\"\"#F(*&%\"pGF(F+F(F(F*F'" }}}{PARA 0 "" 0 "" {TEXT -1 52 "whe
+re the domain of integration is a contour around " }{XPPEDIT 18 0 "y =
+ 0;" "6#/%\"yG\"\"!" }{TEXT -1 0 "" }{TEXT -1 5 " and " }{XPPEDIT 18 
+0 "p;" "6#%\"pG" }{TEXT -1 0 "" }{TEXT -1 29 " is regarded as a parame
+ter. " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 141 "sys:=\{(-y+y^2+p*x
+)*(-y+x)*diff(h(x,y),x)+(-y+y^2+2*p*x-y*p)*h(x,y),\n    y*(-y+y^2+p*x)
+*(-y+x)*diff(h(x,y),y)+(y^2*x-p*x^2+y^2-2*y^3)*h(x,y)\};" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6#>%$sysG<$,&**%\"yG\"\"\",(F(!\"\"*$)F(\"\"#\"\"
+\"F)*&%\"pGF)%\"xGF)F)F),&F(F+F2F)F)-%%diffG6$-%\"hG6$F2F(F(F)F)*&,**&
+F-F/F2F/F)*&F1F/)F2F.F/F+F,F)*$)F(\"\"$F/!\"#F)F7F)F),&*(F*F/F3F/-F56$
+F7F2F)F)*&,*F(F+F,F)F0F.*&F(F/F1F/F+F)F7F/F)" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 61 "normal(eval(subs(h=unapply(y/(-y+x)/(-y+y^2+p*x)
+,x,y),sys)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<#\"\"!" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "int_of_sys(sys,y=residues);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#<#,(*&%\"pG\"\"\"-%\"hG6#%\"xGF'\"\"'*
+&,**$)F&\"\"#\"\"\"F,*&F&F2F+F'\"#9F&!\"'!\"#F'F'-%%diffG6$F(F+F'F'*&,
+.*&F+F2F0F2\"\"%F3!\"%F&!\"\"*&F&F2)F+F1F2F=F+F?F'F'F'-F86$F(-%\"$G6$F
++F1F'F'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "dsolve(%,h(x));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"hG6#%\"xG,&*&*&%$_C1G\"\"\"F'
+\"\"\"F-*(-%%sqrtG6#,&F,F,*&%\"pGF,F'F,!\"%F-,&F,F,*$-F06#F2F-F,\"\"\"
+,(F4F,F'F,!\"\"F,\"\"\"!\"\"F,*&*&%$_C2GF,F'F-F-**-F06#,&F3\"\"%F<F,F-
+F6\"\"\"F;\"\"\",&F7F,F<F,\"\"\"F>F," }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 57 "It would then be possible to take the initial conditions " }
+{XPPEDIT 18 0 "h(0) = 1;" "6#/-%\"hG6#\"\"!\"\"\"" }{TEXT -1 5 " and \+
+" }{XPPEDIT 18 0 "D(h)(0) = 2*p+1;" "6#/--%\"DG6#%\"hG6#\"\"!,&*&\"\"#
+\"\"\"%\"pGF.F.\"\"\"F." }{TEXT -1 14 " into account." }}}}{SECT 0 
+{PARA 0 "" 0 "seealso" {TEXT 26 10 "See Also: " }{HYPERLNK 17 "Mgfun" 
+2 "Mgfun" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Holonomy[holon_defint]" 
+2 "Holonomy[holon_defint]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "Holonomy
+[holon_defqsum]" 2 "Holonomy[holon_defqsum]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "Holonomy[holon_defsum]" 2 "Holonomy[holon_defsum]" "" }
+{TEXT -1 1 " " }}}}{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 }

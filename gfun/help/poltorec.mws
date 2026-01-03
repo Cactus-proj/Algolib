@@ -1,0 +1,86 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 14 "gfun[poltorec]" }
+{TEXT 30 72 " - determine recurrence satisfied by a polynomial in holonomic sequences" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 14 "     poltorec(" }
+{TEXT 35 1 "P" }
+{TEXT -1 2 ", " }
+{TEXT 35 7 "listrec" }
+{TEXT -1 2 ", " }
+{TEXT 35 13 "list_unknowns" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "P             - " }
+{TEXT -1 14 "polynomial in " }
+{TEXT 35 1 "z" }
+{TEXT -1 54 " and the (possibly shifted) variables in list_unknowns" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "listrec       - " }
+{TEXT -1 46 "list containing, for each of the variables in " }
+{TEXT 35 13 "list_unknowns" }
+{TEXT -1 103 ", either a linear recurrence equation or a set containing the equation together with initial conditions" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "list_unknowns - " }
+{TEXT -1 21 "list of the unknowns " }
+{TEXT 35 18 "[u1(z), u2(z),...]" }
+{TEXT -1 26 ", in the same order as in " }
+{TEXT 35 7 "listrec" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 16 "u,n           - " }
+{TEXT -1 59 "the name of the holonomic sequence and the generic variable" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 5 "u1(n)" }
+{TEXT -1 2 ", " }
+{TEXT 35 5 "u2(n)" }
+{TEXT -1 42 ",... are holonomic sequences solutions of " }
+{TEXT 35 10 "listrec[1]" }
+{TEXT -1 2 ", " }
+{TEXT 35 10 "listrec[2]" }
+{TEXT -1 6 ",..., " }
+{TEXT 35 8 "poltorec" }
+{TEXT -1 50 " outputs a linear recurrence equation verified by " }
+{TEXT 35 14 "P(n,u1(n),...)" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 165 "with(gfun):\nrec1:={u1(n+1)=(n+1)*u1(n),u1(0)=1}:\nrec2:={u2(n+2)=2*u2(n+1)-3*n*u2(n),u2(1)=1,u2(0)=1}:\npoltorec(u1(n)^2+2*u1(n)*u2(n),[rec1,rec2],[u1(n),u2(n)],u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<',**&,0*$%\"nG\"\"$!$z&*$F(\"\"&!$#>*$F(\"\"#!$j$*$F(\"\"'!#RF(!#!
+**$F(\"\"%!$i%*$F(\"\"(!\"$\"\"\"-%\"uG6#F(F;F;*&,.\"#gF;F(\"$a#F'\"$4#F
+.\"$a$F5\"#aF+F,F;-F=6#,&F(F;F;F;F;F;*&,,F(!#iF'!#7F.!#Y!#:F;F
+5!\"\"F;-F=6#,&F(F;F/F;F;F;*&,&F(F6F.F;F;-F=6#,&F(F;F)F;F;F;/-
+F=6#\"\"!F)/-F=6#F;F)/-F=6#F/\"#7/-F=6#F)\"#[
+"}}}
+{PARA 0 "> " 0 "" {TEXT -1 20 "Cassini's identity: " }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 90 "fib:={F(n+2)=F(n+1)+F(n),F(0)=1,F(1)=1}:\npoltorec(F(n+2)*F(n)-F(n+1)^2,[fib],[F(n)],f(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#<$,&-%\"fG6#,&%\"nG\"\"\"F*F*F*-F&6#F)F*/-F&6#\"\"!F*
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[rec+rec]" 2 "gfun[rec+rec]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[rec*rec]" 2 "gfun[rec*rec]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[poltodiffeq]" 2 "gfun[poltodiffeq]" "" }{TEXT -1 2 "  " }
+}
+}}

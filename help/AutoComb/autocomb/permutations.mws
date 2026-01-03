@@ -1,0 +1,1313 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }
+{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 265 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 267 "" 0 1 0 0 0 0 1 
+0 1 0 0 0 0 0 0 }{CSTYLE "" -1 268 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }
+{CSTYLE "" -1 269 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 
+"" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 271 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 273 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 274 
+"" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 275 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 277 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 278 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 279 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 280 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" 18 281 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 282 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 283 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 284 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 285 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 286 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 287 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 288 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 289 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 290 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 291 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 292 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 293 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 294 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 295 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 296 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 297 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 298 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 299 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 300 "" 0 1 0 0 0 0 1 1 1 0 0 0 0 0 0 }
+{CSTYLE "" -1 301 "" 0 1 0 0 0 0 1 1 1 0 0 0 0 0 0 }{CSTYLE "" -1 302 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 303 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 304 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }
+{CSTYLE "" -1 305 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 306 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 307 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 308 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 309 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 310 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 311 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 312 "" 0 1 0 0 0 0 1 1 1 0 0 0 0 0 0 }
+{CSTYLE "" -1 313 "" 0 1 0 0 0 0 1 1 1 0 0 0 0 0 0 }{CSTYLE "" -1 314 
+"" 0 1 0 0 0 0 1 1 1 0 0 0 0 0 0 }{CSTYLE "" -1 315 "present bullets" 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 316 "" 0 1 0 0 0 0 1 1 1 
+0 0 0 0 0 0 }{CSTYLE "" -1 317 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 320 "" 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 }{CSTYLE "" -1 323 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 324 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 325 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 326 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 327 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 
+0 0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 
+{CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple O
+utput" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 
+0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "
+" 4 258 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 }0 0 0 
+-1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "
+" 0 260 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 262 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 5 263 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 2 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 264 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 265 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 1 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 266 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 267 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+5 268 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 2 0 0 0 0 0 0 0 0 }0 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 5 269 1 {CSTYLE "" -1 -1 "" 1 14 0 
+0 0 0 2 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 270 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 271 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 272 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 273 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+4 274 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 }0 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 275 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+0 276 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 277 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 256 "" 0 "" {TEXT -1 1 "
+ " }{TEXT 256 65 "CONSTRAINED PERMUTATIONS AND THE PRINCIPLE OF INCLUS
+ION-EXCLUSION" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 257 "" 0 "" 
+{TEXT 257 35 "Philippe Flajolet, January 10, 1998" }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 98 "This worksheet explores v
+ariations of some classical problems in combinatorial analysis, like t
+he " }{TEXT 298 12 "derangement " }{TEXT -1 21 "problem (also called \+
+" }{TEXT 303 9 "rencontre" }{TEXT -1 18 " problem), or the " }{TEXT 
+299 6 "menage" }{TEXT -1 81 " problem. The descriptions of these probl
+ems as borrowed from [Comtet, 1974] are:" }}{PARA 0 "" 0 "" {TEXT -1 
+8 "     -- " }{TEXT 304 21 "Derangement/Rencontre" }{TEXT -1 297 ": If
+ guests to a party leave their hats on hooks in the cloakroom, and gra
+b a hat at good luck when leaving, what is the probability that nobody
+ gets back his own hat? The problem is equivalent to estimating the nu
+mber of permutations without fixed point, that is to say, without sing
+leton cycles." }}{PARA 0 "" 0 "" {TEXT -1 8 "     -- " }{TEXT 305 6 "M
+enage" }{TEXT -1 54 ": What is the number of possible ways one can arr
+ange " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 116 " married couples (
+=menages) around a table such that men and women alternate but no woma
+n seats next to her husband?" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 154 "These problems are in fact permutation enumera
+tion problems from classical combinatorial analysis. The constraints c
+onsidered  concern, for a permutation " }{XPPEDIT 18 0 "sigma=sigma[1]
+,`...`,sigma[n]" "6%/%&sigmaG&F$6#\"\"\"%$...G&F$6#%\"nG" }{TEXT -1 8 
+",  its \"" }{TEXT 312 15 "succession gaps" }{TEXT -1 54 "\", that is,
+ differences between consecutive elements, " }{XPPEDIT 18 0 "sigma[i+1
+]-sigma[i]" ",&&%&sigmaG6#,&%\"iG\"\"\"\"\"\"F(F(&F$6#F'!\"\"" }{TEXT 
+-1 64 ", The derangement problem corresponds to permutations such that
+ " }{XPPEDIT 18 0 "sigma[i]-i<>0" "0,&&%&sigmaG6#%\"iG\"\"\"F'!\"\"\"
+\"!" }{TEXT -1 24 ", the menage problem to " }{XPPEDIT 18 0 "sigma[i]-
+i <> 0,1" "6$0,&&%&sigmaG6#%\"iG\"\"\"F(!\"\"\"\"!\"\"\"" }{TEXT -1 
+91 ". In the second case, the constraints on indices and values may al
+so be taken to be modulo " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 29 
+", that is taken \"cyclically\"." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 64 "The symbolic method in enumerative combin
+atorics as well as the " }{HYPERLNK 17 "Combstruct" 2 "combstruct" "" 
+}{TEXT -1 258 " package that implements it are based on the concept of
+ decomposability. Combinatorial objects defined by \"constraints\" are
+ thus not normally accessible to this framework. However, as shown in \+
+this worksheet, the enumeration of various types of constrained  " }
+{TEXT 261 12 "permutations" }{TEXT -1 37 " can be treated by a combina
+tion of  " }{HYPERLNK 17 "Combstruct " 2 "combstruct" "" }{TEXT -1 2 "
+, " }{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT -1 69 ", and the Maple sys
+tem.  One may either impose that all such gaps be " }{TEXT 300 6 "forc
+ed" }{TEXT -1 24 " to belong a finite set " }{XPPEDIT 18 0 "Omega" "I&
+OmegaG6\"" }{TEXT -1 50 ", or dually impose that all gaps have values \+
+that " }{TEXT 301 7 "exclude" }{TEXT -1 14 " elements of  " }{XPPEDIT 
+18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 41 ". Forcing gaps to belong to a
+ finite set " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 64 " lead
+s to finite-state models, while the exclusion of gaps from " }
+{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 79 " builds on the finit
+e-state models  models via an inclusion-exclusion argument." }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 124 "The general id
+ea of counting by inclusion-exclusion is to enumerate by generating fu
+nctions (GF's) objects with a number of " }{TEXT 313 24 "distinguished
+ exceptions" }{TEXT -1 59 " to a set of constraints. The  principle is
+ as follows: If " }{XPPEDIT 18 0 "F(z,u)" "-%\"FG6$%\"zG%\"uG" }{TEXT 
+-1 61 " is the bivariate generating function of such objects, where " 
+}{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT -1 18 " records size and " }
+{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 61 " records the number of dist
+inguished exceptions of some type " }{XPPEDIT 18 0 "Omega" "I&OmegaG6
+\"" }{TEXT -1 60 ", then   inclusion-exclusion [e.g.,  Comtet, 1974] p
+rovides " }{XPPEDIT 18 0 "F(z,-1)" "-%\"FG6$%\"zG,$\"\"\"!\"\"" }
+{TEXT -1 42 " as the univariate generating function of " }{XPPEDIT 18 
+0 "Omega" "I&OmegaG6\"" }{TEXT -1 21 "-free configurations." }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 37 "Here, we show c
+ases where so-called \"" }{TEXT 314 21 "permutation templates" }{TEXT 
+-1 695 "\" can be described by finite-state mechanisms, so that a mult
+ivariate generating function of templates is directly accessible to co
+mbstruct. (A template describes a class of permutations by specifying \+
+what happens at some places while others are free, which is rendered b
+y a \"dont-care\" symbol.) A specialization of the multivariate GF tha
+t involves a sign-change (for inclusion-exclusion) and an integral  tr
+ansformation effected on an auxiliary variable (for \"filling\" the fr
+ee positions in templates and transforming them into permutations) yie
+lds a counting GF for the original problem. Generating functions, recu
+rrences, and numerical values can be obtained automatically in this fr
+amework." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 
+224 "This demonstration worksheet was originally inspired by works of \+
+Kostas Hatzis (Patras) relative to edge-disjoint paths in random graph
+s and of Bruno Codenotti (Pisa) relative to computing permanents of ci
+rculants matrices. " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT 263 10 "References" }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT 
+-1 33 "     [Comtet, 1974] : L. Comtet, " }{TEXT 264 22 "Advanced Comb
+inatorics" }{TEXT -1 15 ", Reidel, 1974." }}{PARA 0 "" 0 "" {TEXT -1 
+38 "     [EIS]: N. Sloane and S. Plouffe, " }{TEXT 265 37 "The Encyclo
+pedia of Integer Sequences" }{TEXT -1 23 ", Academic Press, 1995." }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 76 "This Mapl
+e worksheet is based on the current versions of the Maple packages " }
+{HYPERLNK 17 "Combstruct" 2 "combstruct" "" }{TEXT -1 5 " and " }
+{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT 270 1 " " }{TEXT -1 42 "(for ve
+rsion V.4) that can be found under " }{TEXT 266 30 "http://www-rocq.in
+ria.fr/algo/" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "with(combstruct);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#71%+allstructsG%&countG%%drawG%)finishedG%'g
+feqnsG%)gfseriesG%(gfsolveG%,iterstructsG%%markG%'momentG%+nextstructG
+%,prog_gfeqnsG%.prog_gfseriesG%-prog_gfsolveG%)varianceG" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "with(gfun);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#7V%(LaplaceG%.algebraicsubsG%.algeqtodiffeqG%.algeqtose
+riesG%.algfuntoalgeqG%&borelG%.cauchyproductG%.diffeq*diffeqG%.diffeq+
+diffeqG%2diffeqtohomdiffeqG%,diffeqtorecG%)guesseqnG%(guessgfG%0hadama
+rdproductG%0holexprtodiffeqG%)invborelG%,listtoalgeqG%-listtodiffeqG%0
+listtohypergeomG%+listtolistG%.listtoratpolyG%*listtorecG%-listtoserie
+sG%5listtoseries/LaplaceG%1listtoseries/egfG%4listtoseries/lgdegfG%4li
+sttoseries/lgdogfG%1listtoseries/ogfG%4listtoseries/revegfG%4listtoser
+ies/revogfG%,maxdegcoeffG%*maxdegeqnG%,maxordereqnG%,mindegcoeffG%*min
+degeqnG%,minordereqnG%*optionsgfG%,poltodiffeqG%)poltorecG%/ratpolytoc
+oeffG%(rec*recG%(rec+recG%,rectodiffeqG%,rectohomrecG%*rectoprocG%.ser
+iestoalgeqG%/seriestodiffeqG%2seriestohypergeomG%-seriestolistG%0serie
+storatpolyG%,seriestorecG%/seriestoseriesG" }}}{PARA 0 "" 0 "" {TEXT 
+-1 2 "  " }}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 87 "1. Permutations with \+
+forbidden \"position gaps\" and the principle of Inclusion-Exclusion" 
+}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 113 "This s
+ection is devoted to the combinatorial basis on which this whole works
+heet relies. We define the notion of " }{TEXT 320 9 "templates" }
+{TEXT 323 1 " " }{TEXT -1 236 "that are simple combinatorial objects o
+ut of which constrained permutations can be built. An elementary integ
+ral transformation implements the inclusion-exclusion principle and le
+ads to generating functions of constrained permutations. " }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 8 "The set " }
+{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 16 " is a subset of " }
+{XPPEDIT 18 0 "\{0..d\}" "<#;\"\"!%\"dG" }{TEXT -1 6 " with " }
+{XPPEDIT 18 0 "d" "I\"dG6\"" }{TEXT -1 59 " being its maximal element.
+ We propose to count the number " }{XPPEDIT 18 0 "P[n]" "&%\"PG6#%\"nG
+" }{TEXT -1 17 " of permutations " }{XPPEDIT 18 0 "sigma=sigma[1],sigm
+a[2]..sigma[n]" "6$/%&sigmaG&F$6#\"\"\";&F$6#\"\"#&F$6#%\"nG" }{TEXT 
+-1 11 " such that " }{TEXT 258 4 "none" }{TEXT -1 22 " of the position
+ gaps " }{XPPEDIT 18 0 "sigma[k]-k" ",&&%&sigmaG6#%\"kG\"\"\"F&!\"\"" 
+}{TEXT -1 13 "  belongs to " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }
+{TEXT -1 108 ". By inclusion-exclusion, we first enumerate permutation
+s with a certain number of distinguished exceptions." }}{PARA 0 "" 0 "
+" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 41 "For this purpose, one n
+eeds to determine " }}{PARA 0 "" 0 "" {TEXT 315 5 "     " }{XPPEDIT 
+18 0 "F[n,j]" "&%\"FG6$%\"nG%\"jG" }{TEXT -1 31 "  = the number of per
+mutations " }{XPPEDIT 18 0 "sigma=sigma[1],sigma[2]..sigma[n]" "6$/%&s
+igmaG&F$6#\"\"\";&F$6#\"\"#&F$6#%\"nG" }{TEXT -1 11 " such that " }
+{XPPEDIT 18 0 "n-j" ",&%\"nG\"\"\"%\"jG!\"\"" }{TEXT -1 23 "  of the p
+osition gaps " }{XPPEDIT 18 0 "sigma[k]-k" ",&&%&sigmaG6#%\"kG\"\"\"F&
+!\"\"" }{TEXT -1 43 " are distinguished and forced to belong to " }
+{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 22 ", while the remainin
+g " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 100 " positions  may be oc
+cupied by arbitrary elements, as long as the permutation property is s
+atisfied." }}{PARA 273 "" 0 "" {INLPLOT "6F-%'CURVESG6#7'7$$\"\"\"\"\"
+!$!\"\"F*7$$\"\"#F*F+7$F.F*7$F(F*F'-F$6#7'F-7$$\"\"$F*F+7$F6F*F0F--F$6
+#7'F57$$\"\"%F*F+7$F=F*F8F5-F$6#7$F5F?-F$6#7$F<F8-F$6#7'7$F.$!\"#F*7$F
+6FJF5F-FI-F$6#7'FL7$F=FJF<F5FL-F$6#7'FP7$$\"\"&F*FJ7$FUF+F<FP-F$6#7$FI
+F5-F$6#7$FLF--F$6#7'7$F6$!\"$F*7$F=F\\oFPFLF[o-F$6#7'F^o7$FUF\\oFTFPF^
+o-F$6#7'Fbo7$$\"\"'F*F\\o7$FgoFJFTFbo-F$6#7'7$F=$!\"%F*7$FUF^pFboF^oF]
+p-F$6#7'F`p7$FgoF^pFfoFboF`p-F$6#7'Fdp7$$\"\"(F*F^p7$FipF\\oFfoFdp-F$6
+#7$F]pFbo-F$6#7$F`pF^o-F$6#7'7$FU$!\"&F*7$FgoFfqFdpF`pFeq-F$6#7'Fhq7$F
+ipFfqFhpFdpFhq-F$6#7'F\\r7$$\"\")F*Ffq7$FarF^pFhpF\\r-F$6#7$F\\rFcr-F$
+6#7$F`rFhp-F$6#7'7$Fgo$!\"'F*7$FipF^sF\\rFhqF]s-F$6#7'F`s7$FarF^sF`rF
+\\rF`s-F$6#7'Fds7$$\"\"*F*F^s7$FisFfqF`rFds-F$6#7'7$Fip$!\"(F*7$FarF`t
+FdsF`sF_t-F$6#7'Fbt7$FisF`tFhsFdsFbt-F$6#7'Fft7$$\"#5F*F`t7$F[uF^sFhsF
+ft-F$6#7$FbtFhs-F$6#7$FftFds-%*AXESSTYLEG6#%%NONEG-%(SCALINGG6#%,CONST
+RAINEDG-%'COLOURG6&%$RGBGF*F*$\"*++++\"!\")-%*THICKNESSG6#F7-%+AXESLAB
+ELSG6$%7A~permutation~templateG%!G" 2 272 272 272 2 0 1 3 2 6 0 1 1 
+1.000000 45.000000 45.000000 10030 10061 10056 10073 0 0 0 20040 0 
+12010 0 0 0 255 0 0 255 1 3 0 0 0 127 103 0 0 0 0 0 0 }}{PARA 0 "" 0 "
+" {TEXT 306 9 "Templates" }{TEXT -1 133 ". The diagram above is the be
+ginning of a permutation  template (read from top to bottom) such that
+ the sequence of position gaps is " }}{PARA 271 "" 0 "" {TEXT -1 21 " \+
+2, 0, *, 0, 2, *, 1." }}{PARA 0 "" 0 "" {TEXT -1 152 "There, the don't
+ care symbol \"*\" means that no constraint is imposed at the correspo
+nding position. Thus, any permutation of 1,2,3,etc, that starts like" 
+}}{PARA 272 "" 0 "" {TEXT -1 25 " 3, 2, *, 4, 7, *, 8, etc" }}{PARA 0 
+"" 0 "" {TEXT -1 318 "will match the template. As they specify classes
+ of permutations, the templates are such that there is at most one pos
+ition occupied (represented by a cross) in each line and each column. \+
+Legal templates can thus be viewed as a language over a finite alphabe
+t of dominos where each domino corresponds to an element of " }
+{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 163 ". Clearly, the cons
+traints that each column is occupied by at most one cross can be teste
+d with finite memory, i.e., they can be described by a finite state mo
+del." }}{PARA 0 "" 0 "" {TEXT -1 55 "The generating functions that are
+ defined in this way, " }{XPPEDIT 18 0 "G(z,u)" "-%\"GG6$%\"zG%\"uG" }
+{TEXT -1 17 ",  are such that " }}{PARA 0 "" 0 "" {TEXT -1 10 "       \+
+   " }{XPPEDIT 18 0 "G[n,j]" "&%\"GG6$%\"nG%\"jG" }{TEXT -1 19 " = the
+ coefficient " }{XPPEDIT 18 0 "[z^n*u^j" "7#*&)%\"zG%\"nG\"\"\")%\"uG%
+\"jGF'" }{TEXT -1 4 " in " }{XPPEDIT 18 0 "G" "I\"GG6\"" }{TEXT -1 64 
+" represents the number of templates (domino placements) of size " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 11 " that have " }{XPPEDIT 18 
+0 "j " "I\"jG6\"" }{TEXT -1 27 " don't-care symbols (hence " }
+{XPPEDIT 18 0 "n-j" ",&%\"nG\"\"\"%\"jG!\"\"" }{TEXT -1 54 " distingui
+shed occurrences of a position gap lying in " }{XPPEDIT 18 0 "Omega" "
+I&OmegaG6\"" }{TEXT -1 3 "). " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 62 " Then, by filling the don't-care symbols \+
+in templates, one has" }}{PARA 277 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 
+18 0 "F[n,j]=G[n,j]*j!" "/&%\"FG6$%\"nG%\"jG*&&%\"GG6$F&F'\"\"\"-%*fac
+torialG6#F'F," }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT -1 88 "Finally
+, by inclusion-exclusion, the number of permutations without any posit
+ion gap in " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 3 " is" }}
+{PARA 261 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "P[n]=sum((-1)^(n-j)*G
+[n,j]*j!,j=0..n)" "/&%\"PG6#%\"nG-%$sumG6$*(),$\"\"\"!\"\",&F&\"\"\"%
+\"jGF.F0&%\"GG6$F&F1F0-%*factorialG6#F1F0/F1;\"\"!F&" }{TEXT -1 1 "." 
+}}{PARA 0 "" 0 "" {TEXT -1 50 "This is also expressible as an integral
+ transform " }}{PARA 259 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "sum(p[
+n]*z^n,n=0..infinity)=int(G(-z,-t)*exp(-t),t=0..infinity)" "/-%$sumG6$
+*&&%\"pG6#%\"nG\"\"\")%\"zGF*F+/F*;\"\"!%)infinityG-%$intG6$*&-%\"GG6$
+,$F-!\"\",$%\"tGF:F+-%$expG6#,$F<F:F+/F<;F0F1" }{TEXT -1 1 "." }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 6 "since " }
+{XPPEDIT 18 0 "j!=int(exp(-t)*t^j,j=0..infinity)" "/-%*factorialG6#%\"
+jG-%$intG6$*&-%$expG6#,$%\"tG!\"\"\"\"\")F/F&F1/F&;\"\"!%)infinityG" }
+{TEXT -1 1 "." }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 25 "Plotting routine
+s archive" }}{PARA 0 "" 0 "" {TEXT -1 64 "The diagram above was produc
+ed by the following simple routines:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 98 "domino:=proc(x,y,l) local j; seq([[x+j,y],[x+j+1,y],[
+x+j+1,y+1],[x+j,y+1],[x+j,y]],j=0..l-1); end;" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%'dominoG:6%%\"xG%\"yG%\"lG6#%\"jG6\"F,-%$seqG6$7'7$,&
+9$\"\"\"8$F49%7$,(F3F4F5F4F4F4F67$F8,&F6F4F4F47$F2F:F1/F5;\"\"!,&9&F4!
+\"\"F4F,F," }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 86 "domino2:=proc
+(x,y,l,s) domino(x,y,l),[[x+s,y],[x+s+1,y+1]],[[x+s+1,y],[x+s,y+1]]; e
+nd;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(domino2G:6&%\"xG%\"yG%\"lG%
+\"sG6\"F+F+6%-%'dominoG6%9$9%9&7$7$,&F0\"\"\"9'F6F17$,(F0F6F7F6F6F6,&F
+1F6F6F67$7$F9F17$F5F:F+F+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+218 "plot([domino2(1,-1,3,2),domino2(2,-2,3,0),domino(3,-3,3),domino2(
+4,-4,3,0),domino2(5,-5,3,2),domino(6,-6,3),domino2(7,-7,3,1)],scaling=
+constrained,axes=none,color=blue,labels=[`A permutation template`,``],
+thickness=3):" }}}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 35 "2. Templates \+
+and permutations with " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT 
+-1 23 "-exceptions (programme)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 356 "Templates are decomposable objects and t
+hus they can be specified in the Combstruct language. As it turns out,
+ they are described by a finite state model that translates all the al
+lowed transitions between adjacent  positions. This section provides t
+he main routines that compute the specification of templates associate
+d with a given set of position gaps." }}{PARA 0 "" 0 "" {TEXT -1 0 "" 
+}}{PARA 0 "" 0 "" {TEXT -1 71 "We consider templates with some positio
+ns marked that are elements of  " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"
+" }{TEXT -1 41 " (exceptions) and \"don't-care\" positions." }}{PARA 
+258 "" 0 "" {TEXT -1 70 "Templates can be described by a finite state \+
+device. For instance, if " }{XPPEDIT 18 0 "Omega=\{0,1\}" "/%&OmegaG<$
+\"\"!\"\"\"" }{TEXT -1 44 ", we have a linear version of the classical
+ " }{TEXT 262 14 "menage problem" }{TEXT -1 16 ": If the choice " }
+{XPPEDIT 18 0 "omega=1" "/%&omegaG\"\"\"" }{TEXT -1 4 " of " }
+{XPPEDIT 18 0 "omega " "I&omegaG6\"" }{TEXT -1 4 " in " }{XPPEDIT 18 
+0 "Omega" "I&OmegaG6\"" }{TEXT -1 24 " has been made at stage " }
+{XPPEDIT 18 0 "k-1" ",&%\"kG\"\"\"\"\"\"!\"\"" }{TEXT -1 10 ", that is
+ " }{XPPEDIT 18 0 "sigma[k-1]=k" "/&%&sigmaG6#,&%\"kG\"\"\"\"\"\"!\"\"
+F'" }{TEXT -1 75 " has been chosen, then the permutation property impl
+ies that one must have " }{XPPEDIT 18 0 "sigma[k] <> k" "0&%&sigmaG6#%
+\"kGF&" }{TEXT -1 29 ", that is to say, the choice " }{XPPEDIT 18 0 "o
+mega=0" "/%&omegaG\"\"!" }{TEXT -1 24 " is forbidden (at stage " }
+{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 44 ") in a template immediately
+ after (at stage " }{XPPEDIT 18 0 "k-1" ",&%\"kG\"\"\"\"\"\"!\"\"" }
+{TEXT -1 11 ") a choice " }{XPPEDIT 18 0 "omega=1" "/%&omegaG\"\"\"" }
+{TEXT -1 75 ". In other words, the language of templates is such that \+
+a domino of type \"" }{XPPEDIT 18 0 "`-x`" "I#-xG6\"" }{TEXT -1 42 "\"
+ cannot be followed by a domino of type \"" }{XPPEDIT 18 0 "`x-`" "I#x
+-G6\"" }{TEXT -1 2 "\"." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 
+0 "" {TEXT -1 18 "More generally, a " }{TEXT 302 5 "state" }{TEXT -1 
+15 " is any subset " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 4 " of " 
+}{XPPEDIT 18 0 "\{0..d-1\}" "<#;\"\"!,&%\"dG\"\"\"\"\"\"!\"\"" }{TEXT 
+-1 37 " whose meaning is that the values in " }{XPPEDIT 18 0 "s" "I\"s
+G6\"" }{TEXT -1 104 " are unavailable as current position gaps, due to
+ previous \"commitments\". Only don't cares or values of " }{XPPEDIT 
+18 0 "omega" "I&omegaG6\"" }{TEXT -1 4 " in " }{XPPEDIT 18 0 "Omega" "
+I&OmegaG6\"" }{TEXT -1 26 " that are compatible with " }{XPPEDIT 18 0 
+"s" "I\"sG6\"" }{TEXT -1 169 " can be then be taken, and there is  a t
+ransition to a new state that records the necessary information about \+
+occupied positions. The finite state system thus comprises " }
+{XPPEDIT 18 0 "2^(d-1)" ")\"\"#,&%\"dG\"\"\"\"\"\"!\"\"" }{TEXT -1 76 
+" states, and the cardinality of the alphabet is equal to the cardinal
+ity of " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 38 " plus one \+
+(for the don't care symbol)." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 56 "This can be expressed by combstruct specificati
+ons. Let " }{XPPEDIT 18 0 "a[i]" "&%\"aG6#%\"iG" }{TEXT -1 53 " be a l
+etter that represents a position gap equal to " }{XPPEDIT 18 0 "i" "I
+\"iG6\"" }{TEXT -1 5 ". An " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }
+{TEXT -1 20 " template of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 39 " is thus described by a word of length " }{XPPEDIT 18 0 "
+n" "I\"nG6\"" }{TEXT -1 19 " over the alphabet " }{XPPEDIT 18 0 "A" "I
+\"AG6\"" }{TEXT -1 18 " formed with  the " }{XPPEDIT 18 0 "a[omega]" "
+&%\"aG6#%&omegaG" }{TEXT -1 9 " for all " }{XPPEDIT 18 0 "omega" "I&om
+egaG6\"" }{TEXT -1 4 " in " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }
+{TEXT -1 25 " and a don't care symbol." }}{PARA 0 "" 0 "" {TEXT -1 26 
+"First  build the alphabet:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+119 "build_alphabet:=proc(Omega) local omega; seq(a[omega]=Atom,omega=
+Omega),dontcare=Prod(Atom,marked), marked=Epsilon end;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%/build_alphabetG:6#%&OmegaG6#%&omegaG6\"F*6%-%$s
+eqG6$/&%\"aG6#8$%%AtomG/F39$/%)dontcareG-%%ProdG6$F4%'markedG/F<%(Epsi
+lonGF*F*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "build_alphabet(
+\{0,1,3\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6'/&%\"aG6#\"\"!%%AtomG/&
+F%6#\"\"\"F(/&F%6#\"\"$F(/%)dontcareG-%%ProdG6$F(%'markedG/F6%(Epsilon
+G" }}}{PARA 0 "" 0 "" {TEXT -1 54 "Next,  build the transitions. The a
+uxiliary procedure " }{XPPEDIT 18 0 "MinusOne" "I)MinusOneG6\"" }
+{TEXT -1 40 " decreases all the elements of a set by " }{XPPEDIT 18 0 
+"1" "\"\"\"" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+57 "MinusOne:=proc(S) map(proc(x) x-1 end,S) minus \{-1\} end; " }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)MinusOneG:6#%\"SG6\"F(F(-%&minusG6$
+-%$mapG6$:6#%\"xGF(F(F(,&9$\"\"\"!\"\"F4F(F(F3<#F5F(F(" }}}{PARA 0 "" 
+0 "" {TEXT -1 113 "The transitions (in a raw form) are thus given by t
+he compatibility relations between each state and the symbols." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 213 "build_transition:=proc(stat
+e,Omega) local x,t; if state=\{\} then t:=Epsilon else t:=NULL fi;s[st
+ate]=Union(t,Prod(dontcare,s[MinusOne(state)]),seq(Prod(a[x],s[MinusOn
+e(state union \{x\})]),x=Omega minus state)) end;\n" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%1build_transitionG:6$%&stateG%&OmegaG6$%\"xG%\"tG6
+\"F,C$@%/9$<\">8%%(EpsilonG>F3%%NULLG/&%\"sG6#F0-%&UnionG6%F3-%%ProdG6
+$%)dontcareG&F96#-%)MinusOneGF:-%$seqG6$-F?6$&%\"aG6#8$&F96#-FE6#-%&un
+ionG6$F0<#FN/FN-%&minusG6$9%F0F,F," }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 59 "build_transition(\{\},\{0,1\},1);build_transition(\{0
+\},\{0,1\},1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"sG6#<\"-%&Union
+G6&%(EpsilonG-%%ProdG6$%)dontcareGF$-F-6$&%\"aG6#\"\"!F$-F-6$&F36#\"\"
+\"&F%6#<#F5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"sG6#<#\"\"!-%&Unio
+nG6$-%%ProdG6$%)dontcareG&F%6#<\"-F-6$&%\"aG6#\"\"\"F$" }}}{PARA 0 "" 
+0 "" {TEXT -1 138 "The grammar is then obtained by collecting transiti
+ons and taking into account  the don't care symbol. The initial state \+
+is the empty set " }{XPPEDIT 18 0 "\{\}" "<\"" }{TEXT -1 65 " and it i
+s also the final state (since no domino can \"protrude\")." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 163 "build_grammar:=proc(Omega) [s[\{\}
+],\{build_alphabet(Omega)\} union map(build_transition,combstruct[alls
+tructs](Subset(\{$0..max(op(Omega))-1\})),Omega),unlabelled] end;" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%.build_grammarG:6#%&OmegaG6\"F(F(7%&
+%\"sG6#<\"-%&unionG6$<#-%/build_alphabetG6#9$-%$mapG6%%1build_transiti
+onG-&%+combstructG6#%+allstructsG6#-%'SubsetG6#<#-%\"$G6#;\"\"!,&-%$ma
+xG6#-%#opGF4\"\"\"!\"\"FOF5%+unlabelledGF(F(" }}}{PARA 0 "" 0 "" 
+{TEXT -1 19 "Here is an example:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 21 "build_grammar(\{0,1\});" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7%&
+%\"sG6#<\"<(/F$-%&UnionG6&%(EpsilonG-%%ProdG6$%)dontcareGF$-F/6$&%\"aG
+6#\"\"!F$-F/6$&F56#\"\"\"&F%6#<#F7/F=-F+6$F.F8/%'markedGF-/F4%%AtomG/F
+:FF/F1-F/6$FFFD%+unlabelledG" }}}{PARA 0 "" 0 "" {TEXT -1 34 "In gener
+al, the grammar comprises " }{XPPEDIT 18 0 "2^(d-1)" ")\"\"#,&%\"dG\"
+\"\"\"\"\"!\"\"" }{TEXT -1 134 " nonterminal, which corresponds to a f
+inite-stae device with as many states. The template GF's are  thus rat
+ional functions of degree " }{XPPEDIT 18 0 "2^(d-1)" ")\"\"#,&%\"dG\"
+\"\"\"\"\"!\"\"" }{TEXT -1 8 ", where " }{XPPEDIT 18 0 "d" "I\"dG6\"" 
+}{TEXT -1 27 " is the maximal element of " }{XPPEDIT 18 0 "Omega" "I&O
+megaG6\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{SECT 0 
+{PARA 3 "" 0 "" {TEXT -1 63 "3. Special cases of permutations with for
+bidden \"position gaps\"" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "
+" 0 "" {TEXT -1 97 "In this section, we enumerate various classes of p
+ermutations associated with a given finite set " }{XPPEDIT 18 0 "Omega
+" "I&OmegaG6\"" }{TEXT -1 193 " of forbidden position gaps. The proces
+s is in three steps: (i) Generate the grammar by means of the procedur
+es of Section 2; (ii) compute automatically a bivariate GF of template
+s by means of " }{HYPERLNK 17 "Combstruct[gfsolve]" 2 "combstruct[gfso
+lve]" "" }{TEXT -1 493 "; (iii) transform the corresponding GF by mean
+s of the integral transform of Section 1 that implements the inclusion
+-exclusion principle.All cases can be treated automatically, and we de
+tail here the  derangement and menage problems. Several generalization
+s of the menage problem are also tabulated. The ordinary GF's turn out
+ to have hypergeometric forms and satisfy simple (but combinatorially \+
+nonobvious) linear recurrences of the holonomic type that can once mor
+e be derived automatically." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 28 "Derange
+ments (or Rencontres)" }}{PARA 0 "" 0 "" {TEXT -1 2 "A " }{TEXT 267 
+11 "derangement" }{TEXT -1 79 " [Comtet, 1974] is a permutation withou
+t fixed point, that is to say, the set  " }{XPPEDIT 18 0 "Omega=\{0\}
+" "/%&OmegaG<#\"\"!" }{TEXT -1 94 ". of position gaps is forbidden. A \+
+derangement is thus a permutation without singleton cycles." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "G0:=build_grammar(\{0\},0);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#G0G7%&%\"sG6#<\"<&/F&-%&UnionG6%%(E
+psilonG-%%ProdG6$%)dontcareGF&-F16$&%\"aG6#\"\"!F&/%'markedGF//F6%%Ato
+mG/F3-F16$F=F;%+unlabelledG" }}}{PARA 0 "" 0 "" {TEXT -1 79 " The lang
+uage of templates is thus just the set of all words over the alphabet \+
+" }{XPPEDIT 18 0 "\{a[0],`*`\}" "<$&%\"aG6#\"\"!%\"*G" }{TEXT -1 7 " w
+here " }{XPPEDIT 18 0 "`*`" "I\"*G6\"" }{TEXT -1 38 " is shorthand for
+ a don't-care symbol." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "dra
+w(G0,size=10);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#-%%ProdG6$&%\"aG6#\"
+\"!-F$6$-F$6$%%AtomG%'markedG-F$6$F,-F$6$F&-F$6$F,-F$6$F&-F$6$F&-F$6$F
+,-F$6$F,-F$6$F&%(EpsilonG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+30 "seq(count(G0,size=n),n=0..10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6-
+\"\"\"\"\"#\"\"%\"\")\"#;\"#K\"#k\"$G\"\"$c#\"$7&\"%C5" }}}{PARA 0 "" 
+0 "" {TEXT -1 17 "The bivariate GF " }{XPPEDIT 18 0 "G(z,u)" "-%\"GG6$
+%\"zG%\"uG" }{TEXT -1 36 " is obtained by combstruct[gfsolve]:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "gfsolve(op(2,G0),op(3,G0),z,
+[[u,marked]]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<&/-%)dontcareG6$%\"
+zG%\"uG*&F(\"\"\"F)F+/-&%\"sG6#<\"F',$*$,(!\"\"F+F*F+F(F+F5F5/-&%\"aG6
+#\"\"!F'F(/-%'markedGF'F)" }}}{PARA 0 "" 0 "" {TEXT -1 15 " In particu
+lar," }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "g0:=subs(\",s[\{\}](
+z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#g0G,$*$,(!\"\"\"\"\"*&%\"
+zGF)%\"uGF)F)F+F)F(F(" }}}{PARA 0 "" 0 "" {TEXT -1 107 "The counting s
+equence is obtained by the transformation corresponding to the inclusi
+on-exclusion principle." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 84 "s
+eries(subs([z=-z,u=-t],g0),z=0,11):map(proc(x) int(x*exp(-t),t=0..infi
+nity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+9%\"zG\"\"\"\"\"!F%
+\"\"#\"\"#\"\"$\"\"*\"\"%\"#W\"\"&\"$l#\"\"'\"%a=\"\"(\"&L[\"\"\")\"''
+\\L\"\"\"*\"(h\\L\"\"#5-%\"OG6#F%\"#6" }}}{PARA 0 "" 0 "" {TEXT -1 13 
+"The sequence " }{XPPEDIT 18 0 "1,0,1,2,9,44,265,`...`" "6*\"\"\"\"\"!
+\"\"\"\"\"#\"\"*\"#W\"$l#%$...G" }{TEXT -1 32 ", is of course classica
+l. It is " }{TEXT 271 5 "M1937" }{TEXT -1 72 " of [EIS] where it is de
+scribed as \"subfactorial or rencontre numbers\". " }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 75 "The ordinary generating f
+unction (OGF) is also accessible in closed-form as" }}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 52 "P0:=int(exp(-t)*subs([z=-z,u=-t],g0),t=0..in
+finity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#P0G,$*(-%#EiG6$\"\"\",$
+*&,&%\"zGF*F*F*F*F.!\"\"F/F*F.F/-%$expG6#F+F*F/" }}}{PARA 0 "" 0 "" 
+{TEXT -1 39 "This involves the exponential integral " }{XPPEDIT 18 0 "
+Ei" "I#EiG6\"" }{TEXT -1 45 ", where the exponential integral symbol m
+eans" }}{PARA 0 "" 0 "" {TEXT -1 1 " " }}{PARA 275 "" 0 "" {XPPEDIT 
+18 0 "Ei(1,x)=int(exp(-xt)/t,t=1..infinity)" "/-%#EiG6$\"\"\"%\"xG-%$i
+ntG6$*&-%$expG6#,$%#xtG!\"\"\"\"\"%\"tGF1/F3;\"\"\"%)infinityG" }}
+{PARA 0 "" 0 "" {TEXT -1 96 "The OGF is purely divergent and P0 is to \+
+be interpreted as asymptotic to the right-hand side as " }{XPPEDIT 18 
+0 "z" "I\"zG6\"" }{TEXT -1 10 " tends to " }{XPPEDIT 18 0 "0^`-`" ")\"
+\"!%\"-G" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "
+map(simplify,asympt(subs(z=-1/y,P0),y,10));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,4\"\"\"F$*$%\"yG!\"#F$*$F&!\"$F'*$F&!\"%\"\"**$F&!\"&!
+#W*$F&!\"'\"$l#*$F&!\"(!%a=*$F&!\")\"&L[\"-%\"OG6#*$F&!\"*F$" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 272 28 "Verifica
+tion with Combstruct" }{TEXT -1 153 ". Derangements are characterized \+
+by their cycle decomposition as labelled sets of cycles with length at
+ least 1. They are thus specifiable in combstruct." }}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 43 "der:=[S,\{S=Set(Cycle(Z,card>1))\},labelled]
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$derG7%%\"SG<#/F&-%$SetG6#-%&Cy
+cleG6$%\"ZG2\"\"\"%%cardG%)labelledG" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 31 "seq(count(der,size=n),n=0..10);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6-\"\"\"\"\"!F#\"\"#\"\"*\"#W\"$l#\"%a=\"&L[\"\"''\\L\"\"
+(h\\L\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "gfsolve(op(2,der
+),op(3,der),z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$/-%\"SG6#%\"zG,$*
+&-%$expGF'!\"\",&F-\"\"\"F(F/F-F-/-%\"ZGF'F(" }}}{PARA 0 "" 0 "" 
+{TEXT -1 56 " The exponential generating function (EGF) is well-known
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "der_egf:=simplify(subs(
+\",S(z)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(der_egfG,$*&-%$expG6#
+,$%\"zG!\"\"\"\"\",&F,F-F+F-F,F," }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 23 "series(der_egf,z=0,13);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#+=%\"zG\"\"\"\"\"!#F%\"\"#\"\"##F%\"\"$\"\"$#F+\"\")\"\"%#\"#6\"
+#I\"\"&#\"#`\"$W\"\"\"'#\"$.\"\"$!G\"\"(#\"%>@\"%gd\"\")#\"&(o;\"&g`%
+\"\"*#\"&\"[;\"&+[%\"#5#\"(d%o9\"(!o\"*R\"#6#\")J&>g\"\")+caV\"#7-%\"O
+G6#F%\"#8" }}}{PARA 0 "" 0 "" {TEXT -1 42 "We check that the coefficie
+nts in the EGF " }{XPPEDIT 18 0 "der_egf" "I(der_egfG6\"" }{TEXT -1 
+16 " and in the OGF " }{XPPEDIT 18 0 "P0" "I#P0G6\"" }{TEXT -1 67 " ar
+e the same. (The two GF's are related by the Laplace transform.)" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 277 11 "Asymptot
+ics" }{TEXT -1 37 ". The number of derangements of size " }{XPPEDIT 
+18 0 "n" "I\"nG6\"" }{TEXT -1 45 " satisfies the well-known asymptotic
+ formula:" }}{PARA 262 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "p[n]/n!=
+exp(-1)*(1+o(1))" "/*&&%\"pG6#%\"nG\"\"\"-%*factorialG6#F'!\"\"*&-%$ex
+pG6#,$\"\"\"F,F(,&\"\"\"F(-%\"oG6#\"\"\"F(F(" }{TEXT -1 1 "," }}{PARA 
+0 "" 0 "" {TEXT -1 62 "a fact which is obvious given the singularity o
+f the EGF at 1:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "series(de
+r_egf,z=1,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#++,&!\"\"\"\"\"%\"zGF
+&,$-%$expG6#F%F%!\"\"F)\"\"!,$F)#F%\"\"#\"\"\"-%\"OG6#F&\"\"#" }}}}
+{SECT 0 {PARA 4 "" 0 "" {TEXT -1 14 "Menage numbers" }}{PARA 0 "" 0 "
+" {TEXT -1 4 "The " }{TEXT 273 14 "menage numbers" }{TEXT -1 34 " are \+
+defined by the excluded  set " }{XPPEDIT 18 0 "Omega=\{0,1\}" "/%&Omeg
+aG<$\"\"!\"\"\"" }{TEXT -1 354 ". In nineteenth century terminology, t
+his is phrased as follows: In how many ways can one place couples with
+ men and women alternating in such a way that no husband can seat next
+ to his wife? The problem is usually posed in terms of a round table (
+=cyclic permutations); see [Comtet, 1974]. In this section,  the linea
+r version of the problem is treated." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 28 "G01:=build_grammar(\{0,1\},1);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%$G01G7%&%\"sG6#<\"<(/%'markedG%(EpsilonG/&%\"aG6#\"\"
+!%%AtomG/%)dontcareG-%%ProdG6$F3F,/&F06#\"\"\"F3/&F'6#<#F2-%&UnionG6$-
+F76$F5F&-F76$F:F>/F&-FB6&F-FD-F76$F/F&FF%+unlabelledG" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 66 "g01:=subs(gfsolve(op(2,G01),op(3,G0
+1),z,[[u,marked]]),s[\{\}](z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%$g01G,$*&,&!\"\"\"\"\"%\"zGF)F),*F)F)*&F*F)%\"uGF)F(F*!\"#*$F*\"\"#F)
+F(F(" }}}{PARA 0 "" 0 "" {TEXT -1 78 " The linear \"menage numbers\" i
+mmediately result by the general transformation." }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 92 "series(subs([z=-z,u=-t],g01),z=0,17):ser01:=ma
+p(proc(x) int(x*exp(-t),t=0..infinity) end,\");" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%&ser01G+C%\"zG\"\"\"\"\"!F'\"\"$\"\"$\"\"%\"#;\"\"&\"
+#'*\"\"'\"$v'\"\"(\"%8a\"\")\"&+)[\"\"*\"'#f)[\"#5\"(L$z`\"#6\")vffk\"
+#7\"*)G#>S)\"#8\",_nin<\"\"#9\"-ND1ul<\"#:\".$fJb'f#G\"#;-%\"OG6#F'\"#
+<" }}}{PARA 0 "" 0 "" {TEXT -1 17 "This is sequence " }{TEXT 324 5 "M3
+020" }{TEXT -1 5 " of [" }{TEXT 325 3 "EIS" }{TEXT -1 45 "], defined t
+here as \"sums of menage numbers\"." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }
+}{PARA 0 "" 0 "" {TEXT 326 8 "Checking" }{TEXT -1 125 ". Combstruct is
+ also useful for checking and debugging purposes. Consistency of templ
+ates can be checked for small values of " }{XPPEDIT 18 0 "n" "I\"nG6\"
+" }{TEXT -1 22 " by expansions and by " }{TEXT 274 22 "combstruct[alls
+tructs]" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "s
+eries(g01,z=0,10):map(expand,\");" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+
+9%\"zG\"\"\"\"\"!,&%\"uGF%F%F%\"\"\",(*$F(\"\"#F%F(\"\"$F%F%\"\"#,**$F
+(F-F%F+\"\"&F(\"\"'F%F%\"\"$,,F0\"\"(F+\"#:F(\"#5F%F%*$F(\"\"%F%\"\"%,
+.F8\"\"*F0\"#GF+\"#NF(F6*$F(F1F%F%F%\"\"&,0F0\"#%)F+\"#qF(\"#@F%F%F8\"
+#XF?\"#6*$F(F2F%\"\"',2F8\"$l\"F0\"$5#F+\"$E\"F(F=F?\"#mF%F%FG\"#8*$F(
+F5F%\"\"(,4F0\"$i%F+FKF(\"#OF%F%F8\"$&\\F?\"$'GFG\"#\"*FOF6*$F(\"\")F%
+\"\"),6F8\"%(G\"F0\"$C*F+\"$I$F(FEF?\"%,5F%F%FG\"$b%FO\"$?\"FW\"#<*$F(
+F<F%\"\"*-%\"OG6#F%\"#5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "
+allstructs(G01,size=2);allstructs(G01,size=3);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#7'-%%ProdG6$-F%6$%%AtomG%'markedG-F%6$F'%(EpsilonG-F%6$
+F'-F%6$&%\"aG6#\"\"!F--F%6$&F36#\"\"\"F+-F%6$F2F0-F%6$F2F+" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#7/-%%ProdG6$&%\"aG6#\"\"\"-F%6$F'-F%6$-F%6$%
+%AtomG%'markedG%(EpsilonG-F%6$F/-F%6$&F(6#\"\"!F--F%6$F/-F%6$F8-F%6$F8
+F3-F%6$F'-F%6$F/F?-F%6$F8-F%6$F/F--F%6$F/F+-F%6$F/FG-F%6$F8F+-F%6$F8F6
+-F%6$F/FC-F%6$F8FC-F%6$F'FG-F%6$F8F=" }}}{PARA 0 "" 0 "" {TEXT -1 1 " \+
+" }}{PARA 0 "" 0 "" {TEXT 275 15 "Holonomic forms" }{TEXT -1 47 ". A r
+ecurrence can be heuristically guessed by " }{XPPEDIT 18 0 "gfun" "I%g
+funG6\"" }{TEXT -1 139 ", proved by the hypergeometric method detailed
+ here (this is however specific to the problem at hand), and  also obt
+ained automatically by " }{XPPEDIT 18 0 "Mgfun" "I&MgfunG6\"" }{TEXT 
+-1 57 ". Problems of this type a priori belong to the so-called " }
+{TEXT 268 15 "holonomic class" }{TEXT -1 207 ", introduced by Zeilberg
+er, that is to say, sequences that satisfy linear recurrences with pol
+ynomial coefficients. Alternatively, the GF's satisfy linear different
+ial equations with polynomial coefficients." }}{PARA 0 "" 0 "" {TEXT 
+-1 35 "As a first approach, the procedure " }{HYPERLNK 17 "gfun[listto
+diffeq]" 2 "gfun[listtodiffeq]" "" }{TEXT -1 86 " provides a plausible
+ differential equation that accounts for a given number sequence." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "l01:=[seq(coeff(ser01,z,i),i
+=0..16)];" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$l01G73\"\"\"\"\"!F'F&
+\"\"$\"#;\"#'*\"$v'\"%8a\"&+)[\"'#f)[\"(L$z`\")vffk\"*)G#>S)\",_nin<\"
+\"-ND1ul<\".$fJb'f#G" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "ode
+01:=listtodiffeq(l01,Y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&ode0
+1G7$<$,*\"\"\"F(*$%\"zG\"\"#!\"\"*&,(F,F(F)F(*$F*\"\"$F(F(-%\"YG6#F*F(
+F(*&,&F/F(F)F(F(-%%diffG6$F1F*F(F(/-F26#\"\"!F(%$ogfG" }}}{PARA 0 "" 
+0 "" {TEXT -1 77 "This suggests a formal representation of the OGF of \+
+the basic menage problem." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 
+"dsolve(op(1,op(1,ode01)),Y(z));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-
+%\"YG6#%\"zG*(,**&-%$intG6$**,&!\"\"\"\"\"F'F1F1-%$expG6#*&,&F1F1*$F'
+\"\"#F1F1F'F0F1,&F'F1F1F1F0F'F0F'F1F'F1F1*&F'F1%$_C1GF1F1F+F1F;F1F1F'F
+0-F36#,$F5F0F1" }}}{PARA 0 "" 0 "" {TEXT -1 50 "This guess can be vali
+dated by direct integration:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+54 "P01:=int(subs([z=-z,u=-t],g01)*exp(-t),t=0..infinity);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%$P01G,$**-%#EiG6$\"\"\",$*&,(F*F*%\"zG\"\"
+#*$F.F/F*F*F.!\"\"F1F*,&F.F*F*F*F*F.F1-%$expG6#,$*&F2F/F.F1F1F*F1" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 307 15 "Hypergeo
+metrics" }{TEXT -1 61 ". Alternatively any expression with the exponen
+tial integral " }{XPPEDIT 18 0 "Ei" "I#EiG6\"" }{TEXT -1 106 "  can be
+ expressed in terms of a divergent hypergeometrics (that is also the O
+GF of permutations). One has" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+47 "y*exp(y)*Ei(1,y)=asympt(y*exp(y)*Ei(1,y),y,10);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#/*(%\"yG\"\"\"-%$expG6#F%F&-%#EiG6$F&F%F&,6F&F&*$F%!
+\"\"F/*$F%!\"#\"\"#*$F%!\"$!\"'*$F%!\"%\"#C*$F%!\"&!$?\"*$F%F5\"$?(*$F
+%!\"(!%S]*$F%!\")\"&?.%-%\"OG6#*$F%!\"*F&" }}}{PARA 0 "" 0 "" {TEXT 
+-1 30 "that is also expressible as a " }{XPPEDIT 18 0 "``[" "&%!G6\"" 
+}{XPPEDIT 18 0 "``[2]*F[0]" "*&&%!G6#\"\"#\"\"\"&%\"FG6#\"\"!F'" }
+{TEXT -1 16 "-hypergeometric:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 59 "hypergeom([1,1],[],z)=series(hypergeom([1,1],[],z),z=0,12);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#/-%*hypergeomG6%7$\"\"\"F(7\"%\"zG+=F*
+F(\"\"!F(\"\"\"\"\"#\"\"#\"\"'\"\"$\"#C\"\"%\"$?\"\"\"&\"$?(\"\"'\"%S]
+\"\"(\"&?.%\"\")\"'!)GO\"\"*\"(+)GO\"#5\")+o\"*R\"#6-%\"OG6#F(\"#7" }}
+}{PARA 0 "" 0 "" {TEXT -1 47 "Thus the menage OGF has an hypergeometri
+c form:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "hg_menage:=1/(1+z
+)*hypergeom([1,1],[],z/(1+z)^2);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+*hg_menageG*&,&%\"zG\"\"\"F(F(!\"\"-%*hypergeomG6%7$F(F(7\"*&F'F(F&!\"
+#F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "series(hg_menage,z=0
+,10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+5%\"zG\"\"\"\"\"!F%\"\"$\"\"
+$\"\"%\"#;\"\"&\"#'*\"\"'\"$v'\"\"(\"%8a\"\")\"&+)[\"\"*-%\"OG6#F%\"#5
+" }}}{PARA 0 "" 0 "" {TEXT -1 142 "This gives a single alternating sum
+ for the coefficients that is the counterpart of the one of [Comtet, 1
+974] for the circular menage problem." }}{PARA 0 "" 0 "" {TEXT -1 0 "
+" }}{PARA 0 "" 0 "" {TEXT -1 112 " This process gives rise to a genera
+l procedure for conversion from exponential integral to hypergeometric
+ form:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 153 "convert_hypergeom
+:=proc(e) subs(Ei=proc(a,b) if a<>1 then ERROR(`unable to convert`) el
+se exp(-b)/b*hypergeom([1,1],[],-1/b) fi end,e); simplify(\"); end;" }
+}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%2convert_hypergeomG:6#%\"eG6\"F(F(C
+$-%%subsG6$/%#EiG:6$%\"aG%\"bGF(F(F(@%09$\"\"\"-%&ERRORG6#%2unable~to~
+convertG*(-%$expG6#,$9%!\"\"F6F@FA-%*hypergeomG6%7$F6F67\",$*$F@FAFAF6
+F(F(F5-%)simplifyG6#%\"\"GF(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 23 "convert_hypergeom(P01);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-
+%*hypergeomG6%7$\"\"\"F(7\"*&,(F(F(%\"zG\"\"#*$F,F-F(!\"\"F,F(F(,&F,F(
+F(F(F/" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 276 
+11 "Asymptotics" }{TEXT -1 25 ". Experimentally, we have" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "seq(op(i,l01)/(i-1)!*1.0,i=1..16);
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "62$\"#5!\"\"\"\"!F&$\"+nmmm;!#5$\"++
+++]7F)$\"+LLLL8F)F,$\"+9dGR8F)$\"+@*4DM\"F)$\"+yrzW8F)$\"+r&GkM\"F)$\"
++MjjZ8F)$\"+sWb[8F)$\"+y%o#\\8F)$\"+GX$)\\8F)$\"+n2H]8F)" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "exp(-2)=exp(-2.);" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#/-%$expG6#!\"#$\"+KGN`8!#5" }}}{PARA 0 "" 0 "" 
+{TEXT -1 108 "Now, two values are forbidden at each position. Empirica
+lly, the number of menage numbers is seen to satisfy" }}{PARA 267 "" 
+0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "P[n]=n!*exp(-2)*(1+o(1))" "/&%\"PG
+6#%\"nG*(-%*factorialG6#F&\"\"\"-%$expG6#,$\"\"#!\"\"F+,&\"\"\"F+-%\"o
+G6#\"\"\"F+F+" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 165 "This is
+ to be compared to the asymptotics of derangements. The asymptotic est
+imate can  be established directly  from the alternating sum expressio
+n of coefficients." }}{SECT 0 {PARA 5 "" 0 "" {TEXT -1 27 "A simplifie
+d menage problem" }}{PARA 0 "" 0 "" {TEXT -1 9 "The case " }{XPPEDIT 
+18 0 "Omega=\{1\}" "/%&OmegaG<#\"\"\"" }{TEXT -1 49 " is in fact a var
+iant of the derangement problem." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 25 "G1:=build_grammar(\{1\},1):" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 63 "g1:=subs(gfsolve(op(2,G1),op(3,G1),z,[[u,marked]]),s[
+\{\}](z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#g1G*&,&!\"\"\"\"\"%
+\"zGF(F(,(F'F(*&F)F(%\"uGF(F(F)F(F'" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 84 "series(subs([z=-z,u=-t],g1),z=0,11):map(proc(x) int(x
+*exp(-t),t=0..infinity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+;
+%\"zG\"\"\"\"\"!F%\"\"\"F%\"\"#\"\"$\"\"$\"#6\"\"%\"#`\"\"&\"$4$\"\"'
+\"%>@\"\"(\"&(o;\"\")\"'H$[\"\"\"*\"(d%o9\"#5-%\"OG6#F%\"#6" }}}{PARA 
+0 "" 0 "" {TEXT -1 25 " The sequence appears as " }{TEXT 285 5 "M2905
+" }{TEXT -1 33 " in [EIS] where the EGF is given:" }}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 46 "exp(-z)/(1-z)^2=series(exp(-z)/(1-z)^2,z=0,8)
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&-%$expG6#,$%\"zG!\"\"\"\"\",&F
++F+F)F*!\"#+5F)F+\"\"!F+\"\"\"#\"\"$\"\"#\"\"##\"#6\"\"'\"\"$#\"#`\"#C
+\"\"%#\"$.\"\"#S\"\"&#\"%>@\"$?(\"\"'#\"&(o;\"%S]\"\"(-%\"OG6#F+\"\")
+" }}}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 16 "2-Menage numbers" }}{PARA 
+0 "" 0 "" {TEXT -1 53 "This is a generalization of the menage problem \+
+where " }{XPPEDIT 18 0 "Omega=\{0,1,2\}" "/%&OmegaG<%\"\"!\"\"\"\"\"#
+" }{TEXT -1 78 ": In order to avoid family fights, couples are now at \+
+distance at least 3 (!)." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "
+G012:=build_grammar(\{0,1,2\},2);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>
+%%G012G7%&%\"sG6#<\"<+/%'markedG%(EpsilonG/&%\"aG6#\"\"!%%AtomG/%)dont
+careG-%%ProdG6$F3F,/&F06#\"\"#F3/&F'6#<#F2-%&UnionG6%-F76$F5F&-F76$&F0
+6#\"\"\"F>-F76$F:&F'6#<#FJ/F&-FB6'F-FD-F76$F/F&FFFK/&F'6#<$F2FJ-FB6$-F
+76$F5F>-F76$F:FV/FM-FB6%Fen-F76$F/F>Fgn/FHF3%+unlabelledG" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "gfsolve(op(2,G012),op(3,G012),z,[[u
+,marked]]); g012:=subs(\",s[\{\}](z,u));" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#<+/-&%\"aG6#\"\"!6$%\"zG%\"uGF+/-%'markedGF*F,/-&F'6#\"\"#F*F+/-
+&%\"sG6#<#F)F**(F+\"\"\"F,F<,,*$F+\"\"$F<*&F+F4F,F<!\"\"F+!\"#*&F+F<F,
+F<FAF<F<FA/-&F'6#F<F*F+/-&F86#<$F)F<F*,$**F+F4F,F4F=FA,&FAF<F+F<FAFA/-
+&F86#<\"F*,$*(F=FA,*F<F<F+FBF@FAF>F<F<FOFAFA/-&F86#<#F<F**,F+F4F,F<,(F
+,FAFAF<F+F<F<F=FAFOFA/-%)dontcareGF*FC" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%%g012G,$*(,,*$%\"zG\"\"$\"\"\"*&F)\"\"#%\"uGF+!\"\"F)!\"#*&F)F
++F.F+F/F+F+F/,*F+F+F)F0F,F/F(F+F+,&F/F+F)F+F/F/" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 96 "series(subs([z=-z,u=-t],g012),z=0,13):P012_ser
+:=map(proc(x) int(x*exp(-t),t=0..infinity) end,\");" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%)P012_serG+9%\"zG\"\"\"\"\"!F'\"\"%\"\"&\"\"&\"#L\"
+\"'\"$O#\"\"(\"%=>\"\")\"&Su\"\"\"*\"'\\c<\"#5\"(r@%>\"#6\")`jRB\"#7-%
+\"OG6#F'\"#8" }}}{PARA 0 "" 0 "" {TEXT -1 42 "Only the beginning of th
+is sequence (till " }{XPPEDIT 18 0 "17440" "\"&Su\"" }{TEXT -1 40 " in
+cluded) appears in [EIS] as sequence " }{TEXT 269 7 "M3970. " }{TEXT 
+-1 92 "The computation above makes it possible to extend the values of
+ [EIS] to an arbitrary order." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT 278 15 "Holonomic forms" }{TEXT -1 27 ". Since t
+he denominator of " }{XPPEDIT 18 0 "g012" "I%g012G6\"" }{TEXT -1 17 " \+
+has degree 1 in " }{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 99 ", the La
+place-like integral applied to it must be expressible in terms of the \+
+exponential integral " }{XPPEDIT 18 0 "Ei(1,z)" "-%#EiG6$\"\"\"%\"zG" 
+}{TEXT -1 65 ". This, in turn is equivalent to a divergent hypergeomet
+ric form." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 77 "convert(subs([z
+=-z,u=-t],g012),parfrac,u);h012:=int(\"*exp(-t),t=0..infinity);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*(,,*$%\"zG\"\"$!\"\"*&F'\"\"#%\"tG
+\"\"\"F-F'F+*&F'F-F,F-F)F-F-F),*F-F-F'F+F*F-F&F)F-,&F)F-F'F)F)F)" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%h012G*,,,*&-%#EiG6$\"\"\",$*(,(*$%
+\"zG\"\"$F+F0!\"#!\"\"F+F+F0F3,&F3F+F0F+F3F3F+-%$expG6#*(,&F+F+F0\"\"#
+F+F0F3F4F3F+F3*(F(F+F0F+F5F+F2*&F0F1-F66#*&F0F:F4F3F+F+*&F0F:F=F+F3*(F
+(F+F0F1F5F+F+F+F0F3F4F2,&F0F+F+F+F3-F66#,$F?F3F+" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 31 "hh012:=convert_hypergeom(h012);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%&hh012G*(,&%\"zG\"\"\"-%*hypergeomG6%7$F(F(7\"
+*(,(*$F'\"\"$F(F'!\"#!\"\"F(F3F'F(,&F3F(F'F(F(F3F(,&F'F(F(F(F3F4F3" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "series(\",z=0,12);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#+7%\"zG\"\"\"\"\"!F%\"\"%\"\"&\"\"&\"#
+L\"\"'\"$O#\"\"(\"%=>\"\")\"&Su\"\"\"*\"'\\c<\"#5\"(r@%>\"#6-%\"OG6#F%
+\"#7" }}}{PARA 0 "" 0 "" {TEXT -1 40 "One can then get the holonomic f
+orms by " }{XPPEDIT 18 0 "gfun" "I%gfunG6\"" }{TEXT -1 1 "." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "holexprtodiffeq(hh012,y(z)): subs(_
+C[0]=1,\");" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,4*&,2*$%\"zG\"\"(!\"#*
+$F'\"\")!\"\"*$F'\"\"%!\"%*$F'\"\"*\"\"\"*$F'\"\"'\"\"#*$F'F5F.F,F2F'F
+2F2-%\"yG6#F'F2F2*&,0F&F)F*F)F0F2F3\"\"&F-F/*$F'F<F2F6F2F2-%%diffG6$F7
+F'F2F2F*F,F&\"\"$F3!\"$F-F<F6F/F'F,F2F2" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 25 "diffeqtorec(\",y(z),u(n));" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#<+/-%\"uG6#\"\"!\"\"\"/-F&6#F)F(/-F&6#\"\"#F(/-F&6#\"\"
+$F(,4-F&6#%\"nGF)*&,&F8F)F)F)F)-F&6#F:F)F)*&,&!\"%F)F8!\"\"F)-F&6#,&F8
+F)F0F)F)F)*&,&F8!\"$!\"*F)F)-F&6#,&F8F)F4F)F)F)*&,&F8F0\"\")F)F)-F&6#,
+&F8F)\"\"%F)F)F)*&,&\"#6F)F8F4F)-F&6#,&F8F)\"\"&F)F)F)*&,&!#5F)F8F@F)-
+F&6#,&F8F)\"\"'F)F)F)*&,&F8F@!\"(F)F)-F&6#,&F8F)\"\"(F)F)F)-F&6#,&F8F)
+FMF)F)/-F&6#F`o\"$O#/-F&6#FQF)/-F&6#FXFX/-F&6#Fin\"#L" }}}{PARA 0 "" 
+0 "" {TEXT -1 55 " This gives a fast procedure for computing the numbe
+rs." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "s012:=rectoproc(\",u(
+n),remember);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%s012G:6#%\"nG6\"6#
+%)rememberGE\\s)\"\"'\"#L\"\"!\"\"\"\"\"#F.F/F.\"\"%F/\"\"&F2\"\"(\"$O
+#\"\"$F.,4-9!6#,&9$F/!\")F/!\"\"-F86#,&F;F/!\"(F/F3-F86#,&F;F/!\"'F/!
+\"%-F86#,&F;F/!\"&F/!#:-F86#,&F;F/FFF/\"\")-F86#,&F;F/!\"$F/\"#8-F86#,
+&F;F/!\"#F/F0-F86#,&F;F/F=F/F=*&,0F>F/FBF=FGFSFLF0FPF5FUF=FYF=F/F;F/F=
+F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "seq(s012(j),j=0..30
+);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6A\"\"\"\"\"!F$F$F#\"\"&\"#L\"$O#
+\"%=>\"&Su\"\"'\\c<\"(r@%>\")`jRB\"*gf00$\"+k:s!G%\",))y3IV'\".`f(=$3.
+\"\"/HPb[ea<\"00rJs3:;$\"13Vg*4w?,'\"3a&yx$H3I.7\"47,<'))>e_GD\"5$*4y^
+u;bylb\"7.LT!Q0YSO2G\"\"8H88n:jDSR]2$\"9'*o)3Y)*\\y%pR!p(\";7vm\"\\3)e
+-Uo9+?\"<7dTHkNg!p&=T>S&\">4q)G%>;)\\5,2(HH^\"\"?T*=M!e$*Q]n5)>+&)Q%\"
+A@zX]z/X$*>S_]6#oJ\"" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 
+"" {TEXT 279 11 "Asymptotics" }{TEXT -1 151 ". This sequence obeys a g
+eneral asymptotic pattern that was alluded to before. Verification to \+
+high orders is easy thanks to the holonomic recurrences." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "seq(1.0*s012(m)/m!,m=0..50);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6U$\"#5!\"\"\"\"!F&F&$\"+nmmmT!#6F'$\"+L
+LL$e%F)$\"+$oRDo%F)$\"+WW%pv%F)$\"+tk*f![F)$\"+kbTS[F)$\"+Syal[F)$\"+g
+(*R%)[F)$\"+Mq!*)*[F)$\"+/oI5\\F)$\"+]rU>\\F)$\"+&ePo#\\F)$\"+?.%H$\\F
+)$\"+3f-Q\\F)$\"+p%3B%\\F)$\"+0'[f%\\F)$\"+&oo!\\\\F)$\"+oKw^\\F)$\"+d
+j5a\\F)$\"+Ql:c\\F)$\"+z1'z&\\F)$\"+Nmbf\\F)$\"+^_(4'\\F)$\"+i=Ci\\F)$
+\"+PuPj\\F)$\"+Z%*Rk\\F)$\"+ZDKl\\F)$\"+-\"fh'\\F)$\"+-'>p'\\F)$\"+'*H
+hn\\F)$\"+apCo\\F)$\"+z!G)o\\F)$\"+%3i$p\\F)$\"+HR&)p\\F)$\"+QzIq\\F)$
+\"+'*ysq\\F)$\"+Br6r\\F)$\"+[&y9(\\F)$\"+cZ\"=(\\F)$\"+S!G@(\\F)$\"+Q/
+Us\\F)$\"+mPps\\F)$\"+Z'\\H(\\F)$\"+N&*=t\\F)$\"+NZTt\\F)$\"+Bkit\\F)
+" }}}{PARA 0 "" 0 "" {TEXT -1 123 "Such a numerical computation suppor
+ts the assumption that asymptotically, the number of such permutations
+ should grows like" }}{PARA 260 "" 0 "" {XPPEDIT 18 0 "p[n]=n!*exp(-3)
+*(1+o(1))" "/&%\"pG6#%\"nG*(-%*factorialG6#F&\"\"\"-%$expG6#,$\"\"$!\"
+\"F+,&\"\"\"F+-%\"oG6#\"\"\"F+F+" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" 
+{TEXT -1 19 "In effect, one has:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 18 "exp(-3)=exp(-3.0);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%$expG
+6#!\"$$\"+Poqy\\!#6" }}}{PARA 0 "" 0 "" {TEXT -1 61 "(See the conclusi
+on section for a proof of this observation.)" }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{SECT 0 {PARA 263 "" 0 "" {TEXT 286 28 "Variants of 2-menage
+ numbers" }}{PARA 0 "" 0 "" {TEXT -1 9 "The case " }{XPPEDIT 18 0 "Ome
+ga=\{1,2\}" "/%&OmegaG<$\"\"\"\"\"#" }{TEXT -1 42 " is close to the cl
+assical menage problem." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 97 "G
+12:=build_grammar(\{1,2\},2):gfsolve(op(2,G12),op(3,G12),z,[[u,marked]
+]): g12:=subs(\",s[\{\}](z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$
+g12G,$*&,*\"\"\"F(*&%\"zGF(%\"uGF(!\"\"F*!\"#*$F*\"\"#F(F,,*F,F(F*F/F.
+F,*&F*F/F+F(F(F(F," }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "serie
+s(subs([z=-z,u=-t],g12),z=0,11):map(proc(x) int(x*exp(-t),t=0..infinit
+y) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+;%\"zG\"\"\"\"\"!F%\"
+\"\"F%\"\"#F%\"\"$\"\"&\"\"%\"#B\"\"&\"$J\"\"\"'\"$$))\"\"(\"%fo\"\")
+\"&,.'\"\"*\"'0;f\"#5-%\"OG6#F%\"#6" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" 
+}}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 16 "3-Menage numbers" }}{PARA 0 "
+" 0 "" {TEXT -1 32 "The basic version is defined by " }{XPPEDIT 18 0 "
+Omega=\{0,1,2,3\}" "/%&OmegaG<&\"\"!\"\"\"\"\"#\"\"$" }{TEXT -1 1 "." 
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "G0123:=build_grammar(\{0,1
+,2,3\},3):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 75 "gfsolve(op(2,
+G0123),op(3,G0123),z,[[u,marked]]): g0123:=subs(\",s[\{\}](z,u));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&g0123G,$*&,>*$%\"zG\"\"(\"\"\"*&F)
+\"\"'%\"uGF+!\"\"*$F)F-F+*&F)\"\"&F.F+F/*$F)F2F+*$F)\"\"%!\"$*&F)F5F.F
++F6*$F)\"\"$F/*&F)F9F.F+F+*&F)F9F.\"\"#F+*&F)F<F.F+F<*$F)F<F/F)F9F/F+F
++,:*&F)F+F.F+F/F7F5F>F5F4F<F+F+F)!\"%F:F+F3FAF1F6*&F)F5F.F<F+*&F)F*F.F
++F/*$F)\"\")F+F/F/" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 87 "serie
+s(subs([z=-z,u=-t],g0123),z=0,11):map(proc(x) int(x*exp(-t),t=0..infin
+ity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+3%\"zG\"\"\"\"\"!F%
+\"\"&\"\"*\"\"'\"#r\"\"(\"$J'\"\")\"%3f\"\"*\"&U2'\"#5-%\"OG6#F%\"#6" 
+}}}{PARA 0 "" 0 "" {TEXT -1 42 "This sequence is not to be found in [E
+IS]." }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 32 "Variants of the 3-Menage \+
+problem" }}{PARA 0 "" 0 "" {TEXT -1 53 "We just offer here a few rando
+m samples of sequences." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 
+0 "" {TEXT -1 16 "First, the case " }{XPPEDIT 18 0 "Omega=\{0,3\}" "/%
+&OmegaG<$\"\"!\"\"$" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 28 "G03:=build_grammar(\{0,3\},3):" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 69 "gfsolve(op(2,G03),op(3,G03),z,[[u,marked]]): g
+03:=subs(\",s[\{\}](z,u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$g03G,
+$*&,:*$%\"zG\"\"(\"\"\"*&F)\"\"'%\"uGF+!\"\"*$F)F-F/*&F)\"\"&F.F+F/*$F
+)\"\"%!\"#*&F)F4F.F+F/*$F)\"\"$\"\"#*&F)F8F.F9F+*&F)F8F.F+F9*&F)F9F.F+
+F+F)F+F/F+F+,@F+F+*&F)F+F.F+F/F;F/F7F5*$F)F9F+*&F)F4F.F9F+F6F4F3F4F)F5
+*$F)F2F5F1F/F0F+*&F)F*F.F+F/F(F5*$F)\"\")F+F/F/" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 85 "series(subs([z=-z,u=-t],g03),z=0,11):map(proc(
+x) int(x*exp(-t),t=0..infinity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#+9%\"zG\"\"\"\"\"!F%\"\"#\"\"#\"\"$\"\"'\"\"%\"#E\"\"&\"$U\"\"\"
+'\"$L*\"\"(\"%Or\"\")\"&T@'\"\"*\"'Ndg\"#5-%\"OG6#F%\"#6" }}}{PARA 0 "
+" 0 "" {TEXT -1 15 "Next, the case " }{XPPEDIT 18 0 "Omega=\{0,1,3\}" 
+"/%&OmegaG<%\"\"!\"\"\"\"\"$" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 183 "G013:=build_grammar(\{0,1,3\},3):gfsolve(op(2,\")
+,op(3,\"),z,[[u,marked]]): g013:=subs(\",s[\{\}](z,u));series(subs([z=
+-z,u=-t],g013),z=0,11):map(proc(x) int(x*exp(-t),t=0..infinity) end,\"
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%g013G,$*&,6!\"\"\"\"\"%\"zG\"
+\"#*&F*\"\"$%\"uGF)F+*&F*F-F.F+F)*$F*\"\"%!\"#*&F*F+F.F)F)*&F*F1F.F)F2
+*$F*\"\"(F)*&F*\"\"'F.F)F(*&F*\"\"&F.F)F(F),:*$F*F+F+*&F*F)F.F)F(F)F)*
+&F*F1F.F+F)F4F1F*!\"$F9F2*&F*F6F.F)F(F5F(*$F*\"\")F)*$F*F:F2F0F+F(F(" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#+7%\"zG\"\"\"\"\"!F%\"\"$\"\"#\"\"%
+\"\")\"\"&\"#U\"\"'\"$)G\"\"(\"%`A\"\")\"&6+#\"\"*\"'M\")>\"#5-%\"OG6#
+F%\"#6" }}}{PARA 0 "" 0 "" {TEXT -1 13 "And the case " }{XPPEDIT 18 0 
+"Omega=\{0,2,3\}" "/%&OmegaG<%\"\"!\"\"#\"\"$" }{TEXT -1 1 "." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 183 "G023:=build_grammar(\{0,2,3
+\},3):gfsolve(op(2,\"),op(3,\"),z,[[u,marked]]): g023:=subs(\",s[\{\}]
+(z,u));series(subs([z=-z,u=-t],g023),z=0,11):map(proc(x) int(x*exp(-t)
+,t=0..infinity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%g023G,$
+*&,6*$%\"zG\"\"(\"\"\"*&F)\"\"'%\"uGF+!\"\"*&F)\"\"&F.F+F/*&F)\"\"%F.F
++!\"#*$F)F3F4*&F)\"\"$F.\"\"#F+*&F)F7F.F+F+*&F)F8F.F+F8F)F8F/F+F+,:*$F
+)F8F8*&F)F+F.F+F/F+F+*&F)F3F.F8F+F2F3F)!\"$F0F4*&F)F*F.F+F/F(F/*$F)\"
+\")F+*$F)F1F4F5F8F/F/" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+9%\"zG\"\"\"
+\"\"!F%\"\"#F%\"\"$\"\"#\"\"%\"#5\"\"&\"#]\"\"'\"$G$\"\"(\"%JD\"\")\"&
+;A#\"\"*\"'Ay@\"#5-%\"OG6#F%\"#6" }}}{PARA 0 "" 0 "" {TEXT -1 18 "Fina
+lly, the case " }{XPPEDIT 18 0 "Omega=\{1,3\}" "/%&OmegaG<$\"\"\"\"\"$
+" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 178 "G13:=bu
+ild_grammar(\{1,3\},3):gfsolve(op(2,\"),op(3,\"),z,[[u,marked]]): g13:
+=subs(\",s[\{\}](z,u));series(subs([z=-z,u=-t],g13),z=0,11):map(proc(x
+) int(x*exp(-t),t=0..infinity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%$g13G,$*&,0*&%\"zG\"\"$%\"uG\"\"#!\"\"*&F)\"\"%F+\"\"\"F0F0F0*
+&F)F,F+F0F-F)!\"#*$F)F*F,*$F)F/F-F0,.F-F0F)F,*&F)F0F+F0F0*&F)F*F+F0F-F
+3F2F4F0F-F-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+;%\"zG\"\"\"\"\"!F%\"
+\"\"F%\"\"#\"\"$\"\"$\"\"(\"\"%\"#J\"\"&\"$h\"\"\"'\"%X5\"\"(\"%.z\"\"
+)\"&0#o\"\"*\"'4)f'\"#5-%\"OG6#F%\"#6" }}}{PARA 0 "" 0 "" {TEXT -1 0 "
+" }}}}{SECT 0 {PARA 268 "" 0 "" {TEXT -1 16 "4-Menage numbers" }}
+{PARA 0 "" 0 "" {TEXT -1 188 " This and the next example serve to test
+ the system on models of a fairly large size. The rational GF for the \+
+4-menage proble is of degree 16, and the computations only take a few \+
+seconds." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 87 "G01234:=build_gr
+ammar(\{0,1,2,3,4\},4):gfsolve(op(2,G01234),op(3,G01234),z,[[u,marked]
+]):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "g01234:=subs(\",s[\{
+\}](z,u));\n" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'g01234G,$*(,\\p!\"
+\"\"\"\"%\"zG\"\"%*&F*\"\"&%\"uG\"\"#!\")*$F*F/!\"#*&F*\"\"$F.F)F)*&F*
+F4F.F/F/*$F*F+F2*&F*F/F.F)F4*&F*F+F.F)!\"&*$F*\"#5!#6*&F*\"\"*F.F/F-*&
+F*F;F.F)F/*&F*F+F.F/F4*&F*F+F.F4F)*&F*\"\"'F.F/!\"**$F*\"#:F)*&F*\"#8F
+.F)F(*&F*\"#6F.F/!\"$*&F*FJF.F)F2*&F*\"#7F.F)F)*&F*\"#9F.F)F(*$F*FJF0*
+$F*FNF2*$F*FPF/*&F*F;F.F4F)*&F*\"\")F.F4F(*&F*F>F.F4F)*$F*F4!\"%*$F*F-
+F9*$F*FCFN*$F*\"\"(FN*&F*FCF.F4F(*&F*FgnF.F/F2*&F*F>F.F)FP*&F*FgnF.F4F
+(*&F*FCF.F)F/*&F*F-F.F)!#A*&F*FVF.F)FV*&F*FgnF.F)FN*$F*FVF+F),HF:F)Fjn
+F(F_oF/FaoF2FinF(F\\oF9FenFYF,F/F]oFCFZF/F8F-F6F+F5F(F3FYFXF2F1F+F*FY*
+&F*F)F.F)F(F)F)F(,0FenF)FZF)F8F(F7F(F1F2F*F(F)F)F(F(" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 88 "series(subs([z=-z,u=-t],g01234),z=0,11):m
+ap(proc(x) int(x*exp(-t),t=0..infinity) end,\");" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+1%\"zG\"\"\"\"\"!F%\"\"'\"#<\"\"(\"$f\"\"\")\"%`<\"\"*
+\"&$>>\"#5-%\"OG6#F%\"#6" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 
+"convert(g01234,parfrac,u);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,(*(,(*
+$%\"zG\"\"%\"\"\"*$F'\"\"$F)!\"\"F)F)F'F,,&F&F)F,F)F,F,*,,F*$F'\"#5F)*
+&F'\"\"*%\"uGF)F,*&F'\"\")F4F)F+*$F'F6!\"#*&F'\"\"(F4F)F)*$F'\"\"'!\"%
+*&F'F<F4F)!\"(*$F'\"\"&\"\"#*&F'FAF4F)F(*&F'F(F4F)F+F&F(F*F8*&F'F+F4F)
+!\"&*$F'FBF(*&F'FBF4F)F)F'F=*&F'F)F4F)F,F)F)F)F'F,,&F'F)F)F)F,,&F,F)F'
+F)F,,HF0F)F2F,F5FBF7F8*&F'F:F4FBF,F>FFF;F=*&F'FAF4FBFBFCF<F@FBFDFAF&F(
+*&F'F+F4FBF,FEF=F*F8FGF(F'F=FIF,F)F)F,#F,FB**F'F,,0F;F)F@F+F&F(F*F(FGF
+BF'F,F,F)F),0F;F)F@F)FDF,FHF,FGF8F'F,F)F)F,,&F)F)FGF)F,FP" }}}}{SECT 
+0 {PARA 269 "" 0 "" {TEXT -1 16 "5-Menage numbers" }}{PARA 0 "" 0 "" 
+{TEXT -1 83 "The computation time is now of the order of a minute (on \+
+a slow machine with about " }{XPPEDIT 18 0 "10^8" "*$\"#5\"\")" }
+{TEXT -1 60 " cycles per second). The denominator is now of degree 32 \+
+in " }{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT -1 20 " and of degree 6 in \+
+" }{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 93 "G012345:=build_grammar(\{0,1,2,3,4,5\},5): gfsol
+ve(op(2,G012345),op(3,G012345),z,[[u,marked]]):" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 29 "g012345:=subs(\",s[\{\}](z,u));\n" }}{PARA 12 
+"" 1 "" {XPPMATH 20 "6#>%(g012345G,$*&,h\\l*&%\"zG\"#6%\"uG\"\"%\"#C*&
+F)\"#7F+F,F/*&F)\"\")F+\"\"#\"#>*$F)\"#<\"$%Q*$F)\"#;\"$/#*&F)\"#9F+F,
+\"#J*&F)\"#=F+\"\"$!#U*&F)F3F+F2\"#&**$F)F>\"$i#*&F)F8F+F?!$=#*&F)\"#:
+F+F?!#o*&F)F8F+\"\"\"!$=$*&F)F3F+FK\"#W*&F)FHF+F,F**$F)\"#8!$i#!\"\"FK
+*&F)F;F+F2F5*&F)FQF+F2!#x*&F)FQF+F?\"\"&*&F)\"#5F+F,!#<*&F)F*F+F?\"$t
+\"*&F)F/F+F?\"#v*&F)F/F+F2F>*&F)F;F+F?\"#RF)FX*&F)F8F+F2!$L#*&F)FHF+F2
+!$_\"*$F)F3\"$Y\"*&F)F5F+F2\"$0\"*&F)FXF+F2!\"&*&F)FQF+F,F1*&F)F>F+F2
+\"$C\"*&F)F>F+FK\"#m*&F)FHF+FK!$%R*&F)F5F+F?!#k*&F)F5F+FK\"#[*&F)F8F+F
+,!#b*&F)FZF+F2\"$\\#*$F)F2!\"%*&F)F?F+F2F?*&F)FXF+F?\"\"'*$F)F,!\"#*&F
+)F3F+F?!#D*&F)\"#BF+F2F<*&F)F-F+F2\"#A*&F)\"#@F+F2\"$A\"*&F)F`qF+FK!#Q
+*&F)FbqF+F2\"#N*&F)F-F+FK!#K*&F)\"#?F+FK\"$1\"*&F)FbqF+FK!#E*&F)F]rF+F
+?FS*&F)FdqF+F?\"#H*&F)F]rF+F,!\"(*&F)F]rF+F2\"$@\"*&F)FdqF+FK\"##)*&F)
+F3F+F,!#8*$F)F]r\"#!)*$F)Fdq!#S*&F)F`qF+F,F?*&F)\"\"(F+F,F\\q*&F)F1F+F
+,!\")*&F)F2F+FKF,*&F)F>F+FX!\"$*&F)F-F+F?Fer*&F)\"#EF+F?Fgs*&F)\"#DF+F
+,FK*$F)F-!#X*$F)F`q!#s*$F)Fbq!$7\"*&F)F,F+FKFds*$F)FZF[r*&F)\"#IF+FKFS
+*&F)F/F+FXF2*&F)F;F+FXF1*&F)FZF+FXF\\q*&F)FHF+FjpFK*&F)F]rF+FXF\\q*&F)
+\"\"*F+F2F[p*&F)FZF+FK\"$u#*$F)F]uF1*&F)F,F+F2FX*&F)F,F+F?F2*&F)FjpF+F
+2!##**&F)FHF+FXFjp*&F)F]uF+F,!#;*&F)FQF+FXF2*&F)F*F+FXF2*&F)F5F+F,!#?*
+&F)F8F+FX!\"'*$F)FHFgp*&F)FQF+FK!$K$*&F)F*F+F2\"$P%*&F)F*F+FK\"$Y#*&F)
+F/F+FK!$'H*&F)F;F+FK!$Y#*$F)F*F`o*$F)F/!$q$*$F)F;!$/\"*&F)FZF+F?Fbs*&F
+)F1F+F?!#V*&F)F]uF+F?!#\\*&F)F>F+F,!#>*&F)F5F+FXF\\q*$F)F?F]v*$F)FXFgp
+*$F)Fjp!\"**$F)Fbs\"#x*&F)FXF+F,FK*&F)FjpF+F?!#9*&F)FbsF+F2!#j*&F)F]uF
++FK\"$e\"*&F)FbsF+F?!#P*&F)FjpF+FK!$0\"*&F)FXF+FK!#J*&F)F1F+FK\"$u\"*&
+F)FbsF+FK\"$3\"*$F)F1\"#k*&F)F]uF+FXFS*&F+FXF)F3F\\q*&F)F;F+FjpFK*$F)
+\"#FFZ*&F+F2F)FjsF?*&F+F2F)F\\tFQ*&F+F?F)F`qFer*&F+F?F)FbqFgs*&F+F?F)F
+\\tFgs*&F+F,F)FdqFbs*&F+F,F)F-FK*&F+F,F)FbqF2*&F+FKF)FcyF]v*&F+FKF)Fjs
+!#A*&F+FKF)F\\t!#G*&F+FKF)\"#GF\\q*&F+FKF)FcrFS*&F+F2F)FcyFK*$F)FjsFgp
+*$F)F\\tFhx*$F)FbzFjp*$F)FcrF,*$F)FftF?*$F)F<FKFK,f[lF(F`zF.F8F0!#qF4!
+$!=F7!$3#F:FerF=!#CFA\"#SFCFeqFE\"#'*FGFBFJ!$g\"FM\"#YFOF]rFP!$3\"FKFK
+FT!$A\"FUF^yFW\"#sFYFerFfn!$2\"Fhn\"$g\"Fjn\"$U&F[oF_sF)F]vF]oFftF_oFj
+x*&F)FKF+FKFSFao\"$;\"Fco!$'QFeoFZFgoF]rFho!#5FjoF8F\\p\"#')F^p!$4#F`p
+!$5%Fbp\"#aFdp!$[\"FfpF]u*&F)F?F+FKF?FipFKF[qFgpF]qF_[lF_qFjpFaqFZFcqF
+>FfqF1Fhq\"$+\"FjqFdsF\\r!#[F_r\"$?\"FarF_[lFbrFhxFdrFgpFfrF]\\lFhrFap
+Fjr!#7F\\sF[pF^sFf\\l*&F)FjpF+F,FKFcsF\\qF]t!#FF_tF_sFatFf[lFctF,FdtF`
+[lF\\uF\\qF^u!#cF`u\"#cFauFKFcuF[pFeuF2FhuF2FiuF\\qFju!#_F\\vF/F^v!$+
+\"F_vF@Fav!#yFcv\"$7\"Fev\"$+'Fgv!$o\"FivFf\\lFjv\"$=#F\\w!$e\"F^wF_pF
+_wF_[lFawFfoFcwFgsFewF]vFfwF2FgwF2FhwFXFjw!#')F]xF8F_xFbtFaxFf[lFcxFg
+\\lFexF^yFgxF3FixF[rF[y!$P#F]yFQF`yF\\q*&F+FXF)FdqF\\qFbyF^x*&F)F8F+Fj
+pFKFdyFZFeyF1*&F+F2F)FbzFKFfyF?Fgy\"#K*&F+F?F)FcyFgsFhyFgpFiyFg\\lFjyF
+2F[zFX*&F+F,F)FjsFKF\\zFenF]zFdsF_zFfoFazFgpFczFS*&F+FKF)F<FSFdzF2FezF
+i\\lFfzF^xFgzF,FhzF2FizFKFjzF2*$F)Fi]lFKFSFS" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 89 "series(subs([z=-z,u=-t],g012345),z=0,13):map(pro
+c(x) int(x*exp(-t),t=0..infinity) end,\");" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+3%\"zG\"\"\"\"\"!F%\"\"(\"#L\"\")\"$r$\"\"*\"%H]\"#5\"
+&6V'\"#6\"'([f)\"#7-%\"OG6#F%\"#8" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 29 "denom(g012345):series(\",u,8):" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 14 "map(factor,\");" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#+1%\"uG*(,&!\"\"\"\"\"%\"zGF(\"\"#,.*$F)\"\"&F(*$F)\"\"%F(*$F)\"
+\"$F(*$F)F*F(F)F(F'F(F*,6*$F)\"#5F(*$F)\"\"*F(*$F)\"\"(F(*$F)\"\"'F(F,
+!\"'F.!\"&F0!\"$F2!\"#F)F'F(F(F*\"\"!,$**F)F(F&F(F+F(,R*$F)\"#CF(*$F)
+\"#AF(*$F)\"#@F/*$F)\"#?\"#<*$F)\"#>F5*$F)\"#=F/*$F)FLF5*$F)\"#;F'*$F)
+\"#:!#!**$F)\"#9!#X*$F)\"#8\"#Y*$F)\"#7!#I*$F)\"#6!#GF4\"$J#F6\"$g\"*$
+F)\"\")\"#^F8\"#iF:FSF,!$5\"F.!#BF0F?F2F(F)F*F(F(F(F'\"\"\"*&F)F/,TFQF
+PFR!#5FO\"$+\"FZ!$'QF(F(F)F5FMF;F2\"#mF.!#qFJF5FHF`oFDF(*$F)\"#BF*FFF5
+F4!$A\"F6\"#kFT\"#SFjn\"$u\"Fgn\"#IFWFhoF0!$7\"F,F?F:!$[\"F8!#yF_o\"$U
+&F(\"\"#,$*&F)F-,LFgn\"$4#FJF/F_o!#sF8!$g\"FFF1FZFEF:\"$2\"F6FapF0FEFR
+\"#JFjn!#'*F'F(F,F`pF)!#;FOF>FQ!#KF2FhnF4!#&*F.F-FTFEFWFEF(F'\"\"$*&F)
+F;,DF(F(FRF-Fjn!#_F4\"#aF.!\"(F_oFjqF2F?FW!\"%FgnF>F,F\\oFJF(FOF*F8FKF
+:FSFZ!#7FTF\\rF6FKF(\"\"%,$*&F)F[o,0F_oF(F.F'F2F'F(F(F,F<F:F1F4F(F(F?
+\"\"&FR\"\"'" }}}{PARA 0 "" 0 "" {TEXT -1 35 "Only partial patterns ar
+e apparent." }}}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 3 "" 0 
+"" {TEXT -1 39 "4. Cyclically constrained position gaps" }}{PARA 0 "" 
+0 "" {TEXT -1 816 "The problems we consider in this section are of so-
+called \"cyclic\" or \"toroidal type\". In the menage formulation, one
+ may for instace have a round table (the classical formulation of the \+
+menage problem is of this type). Cyclic templates are in fact easily d
+erivable from the linear ones that were considered earlier. This gives
+ directly the enumeration of permutations with forced position gaps (i
+n the cyclic sense) and the generating functions are, like for templat
+es, rational functions. The inclusion-exclusion argument  still aplies
+ in the form already encountered and this provides the enumeration of \+
+permutations with forbidden position gaps (in the cyclic sense). In th
+is way, we solve automatically the classical menage problem and its ge
+neralizations while completing in passing some of the entries of the \+
+" }{TEXT 327 33 "Encyclopedia of Integer Sequences" }{TEXT -1 7 " [EIS
+]." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 4 "" 0 "" {TEXT 
+-1 20 "Forced position gaps" }}{PARA 274 "" 0 "" {TEXT -1 78 "One firs
+t seeks to enumerate the permutations such that all position gaps are \+
+" }{TEXT 316 6 "forced" }{TEXT -1 26 " to lie in some fixed set " }
+{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 6 ". For " }{XPPEDIT 18 
+0 "Omega" "I&OmegaG6\"" }{TEXT -1 108 " a subset of the nonnegative in
+tegers, the problem only makes sense if one considers the constraints \+
+to be \"" }{TEXT 291 8 "toroidal" }{TEXT -1 70 "\". In this section, p
+ermutation are thus considered as values  modulo " }{XPPEDIT 18 0 "n" 
+"I\"nG6\"" }{TEXT -1 27 " and attached to positions " }{XPPEDIT 18 0 "
+1..n" ";\"\"\"%\"nG" }{TEXT -1 81 " on a cycle. For instance [2,3,4,1]
+ is such Sthat each position gap is exactly 1." }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 466 "The system of transition
+s is the same as before. However, in the graph of transitions, one mus
+t restrict attention to paths such that the initial and the final stat
+es are the same: this corresponds to the fact that constraints from th
+e end of the permutations are propagated back to the beginning. In thi
+s basic enumeration problem, no inclusion-exclusion argument is needed
+, and the problem is directly modelled by a finite-state device relate
+d to the earlier ones." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 237 "build_transition:=proc(state,Omega
+,initial_state) local x,t; if state=initial_state then t:=Epsilon else
+ t:=NULL fi;s[state]=Union(t,Prod(dontcare,s[MinusOne(state)]),seq(Pro
+d(a[x],s[MinusOne(state union \{x\})]),x=Omega minus state)) end;" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%1build_transitionG:6%%&stateG%&Omega
+G%.initial_stateG6$%\"xG%\"tG6\"F-C$@%/9$9&>8%%(EpsilonG>F4%%NULLG/&%
+\"sG6#F1-%&UnionG6%F4-%%ProdG6$%)dontcareG&F:6#-%)MinusOneGF;-%$seqG6$
+-F@6$&%\"aG6#8$&F:6#-FF6#-%&unionG6$F1<#FO/FO-%&minusG6$9%F1F-F-" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "build_transition(\{1,2\},\{0
+,1,2,3\},\{\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"sG6#<$\"\"\"\"
+\"#-%&UnionG6%-%%ProdG6$%)dontcareG&F%6#<$\"\"!F(-F.6$&%\"aG6#F4F1-F.6
+$&F86#\"\"$&F%6#<%F4F(F)" }}}{PARA 0 "" 0 "" {TEXT -1 102 "The followi
+ng procedure builds the specification that corresponds to a loop that \+
+starts and ends with " }{XPPEDIT 18 0 "initial_state" "I.initial_state
+G6\"" }{TEXT -1 80 " in the transition graph. It is a simple modificat
+ion of the previous procedure " }{XPPEDIT 18 0 "build_grammar" "I.buil
+d_grammarG6\"" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 188 "build_loop:=proc(Omega,initial_state) [s[\{\}],\{build_alphabet
+(Omega)\} union map(build_transition,combstruct[allstructs](Subset(\{$
+0..max(op(Omega))-1\})),Omega,initial_state),unlabelled] end;" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%+build_loopG:6$%&OmegaG%.initial_sta
+teG6\"F)F)7%&%\"sG6#<\"-%&unionG6$<#-%/build_alphabetG6#9$-%$mapG6&%1b
+uild_transitionG-&%+combstructG6#%+allstructsG6#-%'SubsetG6#<#-%\"$G6#
+;\"\"!,&-%$maxG6#-%#opGF5\"\"\"!\"\"FPF69%%+unlabelledGF)F)" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "build_loop(\{0\},\{\});build
+_loop(\{0,1\},\{0\});" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7%&%\"sG6#<\"
+<&/F$-%&UnionG6%%(EpsilonG-%%ProdG6$%)dontcareGF$-F/6$&%\"aG6#\"\"!F$/
+%'markedGF-/F4%%AtomG/F1-F/6$F;F9%+unlabelledG" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#7%&%\"sG6#<\"<(/%'markedG%(EpsilonG/&%\"aG6#\"\"!%%Atom
+G/%)dontcareG-%%ProdG6$F1F*/&F%6#<#F0-%&UnionG6%F+-F56$F3F$-F56$&F.6#
+\"\"\"F8/F$-F<6%F>-F56$F-F$F@/FBF1%+unlabelledG" }}}{PARA 0 "" 0 "" 
+{TEXT -1 110 " We could construct a composite grammar for all loops, i
+t is however simpler to solve for the GF of each loop." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 187 "gf_loops:=proc(Omega) local is; \n
+normal(add(subs(gfsolve(op(2,build_loop(Omega,is)),unlabelled,z,[[u,ma
+rked]]),s[is](z,u)),is=combstruct[allstructs](Subset(\{$0..max(op(Omeg
+a))-1\})))) end;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%)gf_loopsG:6#%&O
+megaG6#%#isG6\"F*-%'normalG6#-%$addG6$-%%subsG6$-%(gfsolveG6&-%#opG6$
+\"\"#-%+build_loopG6$9$8$%+unlabelledG%\"zG7#7$%\"uG%'markedG-&%\"sG6#
+F?6$FAFD/F?-&%+combstructG6#%+allstructsG6#-%'SubsetG6#<#-%\"$G6#;\"\"
+!,&-%$maxG6#-F86#F>\"\"\"!\"\"F[oF*F*" }}}{PARA 0 "" 0 "" {TEXT -1 
+134 "The bivariate GF counts configurations with possible exceptions (
+it is useful for the analysis of configurations with forbidden gaps).
+" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 94 "In th
+e case where only singletons are allowed, then there is only 1 possibi
+lity for each size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 1 "." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "l0:=gf_loops(\{0\},0); subs(
+u=0,\");series(\",z=0,10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#l0G,$
+*$,(!\"\"\"\"\"*&%\"zGF)%\"uGF)F)F+F)F(F(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*$,&!\"\"\"\"\"%\"zGF'F&F&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+9%\"zG\"\"\"\"\"!F%\"\"\"F%\"\"#F%\"\"$F%\"\"%F%\"\"&F
+%\"\"'F%\"\"(F%\"\")F%\"\"*-%\"OG6#F%\"#5" }}}{PARA 0 "" 0 "" {TEXT 
+-1 12 "In the case " }{XPPEDIT 18 0 "Omega=\{0,1\}" "/%&OmegaG<$\"\"!
+\"\"\"" }{TEXT -1 60 ", the first element (either 0 or 1) conditions a
+ll the rest." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "l01:=gf_loop
+s(\{0,1\},1);subs(u=0,\");series(\",z=0,10);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$l01G,$*&,(!\"#\"\"\"*&%\"zGF)%\"uGF)F)F+\"\"#F),*F)F
+)F*!\"\"F+F(*$F+F-F)F/F/" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*&,&!\"#
+\"\"\"%\"zG\"\"#F',(F'F'F(F&*$F(F)F'!\"\"F," }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+9%\"zG\"\"#\"\"!F%\"\"\"F%\"\"#F%\"\"$F%\"\"%F%\"\"&F%
+\"\"'F%\"\"(F%\"\")F%\"\"*-%\"OG6#\"\"\"\"#5" }}}{PARA 0 "" 0 "" 
+{TEXT -1 9 "The case " }{XPPEDIT 18 0 "Omega=\{0,1,2\}" "/%&OmegaG<%\"
+\"!\"\"\"\"\"#" }{TEXT -1 37 " is the first one that is nontrivial." }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "l012:=gf_loops(\{0,1,2\},2)
+;subs(u=0,\");series(\",z=0,10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+%l012G,$*(,.\"\"%\"\"\"%\"zG!\"**&F*F)%\"uGF)!\"$*$F*\"\"#F(*$F*\"\"$F
+)*&F*F2F-F)F)F),,F1F)*&F*F0F-F)!\"\"F*!\"#F,F6F)F)F6,&F6F)F*F)F6F6" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*(,*\"\"%\"\"\"%\"zG!\"**$F(\"\"#F&*
+$F(\"\"$F'F',(F,F'F(!\"#F'F'!\"\",&F0F'F(F'F0F0" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+9%\"zG\"\"%\"\"!\"\"$\"\"\"\"\"&\"\"#\"\"'\"\"$\"\"*\"
+\"%\"#8\"\"&\"#?\"\"'\"#J\"\"(\"#\\\"\")\"#y\"\"*-%\"OG6#\"\"\"\"#5" }
+}}{PARA 0 "" 0 "" {TEXT -1 13 "The sequence " }{XPPEDIT 18 0 "3,5,6,9,
+13" "6'\"\"$\"\"&\"\"'\"\"*\"#8" }{TEXT -1 18 ",etc, is sequence " }
+{TEXT 287 5 "M2396" }{TEXT -1 5 " of [" }{TEXT 288 3 "EIS" }{TEXT -1 
+2 "]." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "l0123:=gf_loops(\{0
+,1,2,3\},3);subs(u=0,\");series(\",z=0,12);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%&l0123G,$*&,8!\")\"\"\"%\"zG\"#G*&F*F)%\"uGF)\"\"(*$F
+*\"\"#!#C*&F*\"\"$F-F)!\"&*$F*\"\"%F(*&F*\"\"&F-F)\"\"**$F*F8\"#7*&F*F
+6F-F)!#;*&F*F6F-F0!\"%*&F*F.F-F)F)F),:F,!\"\"F<F6F/F6F5F0F)F)F*F?F2F)F
+:F?F7!\"$F>F)F@FB*$F*\"\")F)FBFB" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$
+*&,,!\")\"\"\"%\"zG\"#G*$F(\"\"#!#C*$F(\"\"%F&*$F(\"\"&\"#7F',.F'F'F(!
+\"%F*F.F-F+F/F3*$F(\"\")F'!\"\"F6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+
+=%\"zG\"\")\"\"!\"\"%\"\"\"F%\"\"#\"#;\"\"$\"#C\"\"%\"#W\"\"&\"#!)\"\"
+'\"$W\"\"\"(\"$k#\"\")\"$%[\"\"*\"$)))\"#5\"%K;\"#6-%\"OG6#\"\"\"\"#7
+" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 290 20 "Gen
+erating functions" }{TEXT -1 34 ". These are clearly rational. Let " }
+{XPPEDIT 18 0 "f(z)=N(z)/D(z)" "/-%\"fG6#%\"zG*&-%\"NG6#F&\"\"\"-%\"DG
+6#F&!\"\"" }{TEXT -1 119 " be the GF that arises in each case. Then, a
+ general result concerning generating functions of loops in graphs [Bi
+ggs, " }{TEXT 308 22 "Algebraic Graph Theory" }{TEXT -1 21 ", 1993] im
+plies that " }{XPPEDIT 18 0 "f(z)-m" ",&-%\"fG6#%\"zG\"\"\"%\"mG!\"\"
+" }{TEXT -1 8 ", where " }{XPPEDIT 18 0 "m=2^(d-1)" "/%\"mG)\"\"#,&%\"
+dG\"\"\"\"\"\"!\"\"" }{TEXT -1 67 "  is the dimension of the state spa
+ce, is a logarithmic derivative," }}{PARA 270 "" 0 "" {TEXT -1 1 " " }
+{XPPEDIT 18 0 "f(z)-m=z*diff(D(z),z)/D(z)" "/,&-%\"fG6#%\"zG\"\"\"%\"m
+G!\"\"*(F'F(-%%diffG6$-%\"DG6#F'F'F(-F06#F'F*" }}{PARA 0 "" 0 "" 
+{TEXT -1 13 "For instance:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+23 "L0123:=subs(u=0,l0123);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&L012
+3G,$*&,,!\")\"\"\"%\"zG\"#G*$F*\"\"#!#C*$F*\"\"%F(*$F*\"\"&\"#7F),.F)F
+)F*!\"%F,F0F/F-F1F5*$F*\"\")F)!\"\"F8" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 19 "int((L0123-8)/z,z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#,$-%#lnG6#,(*$%\"zG\"\"%\"\"\"F+F+F)!\"#F," }}}{PARA 0 "" 0 "" 
+{TEXT -1 38 "This is also true of the bivariate GF:" }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 19 "int((l0123-8)/z,z);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$-%#lnG6#,:*&%\"zG\"\"\"%\"uGF*!\"\"*&F)\"\"%F+F*F.*$F
+)\"\"#F.*$F)F.F0F*F*F)!\"%*&F)\"\"$F+F*F**$F)\"\"&F2*&F)F6F+F*!\"$*&F)
+F.F+F0F**&F)\"\"(F+F*F,*$F)\"\")F*F," }}}{PARA 0 "" 0 "" {TEXT -1 0 "
+" }}{PARA 0 "" 0 "" {TEXT 289 11 "Recurrences" }{TEXT -1 47 ". The GF'
+s for forced position gaps are always " }{TEXT 317 8 "rational" }
+{TEXT -1 77 ". Linear recurrences (with constant coefficients) are the
+n available by gfun." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "seri
+es(L0123,z=0,12);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"\")\"\"!
+\"\"%\"\"\"F%\"\"#\"#;\"\"$\"#C\"\"%\"#W\"\"&\"#!)\"\"'\"$W\"\"\"(\"$k
+#\"\")\"$%[\"\"*\"$)))\"#5\"%K;\"#6-%\"OG6#\"\"\"\"#7" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "holexprtodiffeq(L0123,y(z));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&,(*$%\"zG\"\"%\"\"\"F)F)F'!\"#F)-%
+\"yG6#F'F)F)F'\"#7!\")F)" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "recl0123:=diffeqtorec(\",y(z),u(n))
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)recl0123G<&,,-%\"uG6#%\"nG!\"
+\"-F(6#,&F*\"\"\"F/F/F+-F(6#,&F*F/\"\"#F/F+-F(6#,&F*F/\"\"$F/F/\"\"%F/
+/-F(6#\"\"!\"\")/-F(6#F/F8/-F(6#F3F=" }}}{PARA 0 "" 0 "" {TEXT -1 95 "
+High index values can be obtained quickly by the binary powering metho
+d that is implemented in " }{HYPERLNK 17 "gfun[rectoproc]" 2 "gfun[rec
+toproc]" "" }{TEXT -1 53 ". The recurrence needs to be made homogeneou
+s, first." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "op(1,recl0123)-
+subs(n=n+1,op(1,recl0123));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(-%\"u
+G6#%\"nG!\"\"-F%6#,&F'\"\"\"\"\"$F,\"\"#-F%6#,&F'F,\"\"%F,F(" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 57 "sl0123:=rectoproc(\{\",u(0)=
+8,u(1)=4,u(2)=8,u(3)=16\},u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%
+'sl0123G:6#%\"nG6+%\"aG%$resG%\"iG%\"lG%#u0G%#u1G%#u2G%#u3G%#u4G6\"E\\
+s%\"\"#\"\")\"\"$\"#;\"\"!F5\"\"\"\"\"%@%19$\"$c#C(>8(F5>8)F:>8*F5>8+F
+7?(8&F:F9,&F=F9!\"\"F9%%trueGC'>8,,&FAFKFGF4>FAFC>FCFE>FEFG>FGFOFPC'>8
+$-%&arrayG6%;F9F:Fen7&7&F4F8F8FK7&F9F8F8F87&F8F9F8F87&F8F8F9F8>8%-FY6$
+Fen7&F7F5F:F5>8'-%(convertG6%,&F=F9!\"$F9%%baseGF4@$/&Fao6#F9F9>F\\o-F
+Y6$Fen7&/F4F7/F6F5/F:F:/F9\"#C@%/Fao7#F9&F\\oF[pC$?&FI-%'subsopG6%/F9F
+2/-%%nopsG6#FaoF2FaoFLC$>FW-FY6%FenFen72/6$F:F6,**&&FW6$F:F9F9&FW6$F9F
+6F9F9*&&FW6$F:F4F9&FW6$F4F6F9F9*&&FWFiqF9&FW6$F6F6F9F9*&&FW6$F:F:F9Ffr
+F9F9/6$F9F4,**&&FW6$F9F9F9&FWF]sF9F9*&FbsF9&FW6$F4F4F9F9*&F^rF9&FW6$F6
+F4F9F9*&&FW6$F9F:F9FarF9F9/F[s,**&FjsF9F\\rF9F9*&&FW6$F4F:F9FarF9F9*&&
+FW6$F6F:F9FfrF9F9*$FjrF4F9/Fdr,**&&FW6$F4F9F9F^rF9F9*&FdsF9FcrF9F9*&Fc
+rF9FgrF9F9*&F`tF9FfrF9F9/Fdt,**&&FW6$F6F9F9FjsF9F9*&FgsF9F`tF9F9*&FgrF
+9FctF9F9*&FctF9FjrF9F9/Fjt,**&FitF9F`sF9F9*&FdsF9FitF9F9*&FcrF9FauF9F9
+*&F`tF9F\\rF9F9/Fat,**&FitF9FjsF9F9*&FdsF9F`tF9F9*&FcrF9FctF9F9*&F`tF9
+FjrF9F9/Fhs,**&FauF9FbsF9F9*&FgsF9FdsF9F9*&FgrF9FgsF9F9*&FctF9FarF9F9/
+Fes,**&FbsF9FitF9F9*$FdsF4F9*&FcrF9FgsF9F9F_tF9/F]r,**&F\\rF9F`sF9F9*&
+FarF9FitF9F9*&FfrF9FauF9F9*&FjrF9F\\rF9F9/F[t,**&F`sF9FjsF9F9*&FbsF9F`
+tF9F9*&F^rF9FctF9F9*&FjsF9FjrF9F9/F_r,**&F`sF9F^rF9F9*&FbsF9FcrF9F9*&F
+^rF9FgrF9F9*&FjsF9FfrF9F9/Fbr,**&F\\rF9FbsF9F9*&FarF9FdsF9F9*&FfrF9Fgs
+F9F9*&FjrF9FarF9F9/Fas,**$F`sF4F9FjvF9*&F^rF9FauF9F9F^tF9/Fbu,**&FauF9
+F`sF9F9*&FgsF9FitF9F9*&FgrF9FauF9F9*&FctF9F\\rF9F9/Fhr,*FhxF9F\\wF9*$F
+grF4F9FbtF9@$/FIF9>F\\o-FY6$Fen7&/F4,**&FitF9FhpF9F9*&FdsF9&F\\o6#F4F9
+F9*&FcrF9&F\\o6#F6F9F9*&F`tF9&F\\o6#F:F9F9/F6,**&FauF9FhpF9F9*&FgsF9F
+\\zF9F9*&FgrF9F_zF9F9*&FctF9FbzF9F9/F:,**&F\\rF9FhpF9F9*&FarF9F\\zF9F9
+*&FfrF9F_zF9F9*&FjrF9FbzF9F9/F9,**&F`sF9FhpF9F9*&FbsF9F\\zF9F9*&F^rF9F
+_zF9F9*&FjsF9FbzF9F9,**&FfxF9FhpF9F9*&F^sF9F\\zF9F9*&FjwF9F_zF9F9*&Fdw
+F9FbzF9F9F2F2" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "sl0123(100
+0);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#\"d[lW:W8d8B_H!>#G;N6Y0$HTQY%\\
+V+2d'**4j[%37_$e\"4)37=)oB%=J)\\50t]BUl.q$zlcad*zru>\\!y^u)3lCiIpd0`U#
+o]B#p!\\))G,<&Q:'3U]wrVLF%f!\\X\\I)3;P\\2\"QW7P(**\\!f;/?RX8BA*)" }}}
+{PARA 0 "" 0 "" {TEXT -1 86 "The complexity of this computation is thu
+s of O(log(n)) arithmetic operations for the " }{XPPEDIT 18 0 "n" "I\"
+nG6\"" }{TEXT -1 9 "th term: " }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 88 "for m in [1000,2000,4000,8000,16000,32000] do st:=time():sl0123(
+m):print(time()-st); od:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"#h!\"$
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"##)!\"$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"$>\"!\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"$#=!
+\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"$>$!\"$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"%U7!\"$" }}}{PARA 0 "" 0 "" {TEXT -1 120 "The comput
+ation of the value of index 32000 takes typically 1 second of computer
+ time though the number has 8470 digits:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 18 "sl0123(32000)*1.0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#$\"++d@67\"%g%)" }}}{PARA 0 "" 0 "" {TEXT -1 106 "(Such fast algorith
+ms are useful for instance when analyzing patterns in strings, like in
+ DNA sequences.) " }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 4 
+"" 0 "" {TEXT -1 23 "Forbidden position gaps" }}{PARA 0 "" 0 "" {TEXT 
+-1 222 "We are dealing here with menage problems in the classical sens
+e of a circular table. The same integral transformation as in the nonc
+yclic/nontoroidal case works for obtaining the GF of permutations with
+ excluded patterns, " }{TEXT 292 3 "i.e" }{TEXT -1 22 "., no position \+
+gap in " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 1 "." }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 9 "The case " }
+{XPPEDIT 18 0 "Omega=\{0\}" "/%&OmegaG<#\"\"!" }{TEXT -1 52 " gives ba
+ck the derangement numbers (again, this is " }{TEXT 297 5 "M1937" }
+{TEXT -1 11 " of [EIS])." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 84 "
+series(subs([z=-z,u=-t],l0),z=0,13):map(proc(x) int(x*exp(-t),t=0..inf
+inity) end,\");" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"\"\"\"\"!F
+%\"\"#\"\"#\"\"$\"\"*\"\"%\"#W\"\"&\"$l#\"\"'\"%a=\"\"(\"&L[\"\"\")\"'
+'\\L\"\"\"*\"(h\\L\"\"#5\")qXo9\"#6\"*T[@w\"\"#7-%\"OG6#F%\"#8" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 20 "Next come
+s the case " }{XPPEDIT 18 0 "Omega=\{0,1\}" "/%&OmegaG<$\"\"!\"\"\"" }
+{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "series(subs
+([z=-z,u=-t],l01),z=0,13):map(proc(x) int(x*exp(-t),t=0..infinity) end
+,\");" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"\"#\"\"!!\"\"\"\"\"
+\"\"\"\"\"$F%\"\"%\"#8\"\"&\"#!)\"\"'\"$z&\"\"(\"%QZ\"\")\"&(QV\"\"*\"
+'#zR%\"#5\"(T2*[\"#6\")Um@f\"#7-%\"OG6#F)\"#8" }}}{PARA 0 "" 0 "" 
+{TEXT -1 113 "This, apart from the first two values (see the next sect
+ion for possible adjustments) is exactly the sequence of " }{TEXT 294 
+14 "Menage Numbers" }{TEXT -1 20 " that is listed as  " }{TEXT 293 6 "
+M2062 " }{TEXT -1 9 "in [EIS]." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 53 "int(x*exp(-t)*subs([z=-z,u=-t],l01-2),t=0..infinity);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#,$**%\"xG\"\"\",(*&-%$expG6#!\"#F&-%#EiG6$F&
+,$*&,(F&F&%\"zG\"\"#*$F3F4F&F&F3!\"\"F6F&F&*&F3F&-F*6#*&,&F&F&F5F&F&F3
+F6F&F&*(F)F&F-F&F3F4F6F&F3F6-F*6#,$F:F6F&F6" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 21 "convert_hypergeom(\");" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$*(,*%\"zG\"\"\"*&F&F'-%*hypergeomG6%7$F'F'7\"*&,(F'F'
+F&\"\"#*$F&F0F'!\"\"F&F'F'F'F)F2F'F'F'%\"xGF',&F&F'F'F'F2F2" }}}{PARA 
+0 "" 0 "" {TEXT -1 115 "This gives the ordinary GF for the menage prob
+lem. This GF is closely related to that of the linear menage problem.
+" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 50 "The g
+eneralized menage numbers that correspond to " }{XPPEDIT 18 0 "Omega=
+\{0,1,2\}" "/%&OmegaG<%\"\"!\"\"\"\"\"#" }{TEXT -1 11 " appear as " }
+{TEXT 295 5 "M2121" }{TEXT -1 60 " in [EIS] under the name \"discordan
+t permutations of length " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 2 "
+\"." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 86 "series(subs([z=-z,u=-
+t],l012),z=0,13):map(proc(x) int(x*exp(-t),t=0..infinity) end,\");" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"\"%\"\"!!\"#\"\"\"\"\"\"\"\"#
+F)\"\"%\"\"#\"\"&\"#?\"\"'\"$W\"\"\"(\"%l7\"\")\"&s?\"\"\"*\"'ll7\"#5
+\"(+^W\"\"#6\")S^(y\"\"#7-%\"OG6#F)\"#8" }}}{PARA 0 "" 0 "" {TEXT -1 
+0 "" }}{PARA 0 "" 0 "" {TEXT -1 55 "The next sequence called \"hit pol
+ynomials\" is given as " }{TEXT 296 5 "M2154" }{TEXT -1 46 " in [EIS],
+ where it stops at the value 369321." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 87 "series(subs([z=-z,u=-t],l0123),z=0,13):map(proc(x) in
+t(x*exp(-t),t=0..infinity) end,\");" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#+=%\"zG\"\")\"\"!!\"$\"\"\"\"\"#\"\"#!\"\"\"\"$\"\"\"\"\"&F)\"\"'\"#J
+\"\"(\"$k#\"\")\"%$y#\"\"*\"&=3$\"#5\"'@$p$\"#6\"(_fu%\"#7-%\"OG6#F-\"
+#8" }}}{PARA 0 "" 0 "" {TEXT -1 122 "It is possible to complete the ta
+ble to arbitrary orders, obtaining exact forms of the GF, recurrences,
+ etc. For instance:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 51 "int(s
+ubs([z=-z,u=-t],l0123)*exp(-t),t=0..infinity):" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 29 "hl0123:=convert_hypergeom(\");" }}{PARA 12 "" 
+1 "" {XPPMATH 20 "6#>%'hl0123G,$*,%\"zG\"\"#,ho*$*&,0*$F'\"\"'\"\"\"*$
+F'\"\"&!\"#*$F'\"\"%\"\"$*$F'F5F4*$F'F(!\"&F'F2F/F/F/,&F/F/F7F/F(#F/F(
+!\"%*&F+F:F'F/!#7*&F'F4-%*hypergeomG6%7$F/F/7\",$*&,0F7!\"\"F-F/F3F5F6
+F4F/F/F<F/F*F/FGF'F5F(F/\"\"(*&F'F/-F@6%FBFC,$*&F'F5,0F7FGF-F/F3F5F6F4
+F/F/F<FGF*FGFGF(F/F4*&F+F:F'F5F4*&F'F.FJF/!\")*&F'F/F?F/F;*&F'F4FJF/!
+\"(*&F'\"#7FJF/FG*&F'\"\"*FJF/F;*&F'FVF?F/F/*&F'F1F?F/\"\")*&F'FXF?F/F
+4*&F'F5FJF/!#5*&F'F.F?F/Fen*&FJF/F+F:F2*&F'F1FJF/FQ*&F'\"#6F?F/F2*&F'F
+5F?F/\"#5*&F'F]oFJF/F(*&F'FenF?F/F/*&F?F/F+F:F2FJF/F?FG*&F'F(F+F:F;*(F
+'F.FJF/F+F:F2*&F'FenFJF/FG*(F'FHFJF/F+F:F(*(F'FHF?F/F+F:F(*&F'FHF+F:F;
+*&F'F.F+F:F4*&F'F1F+F:F;*&F'F4F+F:F=*(F'F/F?F/F+F:F;*(F'F1F?F/F+F:F(*(
+F'F/FJF/F+F:F;*(F'F1FJF/F+F:F(*(F'F.F?F/F+F:F2F/FFFG,.F0FGF3F/F6F;F'F/
+FGF/F*F/FGF+#FGF(F4" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "seri
+es(hl0123,z=0,33);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+[o%\"zG\"\")\"
+\"!!\"$\"\"\"\"\"#\"\"#!\"\"\"\"$\"\"\"\"\"&F)\"\"'\"#J\"\"(\"$k#\"\")
+\"%$y#\"\"*\"&=3$\"#5\"'@$p$\"#6\"(_fu%\"#7\")**fFl\"#8\"*EU(y&*\"#9\"
+,*=%e^\\\"\"#:\"-?(>S_Z#\"#;\".x$\\?-MV\"#<\"/9lK&R_+)\"#=\"1.#4MD**fb
+\"\"#>\"2W@a_y5b<$\"#?\"3tP*Q9j'3!z'\"#@\"5YX0fHg,F=:\"#A\"6*40h&e*>`k
+VN\"#B\"7C_U_SnYa')=')\"#C\"9JDF%o$**Ric2\"=#\"#D\":uEK8NP0q!HIMd\"#E
+\"<`I[>rV*)H#pO>k:\"#F\"=!GHu'Q$3H!pFjH@W\"#G\"?:&z>O,!eqpsNzU$H\"\"#H
+\"@5'[M1\"4(pR--WF(=\"R\"#I-%\"OG6#F-\"#J" }}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 11 "Conclusions" }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 206 "The combinator
+ial packages may be used to facilitate the enumeration of permutations
+ with contraints on \"positions\". In essence, a finite-state model is
+ solved that leads to a bivariate generating function " }{XPPEDIT 18 
+0 "R(z,t)" "-%\"RG6$%\"zG%\"tG" }{TEXT -1 62 " and the GF's of interes
+t appear to be integral transforms of " }{XPPEDIT 18 0 "R(z,t)" "-%\"R
+G6$%\"zG%\"tG" }{TEXT -1 108 ". In particular these GF are all holonom
+ic. Thus, the corresponding counting sequences can be determined in " 
+}{XPPEDIT 18 0 "O(n)" "-%\"OG6#%\"nG" }{TEXT -1 24 " arithmetic operat
+ions. " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 51 
+"If partial fraction decompositions are effected on " }{XPPEDIT 18 0 "
+R(z,t)" "-%\"RG6$%\"zG%\"tG" }{TEXT -1 111 ", then the GF's appear to \+
+be systematically expressible as compositions of the divergent hyperge
+ometric series " }{XPPEDIT 18 0 "hypergeom([1,1],[],z)" "-%*hypergeomG
+6%7$\"\"\"\"\"\"7\"%\"zG" }{TEXT -1 185 " with algebraic functions. Th
+e simplest of these forms have been made explicit above in some cases,
+ like derangements, menage, and successions. The same method also allo
+ws for counting " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 15 "-
+exceptions in " }{TEXT 283 4 "all " }{TEXT -1 190 "permutations by mea
+ns of bivariate generating functions. A typical problem in this range \+
+is the statistics of the number of \"conflicts\" in a random assignmen
+t of seats in the menage problem." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 205 "The fast algorithms make it possible to \+
+perform numerical observations and conjecture various asymptotic patte
+rns. One of these, which is confirmed in the particular cases treated \+
+above is [see, I. Vardi, " }{TEXT 284 42 "Computational Recreations wi
+th Mathematica" }{TEXT -1 32 ", Addison-Wesley, 1991; p. 123]:" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 309 8 "Property
+" }{TEXT -1 2 ". " }{TEXT 280 75 "The fraction of permutations with  g
+aps that do not belong to a finite set " }{XPPEDIT 281 0 "Omega" "I&Om
+egaG6\"" }{TEXT 282 17 " is asymptotic to" }}{PARA 264 "" 0 "" {TEXT 
+-1 1 " " }{XPPEDIT 18 0 "e^(-c)" ")%\"eG,$%\"cG!\"\"" }{TEXT -1 1 "," 
+}}{PARA 266 "" 0 "" {TEXT -1 6 "where " }{XPPEDIT 18 0 "c=card(Omega)
+" "/%\"cG-%%cardG6#%&OmegaG" }{TEXT -1 68 ". More generally, the proba
+bility that a random permutation of size " }{XPPEDIT 18 0 "n" "I\"nG6
+\"" }{TEXT -1 5 " has " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 21 "  \+
+exceptions of type " }{XPPEDIT 18 0 "Omega" "I&OmegaG6\"" }{TEXT -1 7 
+" (with " }{XPPEDIT 18 0 "k" "I\"kG6\"" }{TEXT -1 47 " fixed) is given
+ by a Poisson law of parameter " }{XPPEDIT 18 0 "c" "I\"cG6\"" }{TEXT 
+-1 1 "," }}{PARA 265 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "Pr(`# exce
+ptions`=k)=exp(-c)*c^k/k!*(1+o(1)" "/-%#PrG6#/%-#~exceptionsG%\"kG**-%
+$expG6#,$%\"cG!\"\"\"\"\")F.F(F0-%*factorialG6#F(F/,&\"\"\"F0-%\"oG6#
+\"\"\"F0F0" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 56 "A weaker fo
+rm of this property (for position gaps where " }{XPPEDIT 18 0 "Omega" 
+"I&OmegaG6\"" }{TEXT -1 111 " is an initial segment of the integers) i
+s established by probabilistic arguments in [Barbour, Holst, Svanson, \+
+" }{TEXT 310 21 "Poisson Approximation" }{TEXT -1 17 ", Oxford, 1992].
+ " }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 193 "The
+ approach via hypergeometrics points to a unified derivation via gener
+ating functions and divergent series that encompasses more general con
+straints (like succession gaps and the case where " }{XPPEDIT 18 0 "Om
+ega" "I&OmegaG6\"" }{TEXT -1 100 " is not an initial segment of the in
+tegers). The principle of the generating function method is that" }}
+{PARA 276 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "coeff[z^n]*hypergeom(
+[1,1],[],z+d*z^2+O(z^3))=n!*e^d*(1+o(1))" "/*&&%&coeffG6#)%\"zG%\"nG\"
+\"\"-%*hypergeomG6%7$\"\"\"\"\"\"7\",(F(F**&%\"dGF**$F(\"\"#F*F*-%\"OG
+6#*$F(\"\"$F*F**(-%*factorialG6#F)F*)%\"eGF4F*,&\"\"\"F*-%\"oG6#\"\"\"
+F*F*" }{TEXT -1 1 "," }}{PARA 0 "" 0 "" {TEXT -1 146 "provided the arg
+ument of the hypergeometric is a function that is analytic at the orig
+in. For instance, in the case of the menage problem, one has" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "P01=convert_hypergeom(P01);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/,$**-%#EiG6$\"\"\",$*&,(F)F)%\"zG
+\"\"#*$F-F.F)F)F-!\"\"F0F),&F-F)F)F)F)F-F0-%$expG6#,$*&F1F.F-F0F0F)F0*
+&-%*hypergeomG6%7$F)F)7\"*&F,F0F-F)F)F1F0" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 28 "series(1/(1+2*z+z^2),z=0,6);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#+1%\"zG\"\"\"\"\"!!\"#\"\"\"\"\"$\"\"#!\"%\"\"$\"\"&\"
+\"%!\"'\"\"&-%\"OG6#F%\"\"'" }{TEXT -1 0 "" }}}{PARA 0 "" 0 "" {TEXT 
+-1 60 "so that the asymptotic proportion of menage permutations is " }
+{TEXT 311 8 "provedly" }{TEXT -1 10 " equal to " }{XPPEDIT 18 0 "e^(-2
+)" ")%\"eG,$\"\"#!\"\"" }{TEXT -1 71 ". The method works for any of th
+e examples discussed in this worksheet." }}{PARA 0 "" 0 "" {TEXT -1 0 
+"" }}{PARA 0 "" 0 "" {TEXT -1 271 "A companion worksheet shows that a \+
+similar approach applies to \"succession gaps\", by which we means con
+straints on the values of successive elements in a permutation. The co
+rresponding solutions serve in the analysis of multiconnectivity in ra
+ndom interconnection graphs." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}}
+{MARK "33 21 0" 203 }{VIEWOPTS 1 1 0 1 1 1803 }

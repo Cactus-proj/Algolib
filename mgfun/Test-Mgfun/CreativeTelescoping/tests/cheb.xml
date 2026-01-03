@@ -1,0 +1,60 @@
+<!--
+  Copyright (C) 1991--2010 by INRIA.
+ 
+  This file is part of Algolib.
+ 
+  Algolib is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Lesser General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+ 
+  Algolib is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+  License along with Algolib.  If not, see
+  <http://www.gnu.org/licenses/>.
+-->
+
+<tests>
+  
+  <test name="cheb1">
+    <fun>exp(-p*x)*ChebyshevT(n,x)/sqrt(1-x^2)</fun>
+    <tex>\int\frac{e^{-px}T_n(x)}{\sqrt{1-x^2}}dx</tex>
+    <var_int name="x" />
+    <var name="p" type="diff" />
+    <var name="x" type="diff" />
+    <set_val name="p" type="float" inter="-1.0..1.0" />
+    <set_val name="x" type="float" inter="-1.0..1.0" />
+    <set_val name="n" type="int" inter="0..20"/>
+  </test>
+
+  <test name="cheb2">
+    <fun>x*exp(x)*ChebyshevT(n,x)/sqrt(1-x^2)</fun>
+    <tex>\int\frac{xe^xT_n(x)}{\sqrt{1-x^2}}dx</tex>
+    <var_int name="x" />
+    <var name="n" type="shift" />
+    <var name="x" type="diff" />
+    <set_val name="x" type="float" inter="-1.0..1.0" />
+    <set_val name="n" type="int" inter="0..20"/>
+  </test>
+
+  <!--
+      Rebillard, Zakrajsek
+      RECURRENCE RELATIONS FOR THE COEFFICIENTS IN HYPERGEOMETRIC SERIES
+      EXPANSIONS
+      Example 5.1 p 176
+    -->
+  <test name="cheb3_rebillard">
+    <fun>(1+x)*BesselJ(0,2*sqrt(x+1))*ChebyshevT(n,x)/sqrt(1-x^2)</fun>
+    <tex>\int(1+x)J_0(2\sqrt{x+1})\frac{T_n(x)}{\sqrt{1-x^2}}dx</tex>
+    <var_int name="x"/>
+    <var name="x" type="diff"/>
+    <var name="n" type="shift"/>
+    <set_val name="x" type="float"/>
+    <set_val name="n" type="int" inter="0..20"/>
+  </test>
+
+</tests>

@@ -1,0 +1,141 @@
+{VERSION 13 0 "Linux" "13.0" }
+{USTYLETAB {PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times"
+ 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 2" -1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 3" -1 202 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 72 2 0 2 2 -1 1 }{PSTYLE "Ordered List 4" -1 203 
+1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3
+ 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordered List 5" -1 204 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 
+2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 -1 1 }{PSTYLE "Warning" 
+-1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 205 1 
+{CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0 0 12 
+12 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "" -1 -1 "C
+ourier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printe
+d Output" -1 6 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1
+ 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE
+ "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0
+ 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier"
+ 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 128 64 
+1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" 
+-1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1
+ -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Hyperlin
+kError" -1 206 1 {CSTYLE "" -1 -1 "Courier" 1 12 255 0 255 1 2 2 1 2 2
+ 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0
+ 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1 -1 "Tim
+es" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2
+ 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1
+ 15 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0
+ 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 
+"Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1
+ }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1
+ 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1
+ 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 
+0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 207 1 {CSTYLE ""
+ -1 -1 "Courier" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Output" -1 12 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{CSTYLE "Annota
+tion Text" -1 200 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1
+ }{CSTYLE "Plot Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Nonterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 
+0 0 1 }{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0
+ 0 0 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 0 0 0 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0
+ 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 
+0 0 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 
+255 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 "Times" 
+1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Small" -1 7 "Times" 
+1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1
+ 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times"
+ 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times" 1
+ 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Time
+s" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 
+"Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Smal
+l207" -1 201 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple C
+omment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D \+
+Math Italic Small204" -1 202 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Maple Input Placeholder" -1 203 "Courier" 1 12 200 0 200 1 2 
+1 2 2 1 2 0 0 0 1 }{CSTYLE "Code" -1 204 "Courier" 1 12 255 0 0 1 2 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small206" -1 205 "Times" 1 1 
+0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small205" -1 206 
+"Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inert Output" -1 
+207 "Times" 1 12 144 144 144 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "2D Math I
+talic Small" -1 208 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "
+2D Comment" -1 18 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Underlined Bold" -1 41 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Copyright" -1 34 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1
+ }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 0 0 1 2 2 1 2 2 2 0 0
+ 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1
+ }{CSTYLE "2D Math" -1 2 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "2D Input" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }
+{CSTYLE "Header and Footer" -1 209 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 
+0 0 1 }{CSTYLE "Text" -1 210 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 
+}{CSTYLE "Help Notes" -1 37 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Equation Label" -1 211 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0
+ 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Popup" -1 31 "Times" 1 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "Dictionary Hyperlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2
+ 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0 1 2 2 2 2 
+2 2 0 0 0 1 }{CSTYLE "" -1 212 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 
+0 1 }{CSTYLE "" -1 213 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT 214 22 "NumGfun[bound_ratpoly]" 
+}{TEXT 30 41 " - majorant series for rational functions" }}{PARA 4 "" 
+0 "usage" {TEXT 215 16 "Calling Sequence" }}{PARA 0 "" 0 "" {TEXT 216 
+19 "     bound_ratpoly(" }{TEXT 35 3 "rat" }{TEXT 216 2 ", " }{TEXT 
+35 1 "z" }{TEXT 216 1 ")" }}{PARA 4 "" 0 "" {TEXT 215 10 "Parameters" 
+}}{PARA 0 "" 0 "" {TEXT 216 5 "     " }{TEXT 212 6 "rat - " }{TEXT 
+216 23 "rational function with " }{TEXT 42 17 "complex(rational)" }
+{TEXT 216 13 " coefficients" }}{PARA 0 "" 0 "" {TEXT 216 5 "     " }
+{TEXT 213 6 "z   - " }{TEXT 216 40 "name; variable of the rational fun
+ction " }{TEXT 35 3 "rat" }}}{SECT 0 {PARA 4 "" 0 "info" {TEXT 215 11 
+"Description" }}{PARA 15 "" 0 "" {TEXT 217 4 "The " }{TEXT 35 13 "boun
+d_ratpoly" }{TEXT 217 225 " command computes a majorant series for the
+ series expansion at 0 of a rational function. A majorant series of a \+
+formal Laurent series f with complex coefficients is a series g with n
+onnegative coefficients such that for all " }{TEXT 217 1 "n" }{TEXT 
+217 22 ", the the coefficients" }{TEXT 217 12 " f_n and g_n" }{TEXT 
+217 11 " of z^n in " }{TEXT 217 50 "f(z) and g(z) respectively satisfy
+ abs(f_n) <= g_n" }{TEXT 217 1 "." }{TEXT 217 0 "" }}{PARA 15 "" 0 "" 
+{TEXT 217 35 "The majorant series is of the form " }{TEXT 217 16 "A/(1
+-u*z)^m+P(z)" }{TEXT 217 213 " where A and u are nonnegative constants
+, m is a nonnegative integer, and P is a Laurent polynomial with nonne
+gative coefficients. It is a \"tight\" bound in the sense that its rad
+ius of convergence matches that of " }{TEXT 217 3 "rat" }{TEXT 217 1 "
+." }}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT 215 8 "Examples" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "with(gfun:-NumGfun):" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "bound_ratpoly(1/(z+5), z);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 ",&*$,&\"\"\"F%I\"zG6\"#!\"\"\"\"&F)#F%F*
+F&#F%\"*++++&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "bound_ratp
+oly((5*z^6+z+2)/((z^3+1)^2*(z+I)), z);" }}{PARA 11 "" 1 "" {XPPMATH 20
+ ",$*$,&\"\"\"F%I\"zG6\"!\"\"!\"##\"-HiQ@XE\"-+++++5" }}}}{SECT 0 
+{PARA 4 "" 0 "seealso" {TEXT 215 9 "See Also " }}{PARA 0 "" 0 "" {TEXT
+ 216 0 "" }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT 216 2 ", " }
+{HYPERLNK 17 "NumGfun" 2 "gfun[NumGfun]" "" }{TEXT 216 2 ", " }
+{HYPERLNK 17 "ratpolytocoeff" 2 "gfun[ratpolytocoeff]" "" }{TEXT 216 
+2 ", " }{HYPERLNK 17 "bound_diffeq" 2 "NumGfun[bound_diffeq]" "" }
+{TEXT 216 0 "" }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

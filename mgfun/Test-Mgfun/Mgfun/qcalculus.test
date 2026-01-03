@@ -1,0 +1,95 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+# q-Pochhammer symbols.
+qpochhammer(q,6,a):
+if %=(1-a)*(1-a*q)*(1-a*q^2)*(1-a*q^3)*(1-a*q^4)*(1-a*q^5)
+then okay else % fi;
+[seq(qpochhammer(q,i,a),i=0..2)]:
+if %=[1,1-a,(1-a)*(1-a*q)] then okay else % fi;
+expand(qpochhammer(q,n+2,a))-qpochhammer(q,n,a)*(1-a*q^n)*(1-a*q*q^n):
+if %=0 then okay else % fi;
+expand(qpochhammer(q,n-2,a))-qpochhammer(q,n,a)/(1-a/q^2*q^n)/(1-a/q*q^n):
+if %=0 then okay else % fi;
+expand(qpochhammer(q,n+2,a)/qpochhammer(q,n-2,a)):
+if %=(1-a*q^n)*(1-a*q*q^n)*(1-a/q^2*q^n)*(1-a/q*q^n) then okay else % fi;
+expand(qpochhammer(q,n+7/2,x))-qpochhammer(q,n+1/2,x)
+*(1-x*q^(n+1/2))*(1-x*q*q^(n+1/2))*(1-x*q^2*q^(n+1/2)):
+if %=0 then okay else % fi;
+expand(qpochhammer(q,n-1/2,x))-qpochhammer(q,n+1/2,x)/(1-x/q*q^(n+1/2)):
+if %=0 then okay else % fi;
+expand(qpochhammer(q,n,q*x))-qpochhammer(q,n,x)*(1-q^n*x)/(1-x):
+if %=0 then okay else % fi;
+expand(qpochhammer(q,n,q^10*x))-qpochhammer(q,n,x)
+*(1-q^n*x)*(1-x*q*q^n)*(1-x*q^2*q^n)*(1-x*q^3*q^n)*(1-x*q^4*q^n)
+*(1-x*q^5*q^n)*(1-x*q^6*q^n)*(1-x*q^7*q^n)*(1-x*q^8*q^n)*(1-x*q^9*q^n)
+/(1-x)/(1-q*x)/(1-x*q^2)/(1-x*q^3)/(1-x*q^4)/(1-x*q^5)/(1-x*q^6)/(1-x*q^7)
+/(1-x*q^8)/(1-x*q^9):
+if %=0 then okay else % fi;
+# q-factorials.
+qfactorial(r,4):
+if %=(1-r)*(1-r^2)*(1-r^3)*(1-r^4) then okay else % fi;
+[seq(qfactorial(q,i),i=0..2)]:
+if %=[1,1-q,(1-q)*(1-q^2)] then okay else % fi;
+[seq(qfactorial(1,i),i=0..2)]:
+if %=[1,0,0] then okay else % fi;
+[seq(qfactorial(1/2,i),i=0..5)]:
+if %=[1,1/2,3/8,21/64,315/1024,9765/32768] then okay else % fi;
+[seq(qfactorial(I,i),i=0..5)]:
+if %=[1,1-I,2-2*I,4,0,0] then okay else % fi;
+[seq(qfactorial(I/2,i),i=0..5)]:
+if %=[1,1-1/2*I,5/4-5/8*I,85/64-15/32*I,1275/1024-225/512*I,
+20175/16384-15675/32768*I]
+then okay else % fi;
+expand(qfactorial(r,n+4))
+-qfactorial(r,n)*(1-r*r^n)*(1-r^2*r^n)*(1-r^3*r^n)*(1-r^4*r^n):
+if %=0 then okay else % fi;
+expand(convert(mul(qfactorial(r,n+i)*qfactorial(q,n+i),i=0..1),qpochhammer)):
+if %=qpochhammer(r,n,r)^2*qpochhammer(q,n,q)^2*(1-r*r^n)*(1-q*q^n)
+then okay else % fi;
+expand(qfactorial(1/2,n+3/2))-qfactorial(1/2,n+1/2)*(1-1/2*(1/2)^(n+1/2)):
+if %=0 then okay else % fi;
+expand(qfactorial(1/2,n-3/2))
+-qfactorial(1/2,n+1/2)/(1-2*(1/2)^(n+1/2))/(1-(1/2)^(n+1/2)):
+if %=0 then okay else % fi;
+# q-binomials.
+expand(qbinomial(r,n+2,m))
+-(r^m)^2*(1-r*r^n)/(r^m-r*r^n)*(1-r^2*r^n)/(r^m-r^2*r^n)*qbinomial(r,n,m):
+if %=0 then okay else % fi;
+expand(qbinomial(r,n-2,m))
+-1/(r^m)^2*(r^m-1/r*r^n)/(1-1/r*r^n)*(r^m-r^n)/(1-r^n)*qbinomial(r,n,m):
+if %=0 then okay else % fi;
+expand(qbinomial(r,n,m+1))-1/(r^m)*(r^m-r^n)/(1-r*r^m)*qbinomial(r,n,m):
+if %=0 then okay else % fi;
+expand(qbinomial(r,n-1,m+1))
+-1/(r^(m+1))*(r^(m+1)-r^n)/(1-r^n)/(r^m)*(r^m-r^n)/(1-r*r^m)*qbinomial(r,n,m):
+if %=0 then okay else % fi;
+expand(qfactorial(q,m)*qfactorial(q,n-m)/qfactorial(q,m+5)/
+    qfactorial(q,n-m-5)):
+expand(qbinomial(q,n,m+5)/qbinomial(q,n,m)):
+normal(expand(%%/%)):
+if %=1 then okay else % fi;
+expand(qfactorial(q,m)*qfactorial(q,n-m)/qfactorial(q,m-2)/
+    qfactorial(q,n-m+2)):
+expand(qbinomial(q,n,m-2)/qbinomial(q,n,m)):
+normal(expand(%%/%)):
+if %=1 then okay else % fi;
+qbinomial(r,n-2,m+3):
+normal(expand(expand(convert(expand(%)-%,qpochhammer)))):
+if %=0 then okay else % fi;
+quit

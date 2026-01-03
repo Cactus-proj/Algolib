@@ -1,0 +1,22 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+`multiseries/function`[sin, _AnyFiniteOrdinaryPoint]:=proc (expr, scale, var, order) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:59`; `multiseries/compose`(SERIES(scale,map(normal,`multiseries/function`[cos,_AnyFiniteOrdinaryPoint,"CoeffProc"](order,sin(_AnyFiniteOrdinaryPoint),cos(_AnyFiniteOrdinaryPoint),_AnyFiniteOrdinaryPoint)),1,algebraic,[`$`(0 .. order)],order+1,integer,eval(scale['variable'],1),sin(_AnyFiniteOrdinaryPoint+eval(scale['variable'],1))),expr,scale,var,order) end proc:
+`multiseries/function`[sin]:=proc (expr, scale, var, order) local lim, lim2, argseq, res; option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:59`; if expr = 0 then return `multiseries/Convert2SERIES`(sin(0),scale,var,false) end if; lim := `multiseries/limit`(expr,scale,var); lim2 := lim; if lim = undefined then error "unable to compute series" elif has(lim,infinity) then lim := infinity end if; if lim = infinity then argseq := `multiseries/pow`(expr,-1,scale,var,order), scale, var, order else argseq := `multiseries/AddDoit`(expr,`multiseries/Convert2SERIES`(-lim,scale,var,false)), scale, var, order end if; if lim = 0 then res := `multiseries/function`[sin,0](argseq) elif lim = infinity then res := `multiseries/function`[sin,infinity,-Pi .. Pi](argseq,[op(1,[argseq]), scale, var, order]) else res := eval(`multiseries/function`[sin,_AnyFiniteOrdinaryPoint](argseq),_AnyFiniteOrdinaryPoint = lim) end if; subsop(9 = ('sin')(op(9,expr)),res) end proc:
+`multiseries/function`[sin, infinity, -Pi .. Pi]:=proc (expr, scale, var, order, arglist) local res; option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:59`; res := `multiseries/add`([`multiseries/mul`([`multiseries/function`[exp](`multiseries/MulDoit`(`multiseries/pow`(expr,-1,scale,var,order),I),scale,var,order), `multiseries/Convert2SERIES`(-1/2*I,scale,var,false)]), `multiseries/mul`([`multiseries/function`[exp](`multiseries/MulDoit`(`multiseries/pow`(expr,-1,scale,var,order),-I),scale,var,order), `multiseries/Convert2SERIES`(1/2*I,scale,var,false)])]) end proc:
+`multiseries/function`[sin, 0]:=proc (expr, scale, var, order) option `Copyright (c) 2006 by the Algorithms Project, INRIA. All rights reserved. - generated 05/16/2006 @ 11:19:59`; `multiseries/compose`(SERIES(scale,`multiseries/function`[cos,_AnyFiniteOrdinaryPoint,"CoeffProc"](order,0,1,0),1,algebraic,[`$`(0 .. order)],order+1,integer,eval(scale['variable'],1),sin(eval(scale['variable'],1))),expr,scale,var,order) end proc:

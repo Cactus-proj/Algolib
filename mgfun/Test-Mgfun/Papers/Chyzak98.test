@@ -1,0 +1,1535 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+# Due to known non-determinism in Maple, the signs of several results
+# in the following may vary without contradicting the specifications
+# of the procedure that compute them.  We thus need the following
+# procedures for comparison up to signs.
+cmp := proc(a, b, $) testeq(a, b) or testeq(a, -b) end :
+cmp2 := proc(a, b, $) evalb(normal(a/b)^2 = 1) end proc :
+cmp_cfs := proc(a, b, vars, $) local cf_a, cf_b, mo_a, mo_b, T_a, T_b, i ;
+  cf_a := [coeffs(collect(a, vars, distributed), vars, mo_a)] ; mo_a := [mo_a] ;
+  cf_b := [coeffs(collect(b, vars, distributed), vars, mo_b)] ; mo_b := [mo_b] ;
+  for i to nops(mo_a) do
+    T_a[mo_a[i]] := cf_a[i]
+  end do ;
+  for i to nops(mo_b) do
+    T_b[mo_b[i]] := cf_b[i]
+  end do ;
+  evalb(nops(cf_a) = nops(cf_b)) and
+    evalb({seq(normal(T_a[mo_a[i]] - T_b[mo_b[i]]), i=1..nops(mo_a))} = {0})
+end proc :
+cmp_cfs_list := proc(A, B, vars, $) local i ;
+  evalb({seq(cmp_cfs(A[i], B[i], vars), i=1..nops(A))} = {true})
+end proc :
+
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+with(Mgfun):
+
+# Introduction.  Example of binomial coefficients.
+
+A:=shift_algebra([Sn,n],[Sj,j]):
+f:=binomial(n,j):
+G:=hypergeom_to_dfinite(f,A):
+T:=MonomialOrder(A,tdeg(Sn,Sj)):
+collect(Basis(G,T),{Sn,Sj}):
+# Eq. (0.1)
+if zip(cmp,%,[Sj*(j+1)-n+j, Sn*(n+1-j)-n-1])=[true,true]
+then okay else % fi;
+normal(expand(map(applyopr,G,f,A))):
+if %={0} then okay else % fi;
+A:=shift_algebra([Sn,n],[Sj,j],polynom={n,j}):
+T:=MonomialOrder(A,tdeg(Sn,Sj,n,j)):
+GB:=Basis(G,T):
+HilbertDimension(GB,T):
+if %=2 then okay else % fi;
+A:=shift_algebra([Sn,n],[Sj,j],polynom=j):
+T:=MonomialOrder(A,lexdeg([j],[Sn,Sj])):
+GB:=Basis(G,T):
+# Pascal's triangle rule
+op(remove(has,GB,j)):
+if %=Sn*Sj-Sj-1 then okay else % fi;
+subs(Sj=1,%%):
+if %=Sn-2 then okay else % fi;
+
+# Section 1.2.  Contiguity Relations for the Appell F4 Bivariate
+# Hypergeometric Function
+
+A:=diff_algebra([Dx,x],[Dy,y],comm={a,b,c,d,eta[0],eta[1],eta[2],eta[3]}):
+G:={skew_product(x*Dx,x*Dx+c-1,A)-x*skew_product(x*Dx+y*Dy+a,x*Dx+y*Dy+b,A),
+    skew_product(y*Dy,y*Dy+d-1,A)-y*skew_product(x*Dx+y*Dy+a,x*Dx+y*Dy+b,A)}:
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+GB:=Basis(G,T):
+collect(GB,{Dx,Dy},distributed,p->collect(p,{x,y},distributed,factor)):
+# Eq. (1.4)
+if normal(%-
+[a*b+x*(a+b+1-c)*Dx+2*x*Dx*y*Dy+(y^2+x*y-y)*Dy^2+(-d+x*d+(a+b+1)*y)*Dy, x*Dx^2
+-y*Dy^2+c*Dx-d*Dy, -x*a*b*(a-2*d+3+b-c)+a*b*(3+a-3*c+b)*y+a*b*(a-2*d+3+b-c)+((
+a+b+1-c)*(a-2*d+3+b-c)*x+(a-1-b+c)*(a+1-b-c)*x*y-(a+b+1-c)*(a-2*d+3+b-c)*x^2)*
+Dx+((-1-b-a+4*d+c)*y*x^2+(-4*d-8-2*b+2*c-2*a)*x*y^2+(2+2*b+2*a-2*c-8*d)*x*y+(9
++3*a-3*c+3*b)*y^3+(-4*d-8-2*b+2*c-2*a)*y^2+(-1-b-a+4*d+c)*y)*Dy^2+(-d*(a-2*d+3
++b-c)+2*d*(a-2*d+3+b-c)*x+(1+2*a+2*b+3*c*d+b^2-c-c*a-3*b*d+a^2-5*d-3*a*d-c*b)*
+y+(-2*b+c-2*a-a*d-a^2-b^2+c*a-b*d-3*d-1+c*d+c*b)*x*y-d*(a-2*d+3+b-c)*x^2+(6*a-\
+3*c+5+b^2-3*c*b-3*c*a+6*b+4*a*b+a^2)*y^2)*Dy+(-4*x*y^3+2*x^2*y^2-4*y^3+2*y^2+2
+*y^4-4*x*y^2)*Dy^3])=[0,0,0]
+then okay else % fi;
+subs(s=1,HilbertSeries(GB,T,s)):
+if %=4 then okay else % fi;
+map(LeadingMonomial,GB,T):
+if %=[Dx*Dy,Dx^2,Dy^3] then okay else % fi;
+# Step-up operator with respect to a:
+H:=A["normalizer"]((x*Dx+y*Dy+a)/a):
+# Step-down operator with respect to a (at a+1):
+B:=eta[0]+eta[1]*Dx+eta[2]*Dy+eta[3]*Dy^2:
+Z:=skew_product(B,H,A)-1:
+CF:=[coeffs(Z,{Dx,Dy},'TM')]:
+TM:=[TM]:
+Z:=numer(normal(add(CF[i]*NormalForm(TM[i],GB,T),i=1..nops(TM)))):
+Z:=collect(Z,{Dx,Dy},distributed,numer@normal):
+SYS:={coeffs(Z,{Dx,Dy})}:
+SOL:=SolveTools:-Linear(SYS,{seq(eta[i],i=0..3)}):
+# Step-down operator with respect to a (at a):
+B:=subs(factor(subs(a=a-1,SOL)),B):
+if normal(%-(
+1/2*(4*y*a^2*b-2*x*b*d+a*b*d+2*y*a*b-2*y*b*c+2*x*a*b-2*a*c+2*a^2+2*b*x*d^2+2*b
+*y*c^2+2*b*x*c*d+a*b*c+4*a^2*x*b-2*a^2*b-5*y*c*a*b-5*x*d*a*b-3*x*c*a*b-2*a*d+2
+*c*d+2*a*c^2-2*c^2*d+2*a*d^2-4*a^2*c-2*c*d^2-4*a^2*d+6*a*c*d+2*a^3-3*y*d*a*b+2
+*y*b*d*c)/(a-d)/(a-c)/(a+1-c-d)+1/2*(y*b*d-3*a*y*d+c*y*d+3*x*c*d-x*b*d-5*x*a*d
++y*d-4*a-2*y*a*b+y*b*c-3*y*c*a+2*x*a*b-2*a*b+5*a*c+c-4*a^2-c^2+3*d+4*a*x-x*c*b
+-3*x*d-c*y+2*x*d^2-2*d^2+5*a*d-3*c*d+4*y*a^2-x*c+y*c^2+b*d+b*c+x*c^2-5*x*c*a+4
+*a^2*x)*x/(a-d)/(a-c)/(a+1-c-d)*Dx+1/2*(y*b*d+a*y*d-c*y*d+2*x*c*d-4*x*a*d+y*d-\
+3*y^2*c-x*y*d-2*y*a*b+y*b*c+5*y*c*a-c*y^2*b-5*c*a*y^2+4*a^2*y^2-4*a*y-3*a*d*y^
+2-x^2*d^2+2*y^2*c^2+d^2*y-b*d*y^2+2*c*d*y^2+4*y^2*a+3*c*y+y*x*c-y^2*d+2*x*d^2-
+d^2+2*a*d-c*d-2*y*x*a*b+4*y*a^2*x+y*b*x*d+2*y^2*a*b-7*a*y*x*d-3*x*c*a*y+x*c*y*
+b+3*c*y*x*d-4*y*a^2+2*x^2*a*d-x^2*c*d-2*y*c^2+3*y*x*d^2)/(a-d)/(a-c)/(a+1-c-d)
+*Dy+1/2*y*(x^2-2*x*y+y^2-2*x-2*y+1)*(-d+2*a-c)/(a-d)/(a-c)/(a+1-c-d)*Dy^2
+))=0 then okay else % fi;
+NormalForm(skew_product(subs(a=a+1,B),H,A),GB,T):
+if %=1 then okay else % fi;
+
+# Section 1.3.  Example of Jacobi polynomials
+
+A:=skew_algebra(diff=[Dz,z],shift=[Sn,n],shift=[Sa,a],shift=[Sb,b]):
+G:={
+(1-z^2)*Dz^2+(b-a-(a+b+2)*z)*Dz+n*(n+a+b+1),
+(2*n+a+b+2)*(1-z^2)*Sn*Dz-(n+1)*(a-b-(2*n+a+b+2)*z)*Sn-2*(n+a+1)*(n+b+1),
+2*(n+2)*(n+a+b+2)*(2*n+a+b+2)*Sn^2
+    -((2*n+a+b+3)*(a^2-b^2)+(2*n+a+b+2)*(2*n+a+b+3)*(2*n+a+b+4)*z)*Sn
+    +2*(n+a+1)*(n+b+1)*(2*n+a+b+4),
+(2*n+a+b+2)*(1-z)*Sa-2*(n+a+1)+2*(n+1)*Sn,
+(2*n+a+b+2)*(1+z)*Sb-2*(n+b+1)-2*(n+1)*Sn
+}:
+T:=MonomialOrder(A,tdeg(Sn,Sa,Sb,Dz)):
+GB:=Basis(G,T):
+collect(GB,{Sn,Sa,Sb,Dz},factor):
+# Middle page system
+if %=
+[-b-a-n-1+(1-z)*Dz+(n+a+b+1)*Sb, -b-a-n-1+(-z-1)*Dz+(n+a+b+1)*Sa, -(n+a+b+1)*(
+-b+z*b+2*z+z*a+2*z*n+a)-(z-1)*(1+z)*(2*n+a+b+2)*Dz+2*(n+1)*(n+a+b+1)*Sn, -n*(n
++a+b+1)+(z*a+z*b-b+a+2*z)*Dz+(z-1)*(1+z)*Dz^2]
+then okay else % fi;
+subs(s=1,HilbertSeries(GB,T,s)):
+if %=2 then okay else % fi;
+
+# Section 1.4
+
+# Harmonic Summation
+
+A:=shift_algebra([Sn,n],comm=m,func={alpha,beta}):
+# Eq. (1.7)
+L:=(n-m+1)*(n-m+2)*Sn^2-(2*n+3)*(n-m+1)*Sn+(n+1)^2:
+Q:=alpha(n)+beta(n)*Sn:
+Z:=skew_product(Sn-1,Q,A)-1:
+Z:=collect(subs(Sn^2=solve(eval(L,Sn^2=SN2),SN2),Z),Sn,
+    p->collect(p,{alpha,beta},distributed,factor)):
+# Eq. (1.8)
+if cmp_cfs(%,
+(-beta(n)+alpha(n+1)+(2*n+3)/(n-m+2)*beta(n+1))*Sn-1-alpha(n)-(n+1)^2/(n-m+2)/
+(n+1-m)*beta(n+1),
+Sn)
+then okay else % fi;
+lre:=-subs(n=n+1,collect(numer(subs(
+    alpha(n)=solve(subs(n=n-1,coeff(Z,Sn,1)),alpha(n)),coeff(Z,Sn,0))),
+    beta,factor)):
+# Eq. (1.9)
+if cmp_cfs(%,
+(n+3-m)*(n-m+2)*beta(n)+(n+2)^2*beta(n+2)-(2*n+3)*(n+3-m)*beta(n+1)+(n+3-m)*(n
+-m+2),
+{beta(n), beta(n+1), beta(n+2)})
+then okay else % fi;
+factor(LREtools[ratpolysols](lre,beta(n),{},output=basis[foo])):
+if normal(%+(n+1-m)*(n-m)/(m+1)^2) = 0 then okay else % fi;
+factor(subs(beta(n+1)=subs(n=n+1,%%),solve(coeff(Z,Sn,0),alpha(n)))):
+if normal(%-(n+2+m)*(n-m)/(m+1)^2) = 0 then okay else % fi;
+
+# Particular Solutions
+
+A:=diff_algebra([Dx,x],comm=q,func={eta[0],eta[1]}):
+T:=MonomialOrder(A,tdeg(Dx)):
+L:=Dx^2+Dx/x+q^2:	# defines module: J_0 and Y_0
+P:=(1-x^2)+2*q*x*Dx:	# non-homogeneous part
+Q:=Dx^2+Dx/x-q^2:	# homogeneous part: I_0 and K_0
+collect(skew_product(Q,eta[0](x)+eta[1](x)*Dx,A)-P,Dx,normal):
+subs(
+    Dx^3=Dx^3-skew_product(Dx,L,A),
+    Dx^2=Dx^2-L,
+	%):
+sys:={coeffs(collect(%,Dx,numer@normal),Dx)}:
+eq1:=op(select(has,sys,diff(eta[1](x),x,x))):
+eq2:=op(remove(has,sys,diff(eta[1](x),x,x))):
+eq3:=collect(numer(normal(
+    subs(diff(eta[1](x),x,x)=diff(solve(eq2,diff(eta[1](x),x)),x),eq1))),
+	{eta,diff},normal):
+eq4:=collect(numer(normal(
+    subs(diff(eta[1](x),x)=solve(eq2,diff(eta[1](x),x)),eq3))),
+	{eta,diff},normal):
+rel:=eta[1](x)=collect(solve(eq4,eta[1](x)),{eta,diff},normal):
+eq5:=collect(numer(normal(eval(subs(rel,eq1)))),{eta,diff},normal):
+EQ:=subs({seq(diff(eta[0](x),[x$i])=H*Dx^i,i=0..5)},eq5):
+coeff(coeff(EQ,H),Dx,0):
+gcd(%,coeff(coeff(EQ,H),Dx,1)):
+gcd(%,coeff(coeff(EQ,H),Dx,2)):
+gcd(%,coeff(coeff(EQ,H),Dx,3)):
+gcd(%,coeff(coeff(EQ,H),Dx,4)):
+gcd(%,coeff(coeff(EQ,H),Dx,5)):
+den:=%:
+if %=1 then okay else % fi;
+N:=2:
+num:=add(c[i]*x^i,i=0..N):
+zero:=collect(numer(normal(eval(subs(eta[0](x)=num/den,eq5)))),x,numer@normal):
+sol:=SolveTools:-Linear({coeffs(zero,x)},{seq(c[i],i=0..N)}):
+eta[0](x)=normal(subs(sol,num)/den):
+normal(eval(subs(%,rel))):
+sol:={%%,%}:
+if %=
+{eta[1](x) = -(q^3-1)*x/q^4, eta[0](x) = 1/2*(2*q-1+x^2)/q^2}
+then okay else % fi;
+# `BUG IN THE PAPER: q^4 was q^2`;
+the_op:=subs(sol,eta[0](x)+eta[1](x)*Dx):
+collect(subs(
+    Dx^3=Dx^3-skew_product(Dx,L,A),
+    Dx^2=Dx^2-L,
+	collect(skew_product(Q,the_op,A)-P,Dx,normal)),Dx,normal):
+if %=0 then okay else % fi;
+
+# Uncoupling step using Groebner bases for modules
+
+sys:=collect(map(numer,map(p->subs(
+    {alpha(n)=e[1],alpha(n+1)=Sn*e[1],beta(n)=e[2],beta(n+1)=Sn*e[2]},
+    select(has,p,{alpha,beta})+e[0]*remove(has,p,{alpha,beta})),
+	expand({coeffs(Z,Sn)}))),{e[0],e[1],e[2]},p->collect(p,Sn,factor)):
+A:=shift_algebra([Sn,n],comm={m,e[0],e[1],e[2]},polynom={e[0],e[1],e[2]}):
+T:=MonomialOrder(A,plex(e[1],e[2],e[0],Sn),[e[2],e[1],e[0]]):
+GB:=Basis(sys,T):
+# System which represents Eq. (1.9)
+collect(op(remove(has,GB,e[1])),{e[0],e[2]},p->collect(p,Sn,factor)):
+if cmp_cfs(%,
+((n+2)^2*Sn^2-(2*n+3)*(n+3-m)*Sn+(n+3-m)*(n-m+2))*e[2]+(n+3-m)*(n-m+2)*Sn*e[0],
+{e[0], e[2], Sn})
+then okay else % fi;
+# `BUG: TERM ORDER USED IS E1>E2>E0`;
+# `BUG: THIS ELIMINATES E1`;
+# `BUG: E1 INSTEAD OF E2 IN EQUATION`;
+GB:='GB':
+sys:='sys':
+
+# Section 2.1.  Creative Telescoping and Elimination by Groebner Bases
+
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p):
+T:=MonomialOrder(A,tdeg(Sn,Dx)):
+f:=exp(-p*x)/sqrt(1-x^2):
+GB[1]:=Basis(hypergeom_to_dfinite(f,A),T):
+GB[2]:=Basis({(1-x^2)*Dx^2-x*Dx+n^2,Sn^2-2*x*Sn+1,
+    (1-x^2)*Dx*Sn+(n+1)*x*Sn-(n+1)},T):
+GB[prod]:=Basis(dfinite_mul([[GB[1],T],[GB[2],T]],T),T):
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p,polynom={n,x}):
+T:=MonomialOrder(A,tdeg(Sn,Dx,n,x)):
+HilbertDimension(GB[prod],T):
+if %=2 then okay else % fi;
+# A Groebner basis of the system Eq. (2.4)
+if %=
+[-p*x^2-x+p-x^2*Dx+Dx-x*n+Sn*n, p^2*x^2+x^2*Dx^2+2*x^2*Dx*p+3*x*Dx+3*p*x-Dx^2-
+n^2-2*Dx*p+1-p^2]
+then okay else % fi;
+A:=skew_algebra(shift=[Sn,n],diff=[Dx,x],comm=p,polynom=x):
+T:=MonomialOrder(A,lexdeg([x],[Sn,Dx])):
+GB[3]:=Basis(GB[prod],T):
+collect(GB[3],{Sn,Dx},distributed,factor):
+if %=
+[-p+(-2*n-2)*Sn-Dx+p*Sn^2+Sn^2*Dx, -Sn*Dx+x*Dx-p*Sn+n+p*x+1, -Sn^2+2*x*Sn-1]
+then okay else % fi;
+
+# Section 2.2.  Multiple Summations and Integrations
+
+h:=(2*k+2*l+i+j)!/(k+i)!/(l+j)!/k!/l!*(x/4)^(k+l):
+A:=skew_algebra(diff=[Dx,x],shift=[Sk,k],shift=[Sl,l],comm=[i,j],
+    polynom={k,l}):
+G:=hypergeom_to_dfinite(h,A):
+collect(G,{Dx,Sk,Sl},factor):
+# The following is to go avoid non determinism.
+map(op,[select(has,%,Dx),select(has,%,Sk),select(has,%,Sl)]):
+# Eq. (2.7)
+if zip(cmp,%,
+[x*Dx-k-l, 4*Sk*(k+1+i)*(k+1)-x*(2*k+2*l+i+j+1)*(2*k+2+2*l+i+j), 4*Sl*(l+1+j)*
+(l+1)-x*(2*k+2*l+i+j+1)*(2*k+2+2*l+i+j)])=[true,true,true]
+then okay else % fi;
+T:=MonomialOrder(A,lexdeg([k,l],[Dx,Sk,Sl])):
+GB:=Basis(G,T):
+if subs(true=NULL,zip(cmp,%,
+[56*Sk^2*x*j^3*i+56*Sk^2*x*i^3*j+380*Sk^2*x*i*j+225*Sk^2*x*i*j^2+225*Sk^2*j*x*i
+^2+84*Sk^2*x*i^2*j^2+2064*x^2*Dx*Sk^2+544*x^5*Dx^4*Sk^2+14*Sk^2*x*i^4+14*x*i^4*
+Sl^2+224*Sk^2*x*i+14*x*j^4*Sl^2+75*Sk^2*x*i^3+14*x*j^4*Sk^2-150*Sl*Sk*x*i^3+190
+*Sk^2*x*i^2-4128*x^2*Dx*Sk*Sl+190*Sk^2*x*j^2+224*Sk^2*x*j-4376*x^2*Dx*Sl*Sk*i-\
+5488*x^4*Dx^3*Sl*Sk-9216*x^3*Dx^2*Sl*Sk-5608*x^3*Dx^2*Sl*Sk*i-4376*x^2*Dx*Sl*Sk
+*j+75*Sk^2*x*j^3-1732*Sl*Sk*x^2*Dx*i^2-450*Sl*Sk*j*x*i^2-450*Sl*Sk*x*i*j^2-5608
+*Sl*Sk*j*x^3*Dx^2-1732*Sl*Sk*x^2*Dx*j^2-192*Sl*Sk*x-760*Sl*Sk*x*i*j-150*Sl*Sk*x
+*j^3+5*Sk^2*x*j^4*i-3024*Sl^2*Sk*x^2*Dx^2-2960*x^3*Dx^3*Sl^2*Sk-448*Sl*Sk*x*j-\
+380*Sl*Sk*x*j^2-576*Sl^2*Sk*x*Dx-952*Sl^2*Sk*x*i*Dx-3464*Sl*Sk*x^2*Dx*i*j-380*
+Sl*Sk*x*i^2+224*Sl^2*x*i+190*Sl^2*x*j^2+2064*Sl^2*x^2*Dx+4608*Sl^2*x^3*Dx^2+190
+*Sl^2*x*i^2+2744*x^4*Dx^3*Sl^2+224*Sl^2*x*j-1208*j*Sl^2*Sk*x*i*Dx-2584*j*Sl^2*
+Sk*x^2*Dx^2+96*Sl^2*x-952*x*Dx*Sl^2*Sk*j-28*Sk*Sl^2*j^2-20*Sl^2*Sk*i^2+75*Sl^2*
+x*j^3+75*Sl^2*x*i^3+866*Sl^2*x^2*Dx*i^2+866*Sl^2*x^2*Dx*j^2+2804*Sl^2*x^3*Dx^2*
+i+2804*Sl^2*x^3*Dx^2*j-536*Sl^2*Sk*x*i^2*Dx+96*Sk^2*x-2584*Sl^2*Sk*x^2*Dx^2*i+
+1732*Sl^2*x^2*Dx*i*j+225*Sl^2*x*i*j^2+225*j*Sl^2*x*i^2+380*Sl^2*x*i*j+2188*Sl^2
+*x^2*j*Dx+2188*Sl^2*x^2*i*Dx-104*x^2*Dx^2*Sl*Sk^2*i^3+120*x^3*Dx^2*Sk^2*j*i^2+
+120*x^3*Dx^2*Sk^2*i*j^2-104*Sl^2*Sk*x*Dx*j^3*i-56*Sl^2*Sk*x*Dx*i^3*j-120*Sl^2*
+Sk*x*Dx*i^2*j^2-32*Sl^2*Sk*x*Dx*j^4-160*x^5*Dx^4*Sk*Sl*i-160*x^5*Dx^4*Sk*Sl*j-\
+320*x^4*Dx^3*Sl*Sk*i*j-160*x^4*Dx^3*Sl*Sk*j^2-160*x^4*Dx^3*Sl*Sk*i^2+160*x^4*Dx
+^3*Sk^2*i*j+80*x^4*Dx^3*Sk^2*i^2+80*x^4*Dx^3*Sk^2*j^2+40*x^3*Dx^2*Sk^2*i^3+40*x
+^3*Dx^2*Sk^2*j^3-176*x^3*Dx^3*Sl^2*Sk*j^2-144*x^3*Dx^3*Sl^2*Sk*i^2-320*x^3*Dx^3
+*Sl^2*Sk*i*j+96*Sl^2*Sk^2*x*Dx^2*i*j^2+96*Sl^2*Sk^2*x*Dx^2*j*i^2+64*x^2*Dx^3*Sl
+^2*Sk^2*i^2+64*x^2*Dx^3*Sl^2*Sk^2*j^2-160*x^4*Dx^4*Sl*Sk^2*i+80*x^3*Dx^4*Sl^2*
+Sk^2*i+80*x^3*Dx^4*Sl^2*Sk^2*j-160*x^4*Dx^4*Sl*Sk^2*j-160*x^4*Dx^4*Sl^2*Sk*j-\
+160*x^4*Dx^4*Sl^2*Sk*i+160*x^2*Dx^3*Sl^2*Sk^2*i*j-216*Sl^2*Sk*x^2*Dx^2*j*i^2-\
+264*Sl^2*Sk*x^2*Dx^2*i*j^2+60*Sl^2*x^2*Dx*i^2*j^2+40*Sl^2*x^2*Dx*j^3*i+10*Sl^2*
+x^2*Dx*j^4+10*Sl^2*x^2*Dx*i^4-104*Sl^2*Sk*x^2*Dx^2*j^3-56*Sl^2*Sk*x^2*Dx^2*i^3+
+160*x^4*Dx^3*Sl^2*i*j-144*x^3*Dx^3*Sl*Sk^2*j^2+40*Sl^2*x^2*Dx*i^3*j-176*x^3*Dx^
+3*Sl*Sk^2*i^2-320*x^3*Dx^3*Sl*Sk^2*i*j+80*x^5*Dx^4*Sk^2*i+80*x^5*Dx^4*Sk^2*j+80
+*x^4*Dx^3*Sl^2*i^2+80*x^4*Dx^3*Sl^2*j^2+60*x^2*Dx*Sk^2*i^2*j^2+40*x^2*Dx*Sk^2*i
+^3*j+40*x^2*Dx*Sk^2*j^3*i+10*x^2*Dx*Sk^2*i^4+80*x^5*Dx^4*Sl^2*i+80*x^5*Dx^4*Sl^
+2*j+10*x^2*Dx*Sk^2*j^4-20*x^2*Dx*Sk*Sl*i^4-20*x^2*Dx*Sk*Sl*j^4-80*x^2*Dx*Sk*Sl*
+j^3*i-80*x^2*Dx*Sk*Sl*i^3*j+120*Sl^2*x^3*Dx^2*j*i^2+120*Sl^2*x^3*Dx^2*i*j^2+40*
+Sl^2*x^3*Dx^2*j^3-120*x^2*Dx*Sk*Sl*i^2*j^2+40*Sl^2*x^3*Dx^2*i^3+2744*x^4*Dx^3*
+Sk^2-32*x*Dx*Sk^2*Sl*i^4-104*x*Dx*Sk^2*Sl*i^3*j-120*x*Dx*Sk^2*Sl*i^2*j^2-56*x*
+Dx*Sk^2*Sl*j^3*i-240*x^3*Dx^2*Sl*Sk*j*i^2-240*x^3*Dx^2*Sl*Sk*i*j^2-80*x^3*Dx^2*
+Sl*Sk*j^3-80*x^3*Dx^2*Sl*Sk*i^3-56*x^2*Dx^2*Sl*Sk^2*j^3-216*x^2*Dx^2*Sl*Sk^2*i*
+j^2-264*x^2*Dx^2*Sl*Sk^2*j*i^2-4*Sl*Sk^2*j^4*i-16*Sl^2*Sk*j^4*i+10*x*j^2*Sl^2*i
+^3+10*x*j^3*Sl^2*i^2-2*Sk*x*j^5*Sl+16*Sl^2*Sk^2*x*Dx^2*j^3+16*Sl^2*Sk^2*Dx*j^3-\
+24*Sl*Sk^2*i^3*j^2-8*x*Dx*Sk^2*Sl*j^4-16*Sl^2*Sk*i^3*j^2-4*Sl^2*Sk*j^5-4*Sl*Sk^
+2*j^4+Sk^2*x*i^5+x*i^5*Sl^2+10*Sk^2*x*i^3*j^2-20*Sl^2*Sk*j^4+576*x^3*Dx^2*Sk^2*
+j^2-32*Sl^2*Sk*i^3*j+x*j^5*Sk^2-10*j*Sk*x*i^4*Sl-16*j*Sl*Sk^2*i^4+576*x^3*Dx^2*
+Sk^2*i^2-472*x*Dx*Sk^2*Sl*i*j^2-1344*x^3*Dx^3*Sl*Sk^2*i-1344*x^3*Dx^3*Sl*Sk^2*j
++1152*x^3*Dx^2*Sk^2*i*j-4*Sl^2*Sk*i^4-232*x*Dx*Sk^2*Sl*i^3+5*j*Sk^2*x*i^4+5*j*x
+*i^4*Sl^2+16*j*Sl^2*Sk^2*i^3*Dx-2*Sk*x*i^5*Sl+16*Sl^2*Sk^2*i^3*Dx-584*x*Dx*Sk^2
+*Sl*j*i^2-120*x*Dx*Sk^2*Sl*j^3-1152*Sk*x^3*Dx^2*Sl*j^2+16*Sl^2*Sk^2*x*Dx^2*i^3-\
+2304*Sk*x^3*Dx^2*Sl*i*j-8*Sl^2*Sk*x*Dx*i^4-1152*Sk*x^3*Dx^2*Sl*i^2+456*x^2*Dx*
+Sl^2*i*j^2-4*Sl^2*Sk*i^4*j-584*Sl^2*Sk*x*Dx*i*j^2-4*Sl*Sk^2*i^5+10*Sk^2*x*i^2*j
+^3+x*j^5*Sl^2+152*x^2*Dx*Sl^2*i^3+152*x^2*Dx*Sl^2*j^3-232*Sl^2*Sk*x*Dx*j^3-1344
+*Sl^2*x^3*Dx^3*Sk*i-1344*Sl^2*x^3*Dx^3*Sk*j+5*i*x*j^4*Sl^2-10*i*Sk*x*j^4*Sl-20*
+Sk*x*j^2*Sl*i^3-20*Sk*x*j^3*Sl*i^2-16*Sl*Sk^2*i^2*j^3-24*Sl^2*Sk*i^2*j^3+32*j^2
+*Sl^2*Sk^2*i^2*Dx+16*Sl^2*Sk^2*Dx*i*j^3+32*Sl^2*Sk^2*Dx*j^2+152*x^2*Dx*Sk^2*i^3
++384*Sl^2*Sk^2*x*Dx^2*i*j+160*Sl^2*Sk^2*x*Dx^2*j^2-472*Sl^2*Sk*x*Dx*j*i^2+160*
+Sl^2*Sk^2*x*Dx^2*i^2+456*x^2*Dx*Sl^2*j*i^2+576*x^3*Dx^2*Sl^2*i^2+1152*x^3*Dx^2*
+Sl^2*i*j-64*Sl*Sk^2*i^3*j+576*x^3*Dx^2*Sl^2*j^2-20*Sl*Sk^2*i^4+928*x^4*Dx^3*Sl^
+2*j-32*Sl*Sk^2*j^3*i-304*x^2*Dx*Sl*Sk*j^3-304*x^2*Dx*Sl*Sk*i^3+928*x^4*Dx^3*Sk^
+2*j-1856*Sk*x^4*Dx^3*Sl*j+928*x^4*Dx^3*Sl^2*i-1856*Sk*x^4*Dx^3*Sl*i-688*Sl^2*Sk
+*x^2*Dx^2*i^2+928*x^4*Dx^3*Sk^2*i-448*Sl*Sk*x*i-912*x^2*Dx*Sl*Sk*i*j^2-120*Sl^2
+*Sk*x*Dx*i^3-848*Sl^2*Sk*x^2*Dx^2*j^2-912*x^2*Dx*Sl*Sk*j*i^2-64*Sl^2*Sk*j^3*i-\
+1536*Sl^2*Sk*x^2*Dx^2*i*j-2584*x^2*Dx^2*Sl*Sk^2*i+866*x^2*Dx*Sk^2*j^2-48*Sk*Sl^
+2*i*j+56*x*j*Sl^2*i^3+84*x*j^2*Sl^2*i^2-28*Sk*x*j^4*Sl-112*i*Sk*x*j^3*Sl-112*Sk
+*x*j*Sl*i^3-168*Sk*x*j^2*Sl*i^2-72*Sl*Sk^2*i^2*j^2+64*j*Sl^2*Sk^2*i^2*Dx-72*Sl^
+2*Sk*i^2*j^2+56*i*x*j^3*Sl^2+416*x^2*Dx^3*Sl^2*Sk^2*j+416*x^2*Dx^3*Sl^2*Sk^2*i-\
+848*x^2*Dx^2*Sl*Sk^2*i^2-688*x^2*Dx^2*Sl*Sk^2*j^2-1536*x^2*Dx^2*Sl*Sk^2*i*j+456
+*x^2*Dx*Sk^2*j*i^2-28*Sk*x*i^4*Sl+456*x^2*Dx*Sk^2*i*j^2+64*Sl^2*Sk^2*Dx*i*j^2+
+152*x^2*Dx*Sk^2*j^3-88*Sl^2*Sk*i*j^2-68*Sl^2*Sk*j*i^2-36*Sl*Sk^2*i^3+64*j*Sl^2*
+Sk^2*i*Dx-952*x*Dx*Sl*Sk^2*i-672*Sl*Sk^2*x*Dx*i^2-1208*Sl*Sk^2*x*Dx*i*j+368*Sl^
+2*Sk^2*x*Dx^2*i+32*Sl^2*Sk^2*i^2*Dx+16*Dx*Sl^2*Sk^2*j+368*j*Sl^2*Sk^2*x*Dx^2+16
+*Sl^2*Sk^2*i*Dx-48*Sl*Sk^2*i*j-8*Sl*Sk^2*i-536*Sl*Sk^2*x*Dx*j^2-2584*Sl*Sk^2*j*
+x^2*Dx^2-68*Sl*Sk^2*i*j^2-88*Sl*Sk^2*j*i^2-952*x*Dx*Sl*Sk^2*j+1732*x^2*Dx*Sk^2*
+i*j-28*Sl*Sk^2*i^2-20*Sl*Sk^2*j^2-8*Sl*Sk^2*j-16*Sl*Sk^2*j^3+2804*x^3*Dx^2*Sk^2
+*i+866*x^2*Dx*Sk^2*i^2+2804*x^3*Dx^2*Sk^2*j-576*x*Dx*Sk^2*Sl-2960*x^3*Dx^3*Sl*
+Sk^2-3024*x^2*Dx^2*Sl*Sk^2+256*Sl^2*Sk^2*x*Dx^2+608*x^2*Dx^3*Sl^2*Sk^2-16*Sl^2*
+Sk*i^3-8*Sl^2*Sk*i-8*Sl^2*Sk*j+4608*x^3*Dx^2*Sk^2-36*Sl^2*Sk*j^3+2188*x^2*Dx*Sk
+^2*i+2188*x^2*Dx*Sk^2*j-672*Sl^2*Sk*x*Dx*j^2+32*x^6*Dx^5*Sl^2+32*x^4*Dx^5*Sl^2*
+Sk^2-64*x^6*Dx^5*Sk*Sl-64*x^5*Dx^5*Sl^2*Sk-64*x^5*Dx^5*Sl*Sk^2-1088*x^5*Dx^4*Sk
+*Sl-832*x^4*Dx^4*Sl^2*Sk-832*x^4*Dx^4*Sl*Sk^2+544*x^5*Dx^4*Sl^2+288*x^3*Dx^4*Sl
+^2*Sk^2+32*x^6*Dx^5*Sk^2, 64*x^5*Dx^4*Sl*Sk^3-672*x^3*Dx*Sk^3+2016*x^3*Dx*Sl*Sk
+^2-32*x^4*Dx^4*Sl^2*Sk^3+96*x^6*Dx^4*Sk^2*Sl-128*Sl^2*Sk^3*x^2*Dx^2-160*x^3*Dx^
+3*Sl^2*Sk^3+912*x^3*Dx^2*Sl*Sk^3+288*x^2*Dx*Sk^3*Sl+512*x^4*Dx^3*Sl*Sk^3+1056*
+Sk^2*x^5*Dx^3*Sl+2952*Sk^2*x^4*Dx^2*Sl-1056*Sk*x^5*Dx^3*Sl^2-96*Sk*x^6*Dx^4*Sl^
+2-2952*Sk*x^4*Dx^2*Sl^2-2016*Sk*x^3*Dx*Sl^2-144*Sk*x^2*Sl^2-48*x^2*Sk^3+48*x^2*
+Sl^3+576*x^3*Dx^2*Sl*Sk^3*j-16*x^3*Dx*Sk^3*i^3-912*x^3*Dx^2*Sk*Sl^3+32*x^4*Sk^2
+*Dx^4*Sl^3-44*Sk^3*Sl^2*i^4*j+40*Sk^3*Sl^2*j^3*i^2+52*Sk^3*Sl^2*j^3*i+16*Sk^3*
+Sl^2*j^4+4*Sk^3*Sl^2*j^5-20*Sk^3*Sl^2*i^5-36*Sk^3*Sl^2*i^4-210*Sk*x^2*Sl^2*j^2-\
+6*Sk*x^2*Sl^2*j^4-60*Sk*x^2*Sl^2*j^3-210*Sk*x^2*Sl^2*i^2-300*Sk*x^2*Sl^2*j-60*
+Sk*x^2*Sl^2*i^3+28*Sk^3*Sl^2*j^4*i-300*Sk*x^2*Sl^2*i+28*Sk^3*Sl^2*i*j^2-8*Sk^3*
+Sl^2*j^2*i^4+24*x*Sk*Sl^3*i^3*j^2+94*x*Sk*Sl^3*i^3*j-72*x*Sk*Sl^3*j^2+51*x*Sk*
+Sl^3*i^4-59*x*Sk*Sl^3*j^4-12*x*Sk*Sl^3*j^5+32*x*Sk*Sl^3*i^2-112*x*Sk*Sl^3*j^3-x
+*Sk*Sl^3*j^6-24*x*Sk*Sl^3*j^3*i^2+x*Sk*Sl^3*i^6+32*x^5*Dx^4*Sl^2*Sk^2*j^2-32*x^
+5*Dx^4*Sl^2*Sk^2*i^2-16*x^5*Sk*Dx^4*Sl^3*j^2+16*x^5*Sk*Dx^4*Sl^3*i^2+12*x*Sk*Sl
+^3*i^5+12*Sk^2*Sl^3*j^5*i-28*Sk^2*Sl^3*i^4*j+44*Sk^2*Sl^3*j^4*i-52*Sk^2*Sl^3*i^
+3*j+52*Sk^2*Sl^3*j^3*i-12*Sk^2*Sl^3*j^2*i^4-4*Sk^2*Sl^3*i^5*j+8*Sk^2*Sl^3*j^3*i
+^2+8*Sk^2*Sl^3*j^4*i^2+20*Sk^2*Sl^3*j^5-4*Sk^2*Sl^3*i^5+36*Sk^2*Sl^3*j^4-16*Sk^
+2*Sl^3*i^4-1008*Sk*x^3*Dx*Sl^2*i*j-504*Sk*x^3*Dx*Sl^2*i^2-1752*Sk*x^3*Dx*Sl^2*i
+-1752*Sk*x^3*Dx*Sl^2*j+28*Sk^2*Sl^3*j^3+4*Sk^2*Sl^3*j^6-48*Sk*x^3*Dx*Sl^2*j^3-\
+48*Sk*x^3*Dx*Sl^2*i^3-504*Sk*x^3*Dx*Sl^2*j^2-144*Sk*x^3*Dx*Sl^2*j*i^2-144*Sk*x^
+3*Dx*Sl^2*i*j^2-48*x^3*Dx*Sk^3*i*j^2-336*x^3*Dx*Sk^3*i*j-584*x^3*Dx*Sk^3*i-48*x
+^3*Dx*Sk^3*j*i^2-584*x^3*Dx*Sk^3*j+20*Sk^2*Sl^3*i*j^2-28*Sk^2*Sl^3*j*i^2-40*Sk^
+2*Sl^3*i^3*j^2+16*x*Sl^3*Sk^3*Dx^2*i^4+112*x*Sl^3*Sk^3*Dx^2*i^2+96*x*Sl^3*Sk^3*
+Dx^2*j*i^2-20*Sk^2*Sl^3*i^3-112*x*Sl^3*Sk^3*Dx^2*j^2-168*x^3*Dx*Sk^3*j^2-168*x^
+3*Dx*Sk^3*i^2+48*x*Sl^3*Sk^3*Dx^2*i^3*j+96*x*Sl^3*Sk^3*Dx^2*i^3-48*x*Sl^3*Sk^3*
+Dx^2*j^3*i-96*x*Sl^3*Sk^3*Dx^2*i*j^2-96*x*Sl^3*Sk^3*Dx^2*j^3-240*x^3*Dx^2*Sl*Sk
+^3*j^3-524*x^3*Dx^2*Sl*Sk^3*j^2+576*x^3*Dx^2*Sl*Sk^3*i-16*x*Sl^3*Sk^3*Dx^2*j^4-\
+240*x^3*Dx^2*Sl*Sk^3*i*j^2-48*x^3*Dx^2*Sl*Sk^3*j^3*i+24*x^3*Dx^2*Sl*Sk^3*i^4+
+240*x^3*Dx^2*Sl*Sk^3*j*i^2+48*x^3*Dx^2*Sl*Sk^3*i^3*j-24*x^3*Dx^2*Sl*Sk^3*j^4-8*
+Sk^2*Sl^3*i^2+716*x^3*Dx^2*Sl*Sk^3*i^2+192*x^3*Dx^2*Sl*Sk^3*i*j+240*x^3*Dx^2*Sl
+*Sk^3*i^3+1752*x^3*Dx*Sl*Sk^2*j+1752*x^3*Dx*Sl*Sk^2*i+144*x^3*Dx*Sl*Sk^2*j*i^2+
+144*x^3*Dx*Sl*Sk^2*i*j^2+1008*x^3*Dx*Sl*Sk^2*i*j-16*x^5*Dx^4*Sl*Sk^3*j^2+16*x^5
+*Dx^4*Sl*Sk^3*i^2-144*Sl^2*Sk^3*x^2*Dx^2*i+192*Sk^2*x^5*Dx^3*Sl*j-144*Sl^2*Sk^3
+*x^2*Dx^2*j+192*Sk^2*x^5*Dx^3*Sl*i+48*x^3*Dx*Sl*Sk^2*i^3+504*x^3*Dx*Sl*Sk^2*i^2
++504*x^3*Dx*Sl*Sk^2*j^2+48*x^3*Dx*Sl*Sk^2*j^3-336*Sl^2*Sk^3*x^2*Dx^2*j*i^2-648*
+Sl^2*Sk^3*x^2*Dx^2*i^2-336*Sl^2*Sk^3*x^2*Dx^2*i^3+40*Sl^2*Sk^3*x^2*Dx^2*j^4-96*
+Sl^2*Sk^3*x^2*Dx^2*i*j+336*Sl^2*Sk^3*x^2*Dx^2*j^3-56*Sl^2*Sk^3*x^2*Dx^2*i^4+16*
+Sl^2*Sk^3*x^2*Dx^2*i^2*j^2-96*Sl^2*Sk^3*x^2*Dx^2*i^3*j+584*Sl^2*Sk^3*x^2*Dx^2*j
+^2+96*Sl^2*Sk^3*x^2*Dx^2*j^3*i+336*Sl^2*Sk^3*x^2*Dx^2*i*j^2+144*Sk^2*x^4*Dx^2*
+Sl*j^2+144*Sk^2*x^4*Dx^2*Sl*i^2-192*Sk*x^5*Dx^3*Sl^2*j-192*Sk*x^5*Dx^3*Sl^2*i-\
+64*x^5*Dx^3*Sk^3*j-64*x^5*Dx^3*Sk^3*i-16*x^3*Dx*Sk^3*j^3+288*Sk^2*x^4*Dx^2*Sl*i
+*j+1296*Sk^2*x^4*Dx^2*Sl*i+1296*Sk^2*x^4*Dx^2*Sl*j-32*x^4*Dx^4*Sl^2*Sk^3*i^2+32
+*x^4*Dx^4*Sl^2*Sk^3*j^2-64*x^3*Dx^3*Sl^2*Sk^3*j*i^2+288*x^3*Dx^3*Sl^2*Sk^3*j^2-\
+288*x^3*Dx^3*Sl^2*Sk^3*i^2+64*x^3*Dx^3*Sl^2*Sk^3*i*j^2+64*x^3*Dx^3*Sl^2*Sk^3*j^
+3-64*x^3*Dx^3*Sl^2*Sk^3*i^3-64*x^3*Dx^3*Sl^2*Sk^3*i-64*x^3*Dx^3*Sl^2*Sk^3*j-96*
+x^4*Dx^2*Sk^3*i*j-432*x^4*Dx^2*Sk^3*j-432*x^4*Dx^2*Sk^3*i-48*Sl^3*Sk^3*Dx*j^3*i
++16*Sl^3*Sk^3*Dx*i^4*j+48*Sl^3*Sk^3*Dx*i^3*j-32*Sl^3*Sk^3*Dx*i*j^2+32*Sl^3*Sk^3
+*Dx*j*i^2+16*Sl^3*Sk^3*Dx*i^3*j^2+16*Sl^3*Sk^3*Dx*i^2-16*Sl^3*Sk^3*Dx*j^2-48*x^
+4*Dx^2*Sk^3*j^2-48*x^4*Dx^2*Sk^3*i^2+280*x*Dx*Sk^3*Sl^2*i*j^2-24*x*Dx*Sk^3*Sl^2
+*i^5-48*x*Dx*Sk^3*Sl^2*i*j+96*x*Dx*Sk^3*Sl^2*j^4-56*x*Dx*Sk^3*Sl^2*i^4*j-304*x*
+Dx*Sk^3*Sl^2*i^2-16*x*Dx*Sk^3*Sl^2*i-16*x*Dx*Sk^3*Sl^2*j-16*Sl^3*Sk^3*Dx*j^4*i-\
+16*Sl^3*Sk^3*Dx*j^3*i^2-16*x*Dx*Sk^3*Sl^2*i^3*j^2-240*x*Dx*Sk^3*Sl^2*i^3*j+48*x
+*Dx*Sk^3*Sl^2*i^2*j^2-144*x*Dx*Sk^3*Sl^2*i^4+256*x*Dx*Sk^3*Sl^2*j^2+40*x*Dx*Sk^
+3*Sl^2*j^4*i-312*x*Dx*Sk^3*Sl^2*i^3-344*x*Dx*Sk^3*Sl^2*j*i^2+240*x*Dx*Sk^3*Sl^2
+*j^3*i+8*x*Dx*Sk^3*Sl^2*j^5-144*Sk*x^4*Dx^2*Sl^2*i^2-1296*Sk*x^4*Dx^2*Sl^2*j-\
+1296*Sk*x^4*Dx^2*Sl^2*i+48*x*Dx*Sk^3*Sl^2*j^3*i^2+312*x*Dx*Sk^3*Sl^2*j^3+128*x^
+4*Dx^3*Sl*Sk^3*i-144*Sk*x^4*Dx^2*Sl^2*j^2-288*Sk*x^4*Dx^2*Sl^2*i*j-32*x^4*Dx^3*
+Sl*Sk^3*j^3+400*x^2*Dx*Sk^3*Sl*i+32*x^4*Dx^3*Sl*Sk^3*j*i^2+32*x^4*Dx^3*Sl*Sk^3*
+i^3-192*x^4*Dx^3*Sl*Sk^3*j^2+192*x^4*Dx^3*Sl*Sk^3*i^2-32*x^4*Dx^3*Sl*Sk^3*i*j^2
++128*x^4*Dx^3*Sl*Sk^3*j-300*x^2*Dx*Sk^3*Sl*i*j^2-364*x^2*Dx*Sk^3*Sl*j^3-96*x^2*
+Dx*Sk^3*Sl*j^4+400*x^2*Dx*Sk^3*Sl*j-192*x^2*Dx*Sk^3*Sl*j^3*i+8*x^2*Dx*Sk^3*Sl*i
+^5+96*x^2*Dx*Sk^3*Sl*i^4+492*x^2*Dx*Sk^3*Sl*j*i^2-16*x^2*Dx*Sk^3*Sl*j^3*i^2-24*
+x^2*Dx*Sk^3*Sl*j^4*i+192*x^2*Dx*Sk^3*Sl*i^3*j+716*x^2*Dx*Sk^3*Sl*i^2-8*x^2*Dx*
+Sk^3*Sl*j^5+428*x^2*Dx*Sk^3*Sl*i^3-332*x^2*Dx*Sk^3*Sl*j^2+384*x^2*Dx*Sk^3*Sl*i*
+j-16*x^3*Dx^4*Sl^3*Sk^3*j^2+16*x^3*Dx^4*Sl^3*Sk^3*i^2+24*x^2*Dx*Sk^3*Sl*i^4*j+
+16*x^2*Dx*Sk^3*Sl*i^3*j^2-4*x*Sk^3*Sl*j^5*i+36*x*Sk^3*Sl*i^4*j-36*x*Sk^3*Sl*j^4
+*i+126*x*Sk^3*Sl*i^3*j-94*x*Sk^3*Sl*j^3*i+24*x*Sk^3*Sl*i^3*j^2+5*x*Sk^3*Sl*j^2*
+i^4+4*x*Sk^3*Sl*i^5*j-24*x*Sk^3*Sl*j^3*i^2-5*x*Sk^3*Sl*j^4*i^2+12*x*Sk^3*Sl*i^5
+-51*x*Sk^3*Sl*j^4+59*x*Sk^3*Sl*i^4+8*x*Sk^3*Sl*i+8*x*Sk^3*Sl*j-32*Sl^3*Sk^3*Dx*
+j^3+16*Sl^3*Sk^3*Dx*i^4-16*Sl^3*Sk^3*Dx*j^4+32*Sl^3*Sk^3*Dx*i^3-x*Sk^3*Sl*j^6-\
+12*x*Sk^3*Sl*j^5+x*Sk^3*Sl*i^6-48*x*Sk^3*Sl*i*j^2+144*x*Sk^3*Sl*j*i^2+24*x*Sk^3
+*Sl*i^2*j^2+32*x^2*Dx^3*Sl^3*Sk^3*j*i^2-32*x^2*Dx^3*Sl^3*Sk^3*j^3-32*x^2*Dx^3*
+Sl^3*Sk^3*i*j^2+96*x^2*Dx^3*Sl^3*Sk^3*i^2-96*x^2*Dx^3*Sl^3*Sk^3*j^2+40*x*Sk^3*
+Sl*i*j-32*x*Sk^3*Sl*j^2-80*x*Sk^3*Sl*j^3+32*x^2*Dx^3*Sl^3*Sk^3*i^3-100*x^2*Sk^3
+*j-100*x^2*Sk^3*i+8*Sk^2*Sl^3*j^2-2*x^2*Sk^3*j^4-20*x^2*Sk^3*j^3-2*x^2*Sk^3*i^4
+-70*x^2*Sk^3*i^2-20*x^2*Sk^3*i^3-60*x^2*Sk^3*i*j^2-12*x^2*Sk^3*i^2*j^2-60*x^2*
+Sk^3*j*i^2-140*x^2*Sk^3*i*j+112*x*Sk^3*Sl*i^3+72*x*Sk^3*Sl*i^2-8*x^2*Sk^3*j^3*i
+-8*x^2*Sk^3*i^3*j-8*Sk^3*Sl^2*i^3*j^2+12*Sk^3*Sl^2*j^4*i^2+8*Sk^3*Sl^2*j^3*i^3+
+4*Sk^3*Sl^2*j^5*i+20*Sk^3*Sl^2*i^2*j^2-52*Sk^3*Sl^2*i^3*j+8*Sk^3*Sl^2*j^2-28*Sk
+^3*Sl^2*i^3+20*Sk^3*Sl^2*j^3-8*Sk^3*Sl^2*i^2-70*x^2*Sk^3*j^2-4*Sk^3*Sl^2*i^6-24
+*Sk*x^2*Sl^2*i^3*j-180*Sk*x^2*Sl^2*i*j^2-36*Sk*x^2*Sl^2*i^2*j^2-6*Sk*x^2*Sl^2*i
+^4-180*Sk*x^2*Sl^2*j*i^2-420*Sk*x^2*Sl^2*i*j-20*Sk^3*Sl^2*j*i^2-12*Sk^3*Sl^2*i^
+5*j-24*Sk*x^2*Sl^2*j^3*i-64*x^3*Sk^2*Dx^3*Sl^3*j*i^2-288*x^3*Sk^2*Dx^3*Sl^3*i^2
++64*x^3*Sk^2*Dx^3*Sl^3*j^3-64*x^3*Sk^2*Dx^3*Sl^3*i^3+64*x^3*Sk^2*Dx^3*Sl^3*i*j^
+2+288*x^3*Sk^2*Dx^3*Sl^3*j^2+32*x^4*Sk^2*Dx^4*Sl^3*j^2+48*x^3*Dx^2*Sk*Sl^3*i^3*
+j+240*x^3*Dx^2*Sk*Sl^3*j*i^2-32*x^4*Sk^2*Dx^4*Sl^3*i^2-48*x^3*Dx^2*Sk*Sl^3*j^3*
+i-240*x^3*Dx^2*Sk*Sl^3*j^3-716*x^3*Dx^2*Sk*Sl^3*j^2+524*x^3*Dx^2*Sk*Sl^3*i^2-24
+*x^3*Dx^2*Sk*Sl^3*j^4-240*x^3*Dx^2*Sk*Sl^3*i*j^2+24*x^3*Dx^2*Sk*Sl^3*i^4-480*Sl
+^2*Sk^2*x^3*Dx^2*j*i^2-96*Sl^2*Sk^2*x^3*Dx^2*i^3*j-48*Sl^2*Sk^2*x^3*Dx^2*i^4+
+240*x^3*Dx^2*Sk*Sl^3*i^3+96*Sl^2*Sk^2*x^3*Dx^2*j^3*i+48*Sl^2*Sk^2*x^3*Dx^2*j^4+
+1240*Sl^2*Sk^2*x^3*Dx^2*j^2+312*x*Sk^2*Dx*Sl^3*j^3-40*x*Sk^2*Dx*Sl^3*i^4*j-1240
+*Sl^2*Sk^2*x^3*Dx^2*i^2+144*x*Sk^2*Dx*Sl^3*j^4+480*Sl^2*Sk^2*x^3*Dx^2*i*j^2+480
+*Sl^2*Sk^2*x^3*Dx^2*j^3-480*Sl^2*Sk^2*x^3*Dx^2*i^3+56*x*Sk^2*Dx*Sl^3*j^4*i+16*x
+*Sk^2*Dx*Sl^3*j^3*i^2+24*x*Sk^2*Dx*Sl^3*j^5-48*x*Sk^2*Dx*Sl^3*i^3*j^2+344*x*Sk^
+2*Dx*Sl^3*i*j^2-280*x*Sk^2*Dx*Sl^3*j*i^2-240*x*Sk^2*Dx*Sl^3*i^3*j-312*x*Sk^2*Dx
+*Sl^3*i^3-256*x*Sk^2*Dx*Sl^3*i^2-8*x*Sk^2*Dx*Sl^3*i^5+240*x*Sk^2*Dx*Sl^3*j^3*i-\
+96*x*Sk^2*Dx*Sl^3*i^4-336*x^2*Sk^2*Dx^2*Sl^3*i^3-336*x^2*Sk^2*Dx^2*Sl^3*j*i^2-\
+10*x*Sk^2*Sl^2*j^2*i^4-8*x*Sk^2*Sl^2*i^5*j+48*x*Sk^2*Sl^2*j^3*i^2+10*x*Sk^2*Sl^
+2*j^4*i^2-48*x*Sk^2*Sl^2*i^3*j^2+8*x*Sk^2*Sl^2*j^5*i-72*x*Sk^2*Sl^2*i^4*j+72*x*
+Sk^2*Sl^2*j^4*i-220*x*Sk^2*Sl^2*i^3*j+220*x*Sk^2*Sl^2*j^3*i-24*x*Sk^2*Sl^2*i^5+
+110*x*Sk^2*Sl^2*j^4-110*x*Sk^2*Sl^2*i^4-192*x*Sk^2*Sl^2*j*i^2-2*x*Sk^2*Sl^2*i^6
++192*x*Sk^2*Sl^2*j^3+2*x*Sk^2*Sl^2*j^6+24*x*Sk^2*Sl^2*j^5+192*x*Sk^2*Sl^2*i*j^2
+-192*x*Sk^2*Sl^2*i^3-104*x*Sk^2*Sl^2*i^2+104*x*Sk^2*Sl^2*j^2+648*x^2*Sk^2*Dx^2*
+Sl^3*j^2+336*x^2*Sk^2*Dx^2*Sl^3*i*j^2-96*x^2*Sk^2*Dx^2*Sl^3*i^3*j+96*x^2*Sk^2*
+Dx^2*Sl^3*j^3*i+56*x^2*Sk^2*Dx^2*Sl^3*j^4-36*x*Sk*Sl^3*j^4*i-5*x*Sk*Sl^3*j^4*i^
+2-144*x*Sk*Sl^3*i*j^2+336*x^2*Sk^2*Dx^2*Sl^3*j^3-40*x^2*Sk^2*Dx^2*Sl^3*i^4-584*
+x^2*Sk^2*Dx^2*Sl^3*i^2+4*x*Sk*Sl^3*i^5*j-126*x*Sk*Sl^3*j^3*i+5*x*Sk*Sl^3*j^2*i^
+4-4*x*Sk*Sl^3*j^5*i+36*x*Sk*Sl^3*i^4*j+48*x*Sk*Sl^3*j*i^2+80*x*Sk*Sl^3*i^3+32*
+Sl^2*Sk^2*x^2*Dx*j^3*i^2-48*Sl^2*Sk^2*x^2*Dx*i^4*j-32*Sl^2*Sk^2*x^2*Dx*i^3*j^2+
+48*Sl^2*Sk^2*x^2*Dx*j^4*i+16*Sl^2*Sk^2*x^2*Dx*j^5+384*Sl^2*Sk^2*x^2*Dx*j^3*i-\
+384*Sl^2*Sk^2*x^2*Dx*i^3*j+192*Sl^2*Sk^2*x^2*Dx*j^4+792*Sl^2*Sk^2*x^2*Dx*j^3-\
+792*Sl^2*Sk^2*x^2*Dx*j*i^2+792*Sl^2*Sk^2*x^2*Dx*i*j^2-792*Sl^2*Sk^2*x^2*Dx*i^3-\
+1048*Sl^2*Sk^2*x^2*Dx*i^2+1048*Sl^2*Sk^2*x^2*Dx*j^2-16*Sl^2*Sk^2*x^2*Dx*i^5-192
+*Sl^2*Sk^2*x^2*Dx*i^4+420*x^2*Sk^2*Sl*i*j+300*x^2*Sk^2*Sl*j+180*x^2*Sk^2*Sl*j*i
+^2+192*x^4*Dx^3*Sk*Sl^3*i^2+32*x^4*Dx^3*Sk*Sl^3*i^3-32*x^4*Dx^3*Sk*Sl^3*i*j^2-\
+192*x^4*Dx^3*Sk*Sl^3*j^2+32*x^4*Dx^3*Sk*Sl^3*j*i^2+24*x^2*Sk^2*Sl*j^3*i-32*x^4*
+Dx^3*Sk*Sl^3*j^3+24*x^2*Sk^2*Sl*i^3*j+36*x^2*Sk^2*Sl*i^2*j^2+180*x^2*Sk^2*Sl*i*
+j^2+6*x^2*Sk^2*Sl*j^4+300*x^2*Sk^2*Sl*i+24*x^2*Sk*Dx*Sl^3*i^4*j+96*x^2*Sk*Dx*Sl
+^3*i^4+300*x^2*Sk*Dx*Sl^3*j*i^2+192*x^2*Sk*Dx*Sl^3*i^3*j+6*x^2*Sk^2*Sl*i^4-16*x
+^2*Sk*Dx*Sl^3*j^3*i^2+332*x^2*Sk*Dx*Sl^3*i^2-96*x^2*Sk*Dx*Sl^3*j^4+364*x^2*Sk*
+Dx*Sl^3*i^3+16*x^2*Sk*Dx*Sl^3*i^3*j^2-24*x^2*Sk*Dx*Sl^3*j^4*i-8*x^2*Sk*Dx*Sl^3*
+j^5-428*x^2*Sk*Dx*Sl^3*j^3-716*x^2*Sk*Dx*Sl^3*j^2-192*x^2*Sk*Dx*Sl^3*j^3*i-492*
+x^2*Sk*Dx*Sl^3*i*j^2+8*x^2*Sk*Dx*Sl^3*i^5+210*x^2*Sk^2*Sl*i^2+60*x^2*Sk^2*Sl*j^
+3+210*x^2*Sk^2*Sl*j^2+60*x^2*Sk^2*Sl*i^3-64*x^5*Sk*Dx^4*Sl^3+64*Sl^2*x^4*Dx^3*
+Sk^2*i*j^2-64*Sl^2*x^4*Dx^3*Sk^2*i^3+384*Sl^2*x^4*Dx^3*Sk^2*j^2-384*Sl^2*x^4*Dx
+^3*Sk^2*i^2+64*Sl^2*x^4*Dx^3*Sk^2*j^3-64*Sl^2*x^4*Dx^3*Sk^2*j*i^2+304*x*Sk^2*Dx
+*Sl^3*j^2-16*Sl^3*Sk^2*x^2*Dx^2*i^2*j^2-20*Sl^3*Sk^2*i^2*j^2+100*x^2*i*Sl^3+432
+*x^4*Dx^2*Sl^3*i+128*x^2*Sk^2*Dx^2*Sl^3-576*Sl^3*Sk*i*x^3*Dx^2-400*Sl^3*Sk*x^2*
+i*Dx-8*Sl^3*Sk*x*i-576*Sl^3*Sk*j*x^3*Dx^2-400*Sl^3*Sk*x^2*j*Dx-384*Sl^3*Sk*x^2*
+Dx*i*j+144*Sl^3*Sk^2*x^2*Dx^2*i+16*Sl^3*Sk^2*x*i*Dx+48*j*Sl^3*Sk^2*x*i*Dx+144*j
+*Sl^3*Sk^2*x^2*Dx^2+16*x*Dx*Sl^3*Sk^2*j-8*Sl^3*Sk*x*j-40*Sk*Sl^3*x*i*j+64*x^3*
+Dx^3*Sl^3*Sk^2*i+64*x^3*Dx^3*Sl^3*Sk^2*j-24*x*Sl^3*Sk*i^2*j^2-128*Sl^3*x^4*Dx^3
+*Sk*j-128*Sl^3*x^4*Dx^3*Sk*i+48*x^3*Dx*Sl^3*i*j^2+64*x^5*Dx^3*Sl^3*i-192*Sl^3*
+Sk*x^3*Dx^2*i*j+12*x^2*j^2*Sl^3*i^2+8*x^2*j*Sl^3*i^3+64*x^5*Dx^3*Sl^3*j+96*Sl^3
+*Sk^2*x^2*Dx^2*i*j+96*x^4*Dx^2*Sl^3*i*j+48*x^3*Dx*Sl^3*j*i^2+48*x^4*Dx^2*Sl^3*j
+^2+48*x^4*Dx^2*Sl^3*i^2+16*x^3*Dx*Sl^3*j^3+336*x^3*Dx*Sl^3*i*j+8*i*x^2*j^3*Sl^3
++60*x^2*j*Sl^3*i^2+584*x^3*Dx*Sl^3*j+168*x^3*Dx*Sl^3*j^2+168*x^3*Dx*Sl^3*i^2+
+432*x^4*Dx^2*Sl^3*j+584*x^3*Dx*Sl^3*i+16*x^3*Dx*Sl^3*i^3+60*x^2*j^2*Sl^3*i+70*x
+^2*Sl^3*j^2+100*x^2*Sl^3*j-8*Sl^3*Sk^2*j^3*i^3-48*Sl^3*Sk^2*x*Dx*i^2*j^2+70*x^2
+*Sl^3*i^2+160*x^3*Sk^2*Dx^3*Sl^3-288*x^2*Sk*Dx*Sl^3-512*x^4*Dx^3*Sk*Sl^3+144*x^
+2*Sk^2*Sl-32*x^6*Dx^4*Sk^3-984*x^4*Dx^2*Sk^3-352*x^5*Dx^3*Sk^3+672*x^3*Dx*Sl^3+
+352*x^5*Dx^3*Sl^3+32*x^6*Dx^4*Sl^3+984*x^4*Dx^2*Sl^3+20*x^2*j^3*Sl^3+20*x^2*i^3
+*Sl^3+2*x^2*j^4*Sl^3+2*x^2*i^4*Sl^3+140*x^2*i*Sl^3*j, 4*Sk^2*x*j^3*i+4*Sk^2*x*i
+^3*j+102*Sk^2*x*i*j+36*Sk^2*x*i*j^2+36*Sk^2*j*x*i^2+6*Sk^2*x*i^2*j^2+484*x^2*Dx
+*Sk^2+16*x^5*Dx^4*Sk^2+Sk^2*x*i^4+x*i^4*Sl^2+84*Sk^2*x*i+x*j^4*Sl^2+12*Sk^2*x*i
+^3+x*j^4*Sk^2-24*Sl*Sk*x*i^3+51*Sk^2*x*i^2-968*x^2*Dx*Sk*Sl+51*Sk^2*x*j^2+84*Sk
+^2*x*j-760*x^2*Dx*Sl*Sk*i-384*x^4*Dx^3*Sl*Sk-1208*x^3*Dx^2*Sl*Sk-480*x^3*Dx^2*
+Sl*Sk*i-760*x^2*Dx*Sl*Sk*j+12*Sk^2*x*j^3-192*Sl*Sk*x^2*Dx*i^2-72*Sl*Sk*j*x*i^2-\
+72*Sl*Sk*x*i*j^2-480*Sl*Sk*j*x^3*Dx^2-192*Sl*Sk*x^2*Dx*j^2-88*Sl*Sk*x-204*Sl*Sk
+*x*i*j-24*Sl*Sk*x*j^3-616*Sl^2*Sk*x^2*Dx^2-288*x^3*Dx^3*Sl^2*Sk-168*Sl*Sk*x*j-\
+102*Sl*Sk*x*j^2-272*Sl^2*Sk*x*Dx-312*Sl^2*Sk*x*i*Dx-384*Sl*Sk*x^2*Dx*i*j-102*Sl
+*Sk*x*i^2+84*Sl^2*x*i+51*Sl^2*x*j^2+484*Sl^2*x^2*Dx+604*Sl^2*x^3*Dx^2+51*Sl^2*x
+*i^2+192*x^4*Dx^3*Sl^2+84*Sl^2*x*j-240*j*Sl^2*Sk*x*i*Dx-336*j*Sl^2*Sk*x^2*Dx^2+
+44*Sl^2*x-312*x*Dx*Sl^2*Sk*j-36*Sk*Sl^2*j^2-16*Sl^2*Sk*i^2+12*Sl^2*x*j^3+12*Sl^
+2*x*i^3+96*Sl^2*x^2*Dx*i^2+96*Sl^2*x^2*Dx*j^2+240*Sl^2*x^3*Dx^2*i+240*Sl^2*x^3*
+Dx^2*j-96*Sl^2*Sk*x*i^2*Dx+44*Sk^2*x-336*Sl^2*Sk*x^2*Dx^2*i+192*Sl^2*x^2*Dx*i*j
++36*Sl^2*x*i*j^2+36*j*Sl^2*x*i^2+102*Sl^2*x*i*j+380*Sl^2*x^2*j*Dx+380*Sl^2*x^2*
+i*Dx+192*x^4*Dx^3*Sk^2-4*Sl^2*Sk*j^4+24*x^3*Dx^2*Sk^2*j^2-4*Sl^2*Sk*i^3*j+24*x^
+3*Dx^2*Sk^2*i^2-40*x*Dx*Sk^2*Sl*i*j^2-64*x^3*Dx^3*Sl*Sk^2*i-64*x^3*Dx^3*Sl*Sk^2
+*j+48*x^3*Dx^2*Sk^2*i*j-24*x*Dx*Sk^2*Sl*i^3-56*x*Dx*Sk^2*Sl*j*i^2-8*x*Dx*Sk^2*
+Sl*j^3-48*Sk*x^3*Dx^2*Sl*j^2-96*Sk*x^3*Dx^2*Sl*i*j-48*Sk*x^3*Dx^2*Sl*i^2+24*x^2
+*Dx*Sl^2*i*j^2-56*Sl^2*Sk*x*Dx*i*j^2+8*x^2*Dx*Sl^2*i^3+8*x^2*Dx*Sl^2*j^3-24*Sl^
+2*Sk*x*Dx*j^3-64*Sl^2*x^3*Dx^3*Sk*i-64*Sl^2*x^3*Dx^3*Sk*j+16*Sl^2*Sk^2*Dx*j^2+8
+*x^2*Dx*Sk^2*i^3+48*Sl^2*Sk^2*x*Dx^2*i*j+16*Sl^2*Sk^2*x*Dx^2*j^2-40*Sl^2*Sk*x*
+Dx*j*i^2+16*Sl^2*Sk^2*x*Dx^2*i^2+24*x^2*Dx*Sl^2*j*i^2+24*x^3*Dx^2*Sl^2*i^2+48*x
+^3*Dx^2*Sl^2*i*j-12*Sl*Sk^2*i^3*j+24*x^3*Dx^2*Sl^2*j^2-4*Sl*Sk^2*i^4+32*x^4*Dx^
+3*Sl^2*j-4*Sl*Sk^2*j^3*i-16*x^2*Dx*Sl*Sk*j^3-16*x^2*Dx*Sl*Sk*i^3+32*x^4*Dx^3*Sk
+^2*j-64*Sk*x^4*Dx^3*Sl*j+32*x^4*Dx^3*Sl^2*i-64*Sk*x^4*Dx^3*Sl*i-40*Sl^2*Sk*x^2*
+Dx^2*i^2+32*x^4*Dx^3*Sk^2*i-168*Sl*Sk*x*i-48*x^2*Dx*Sl*Sk*i*j^2-8*Sl^2*Sk*x*Dx*
+i^3-56*Sl^2*Sk*x^2*Dx^2*j^2-48*x^2*Dx*Sl*Sk*j*i^2-12*Sl^2*Sk*j^3*i-96*Sl^2*Sk*x
+^2*Dx^2*i*j-336*x^2*Dx^2*Sl*Sk^2*i+96*x^2*Dx*Sk^2*j^2-52*Sk*Sl^2*i*j+4*x*j*Sl^2
+*i^3+6*x*j^2*Sl^2*i^2-2*Sk*x*j^4*Sl-8*i*Sk*x*j^3*Sl-8*Sk*x*j*Sl*i^3-12*Sk*x*j^2
+*Sl*i^2-12*Sl*Sk^2*i^2*j^2+16*j*Sl^2*Sk^2*i^2*Dx-12*Sl^2*Sk*i^2*j^2+4*i*x*j^3*
+Sl^2+32*x^2*Dx^3*Sl^2*Sk^2*j+32*x^2*Dx^3*Sl^2*Sk^2*i-56*x^2*Dx^2*Sl*Sk^2*i^2-40
+*x^2*Dx^2*Sl*Sk^2*j^2-96*x^2*Dx^2*Sl*Sk^2*i*j+24*x^2*Dx*Sk^2*j*i^2-2*Sk*x*i^4*
+Sl+24*x^2*Dx*Sk^2*i*j^2+16*Sl^2*Sk^2*Dx*i*j^2+8*x^2*Dx*Sk^2*j^3-44*Sl^2*Sk*i*j^
+2-28*Sl^2*Sk*j*i^2-20*Sl*Sk^2*i^3+48*j*Sl^2*Sk^2*i*Dx-312*x*Dx*Sl*Sk^2*i-144*Sl
+*Sk^2*x*Dx*i^2-240*Sl*Sk^2*x*Dx*i*j+96*Sl^2*Sk^2*x*Dx^2*i+16*Sl^2*Sk^2*i^2*Dx+
+32*Dx*Sl^2*Sk^2*j+96*j*Sl^2*Sk^2*x*Dx^2+32*Sl^2*Sk^2*i*Dx-52*Sl*Sk^2*i*j-28*Sl*
+Sk^2*i-96*Sl*Sk^2*x*Dx*j^2-336*Sl*Sk^2*j*x^2*Dx^2-28*Sl*Sk^2*i*j^2-44*Sl*Sk^2*j
+*i^2-312*x*Dx*Sl*Sk^2*j+192*x^2*Dx*Sk^2*i*j-36*Sl*Sk^2*i^2-16*Sl*Sk^2*j^2-20*Sl
+*Sk^2*j-4*Sl*Sk^2*j^3+240*x^3*Dx^2*Sk^2*i+96*x^2*Dx*Sk^2*i^2+240*x^3*Dx^2*Sk^2*
+j-288*x*Dx*Sk^2*Sl-288*x^3*Dx^3*Sl*Sk^2-616*x^2*Dx^2*Sl*Sk^2+112*Sl^2*Sk^2*x*Dx
+^2+96*x^2*Dx^3*Sl^2*Sk^2-4*Sl^2*Sk*i^3-20*Sl^2*Sk*i-28*Sl^2*Sk*j+604*x^3*Dx^2*
+Sk^2-20*Sl^2*Sk*j^3+380*x^2*Dx*Sk^2*i+380*x^2*Dx*Sk^2*j-144*Sl^2*Sk*x*Dx*j^2-32
+*x^5*Dx^4*Sk*Sl-32*x^4*Dx^4*Sl^2*Sk-32*x^4*Dx^4*Sl*Sk^2+16*x^5*Dx^4*Sl^2+16*x^3
+*Dx^4*Sl^2*Sk^2+8*Sk^2*Sl+16*Dx*Sk^2*Sl^2+16*l*Sk^2*Sl-16*l*Sk*Sl^2-40*Sk*Sl^2,
+4*Sl*Sk*j-3*Sk*x*j-3*Sk*x*i-Sk*x*j^2-Sk*x*i^2-2*Sk*x*i*j+4*Sk*Sl*l*j-4*Sk*x^2*j
+*Dx-4*Sk*x^2*i*Dx+3*Sl*x*i+3*Sl*x*j+Sl*x*j^2+2*Sl*x*i*j-4*Sl*Sk*x*i*Dx+10*Sl*x^
+2*Dx+4*Sl*x^2*j*Dx+4*Sl*x^2*i*Dx+4*Sl*x^3*Dx^2-4*Sl*Sk*x^2*Dx^2+4*Sl*Sk*i+8*Sl*
+Sk*x*l*Dx+4*Sl*Sk*l*i+4*Sl*Sk*x*Dx+2*Sl*x+Sl*x*i^2-2*Sk*x-4*Sk*x^3*Dx^2-10*Sk*x
+^2*Dx, -16*l*Sl*x^2*Dx*j+8*Sk*x*l*i*j+16*Sk*x^2*l*Dx*i+16*Sk*x^2*l*Dx*j+12*Sl*
+Sk*x^2*Dx^2*i-20*Sl*x^2*Dx*i*j-8*l*Sl*x*i*j-16*l*Sl*x^2*Dx*i-28*Sk*x^2*Dx*i*j-8
+*Sk*x*j-12*Sk*x*i-5*Sk*x*j^2-11*Sk*x*i^2-16*Sk*x*i*j+12*x*Dx*Sl*Sk*j+12*Sk*x*l*
+i+12*Sk*x*l*j+4*Sk*x*l*j^2+4*Sk*x*l*i^2-12*l*Sl*x*i-12*l*Sl*x*j-4*l*Sl*x*j^2-4*
+l*Sl*x*i^2-6*Sl*x^2*Dx*i^2-3*Sk*x*i^3-Sk*x*j^3+4*Sk*Sl*j^2-14*Sl*x^2*Dx*j^2-12*
+Sl*x^3*Dx^2*i-20*Sl*x^3*Dx^2*j-4*Sl*Sk*i^2+4*Sl*Sk*x*i^2*Dx-7*Sl*x*i*j^2-3*Sl*x
+*j^3-7*Sk*j*x*i^2-5*Sk*x*i*j^2+12*j*Sl*Sk*x*i*Dx+4*Sk*Sl*l*j^2-5*j*Sl*x*i^2+12*
+j*Sl*Sk*x^2*Dx^2-4*Sl*Sk*l*i^2-Sl*x*i^3-28*Sk*j*x^3*Dx^2-60*Sk*x^2*j*Dx-36*Sk*i
+*x^3*Dx^2-10*Sk*x^2*Dx*j^2-18*Sk*x^2*Dx*i^2-80*Sk*x^2*i*Dx-20*Sl*x*i-24*Sl*x*j-\
+15*Sl*x*j^2-24*Sl*x*i*j+12*Sl*Sk*x*i*Dx-84*Sl*x^2*Dx-68*Sl*x^2*j*Dx-48*Sl*x^2*i
+*Dx-60*Sl*x^3*Dx^2+24*Sl*Sk*x^2*Dx^2+8*Sl*Sk*x*Dx-12*Sl*x-9*Sl*x*i^2+40*Sk*x^2*
+l*Dx+8*Sk*x*l-4*Sk*x-116*Sk*x^3*Dx^2-92*Sk*x^2*Dx-40*l*Sl*x^2*Dx-16*l*Sl*x^3*Dx
+^2+16*l*Sk*x^3*Dx^2-8*l*Sl*x+8*x^3*Dx^3*Sl*Sk-8*x^4*Dx^3*Sl-24*x^4*Dx^3*Sk, 16*
+x*Dx^2*Sk^2*Sl^3*j^4-8*Sl^2*Sk*x*j^5*i-1168*Sk*x^3*Dx*Sl*i+32*x^5*Dx^4*Sl^2*Sk*
+i^2-32*x^5*Dx^4*Sl^2*Sk*j^2-72*Sl^2*Sk*x*j^4*i+8*Sl^2*Sk*x*i^5*j+48*Sl^2*Sk*x*i
+^3*j^2+352*x^5*Dx^3*Sl^2-10*Sl^2*Sk*x*j^4*i^2+10*Sl^2*Sk*x*i^4*j^2+72*Sl^2*Sk*x
+*i^4*j-48*Sl^2*Sk*x*j^3*i^2-192*x^4*Dx^3*Sl*Sk^2*i^2+48*x*Dx^2*Sk^2*Sl^3*j^3*i+
+192*Sl^2*Sk*x^2*Dx*i^4-32*x^4*Dx^3*Sl*Sk^2*i^3+744*Sl^2*Sk*x^2*Dx*i^3-96*x*Dx^2
+*Sk^2*Sl^3*j*i^2-228*Sl^2*Sk*x*j^3*i+16*x^5*Dx^4*Sl*Sk^2*j^2+196*Sl^2*Sk*x*i^3*
+j+96*x*Dx^2*Sk^2*Sl^3*i*j^2-16*x^5*Dx^4*Sl*Sk^2*i^2-48*x*Dx^2*Sk^2*Sl^3*i^3*j-\
+240*x^3*Dx^2*Sl*Sk^2*i^3-716*x^3*Dx^2*Sl*Sk^2*i^2-192*Sl^2*Sk*x^2*Dx*j^4+32*x^4
+*Dx^3*Sl*Sk^2*j^3+16*Sl^2*Sk*x^2*Dx*i^5-808*Sl^2*Sk*x^2*Dx*j^3+192*x^4*Dx^3*Sl*
+Sk^2*j^2-16*Sl^2*Sk*x^2*Dx*j^5-484*x^2*Dx*Sl^3*i^2+24*x^3*Dx^2*Sl*Sk^2*j^4+112*
+x*Dx^2*Sk^2*Sl^3*j^2-24*x^3*Dx^2*Sl*Sk^2*i^4+524*x^3*Dx^2*Sl*Sk^2*j^2-16*x*Dx^2
+*Sk^2*Sl^3*i^4-112*x*Dx^2*Sk^2*Sl^3*i^2+96*x*Dx^2*Sk^2*Sl^3*j^3-864*Sk*x^4*Dx^2
+*Sl*i+48*Sl^2*Sk*x^2*Dx*i^4*j-96*x*Dx^2*Sk^2*Sl^3*i^3-48*Sl^2*Sk*x^2*Dx*j^4*i-\
+32*x^4*Dx^4*Sl^2*Sk^2*j^2+32*x^4*Dx^4*Sl^2*Sk^2*i^2+240*x^3*Dx^2*Sl*Sk^2*j^3-\
+384*Sl^2*Sk*x^2*Dx*j^3*i+140*x^2*i*Sl^2*j+432*x^4*Dx^2*Sl^2*i+100*x^2*i*Sl^2+16
+*Dx*Sk^2*Sl^3*j^2-288*x^3*Dx^3*Sl^2*Sk^2*j^2-51*x*Sl^3*i^4+680*Sl^2*Sk*x^2*Dx*j
+*i^2+32*Sl^2*Sk*x^2*Dx*i^3*j^2+24*x^3*Dx^2*Sl^3*j^4-24*x^3*Dx^2*Sl^3*i^4+604*x^
+3*Dx^2*Sl^3*j^2+240*x^3*Dx^2*Sl^3*j^3-240*x^3*Dx^2*Sl^3*i^3-604*x^3*Dx^2*Sl^3*i
+^2+96*x^2*Dx*Sl^3*j^4-380*x^2*Dx*Sl^3*i^3-584*Sl^2*Sk^2*x^2*Dx^2*j^2-96*Sl^2*Sk
+^2*x^2*Dx^2*j^3*i-336*Sl^2*Sk^2*x^2*Dx^2*j^3+336*Sl^2*Sk^2*x^2*Dx^2*j*i^2-336*
+Sl^2*Sk^2*x^2*Dx^2*i*j^2+96*Sl^2*Sk^2*x^2*Dx^2*i^3*j-16*Sl^2*Sk^2*x^2*Dx^2*i^2*
+j^2-64*x^3*Dx^3*Sl^2*Sk^2*i*j^2+64*x^3*Dx^3*Sl^2*Sk^2*j*i^2+240*x^3*Dx^2*Sl*Sk^
+2*i*j^2-48*x^3*Dx^2*Sl*Sk^2*i^3*j-16*Dx*Sk^2*Sl^3*i^2+56*Sl^2*Sk^2*x^2*Dx^2*i^4
++16*Dx*Sk^2*Sl^3*j^4-240*x^3*Dx^2*Sl*Sk^2*j*i^2+48*x^3*Dx^2*Sl*Sk^2*j^3*i-32*x^
+4*Dx^3*Sl*Sk^2*j*i^2+32*x^4*Dx^3*Sl*Sk^2*i*j^2+648*Sl^2*Sk^2*x^2*Dx^2*i^2+336*
+Sl^2*Sk^2*x^2*Dx^2*i^3-32*Sl^2*Sk*x^2*Dx*j^3*i^2-872*Sl^2*Sk*x^2*Dx*i*j^2-40*Sl
+^2*Sk^2*x^2*Dx^2*j^4-64*x^3*Dx^3*Sl^2*Sk^2*j^3-16*Dx*Sk^2*Sl^3*i^4+32*Dx*Sk^2*
+Sl^3*j^3+384*Sl^2*Sk*x^2*Dx*i^3*j+288*x^3*Dx^3*Sl^2*Sk^2*i^2+64*x^3*Dx^3*Sl^2*
+Sk^2*i^3-32*Dx*Sk^2*Sl^3*i^3-336*x^2*Dx^2*Sk*Sl^3*j^3+40*x^2*Dx^2*Sk*Sl^3*i^4-\
+56*x^2*Dx^2*Sk*Sl^3*j^4+336*x^2*Dx^2*Sk*Sl^3*j*i^2-96*x^2*Dx^2*Sk*Sl^3*j^3*i+96
+*x^2*Dx^2*Sk*Sl^3*i^3*j-336*x^2*Dx^2*Sk*Sl^3*i*j^2+616*x^2*Dx^2*Sk*Sl^3*i^2-64*
+x^3*Sk*Sl^3*Dx^3*i*j^2-64*x^3*Sk*Sl^3*Dx^3*j^3+288*x^3*Sk*Sl^3*Dx^3*i^2+64*x^3*
+Sk*Sl^3*Dx^3*i^3-288*x^3*Sk*Sl^3*Dx^3*j^2+64*x^3*Sk*Sl^3*Dx^3*j*i^2+240*x*Dx*Sk
+*Sl^3*i^3*j+48*x*Dx*Sk*Sl^3*i^3*j^2+96*x*Dx*Sk*Sl^3*i^4-24*x*Dx*Sk*Sl^3*j^5-16*
+x*Dx*Sk*Sl^3*j^3*i^2-240*x*Dx*Sk*Sl^3*j^3*i+48*x*Dx*Sk*Sl^3*i^2*j^2-144*x*Dx*Sk
+*Sl^3*j^4+8*x*Dx*Sk*Sl^3*i^5+312*x*Dx*Sk*Sl^3*i^3+272*x*Dx*Sk*Sl^3*i^2+40*x*Dx*
+Sk*Sl^3*i^4*j-312*x*Dx*Sk*Sl^3*j^3-272*x*Dx*Sk*Sl^3*j^2+312*x*Dx*Sk*Sl^3*j*i^2-\
+312*x*Dx*Sk*Sl^3*i*j^2-24*x^2*Dx*Sl^3*i^4*j+16*x^2*Dx*Sl^3*j^3*i^2-380*x^2*Dx*
+Sl^3*j*i^2-192*x^2*Dx*Sl^3*i^3*j+380*x^2*Dx*Sl^3*i*j^2+24*x^2*Dx*Sl^3*j^4*i+192
+*x^2*Dx*Sl^3*j^3*i-16*x^2*Dx*Sl^3*i^3*j^2-32*x^4*Sl^3*Dx^3*j*i^2+32*x^4*Sl^3*Dx
+^3*i*j^2-32*x^4*Sk*Sl^3*Dx^4*j^2+32*x^4*Sk*Sl^3*Dx^4*i^2-16*x^3*Sk^2*Sl^3*Dx^4*
+i^2-56*x*Dx*Sk*Sl^3*j^4*i+16*x^3*Sk^2*Sl^3*Dx^4*j^2-64*Sl^2*x^4*Dx^3*Sk*j^3+64*
+Sl^2*x^4*Dx^3*Sk*j*i^2-64*Sl^2*x^4*Dx^3*Sk*i*j^2+64*Sl^2*x^4*Dx^3*Sk*i^3+384*Sl
+^2*x^4*Dx^3*Sk*i^2-384*Sl^2*x^4*Dx^3*Sk*j^2-48*Sl^2*Sk*x^3*Dx^2*j^4+48*Sl^2*Sk*
+x^3*Dx^2*i^4+96*Sl^2*Sk*x^3*Dx^2*i^3*j+1128*Sl^2*Sk*x^3*Dx^2*i^2-96*Sl^2*Sk*x^3
+*Dx^2*j^3*i-1320*Sl^2*Sk*x^3*Dx^2*j^2+480*Sl^2*Sk*x^3*Dx^2*i^3-480*Sl^2*Sk*x^3*
+Dx^2*i*j^2-480*Sl^2*Sk*x^3*Dx^2*j^3+480*Sl^2*Sk*x^3*Dx^2*j*i^2-20*Sl^2*Sk^2*i^2
+*j^2+20*Sl^2*Sk^2*j*i^2-28*Sl^2*Sk^2*i*j^2+44*Sl^2*Sk^2*i^4*j+8*Sl^2*Sk^2*i^4*j
+^2-12*Sl^2*Sk^2*j^4*i^2+8*Sl^2*Sk^2*i^3*j^2+32*x^2*Sk^2*Sl^3*Dx^3*i*j^2-32*x^2*
+Sk^2*Sl^3*Dx^3*j*i^2+16*l*Sk*Sl^3*i^2+32*x^2*Sk^2*Sl^3*Dx^3*j^3-32*x^2*Sk^2*Sl^
+3*Dx^3*i^3+96*x^2*Sk^2*Sl^3*Dx^3*j^2-96*x^2*Sk^2*Sl^3*Dx^3*i^2-16*l*Sk*Sl^3*j^2
+-16*x^5*Sl^3*Dx^4*i^2+16*x^5*Sl^3*Dx^4*j^2-16*Dx*Sk^2*Sl^3*i^3*j^2+16*Dx*Sk^2*
+Sl^3*j^4*i+48*Dx*Sk^2*Sl^3*j^3*i+32*Dx*Sk^2*Sl^3*i*j^2+16*Dx*Sk^2*Sl^3*j^3*i^2-\
+32*Dx*Sk^2*Sl^3*j*i^2-48*Dx*Sk^2*Sl^3*i^3*j-16*Dx*Sk^2*Sl^3*i^4*j+240*x^3*Dx^2*
+Sl^3*i*j^2-48*x^3*Dx^2*Sl^3*i^3*j-240*x^3*Dx^2*Sl^3*j*i^2+48*x^3*Dx^2*Sl^3*j^3*
+i-616*x^2*Dx^2*Sk*Sl^3*j^2+336*x^2*Dx^2*Sk*Sl^3*i^3+16*x^2*Dx^2*Sk*Sl^3*i^2*j^2
+-280*Sl^2*Sk^2*x*Dx*i*j^2+24*Sl^2*Sk^2*x*Dx*i^5-48*Sl^2*Sk^2*x*Dx*i^2*j^2-256*
+Sl^2*Sk^2*x*Dx*j^2+56*Sl^2*Sk^2*x*Dx*i^4*j-12*Sl*Sk^2*x*i^5-8*Sl^2*Sk^2*x*Dx*j^
+5+240*Sl^2*Sk^2*x*Dx*i^3*j-96*Sl^2*Sk^2*x*Dx*j^4-48*Sl^2*Sk^2*x*Dx*j^3*i^2-240*
+Sl^2*Sk^2*x*Dx*j^3*i+344*Sl^2*Sk^2*x*Dx*j*i^2-312*Sl^2*Sk^2*x*Dx*j^3-52*Sl^2*Sk
+^2*j^3*i+52*Sl^2*Sk^2*i^3*j-28*Sl^2*Sk^2*j^4*i+12*Sl^2*Sk^2*i^5*j-40*Sl^2*Sk^2*
+j^3*i^2-4*Sl^2*Sk^2*j^5*i+312*Sl^2*Sk^2*x*Dx*i^3+144*Sl^2*Sk^2*x*Dx*i^4-8*Sl^2*
+Sk^2*j^3*i^3+8*x^2*Dx*Sk^2*Sl*j^5+364*x^2*Dx*Sk^2*Sl*j^3-192*x^2*Dx*Sk^2*Sl*i^3
+*j+300*x^2*Dx*Sk^2*Sl*i*j^2-96*x^2*Dx*Sk^2*Sl*i^4+24*x^2*Dx*Sk^2*Sl*j^4*i+192*x
+^2*Dx*Sk^2*Sl*j^3*i-16*x^2*Dx*Sk^2*Sl*i^3*j^2-8*x^2*Dx*Sk^2*Sl*i^5+94*Sl*Sk^2*x
+*j^3*i-126*Sl*Sk^2*x*i^3*j+36*Sl*Sk^2*x*j^4*i-59*Sl*Sk^2*x*i^4+51*Sl*Sk^2*x*j^4
+-4*Sl*Sk^2*x*i^5*j+24*Sl*Sk^2*x*j^3*i^2+4*Sl*Sk^2*x*j^5*i-36*Sl*Sk^2*x*i^4*j-5*
+Sl*Sk^2*x*i^4*j^2+5*Sl*Sk^2*x*j^4*i^2-Sl*Sk^2*x*i^6+12*Sl*Sk^2*x*j^5-24*Sl*Sk^2
+*x*i^3*j^2+Sl*Sk^2*x*j^6-40*Sl^2*Sk^2*x*Dx*j^4*i+16*Sl^2*Sk^2*x*Dx*i^3*j^2-24*x
+^2*Dx*Sk^2*Sl*i^4*j+96*x^2*Dx*Sk^2*Sl*j^4+16*x^2*Dx*Sk^2*Sl*j^3*i^2-492*x^2*Dx*
+Sk^2*Sl*j*i^2-428*x^2*Dx*Sk^2*Sl*i^3+100*x^2*Sl^2*j+70*x^2*Sl^2*j^2+70*x^2*Sl^2
+*i^2+48*x^2*Sl^2+672*x^3*Dx*Sl^2+984*x^4*Dx^2*Sl^2+2*Sk^2*x^2*i^4+60*x^2*j^2*Sl
+^2*i+60*x^2*j*Sl^2*i^2+20*x^2*j^3*Sl^2+20*x^2*i^3*Sl^2+2*x^2*j^4*Sk^2+2*x^2*j^4
+*Sl^2+12*Sk^2*x^2*i^2*j^2+2*x^2*i^4*Sl^2+584*x^3*Dx*Sl^2*j+168*x^3*Dx*Sl^2*j^2+
+8*Sk^2*x^2*i^3*j+8*Sk^2*x^2*j^3*i+336*x^3*Dx*Sl^2*i*j+168*x^3*Dx*Sl^2*i^2+432*x
+^4*Dx^2*Sl^2*j+584*x^3*Dx*Sl^2*i+96*x^4*Dx^2*Sk^2*i*j-128*x^4*Dx^3*Sl*Sk^2*j+16
+*x^3*Dx*Sl^2*i^3+48*x^4*Dx^2*Sk^2*i^2+48*x^4*Dx^2*Sk^2*j^2-128*x^4*Dx^3*Sl*Sk^2
+*i-16*Sk*x^2*j*Sl*i^3-4*Sk*x^2*i^4*Sl+8*i*x^2*j^3*Sl^2-16*i*Sk*x^2*j^3*Sl-4*Sk*
+x^2*j^4*Sl-192*Sl^2*Sk*x^3*Dx^2*i*j+12*x^2*j^2*Sl^2*i^2-96*x^3*Dx*Sl*Sk*j*i^2+8
+*x^2*j*Sl^2*i^3-96*x^3*Dx*Sl*Sk*i*j^2-128*Sk*x^5*Dx^3*Sl*i-128*Sk*x^5*Dx^3*Sl*j
+-32*x^3*Dx*Sl*Sk*i^3+64*x^5*Dx^3*Sk^2*i+64*x^5*Dx^3*Sl^2*i+64*x^5*Dx^3*Sk^2*j+
+96*Sl^2*Sk^2*x^2*Dx^2*i*j-32*x^3*Dx*Sl*Sk*j^3+64*x^5*Dx^3*Sl^2*j+96*x^4*Dx^2*Sl
+^2*i*j+48*x^3*Dx*Sl^2*j*i^2+48*x^4*Dx^2*Sl^2*j^2-128*Sl^2*x^4*Dx^3*Sk*j-128*Sl^
+2*x^4*Dx^3*Sk*i+48*x^3*Dx*Sl^2*i*j^2-96*Sk*x^4*Dx^2*Sl*i^2-96*Sk*x^4*Dx^2*Sl*j^
+2+48*x^4*Dx^2*Sl^2*i^2-192*Sk*x^4*Dx^2*Sl*i*j+16*x^3*Dx*Sk^2*i^3+16*x^3*Dx*Sl^2
+*j^3+48*x^3*Dx*Sk^2*i*j^2+48*x^3*Dx*Sk^2*j*i^2+64*x^3*Dx^3*Sl^2*Sk^2*i+16*x^3*
+Dx*Sk^2*j^3+64*x^3*Dx^3*Sl^2*Sk^2*j-192*x^3*Dx^2*Sl*Sk^2*i*j-24*Sk*x^2*j^2*Sl*i
+^2-24*x*Sl^2*Sk*i^2*j^2-24*x*Sl*Sk^2*i^2*j^2-x*Sl^3*i^6+12*x*Sl^3*j^5-84*x*Sl^3
+*i^3-24*Sl^2*Sk*x*j^5-2*Sl^2*Sk*x*j^6+24*Sl^2*Sk*x*i^5+4*Sl^3*Sk*i^5-36*Sl^3*Sk
+*j^4+20*Sl^3*Sk*i^3+16*Sl^3*Sk*i^4-28*Sl^3*Sk*j^3-20*Sl^3*Sk*j^5-4*Sl^3*Sk*j^6+
+56*Sl^3*Sk*i^2-56*Sl^3*Sk*j^2+x*Sl^3*j^6-44*x*Sl^3*i^2+84*x*Sl^3*j^3-12*x*Sl^3*
+i^5+51*x*Sl^3*j^4-1344*x^3*Dx*Sl*Sk+44*x*Sl^3*j^2+8*Sl^3*Sk*j^3*i^3-200*x^2*Sl*
+Sk*j-200*x^2*Sl*Sk*i+52*Sl^3*Sk*i^3*j+12*Sl^3*Sk*i^4*j^2-96*x^2*Sk*Sl-12*Sl^3*
+Sk*j^5*i-4*x*Sl^3*i^5*j+4*x*Sl^3*j^5*i-84*x*Sl^3*j*i^2-102*x*Sl^3*i^3*j+36*x*Sl
+^3*j^4*i+84*x*Sl^3*i*j^2+102*x*Sl^3*j^3*i-5*x*Sl^3*i^4*j^2+5*x*Sl^3*j^4*i^2-36*
+x*Sl^3*i^4*j+24*x*Sl^3*j^3*i^2-24*x*Sl^3*i^3*j^2+102*Sl^2*Sk*x*i^4-110*Sl^2*Sk*
+x*j^4+2*Sl^2*Sk*x*i^6-20*Sl^3*Sk*i*j^2-16*Sl^2*Sk^2*j^4+4*Sl^2*Sk^2*i^6-4*Sl^2*
+Sk^2*j^5-20*Sl^2*Sk^2*j^3+20*Sl^2*Sk^2*i^5-44*Sl^3*Sk*j^4*i+28*Sl^2*Sk^2*i^3+32
+*x^4*Dx^4*Sl^2*Sk^2+32*x^6*Dx^4*Sl^2+32*x^6*Dx^4*Sk^2+4*Sl^3*Sk*i^5*j-64*x^6*Dx
+^4*Sk*Sl-64*x^5*Dx^4*Sl^2*Sk+40*Sl^3*Sk*i^3*j^2-64*x^5*Dx^4*Sl*Sk^2+20*Sl^3*Sk*
+i^2*j^2-8*Sl^3*Sk*j^4*i^2-8*Sl^3*Sk*j^3*i^2+28*Sl^3*Sk*j*i^2+28*Sl^3*Sk*i^4*j-\
+52*Sl^3*Sk*j^3*i+36*Sl^2*Sk^2*i^4-192*x^4*Sl^3*Dx^3*i^2-32*x^4*Sl^3*Dx^3*i^3+32
+*x^4*Sl^3*Dx^3*j^3+192*x^4*Sl^3*Dx^3*j^2-40*Sk*Sl^2*x*i*j-120*Sk*x^2*j^2*Sl*i-\
+120*Sk*x^2*j*Sl*i^2-576*x^3*Dx^2*Sl*Sk^2*i+336*x^3*Dx*Sk^2*i*j-400*x^2*Dx*Sl*Sk
+^2*j+48*x^2*Sk^2-336*Sk*x^3*Dx*Sl*i^2-672*Sk*x^3*Dx*Sl*i*j-864*Sk*x^4*Dx^2*Sl*j
+-1168*Sk*x^3*Dx*Sl*j-336*Sk*x^3*Dx*Sl*j^2-280*Sk*x^2*i*Sl*j-144*Sl*Sk^2*j*x*i^2
++48*Sl*Sk^2*x*i*j^2-576*Sl*Sk^2*j*x^3*Dx^2+332*Sl*Sk^2*x^2*Dx*j^2-40*Sl*Sk^2*x*
+i*j+16*Sl^2*Sk^2*x*i*Dx-384*Sl*Sk^2*x^2*Dx*i*j+48*j*Sl^2*Sk^2*x*i*Dx+144*j*Sl^2
+*Sk^2*x^2*Dx^2+16*x*Dx*Sl^2*Sk^2*j+304*Sl^2*Sk^2*x*i^2*Dx+144*Sl^2*Sk^2*x^2*Dx^
+2*i-716*Sl*Sk^2*x^2*Dx*i^2+168*x^3*Dx*Sk^2*j^2+60*x^2*j*Sk^2*i^2+60*x^2*j^2*Sk^
+2*i-8*Sl*Sk^2*x*i+484*x^2*Dx*Sl^3*j^2-140*Sk*x^2*Sl*j^2-140*Sk*x^2*Sl*i^2-96*x^
+2*Dx*Sl^3*i^4-704*Sk*x^5*Dx^3*Sl-8*x^2*Dx*Sl^3*i^5-1968*Sk*x^4*Dx^2*Sl-40*Sk*x^
+2*j^3*Sl-40*Sk*x^2*i^3*Sl+20*x^2*j^3*Sk^2-400*x^2*Dx*Sl*Sk^2*i-912*Sl^2*Sk*x^3*
+Dx^2-288*Sl^2*Sk*x^2*Dx-512*Sl^2*x^4*Dx^3*Sk-112*Sl*Sk^2*x*i^3-288*x^2*Dx*Sk^2*
+Sl+140*x^2*Sk^2*i*j-512*x^4*Dx^3*Sl*Sk^2-912*x^3*Dx^2*Sl*Sk^2+432*x^4*Dx^2*Sk^2
+*j+168*x^3*Dx*Sk^2*i^2+432*x^4*Dx^2*Sk^2*i+80*Sl*Sk^2*x*j^3+128*Sl^2*Sk^2*x^2*
+Dx^2+160*x^3*Dx^3*Sl^2*Sk^2-8*Sl*Sk^2*x*j+32*Sl*Sk^2*x*j^2-72*Sl*Sk^2*x*i^2+584
+*x^3*Dx*Sk^2*j+584*x^3*Dx*Sk^2*i-384*Sl^2*Sk*x^2*Dx*i*j-196*Sl^2*Sk*x*j^3-8*Sl^
+2*Sk*x*j+132*Sl^2*Sk*j*x*i^2-228*Sl^2*Sk*x*i*j^2-576*Sl^2*Sk*j*x^3*Dx^2-400*Sl^
+2*Sk*x^2*j*Dx-576*Sl^2*Sk*i*x^3*Dx^2-1200*Sl^2*Sk*x^2*Dx*j^2+816*Sl^2*Sk*x^2*Dx
+*i^2-400*Sl^2*Sk*x^2*i*Dx+70*x^2*Sk^2*i^2+70*x^2*Sk^2*j^2+672*x^3*Dx*Sk^2+352*x
+^5*Dx^3*Sk^2+984*x^4*Dx^2*Sk^2+100*x^2*Sk^2*j+100*x^2*Sk^2*i-8*Sk^2*Sl^2*j^2+8*
+Sl^2*Sk^2*i^2+20*x^2*i^3*Sk^2-8*Sl^2*Sk*x*i-116*Sl^2*Sk*x*j^2+76*Sl^2*Sk*x*i^2+
+164*Sl^2*Sk*x*i^3+8*x^2*Dx*Sl^3*j^5+380*x^2*Dx*Sl^3*j^3, 3*Sl*Sk*x*i^3+72*x^2*
+Dx*Sk*Sl+16*x^2*i*Sl*j-8*x^2*Sk*i^2+17*x^2*Sl*j+8*x^2*Sl*j^2+8*x^2*Sl*i^2+17*x^
+2*i*Sl+56*x^2*Dx*Sl*Sk*i-8*x^2*Sk*j^2-16*x^2*Sk*i*j+8*x^5*Dx^3*Sl+74*x^3*Dx*Sl-\
+74*x^3*Dx*Sk-8*x^5*Dx^3*Sk-56*x^4*Dx^2*Sk-17*x^2*Sk*j-17*x^2*Sk*i+12*x^4*Dx^2*
+Sl*i+16*x^4*Dx^3*Sl*Sk+80*x^3*Dx^2*Sl*Sk+6*x^3*Dx*Sl*i^2+12*x^3*Dx*Sl*i*j+24*x^
+3*Dx^2*Sl*Sk*i+12*x^4*Dx^2*Sl*j-12*x^3*Dx*Sk*i*j-12*x^4*Dx^2*Sk*j-6*x^3*Dx*Sk*i
+^2+56*x^2*Dx*Sl*Sk*j-12*x^4*Dx^2*Sk*i+44*x^3*Dx*Sl*i+44*x^3*Dx*Sl*j+6*x^3*Dx*Sl
+*j^2+56*x^4*Dx^2*Sl+10*x^2*Sl-10*x^2*Sk+14*Sl*Sk*x^2*Dx*i^2+7*Sl*Sk*j*x*i^2+5*
+Sl*Sk*x*i*j^2+24*Sl*Sk*j*x^3*Dx^2+10*Sl*Sk*x^2*Dx*j^2-4*Sl*Sk*x+16*Sl*Sk*x*i*j+
+Sl*Sk*x*j^3-8*Sl*Sk*x*l-24*Sl^2*Sk*x^2*Dx^2+40*l*Sl^2*x^2*Dx+16*l*Sl^2*x^3*Dx^2
+-8*x^3*Dx^3*Sl^2*Sk+8*Sl*Sk*x*j+5*Sl*Sk*x*j^2-8*Sl^2*Sk*x*Dx-12*Sl^2*Sk*x*i*Dx+
+24*Sl*Sk*x^2*Dx*i*j+11*Sl*Sk*x*i^2+32*Sl^2*x*i+19*Sl^2*x*j^2+124*Sl^2*x^2*Dx+76
+*Sl^2*x^3*Dx^2+13*Sl^2*x*i^2+8*l*Sl^2*x+8*x^4*Dx^3*Sl^2+36*Sl^2*x*j-12*j*Sl^2*
+Sk*x*i*Dx-12*j*Sl^2*Sk*x^2*Dx^2+20*Sl^2*x-12*x*Dx*Sl^2*Sk*j+16*l*Sl^2*x^2*Dx*j-\
+8*Sk*Sl^2*j^2+12*l*Sl^2*x*i+8*Sl^2*Sk*i^2+3*Sl^2*x*j^3+Sl^2*x*i^3+16*l*Sl^2*x^2
+*Dx*i+12*l*Sl^2*x*j+4*l*Sl^2*x*j^2+4*l*Sl^2*x*i^2+6*Sl^2*x^2*Dx*i^2+14*Sl^2*x^2
+*Dx*j^2+12*Sl^2*x^3*Dx^2*i+20*Sl^2*x^3*Dx^2*j-4*Sl^2*Sk*x*i^2*Dx-12*Sl^2*Sk*x^2
+*Dx^2*i+20*Sl^2*x^2*Dx*i*j+8*l*Sl^2*x*i*j+7*Sl^2*x*i*j^2-4*Sk*Sl^2*l*j^2+5*j*Sl
+^2*x*i^2+4*Sl^2*Sk*l*i^2+32*Sl^2*x*i*j+84*Sl^2*x^2*j*Dx+64*Sl^2*x^2*i*Dx-44*x^3
+*Dx*Sk*j-44*x^3*Dx*Sk*i-6*x^3*Dx*Sk*j^2-3*x^2*j*Sk*i^2-3*x^2*j^2*Sk*i+3*x^2*j^2
+*Sl*i+3*x^2*j*Sl*i^2-x^2*j^3*Sk+x^2*j^3*Sl-x^2*i^3*Sk+x^2*i^3*Sl+12*Sl*Sk*x*i,
+-x*Dx+k+l, 4*Sl*l^2+4*Sl*l*j+8*Sl*l-4*x^3*Dx^2-10*x^2*Dx-4*x^2*j*Dx-4*x^2*i*Dx+
+4*Sl*j+4*Sl-x*i^2-2*x*i*j-x*j^2-3*x*j-2*x-3*x*i, 4*l^2*Sk-8*Sk*x*l*Dx-4*Sk*l*i+
+4*Sk*x^2*Dx^2-4*x^3*Dx^2+4*Sk*x*i*Dx+4*Sk*x*Dx-4*x^2*i*Dx-4*x^2*j*Dx-10*x^2*Dx-
+x*i^2-2*x*i*j-x*j^2-3*x*j-2*x-3*x*i]))=[]
+then okay else % fi;
+map(LeadingTerm,GB,T):
+if subs(true=NULL,zip(cmp,%,
+[32*x^4, Dx^5*Sl^2*Sk^2, x^3*(-16*j^2+16*i^2), Dx^4*Sl^3*Sk^3, 16, l*Sk^2*Sl, 8
+*x, Dx*l*Sk*Sl, 16*x^3, l*Sk*Dx^2, -16*j^2+16*i^2, l*Sk*Sl^3, 16*x^3, Dx^2*Sl^2
+*l, 1, k, 4, Sl*l^2, 4, l^2*Sk]))=[] then okay else % fi;
+map(nops,GB):
+if %=[308, 512, 193, 28, 73, 468, 104, 3, 15, 16] then okay else % fi;
+# Both first operators do not contain k and l.
+CT:=map(primpart,subs([Sk=1,Sl=1],remove(has,GB,[k,l])),Dx):
+[nops(CT),map(degree,CT,Dx)]:
+if %=[2,[5,4]] then okay else % fi;
+GCD:=skew_gcdex(op(CT),Dx,A):
+collect(GCD[1],Dx,factor):
+# First operator on page 16.
+if %=
+-4*x^3*(-1+4*x)*Dx^4-8*x^2*(-i-j+4*x*j+4*x*i+18*x-3)*Dx^3-4*x*(-7+77*x-6*i+6*x
+*i^2+42*x*j+42*x*i+6*x*j^2-6*j-3*j*i+12*x*i*j-j^2-i^2)*Dx^2+(-24*x*i*j^2+4-140
+*x+4*j^2-60*x*j^2-120*x*i*j-156*x*i-156*x*j-24*x*j*i^2-8*x*i^3-8*x*j^3+4*i^2-\
+60*x*i^2+12*j*i+8*j+8*i+4*i*j^2+4*j*i^2)*Dx-(i+j+2)^2*(i+j+1)^2
+then okay else % fi;
+
+# Section 2.3.  Gordon's Generalization of the Rogers-Ramanujan
+# Identities
+
+unprotect(Si): Si:='Si':
+h:=q^((i+j)^2+j^2)/qfactorial(q,n-i-j)/qfactorial(q,i)/qfactorial(q,j):
+A:=skew_algebra(comm=q,qdilat=[Sn,qn=q^n],
+    qdilat=[Si,qi=q^i],qdilat=[Sj,qj=q^j],polynom={qn,qi,qj}):
+G:=hypergeom_to_dfinite(h,A):
+collect(G,{Sn,Si,Sj},factor):
+# The following is to go avoid non determinism.
+map(op,[select(has,%,Sn),select(has,%,Si),select(has,%,Sj)]):
+if zip(cmp,%,
+[(-qi*qj+q*qn)*Sn+qi*qj, (-1+q*qi)*Si-q*qi*qj*(-qi*qj+qn), (-1+q*qj)*Sj-q^2*qi*
+qj^3*(-qi*qj+qn)])=[true,true,true] then okay else % fi;
+# `BUG: THE SYSTEM IN THE PAPER IS WRONG`;
+T:=MonomialOrder(A,tdeg(qn,qi,qj,Sn,Si,Sj)):
+GB:=Basis(G,T):
+HilbertDimension(GB,T):
+if %=3 then okay else % fi;
+Ak:=skew_algebra(comm={q,qi,qj},qdilat=[Sn,qn=q^n],polynom={qi,qj}):
+Tk:=MonomialOrder(Ak,lexdeg([qi,qj],[Sn]),[qi,qj]):
+TAK:=takayama_algo(map(op,{GB,G}),A,[qi,qj],Tk,
+    [[],[],0,proc(elim_GB,GB,N) elim_GB=[] end]):
+collect(TAK[1],Sn,factor):
+if %=[(q^3*qn-1)*Sn^3+(q^10*qn^4+q-q^8*qn^3+q^6*qn^2+q^5*qn^2
+-q^4*qn-q^3*qn+q^2+1)*Sn^2-q*(1+q^5*qn^2+q^4*qn^2-q^3*qn+q^2+q)*Sn+q^3]
+then okay else % fi;
+h:='h':
+
+# Section 2.4.  Calkin's Curious Identity
+
+# Computing a Groebner basis for the inner sum
+A:=shift_algebra([Sn,n],[Sk,k],polynom={n,k}):
+G:=hypergeom_to_dfinite(binomial(n,k),A):
+HilbertDimension(G,MonomialOrder(A,tdeg(Sn,Sk,n,k))):
+if %=2 then okay else % fi;
+A:=shift_algebra([Sn,n],[Sk,k],polynom=k):
+EL:=collect(remove(has,Basis(G,MonomialOrder(A,lexdeg([k],[Sn,Sk]))),k),
+    [Sn,Sk],distributed,factor):
+if %=[Sn*Sk-Sk-1] then okay else % fi;
+G2:=collect(map(primpart,map(op,[
+    map(skew_product,G,Sn-2,A),
+    map(skew_product,hypergeom_to_dfinite(binomial(n,k+1),A),Sk-1,A)
+]),[Sn,Sk]),[Sn,Sk],distributed,factor):
+A:=shift_algebra([Sn,n],[Sk,k]):
+T:=MonomialOrder(A,tdeg(Sn,Sk)):
+GB:=Basis(G2,T):
+# First system on page 20
+if zip(cmp,%,[Sn*n-2*n-1+Sk*k+Sk-Sn*k+k, -Sk-1-Sk*n+n-k+Sk^2*k+2*Sk^2])
+=[true,true] then okay else % fi;
+# Taking its cube
+PR:=dfinite_mul([[GB,T]$3],T):
+GBf:=Basis(PR,T):
+if zip(cmp,%,
+[8*n-2*Sn*Sk-4*k-3*Sn*k*Sk-4*k*n+4*Sk*k+24*Sk^2*k+16*Sk^2+2*Sn*Sk*k^3+2*Sn*Sk*
+n^3-9*Sn*n^4*k+16*n^3*Sn*k^2-9*n^2*Sn*k^2-14*n^2*Sn*k^3+5*n*Sn*k^3+4*Sn*Sk*k*n
+^4+Sn*Sk*k^5-10*Sn*Sk*n^3*k^2-5*Sn*Sk*n*k^4+10*Sn*Sk*n^2*k^3-7*Sk*Sn*n*k^3+8*
+Sk*Sn*n^2*k^2-8*Sk*Sn*n^3*k+4*Sn*Sk*n^4+2*Sn*k^4*Sk+7*Sn*n^3*k-4*Sk*Sn*n+6*n*
+Sn*k^4-Sn*k^5+2*Sn*n^5-Sn*k^4-2*Sn*n^4-8*n*Sk+72*Sk^2*k^2*n+80*Sk^2*k*n+28*Sk^
+2*k^3*n+32*Sk^2*n+4*Sk^2*k^4*n-2*Sk^2*k^5-12*Sk^2*k^4-16*n^5-4*Sk^2*k^2-22*Sk^
+2*k^3-2*Sn*Sk*k*n^2-7*Sn*Sk*n*k^2-9*Sn*Sk*k*n+2*k^5-4*Sk*k*n^2-16*Sk*n^3-16*Sk
+*n^2-4*Sk*k*n-4*Sk*n^3*k-4*Sk*n*k^3+2*Sk*k^4*n+6*Sk*k^2+4*Sk*k^3-8*Sk*n^4+2*Sk
+*k^4-8*Sk*n^4*k+12*Sk*n^3*k^2+4*Sk*n^2*k^2-8*Sk*n^2*k^3+16*n^2-2*k^2-2*Sk*k^2*
+n+20*k*n^2-14*n*k^2+2*k^3-8*n^4+40*n^2*k^3+4*n^2*k^2+12*n^3*k-60*n^3*k^2-14*k^
+4*n-8*n*k^3+2*k^4+48*n^4*k, -72+872*Sn*n^5*k+1341*Sn*n^6*k-1595*n^4*Sn*k^2-\
+2693*n^5*Sn*k^2+1368*n^3*Sn*k^3+2909*n^4*Sn*k^3-576*n^2*Sn*k^4-1836*n^3*Sn*k^4
++112*n*Sn*k^5+678*n^2*Sn*k^5-133*n*Sn*k^6-432*n-7*Sn*k^6+10*Sn*k^7-174*Sn*n^6-\
+276*Sn*n^7+6100*n^5*k^2-5356*n^4*k^3+24*k-72*Sk+270*n*Sn*k^2-8*Sk*k^8*n+44*k*n
++138*k^6*n-8*Sk*k^8-144*Sk*k-3960*n^6*k+2832*n^3*k^4-880*n^2*k^5+20*Sn^2*n*k^3
++68*Sn^2*k^4*n^2+10*Sn^2*k^4*n-28*Sn^2*n^3*k^2-110*Sn^2*n^3*k^3+52*Sn^2*n^3*k-\
+52*Sn^2*n^2*k^2-Sn^2*n^2*k^3+92*Sn^2*n^4*k^2-20*Sn^2*n*k^2+25*Sn^2*k*n^2-20*Sn
+^2*n*k^5-38*Sn^2*k*n^5+120*Sk^2*k+144*Sk^2-38*Sn*n^4*k-373*n^3*Sn*k^2+333*n^2*
+Sn*k^2+449*n^2*Sn*k^3+6*n*Sn*k^3+34*Sn^2*n^4*k-624*Sn*n^3*k-167*n*Sn*k^4+21*Sn
+*k^5+108*Sn*n^5-15*Sn*k^4+300*Sn*n^4+4*Sn^2*k*n-180*Sn*n^8-336*n*Sk+1937*n^6*
+Sn*k^3-48*Sn*n^9-592*Sk^2*k^2*n+1120*Sk^2*k*n-1064*Sk^2*k^3*n+768*Sk^2*n+452*
+Sk^2*k^4*n+332*Sn*n^8*k-1040*Sn*n^7*k^2+1036*Sn*n^7*k-8*Sk^2*k^5+164*Sk^2*k^4-\
+108*n*k^7+638*n^2*k^6-438*n^2*k^7-2556*n^4*k^5+88*n*k^8-2124*n^3*k^5+1302*n^3*
+k^6+3444*k^4*n^5+544*n^8+128*n^9+8*k^8-8*k^9+4912*n^6*k^2-5828*n^5*k^3-2432*n^
+7*k+1968*n^7*k^2-3192*n^6*k^3-736*n^8*k-2628*n^6*Sn*k^2+394*Sn*k^7*n^2-861*Sn*
+k^6*n^2-1087*n^3*Sn*k^6+2208*n^3*Sn*k^5+1949*n^4*Sn*k^5-3613*n^4*Sn*k^4-2361*n
+^5*Sn*k^4+3862*n^5*Sn*k^3+504*n^5+8*Sn*k^9-20*Sn*k^8+1248*n^6-84*n*Sn*k^8+196*
+n*Sn*k^7+4388*n^4*k^4-228*Sk^2*k^2-118*Sk^2*k^3-8*Sk*k^7+340*Sk*n^5*k^2+18*Sn^
+2*n^7-236*Sk*n^4*k^3+6*Sk*k^6+52*Sk*k^5-240*Sk*n^6-600*Sk*n^5-3964*k*n^5-300*n
+*k^5-20*k^5+10*Sn^2*n*k^8-952*Sk*k*n^2-1032*Sk*n^3-744*Sk*n^2-195*Sn^2*n^6*k^3
+-392*Sn^2*n^5*k^3-295*Sn^2*n^4*k^3+380*Sn^2*n^4*k^4+210*Sn^2*n^3*k^4-100*Sk*k^
+4*n^2-176*Sk*n^3*k^3+300*Sk*n^4*k^2-580*Sk*k*n^5+80*Sk*n*k^5-Sn^2*k^7+176*Sk*n
+^6*k^3-188*Sk*n^4*k^4-48*Sk*n^7*k^2-96*Sk*n^7*k+112*Sk*n^6*k^2+20*Sk*n^5*k^3-\
+170*Sk*n^3*k^6-300*Sk*k^4*n^5-556*Sk*k*n+292*Sk*n^4*k^5+208*Sk*n^3*k^5+56*Sk*n
+^2*k^7+48*Sk*n*k^7-126*Sk*n^2*k^6-56*Sk*n^2*k^5+68*Sk*n^3*k^4-90*Sn^2*n^7*k-\
+101*Sn^2*n^6*k+100*Sn^2*k^2*n^7+250*Sn^2*k^2*n^6+236*Sn^2*k^2*n^5-209*Sn^2*n^4
+*k^5-234*Sn^2*n^3*k^5+120*Sn^2*n^3*k^6-83*Sn^2*n^2*k^5+90*Sn^2*n^2*k^6+14*Sn^2
+*n^8-304*Sk*n^6*k-48*Sk*n^7+50*Sk*k^6*n-Sn^2*k^9+2*Sn^2*k^8-30*Sn^2*n^8*k-10*
+Sn^2*n^3+5*Sn^2*k^3-3*Sn^2*k^5+2*Sn^2*k^6-12*Sn^2*n^5+6*Sn^2*n^6-1072*Sk*n^3*k
+-180*Sk*n*k^3+16*Sk*k^4*n-94*Sk*k^2+4*Sk*k^3-960*Sk*n^4+72*Sk*k^4-904*Sk*n^4*k
++94*Sk*n^3*k^2-262*Sk*n^2*k^2-280*Sk*n^2*k^3+34*k^6-18*Sn^2*n^4-2*Sn^2*k^4-\
+1048*n^2-2*Sn^2*n^2-2*Sn^2*k^2+54*Sn*n^2+54*Sn*k^2+18*k^2-108*Sn*k*n-330*Sk*k^
+2*n-72*k*n^2+42*n*k^2+216*Sn*n^3-459*k*Sn*n^2-1304*n^3+10*k^3-27*Sn*k^3+8*Sk^2
+*k^9-672*n^4+4748*n^4*k^2-946*n^2*k^3+370*n^2*k^2-6*k^7-704*n^3*k-3220*n^3*k^3
++2002*n^3*k^2+228*k^4*n+1288*k^4*n^2-84*n*k^3+12*k^4-2312*n^4*k+1104*n^7+4*Sn^
+2*n^9-48*Sk^2*k^8*n-2302*Sk^2*k^3*n^2-932*Sk^2*k^4*n^2+604*Sk^2*k^5*n-508*Sk^2
+*k^3*n^3+32*Sk^2*k^8-772*Sk^2*k^5*n^3-228*Sk^2*k^7*n+110*Sk^2*k^7*n^2-148*Sk^2
+*k^6*n+384*Sk^2*k^4*n^4+556*Sk^2*k^2*n^2+2680*Sk^2*k^2*n^3+1824*Sk^2*k^2*n^4+
+1200*Sk^2*k^3*n^4+48*Sk^2*k^5*n^4+616*Sk^2*k^6*n^2+824*Sk^2*k^5*n^2-1652*Sk^2*
+k^4*n^3-116*Sk^2*k^6*n^3-112*Sk^2*k^6-2*Sk^2*k^7+1488*Sk^2*n^2+1248*Sk^2*n^3+
+384*Sk^2*n^4+246*Sn^2*n^5*k^4+16*Sn^2*n*k^6-45*Sn^2*k^7*n^2-20*Sn^2*k^7*n+3096
+*Sk^2*k*n^2+3440*Sk^2*k*n^3+1344*Sk^2*k*n^4, 24+57*Sn*n^5*k-43*Sn*n^6*k-84*n^4
+*Sn*k^2+122*n^5*Sn*k^2+4*n^3*Sn*k^3-170*n^4*Sn*k^3+102*n^2*Sn*k^4+110*n^3*Sn*k
+^4-93*n*Sn*k^5-11*n^2*Sn*k^5-22*n*Sn*k^6+52*n+26*Sn*k^6+8*Sn*k^7-12*Sn*n^6+6*
+Sn*n^7-752*n^5*k^2+1066*n^4*k^3+52*k-120*Sk-30*n*Sn*k^2-8*Sk*k^8*n+204*k*n-129
+*k^6*n+10*Sk*k^8-356*Sk*k+290*n^6*k-924*n^3*k^4+480*n^2*k^5-236*Sk^2*k-120*Sk^
+2+20*Sn*n^4*k-120*n^3*Sn*k^2+144*n^2*Sn*k^2+210*n^2*Sn*k^3-114*n*Sn*k^3-78*Sn*
+n^3*k-155*n*Sn*k^4+42*Sn*k^5+3*Sn*n^5+33*Sn*k^4+15*Sn*n^4-3*Sn*n^8-260*n*Sk-41
+*n^6*Sn*k^3+Sn*n^9-1154*Sk^2*k^2*n-1208*Sk^2*k*n-180*Sk^2*k^3*n-440*Sk^2*n+587
+*Sk^2*k^4*n-7*Sn*n^8*k+22*Sn*n^7*k^2+21*Sn*n^7*k+21*Sk^2*k^5+218*Sk^2*k^4-60*n
+*k^7+250*n^2*k^6+53*n^2*k^7+272*n^4*k^5-11*n*k^8-582*n^3*k^5-149*n^3*k^6-336*k
+^4*n^5+20*n^8-8*n^9+6*k^8+k^9+448*n^6*k^2-782*n^5*k^3-144*n^7*k-156*n^7*k^2+
+282*n^6*k^3+52*n^8*k-66*n^6*Sn*k^2-7*Sn*k^7*n^2-26*Sn*k^6*n^2+22*n^3*Sn*k^6+83
+*n^3*Sn*k^5-41*n^4*Sn*k^5-130*n^4*Sn*k^4+50*n^5*Sn*k^4+119*n^5*Sn*k^3+20*n^5+
+Sn*k^8+76*n^6+n*Sn*k^8+n*Sn*k^7+844*n^4*k^4-26*Sk^2*k^2+255*Sk^2*k^3+43*Sk*k^7
+-326*Sk*n^5*k^2+672*Sk*n^4*k^3+98*Sk*k^6+107*Sk*k^5+36*Sk*n^6-36*Sk*n^5-294*k*
+n^5-116*n*k^5-25*k^5-268*Sk*k*n^2-132*Sk*n^3-184*Sk*n^2+216*Sk^3+1052*Sk*k^4*n
+^2-1174*Sk*n^3*k^3+636*Sk*n^4*k^2-202*Sk*k*n^5-616*Sk*n*k^5+50*Sk*n^6*k^3+352*
+Sk*n^4*k^4-20*Sk*n^7*k^2-24*Sk*n^7*k+100*Sk*n^6*k^2-238*Sk*n^5*k^3-59*Sk*n^3*k
+^6-78*Sk*k^4*n^5-724*Sk*k*n+82*Sk*n^4*k^5-336*Sk*n^3*k^5+28*Sk*n^2*k^7-70*Sk*n
+*k^7+200*Sk*n^2*k^6+626*Sk*n^2*k^5-852*Sk*n^3*k^4+86*Sk*n^6*k-4*Sk*n^7-273*Sk*
+k^6*n+4*Sk*n^8*k+4*Sk*n^8-8*Sk^2*n^5-490*Sk*n^3*k-1022*Sk*n*k^3-914*Sk*k^4*n+
+40*Sk^2*n^5*k-442*Sk*k^2-275*Sk*k^3+48*Sk*n^4-26*Sk*k^4+102*Sk^2*k^2*n^5+68*Sk
+^2*k^3*n^5+282*Sk*n^4*k-957*Sk*n^3*k^2+252*Sk*n^2*k^2+934*Sk*n^2*k^3+14*Sk^2*k
+^4*n^5+6*k^6-40*n^2+18*k^2-977*Sk*k^2*n+32*k*n^2+265*n*k^2-10*Sn*n^3+30*k*Sn*n
+^2-92*n^3-41*k^3+10*Sn*k^3+1950*Sk^3*n*k^3+1728*Sk^3*k*n+648*Sk^3*n+Sk*k^9-Sk^
+2*k^9+1296*Sk^3*n^3*k+378*Sk^3*n^2*k^2+1296*Sk^3*k*n^2+2106*Sk^3*n*k^2+432*Sk^
+3*n^3+648*Sk^3*n^2-8*n^4+548*n^4*k^2+227*n^2*k^3+152*n^2*k^2+13*k^7-174*n^3*k-\
+664*n^3*k^3-199*n^3*k^2+15*k^4*n+446*k^4*n^2+164*n*k^3-54*k^4-18*n^4*k-Sk^3*k^
+9-81*Sk^3*k^7-14*Sk^3*k^8-32*Sk^2*n^6*k-20*Sk^2*k^2*n^6-4*Sk^2*k^3*n^6-16*Sk^2
+*n^6+298*Sk^3*k^6*n+1548*Sk^3*k^2*n^3+1552*Sk^3*k^4*n-948*Sk^3*k^4*n^2+876*Sk^
+3*k^5*n+4*Sk^3*k^8*n+320*Sk^3*k^4*n^3+952*Sk^3*k^3*n^3-894*Sk^3*k^3*n^2+4*Sk^3
+*k^6*n^3-396*Sk^3*k^5*n^2-6*Sk^3*k^7*n^2-78*Sk^3*k^6*n^2+54*Sk^3*k^7*n+56*Sk^3
+*k^5*n^3-44*n^7-439*Sk^3*k^5-250*Sk^3*k^6-19*Sk^3*k^3-402*Sk^3*k^4+450*Sk^3*k^
+2+540*Sk^3*k+7*Sk^2*k^8*n-1947*Sk^2*k^3*n^2-1366*Sk^2*k^4*n^2+600*Sk^2*k^5*n+
+854*Sk^2*k^3*n^3-10*Sk^2*k^8+198*Sk^2*k^5*n^3+68*Sk^2*k^7*n-19*Sk^2*k^7*n^2+
+280*Sk^2*k^6*n-156*Sk^2*k^4*n^4-1934*Sk^2*k^2*n^2+568*Sk^2*k^2*n^3-512*Sk^2*k^
+2*n^4-378*Sk^2*k^3*n^4-26*Sk^2*k^5*n^4-164*Sk^2*k^6*n^2-622*Sk^2*k^5*n^2+576*
+Sk^2*k^4*n^3+28*Sk^2*k^6*n^3-62*Sk^2*k^6-39*Sk^2*k^7-424*Sk^2*n^2-128*Sk^2*n^3
+-160*Sk^2*n^4-1300*Sk^2*k*n^2-8*Sk^2*k*n^3-424*Sk^2*k*n^4]
+)=[true,true,true] then okay else % fi;
+# Eq. (2.14)
+map(LeadingMonomial,GBf,T):
+if %=[Sn*Sk, Sn^2, Sk^3] then okay else % fi;
+map(nops,GBf):
+if %=[77, 250, 240] then okay else % fi;
+HilbertSeries(GBf,T,s):
+if %=s^2+2*s+1 then okay else % fi;
+subs(s=1,%%):
+if %=4 then okay else % fi;
+# Outer summation:
+L:=2:
+add(phi[i](k)*Sk^i,i=0..2)+psi(k)*Sn:
+Z:=add(eta[i]*Sn^i,i=0..L)+A["normalizer"](subs(k=k+1,%)*Sk-%):
+cf:=coeffs(Z,{Sn,Sk},'tm'):
+Z2:=collect(add(cf[i]*NormalForm(tm[i],GBf,T),i=1..nops([tm])),{Sn,Sk}):
+CF:={coeffs(Z2,{Sn,Sk})}:
+nops(CF):
+if %=4 then okay else % fi;
+for i to nops(CF) do
+    sys[i]:=normal(CF[i]);
+    sys[i]:=numer(sys[i])
+od:
+SYS:={seq(sys[i],i=1..nops(CF))}:
+eq[0,2,infinity]:=op(remove(has,SYS,{phi[1],psi(k)})):
+eq[1,2,infinity]:=op(remove(has,SYS,{phi[0],psi(k)})):
+eq[0,1,2,infinity]:=op(select(has,SYS,phi[0])
+    intersect select(has,SYS,phi[1])):
+eq[2,infinity]:=op(select(has,SYS,psi(k))):
+for i in indices(eq) do
+    EQ[op(i)]:=collect(subs(k=k-1,eq[op(i)]),{phi,psi},factor)
+od:
+elim:=proc(eq1,eq2,f,fs)
+    local c1,c2,cf1,cf2;
+    c1:=coeff(eq1,f);
+    c2:=coeff(eq2,f);
+    gcd(c1,c2,cf1,cf2);
+    collect(cf2*eq1-cf1*eq2,fs,normal)
+end:
+equa[1]:=elim(subs(k=k-1,EQ[0,1,2,infinity]),
+    EQ[0,2,infinity],phi[0](k-1),{phi,psi}):
+equa[2]:=elim(subs(k=k-2,EQ[1,2,infinity]),equa[1],phi[1](k-2),{phi,psi}):
+equa[3]:=elim(subs(k=k-3,EQ[2,infinity]),equa[2],phi[2](k-3),{phi,psi}):
+equa[4]:=elim(subs(k=k-2,EQ[2,infinity]),equa[3],phi[2](k-2),{phi,psi}):
+equa[5]:=elim(subs(k=k-1,EQ[2,infinity]),equa[4],phi[2](k-1),{phi,psi}):
+equa[6]:=elim(EQ[2,infinity],equa[5],phi[2](k),{phi,psi}):
+gcd(remove(has,equa[6],psi),coeff(equa[6],psi(k-4))):
+gcd(%,coeff(equa[6],psi(k-3))):
+gcd(%,coeff(equa[6],psi(k-2))):
+gcd(%,coeff(equa[6],psi(k-1))):
+gcd(%,coeff(equa[6],psi(k))):
+GCD:=%:
+if cmp(%,-(-2*n^2+2*n*k-8*n-k^2+5*k-8)*k^3*(k+2)^3*(k+1)^3*(2*n+3-k))
+then okay else % fi;
+for i from 0 to 4 do
+    cfs[i]:=normal(coeff(equa[6],psi(k-i))/GCD)
+od:
+cfs[-1]:=normal(remove(has,equa[6],psi)/GCD):
+remove(has,equa[6],psi)+add(coeff(equa[6],psi(k-i))*psi(k-i),i=0..4)-equa[6]:
+if %=0 then okay else % fi;
+# Final equation in psi(k).
+EQN:=cfs[-1]+add(cfs[i]*psi(k-i),i=0..4):
+if cmp2(%,
+-401544*n^11*eta[1]*k^9+9848436*n^11*eta[1]*k^8-2724931968*n^11*eta[1]*k^5-\
+13568776620*n^11*eta[1]*k^3+672440163*n^11*eta[1]*k^6+7402244411*n^11*eta[1]*k
+^4-106723566*n^11*eta[1]*k^7+(n+5-k)^3*(2*n^2+10*n-2*k*n+14-7*k+k^2)*(2*n+5-k)
+*(k-1)^3*(k-2)^2*(-3+k)*(n+3-k)*(n+2-k)^2*(n+1-k)^3*(n^2+n-k*n+2+k^2+2*k)*psi(
+-4+k)-10819258*n^10*eta[1]*k^9+333528*n^12*eta[1]*k^8-388542723*n^12*eta[1]*k^
+5-2969220840*n^12*eta[1]*k^3+70782509*n^12*eta[1]*k^6+1337018526*n^12*eta[1]*k
+^4+130165725*n^10*eta[1]*k^8-7360627*n^12*eta[1]*k^7+4284929760*n^10*eta[1]*k^
+6+2201337168183*eta[2]*n^6*k^6-2191424*n^14*eta[1]*k^5-58717524*n^14*eta[1]*k^
+3+128968*n^14*eta[1]*k^6+15508807*n^14*eta[1]*k^4-47680259648*n^10*eta[1]*k^3-\
+37487272*n^13*eta[1]*k^5-489413106*n^13*eta[1]*k^3+4481577*n^13*eta[1]*k^6+
+174393931*n^13*eta[1]*k^4-229112*n^13*eta[1]*k^7-13675263393*n^10*eta[1]*k^5-\
+922919231*n^10*eta[1]*k^7+30576710347*n^10*eta[1]*k^4-128968*n^7*k^13*eta[1]+
+401544*n^10*eta[1]*k^10-4839555820734*eta[2]*n^6*k^3+10902631211*n^4*eta[1]*k^
+10-130385994160*n^9*eta[1]*k^3-50641675003*n^9*eta[1]*k^5-2495851269*n^4*eta[1
+]*k^11+4834730099973*eta[2]*n^6*k^4+1015899289*n^9*eta[1]*k^8-129211899*n^9*
+eta[1]*k^9-3701281265630*eta[2]*n^6*k^5+(-865656801*n^5*k^11+336589513*n^4*k^
+12-97478105*n^3*k^13+19830747*n^2*k^14+2539763237*n^10*k^6+1715135521*n^6*k^10
++184032000*n-252282615*n^6*k^11+118281163*n^5*k^12-43022255*n^4*k^13+1116*k^18
+-49*k^19+63483903*n^14*k^2+169961687082*n^5*k^2-225062831333*n^4*k^3+11723055*
+n^3*k^14-2254691*n^2*k^15+394980365*n^11*k^6-558156313*n^10*k^7+426406123*n^7*
+k^10-140832000*k-81339830*n^9*k^9+67700490*n^8*k^10-20375*k^17*n+25205440*n^6*
+k^12-11038068*n^5*k^13+3771790*n^4*k^14-970190*n^3*k^15+176844*n^2*k^16-\
+63861330*n^11*k^7+79839188*n^10*k^8-45927362*n^7*k^11-15696*k^17-1558393887*n^
+11*k^5+632502585*n^9*k^8-578184035*n^8*k^9+273205*k^16*n-213525*n^9*k^11+
+6214351*n^9*k^10+151177*n^8*k^12-4752774*n^8*k^11-20*k^19*n-245895*n^11*k^9+
+250965*n^10*k^10-88573*n^7*k^13+937*k^18*n-16457*n^5*k^15+5015*n^4*k^16-1159*n
+^3*k^17+191*n^2*k^18+42515*n^6*k^14+7133721*n^15*k^2-1407744000*k*n-9763321*n^
+15*k+20876631946*k^6*n-1024705*n^16*k-74499*n^17*k-70710605451*n^6*k+
+176888589148*n^3*k^4+26388*n^17*k^2-82259561829*n^2*k^5-4369664*n^12*k^7-\
+221321373*n^12*k^5+41306642*n^12*k^6-5043255456*n^11*k+7821559602*n^11*k^2+
+552890*n^16*k^2-21304060*n^13*k^5-135227*n^13*k^7+2603559*n^13*k^6-\
+141442766403*n^8*k^3+200473*n^12*k^8+735709487*n^12*k^4-39158467416*n^7*k^7+
+16834779122*n^10*k^4+11925813240*n^7*k^8-13286663379*n^8*k^7-1244166*n^14*k^5+
+8564040*n^14*k^4+96092105*n^13*k^4+74705*n^14*k^6+23518391390*n^10*k^2-\
+66701377197*n^9*k^3-24594943702*n^10*k^3-1526678802*n^12*k-25516912*k^13-\
+16874590379*n*k^7+75812960033*n^2*k^6-56938093551*n^2*k^7-303472326543*n^4*k^5
++11433291081*n*k^8-192218704971*n^3*k^5+164402768991*n^3*k^6+371728060053*k^4*
+n^5+35095772400*n^2*k^8+10004932210*n^8+6461429278*n^9+1619478043*k^8-\
+1014434488*k^9+202*n^19+185625910811*n^6*k^2-300187276977*n^5*k^3-65274305785*
+n^7*k+157789477701*n^7*k^2-302462883861*n^6*k^3-47927288661*n^8*k+62161942953*
+n^3*k^8-145875889158*n^4*k^7-112635633354*n^3*k^7+341891491776*n^6*k^4-\
+234513567930*n^7*k^3+105583067874*n^8*k^2-283150853646*n^6*k^5-341710635138*n^
+5*k^5+237024682302*n^4*k^6+240209569023*n^5*k^6+238925562453*n^7*k^4+
+10003408844*n^5-31200205*n^14*k^3-258194455*n^13*k^3+12581692310*n^6+
+301491597015*n^4*k^4-6478912631*n*k^9-17713157588*n^2*k^9+55949908368*n^9*k^2-\
+13308650146*n^10*k+86810499*k^12-60189628266*k*n^5-21407207762*n*k^5-\
+2578784904*k^5-28182255907*k*n^9+3041243665*k^10*n-238781907*k^11+k^20+706946*
+n^16+69566*n^17+17280000+2610804924*k^6+4760*n^18+152785*k^16+914040000*n^2-\
+33263*n^15*k^5+531720000*k^2+11650*n^16*k^4+465709*n^15*k^4-6585004560*k*n^2+
+5015728560*n*k^2+2831968720*n^3-1245412720*k^3+6158860472*n^4+497196368*n^12+
+138052312*n^13+5308564*n^15+30556990*n^14-1093633*k^15+5973292*k^14-1555075655
+*n^12*k^3-130928531829*n^5*k^7+176650644009*n^6*k^6-84028430604*n^6*k^7-\
+82613716164*n^8*k^5+55527643764*n^5*k^8-175855255575*n^7*k^5+95934976404*n^7*k
+^6+52985699230*n^9*k^4+118836023768*n^4*k^2-47096547056*n^2*k^3+22211698392*n^
+2*k^2-2220087691*k^7-19245960568*n^3*k-123603693092*n^3*k^3+61454769336*n^3*k^
+2+17669266012*k^4*n+71172008118*k^4*n^2-11171484968*n*k^3+2053798672*k^4-\
+39450384232*n^4*k+538940668*k^10-3348*n^18*k+584*n^18*k^2-3091*n^17*k^3-131577
+*n^16*k^3-2587486*n^15*k^3+12526178128*n^7-89379632*n*k^13+17231292*n*k^14+
+626848478*n^2*k^12-127843485*n^2*k^13-2729906228*n^3*k^11-1168064378*n*k^11+
+362237302*n*k^12-1917447045*n^4*k^11+413571642*n^13*k^2-68440095*n^14*k+
+1441872386*n^11+8242745500*n^4*k^10+7265051997*n^2*k^10-2395915902*n^2*k^11+
+4589413290*n^5*k^10+4071808842*n^11*k^4+3387049940*n^10-18244194064*n^5*k^9-\
+27578744813*n^3*k^9+9766826202*n^3*k^10+128177293368*n^8*k^4-8389914709*n^6*k^
+9+11599735840*n^9*k^6+30512520594*n^6*k^8-27351792730*n^4*k^9+71079841617*n^4*
+k^8-70*n^19*k+592454762*n^3*k^12-7053662612*n^11*k^3+2043012788*n^12*k^2-\
+7868859471*n^10*k^5-29395680640*n^9*k^5+38740777956*n^8*k^6-365924128*n^13*k-\
+3249834841*n^9*k^7+3300641685*n^8*k^8-2670160559*n^7*k^9+4*n^20-2531855*k^15*n
+-1529626*n^6*k^13+628557*n^5*k^14-202512*n^4*k^15+49313*n^3*k^16-8538*n^2*k^17
++5971641*n^11*k^8-6705842*n^10*k^9+2987439*n^7*k^12)*psi(k)+(470327988*n^5*k^
+11-166116498*n^4*k^12+42453408*n^3*k^13-7284045*n^2*k^14-1851279189*n^10*k^6-\
+1006262626*n^6*k^10-632448000*n+139389024*n^6*k^11-59815815*n^5*k^12+19450639*
+n^4*k^13-96*k^18+2*k^19-57479460*n^14*k^2-182154817700*n^5*k^2+203347879948*n^
+4*k^3-4573551*n^3*k^14+717145*n^2*k^15-289615345*n^11*k^6+390553337*n^10*k^7-\
+253270381*n^7*k^10+321408000*k+51894823*n^9*k^9-40740962*n^8*k^10+3779*k^17*n-\
+13059790*n^6*k^12+5170119*n^5*k^13-1552839*n^4*k^14+336339*n^3*k^15-48067*n^2*
+k^16+45007753*n^11*k^7-53648615*n^10*k^8+25820491*n^7*k^11+2136*k^17+
+1191966624*n^11*k^5-421402683*n^9*k^8+365086332*n^8*k^9-63941*k^16*n+124227*n^
+9*k^11-3789731*n^9*k^10-82005*n^8*k^12+2718755*n^8*k^11+2*k^19*n+160237*n^11*k
+^9-155078*n^10*k^10+44203*n^7*k^13-132*k^18*n+6527*n^5*k^15-1683*n^4*k^16+309*
+n^3*k^17-36*n^2*k^18-19164*n^6*k^14-6428883*n^15*k^2+2883456000*k*n+9490840*n^
+15*k-14412318820*k^6*n+986062*n^16*k+71102*n^17*k+92645497496*n^6*k-\
+139861630836*n^3*k^4-23633*n^17*k^2+59408620136*n^2*k^5+3102033*n^12*k^7+
+170043807*n^12*k^5-30468651*n^12*k^6+5263266754*n^11*k-7253681606*n^11*k^2-\
+496492*n^16*k^2+16442337*n^13*k^5+96693*n^13*k^7-1931891*n^13*k^6+122369008695
+*n^8*k^3-137073*n^12*k^8-592008666*n^12*k^4+26869171604*n^7*k^7-13491038422*n^
+10*k^4-7823705034*n^7*k^8+9171199134*n^8*k^7+964594*n^14*k^5-6926184*n^14*k^4-\
+77511481*n^13*k^4-55760*n^14*k^6-22092988346*n^10*k^2+57360074403*n^9*k^3+
+21056639664*n^10*k^3+1555803388*n^12*k+10000908*k^13+11609722942*n*k^7-\
+53033551588*n^2*k^6+38933234086*n^2*k^7+224629761342*n^4*k^5-7701546005*n*k^8+
+140962295744*n^3*k^5-115796993781*n^3*k^6-296187057903*k^4*n^5-23158386642*n^2
+*k^8-15001355692*n^8-8976611008*n^9-1125246538*k^8+678603324*k^9-204*n^19-\
+191561153704*n^6*k^2+267538616894*n^5*k^3+80249719108*n^7*k-157789118791*n^7*k
+^2+266364424378*n^6*k^3+55845304358*n^8*k-40549875495*n^3*k^8+99158418951*n^4*
+k^7+76680513095*n^3*k^7-272734318298*n^6*k^4+204490595113*n^7*k^3-102910215828
+*n^8*k^2+211936199637*n^6*k^5+254522192463*n^5*k^5-167705079876*n^4*k^6-\
+170649404159*n^5*k^6-190754105977*n^7*k^4-20273871744*n^5+26525694*n^14*k^3+
+219630024*n^13*k^3-22798555936*n^6-239640775166*n^4*k^4+4146013243*n*k^9+
+11052119993*n^2*k^9-53423576557*n^9*k^2+14304570782*n^10*k-40654544*k^12+
+84896359224*k*n^5+15065213136*n*k^5+1739638688*k^5+31411578054*k*n^9-\
+1794331408*k^10*n+130155670*k^11-745220*n^16-72096*n^17-1754594368*k^6-4864*n^
+18-29254*k^16-2724768000*n^2+25905*n^15*k^5-742752000*k^2-9475*n^16*k^4-377683
+*n^15*k^4+12179202240*k*n^2-6598194240*n*k^2-7372914880*n^3+1185378880*k^3-\
+14093533568*n^4-586669516*n^12-156997152*n^13-5712268*n^15-33711808*n^14+
+276212*k^15-1908548*k^14+1324426462*n^12*k^3+89103178067*n^5*k^7-126040102031*
+n^6*k^6+57376197239*n^6*k^7+62369124159*n^8*k^5-36074324922*n^5*k^8+
+132201076103*n^7*k^5-68778431282*n^7*k^6-42394636096*n^9*k^4-133107306648*n^4*
+k^2+43797589008*n^2*k^3-27599062368*n^2*k^2+1533090292*k^7+32305972832*n^3*k+
+113320545368*n^3*k^3-72344582960*n^3*k^2-13570981584*k^4*n-55687324776*k^4*n^2
++10520359712*n*k^3-1532904608*k^4+60465584592*n^4*k-331675932*k^10+3174*n^18*k
+-522*n^18*k^2+2631*n^17*k^3+111911*n^16*k^3+2199817*n^15*k^3-20521872516*n^7+
+36110874*n*k^13-5919568*n*k^14-296361647*n^2*k^12+53586587*n^2*k^13+1444466066
+*n^3*k^11+619544794*n*k^11-169189838*n*k^12+1026233408*n^4*k^11-376737230*n^13
+*k^2+67367908*n^14*k-1779180132*n^11-4748141619*n^4*k^10-4200799775*n^2*k^10+
+1261786709*n^2*k^11-2663988280*n^5*k^10-3269300360*n^11*k^4-4411215392*n^10+
+11242254990*n^5*k^9+17002553447*n^3*k^9-5612396192*n^3*k^10-102430296325*n^8*k
+^4+5202394108*n^6*k^9-8406457106*n^9*k^6-19898049267*n^6*k^8+16810105021*n^4*k
+^9-46158183031*n^4*k^8+66*n^19*k-285684154*n^3*k^12+6019960678*n^11*k^3-\
+1875706232*n^12*k^2+5992020181*n^10*k^5+22287160232*n^9*k^5-27920020921*n^8*k^
+6+365814020*n^13*k+2258104918*n^9*k^7-2181250722*n^8*k^8+1669755896*n^7*k^9-4*
+n^20+725982*k^15*n-69120000+740470*n^6*k^13-271477*n^5*k^14+75491*n^4*k^15-\
+15063*n^3*k^16+1952*n^2*k^17-4047749*n^11*k^8+4323858*n^10*k^9-1584677*n^7*k^
+12)*psi(k-1)-428187640*n^2*eta[0]*k^11+1313890093*n^2*eta[0]*k^10+9784376*n^9*
+eta[1]*k^10-333528*n^9*eta[1]*k^11+19332301791*n^9*eta[1]*k^6-(n^2+n-k*n+2+k^2
++2*k)*(n+1-k)*(52954*n^5*k^11-22924*n^4*k^12+6831*n^3*k^13-1272*n^2*k^14-34642
+*n^10*k^6-88398*n^6*k^10-37990400*n+2776*n^6*k^11-1494*n^5*k^12+584*n^4*k^13-\
+16*n^14*k^2-1975988658*n^5*k^2+4289405376*n^4*k^3-157*n^3*k^14+26*n^2*k^15-829
+*n^11*k^6+1914*n^10*k^7-3854*n^7*k^10+44390400*k+12165*n^11*k^5-3218*n^9*k^8+
+4048*n^8*k^9-2*k^16*n-6144000+258767360*k*n-1249939332*k^6*n+461109356*n^6*k-\
+5190253458*n^3*k^4+3531257358*n^2*k^5+248*n^12*k^5+249436*n^11*k-324204*n^11*k
+^2+103518460*n^8*k^3-2778*n^12*k^4+9895240*n^7*k^7-1040248*n^10*k^4-1365482*n^
+7*k^8+1091262*n^8*k^7-46*n^13*k^4-3113930*n^10*k^2+18626395*n^9*k^3+2387096*n^
+10*k^3+19672*n^12*k+25430*k^13+658071755*n*k^7-2229088608*n^2*k^6+1062071720*n
+^2*k^7+3002390690*n^4*k^5-266534665*n*k^8+4031759568*n^3*k^5-2297431422*n^3*k^
+6-2456423781*k^4*n^5-385161100*n^2*k^8-13334008*n^8-3252592*n^9-77817360*k^8+
+26855146*k^9-995614254*n^6*k^2+2719325969*n^5*k^3+187291316*n^7*k-371017196*n^
+7*k^2+1246506332*n^6*k^3+56851768*n^8*k-311093391*n^3*k^8+568496668*n^4*k^7+
+976329327*n^3*k^7-1008923656*n^6*k^4+419014165*n^7*k^3-102700278*n^8*k^2+
+556019940*n^6*k^5+1538053015*n^5*k^5-1524954656*n^4*k^6-685759691*n^5*k^6-\
+300042531*n^7*k^4-159796352*n^5+4*n^14*k^3+352*n^13*k^3-93527296*n^6-\
+4280546378*n^4*k^4+83268897*n*k^9+106310014*n^2*k^9-20992488*n^9*k^2+2123328*n
+^10*k-226934*k^12+843930104*k*n^5+1807819976*n*k^5+407942488*k^5+12838004*k*n^
+9-19977875*k^10*n+1472174*k^11-305534056*k^6-2*k^16-106183680*n^2-147015680*k^
+2+680628096*k*n^2-805095296*n*k^2-177996032*n^3+296639232*k^3-200125312*n^4-\
+6440*n^12-336*n^13-8*n^14+92*k^15-1954*k^14+11604*n^12*k^3+219687890*n^5*k^7-\
+213414268*n^6*k^6+57156810*n^6*k^7+25885458*n^8*k^5-50241708*n^5*k^8+142893491
+*n^7*k^5-45980729*n^7*k^6-9869321*n^9*k^4-2855646304*n^4*k^2+3486888888*n^2*k^
+3-1982784512*n^2*k^2+175235038*k^7+1071713248*n^3*k+4747912944*n^3*k^3-\
+2913478536*n^3*k^2-1951848248*k^4*n-4144859368*k^4*n^2+1520268128*n*k^3-\
+408639552*k^4+1129667760*n^4*k-7180462*k^10-40793680*n^7+47411*n*k^13-3069*n*k
+^14-377844*n^2*k^12+28228*n^2*k^13+1610401*n^3*k^11+3636355*n*k^11-491113*n*k^
+12+407490*n^4*k^11-902*n^13*k^2+20*n^14*k-74608*n^11-4342522*n^4*k^10-22145216
+*n^2*k^10+3417270*n^2*k^11-844400*n^5*k^10-70999*n^11*k^4-583256*n^10+8006152*
+n^5*k^9+73986241*n^3*k^9-12930469*n^3*k^10-64496404*n^8*k^4+1255198*n^6*k^9-\
+633685*n^9*k^6-10482540*n^6*k^8+30946144*n^4*k^9-155676616*n^4*k^8-135095*n^3*
+k^12+209039*n^11*k^3-22306*n^12*k^2+259738*n^10*k^5+3217705*n^9*k^5-6719458*n^
+8*k^6+932*n^13*k+69200*n^9*k^7-100848*n^8*k^8+109260*n^7*k^9+118*k^15*n)*psi(-\
+3+k)+(n^2+n-k*n+2+k^2+2*k)*(n+1-k)*(243581*n^5*k^11-111315*n^4*k^12+37880*n^3*
+k^13-9053*n^2*k^14-307009*n^10*k^6-410362*n^6*k^10-176688000*n+12978*n^6*k^11-\
+7089*n^5*k^12+3002*n^4*k^13-2744*n^14*k^2-11819367408*n^5*k^2+20214047535*n^4*
+k^3-952*n^3*k^14+213*n^2*k^15-8952*n^11*k^6+15141*n^10*k^7-18802*n^7*k^10+
+161568000*k+2*k^17+154904*n^11*k^5-20300*n^9*k^8+21798*n^8*k^9-30*k^16*n-54*n^
+15*k^2+1038420000*k*n+244*n^15*k-4530936181*k^6*n+4*n^16*k+3803859670*n^6*k-\
+20805422577*n^3*k^4+12956391021*n^2*k^5+4114*n^12*k^5+8749032*n^11*k-8355714*n
+^11*k^2+930461088*n^8*k^3-58655*n^12*k^4+52624434*n^7*k^7-12418396*n^10*k^4-\
+6973521*n^7*k^8+6505389*n^8*k^7-1421*n^13*k^4-56707515*n^10*k^2+208915992*n^9*
+k^3+34583843*n^10*k^3+1134329*n^12*k+277972*k^13+2530881413*n*k^7-8329481413*n
+^2*k^6+4111919883*n^2*k^7+12809942479*n^4*k^5-1105854728*n*k^8+15829828294*n^3
+*k^5-9011614952*n^3*k^6-12219583285*k^4*n^5-1567720924*n^2*k^8-213440508*n^8-\
+70303196*n^9-340375324*k^8+133700986*k^9-7037700351*n^6*k^2+14625006259*n^5*k^
+3+1903142162*n^7*k-3170338691*n^7*k^2+7788219252*n^6*k^3+733912252*n^8*k-\
+1274798136*n^3*k^8+2372643769*n^4*k^7+3887910730*n^3*k^7-5729548020*n^6*k^4+
+3103541624*n^7*k^3-1089703243*n^8*k^2+2937402215*n^6*k^5+7243005908*n^5*k^5-\
+6385161305*n^4*k^6-3115182120*n^5*k^6-1981410555*n^7*k^4-1301018042*n^5+348*n^
+14*k^3+15807*n^13*k^3-925074936*n^6-18967644532*n^4*k^4+378487498*n*k^9+
+460850410*n^2*k^9-285788635*n^9*k^2+50173518*n^10*k-1929654*k^12+5799433839*k*
+n^5+6296343405*n*k^5+1371378224*k^5+218746824*k*n^9-100989082*k^10*n+10169108*
+k^11-4*n^16-1096883142*k^6-96*k^16-552636000*n^2-489888000*k^2+3050349840*k*n^
+2-2935230840*n*k^2-1054267080*n^3+953404080*k^3-1374825568*n^4-522720*n^12-\
+56362*n^13-190*n^15-4176*n^14+2138*k^15-29342*k^14+327161*n^12*k^3+977694528*n
+^5*k^7-1069005573*n^6*k^6+275782464*n^6*k^7+181580625*n^8*k^5-221930880*n^5*k^
+8+861674472*n^7*k^5-258248001*n^7*k^6-94116499*n^9*k^4-14739087660*n^4*k^2+
+13213637141*n^2*k^3-8004522258*n^2*k^2+687259490*k^7+5442922562*n^3*k+
+19920140268*n^3*k^3-13199351297*n^3*k^2-6685225841*k^4*n-15250767774*k^4*n^2+
+5272912702*n*k^3-1321151438*k^4+6610515815*n^4*k-41583004*k^10-504535550*n^7+
+364825*n*k^13-28393*n*k^14-2124590*n^2*k^12+177345*n^2*k^13+7685010*n^3*k^11+
+20764800*n*k^11-3222905*n*k^12+1884316*n^4*k^11-63361*n^13*k^2+6572*n^14*k-\
+3531580*n^11-19286287*n^4*k^10-103477188*n^2*k^10+17413347*n^2*k^11-3796424*n^
+5*k^10-1100190*n^11*k^4-17976088*n^10+35501133*n^5*k^9+315681336*n^3*k^9-\
+58059383*n^3*k^10-505700097*n^8*k^4+5839453*n^6*k^9-4725098*n^9*k^6-49376790*n
+^6*k^8+133217164*n^4*k^9-656137413*n^4*k^8-691703*n^3*k^12+4092500*n^11*k^3-\
+884229*n^12*k^2+2636506*n^10*k^5+26820233*n^9*k^5-43069662*n^8*k^6+105337*n^13
+*k+470679*n^9*k^7-567642*n^8*k^8+542428*n^7*k^9+1357*k^15*n-25920000)*psi(k-2)
++3563737479031*eta[2]*n^6*k^2-5298798792*n^9*eta[1]*k^7+96008940094*n^9*eta[1]
+*k^4-1744510776532*eta[2]*n^6*k+336814244*n*eta[1]*k^12+538286732*eta[2]*k^12+
+428882486544*eta[2]*n^6+444*n*k^18*eta[1]-17162060*k^13*eta[1]-502996*k^15*eta
+[1]+3378366*k^14*eta[1]-11204*n*k^17*eta[1]+171460*n*k^16*eta[1]-4*k^19*eta[1]
+-8*n*k^19*eta[1]-1607173265416*n^5*eta[2]*k+5696*n^4*k^16*eta[1]+188*k^18*eta[
+1]+158112000*eta[0]*n-76831282*n*k^13*eta[1]-1787731*n*k^15*eta[1]+13510929*n*
+k^14*eta[1]-238119*n^4*k^15*eta[1]+4575242*n^4*k^14*eta[1]-21270451845*n^8*eta
+[1]*k^7+231313283872*n^8*eta[1]*k^4+104430925*n^8*eta[1]*k^10-7267332*n^8*eta[
+1]*k^11+63524665501*n^8*eta[1]*k^6-279053035746*n^8*eta[1]*k^3-140624036083*n^
+8*eta[1]*k^5+229112*n^8*eta[1]*k^12+5200044410*n^8*eta[1]*k^8-900384438*n^8*
+eta[1]*k^9+4400110*n^7*eta[1]*k^12+18329197749*n^7*eta[1]*k^8-4054008531*n^7*
+eta[1]*k^9-604432720*eta[0]*k^3-114912000*eta[0]*k-10174918648*k*eta[0]*n^3-\
+53637155*n^4*k^13*eta[1]-4090*k^17*eta[1]-294582423389*n^7*eta[1]*k^5-\
+32386712811*eta[2]*k^9*n^7+5120626654*eta[2]*k^10*n^7+54680*k^16*eta[1]+
+160329120*n^5*eta[1]*k^12+79434210499*n^5*eta[1]*k^8-25749740104*n^5*eta[1]*k^
+9+6399590420*n^5*eta[1]*k^10-1191397023*n^5*eta[1]*k^11+5584866279*eta[2]*k^12
+*n^3-2898463299*eta[2]*k^11*n^6+19921356413*eta[2]*k^10*n^6-19932878088*eta[2]
+*k^11*n^4+87076232261*eta[2]*k^10*n^4+103028112*eta[2]*k^14*n^3-889635914*eta[
+2]*k^13*n^3-613289997*eta[2]*k^13*n+107881980*eta[2]*k^14*n-428576776*eta[2]*k
+^13*n^4+3431695378*eta[2]*k^12*n^4+5331669513*eta[2]*k^12*n^2-1036159879*eta[2
+]*k^13*n^2+1281051138*eta[2]*k^12*n^5-9516774928*eta[2]*k^11*n^5-26431356585*
+eta[2]*k^11*n^3-3718453208250*eta[2]*k^3*n^7+2920852136328*eta[2]*k^2*n^7+
+2688857608*eta[2]*k^12*n-205660747814*eta[2]*k^9*n^5+362890349243*eta[2]*k^8*n
+^6-98515740626*eta[2]*k^9*n^6+51112443922*eta[2]*k^10*n^5-488938402820*eta[2]*
+k^7*n^7+146409945649*eta[2]*k^8*n^7-21202542203*eta[2]*k^11*n^2-2654749983*n^2
+*eta[1]*k^11+634473643322*eta[2]*k^8*n^5+1229468976644*eta[2]*k^6*n^7+
+3413612385608*eta[2]*k^4*n^7+96595213854*eta[2]*k^10*n^3-292989145877*eta[2]*k
+^9*n^4-2349854210764*eta[2]*k^5*n^7-1017508604372*eta[2]*k^7*n^6+26955798*eta[
+2]*k^14-136913918*eta[2]*k^13+436896*eta[2]*k^16-4015774*eta[2]*k^15-58584*n^
+15*eta[1]*k^5-4835082*n^15*eta[1]*k^3+667762324*n^2*eta[1]*k^12+61602820*n*k^
+12*eta[0]-129759725*n^2*k^13*eta[1]-2028537*n^2*k^15*eta[1]+19021580*n^2*k^14*
+eta[1]+136*n^2*k^18*eta[1]-6618*n^2*k^17*eta[1]+148188*n^2*k^16*eta[1]+
+1277141184*eta[2]+154920000*eta[1]+17280000*eta[0]-244150*n^16*eta[1]*k^3-\
+14282466*eta[2]*k^15*n+1370640*eta[2]*k^16*n+151946876*eta[2]*k^14*n^2-\
+16212142*eta[2]*k^15*n^2+2458365*n*k^14*eta[0]+432570800922*eta[1]*n^5*k^2-\
+546329797*eta[2]*k^11*n^7+96670816138*eta[1]*n^4*k^8+8293488335*eta[1]*n^2*k^
+10-34703385542*eta[1]*n^3*k^9-1157527962*eta[1]*n*k^11+176059226808*eta[1]*n^3
+*k^2+28785615996*eta[1]*k^4*n+119766952081*eta[1]*k^4*n^2-24795852664*eta[1]*n
+*k^3-144830971936*eta[1]*n^4*k-190950875897*eta[1]*n^5*k^7+275834885723*eta[1]
+*n^6*k^6+319988947895*eta[1]*n^4*k^2-103094183188*eta[1]*n^2*k^3+67811998508*
+eta[1]*n^2*k^2-77929396220*eta[1]*n^3*k-264704378892*eta[1]*n^3*k^3-\
+201534970960*eta[1]*k*n^5-28074416782*eta[1]*n*k^5+3159379982*eta[1]*k^10*n-\
+29482432200*eta[1]*k*n^2+16248251280*eta[1]*n*k^2+362034260535*eta[1]*n^5*k^6+
+525069386478*eta[1]*n^4*k^4-6935099572*eta[1]*n*k^9-20648019065*eta[1]*n^2*k^9
+-464522466543*eta[1]*n^6*k^5-545841246627*eta[1]*n^5*k^5+341532123412*eta[1]*n
+^4*k^6-468772727010*eta[1]*n^4*k^5+12441930708*eta[1]*n*k^8-284766521911*eta[1
+]*n^3*k^5+223882537201*eta[1]*n^3*k^6+655137459659*eta[1]*k^4*n^5+41568244211*
+eta[1]*n^2*k^8+449881702891*eta[1]*n^6*k^2-616349374790*eta[1]*n^5*k^3-\
+611089437768*eta[1]*n^6*k^3+79401831431*eta[1]*n^3*k^8-202507548968*eta[1]*n^4
+*k^7-147006406103*eta[1]*n^3*k^7+608524826109*eta[1]*n^6*k^4-18688193739*eta[1
+]*n*k^7+96234460269*eta[1]*n^2*k^6-68909519368*eta[1]*n^2*k^7-3942058*k^13*eta
+[0]-122512*k^15*eta[0]+803904*k^14*eta[0]+14708666*k^12*eta[0]-471282325552*
+eta[1]*n^4*k^3-6964986000*eta[1]*k*n+24280755453*eta[1]*k^6*n-217791276362*eta
+[1]*n^6*k+303612839039*eta[1]*n^3*k^4-115628362500*eta[1]*n^2*k^5-14697151*n^5
+*k^13*eta[1]+834762195*eta[2]*k^10*n^8-2230819000*eta[1]*k^7+3143192524*eta[1]
+*k^4+510434484*eta[1]*k^10-208120688*eta[1]*k^11+2712332722*eta[1]*k^6+
+6210686800*eta[1]*n^2+1807107200*eta[1]*k^2+16855997640*eta[1]*n^3-2743930720*
+eta[1]*k^3+32230547352*eta[1]*n^4-3051600660*eta[1]*k^5+67437480*eta[1]*k^12+
+46280776480*eta[1]*n^5+51863769436*eta[1]*n^6+1629258580*eta[1]*k^8-1007264230
+*eta[1]*k^9-20968*n^5*k^15*eta[1]-768380000*eta[1]*k-5696*n^17*eta[1]*k^3+
+819821*n^5*k^14*eta[1]+1432396000*eta[1]*n+35796968*n^6*eta[1]*k^12-20787558*n
+^2*k^13*eta[0]+108088922*n^2*k^12*eta[0]+429621248*n^4*eta[1]*k^12-206559405*n
+*eta[0]*k^11-14135746*n*k^13*eta[0]-36676014055*n^4*eta[1]*k^9+45436533920*n^6
+*eta[1]*k^8-12334190946*n^6*eta[1]*k^9-1955804*n^16*eta[2]*k^3-30379*n^16*eta[
+0]*k^3+6732912*n^15*eta[2]*k^4+104791*n^15*eta[0]*k^4-38769756*n^15*eta[2]*k^3
+-468672*n^15*eta[2]*k^5-7323*n^15*eta[0]*k^5-599227*n^15*eta[0]*k^3-362751648*
+n^6*eta[1]*k^11-127419214241*n^6*eta[1]*k^7+13474863870*n^4*eta[0]*k^8-\
+5162449170*n^4*eta[0]*k^9-352596720*n^4*eta[0]*k^11+1542977882*n^4*eta[0]*k^10
++103936943*n^3*k^12*eta[0]+1798695588*n^3*eta[0]*k^10-5090084134*n^3*eta[0]*k^
+9-494719062*n^3*eta[0]*k^11+2493836829*n^6*eta[1]*k^10-1635320170*n^6*eta[0]*k
+^9-61301217246*n^6*eta[0]*k^5+36324983289*n^6*eta[0]*k^6+58211378550*n^6*eta[0
+]*k^2-16810222080*n^6*eta[0]*k^7+80671290555*n^6*eta[0]*k^4+6013966212*n^6*eta
+[0]*k^8-80885611482*n^6*eta[0]*k^3+699347258*n^3*eta[1]*k^12-25733055171*n^5*
+eta[0]*k^7+871664211*n^5*eta[0]*k^10+10761497616*n^5*eta[0]*k^8-3504973408*n^5
+*eta[0]*k^9+833039406*n^13*eta[1]*k^2+9775927996*n^10*eta[1]-146027258*n^14*
+eta[1]*k+47*k^18*eta[0]+125991599*n^14*eta[1]*k^2+71809172*n^14*eta[1]-\
+3443114476*n^12*eta[1]*k-136*n^19*eta[1]*k+12091901761*n^3*eta[1]*k^10+
+286126585*eta[2]*k^12*n^6-1032932620*eta[2]*k^9*n^9-8169182*eta[2]*k^15*n^3-\
+3309753736*n^3*eta[1]*k^11+4183170483*n^12*eta[1]*k^2+1276066256*n^12*eta[1]-\
+117476929*eta[2]*k^13*n^5+45568*eta[2]*k^16*n^4-1904244*eta[2]*k^15*n^4-8832*
+eta[2]*k^17*n^3+395920*eta[2]*k^16*n^3+412*n^19*eta[1]-52936*eta[2]*k^17*n^2+
+3552*eta[2]*k^18*n-64*eta[2]*k^19*n+1088*eta[2]*k^18*n^2-89608*eta[2]*k^17*n-\
+17128011*eta[2]*k^13*n^6+1184896*eta[2]*k^16*n^2-167744*eta[2]*k^15*n^5+468672
+*eta[2]*k^14*n^6+36572622*eta[2]*k^14*n^4+6555796*eta[2]*k^14*n^5-11767883632*
+n^11*eta[1]*k+35184879*eta[2]*k^12*n^7+16312573980*n^11*eta[1]*k^2+3907655468*
+n^11*eta[1]-2668224*eta[2]*k^11*n^9+1832896*eta[2]*k^12*n^8-58112758*eta[2]*k^
+11*n^8+78242388*eta[2]*k^10*n^9-1031744*eta[2]*k^13*n^7-60281816427*n^7*eta[0]
+*k^3+82979182*k^10*n^7*eta[0]-526798382*k^9*n^7*eta[0]+41547689902*k^8*n^8*eta
+[2]+666510570*k^8*n^8*eta[0]+8119550178*k^8*n^9*eta[2]-7195182485*k^9*n^8*eta[
+2]-42346726839*k^7*n^9*eta[2]-115255140*k^9*n^8*eta[0]+128890190*k^8*n^9*eta[0
+]+21479562*k^12*n^5*eta[0]-161445480*k^11*n^5*eta[0]-672116170*k^7*n^9*eta[0]+
+329976130*k^10*n^6*eta[0]-47672378*k^11*n^6*eta[0]-16289180*k^13*n^3*eta[0]+
+29026*k^16*n*eta[0]-306354*k^15*n^2*eta[0]+2977056*k^14*n^2*eta[0]-316490*k^15
+*n*eta[0]-7372670*k^13*n^4*eta[0]+60103090*k^12*n^4*eta[0]+1837870*k^14*n^3*
+eta[0]-32*eta[2]*k^19+1504*eta[2]*k^18-32704*k^17*eta[2]-1019*k^17*eta[0]+
+13513*k^16*eta[0]-6395879634*n^9*eta[0]*k^5-16291672220*n^9*eta[0]*k^3-\
+1042319325648*n^9*eta[2]*k^3-404691228955*n^9*eta[2]*k^5+29487205776*n^8*eta[0
+]*k^2-2723781456*n^8*eta[0]*k^7+29442399969*n^8*eta[0]*k^4+12081616420*n^9*eta
+[0]*k^4+767197660924*n^9*eta[2]*k^4+2447898475*n^9*eta[0]*k^6+154495419128*n^9
+*eta[2]*k^6+15013940027*n^9*eta[0]*k^2+978701073860*n^9*eta[2]*k^2+
+1895437544250*n^8*eta[2]*k^2-2225570846212*n^8*eta[2]*k^3-169930180127*n^8*eta
+[2]*k^7+1845683907234*n^8*eta[2]*k^4-1122838599108*n^8*eta[2]*k^5+507420422357
+*n^8*eta[2]*k^6-17938412526*n^8*eta[0]*k^5+8118805284*n^8*eta[0]*k^6+
+2382145821*n^7*eta[0]*k^8-38116638777*n^7*eta[0]*k^5+19935533640*n^7*eta[0]*k^
+6+46379222130*n^7*eta[0]*k^2-7941227004*n^7*eta[0]*k^7+55480394697*n^7*eta[0]*
+k^4-35306307039*n^8*eta[0]*k^3-71660589798*n^9*eta[1]*k+122118277722*n^9*eta[1
+]*k^2+20055769648*n^9*eta[1]-32308147624*n^10*eta[1]*k+50092112778*n^10*eta[1]
+*k^2-801241964*n^13*eta[1]*k+337997344*n^13*eta[1]+384159109312*eta[2]*n^7-\
+381815183776*n^10*eta[2]*k^3-109355207258*n^10*eta[2]*k^5+613395*k^14*n^4*eta[
+0]-1715716266*n^10*eta[0]*k^5-5911078408*n^10*eta[0]*k^3-140681*k^15*n^3*eta[0
+]-7378306655*k^7*n^10*eta[2]-16359915*k^9*n^9*eta[0]+16395951*k^8*n^10*eta[0]-\
+116286742*k^7*n^10*eta[0]+13309153*k^10*n^8*eta[0]-k^19*n*eta[0]-1776*k^17*n*
+eta[0]-k^19*eta[0]+366940523634*n^7*eta[1]*k^2+21325*k^16*n^2*eta[0]+4648813*n
+^6*k^12*eta[0]+7323*n^6*k^14*eta[0]-1934771*n^5*k^13*eta[0]-2621*n^5*k^15*eta[
+0]+105443*n^5*k^14*eta[0]-1104*n^3*k^17*eta[1]-3212352*n^11*eta[2]*k^9-\
+58876924*n^12*eta[2]*k^7+2668224*n^12*eta[2]*k^8+1040704546*n^10*eta[2]*k^8+
+566237525*n^12*eta[2]*k^6+10708979764*n^12*eta[2]*k^4-3109461859*n^12*eta[2]*k
+^5-853468655*n^11*eta[2]*k^7+3212352*n^10*eta[2]*k^10-23821219291*n^12*eta[2]*
+k^3-86522741*n^10*eta[2]*k^9+78766023*n^11*eta[2]*k^8+1104*n^18*eta[1]*k^2+
+237204609698*n^8*eta[1]*k^2+9924*n^18*eta[1]+5378037566*n^11*eta[2]*k^6-\
+108783859406*n^11*eta[2]*k^3+59261866609*n^11*eta[2]*k^4-21800766657*n^11*eta[
+2]*k^5-8783385*n^7*eta[0]*k^11+33756425272*n^8*eta[1]+49504*n^3*k^16*eta[1]-\
+128680985974*n^8*eta[1]*k-2141960*n^6*k^13*eta[1]+13157392096*eta[2]*k^8+8*n^
+20*eta[1]-467672945310*n^7*eta[1]*k^3+58584*n^6*k^14*eta[1]-53008*n^18*eta[2]*
+k+148656*n^17*eta[1]+2383539542623*eta[2]*n^3*k^4+50430*n^17*eta[1]*k^2-\
+915044973138*eta[2]*n^2*k^5-1501704586652*eta[2]*k*n^7-149422*n^17*eta[1]*k+
+712*k^16*n^4*eta[0]-138*k^17*n^3*eta[0]-273428*n^14*eta[0]*k^5-7254270*n^14*
+eta[0]*k^3-471098292*n^14*eta[2]*k^3-17537366*n^14*eta[2]*k^5-28639*n^13*eta[0
+]*k^7+21650270*n^13*eta[0]*k^4+17*k^18*n^2*eta[0]+1069012*n^16*eta[1]*k^2+
+1553240*n^16*eta[1]-6604*n^18*eta[1]*k-13388323*n^11*eta[0]*k^7+920745105*n^11
+*eta[0]*k^4+1234597*n^11*eta[0]*k^8-1674958766*n^11*eta[0]*k^3+50193*n^10*eta[
+0]*k^10-50193*n^11*eta[0]*k^9-340501320*n^11*eta[0]*k^5+84259578*n^11*eta[0]*k
+^6+28639*n^8*k^12*eta[0]-41691*n^9*eta[0]*k^11-150249125184*eta[2]*n*k^7+
+768593788553*eta[2]*n^2*k^6-30926*k^15*n^4*eta[0]+64*k^18*n*eta[0]+539104676*k
+^6*n^10*eta[0]+3819547954*k^4*n^10*eta[0]+244605828342*k^4*n^10*eta[2]+
+34258048052*k^6*n^10*eta[2]+12036308*n^15*eta[1]+13966986*n^15*eta[1]*k^2-\
+16121*n^7*k^13*eta[0]+558805*k^12*n^7*eta[0]-895*k^17*n^2*eta[0]+6524*k^16*n^3
+*eta[0]+1232803*k^10*n^9*eta[0]-1359358*k^9*n^10*eta[0]-273532*k^13*n^6*eta[0]
+-918892*k^11*n^8*eta[0]+5699638984*n^6*eta[0]-26563579128*n^6*eta[0]*k-45568*n
+^17*eta[2]*k^3-365942288*n^12*eta[0]*k^3-164634012*n^15*eta[2]*k+1428067*n^15*
+eta[0]+1716074*n^15*eta[0]*k^2+98332080*n^15*eta[2]+112323656*n^15*eta[2]*k^2+
+404316*n^17*eta[2]*k^2-1202884*n^17*eta[2]*k-2467534*n^15*eta[0]*k+132036*n^16
+*eta[0]*k^2+186305*n^16*eta[0]+12645904*n^16*eta[2]+8585768*n^16*eta[2]*k^2+
+8832*n^18*eta[2]*k^2+6118195470*n^10*eta[0]*k^2+1102803848*n^10*eta[0]+
+80695887648*n^10*eta[2]+402323751598*n^10*eta[2]*k^2-68350035*n^7*eta[1]*k^11-\
+22495711172*n^7*eta[0]*k+3750338923*n^8*eta[0]+279041000368*n^8*eta[2]-\
+1037803658004*n^8*eta[2]*k-579302981260*n^9*eta[2]*k-8517747601*n^9*eta[0]*k-\
+15368710677*n^8*eta[0]*k+2244152752*n^9*eta[0]+165694342112*n^9*eta[2]-712*n^
+17*eta[0]*k^3+5130468129*n^7*eta[0]+2621*n^16*eta[0]*k^4+153992112624*n^7*eta[
+1]*k^6+840986*n^15*eta[1]*k^4+46458937500*n^7*eta[1]-552179213109*eta[2]*n^2*k
+^7-3724762079971*eta[2]*n^4*k^5+99988932254*eta[2]*n*k^8-2258640551195*eta[2]*
+n^3*k^5+1786618186630*eta[2]*n^3*k^6+5189243151298*eta[2]*k^4*n^5+333054836733
+*eta[2]*n^2*k^8-4856715676691*eta[2]*n^5*k^3+635074996398*eta[2]*n^3*k^8-\
+1617954077247*eta[2]*n^4*k^7-1175717078869*eta[2]*n^3*k^7+32216806872*n^11*eta
+[2]+131206962288*n^11*eta[2]*k^2-95382865516*n^11*eta[2]*k-4343620482485*eta[2
+]*n^5*k^5+2724686733420*eta[2]*n^4*k^6+2888429757844*eta[2]*n^5*k^6+
+4142838707566*eta[2]*n^4*k^4-55608031468*eta[2]*n*k^9-165231915523*eta[2]*n^2*
+k^9-221499395423*eta[2]*n*k^5+25277815662*eta[2]*k^10*n-231254895968*eta[2]*k*
+n^2+123509887048*eta[2]*n*k^2-1524951408489*eta[2]*n^5*k^7+2502041123001*eta[2
+]*n^4*k^2-793368718942*eta[2]*n^2*k^3+520998618856*eta[2]*n^2*k^2-614941285148
+*eta[2]*n^3*k-2056574627564*eta[2]*n^3*k^3+1365381058400*eta[2]*n^3*k^2+
+222590929890*eta[2]*k^4*n+934129505046*eta[2]*k^4*n^2-188602946132*eta[2]*n*k^
+3-1149200718912*eta[2]*n^4*k-9247525146*eta[2]*n*k^11-8103035116*eta[2]*k^9+
+382666031504*eta[2]*n^5-23969445718*eta[2]*k^5-1663687420*eta[2]*k^11+
+21753338886*eta[2]*k^6+51279683408*eta[2]*n^2+13565488448*eta[2]*k^2+
+139261526536*eta[2]*n^3-20562679456*eta[2]*k^3+266410961792*eta[2]*n^4-\
+18032492966*eta[2]*k^7+10503651520*n^12*eta[2]+24016831460*eta[2]*k^4+
+4091058964*eta[2]*k^10+33673561653*n^12*eta[2]*k^2+66287567015*eta[2]*n^2*k^10
+-27916797328*n^12*eta[2]*k-277391146903*eta[2]*n^3*k^9+772472020280*eta[2]*n^4
+*k^8+640835949*n^7*eta[1]*k^10-3927352185*n^13*eta[2]*k^3-1832896*n^13*eta[2]*
+k^7+1397035608*n^13*eta[2]*k^4-300035497*n^13*eta[2]*k^5+35854726*n^13*eta[2]*
+k^6-4673313*n^13*eta[0]*k^5+559937*n^13*eta[0]*k^6+41691*n^12*eta[0]*k^8-\
+48455602*n^12*eta[0]*k^5+8849945*n^12*eta[0]*k^6-921050*n^12*eta[0]*k^7+
+165996026*n^12*eta[0]*k^4-60344740*n^13*eta[0]*k^3+1927895*n^14*eta[0]*k^4+
+124219143*n^14*eta[2]*k^4+16121*n^14*eta[0]*k^6+1031744*n^14*eta[2]*k^6-\
+3833808463*k*n^10*eta[0]-261612306752*k*n^10*eta[2]+1986271060*n^11*eta[0]*k^2
++444795033*n^11*eta[0]+20968*n^16*eta[1]*k^4-1397699029*n^11*eta[0]*k-\
+54278991824*eta[2]*k*n-95893772*n^13*eta[0]*k+588399728*n^14*eta[2]+1014086627
+*n^14*eta[2]*k^2+194227180022*eta[2]*k^6*n+15411930*n^14*eta[0]*k^2+8427952*n^
+14*eta[0]-3690246519221*eta[2]*n^4*k^3-61218642615*n^7*eta[1]*k^7+51*n^19*eta[
+0]+3312*n^19*eta[2]+80144*n^18*eta[2]+428625947996*n^7*eta[1]*k^4+146667379*n^
+12*eta[0]+1205632*n^17*eta[2]-819*n^18*eta[0]*k+6265*n^17*eta[0]*k^2-18385*n^
+17*eta[0]*k+1216*n^18*eta[0]+3406329182280*eta[2]*n^5*k^2+12893262*n^3*k^14*
+eta[1]-255601*n^16*eta[0]*k+18024*n^17*eta[0]-20359222*n^15*eta[1]*k+n^20*eta[
+0]+64*n^20*eta[2]-17*n^19*eta[0]*k+11818111968*eta[2]*n-5945670912*eta[2]*k-\
+2093470*n^16*eta[1]*k-410174550*n^12*eta[0]*k+39249288*n^13*eta[0]-17579430*n^
+14*eta[0]*k-1182574492*n^14*eta[2]*k+509169282*n^12*eta[0]*k^2+101569413*n^13*
+eta[0]*k^2-6494533080*n^13*eta[2]*k+6707219888*n^13*eta[2]*k^2+2776468976*n^13
+*eta[2]+167744*n^16*eta[2]*k^4-186773858550*n^7*eta[1]*k-1021857*n^3*k^15*eta[
+1]+57769853575*eta[0]*n^5*k^2-68022846958*eta[0]*n^4*k^3-985248000*eta[0]*k*n+
+3780465193*eta[0]*k^6*n+46482815503*eta[0]*n^3*k^4-18259296940*eta[0]*n^2*k^5-\
+2754844456*eta[0]*n*k^7+14320987802*eta[0]*n^2*k^6-10051377030*eta[0]*n^2*k^7-\
+65873942292*eta[0]*n^4*k^5+1878168402*eta[0]*n*k^8-42021857532*eta[0]*n^3*k^5+
+32037873582*eta[0]*n^3*k^6+89803631742*eta[0]*k^4*n^5+6176878317*eta[0]*n^2*k^
+8-84636721656*eta[0]*n^5*k^3+11432888214*eta[0]*n^3*k^8-27994055292*eta[0]*n^4
+*k^7-20899863261*eta[0]*n^3*k^7-73985963259*eta[0]*n^5*k^5+47267018241*eta[0]*
+n^4*k^6+48740193051*eta[0]*n^5*k^6+75390261312*eta[0]*n^4*k^4-1113408140*eta[0
+]*n*k^9-3173883207*eta[0]*n^2*k^9-25007927842*eta[0]*k*n^5-4891162938*eta[0]*n
+*k^5+539233618*eta[0]*k^10*n-3989008560*eta[0]*k*n^2+2767492560*eta[0]*n*k^2+
+44534884506*eta[0]*n^4*k^2-17356748616*eta[0]*n^2*k^3+10628180712*eta[0]*n^2*k
+^2-40829831364*eta[0]*n^3*k^3+25826559296*eta[0]*n^3*k^2+5462421952*eta[0]*k^4
+*n+20047380556*eta[0]*k^4*n^2-4684307048*eta[0]*n*k^3-18379602772*eta[0]*n^4*k
++236168229*eta[0]*k^8-163407127*eta[0]*k^9+5068467936*eta[0]*n^5+138*n^18*eta[
+0]*k^2-619369796*eta[0]*k^5-42173393*eta[0]*k^11+447018098*eta[0]*k^6+
+681192000*eta[0]*n^2+342072000*eta[0]*k^2+1843228720*eta[0]*n^3+3523383392*eta
+[0]*n^4-317879374*eta[0]*k^7+714573592*eta[0]*k^4+93601951*eta[0]*k^10-\
+111375499*n^3*k^13*eta[1]-1088*n^19*eta[2]*k-16894972*n^16*eta[2]*k
+) then okay else % fi;
+select(has,indets(EQN),{eta,psi}):
+if %={eta[0], eta[1], eta[2], psi(k-4), psi(k-3), psi(k-2), psi(k-1), psi(k)}
+then okay else % fi;
+{seq(degree(cfs[idx],k),idx=-1..4)}:
+if %={19,20} then okay else % fi;
+for idx from 0 to 4 do fscfs[idx]:=factor(subs(k=k+idx,cfs[idx])) od:
+DENOM:=gcd(gcd(gcd(gcd(fscfs[0],fscfs[1]),fscfs[2]),fscfs[3]),fscfs[4]):
+if member(normal((1+2*n-k)*(-2*n^2-2*n-2-k+2*n*k-k^2)*(n+1-k)^3/%),{1,-1})
+then okay else % fi;
+N:=7:
+NUMER:=add(c[idx]*k^idx,idx=0..N):
+PSI:=proc(kk) global k,NUMER,DENOM; subs(k=kk,NUMER/DENOM) end:
+Z:=map(normal,eval(subs(psi=PSI,EQN))):
+Z:=numer(normal(Z)):
+SYS:={coeffs(collect(Z,k,expand),k)}:
+VAR:={seq(c[idx],idx=0..N),seq(eta[idx],idx=0..L)}:
+# The following SolveTools:-Linear is highly non-deterministic.
+# Fortunately, it turns out that there is one degree of freedom in the
+# system, from which we benefit in the following way so as to ensure
+# determinism.
+SOL:=SolveTools:-Linear(SYS union {eta[2]=n+1},VAR):
+SOL:=factor(%):
+if %={
+    eta[0] = -4-8*n,
+    eta[1] = -7*n-12,
+    eta[2] = n+1,
+    c[0] = 2*(9*n+8)*(n^2+n+2)*(n+1)^4,
+    c[1] = -2*(19*n^3+17*n^2+4*n+2)*(n+1)^3,
+    c[2] = 2*(2*n^3-7*n^2-36*n-19)*(n+1)^2,
+    c[3] = 2*(n+1)*(41*n^3+48*n^2+37*n+16),
+    c[4] = -130*n^3-184*n^2-78*n-14,
+    c[5] = 94*n^2+82*n+13,
+    c[6] = -34*n-14,
+    c[7] = 5
+} then okay else % fi;
+normal(subs(SOL,[PSI(k),seq(eta[idx],idx=0..L)])):
+# System on the middle page of page 20.
+if normal(%-
+[(32+180*n-4*k+4*k^2*n^5+106*n^6+94*k^5*n^2-38*n^6*k+13*k^5-14*k^6+82*k^3*n^4+
+5*k^7+18*n^7-130*k^4*n^3-148*n^5*k+296*n^5-20*n*k+434*n^2-38*k^2+82*n*k^5-34*k
+^6*n-70*k*n^2-148*n*k^2+32*k^3+594*n^3-224*n^4*k-96*n^3*k^2+516*n^4-14*k^4-78*
+k^4*n-184*k^4*n^2+106*n*k^3-6*n^4*k^2+178*n^3*k^3+170*n^2*k^3-196*n^2*k^2-168*
+n^3*k)/(1+2*n-k)/(2*n^2+2*n+2+k-2*n*k+k^2)/(n+1-k)^3, -8*n-4, -7*n-12, 1+n])
+= [0, 0, 0, 0]
+then okay else % fi;
+# Check these values:
+Z:=eval(subs(psi=unapply(normal(subs(SOL,PSI(k))),k),subs(SOL,EQN))):
+ZZ:=0:
+for z in Z do ZZ:=normal(ZZ+z) od:
+if %=0 then okay else % fi;
+# Iteratedly solve the system.
+val[psi]:=normal(subs(SOL,PSI(k))):
+val[phi,2]:=solve(eval(subs(psi=unapply(val[psi],k),
+    subs(SOL,EQ[2,infinity]))),phi[2](k)):
+val[phi,1]:=solve(eval(subs(
+    {psi=unapply(val[psi],k),phi[2]=unapply(val[phi,2],k)},
+    subs(SOL,EQ[1,2,infinity]))),phi[1](k)):
+val[phi,0]:=solve(eval(subs({
+    psi=unapply(val[psi],k),
+    phi[2]=unapply(val[phi,2],k),
+    phi[1]=unapply(val[phi,1],k)
+},subs(SOL,EQ[0,1,2,infinity]))),phi[0](k)):
+# Straightforward summation is allowed between 0 and n-3 only -->
+# non-homogeneous creative telescoping.
+add(phi[i](n,k)*h(n,k+i),i=0..2)+psi(n,k)*h(n+1,k):
+subs(k=n-2,%)-subs(k=0,%):
+eval(subs(h=proc(n,k) local l;
+    if type(k,integer) then
+	(add(expand(binomial(n,l)),l=0..k))^3
+    elif k-n>=0 then
+	expand((2^n)^3)
+    elif k=n-1 then
+	expand((2^n-1)^3)
+    elif k=n-2 then
+	expand((2^n-(1+n))^3)
+    elif k=n-3 then
+	expand((2^n-(1+n/2+n^2/2))^3)
+    else
+	h(n,k)
+    fi
+end,%)):
+bracket:=frontend(collect,[eval(subs({seq(phi[i]=unapply(val[phi,i],n,k),
+    i=0..2),psi=unapply(val[psi],n,k)},%)),2^n,factor]):
+if %=
+(54*n-56)*(2^n)^3+(-8*n^4-38*n^3-70*n^2-40*n+168)*(2^n)^2+(1/3*n^7+13/3*n^6+
+119/6*n^5+178/3*n^4+533/6*n^3+160/3*n^2-82*n-168)*2^n-1/216*(n+2)*(n^9+17*n^8+
+143*n^7+611*n^6+1652*n^5+3296*n^4+3136*n^3+360*n^2-4320*n-6048)
+then okay else % fi;
+# Non-homogeneous term due to variation of upper bound.
+# Calcul du terme inhomogene du a la variation de la borne superieure.
+subs(SOL,add(eta[i]*add(h(n+i,n+j),j=-2..i),i=0..2)):
+eval(subs(h=proc(n,k) local l;
+    if type(k,integer) then
+	add(expand(binomial(n,l)),l=0..k)^3
+    elif k-n>=0 then
+	expand((2^n)^3)
+    elif k=n-1 then
+	expand((2^n-1)^3)
+    elif k=n-2 then
+	expand((2^n-(1+n))^3)
+    elif k=n-3 then
+	expand((2^n-(1+n/2+n^2/2))^3)
+    elif k=n-4 then
+	expand((2^n-(1+5*n/6+n^3/6))^3)
+    else
+	h(n,k)
+    fi
+end,%)):
+var_upper_bound:=frontend(collect,[%,2^n,factor]):
+if %=
+(72*n-76)*(2^n)^3+(-8*n^4-38*n^3-70*n^2-40*n+168)*(2^n)^2+(1/3*n^7+13/3*n^6+
+119/6*n^5+178/3*n^4+533/6*n^3+160/3*n^2-82*n-168)*2^n-1/216*(n+2)*(n^9+17*n^8+
+143*n^7+611*n^6+1652*n^5+3296*n^4+3136*n^3+360*n^2-4320*n-6048)
+then okay else % fi;
+# Global non-homogeneous term.
+nonhom:=frontend(collect,[bracket-var_upper_bound,2^n,factor]):
+if %=(-18*n+20)*(2^n)^3 then okay else % fi;
+# Final recurrence equation satisfied by the sum.
+REC_H:=subs(SOL,add(eta[i]*H(n+i),i=0..2))+subs((2^n)^3=8^n,nonhom):
+if cmp(expand(%),
+expand(-4*(2*n+1)*H(n)-(7*n+12)*H(1+n)+(1+n)*H(n+2)+(-18*n+20)*8^n))
+then okay else % fi;
+# LREtools[hypergeomsols] does not but should solve this LORE by a
+# complete implementation of Petkovsek's algorithm.
+
+# Section 3.1.  Addition, Product...
+
+A:=skew_algebra(diff=[Dx,x],diff=[Dy,y],comm={mu,nu}):
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+GL[f]:=Basis([Dx-mu,Dy-nu],T):
+GL[g]:=Basis([x^2*Dx^2+x*Dx+x^2-mu^2,y^2*Dy^2+y*Dy+y^2-nu^2],T):
+collect(dfinite_add([[GL[f],T],[GL[g],T]],T),{Dx,Dy},distributed,factor):
+# For some reason, dfinite_add no longer returns a Groebner basis.
+Basis(%, T) :
+if cmp_cfs_list(%, collect(
+[-y^2*nu^2*mu^2+y^2*nu^2*x^2-x*mu*y^2-x^2*mu^2*y^2+x*nu^2*mu+x^2*mu^2*nu^2+y*
+nu*x^2-y*nu*mu^2+x*(-nu^2+y^2+y^2*nu^2+y*nu)*Dx-y*(x^2*mu^2+x*mu-mu^2+x^2)*Dy-
+y^2*(x^2*mu^2+x*mu-mu^2+x^2)*Dy^2+x^2*(-nu^2+y^2+y^2*nu^2+y*nu)*Dx^2, -nu*(-y^
+2*nu^4-y^2+y^4*nu^2-nu^2+nu^4+y^3*nu-2*y^2*nu^2+y^4-3*nu^3*y)+(-nu^2+y^4*nu^2-
+y^2*nu^4+y^4-y^3*nu^3-y^2+nu^4-4*y^2*nu^2)*Dy-y*(-nu^3*y+y^3*nu^3-2*y*nu+y^3*
+nu-y^2+3*nu^2)*Dy^2+y^2*(-nu^2+y^2+y^2*nu^2+y*nu)*Dy^3, -mu*(y-nu)*(y+nu)+(y-
+nu)*(y+nu)*Dx-mu*y*Dy+Dx*y^2*Dy^2-mu*y^2*Dy^2+Dx*y*Dy],
+{Dx,Dy}, distributed, factor), {Dx, Dy}) then okay else % fi;
+
+# Section 3.2.  Indefinite Summation and Integration by Groebner Bases
+
+f:=1/(1+x*y+y^2)^2:
+A:=diff_algebra([Dx,x],[Dy,y]):
+G:=hypergeom_to_dfinite(f,A):
+# `BUG: IN THE PAPER, 2x+2y INSTEAD of 2x+4y!`;
+p[x]:=op(select(has,G,Dx)):
+p[y]:=op(select(has,G,Dy)):
+A:=diff_algebra([Dx,x],[Dy,y],polynom=y):
+T:=MonomialOrder(A,lexdeg([y],[Dx,Dy])):
+GB:=Basis(G,T):
+P:=op(remove(has,GB,y)):
+if %=4*Dx*x^2+4*x*Dx*Dy-Dy*x^3*Dx-2*Dy*x^2-4*x*Dx^2+x^3*Dx^2-Dy^2*x+4*Dx-2*Dy
+then okay else % fi;
+BB:=collect(coeff(P,Dy,0),Dx,factor):
+AA:=collect(normal((P-BB)/Dy),{Dx,Dy},factor):
+A:=diff_algebra([Dx,x],[Dy,y],comm={t,u,v,w},polynom={t,u,v,w}):
+T:=MonomialOrder(A,lexdeg([t],[Dx,Dy],[u,v,w]),[t,u,v,w]):
+GB:=Basis({u-t*AA,v-t*p[x],w-t*p[y]},T):
+new:=collect(map(primpart,map(skew_product,map(coeff,remove(has,GB,t),u,1),
+    BB,A),{Dx,Dy}),{Dx,Dy},distributed,factor):
+if %=
+[4*y*(1+x^2)*(x^3*y+4*y^2*x^2+4*x^2+16*x*y+4*y^2+4)*Dx+x*y*(x-2)*(x+2)*(x^3*y+
+4*y^2*x^2+4*x^2+16*x*y+4*y^2+4)*Dx^2+4*(1+x^2)*(1+x*y+y^2)*(y^2*x^2+1+3*x*y+y^
+2)*Dy*Dx+x*(x-2)*(x+2)*(1+x*y+y^2)*(y^2*x^2+1+3*x*y+y^2)*Dy*Dx^2, 0, (12*y^3*x
+^3+48*y^2*x^2+36*x*y^3+32*x*y+32*y^2+8)*Dx+x*(8*y^3*x^3+5*y^4*x^2+32*y^2*x^2+
+24*x*y^3+28*x*y+15*y^4-2*y^2+7)*Dx^2+(x-2)*(x+2)*(1+x*y+y^2)*(y^2*x^2+1+3*x*y+
+y^2)*Dx^3]
+then okay else % fi;
+A:=diff_algebra([Dx,x],[Dy,y]):
+T:=MonomialOrder(A,tdeg(Dx,Dy)):
+GB:=Basis({op(new),p[x]*Dy,p[y]*Dy},T):
+collect(GB,{Dx,Dy},distributed,factor):
+if %=
+[(4*y+2*x)*Dy+(1+x*y+y^2)*Dy^2, 2*y*Dy+(1+x*y+y^2)*Dx*Dy, 4*(x^2+1)*(1+x*y+y^2
+)*Dx+(-6*x*y-2-2*y^2-2*y^2*x^2)*Dy+x*(x-2)*(x+2)*(1+x*y+y^2)*Dx^2]
+then okay else % fi;

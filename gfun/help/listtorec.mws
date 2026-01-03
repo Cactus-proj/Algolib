@@ -1,0 +1,99 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 15 "gfun[listtorec]" }
+{TEXT 30 38 " - find a recurrence for the elements " }
+}
+{PARA 3 "> " 0 "" {TEXT -1 17 "gfun[seriestorec]" }
+{TEXT 30 53 " - find a recurrence for the coefficients of a series" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 15 "     listtorec(" }
+{TEXT 35 1 "l" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "u(n)" }
+{TEXT -1 2 ", " }
+{TEXT 35 12 "<[typelist]>" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 17 "     seriestorec(" }
+{TEXT 35 1 "s" }
+{TEXT -1 8 ", u(n), " }
+{TEXT 35 11 "<[typelist]" }
+{TEXT -1 2 ") " }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "l          - " }
+{TEXT -1 6 "a list" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "s          - " }
+{TEXT -1 8 "a series" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "u(n)       - " }
+{TEXT -1 37 "the unknown function and its variable" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "[typelist] - " }
+{TEXT -1 46 "(optional) a list of generating function types" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 15 "The procedures " }
+{TEXT 35 9 "listtorec" }
+{TEXT -1 5 " and " }
+{TEXT 35 11 "seriestorec" }
+{TEXT -1 90 " compute a linear recurrence with polynomial coefficients satisfied by the expressions in " }
+{TEXT 35 1 "l" }
+{TEXT -1 4 " or " }
+{TEXT 35 1 "s" }
+{TEXT -1 36 ", with a normalization specified by " }
+{TEXT 35 8 "typelist" }
+{TEXT -1 93 ".f or example, ordinary (ogf) or exponential (egf). For a full list of available choices see " }
+{HYPERLNK 17 "gftypes" 2 "gfun[gftypes]" "" }{TEXT -1 3 "). " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 8 "typelist" }
+{TEXT -1 65 " contains more than one element, these types are tried in order. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 8 "typelist" }
+{TEXT -1 30 " is not provided, the default " }
+{TEXT 35 9 "optionsgf" }
+{TEXT -1 1 "=" }
+{TEXT 35 13 "['ogf','egf']" }
+{TEXT -1 176 " is used. The output is a list whose first element is a set containing the recurrence and its initial conditions, and whose second element is the type to which it corresponds. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 54 "One should give as many terms as possible in the list " }
+{TEXT 35 1 "l" }
+{TEXT -1 15 " or the series " }
+{TEXT 35 1 "s" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 96 "with(gfun):\nl:=[1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786]:\nrec:=listtorec(l,u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%$recG7$<$,&*&,&%\"nG!\"%!\"#\"\"\"F--%\"uG6#F*F-F-*&,&F*F-\"\"#F-
+F--F/6#,&F*F-F-F-F-F-/-F/6#\"\"!F-%$ogfG
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "rsolve(op(1,rec),u(n));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#**)\"\"%%\"nG\"\"\"-%&GAMMAG6#,&F&F'#F'\"\"#F'F'%#PiG#!\"\"F--F)6#,&
+F&F'F-F'F0
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 87 "rec2:=seriestorec(series(add(l[i]*x^(i-1)*(i-1)!, i=1..nops(l)),x, 12), u(n), ['egf']);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#>%%rec2G7$<$,&*&,&%\"nG!\"%!\"#\"\"\"F--%\"uG6#F*F-F-*&,&F*F-\"\"#F
+-F--F/6#,&F*F-F-F-F-F-/-F/6#\"\"!F-%$egfG
+"}}}{EXCHG }
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 "  " }
+}
+}}

@@ -1,0 +1,520 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 1 18 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 1 18 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+260 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 
+0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 
+0 }{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 
+264 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 
+0 1 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "T
+ext Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 0 0 0 0 
+0 1 3 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 0 0 
+0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 0 0 0 0 -1 0 }{PSTYLE "" 2 6 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 }0 0 0 -1 -1 -1 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 
+11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 1 16 0 0 0 0 0 1 0 0 0 0 0 0 0 
+}3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 259 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 256 "" 0 "" {TEXT 259 30 "A SEATING ARRANGEMENT P
+ROBLEM\n" }}{PARA 257 "" 0 "" {TEXT 260 17 "Philippe Flajolet" }}
+{PARA 258 "" 0 "" {TEXT -1 29 "(Version of January 15, 1997)" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 10 "There are
+ " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 189 " seats in a row at a l
+uncheonette, and people sit down one at a time at random. They are unf
+riendly and so never sit next to one another. What is the expected num
+ber of persons to sit down?" }}{PARA 0 "" 0 "" {TEXT -1 106 "The origi
+nal problem is due to Freedmann and Shepp, and it appeared as Problem \+
+62-3 in the 1962 volume of " }{TEXT 256 11 "SIAM Review" }{TEXT -1 
+247 ". There are various alternative formulations. One of them involve
+s fatmen that need more than one stool to sit on. Another one is a sim
+plified description of channel occupation for mobile telephones due to
+ the Math. Center at Bell Labs: there are " }{XPPEDIT 18 0 "n" "I\"nG6
+\"" }{TEXT -1 311 " consecutive radio channels and stations arrive at \+
+random and try to grab a free channel; because of possible interferenc
+es, no station occupies a channel next to an already occupied one. Wha
+t is the expected proportion of occupied channels?\nClearly, the numbe
+r of occupied seats/channels lie somewhere between " }{XPPEDIT 18 0 "n
+/3" "*&%\"nG\"\"\"\"\"$!\"\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "n/2
+" "*&%\"nG\"\"\"\"\"#!\"\"" }{TEXT -1 99 ". This worksheet explores th
+e way the solution to this and similar problems may be found using the
+ " }{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT -1 116 " package. The commo
+n schema explored here is: (1) write down an immediate specification o
+f the problem; (2) use the " }{HYPERLNK 17 "gfun[listtorec]" 2 "gfun[l
+isttorec]" "" }{TEXT -1 144 " procedure to guess the right differentia
+l equation; (3) exploit the results using Maple capabilities for integ
+ration and asymptotic expansion. " }}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 
+15 "Basic equations" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 4 "Let " }
+{XPPEDIT 18 0 "g(n)" "-%\"gG6#%\"nG" }{TEXT -1 8 " be the " }{TEXT 
+258 31 "probability generating function" }{TEXT -1 53 " (PGF) of the n
+umber of occupied seats when they are " }{XPPEDIT 18 0 "n" "I\"nG6\"" 
+}{TEXT -1 52 " seats. In the Maple code below, we take implicitly " }
+{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 77 " as the generating variable
+. If the first individual to arrive occupies seat " }{XPPEDIT 18 0 "K
+" "I\"KG6\"" }{TEXT -1 78 ", then the number of occupied seats is 1 pl
+us the number of occupied seats in " }{XPPEDIT 18 0 "[1..K-2]" "7#;\"
+\"\",&%\"KG\"\"\"\"\"#!\"\"" }{TEXT -1 38 " plus the number of occupie
+d seats in " }{XPPEDIT 18 0 "[K+2..n]" "7#;,&%\"KG\"\"\"\"\"#F&%\"nG" 
+}{TEXT -1 11 ", as seats " }{XPPEDIT 18 0 "K-1" ",&%\"KG\"\"\"\"\"\"!
+\"\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "K+1" ",&%\"KG\"\"\"\"\"\"F$
+" }{TEXT -1 51 " have become unavailable. The subproblems of sizes " }
+{XPPEDIT 18 0 "K-2" ",&%\"KG\"\"\"\"\"#!\"\"" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "n-K-1" ",(%\"nG\"\"\"%\"KG!\"\"\"\"\"F&" }{TEXT -1 56 "
+ are of a similar nature. By the randomness assumption, " }{XPPEDIT 
+18 0 "K" "I\"KG6\"" }{TEXT -1 21 " takes each value in " }{XPPEDIT 18 
+0 "[1..n]" "7#;\"\"\"%\"nG" }{TEXT -1 32 " with equal probability, nam
+ely " }{XPPEDIT 18 0 "1/n" "*&\"\"\"\"\"\"%\"nG!\"\"" }{TEXT -1 55 ". \+
+ This gives rise to a recurrence on random variables " }{XPPEDIT 18 0 
+"L[n]" "&%\"LG6#%\"nG" }{TEXT -1 59 " (the number of occupied seats) a
+nd on generating functions" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 95 "L[n]=
+1+L[K-2]+L[n-K-1], Pr(K=k)=1/n;g(n)=u/n*Sum(g(k-2)*g(n-k-1),k=1..n),g(
+-1)=1,g(0)=1,g(1)=u;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$/&%\"LG6#%\"nG
+,(\"\"\"F)&F%6#,&%\"KGF)!\"#F)F)&F%6#,(F'F)F-!\"\"F2F)F)/-%#PrG6#/F-%
+\"kG*$F'F2" }}{PARA 11 "" 1 "" {XPPMATH 20 "6&/-%\"gG6#%\"nG*(%\"uG\"
+\"\"F'!\"\"-%$SumG6$*&-F%6#,&%\"kGF*!\"#F*F*-F%6#,(F'F*F3F+F+F*F*/F3;F
+*F'F*/-F%6#F+F*/-F%6#\"\"!F*/-F%6#F*F)" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 31 "This recurrence determines the " }{XPPEDIT 18 0 "g(n)" "-
+%\"gG6#%\"nG" }{TEXT -1 60 " explicitly and  is implemented by the fol
+lowing Maple code:" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 152 "g:=proc(n) l
+ocal k; option remember;\n    if n<=0 then 1 elif n=1 then u else\n   \+
+     expand(u/n*convert([seq(g(k-2)*g(n-k-1),k=1..n)],`+`));\n    fi\n
+end:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 21 "seq([j,g(j)],j=0..5
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6(7$\"\"!\"\"\"7$F%%\"uG7$\"\"#F'7
+$\"\"$,&*$F'F)#F)F+F'#F%F+7$\"\"%F-7$\"\"&,&*$F'F+#\"\"(\"#:F-#\"\")F8
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "For instance, when " }
+{XPPEDIT 18 0 "n=3" "/%\"nG\"\"$" }{TEXT -1 23 ", there is probability
+ " }{XPPEDIT 18 0 "1/3" "*&\"\"\"\"\"\"\"\"$!\"\"" }{TEXT -1 107 " tha
+t just one seat is occupied: this occurs only if the first person that
+ arrives chooses the middle seat." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+54 "We then get the moments by successive differentiation." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "subs(u=1,diff([seq(g(j),j=0..20)],u
+));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#77\"\"!\"\"\"F%#\"\"&\"\"$\"\"#
+#\"#P\"#:#\"#E\"\"*#\"$\\$\"$0\"#\"$p\"\"#X#\"&t=\"\"%NG#\"%xs\"%v:#\"
+'nv:\"&&=J#\"'\\KB\"&DD%#\")^X*>\"\"(Dq-##\")`9z?\"(DWF$#\"*fhi='\")Dh
+@\"*#\"*Eb42$\")DvcU#\"+J]lXv\"*DEz')*#\",)*>zEk%\"+vehYd#\".*[d+Pb<\"
+-D'e'Ri?#\".-)yMjoV\"-v$\\BY)[" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 49 "evalf(subs(u=1,diff([seq(g(j)/j,j=1..40)],u)),5);" }}{PARA 12 
+"" 1 "" {XPPMATH 20 "6#7J$\"\"\"\"\"!$\"&++&!\"&$\"&cb&F)F'$\"&L$\\F)$
+\"&[\"[F)$\"&$[ZF)$\"&Wp%F)$\"&Ll%F)$\"&.i%F)$\"&Lf%F)$\"&3d%F)$\"&=b%
+F)$\"&b`%F)$\"&8_%F)$\"&*3XF)$\"&!)\\%F)$\"&$)[%F)$\"&'zWF)$\"&=Z%F)$
+\"&[Y%F)$\"&$eWF)$\"&DX%F)$\"&rW%F)$\"&@W%F)$\"&wV%F)$\"&LV%F)$\"&%HWF
+)$\"&dU%F)$\"&BU%F)$\"&\">WF)$\"&hT%F)$\"&LT%F)$\"&2T%F)$\"&#3WF)$\"&e
+S%F)$\"&OS%F)$\"&:S%F)$\"&&*R%F)$\"&wR%F)" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 60 "This suggests that the mean occupation ration could be, f
+or " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 60 " large, asymptotic to
+ a constant with approximate value 44%." }}}}{SECT 1 {PARA 3 "" 0 "" 
+{TEXT -1 24 "The mean occupancy ratio" }}{PARA 0 "" 0 "" {TEXT -1 226 
+"The easiest is to try a heuristic approach. As the recurrences for mo
+ments are linear, it is reasonable to expect them to be of the holonom
+ic type. We thus compute a few dozen initial values and try to guess a
+ recurrence with " }{HYPERLNK 17 "gfun[listtorec]" 2 "gfun[listtorec]
+" "" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "with(
+gfun);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7T%(LaplaceG%.algebraicsubsG
+%.algeqtodiffeqG%.algeqtoseriesG%.algfuntoalgeqG%&borelG%.cauchyproduc
+tG%.diffeq*diffeqG%.diffeq+diffeqG%,diffeqtorecG%)guesseqnG%(guessgfG%
+0hadamardproductG%0holexprtodiffeqG%)invborelG%,listtoalgeqG%-listtodi
+ffeqG%0listtohypergeomG%+listtolistG%.listtoratpolyG%*listtorecG%-list
+toseriesG%5listtoseries/LaplaceG%1listtoseries/egfG%4listtoseries/lgde
+gfG%4listtoseries/lgdogfG%1listtoseries/ogfG%4listtoseries/revegfG%4li
+sttoseries/revogfG%,maxdegcoeffG%*maxdegeqnG%,maxordereqnG%,mindegcoef
+fG%*mindegeqnG%,minordereqnG%*optionsgfG%,poltodiffeqG%)poltorecG%/rat
+polytocoeffG%(rec*recG%(rec+recG%,rectodiffeqG%*rectoprocG%.seriestoal
+geqG%/seriestodiffeqG%2seriestohypergeomG%-seriestolistG%0seriestoratp
+olyG%,seriestorecG%/seriestoseriesG" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 59 "rec:=listtorec(subs(u=1,diff([seq(g(j),j=0..25)],u)),
+u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$recG7$<&,*-%\"uG6#%\"nG!
+\"#*&,&F+!\"\"\"\"\"F0F0-F)6#,&F+F0F0F0F0F0*&,&F+\"\"#\"\"%F0F0-F)6#,&
+F+F0F6F0F0F0*&,&F+F/!\"$F0F0-F)6#,&F+F0\"\"$F0F0F0/-F)6#\"\"!FE/-F)6#F
+0F0/-F)6#F6F0%$ogfG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 67 "The recurr
+ence transforms into a differential equation by means of " }{HYPERLNK 
+17 "gfun[rectodiffeq]" 2 "gfun[rectodiffeq]" "" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 38 "ode:=rectodiffeq(op(1,rec),u(n),Y(z));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%$odeG<$,(*&,&*$%\"zG\"\"#F+F*!\"#\"\"\"-%\"YG6
+#F*F-F-*&,(F)F-F*F,F-F-F--%%diffG6$F.F*F-F-!\"\"F-/-F/6#\"\"!F:" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 149 "Now, we are sure of the existence
+ of a closed form for the generating function of averages, since any O
+DE of order 1 is solvable by quadratures. The " }{HYPERLNK 17 "dsolve
+" 2 "dsolve" "" }{TEXT -1 31 " command of Maple does the job:" }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "M1_z:=factor(op(2,dsolve(ode,Y(z)))
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%M1_zG,$*(,&-%$expG6#,$%\"zG\"
+\"#\"\"\"!\"\"F.F.-F)6#,$F,!\"#F.,&F/F.F,F.F3#F.F-" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 43 "We can check consistency with known values " }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "series(M1_z,z=0,30);" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6#+in%\"zG\"\"\"\"\"\"F%\"\"##\"\"&\"\"$\"\"$\"\"#
+\"\"%#\"#P\"#:\"\"&#\"#E\"\"*\"\"'#\"$\\$\"$0\"\"\"(#\"$p\"\"#X\"\")#
+\"&t=\"\"%NG\"\"*#\"%xs\"%v:\"#5#\"'nv:\"&&=J\"#6#\"'\\KB\"&DD%\"#7#\"
+)^X*>\"\"(Dq-#\"#8#\")`9z?\"(DWF$\"#9#\"*fhi='\")Dh@\"*\"#:#\"*Eb42$\"
+)DvcU\"#;#\"+J]lXv\"*DEz')*\"#<#\",)*>zEk%\"+vehYd\"#=#\".*[d+Pb<\"-D'
+e'Ri?\"#>#\".-)yMjoV\"-v$\\BY)[\"#?#\"0z8Ni*oaO\"/D,[&Hz*Q\"#@#\"1[ZHM
+oJ,5\"0v$>5j)3-\"\"#A#\"2JQHTJ*[!f%\"1vV@!)*=E[%\"#B#\"2/Bv0T7W'o\"1D1
+AaPeJk\"#C#\"5VjC\\LHN(*o8\"4DJ&*e&>-sK7\"#D#\"5%p4(Hw+\"Q(=A\"4vo'>^U
+N/B>\"#E#\"5\\*=v*e58iIq\"4DJ&zU\"G\\N(e\"#F#\"6;p\"*4)[`]M%z$\"5v$4J'
+*RX(QfI\"#G#\"9\"H7BY)QQHfTJ[\"8D\"y:vrYMxNkP\"#H-%\"OG6#F%\"#I" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 144 "We can be also quite sure that th
+e process makes sense if we compare as well  with values that haven't \+
+been used at all in the \"guessing\" phase:" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 39 "subs(u=1,diff([seq(g(j),j=26..29)],u));" }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7&#\"5%p4(Hw+\"
+Q(=A\"4vo'>^UN/B>#\"5\\*=v*e58iIq\"4DJ&zU\"G\\N(e#\"6;p\"*4)[`]M%z$\"5
+v$4J'*RX(QfI#\"9\"H7BY)QQHfTJ[\"8D\"y:vrYMxNkP" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 75 "The generating function of expectations is meromorph
+ic with only a pole at " }{XPPEDIT 18 0 "z=1" "/%\"zG\"\"\"" }{TEXT 
+-1 124 ". In order to analyse the coefficients of the explicit solutio
+n found, we examine the singular expansion at the double pole " }
+{XPPEDIT 18 0 "z=1" "/%\"zG\"\"\"" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 31 "map(normal,series(M1_z,z=1,4));" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#+-,&!\"\"\"\"\"%\"zGF&,$*&,&-%$expG6#\"\"#F&F%F
+&F&-F,6#!\"#F&#F&F.!\"#F/!\"\",$F/F%\"\"!,$F/#F.\"\"$\"\"\"-%\"OG6#F&
+\"\"#" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 168 "By the principles of si
+ngularity analysis, it is enough to expand the singular part. This sho
+ws that the mean number of occupied seats satisfies the approximate fo
+rmula" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 74 "m1:=1/2*(1-exp(-2)
+)*(n+1)-exp(-2); evalf(m1,20); C1:=evalf(coeff(m1,n,1)):" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%#m1G,&*&,&\"\"\"F(-%$expG6#!\"#!\"\"F(,&%\"nGF
+(F(F(F(#F(\"\"#F)F-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&%\"nG$\"51aOp
+\"QeBLK%!#?$\"5<i43X^2(*pHF'\"\"\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 68 "The asymptotic approximation is in fact extremely good and is a
+bout " }{XPPEDIT 18 0 "10^(-26)" ")\"#5,$\"#E!\"\"" }{TEXT -1 5 " for \+
+" }{XPPEDIT 18 0 "n=30" "/%\"nG\"#I" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 
+78 "for j from 0 to 30 by 5 do j,evalf(subs(u=1,diff(g(j),u))-subs(n=j
+,m1),30) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"!$!?Uvv+!f@'43X^2(
+*pH!#I" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"&$\"=blkkECMu68'*z2!)!#I
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#5$!:lB#eoG_=dXk)>$!#I" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"#:$\"5)o,*3rNG-!\\\"!#H" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6$\"#?$!0!*Rs'G#zd\"!#H" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6$\"#D$\"*UAiO&!#H" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#I$!$E(!#H
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 77 "In particular the constant fo
+und empirically to be close to 0.44 is precisely" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 42 "1/2*(1-exp(-2))=evalf(1/2*(1-exp(-2)),30);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#/,&#\"\"\"\"\"#F&-%$expG6#!\"##!\"\"F
+'$\"?9DD+I0aOp\"QeBLK%!#I" }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 23 "Di
+stributional analysis" }}{PARA 0 "" 0 "" {TEXT -1 217 "Whenever possib
+le in analysis of algorithms, one should try to determine how characte
+ristic the average case is. We show now that the standard deviation of
+ the distribution of the number of occupied seats/channels is " }
+{XPPEDIT 18 0 "O(sqrt(n))" "-%\"OG6#-%%sqrtG6#%\"nG" }{TEXT -1 67 ". B
+y the Markov-Chebyshev inequalities, this means that, for large " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 73 ", almost all configurations
+ must be close to the average predicted value." }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 84 "First, we have acc
+ess to the second (factorial) moments by a double differentiation." }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 44 "l2:=subs(u=1,diff([seq(g(j)
+,j=0..25)],u,u));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#l2G7<\"\"!F&F&
+#\"\"%\"\"$\"\"##\"#e\"#:#\"#]\"\"*#\"$y#\"#N#\"$e\"F-#\"&%\\Q\"%NG#\"
+&;n#\"%v:#\"')eY'\"&&=J#\"'e:@\"%0&)#\"'Qc%*\"&v@$#\")#\\:u$\"(v94\"#
+\"+C$epg$\")Dh@\"*#\"*'3VZF\"(v53'#\"-e!)ficb\",v)=Z&3\"#\",%HCH<m\"+v
+JK\\6#\"-)R,!\\X))\",v0J\\P\"#\"/esA8ij6\"-DJy?G;#\"/%Hn,`E:#\"-ve[#es
+##\"1AFO0Nlm))\"0v$>5j)3-\"#\"3AT#)\\]IDjU\"1vV@!)*=E[%#\"2M*pCDC@lg\"
+0v=?K%*o%e#\"4A08(>CQn<m\"2D19OG'4qe" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 13 "The function " }{HYPERLNK 17 "gfun[listtorec]" 2 "gfun[listtore
+c]" "" }{TEXT -1 114 " aims at detecting (\"guessing\") plausible line
+ar recurrences with polynomial coefficients. It uses two parameters " 
+}{HYPERLNK 17 "gfun[maxordereqn]" 2 "gfun[parameters]" "" }{TEXT -1 2 
+", " }{HYPERLNK 17 "gfun[maxdegcoeff]" 2 "gfun[parameters]" "" }{TEXT 
+-1 106 ", with default values 3 and 4 respectively, so that it is tune
+d for quick discovery of simple recurrences." }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 65 "gfun['maxordereqn'],gfun['maxdegcoeff'];\nrec:=listto
+rec(l2,u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$\"\"%" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%$recG%%FAILG" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 52 "The control parameters can be set to higher values. " }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "gfun['maxordereqn']:=8; gfun['maxde
+gcoeff']:=6;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%%gfunG6#%,maxordere
+qnG\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%%gfunG6#%,maxdegcoeffG
+\"\"'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 64 "We can now determine the
+ right recurrence (we need more values):" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 44 "l2:=subs(u=1,diff([seq(g(j),j=0..55)],u,u)):" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "rec2:=listtorec(l2,u(n));" }
+}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%rec2G7$<*,2*&,&\"#[\"\"\"%\"nG\"#C
+F+-%\"uG6#F,F+F+*&,(!#KF+F,\"#A*$F,\"\"#\"#=F+-F/6#,&F,F+F+F+F+F+*&,*
+\"#GF+F,!#hF5!#=*$F,\"\"$FAF+-F/6#,&F,F+F6F+F+F+*&,*!#7F+F,\"#8F5F?F@!
+\"(F+-F/6#,&F,F+FAF+F+F+*&,*!$_#F+F,!#()F5\"#9F@\"\"&F+-F/6#,&F,F+\"\"
+%F+F+F+*&,*\"#?F+F,!#TF5!#CF@!\"$F+-F/6#,&F,F+FRF+F+F+*&,*\"$![F+F,\"$
+'HF5\"#gF@FVF+-F/6#,&F,F+\"\"'F+F+F+*&,*!$!GF+F,!$m\"F5F3F@!\"#F+-F/6#
+,&F,F+\"\"(F+F+F+/-F/6#FR#\"#e\"#:/-F/6#Fbo#\"#]\"\"*/-F/6#\"\"!F[q/-F
+/6#F+F[q/-F/6#F6F[q/-F/6#FA#FVFA/-F/6#FVF6%$ogfG" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 218 "The recurrence is of order 7. The generating func
+tion satisfies a differential equation of order 3 with coefficients of
+ degree 7 (!!). It is rather remarkable that the dsolve command of Map
+le can solve this explicitly." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "od
+e2:=rectodiffeq(op(1,rec2),u(n),Y(z));" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%%ode2G<*/-%\"YG6#\"\"!F*/--%\"DG6#F(F)F*/---%#@@G6$F.\"\"$F/F)
+\"\")/---F46$F.\"\"'F/F)\"%+S/---F46$F.\"\"%F/F)\"#[/---F46$F.\"\"#F/F
+)F*/---F46$F.\"\"&F/F)\"$k%,**&,**$%\"zGF=!%S9*$FWFQ\"%!3\"*$FWFD!%?;*
+$FWF6\"$?(\"\"\"-F(6#FWFinFin*&,.FY!$?%FV!$?\"*$FW\"\"(!$?(*$FWFK\"$S#
+Fen\"$+*\"$?\"FinFin-%%diffG6$FjnFWFinFin*&,.F`o!$S&FV\"$5)FYFboFen\"$
+I*Fgn!$g$FWF_oFin-Fho6$FgoFWFinFin*&,.F`o!#!*FV\"$5#FY!$]\"Fen\"#!*Fgn
+F_oFco\"#gFin-Fho6$F`pFWFinFin" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 94 
+"Note that a simple rational solution is detected by dsolve. This enta
+ils a reduction of order," }}{PARA 0 "" 0 "" {TEXT -1 92 "and a comple
+te algorithm exists for order 2 (in fact that Maple succeeds in bypass
+ing here)." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "infolevel[dsolve]:=5:
+ M2_z:=factor(op(2,dsolve(ode2,Y(z))));" }}{PARA 6 "" 1 "" {TEXT -1 
+421 "dsolve/diffeq/polylinearODE:   checking Euler equation\ndsolve/di
+ffeq/expsols:   trying exponential solutions\ndsolve/diffeq/expsols:  \+
+ rational solutions partially successful. Result(s)=   (1-3*z)/(-1+z)^
+3\ndsolve/diffeq/expsols_solvericcati:   all solutions by polynomial p
+art\ndsolve/diffeq/expsols:   expon. solutions partially successful. R
+esult(s) =   exp(Int((-2*z^2+z-2)/(z^2-z),z)), exp(Int((-4*z^2-2*z)/(-
+1+z^2),z))" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%M2_zG,$*&,,\"\"\"F(%
+\"zG!\"$*&-%$expG6#,$F)!\"#F(F)\"\"#\"\"%-F-6#,$F)!\"%!\"\"*&F3F(F)F(F
+7F(,&F7F(F)F(F*#F(F2" }}}{PARA 0 "" 0 "" {TEXT -1 22 " The singular pa
+rt at " }{XPPEDIT 18 0 "z=1" "/%\"zG\"\"\"" }{TEXT -1 66 " is analysed
+. For the variance this leads to approximate formulae." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "Moment2_sing:=map(simplify,series(M
+2_z+M1_z,z=1,3));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%-Moment2_singG+
++,&!\"\"\"\"\"%\"zGF(,(#F'\"\"#F(-%$expG6#!\"%F+-F.6#!\"#F(!\"$,$*&,(!
+\"(F(-F.6#\"\"%F(-F.6#F,F,F(F-F(#F'F;!\"#,$F-!\"$!\"\"-%\"OG6#F(\"\"!
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 138 "var_n_asympt:=factor(c
+ollect(expand(convert([seq((-1)^j*coeff(Moment2_sing,z-1,j)*binomial(n
+-j-1,-j-1),j=-3..-1)],`+`)-m1^2),n,simplify));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%-var_n_asymptG*&-%$expG6#!\"%\"\"\",&%\"nGF*\"\"$F*F*
+" }}}{PARA 0 "" 0 "" {TEXT -1 45 "Again, the approximations are extrem
+ely good:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "evalf(var_n_asy
+mpt,30);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&%\"nG$\"?KF@!=PH!=M()))Q
+cJ=!#J$\"?'>Q1a6)3a-im;p%\\&F'\"\"\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 103 "evalf(subs(n=50,var_n_asympt),30); evalf(subs(u=1,(d
+iff(g(50),u,u)+diff(g(50),u)-diff(g(50),u)^2)),30);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#$\"?![F^0nbb6H5h)G2(*!#I" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"?#[F^0nbb6H5h)G2(*!#I" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 30 "We have in passing obtained a " }{TEXT 262 7 "Theorem" }
+{TEXT -1 2 ". " }{TEXT 263 91 "In the random seating problem, the vari
+ance of the number of occupied seats when there are " }{XPPEDIT 264 0 
+"n" "I\"nG6\"" }{TEXT 265 24 " seats is  asymptotic to" }}{PARA 259 "
+" 0 "" {XPPEDIT 18 0 "(n+3)/exp(4)=.0183156388887341802937180212732*n+
+.054946916666202540881154063820" "/*&,&%\"nG\"\"\"\"\"$F&F&-%$expG6#\"
+\"%!\"\",&*&$\"?KF@!=PH!=M()))QcJ=!#JF&F%F&F&$\">?Q1a6)3a-im;p%\\&!#IF
+&" }{TEXT -1 0 "" }{TEXT -1 1 "." }}}{PARA 0 "" 0 "" {TEXT -1 153 "Thi
+s result seems to be new (!). Convergence is extremely fast so that th
+is formula is highly accurate. The standard deviation is found to be o
+nly about " }{XPPEDIT 18 0 "sqrt(n)/7" "*&-%%sqrtG6#%\"nG\"\"\"\"\"(!
+\"\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT 261 12 "Distribution" }{TEXT -1 17 ". A mean that is " }
+{XPPEDIT 18 0 "O(n)" "-%\"OG6#%\"nG" }{TEXT -1 34 " and a standard dev
+iation that is " }{XPPEDIT 18 0 "O(sqrt(n))" "-%\"OG6#-%%sqrtG6#%\"nG
+" }{TEXT -1 192 " entail that the distribution is concentrated around \+
+its mean with high probability. This also suggests that the distributi
+ons of the number of occupied seats could be asymptotically Gaussian.
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 110 "distr:=sort(map(proc(e)
+ [op([2,2],e),op(1,e)] end,[op(evalf(g(60),4))]),proc(x,y) evalb(op(1,
+x)<op(1,y)) end):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "linalg
+[transpose](matrix(distr));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%'MATR
+IXG6#7$7-\"#?\"#@\"#A\"#B\"#C\"#D\"#E\"#F\"#G\"#H\"#I7-$\"%oG!#8$\"%T'
+)!#5$\"%q7!\"($\"%(4%!\"'$\"%;W!\"&$\"%2>!\"%$\"%nNFE$\"%CHFE$\"%]**FB
+$\"%+7FB$\"%[LF<" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "plot(di
+str,style=POINT);" }}{PARA 13 "" 1 "" {INLPLOT "6$-%'CURVESG6$7-7$$\"#
+?\"\"!$\"3#)***********z'G!#F7$$\"#@F*$\"3:++++++T')!#C7$$\"#AF*$\"3(*
+************p7!#@7$$\"#BF*$\"3&************p4%!#?7$$\"#CF*$\"3z*******
+****fT%!#>7$$\"#DF*$\"33++++++2>!#=7$$\"#EF*$\"3<++++++nNFK7$$\"#FF*$
+\"3$************R#HFK7$$\"#GF*$\"3^++++++]**FE7$$\"#HF*$\"3-+++++++7FE
+7$$\"#IF*$\"31++++++[LF9-%'COLOURG6&%$RGBG$\"#5!\"\"F*F*-%&STYLEG6#%&P
+OINTG" 2 264 264 264 5 0 1 0 2 9 0 4 2 1.000000 45.000000 45.000000 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 }}}{PARA 0 "
+" 0 "" {TEXT -1 138 "In 65% of the cases, the occupation is either 26 \+
+or 27; the probability of an extremely bad assignment (20 seats out of
+ 60) is only about " }{XPPEDIT 18 0 "3*10^(-9)" "*&\"\"$\"\"\")\"#5,$
+\"\"*!\"\"F$" }{TEXT -1 0 "" }{TEXT -1 152 ". In fact, a Gaussian law \+
+can be proved by adapting the bivariate analysis of patterns in binary
+ search trees by Flajolet, Martinez, and Gourdon (1996)." }}}{SECT 1 
+{PARA 3 "" 0 "" {TEXT -1 10 "Fatter men" }}{PARA 0 "" 0 "" {TEXT -1 
+51 "The approach extends to the case where fatmen need " }{XPPEDIT 18 
+0 "b" "I\"bG6\"" }{TEXT -1 42 " seats on each side. The earlier case w
+as " }{XPPEDIT 18 0 "b=1" "/%\"bG\"\"\"" }{TEXT -1 19 ". We consider h
+ere " }{XPPEDIT 18 0 "b=2" "/%\"bG\"\"#" }{TEXT -1 65 ". This time, th
+e number of occupied seats lies somewhere between " }{XPPEDIT 18 0 "n/
+3" "*&%\"nG\"\"\"\"\"$!\"\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "n/4" 
+"*&%\"nG\"\"\"\"\"%!\"\"" }{TEXT -1 14 ". Now, we let " }{XPPEDIT 18 
+0 "gb" "I#gbG6\"" }{TEXT -1 0 "" }{TEXT -1 51 " be the probability gen
+erating function (PGF) with " }{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 
+0 "" }{TEXT -1 60 " the generating variable.  The following procedure \+
+computes " }{XPPEDIT 18 0 "gb" "I#gbG6\"" }{TEXT -1 18 " for a given s
+ize " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 19 " and the parameter \+
+" }{XPPEDIT 18 0 "b" "I\"bG6\"" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 155 "gb:=proc(n,b) local k; option remember;\n    if
+ n<=0 then 1 elif n<=b then u else expand(u/n*convert([seq(gb(k-b-1,b)
+*gb(n-k-b,b),k=1..n)],`+`))\n    fi\nend:" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 45 "The probability generating functions are now:" }}{PARA 0 
+"> " 0 "" {MPLTEXT 1 0 24 "seq([j,gb(j,2)],j=0..6);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6)7$\"\"!\"\"\"7$F%%\"uG7$\"\"#F'7$\"\"$F'7$\"\"%,&*$F'
+F)#F%F)F'F07$\"\"&,&F/#F-F2F'#F%F27$\"\"'F/" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 18 "For instance, for " }{XPPEDIT 18 0 "n=4" "/%\"nG\"\"%" 
+}{TEXT -1 83 ", we have 2 occupied seats if the first arrival is on a \+
+side (this has probability " }{XPPEDIT 18 0 "1/2" "*&\"\"\"\"\"\"\"\"#
+!\"\"" }{TEXT -1 75 "), which leaves the opposite seat available, and \+
+1 occupied seat otherwise." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 55 "The
+ moments are obtained by differentiation of the PGF:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 41 "subs(u=1,diff([seq(gb(j,2),j=0..25)],u));
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7<\"\"!\"\"\"F%F%#\"\"$\"\"##\"\"*
+\"\"&F(#\"#;\"\"(#\"$.\"\"#S#\"$G\"\"#X#\"%\"4\"\"$]$#\"#&*\"#G#\"&`a&
+\"&?^\"#\"'TGK\"&+>)#\"'\"*=P\"&+#))#\"'tPO\"&+5)#\"(nP\\(\"(![s:#\"*V
+\"HZH\")+mZe#\"+Z4)f$\\\"*+guG*#\",^7&[$Q%\"++SuUy#\",*>NMIj\",++o&z5#
+\"-.A+QcK\",?:(*\\I&#\"/LIi$\\%=C\".+?ZR7x$#\"1(oz$)[Pc%=\"0++Ohh)fF#
+\"2F>iTc$R5U\"1++G`npZg#\"2R%yUGNVdQ\"1+++Y>]I`" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 52 "evalf(subs(u=1,diff([seq(gb(j,2)/j,j=1..35)],u
+)),5);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7E$\"\"\"\"\"!$\"&++&!\"&$\"
+&LL$F)$\"&+v$F)$\"&+g$F)F*$\"&`E$F)$\"&)=KF)$\"&0;$F)$\"&r6$F)$\"&W3$F
+)$\"&j0$F)$\"&A.$F)$\"&=,$F)$\"&S*HF)$\"&&yHF)$\"&['HF)$\"&E&HF)$\"&<%
+HF)$\"&>$HF)$\"&I#HF)$\"&\\\"HF)$\"&w!HF)$\"&3!HF)$\"&Y*GF)$\"&*))GF)$
+\"&O)GF)$\"&'yGF)$\"&S(GF)$\"&)pGF)$\"&e'GF)$\"&?'GF)$\"&&eGF)$\"&^&GF
+)$\"&?&GF)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 52 "This suggests an oc
+cupation ratio of about 28%, now." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+74 "Like before, we can guess a differential equation and attempt to s
+olve it." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 121 "lb1:=subs(u=1,
+diff([seq(gb(j,2),j=0..35)],u)): gfun['maxordereqn']:=5; gfun['maxdegc
+oeff']:=5; recb:=listtorec(lb1,u(n));" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#>&%%gfunG6#%,maxordereqnG\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+&%%gfunG6#%,maxdegcoeffG\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%re
+cbG7$<'/-%\"uG6#\"\"!F+/-F)6#\"\"\"F//-F)6#\"\"#F//-F)6#\"\"$F/,,-F)6#
+%\"nGF3-F)6#,&F;F/F/F/!\"#*&,&F;F/F3F/F/-F)6#FAF/F/*&,&!\"'F/F;F?F/-F)
+6#,&F;F/F7F/F/F/*&,&F;F/\"\"%F/F/-F)6#FKF/F/%$ogfG" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 34 "rectodiffeq(op(1,recb),u(n),Y(z));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#<$/-%\"YG6#\"\"!F(,(*&,&*$%\"zG\"\"$!
+\"%*$F-\"\"#\"\"%\"\"\"-F&6#F-F3F3*&,(F0!\"#F-F2F8F3F3-%%diffG6$F4F-F3
+F3F1F3" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "The differential equati
+on is of first order, hence again solvable by quadratures" }}{PARA 0 "
+> " 0 "" {MPLTEXT 1 0 21 "solb:=dsolve(\",Y(z));" }}{PARA 6 "" 1 "" 
+{TEXT -1 216 "dsolve/diffeq/dsol1:   -> first order, first degree meth
+ods :\ndsolve/diffeq/dsol1:   trying linear bernoulli\ndsolve/diffeq/l
+inearsol:   solving 1st order linear d.e.\ndsolve/diffeq/dsol1:   line
+ar bernoulli successful" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%solbG/-%
+\"YG6#%\"zG,$*(,&**%\"IG\"\"\"-%$erfG6#,&*&F.F/F)F/F/F.F/F/%#PiGF/-%$e
+xpG6#,$*$,&F/F/F)F/\"\"#!\"\"F/F/*,F.F/-F76#,$*&F)F/,&F)F/F<F/F/F=F/F5
+F/-F16#F.F/-F76#F=F/F=F/,(*$F)F<F/F)!\"#F/F/F=F5#F=F<FK" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 61 "This time the solution involves the Gauss
+ian error function (" }{HYPERLNK 17 "erf" 2 "erf" "" }{TEXT -1 31 "). \+
+The solution is singular at " }{XPPEDIT 18 0 "z=1" "/%\"zG\"\"\"" }
+{TEXT -1 31 ", with an apparent double pole." }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 32 "singb:=series(op(2,solb),z=1,3);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%&singbG++,&!\"\"\"\"\"%\"zGF(,$*&,&**%\"IGF(-%$erfG6#
+,$F.\"\"#F(%#PiGF(-%$expG6#!\"%F(F(*,F.F(-F66#!\"$F(F4F(-F06#F.F(-F66#
+F'F(F'F(F4#F'F3FA!\"#,$*&,(F-F8*(F4#F(F3-F66#\"\"%F(F5F(!\"#F9FJF(F4FA
+FA!\"\",$*&,(F-\"\"(FFFJF9!\"(F(F4FAFA\"\"!-%\"OG6#F(\"\"\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 100 "c2:=factor(simplify(coeff(s
+ingb,z-1,-2))); c1:=factor(simplify(coeff(singb,z-1,-1))); C2:=evalf(c
+2):" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#c2G,$**%\"IG\"\"\"%#PiG#F(\"
+\"#-%$expG6#!\"%F(,&-%$erfG6#,$F'F+!\"\"-F26#F'F(F(F*" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%#c1G,$*(%\"IG\"\"\",(*(-%$erfG6#,$F'\"\"#F(-%$ex
+pG6#!\"%F(%#PiGF(!\"#*&F'F(F4#F(F/F(*(-F,6#F'F(F0F(F4F(F/F(F4#!\"\"F/F
+<" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 59 "This corresponds to an asymp
+totic form for the first moment" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "
+mb1:=c2*(n+1)-c1; evalf(mb1,30);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+$mb1G,&*,%\"IG\"\"\"%#PiG#F(\"\"#-%$expG6#!\"%F(,&-%$erfG6#,$F'F+!\"\"
+-F26#F'F(F(,&%\"nGF(F(F(F(F**(F'F(,(*(F1F(F,F(F)F(!\"#*&F'F(F)F*F(*(F6
+F(F,F(F)F(F+F(F)#F5F+F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&%\"nG$\"?
+-EHdNjX%zds()4bu#!#I$\"?5IY'yn\"Gs*)G'Q\\vs$F'\"\"\"" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 97 "Once more, the asymptotic approximation is extr
+emely good, even for relatively small values of n." }}{PARA 0 "> " 0 "
+" {MPLTEXT 1 0 82 "for j from 0 to 30 by 5 do j,evalf(subs(u=1,diff(gb
+(j,2),u))-subs(n=j,mb1),30) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"
+\"!$!?5IY'yn\"Gs*)G'Q\\vs$!#I" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"&
+$\"?A)R2FWmVb?UF7!\\a!#J" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#5$!>y)=
+`;ikTX$Que>7\"!#J" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#:$\";AKR)yooyd
+VUo$\\!#J" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#?$\"8A>-$HO3%o%4E=!#J
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#D$!6y%Rg$foFRjI$!#J" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"#I$\"3AW?$f!))*R9%!#J" }}}{PARA 0 "" 0 "" 
+{TEXT -1 170 "This last example demonstrates the interest of preservin
+g initial conditions whenever possible. The way Gfun and Maple manage \+
+them consistently is especially useful here." }}}{SECT 1 {PARA 3 "" 0 
+"" {TEXT -1 17 "Fatter men, even!" }}{PARA 0 "" 0 "" {TEXT -1 188 "We \+
+follow the same schema and consider finally the situation where 3 seat
+s/channels are unavailable next to an occupied seat. The number of occ
+upied seats must now lie between n/4 and n/5." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 52 "evalf(subs(u=1,diff([seq(gb(j,3)/j,j=1..35)],u))
+,5);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7E$\"\"\"\"\"!$\"&++&!\"&$\"&L
+L$F)$\"&+]#F)$\"&+!GF)$\"&yx#F)$\"&Jl#F)F,$\"&WW#F)$\"&LT#F)$\"&TQ#F)$
+\"&0N#F)$\"&BK#F)$\"&(*H#F)$\"&4G#F)$\"&TE#F)$\"&\"\\AF)$\"&dB#F)$\"&Q
+A#F)$\"&J@#F)$\"&N?#F)$\"&Y>#F)$\"&m=#F)$\"&#z@F)$\"&D<#F)$\"&i;#F)$\"
+&/;#F)$\"&]:#F)$\"&+:#F)$\"&`9#F)$\"&59#F)$\"&p8#F)$\"&I8#F)$\"&%H@F)$
+\"&g7#F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 47 "This suggests an occu
+pation ratio of about 21%." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+121 "lb1:=subs(u=1,diff([seq(gb(j,3),j=0..35)],u)): gfun['maxordereqn'
+]:=6; gfun['maxdegcoeff']:=3; recb:=listtorec(lb1,u(n));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>&%%gfunG6#%,maxordereqnG\"\"'" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>&%%gfunG6#%,maxdegcoeffG\"\"$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%%recbG7$<(,,-%\"uG6#%\"nG\"\"#-F)6#,&F+\"\"\"F0F0!\"#
+*&,&F+F0\"\"$F0F0-F)6#F3F0F0*&,&!\")F0F+F1F0-F)6#,&F+F0\"\"%F0F0F0*&,&
+F+F0\"\"&F0F0-F)6#F?F0F0/-F)6#\"\"!FF/-F)6#F0F0/-F)6#F,F0/-F)6#F4F0/-F
+)6#F=F0%$ogfG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "gfun['maxd
+egcoeff']:=1; rectodiffeq(op(1,recb),u(n),Y(z));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%%gfunG6#%,maxdegcoeffG\"\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#<$,(*&,&*$%\"zG\"\"%!#7*$F(\"\"$\"#7\"\"\"-%\"YG6#F(F.F
+.*&,(*$F(\"\"#!\"'F(F-F6F.F.-%%diffG6$F/F(F.F.\"\"'F./-F06#\"\"!F>" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 57 "The solution now involves integra
+ls of cubic polynomials." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 
+"solb:=dsolve(\",Y(z)); singb:=series(op(2,solb),z=1,3);" }}{PARA 6 "
+" 1 "" {TEXT -1 216 "dsolve/diffeq/dsol1:   -> first order, first degr
+ee methods :\ndsolve/diffeq/dsol1:   trying linear bernoulli\ndsolve/d
+iffeq/linearsol:   solving 1st order linear d.e.\ndsolve/diffeq/dsol1:
+   linear bernoulli successful" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%s
+olbG/-%\"YG6#%\"zG*(-%$intG6$-%$expG6#,$*&%\"uG\"\"\",(*$F3\"\"#F7F3\"
+\"$\"\"'F4F4#F4F8/F3;\"\"!F)F4-F/6#,$*&F)F4,(*$F)F7F7F)F8F9F4F4#!\"\"F
+8F4,(FCF4F)!\"#F4F4FE" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&singbG++,&
+!\"\"\"\"\"%\"zGF(*&-%$intG6$-%$expG6#,$*&%\"uGF(,(*$F3\"\"#F6F3\"\"$
+\"\"'F(F(#F(F7/F3;\"\"!F(F(-F/6##!#6F7F(!\"#,&F*!\"'*&-F/6##\"#6F7F(F=
+F(F(!\"\",&F*\"#:FD!\"$\"\"!-%\"OG6#F(\"\"\"" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 100 "c2:=factor(simplify(coeff(singb,z-1,-2))); c1:=
+factor(simplify(coeff(singb,z-1,-1))); C3:=evalf(c2):" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%#c2G*&-%$intG6$-%$expG6#,$*&%\"uG\"\"\",(*$F.\"
+\"#F2F.\"\"$\"\"'F/F/#F/F3/F.;\"\"!F/F/-F*6##!#6F3F/" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>%#c1G,&*&-%$intG6$-%$expG6#,$*&%\"uG\"\"\",(*$F/\"
+\"#F3F/\"\"$\"\"'F0F0#F0F4/F/;\"\"!F0F0-F+6##!#6F4F0!\"'F0F0" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "mb1:=c2*(n+1)-c1; evalf(mb1,
+30);" }}{PARA 0 "" 0 "" {TEXT -1 119 "In particular, the mean occupati
+o ratio is an interesting integral that evaluates to .2009733699788442
+43166574354875..." }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$mb1G,(*(-%$int
+G6$-%$expG6#,$*&%\"uG\"\"\",(*$F/\"\"#F3F/\"\"$\"\"'F0F0#F0F4/F/;\"\"!
+F0F0-F+6##!#6F4F0,&%\"nGF0F0F0F0F0*&F'F0F:F0F5!\"\"F0" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#,&%\"nG$\"?v[Nul;VU%)y*pL(4?!#I$\">8%[?g;-(4>&)*e8
+oS!#H\"\"\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 79 "And finally, the a
+pproximation is still very good, being within 1% already for " }
+{XPPEDIT 18 0 "n=5" "/%\"nG\"\"&" }{TEXT -1 0 "" }{TEXT -1 67 ", altho
+ugh the asymptotic regime takes a little longer to establish" }}{PARA 
+0 "> " 0 "" {MPLTEXT 1 0 82 "for j from 0 to 30 by 5 do j,evalf(subs(u
+=1,diff(gb(j,3),u))-subs(n=j,mb1),30) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"!$!>8%[?g;-(4>&)*e8oS!#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"&$!=]eA*))*z\"48Y(R/o6!#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#5$!<b*pI%)\\+)=qIcR@$!#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#:$!;'*\\'[t]igTZA)p7!#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"#?$!9l&fRsz6+Q*ege!#H" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6$\"#D$!81zs1zAh`%Hp8!#H" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"#I$!
+6GH(*>s,M!3mA!#H" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT 257 11 "Conclusion
+s" }}{PARA 0 "" 0 "" {TEXT -1 338 "Our purpose here has been to demons
+trate how one naturally arrives at the solution of a probabilistic pro
+blem using tools like Gfun. Once the solutions have been \"guessed\", \+
+it is possible to come back, think, and prove solutions. For instance,
+ the problem of the mean leads to recurrences that involve history (su
+mmation) and a factor of " }{XPPEDIT 18 0 "1/n" "*&\"\"\"\"\"\"%\"nG!
+\"\"" }{TEXT -1 532 "; thus, it is reasonable to expect to be within r
+each of the theory of holonomic functions on which Gfun is based, and \+
+rough bounds on the order of recurrences or differential equatiosn suf
+fice to validate the \"guesses\".  In this way, we have \"naturally\" \+
+rediscovered a solution of the generalized problem due to David Rothma
+n (fatter men) and obtained a variance analysis for the basic problem \+
+that appears to be new. The whole session (including the variance comp
+utations) takes about 60 seconds of CPU time on a DEC-3000 station." }
+}{PARA 0 "" 0 "" {TEXT -1 110 "About the original problem, we may comp
+are the mean seat occuptation to the best possible seating arrangement
+:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "for i from 1 to 3 do `C
+`.i/(1/(i+1)) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+orkY')!#5" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+J'HlB)!#5" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"+'zM*Q!)!#5" }}}{PARA 0 "" 0 "" {TEXT -1 183 "Thus, \+
+we have determined  the price to be paid for random access: it is abou
+t 15% to 20%. As we saw repeatedly, the asymptotic approximations obta
+ined are extremely good, already for " }{XPPEDIT 18 0 "n=5" "/%\"nG\"
+\"&" }{TEXT -1 162 ". Also the distributional analysis, where a small \+
+variance is obtained, shows that the average-case is highly representa
+tive of what will be observed in practice." }}}}{MARK "0 2 0" 0 }
+{VIEWOPTS 1 1 0 3 2 1804 }

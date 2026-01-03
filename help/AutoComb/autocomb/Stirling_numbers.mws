@@ -1,0 +1,347 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 0 
+0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "courier" 0 1 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 268 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 271 "courier" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 272 "courier" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 273 "courier" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 274 "cou
+rier" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 275 "" 0 1 0 0 0 0 
+1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 "courier" 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 
+3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 6 6 0 
+0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "
+" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Title" 0 18 1 {CSTYLE "" -1 -1 "" 1 
+18 0 0 0 0 0 1 1 0 0 0 0 0 0 }3 0 0 -1 12 12 0 0 0 0 0 0 19 0 }
+{PSTYLE "Author" 0 19 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 }3 0 0 -1 8 8 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 
+-1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT 256 55 "ASYMPTOTICS OF THE STIRL
+ING NUMBERS\n OF THE SECOND KIND" }}{PARA 19 "" 0 "" {TEXT 257 27 "Bru
+no Salvy & John Shackell" }}{PARA 256 "" 0 "" {TEXT -1 12 "January 199
+8" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 256 "We \+
+show how computer algebra can be used to compute automatically the asy
+mptotics of the Bell numbers and of the average value and variance of \+
+the number of parts in a partition. This worksheet details the computa
+tions involved in Section 3 of our article " }{TEXT 258 54 "Symbolic A
+symptotics: Multiseries of Inverse Functions" }{TEXT -1 185 ", availab
+le as INRIA Research Report #3264, 1997. The starting point for all th
+ese asymptotic expansions is the bivariate generating function of the \+
+Stirling numbers of the second kind:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 21 "F:=exp(u*(exp(x)-1));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%\"FG-%$expG6#*&%\"uG\"\"\",&-F&6#%\"xGF*!\"\"F*F*" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "series(F,x);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#+1%\"xG\"\"\"\"\"!%\"uG\"\"\",&F'#F%\"\"#*$F'F+F*\"\"#,
+(F'#F%\"\"'F,F**$F'\"\"$F/\"\"$,*F'#F%\"#CF,#\"\"(F6F1#F%\"\"%*$F'F:F5
+\"\"%,,F'#F%\"$?\"F,#F%\"\")F1#\"\"&F6F;#F%\"#7*$F'FCF>\"\"&-%\"OG6#F%
+\"\"'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "The coefficient of " }
+{XPPEDIT 18 0 "u^k*x^n" "*&)%\"uG%\"kG\"\"\")%\"xG%\"nGF&" }{TEXT -1 
+58 " in this series is the Stirling number of the second kind " }
+{XPPEDIT 18 0 "S[n,k]" "&%\"SG6$%\"nG%\"kG" }{TEXT -1 12 " divided by \+
+" }{XPPEDIT 18 0 "n!" "-%*factorialG6#%\"nG" }{TEXT -1 65 ". These num
+bers count the number of partitions of the set \{1,...," }{XPPEDIT 18 
+0 "n" "I\"nG6\"" }{TEXT -1 5 "\} in " }{XPPEDIT 18 0 "k" "I\"kG6\"" }
+{TEXT -1 7 " parts." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 78 "For  funct
+ions with a fast growth at infinity, like many functions related to " 
+}{XPPEDIT 18 0 "F" "I\"FG6\"" }{TEXT -1 719 ", the asymptotic behaviou
+r of the Taylor coefficients can be computed by the saddle-point metho
+d. This method relies on using an integral along a closed contour in t
+he complex plane chosen in such a way as to pass through a special poi
+nt called the saddle-point. The integral is concentrated in the neighb
+orhood of the saddle-point and good asymptotic estimates are obtained \+
+from a local expansion there. However, in these applications, the sadd
+le-point is defined implicitly by an equation and only an asymptotic e
+xpansion of it is available. This introduces technical difficulties in
+ the manipulation of the expansions. This worksheet explores how our a
+lgorithm for asymptotic inversion applies in such circumstances." }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "We first load our experimental imp
+lementation" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "read `/expor
+t/salvy/Alcom/97/Lib/asympt_inv/load.mpl`;" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 314 "Sufficient conditions for deriving an asymptotic expansi
+on by the saddle-point method have been given by Harris and Schoenfeld
+. These conditions are satisfied by all the generating functions we co
+nsider in this worksheet. The following procedure (which can be skippe
+d in a first reading) takes as input a function " }{XPPEDIT 18 0 "f(x)
+" "-%\"fG6#%\"xG" }{TEXT -1 117 ", the associated saddle-point equatio
+n, an asymptotic scale (see below) and computes the asymptotic expansi
+on of the " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 25 "th Taylor coef
+ficient of " }{XPPEDIT 18 0 "f(x)" "-%\"fG6#%\"xG" }{TEXT -1 4 " as " 
+}{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 48 " tends to infinity in term
+s of the saddle-point." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 507 "
+harris_schoenfeld:=proc(f,x,R,nofR,nbterms,scale)local A, B, Bb, Cc, F
+, i, m, u, compo;A:=diff(log(f),x);for i to 2*nbterms do B[i]:=normal(
+x^i/i!*diff(A,[x$(i-1)])) od;Bb:=x*diff(B[1],x)/2;for i to 2*nbterms-2
+ do Cc[i]:=normal(-(B[i+2]+(-1)^i/(i+2)*B[1])/Bb) od;F[0]:=1;for i to \+
+nbterms-1 do F[i]:=(-1)^i/sqrt(Pi)*add(GAMMA(m+i+1/2)/m!*add(mul(Cc[u]
+,u=compo),compo=combinat[composition](2*i,m)),m=1..2*i)od;tower(subs([
+x=R,n=nofR],f/2/sqrt(Pi)/sqrt(Bb)/x^n*add(normal(F[i]/Bb^i),i=0..nbter
+ms-1)),scale)end:" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 31 "Asymptotics
+ of the Bell numbers" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 17 "The Bell n
+umbers " }{XPPEDIT 18 0 "B[n]" "&%\"BG6#%\"nG" }{TEXT -1 18 " are the \+
+sum over " }{TEXT 270 1 "k" }{TEXT -1 25 " of the Stirling numbers " }
+{XPPEDIT 18 0 "S[n,k]" "&%\"SG6$%\"nG%\"kG" }{TEXT -1 30 ". Their gene
+rating function is" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "f:=su
+bs(u=1,F);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"fG-%$expG6#,&-F&6#%
+\"xG\"\"\"!\"\"F," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 139 "Alternative
+ly, since these numbers count the number of partitions of a set, this \+
+generating function and the numbers can be obtained using " }
+{HYPERLNK 17 "combstruct" 2 "combstruct" "" }{TEXT -1 1 ":" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "G:=\{P=Set(Set(Atom,card>0))\}:" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 34 "combstruct[gfsolve](G,label
+led,x);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<#/-%\"PG6#%\"xG-%$expG6#,&
+-F*F'\"\"\"!\"\"F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 27 "Here are th
+e first numbers:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "series(
+f,x,20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+M%\"xG\"\"\"\"\"!F%\"\"\"
+F%\"\"##\"\"&\"\"'\"\"$#F*\"\")\"\"%#\"#8\"#I\"\"&#\"$.#\"$?(\"\"'#\"$
+x)\"%S]\"\"(#\"#B\"$C#\"\")#\"%25\"&!G<\"\"*#\"%RY\"'_^9\"#5#\"&>E#\"(
+g0L\"\"#6#\"((f8U\"*+;+z%\"#7#\")PWkF\"++3-Fi\"#8#\")h'\\a*\",+c9*eV\"
+#9#\"*4<fw#\"-+O([`h#\"#:#\",Z@9![5\"/+!)))*yA4#\"#;#\"*rdvb#\".+Sq+y4
+\"\"#<#\",PPaRu*\"0+S5:[i9*\"#=#\".d]?UF$e\"3+?$)3/5X;7\"#>-%\"OG6#F%
+\"#?" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 10 "or, using " }{HYPERLNK 
+17 "combstruct" 2 "combstruct" "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 54 "seq(combstruct[count]([P,G,labelled],size=i),i=0..19)
+;" }}{PARA 12 "" 1 "" {XPPMATH 20 "66\"\"\"F#\"\"#\"\"&\"#:\"#_\"$.#\"
+$x)\"%ST\"&Z6#\"'vf6\"'q&y'\"((f8U\")PWkF\"*A$**3>\"+X&eHQ\"\",Z@9![5
+\",/)p['G)\"-fh!o2#o\".d]?UF$e" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 13 
+"the factor 1/" }{XPPEDIT 18 0 "n!" "-%*factorialG6#%\"nG" }{TEXT -1 
+25 " being due to the use of " }{TEXT 269 11 "exponential" }{TEXT -1 
+22 " generating functions." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "The
+ saddle-point equation we use is" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 37 "speq:=subs(x=R,diff(log(f),x)*x)-1=n;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%%speqG/,&*&-%$expG6#%\"RG\"\"\"F+F,F,!\"\"F,%\"n
+G" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 118 "Then the asymptotic analysi
+s of the Bell numbers is classically based on the asymptotic behaviour
+ of the saddle-point " }{XPPEDIT 18 0 "R" "I\"RG6\"" }{TEXT -1 25 " vi
+ewed as a function of " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 4 " as
+ " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 19 " tends to infinity." }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 178 "From the above equation our algo
+rithm produces the asymptotic expansion of the saddle-point in two sta
+ges: first a sequence of ``exact'' information is computed by the proc
+edure " }{TEXT 272 6 "Invert" }{TEXT -1 30 " which also creates the sc
+ale " }{TEXT 271 6 "scaleR" }{TEXT -1 46 " necessary for the expansion
+s of functions of " }{TEXT 259 1 "R" }{TEXT -1 1 ":" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 33 "r1:=Invert(lhs(speq),R,'scaleR');" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#r1G6&7%,*-%#lnG6#%\"RG\"\"\"F+F,-F)
+6#,&F,F,*&-%$expGF*!\"\"F+F3F3F,*(,&*$F+F3F,*$F(F3F,F,F(F,F+F,F3F,F4F2
+7%-F)6#*&,&*$F1F3F,F6F,F,F+F,\"\"#F+7%\"\"!F>F+" }}}{EXCHG {PARA 0 "" 
+0 "" {TEXT -1 71 "The last argument has been assigned the correspondin
+g asymptotic scale:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "scal
+eR[list];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7%*$-%#lnG6#%\"RG!\"\"*$F
+(F)*$-%$expGF'F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 77 "In a second s
+tage, asymptotic information is extracted from the exact result " }
+{TEXT 273 2 "r1" }{TEXT -1 60 " and the scale necessary for the expans
+ions of functions of " }{TEXT 260 1 "n" }{TEXT -1 11 " is created" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "exp1:=multiseriesinverse([r1
+],scaleR,0,2,n,3,'scalen');" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%exp1
+G,*-%#lnG6#%\"nG\"\"\"-F'6#F&!\"\"*&F+F*F&F-F*-%\"OG6#*$F&!\"#F*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 24 "Here again the variable " }{TEXT 
+274 6 "scalen" }{TEXT -1 52 " holds the asymptotic scale related to th
+e variable " }{TEXT 275 1 "n" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 13 "scalen[list];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#7%*$-%#lnG6#-F&6#-F&6#%\"nG!\"\"*$F(F-*$F*F-" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT -1 14 "The procedure " }{TEXT 276 17 "harris_schoenfeld" }
+{TEXT -1 102 " written above is then able to compute the expansion of \+
+the Bell numbers in terms of the saddle-point " }{TEXT 261 1 "R" }
+{TEXT -1 14 " in the scale " }{TEXT 262 6 "scaleR" }{TEXT -1 30 " whic
+h has been obtained above" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+48 "d1:=harris_schoenfeld(f,x,R,lhs(speq),3,scaleR);" }}{PARA 12 "" 1 
+"" {XPPMATH 20 "6#>%#d1G,$*4-%$expG6#-F(6#%\"RG\"\"\"-F(6#!\"\"F-%#PiG
+#F0\"\"#F3#F-F3*&F,F-,&F*F-*&F*F-F,F-F-F-F2-F(6#*(F,F--%#lnGF+F-F*F-F0
+F,F--F(6#,(*&,&F7F-F0F-F-F;F-F-F:F0F;F-F0,(F-F-**,,*$F,\"\"$!\"$*$F,\"
+\"%F3F3F-F,!#=*$F,F3!#?F-,&F-F-F,F-FGF,F0F*F0#F0\"#C**,4F,!#s*$F,\"\"'
+!$&p*$F,\"\"&!$'pFH\"%#4\"FK\"%s>FE\"%;H*$F,\"\"(!$c\"*$F,\"\")FIFIF-F
+-FM!\"'F,!\"#F*F\\o#F-\"%_6F-F4" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+40 "The result follows upon substitution of " }{TEXT 263 1 "R" }{TEXT 
+-1 41 " by its asymptotic expansion in terms of " }{TEXT 264 1 "n" }
+{TEXT -1 2 " (" }{TEXT 265 4 "exp1" }{TEXT -1 88 " above). Since the l
+ogarithm of this expansion is easier to handle, we first compute it:" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "d2:=`tower/ln`(d1,scaleR)
+:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "multiseries(d2,scaleR,
+0,3,nops(scaleR[list]),3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,.*&,&\"
+\"\"F&*&-%#lnG6#%\"RGF&F+F&!\"\"F&-%$expGF*F&F&F+#F,\"\"#-F)6#,$*(-F.6
+#F,F&F0#F&F0%#PiGF/F7F&*$F+F,F/-%\"OG6#*$F+!\"#F&*&,*#F,\"#7F&F9#\"\"$
+\"\")F=#F,\"#C-F;6#*$F+!\"$F&F&F-F,F&" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 50 "Hence the result by substituting the expansion of " }
+{XPPEDIT 18 0 "R" "I\"RG6\"" }{TEXT -1 13 " in terms of " }{XPPEDIT 
+18 0 "n" "I\"nG6\"" }{TEXT -1 24 " in this last expansion:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "substitute(d2,scaleR,exp1,scalen,3)
+;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,.*&,(-%#lnG6#-F'6#%\"nG!\"\"*(,&
+*$F&F,\"\"\"F0F0F0F&F0F)F,F0-%\"OG6#*$F)!\"#F0F0F+F0F0F)#F,\"\"#*&,&*&
+-F'6#,$*(-%$expG6#F,F0F7#F0F7%#PiGF6FBF0F&F,F7F0F0F0F&F0FBF-F6F1F0*&,(
+F)#F,\"#7*&,&F/\"\"*F7F0F0F&F0#F0\"#C-F26#*$F)F,F0F0F+F,F0" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 63 "The first part of this expansion is the c
+lassical expansion of " }{XPPEDIT 18 0 "ln(B[n]*`/`*n!)" "-%#lnG6#*(&%
+\"BG6#%\"nG\"\"\"%\"/GF*-%*factorialG6#F)F*" }{TEXT -1 192 " which can
+ be found in (de Bruijn 1981, p. 108). The remaining parts reflect the
+ use of multiseries, a recent tool which makes it possible to deal wit
+h indefinite cancellation in a simple way." }}}}{SECT 0 {PARA 3 "" 0 "
+" {TEXT -1 38 "Average number of parts in a partition" }}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 209 "The technique demonstrated above also applies \+
+to the average number of parts in a partition, where an indefinite can
+cellation occurs and this exemplifies the use of multiple scales. The \+
+generating function of " }{XPPEDIT 18 0 "Sum(k*S[n,k],k)" "-%$SumG6$*&
+%\"kG\"\"\"&%\"SG6$%\"nGF&F'F&" }{TEXT -1 4 "  is" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 23 "g:=subs(u=1,diff(F,u));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%\"gG*&,&-%$expG6#%\"xG\"\"\"!\"\"F+F+-F(6#F&F+" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 60 "The average number of parts in a p
+artition of a set of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 8 
+" is the " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 25 "th Taylor coeff
+icient of " }{XPPEDIT 18 0 "g" "I\"gG6\"" }{TEXT -1 16 " divided by th
+e " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 18 "th coefficient of " }
+{XPPEDIT 18 0 "f" "I\"fG6\"" }{TEXT -1 72 " whose asymptotics we have \+
+just computed. The saddle-point equation for " }{XPPEDIT 18 0 "g" "I\"
+gG6\"" }{TEXT -1 4 " is:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 
+"speq2:=normal(subs(x=R,diff(log(g),x)*x)-1)=n;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%&speq2G/*&,(*&-%$expG6#%\"RG\"\"#F,\"\"\"F.F)!\"\"F.F
+.F.,&F)F.F/F.F/%\"nG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 111 "From thi
+s equation our algorithm produces the asymptotic expansion of the sadd
+le-point in two stages as before:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 26 "r2:=Invert(op(1,speq2),R):" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 53 "exp2:=multiseriesinverse([r2],scaleR,0,2,n,3,scale
+n);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%exp2G,*-%#lnG6#%\"nG\"\"\"-F
+'6#F&!\"\"*&F+F*F&F-F*-%\"OG6#*$F&!\"#F*" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 294 "This expansion of this new saddle-point is the same as t
+hat of the previous case. But this does not mean that both saddle-poin
+ts are equal. The difference between their asymptotic behaviours can b
+e obtained by working in a different scale. Here is a refined estimate
+ for the first saddle-point:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 57 "sp1:=multiseriesinverse([r1],scaleR,2,1,n,3,'scalezeta');" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$sp1G,*-%'RootOfG6#,(-%#lnG6#%#_ZG\"
+\"\"F-F.-F+6#%\"nG!\"\"F.*(F&F2,&*$F&F2F.F.F.F2-%$expG6#F&F2F.**F&!\"#
+,&F5\"\"#F.F.F.F4!\"$F6F:#F2F<-%\"OG6#*$F6F=F." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 15 "alias(zeta=%1):" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 4 "sp1;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,*%%zetaG\"\"
+\"*(F$!\"\",&*$F$F'F%F%F%F'-%$expG6#F$F'F%**F$!\"#,&F)\"\"#F%F%F%F(!\"
+$F*F.#F'F0-%\"OG6#*$F*F1F%" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 69 "and
+ here is an estimate for the second saddle-point refined similarly" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "sp2:=multiseriesinverse([r2
+],scaleR,2,1,n,3,scalezeta);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$sp2
+G,*%%zetaG\"\"\"*(,&*$F&!\"\"F'F+F'F',&F*F'F'F'F+-%$expG6#F&F+F'*(,**$
+F&!\"#F+F*\"\"#\"\"$F'*$F&!\"$\"\"%F'F,F7F-F3#F+F4-%\"OG6#*$F-F7F'" }}
+}{EXCHG {PARA 0 "" 0 "" {TEXT -1 74 "Hence the difference can be compu
+ted at this level of the asymptotic scale" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 58 "`multiseries/expand`(x1-x2,[x1,x2],[sp1,sp2],scalez
+eta,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,(*&,&*$%%zetaG!\"\"\"\"\"F
+)F)F(-%$expG6#F'F(F)*(,**$F'!\"$\"\"#*$F'!\"#F3F&F1\"\"$F)F)F%F0F*F3#F
+)F1-%\"OG6#*$F*F0F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 15 "or in term
+s of " }{XPPEDIT 18 0 "n" "I\"nG6\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 64 "substitute(SERIEStoseries(\",'polynom'),scalezeta,exp
+1,scalen,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&*&,(-%#lnG6#%\"nG\"
+\"\"*&,&*$-F'6#F&!\"\"F*F*F*F*F.F*F0-%\"OG6#*$F&F0F*F*F)F0F**&,(*$F&\"
+\"##\"\"$F8*(,&\"\"'F*F-\"\"(F*F.F*F&F*#F0F8-F26#F*F*F*F)!\"#F*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 48 "Thus the saddle-points differ asym
+ptotically by " }{XPPEDIT 18 0 "ln(n)" "-%#lnG6#%\"nG" }{TEXT 266 1 "/
+" }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 82 ", which could not be det
+ected from the asymptotic expansion in the original scale." }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 103 "In order to compute the average number o
+f parts in a partition, we have to divide the estimate for the " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 18 "th coefficient of " }
+{XPPEDIT 18 0 "g" "I\"gG6\"" }{TEXT -1 25 " by the estimate for the " 
+}{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 18 "th coefficient of " }
+{XPPEDIT 18 0 "f" "I\"fG6\"" }{TEXT -1 169 ". Since these estimates ar
+e given in terms of different saddle-points, the computation is more e
+asily done by obtaining both estimates in the same scale, which involv
+es " }{XPPEDIT 18 0 "zeta" "I%zetaG6\"" }{TEXT -1 42 " , and then subs
+tituting the estimate for " }{XPPEDIT 18 0 "zeta" "I%zetaG6\"" }{TEXT 
+-1 13 " in terms of " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 1 "." }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "estden:=substitute(d1,scale
+R,sp1,scalezeta,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'estdenG*(,(*
+,\"\"##\"\"\"F(-%$expG6#!\"\"F*%#PiG#F.F(*&%%zetaGF*,&F*F*F2F*F*F0*$-F
+,6#F2F.F)F)*0,,*$F2!\"%F(*$F2!\"$\"\"'*$F2!\"#\"#;*$F2F.\"\"*F(F*F*F+F
+*F(F)F/F0F1F0,&FAF*F*F*F<F4#\"\"$F(#F.\"#[-%\"OG6#*$F4#\"\"&F(F*F*-F,6
+#F5F*-F,6#*(F2F*-%#lnGF6F*F5F*F." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 50 "n1:=harris_schoenfeld(g,x,R,op(1,speq2),3,scaleR):" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 117 "estnum:=substitute(SERIES
+toseries(multiseries(n1,scaleR,2,1,nops(scaleR[list]),3),'polynom'),sc
+aleR,sp2,scalezeta,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'estnumG*(
+,(*,\"\"##\"\"\"F(-%$expG6#!\"\"F*%#PiG#F.F(*&%%zetaGF*,&F*F*F2F*F*F0*
+$-F,6#F2F.F0F)*0,,*$F2!\"%F(*$F2!\"$\"#I*$F2!\"#\"#w*$F2F.\"#p\"#EF*F*
+F+F*F(F)F1F0,&FAF*F*F*F<F/F0F4F)#F.\"#[-%\"OG6#*$F4#\"\"$F(F*F*-F,6#F5
+F*-F,6#*(F2F*-%#lnGF6F*F5F*F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "
+Hence the ratio in " }{XPPEDIT 18 0 "zeta" "I%zetaG6\"" }{TEXT -1 3 " \+
+is" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "ratio:=`multiseries/e
+xpand`(x2/x1,[x1,x2],[estden,estnum],scalezeta,3);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%&ratioG,(-%$expG6#%%zetaG\"\"\"*&,(*$F)!\"#\"\"#*$F
+)!\"\"\"\"$F/F*F*,&F0F*F*F*F.#F1F/-%\"OG6#*$F&F1F*" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT -1 32 "And here is the final result in " }{XPPEDIT 18 0 
+"n" "I\"nG6\"" }{TEXT -1 48 ": the average number of parts in a partit
+ion of " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 10 " elements:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 68 "substitute(SERIEStoseries(ra
+tio,'polynom'),scalezeta,exp1,scalen,3);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#,,*&,(*$-%#lnG6#%\"nG!\"\"\"\"\"*&-F(6#F'F,F'!\"#F,-%\"OG6#*$F'!
+\"$F,F,F*F,F,F+F,F&#F,\"\"#*(F.F,,&F+F,*$F.F+F7F,F'F0#F+F7F1F," }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 273 "This result is classical. However
+, it is worth noting that classical references give at best the first \+
+term of the asymptotic behaviour (n/log n) and one of them is wrong by
+ a factor of e=exp(1). This gives an idea of the difficulty of perform
+ing such computations by hand." }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 
+8 "Variance" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 102 "Computation of the
+ variance leads to further cancellation. It is obtained from the gener
+ating function" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "h:=subs(u
+=1,diff(u*diff(F,u),u));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"hG,&*&
+,&-%$expG6#%\"xG\"\"\"!\"\"F,F,-F)6#F'F,F,*&F'\"\"#F.F,F," }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 42 "The corresponding saddle-point equation i
+s" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "speq3:=subs(x=R,normal
+(diff(log(h),x)*x))-1=n;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&speq3G/
+,&*(,(!\"\"\"\"\"-%$expG6#%\"RGF**$F+\"\"#F*F*F.F*,&F+F*F)F*F)F*F)F*%
+\"nG" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 46 "The expansion of the sadd
+le-point in terms of " }{XPPEDIT 18 0 "zeta" "I%zetaG6\"" }{TEXT -1 
+22 " is obtained as before" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+26 "r3:=Invert(op(1,speq3),R);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#r
+3G6&7%,*-%#lnG6#%\"RG\"\"\"F+F,-F)6#,$*&,,*$-%$expGF*!\"#!\"\"*$F3F6F,
+F,F,*&F3F6F+F6F6*&F3F5F+F6F,F,,&F6F,F7F,F6F6F,*(,&*$F+F6F,*$F(F6F,F,F(
+F,F+F,F6F,F;F47%-F)6#*&,&F7F,F=F,F,F+F,\"\"#F+7%\"\"!FDF+" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "sp3:=multiseriesinverse([r3],scaleR
+,2,1,n,3,scalezeta);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$sp3G,*%%zet
+aG\"\"\"*(,&*$F&!\"\"F'!\"#F'F',&F*F'F'F'F+-%$expG6#F&F+F'*(,(*$F&!\"$
+\"\"#*$F&F,F4F5F'F'F-F4F.F,#F4F5-%\"OG6#*$F.F4F'" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 45 "This leads to the following estimate for the " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 18 "th coefficient of " }
+{XPPEDIT 18 0 "h" "I\"hG6\"" }{TEXT -1 20 ", first in terms of " }
+{TEXT 267 1 "R" }{TEXT -1 22 " and then in terms of " }{XPPEDIT 18 0 "
+zeta" "I%zetaG6\"" }{TEXT -1 18 " by substituting  " }{TEXT 268 1 "R" 
+}{TEXT -1 41 " by its asymptotic expansion in terms of " }{XPPEDIT 18 
+0 "zeta" "I%zetaG6\"" }{TEXT -1 1 ":" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 50 "n2:=harris_schoenfeld(h,x,R,op(1,speq3),3,scaleR):" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 118 "estnum2:=substitute(SERIE
+Stoseries(multiseries(n2,scaleR,2,1,nops(scaleR[list]),3),'polynom'),s
+caleR,sp3,scalezeta,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(estnum2G
+*(,(*,\"\"##\"\"\"F(-%$expG6#!\"\"F*%#PiG#F.F(*&%%zetaGF*,&F2F*F*F*F*F
+0*$-F,6#F2F.#!\"$F(F)*0,,*$F2!\"%F(*$F2F8\"#I*$F2!\"#\"#))*$F2F.\"$0\"
+\"#]F*F*F+F*F(F),&FBF*F*F*F8F/F0F1F0F4F0#F.\"#[-%\"OG6#*$F4F)F*F*-F,6#
+F5F*-F,6#*(F2F*-%#lnGF6F*F5F*F." }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+43 "From there we get the variance in terms of " }{XPPEDIT 18 0 "zeta
+" "I%zetaG6\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 95 "finalres:=
+`multiseries/expand`(x3/x1-(x2/x1)^2,[x1,x2,x3],[estden,estnum,estnum2
+],scalezeta,3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)finalresG,&*(%%z
+etaG!\"\",&*$F'F(\"\"\"F+F+F(-%$expG6#F'F+F+-%\"OG6#F+F+" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 16 "and in terms of " }{XPPEDIT 18 0 "n" "I\"
+nG6\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 64 "substitute(SERIESt
+oseries(\",'polynom'),scalezeta,exp1,scalen,3);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*&,(*$-%#lnG6#%\"nG!\"#\"\"\"*(,&F*F+*$-F'6#F&!\"\"F+F+
+F/F+F&!\"$F1-%\"OG6#*$F&!\"%F+F+F)F+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 148 "Again, only the first term is given in the literature. Our met
+hod can compute as many terms as desired, as well as the expansions of
+ higher moments." }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 10 "Conclusion
+" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 321 "Multiseries are specially use
+ful for saddle-point asymptotics that arise frequently in combinatoria
+l applications. Delicate expansions (that lead to errors in the techni
+cal literature) can be handled automatically. Such a process is specia
+lly useful for moment computations that involve minute saddle-point pe
+rturbations." }}}}}{MARK "12 0 0" 10 }{VIEWOPTS 1 1 0 1 1 1803 }

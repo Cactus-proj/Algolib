@@ -1,0 +1,81 @@
+{VERSION 4 0 "IBM INTEL LINUX22" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 1 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }1 0 0 0 8 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 
+0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple
+ Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 1 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT -1 27 "regexpcount[eqnstoasympexp
+]" }{TEXT 30 128 " - compute asymptotic expectation and variance of th
+e number of matches of a regular expression, given a bivariate linear \+
+system" }}{PARA 4 "" 0 "usage" {TEXT -1 17 "Calling Sequence:" }}
+{PARA 0 "" 0 "" {TEXT -1 38 "     eqnstoasympexp(syseqns,reg,z,u,n)" }
+}{PARA 4 "" 0 "" {TEXT -1 11 "Parameters:" }}{PARA 0 "" 0 "" {TEXT -1 
+5 "     " }{TEXT -1 55 "syseqns    - list or set of linear equations i
+n z and u" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT -1 29 "     reg     \+
+        - a name" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }{TEXT -1 32 "     z
+                  - a name" }}{PARA 0 "" 0 "" {TEXT -1 31 "     u     \+
+            - a name" }}{PARA 0 "" 0 "" {TEXT -1 5 "     " }{TEXT -1 
+26 "n                 - a name" }}}{SECT 0 {PARA 4 "" 0 "info" {TEXT 
+-1 12 "Description:" }}{PARA 15 "" 0 "" {TEXT -1 303 "The eqnstoasympe
+xp function returns a list of two elements  that are the (two first te
+rms of the) asymptotic expansions of the expectation and variance of t
+he number of matches of the regular expression of name reg in random t
+exts. Typically the input system of equations is computed with the fun
+ctions " }{HYPERLNK 17 "regexpcount[gramweight]" 2 "regexpcount[gramwe
+ight]" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "co
+mbstruct[gfeqns]" "" }{TEXT -1 1 "." }}{PARA 15 "" 0 "" {TEXT -1 555 "
+This function works by local development of the system of equations in
+ the neighborhood of z=1. Here, z counts the size of random texts and \+
+u counts the number of matches of a regular expression in the texts. T
+he solution is then computed by solving a system of equations with con
+stant coefficients while a direct computation goes through solving the
+ original system where the coefficients are polynomial in u. See for d
+etails P. Nicodeme, B. Salvy and P. Flajolet. \"Motif Statistics.\" 7t
+h Annual European Symposium on Algorithms ESA '99, Prague, July 99." }
+}}{SECT 0 {PARA 4 "" 0 "examples" {TEXT -1 9 "Examples:" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "with(regexpcount):" }}}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 34 "Number of mat
+ches with the word aa" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "RG
+:=\{R=Prod(a,a),a=Atom,b=Atom\}:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 53 "Gauto:=regexptomatchesgram(RG,reg,[[R,m,'overlap']]);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&GautoG<(/%\"aG%%AtomG/%\"bGF(/%
+#w3G-%&UnionG6%%(EpsilonG-%%ProdG6%F'%\"mG%#w2G-F26$F*%$regG/F8-F.6%F0
+-F26$F'F,F6/F5F-/F4F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 20 "Add symb
+olic weights" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "GWauto:=gra
+mweight(Gauto);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'GWautoG<(/%\"aG%
+(EpsilonG/%\"bGF(/%\"mGF(/%#w3G-%&UnionG6%F(-%%ProdG6%-F36$F'%%AtomGF,
+%#w2G-F36$-F36$F*F7%$regG/F=-F06%F(-F36$F5F.F9/F8F/" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 73 "Transform into numeric weights and compute the \+
+system of linear equations" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+70 "Geql:=combstruct[gfeqns](GWauto,unlabelled,z,[[1/3,a],[2/3,b],[u,m
+]]);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%GeqlG7(/-%\"aG6$%\"zG%\"uG#
+\"\"\"\"\"$/-%\"bGF)#\"\"#F./-%\"mGF)F+/-%$regGF),(F-F-*(F,F-F*F--%#w3
+GF)F-F-*(F2F-F*F-F8F-F-/-%#w2GF),(F-F-**F,F-F*F-F+F-F@F-F-*(F2F-F*F-F8
+F-F-/F<FB" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 43 "Compute asymptotic e
+xpectation and variance" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "
+eqnstoasympexp(Geql,reg,z,u,n);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7$,
+&%\"nG#\"\"\"\"\"*#F'F(!\"\",&F%#\"\"%\"#F#\"#5\"#\")F*" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "expect:=op(1,%); stddev:=sqrt(op(2,
+%%));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'expectG,&%\"nG#\"\"\"\"\"*
+#F(F)!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'stddevG,$*$-%%sqrtG6#
+,&%\"nG\"#7\"#5!\"\"\"\"\"#F/\"\"*" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }
+}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 10 "See Also: " }}{PARA 0 "
+" 0 "" {HYPERLNK 17 "regexpcount" 2 "regexpcount" "" }{TEXT -1 2 ", " 
+}{HYPERLNK 17 "regexpcount[specification]" 2 "regexpcount[specificatio
+n]" "" }{TEXT -1 3 ",  " }{HYPERLNK 17 "regexpcount[regexptomatchesgra
+m]" 2 "regexpcount[regexptomatchesgram]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "regexpcount[gramweight]" 2 "regexpcount[gramweight]" "" 
+}{TEXT -1 3 ",  " }{HYPERLNK 17 "combstruct[gfeqns]" 2 "combstruct[gfe
+qns]" "" }{TEXT -1 2 ", " }{HYPERLNK 17 "solve/linear" 2 "solve,linear
+" "" }}}}{MARK "2 13 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }
+{PAGENUMBERS 0 1 2 33 1 1 }

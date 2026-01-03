@@ -1,0 +1,264 @@
+{VERSION 4 0 "Mac OS X" "4.0" }
+{USTYLETAB {PSTYLE "Heading 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 
+0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Or
+dered List 5" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 1 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Text Output" -1 2
+ 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 1" -1 201 1 {CSTYLE ""
+ -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2
+ 2 -1 1 }{PSTYLE "Left Justified Maple Output" -1 12 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Help" 
+-1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }
+1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 19 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 8 8 2 0 2 0 2 2 
+-1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1 "Courier" 1 10 64 
+128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "H
+eading 2" -1 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 0
+ 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 72 2 0 2 2 -1 1 }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Tim
+es" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 0 0 1 }1 1 0 0 0 10 2 0 2 0 2 2 -1 1 }{PSTYLE "Annotation Title"
+ -1 203 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3
+ 1 0 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" 
+-1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Heading 3" -1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0
+ 1 1 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered
+ List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 
+0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Maple Output" -1 11 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkError" -1 205 1 {CSTYLE "" -1 -1 
+"Courier" 1 12 255 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Line Printed Output" -1 6 1 {CSTYLE "" -1 -1 "Courier
+" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "List Item" -1 14 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 
+2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" 
+-1 17 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3
+ 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "
+Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2
+ -1 1 }{PSTYLE "Warning" -1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 
+255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Head
+ing 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 
+1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 1 {CSTYLE "" -1
+ -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 12 12 2 0 2 0 2 
+2 -1 1 }{PSTYLE "Ordered List 2" -1 206 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE
+ "HyperlinkWarning" -1 207 1 {CSTYLE "" -1 -1 "Courier" 1 12 0 0 255 1
+ 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{CSTYLE "Help Vari
+able" -1 25 "Courier" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help \+
+Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Page Nu
+mber" -1 33 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help No
+nterminal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "
+Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Mapl
+e Comment" -1 21 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "
+2D Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "
+2D Inert Output" -1 200 "Times" 1 12 144 144 144 1 2 2 2 2 1 2 0 0 0 1
+ }{CSTYLE "Popup" -1 31 "Times" 1 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "2D Input" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }
+{CSTYLE "Copyright" -1 34 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Maple Input Placeholder" -1 201 "Courier" 1 12 200 0 200 1 2 
+1 2 2 1 2 0 0 0 1 }{CSTYLE "Annotation Text" -1 202 "Times" 1 12 0 0 0
+ 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Times" 1
+ 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small206" -1 
+203 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Text" -1 28
+ "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Code" -1 204 "Couri
+er" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Header and Footer" -1
+ 205 "Times" 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Italic" 
+-1 42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Heading"
+ -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Normal"
+ -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Dictionary H
+yperlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "
+Help Emphasized" -1 22 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 
+0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 0 0 1 2 2 1 2 2 2 0 0 0
+ 1 }{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0 1 1 2 1 
+2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 0 1 2 1 2 
+2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 
+2 2 2 2 0 0 0 1 }{CSTYLE "Text" -1 206 "Times" 1 12 0 0 0 1 2 2 2 2 2 
+2 0 0 0 1 }{CSTYLE "2D Math Italic Small" -1 207 "Times" 1 1 0 0 0 1 1
+ 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 
+1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0
+ 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small207" -1 208 "Time
+s" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title" -1 27 "Times"
+ 1 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold Small" -1 10 
+"Times" 1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times"
+ 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1
+ 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 
+"Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 
+209 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic \+
+Small201" -1 210 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Out
+put Labels" -1 29 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Comment" -1 18 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D \+
+Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Hel
+p Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 211 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 212 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 213 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 214 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 215 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 216 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 217 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 218 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 219 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 220 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 221 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 222 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 223 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 224 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 225 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 226 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 227 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 228 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 229 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 230 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 231 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 232 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 233 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 234 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 235 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 236 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 237 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 238 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 239 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 240 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 241 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 242 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 243 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{CSTYLE "" -1 244 "Courier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }
+{PSTYLE "" -1 208 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 
+3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{CSTYLE "" -1 245 "Courier" 1 
+10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 246 "Courier" 1 10 0
+ 128 128 1 2 2 1 2 2 2 0 0 0 1 }{PSTYLE "" -1 209 1 {CSTYLE "" -1 -1 "
+Times" 1 12 0 0 0 1 2 2 2 2 2 2 3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 
+}{PSTYLE "" -1 210 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2
+ 3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{CSTYLE "" -1 247 "Times" 1 12
+ 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{PSTYLE "" -1 211 1 {CSTYLE "" -1 -1
+ "Times" 1 12 0 0 0 1 2 2 2 2 2 2 3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 
+1 }{PSTYLE "" -1 212 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "" -1 213 1 {CSTYLE 
+"" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 3 0 0 1 }1 1 0 0 0 0 2 0 2 0
+ 2 2 -1 1 }{PSTYLE "" -1 214 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 2 2 2 2 2 3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{CSTYLE "" -1 248 "C
+ourier" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 249 "Couri
+er" 1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 250 "Courier" 
+1 10 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "" -1 251 "Courier" 1 10
+ 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{PSTYLE "" -1 215 1 {CSTYLE "" -1 -1
+ "Times" 1 12 0 0 0 1 2 2 2 2 2 2 3 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 
+1 }{CSTYLE "" -1 252 "Times" 1 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }}
+{SECT 0 {PARA 3 "" 0 "" {TEXT 253 20 "Introduction to the " }{TEXT 
+35 4 "gfun" }{TEXT 253 8 " Package" }}{PARA 4 "" 0 "usage" {TEXT 254 
+16 "Calling Sequence" }}{PARA 0 "" 0 "" {TEXT 255 13 "     function" }
+{TEXT 35 6 "(args)" }}{PARA 0 "" 0 "" {TEXT 255 10 "     gfun[" }{TEXT
+ 35 8 "function" }{TEXT 255 2 "](" }{TEXT 35 4 "args" }{TEXT 255 1 ")"
+ }}{SECT 0 {PARA 4 "" 0 "info" {TEXT 254 11 "Description" }}{PARA 15 "
+" 0 "" {TEXT 256 4 "The " }{TEXT 35 4 "gfun" }{TEXT 256 243 " package \+
+has been designed as a help for the manipulation and discovery of func
+tions or sequences satisfying linear differential or recurrence equati
+ons. The name of the package comes from its combinatorial application \+
+to generating functions." }}{PARA 15 "" 0 "" {TEXT 256 203 "The basic \+
+principle of the package is that linear differential equations or recu
+rrences can be used as data-structures to represent their solutions. P
+rocedures that convert to such a representation are: " }}{PARA 15 "" 0
+ "" {TEXT 256 9 "                " }{HYPERLNK 211 "algfuntoalgeq" 2 "g
+fun[algfuntoalgeq]" "" }{TEXT 256 9 "         " }{HYPERLNK 212 "algeqt
+odiffeq" 2 "gfun[algeqtodiffeq]" "" }{TEXT 256 5 "     " }{HYPERLNK 
+213 "holexprtodiffeq" 2 "gfun[holexprtodiffeq]" "" }{TEXT 256 31 "    \+
+                           " }}{PARA 15 "" 0 "" {TEXT 256 73 "The diff
+erential equations and recurrences can then be manipulated by    " }}
+{PARA 15 "" 0 "" {TEXT 256 6 "             " }{HYPERLNK 214 "algebraic
+subs" 2 "gfun[algebraicsubs]" "" }{TEXT 256 10 "          " }{HYPERLNK
+ 215 "diffeqtorec" 2 "gfun[diffeqtorec]" "" }{TEXT 256 1 " " }{TEXT 
+256 7 "       " }{HYPERLNK 216 "rectodiffeq" 2 "gfun[rectodiffeq]" "" 
+}{TEXT 256 15 "                     " }{HYPERLNK 217 "poltodiffeq" 2 
+"gfun[poltodiffeq]" "" }{TEXT 256 14 "              " }{HYPERLNK 218 "
+poltorec" 2 "gfun[poltorec]" "" }{TEXT 256 3 "   " }}{PARA 15 "" 0 "" 
+{TEXT 256 69 "and the following ones that perform more elementary oper
+ations       " }}{PARA 15 "" 0 "" {TEXT 256 3 "          " }{HYPERLNK 
+219 "borel" 2 "gfun[borel]" "" }{TEXT 256 29 "                        \+
+     " }{HYPERLNK 220 "cauchyproduct" 2 "gfun[cauchyproduct]" "" }
+{TEXT 256 6 "      " }{HYPERLNK 221 "diffeq+diffeq" 2 "gfun[diffeq+dif
+feq]" "" }{TEXT 256 8 "        " }}{PARA 15 "" 0 "" {TEXT 256 3 "     \+
+     " }{HYPERLNK 222 "diffeq*diffeq" 2 "gfun[diffeq*diffeq]" "" }
+{TEXT 256 13 "             " }{HYPERLNK 223 "diffeqtohomdiffeq" 2 "gfu
+n[diffeqtohomdiffeq]" "" }{TEXT 256 2 "  " }{HYPERLNK 224 "hadamardpro
+duct" 2 "gfun[hadamardproduct]" "" }{TEXT 256 9 "         " }}{PARA 15
+ "" 0 "" {TEXT 256 2 "         " }{HYPERLNK 225 "invborel" 2 "gfun[inv
+borel]" "" }{TEXT 256 24 "                        " }{HYPERLNK 226 "La
+place" 2 "gfun[Laplace]" "" }{TEXT 256 10 "          " }{HYPERLNK 227 
+"rec+rec" 2 "gfun[rec+rec]" "" }{TEXT 256 21 "                     " }
+}{PARA 15 "" 0 "" {TEXT 256 2 "         " }{HYPERLNK 228 "rec*rec" 2 "
+gfun[rec*rec]" "" }{TEXT 256 26 "                          " }
+{HYPERLNK 229 "rectohomrec" 2 "gfun[rectohomrec]" "" }{TEXT 256 8 "   \+
+     " }{HYPERLNK 230 "" 2 "gfun[rectoproc]" "" }{TEXT 256 8 "        
+" }}{PARA 15 "" 0 "" {TEXT 256 78 "Useful information can then be extr
+acted from these equations by one of       " }}{PARA 15 "" 0 "" {TEXT 
+256 3 "   " }{HYPERLNK 231 "algeqtoseries" 2 "gfun[algeqtoseries]" "" 
+}{TEXT 256 12 "            " }{HYPERLNK 232 "ratpolytocoeff" 2 "gfun[r
+atpolytocoeff]" "" }{TEXT 256 12 "            " }{HYPERLNK 233 "rectop
+roc" 2 "gfun[rectoproc]" "" }{TEXT 256 16 "                " }
+{HYPERLNK 234 "the NumGfun subpackage" 2 "gfun[NumGfun]" "" }{TEXT 
+256 0 "" }}{PARA 15 "" 0 "" {TEXT 256 416 "Given the first terms of th
+e sequence, the gfun package also contains functions that will help co
+njecture what the generating function is. In some cases, this answer w
+ill be ``explicit''. In most cases though, such an explicit expression
+ will not exist, and the answer will be an equation (either differenti
+al or algebraic) satisfied by the generating function. The functions d
+ealing with numbers and series are:    " }}{PARA 15 "" 0 "" {TEXT 256 
+3 "   " }{HYPERLNK 235 "listtodiffeq" 2 "gfun[listtodiffeq]" "" }{TEXT
+ 256 12 "            " }{TEXT 256 1 " " }{HYPERLNK 236 "seriestodiffeq
+" 2 "gfun[seriestodiffeq]" "" }{TEXT 256 7 "       " }}{PARA 15 "" 0 "
+" {TEXT 256 3 "   " }{HYPERLNK 237 "listtorec" 2 "gfun[listtorec]" "" 
+}{TEXT 256 19 "                   " }{HYPERLNK 238 "seriestorec" 2 "gf
+un[seriestorec]" "" }{TEXT 256 10 "          " }}{PARA 15 "" 0 "" 
+{TEXT 256 3 "   " }{HYPERLNK 239 "listtoalgeq" 2 "gfun[listtoalgeq]" "
+" }{TEXT 256 15 "               " }{HYPERLNK 240 "seriestoalgeq" 2 "gf
+un[seriestoalgeq]" "" }{TEXT 256 11 "           " }}{PARA 15 "" 0 "" 
+{TEXT 256 3 "   " }{HYPERLNK 241 "listtoratpoly" 2 "gfun[listtoratpoly
+]" "" }{TEXT 256 9 "         " }{TEXT 256 2 "  " }{HYPERLNK 242 "serie
+storatpoly" 2 "gfun[seriestoratpoly]" "" }{TEXT 256 10 "          " }}
+{PARA 15 "" 0 "" {TEXT 256 3 "   " }{HYPERLNK 243 "listtohypergeom" 2 
+"gfun[listtohypergeom]" "" }{TEXT 256 7 "       " }{HYPERLNK 244 "seri
+estohypergeom" 2 "gfun[seriestohypergeom]" "" }{TEXT 256 1 " " }}
+{PARA 208 "" 0 "wmitable" {TEXT 206 3 "   " }{HYPERLNK 245 "guesseqn" 
+2 "gfun[guesseqn]" "" }{TEXT 206 21 "                     " }{HYPERLNK
+ 246 "guessgf" 2 "gfun[guessgf]" "" }{TEXT 206 9 "         " }{TEXT 
+206 2 "  " }}{PARA 209 "" 0 "wmitable" {TEXT 206 0 "" }}{PARA 210 "" 0
+ "wmitable" {TEXT 206 60 "The way the guessing proceeds can be control
+ed by modifying " }{HYPERLNK 247 "parameters" 2 "gfun[Parameters]" "" 
+}{TEXT 206 1 "." }}{PARA 211 "" 0 "wmitable" {TEXT 206 4 "   \n" }
+{TEXT 206 195 "There are different types of generating functions that \+
+can be manipulated in gfun, such as ordinary (ogf) and exponetial (egf
+) generating functions. For a description of the predefined types see 
+" }{HYPERLNK 17 "gftypes" 2 "gfun[gftypes]" "" }{TEXT 206 2 ". " }}
+{PARA 212 "" 0 "wmitable" {TEXT 206 70 "The following conversion routi
+nes transform from one type to another: " }{TEXT 206 4 "    " }{TEXT 
+206 2 "  " }}{PARA 213 "" 0 "wmitable" {TEXT 206 1 " " }}{PARA 214 "" 
+0 "wmitable" {TEXT 206 1 " " }{HYPERLNK 248 "listtolist" 2 "gfun[listt
+olist]" "" }{TEXT 206 6 "      " }{TEXT 206 1 " " }{HYPERLNK 249 "list
+toseries" 2 "gfun[listtoseries]" "" }{TEXT 206 7 "       " }{TEXT 206 
+1 "\n" }{TEXT 206 1 " " }{HYPERLNK 250 "seriestolist" 2 "gfun[seriesto
+list]" "" }{TEXT 206 5 "     " }{HYPERLNK 251 "seriestoseries" 2 "gfun
+[seriestoseries]" "" }{TEXT 206 1 " " }{TEXT 206 8 "        " }}{PARA 
+215 "" 0 "wmitable" {TEXT 206 0 "" }}{PARA 15 "" 0 "" {TEXT 256 127 "I
+nformation about the computations that are being done can be obtained \+
+by setting infolevel[gfun] to anything between 1 and 5. " }}}{SECT 0 
+{PARA 4 "" 0 "" {TEXT 254 10 "References" }}{PARA 14 "" 0 "" {TEXT 
+257 275 "More information (on an early version) can be found in: \"Gfu
+n: a Maple package for the manipulation of generating and holonomic fu
+nctions in one variable.\", B. Salvy and P. Zimmermann, ACM Transactio
+ns on Mathematical Software, 20 (2), 163--177 (1994). See also the web
+ page " }{HYPERLNK 252 "http://algo.inria.fr/libraries/papers/gfun.htm
+l" 4 "http://algo.inria.fr/libraries/papers/gfun.html" "" }{TEXT 257 
+1 "." }}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT 254 9 "See Also " }}
+{PARA 0 "" 0 "" {TEXT 255 0 "" }{HYPERLNK 17 "with" 2 "with" "" }{TEXT
+ 255 1 " " }{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }
+{TEXT 255 1 " " }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

@@ -1,0 +1,102 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+
+# Play with Fibonacci numbers f(n,x).
+
+# Equation for f(n,x).
+pol_to_sys(
+    h(n,x)=f(n,x),
+    {[f(n,x),{f(n+2,x)-f(n+1,x)-f(n,x),diff(f(n,x),x)}]}):
+if %={diff(h(n,x),x),h(n+2,x)-h(n+1,x)-h(n,x)} then okay else % fi;
+
+# Equation for f(n+1,x).
+pol_to_sys(
+    h(n,x)=f(n+1,x),
+    {[f(n,x),{f(n+2,x)-f(n+1,x)-f(n,x),diff(f(n,x),x)}]}):
+if %={diff(h(n,x),x),h(n+2,x)-h(n+1,x)-h(n,x)} then okay else % fi;
+
+# Cassini identity.
+pol_to_sys(
+    h(n,x)=f(n+2,x)*f(n,x)-f(n+1,x)^2,
+    {[f(n,x),{f(n+2,x)-f(n+1,x)-f(n,x),diff(f(n,x),x)}]}):
+if %={diff(h(n,x),x),h(n+1,x)+h(n,x)} then okay else % fi;
+
+# Cassini with wrong order.
+pol_to_sys(
+    s(n)=u(n)*w(n)+v(n)^2,
+    {[u(n),[u(n+2)-u(n+1)-u(n)]],
+     [v(n),[v(n+2)-v(n+1)-u(n)]],
+     [w(n),[w(n+2)-w(n+1)-w(n)]]}):
+if %={s(n+3)-2*s(n+2)-2*s(n+1)+s(n)} then okay else % fi;
+
+# Disguised Cassini identity.
+pol_to_sys(
+    h(n,x)=(f(n+2,x)*f(n,x)-f(n+1,x)^2)*g(n,x),
+    {[f(n,x),{f(n+2,x)-f(n+1,x)-f(n,x),diff(f(n,x),x)}],
+     [g(n,x),{g(n+1,x)+g(n,x),diff(g(n,x),x)}]}):
+if %={diff(h(n,x),x),h(n+1,x)-h(n,x)} then okay else % fi;
+
+# Univariate variants.
+pol_to_sys(
+    h(n,x)=f(n+2,x)*f(n,x)-f(n+1,x)^2,
+    {[f(n,x),{f(n+2,x)-f(n+1,x)-f(n,x),diff(f(n,x),x)}]},
+    univariate(n)):
+if %=h(n+1,x)+h(n,x) then okay else % fi;
+
+pol_to_sys(
+    h(n,x)=f(n+2,x)*f(n,x)-f(n+1,x)^2,
+    {[f(n,x),{f(n+2,x)-f(n+1,x)-f(n,x),diff(f(n,x),x)}]},
+    univariate(x)):
+if %=diff(h(n,x),x) then okay else % fi;
+
+# Mixed differential equations for
+#	 _C1*x^(1/2)*BesselI(1/3,2/3*x^(3/2))
+#	+_C2*x^(1/2)*BesselK(1/3,2/3*x^(3/2))
+#	+_C3*y^(1/2)*BesselI(1/3,2/3*y^(3/2))
+#	+_C4*y^(1/2)*BesselK(1/3,2/3*y^(3/2))
+s:=pol_to_sys(
+    h(x,y)=f(x,y)+g(x,y),
+    {[f(x,y),{diff(f(x,y),x,x)-x*f(x,y),diff(f(x,y),y)}],
+     [g(x,y),{diff(g(x,y),x),diff(g(x,y),y,y)-y*g(x,y)}]}):
+normal(eval(subs(h(x,y)=
+    _C1*x^(1/2)*BesselI(1/3,2/3*x^(3/2))+
+    _C2*x^(1/2)*BesselK(1/3,2/3*x^(3/2))+
+    _C3*y^(1/2)*BesselI(1/3,2/3*y^(3/2))+
+    _C4*y^(1/2)*BesselK(1/3,2/3*y^(3/2)),s))):
+if %={0} then okay else % fi;
+us:=Mgfun:-MG_Internals:-recognize_operator_algebra(s):
+with(Groebner):
+HilbertSeries(us["system"],tdeg(op(us["algebra"]["right_indets"])),u):
+if %=u+1 then okay else % fi;
+
+# Old bug in pol_to_sys:
+# exp(mu*x+nu*y):
+{diff(f(x,y),x)-mu*f(x,y),diff(f(x,y),y)-nu*f(x,y)}:
+# BesselJ(mu,x)*BesselJ(nu,y):
+{x^2*diff(f(x,y),x,x)+x*diff(f(x,y),x)+(x^2-mu^2)*f(x,y),
+    y^2*diff(f(x,y),y,y)+y*diff(f(x,y),y)+(y^2-nu^2)*f(x,y)}:
+s:=`sys+sys`(%%,%):
+normal(eval(subs(f(x,y)=exp(mu*x+nu*y)+BesselJ(mu,x)*BesselJ(nu,y),s))):
+if %={0} then okay else % fi;
+s:=pol_to_sys(f(x,y)=f(x,y),{[f(x,y),s]},univariate(x)):
+indets(s,function):
+if %={seq(diff(f(x,y),[x$i]),i=0..3)} then okay else % fi;
+normal(eval(subs(f(x,y)=exp(mu*x+nu*y)+BesselJ(mu,x)*BesselJ(nu,y),s))):
+if %=0 then okay else % fi;

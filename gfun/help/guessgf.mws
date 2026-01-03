@@ -1,0 +1,116 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 13 "gfun[guessgf]" }
+{TEXT 30 42 " - find a generating function from a list " }
+}
+{PARA 3 "> " 0 "" {TEXT -1 14 "gfun[guesseqn]" }
+{TEXT 30 68 " - find a differential equation satisfied by the generating function" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 13 "     guessgf(" }
+{TEXT 35 1 "L" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "x" }
+{TEXT -1 2 ", " }
+{TEXT 35 12 "<[typelist]>" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 14 "     guesseqn(" }
+{TEXT 35 1 "L" }
+{TEXT -1 2 ", " }
+{TEXT 35 4 "y(x)" }
+{TEXT -1 2 ", " }
+{TEXT 35 12 "<[typelist]>" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "L          - " }
+{TEXT -1 4 "list" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "x          - " }
+{TEXT -1 4 "name" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "y          - " }
+{TEXT -1 4 "name" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 13 "[typelist] - " }
+{TEXT -1 44 "(optional) list of generating function types" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 14 "The procedure " }
+{TEXT 35 7 "guessgf" }
+{TEXT -1 86 " attempts to find a closed form for the generating function for the series defined by " }
+{TEXT 35 1 "L" }
+{TEXT -1 24 ". The optional variable " }
+{TEXT 35 8 "typelist" }
+{TEXT -1 140 " specifies the kind of generating functions, (such as ordinary (ogf) or exponential (egf)) to try. For a full list of available choices see " }
+{HYPERLNK 17 "gftypes" 2 "gfun[gftypes]" "" }{TEXT -1 2 ". " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 8 "typelist" }
+{TEXT -1 65 " contains more than one element, these types are tried in order. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 3 "If " }
+{TEXT 35 8 "typelist" }
+{TEXT -1 108 " is not provided, the default are ordinary and exponential generating functions, specified by the parameter " }
+{TEXT 35 9 "optionsgf" }
+{TEXT -1 1 "=" }
+{TEXT 35 13 "['ogf','egf']" }
+{TEXT -1 2 ". " }
+}
+{PARA 14 "> " 0 "" {TEXT -1 13 "This function" }
+}
+{PARA 14 "> " 0 "" {TEXT -1 48 "1. first tries to find a rational function with " }
+{HYPERLNK 17 "listtoratpoly" 2 "gfun[listtoratpoly]" "" }{TEXT -1 1 "," }
+}
+{PARA 14 "> " 0 "" {TEXT -1 9 "2. calls " }
+{HYPERLNK 17 "listtohypergeom" 2 "gfun[listtohypergeom]" "" }{TEXT -1 41 " to try to find hypergeometric functions," }
+}
+{PARA 14 "> " 0 "" {TEXT -1 9 "3. tries " }
+{HYPERLNK 17 "listtodiffeq" 2 "gfun[listtodiffeq]" "" }{TEXT -1 93 " to find a linear differential equation with polynomial coefficients which is then passed to " }
+{HYPERLNK 17 "dsolve" 2 "dsolve" "" }{TEXT -1 2 ". " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 13 "The function " }
+{TEXT 35 8 "guesseqn" }
+{TEXT -1 93 " only tries to find an equation satisfied by the generating function. It might succeed where " }
+{TEXT 35 7 "guessgf" }
+{TEXT -1 74 " fails because it does not attempt to solve this equation in closed-form. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 54 "One should give as many terms as possible in the list " }
+{TEXT 35 1 "L" }
+{TEXT -1 2 ". " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "with(gfun):\nguessgf([1,2,4,7,11,16,22],x);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#7$*&,(!\"\"\"\"\"%\"xGF'*$F(\"\"#F&F',&F(F'F&F'!\"$%$ogfG
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "guessgf([1,1,3,10,41,196,1057],x,['lgdegf']);" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#7$,&-%$expG6#%\"xG\"\"\"*&F%F)F(F)F)%'lgdegfG
+"}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 133 "l:=[1, 4, 36, 400, 4900, 63504, 853776, 11778624, 165636900, 2363904400, 34134779536, 497634306624, 7312459672336]:\nguesseqn(l,y(z));" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#7$<%/--%\"DG6#%\"yG6#\"\"!\"\"%,(-F*6#%\"zGF-*&,&!\"\"\"\"\"F1\"#KF5-%%
+diffG6$F/F1F5F5*&,&F1F4*$F1\"\"#\"#;F5-F86$F/-%\"$G6$F1F=F5F5/-F
+*F+F5%$ogfG
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[parameters]" 2 "gfun[parameters]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[listtoseries]" 2 "gfun[listtoseries]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[listtodiffeq]" 2 "gfun[listtodiffeq]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[listtohypergeom]" 2 "gfun[listtohypergeom]" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "gfun[listtoratpoly]" 2 "gfun[listtoratpoly]" "" }{TEXT -1 2 "  " }
+}
+}}

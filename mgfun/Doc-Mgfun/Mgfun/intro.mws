@@ -1,0 +1,327 @@
+{VERSION 4 0 "IBM INTEL LINUX22" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 
+1 }{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "2D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 1 }{CSTYLE 
+"2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+256 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 257 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 0 1 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 1 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }1 0 0 0 8 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 
+0 0 0 0 0 0 0 0 0 0 0 1 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple
+ Output" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Title" 0 18 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 0 0 0 0 
+0 0 1 }3 0 0 -1 12 12 0 0 0 0 0 0 19 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT -1 33 "Introduction to the Mgfun
+ Package" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 0 "" }}}{EXCHG {PARA 0 "
+" 0 "" {TEXT -1 4 "The " }{TEXT 256 5 "Mgfun" }{TEXT -1 232 " package \+
+consists of procedures to compute with special functions and combinato
+rial sequences that are implicitly defined as solutions of systems of \+
+linear difference-differential equations.  Its syntax is very close to
+ that of the " }{TEXT 257 4 "gfun" }{TEXT -1 67 " package.  In the sam
+e spirit as with the latter, a typical use of " }{TEXT 258 5 "Mgfun" }
+{TEXT -1 124 " to compute a sum or integral is the following.  First o
+ne obtains systems that define the summand or integrand by calls to " 
+}{HYPERLNK 17 "dfinite_expr_to_sys" 2 "Mgfun,dfinite_expr_to_sys" "" }
+{TEXT -1 40 " or by combining known systems by using " }{HYPERLNK 17 "
+`sys+sys`" 2 "Mgfun,`sys+sys`" "" }{TEXT -1 5 " and " }{HYPERLNK 17 "`
+sys*sys`" 2 "Mgfun,`sys*sys`" "" }{TEXT -1 53 ".  Then one derives the
+ sum or integral by a call to " }{HYPERLNK 17 "sum_of_sys" 2 "Mgfun,su
+m_of_sys" "" }{TEXT -1 4 " or " }{HYPERLNK 17 "int_of_sys" 2 "Mgfun,in
+t_of_sys" "" }{TEXT -1 79 ".  Finally one has to solve the system to o
+btain a closed form (if one exists)." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 12 "with(Mgfun);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7-%-M
+G_InternalsG%5creative_telescopingG%7dfinite_expr_to_diffeqG%4dfinite_
+expr_to_recG%4dfinite_expr_to_sysG%,diag_of_sysG%+int_of_sysG%+pol_to_
+sysG%+sum_of_sysG%(sys*sysG%(sys+sysG" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 114 "In the following, we exemplify the use of the package by
+ working out the evaluation of a sum and of two integrals." }}}{SECT 
+1 {PARA 3 "" 0 "" {TEXT -1 26 "Closed Form Evaluation of " }{XPPEDIT 
+18 0 "sum(H[n](x)*H[n](y)*u^n/n!,n = 0 .. infinity);" "6#-%$sumG6$**-&
+%\"HG6#%\"nG6#%\"xG\"\"\"-&F)6#F+6#%\"yGF.)%\"uGF+F.-%*factorialG6#F+!
+\"\"/F+;\"\"!%)infinityG" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 80 "This i
+s the Mehler formula for Hermite polynomials.  We first input the summ
+and." }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "expr:=HermiteH(n,x)*H
+ermiteH(n,y)*u^n/n!:" "6#>%%exprG**-%)HermiteHG6$%\"nG%\"xG\"\"\"-F'6$
+F)%\"yGF+)%\"uGF)F+-%*factorialG6#F)!\"\"" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 22 "Since the sum is over " }{XPPEDIT 18 0 "n;" "6#%\"nG" }
+{TEXT -1 52 ", we need the dependency of the summand in terms of " }
+{XPPEDIT 18 0 "n;" "6#%\"nG" }{TEXT -1 61 ".  In this session, we focu
+s on the dependency of the sum in " }{XPPEDIT 18 0 "u;" "6#%\"uG" }
+{TEXT -1 12 ", and leave " }{XPPEDIT 18 0 "x;" "6#%\"xG" }{TEXT -1 5 "
+ and " }{XPPEDIT 18 0 "y;" "6#%\"yG" }{TEXT -1 137 " as parameters, bu
+t other choices could have been made.  The following call yields a sys
+tem that traces the dependency of the summand in " }{XPPEDIT 18 0 "n;
+" "6#%\"nG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "u;" "6#%\"uG" }{TEXT 
+-1 1 "." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "sys[1]:=dfinite_
+expr_to_sys(expr,f(n::shift,u::diff));" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>&%$sysG6#\"\"\"<$,,*&,&*$)%\"uG\"\"%F'\"#;*&F-F'%\"nGF'F0F'-%\"
+fG6$F2F.F'F'**)F.\"\"$F'%\"xGF'%\"yGF'-F46$,&F2F'F'F'F.F'!#;*&,&F2F'F/
+F'F'-F46$F@F.F'F'*&,**&)F.\"\"#F'F2F'!\")*&FFF')F9FGF'\"\")*$FFF'!#?*&
+FFF')F:FGF'FKF'-F46$,&F2F'FGF'F.F'F'**F.F'F:F'F9F'-F46$,&F2F'F8F'F.F'!
+\"%,&*&F2F'F3F'!\"\"*&F.F'-%%diffG6$F3F.F'F'" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 102 "The summation itself is performed by the following cal
+l.  Viewing the sum as a formal power series in " }{XPPEDIT 18 0 "u;" 
+"6#%\"uG" }{TEXT -1 40 ", we have that the summand goes to 0 as " }
+{XPPEDIT 18 0 "n;" "6#%\"nG" }{TEXT -1 62 " tends to infinity.  At the
+ other boundary, the recurrence in " }{XPPEDIT 18 0 "n;" "6#%\"nG" }
+{TEXT -1 43 " proves that the summand is 0 for negative " }{XPPEDIT 
+18 0 "n;" "6#%\"nG" }{TEXT -1 25 ".  The use of the option " }
+{XPPEDIT 18 0 "natural_boundaries;" "6#%3natural_boundariesG" }{TEXT 
+-1 30 " is therefore fully justified." }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 60 "sys[2]:=sum_of_sys(sys[1],n=0..infinity,natural_bound
+aries);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%$sysG6#\"\"#<#,&*&,.*$)%
+\"uG\"\"$\"\"\"\"#;*&F.F0)%\"yGF'F0\"\")*&F.F0)%\"xGF'F0F5F.!\"%*&F4F0
+F8F0F9*()F.F'F0F4F0F8F0!#;F0-%\"fG6#F.F0F0*&,(F0F0*$F<F0!\")*$)F.\"\"%
+F0F1F0-%%diffG6$F>F.F0F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 55 "There
+ only remains to solve this differential equation." }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 35 "dsolve(sys[2] union \{f(0)=1\},f(u));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"fG6#%\"uG,$*&*&%\"IG\"\"\"-%$expG
+6#,$*&,,*&-%#lnG6#,&!\"\"F,*$)F'\"\"#F,\"\"%F,F:F,!\"%*(F'F,%\"yGF,%\"
+xGF,!\")*$)F@F;F,F;*$)F?F;F,F;F4F,F,*&,&F'F;F,F,F,,&F'F;F8F,F,F8#F,F;F
+,F,-F.6#,&FBF8FDF8F8F8" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 29 "s
+implify(expand(%),symbolic);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"f
+G6#%\"uG,$*&*&%\"IG\"\"\"-%$expG6#,$*&*&F'F,,(*&F'F,)%\"xG\"\"#F,F,*&F
+'F,)%\"yGF7F,F,*&F:F,F6F,!\"\"F,F,*&,&F'F7F,F,F,,&F'F7F<F,F,F<\"\"%F,F
+,*$-%%sqrtG6#,&F<F,*$)F'F7F,F@F,F<F<" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+-1 34 "In other words, we have obtained: " }{XPPEDIT 18 0 "sum(H[n](x)
+*H[n](y)*u^n/n!,n = 0 .. infinity) = exp(4*u*(x*y-u*x^2-u*y^2)/(1-4*u^
+2))/sqrt(1-4*u^2);" "6#/-%$sumG6$**-&%\"HG6#%\"nG6#%\"xG\"\"\"-&F*6#F,
+6#%\"yGF/)%\"uGF,F/-%*factorialG6#F,!\"\"/F,;\"\"!%)infinityG*&-%$expG
+6#**\"\"%F/F6F/,(*&F.F/F4F/F/*&F6F/*$F.\"\"#F/F:*&F6F/*$F4FIF/F:F/,&F/
+F/*&FDF/*$F6FIF/F:F:F/-%%sqrtG6#,&F/F/*&FDF/*$F6FIF/F:F:" }{TEXT -1 1 
+"." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 26 "Closed Form Evaluation of
+ " }{XPPEDIT 18 0 "int(u^n*exp(-u*z/2*(1-1/(u^2)))*(BesselJ(n,z)+u*Bes
+selJ(n-1,z)),z = 0 .. infinity);" "6#-%$intG6$*()%\"uG%\"nG\"\"\"-%$ex
+pG6#,$**F(F*%\"zGF*\"\"#!\"\",&F*F**&F*F**$F(F1F2F2F*F2F*,&-%(BesselJG
+6$F)F0F**&F(F*-F86$,&F)F*F*F2F0F*F*F*/F0;\"\"!%)infinityG" }}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 86 "We study this integral when parameter val
+ues make it well-defined, that is to say for " }{XPPEDIT 18 0 "1 <= n;
+" "6#1\"\"\"%\"nG" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "abs(u) < 1;" "6
+#2-%$absG6#%\"uG\"\"\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 
+175 "Here again, we first input the integrand and make our choice of v
+ariables with respect to which we want to study the dependency.  This \+
+has to contain the integration variable " }{XPPEDIT 18 0 "z;" "6#%\"zG
+" }{TEXT -1 50 ".  Here, we made the choice to leave no parameter." }}
+}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "expr:=u^n*exp(-u*z/2*(1-1/u^2
+))*(BesselJ(n,z)+u*BesselJ(n-1,z)):" "6#>%%exprG*()%\"uG%\"nG\"\"\"-%$
+expG6#,$**F'F)%\"zGF)\"\"#!\"\",&F)F)*&F)F)*$F'F0F1F1F)F1F),&-%(Bessel
+JG6$F(F/F)*&F'F)-F76$,&F(F)F)F1F/F)F)F)" }{TEXT -1 0 "" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "sys[1]:=dfinite_expr_to_sys(expr,f(
+n::shift,z::diff,u::diff));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%$sys
+G6#\"\"\"<%,(*&,2*&)%\"zG\"\"#F')%\"uGF/F'F/*$F-F'F'*&)F1\"\"%F'F-F'F'
+*()F1\"\"$F'%\"nGF'F.F'!\"%*&F0F'F9F'F5*&F0F')F9F/F'F5*&F1F'F.F'F:*(F9
+F'F1F'F.F'F:F'-%\"fG6%F9F.F1F'F'*&,(*&F4F'F.F'F5*&F.F'F0F'F5*&F7F'F9F'
+!\")F'-%%diffG6$F@F1F'F'*&F4F'-FJ6$F@-%\"$G6$F1F/F'F5,**&,&FFF'*&F1F'F
+9F'!\"#F'F@F'F'*&F.F'-FA6%,&F9F'F'F'F.F1F'F'*(F1F'F.F'-FJ6$F@F.F'F'*&F
+0F'FIF'F',**&,2F<!#7F6F5F;F5F?F5F3F'F,F/F>F:F2F'F'F@F'F'*(F-F'F0F'-FJ6
+$F@-FP6$F.F/F'F5*&,(*&F-F'F7F'F5*&F1F'F-F'F:FFF5F'FfnF'F'*&,&FG\"\")*$
+F7F'F:F'FIF'F'" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 104 "The integratio
+n itself takes place in the following call.  The justification that we
+ may use the option " }{XPPEDIT 18 0 "takayama_algo;" "6#%.takayama_al
+goG" }{TEXT -1 125 ", and thus, that we may perform an integration ove
+r natural boundaries is the following.  We will consider this integral
+ for " }{XPPEDIT 18 0 "u;" "6#%\"uG" }{TEXT -1 83 " in a neighbourhood
+ of 0, so that the exponential term is exponentially small when " }
+{XPPEDIT 18 0 "z;" "6#%\"zG" }{TEXT -1 55 " tends to infinity.  At 0, \+
+the integrand has valuation " }{XPPEDIT 18 0 "2*n;" "6#*&\"\"#\"\"\"%
+\"nGF%" }{TEXT -1 4 " in " }{XPPEDIT 18 0 "u;" "6#%\"uG" }{TEXT -1 
+121 ", so that any linear combination of the integrand and its derivat
+ives with polynomial function coefficients will be 0 at " }{XPPEDIT 
+18 0 "u = 0;" "6#/%\"uG\"\"!" }{TEXT -1 11 ", provided " }{XPPEDIT 18 
+0 "n;" "6#%\"nG" }{TEXT -1 28 " becomes sufficiently large." }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 55 "sys[2]:=int_of_sys(sys[1],z=
+0..infinity,takayama_algo);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%$sys
+G6#\"\"#<%,,*&,*\"\"(\"\"\"%\"nG\"#?*$)F.F'F-\"#7*$)%\"uGF'F-!\"\"F--%
+\"fG6$F.F5F-F-*&,(!\"%F-F0!#7F.!#?F--F86$,&F.F-F-F-F5F-F-*&,(F5!\"(*&F
+5F-F.F-!\")*$)F5\"\"$F-F-F--%%diffG6$F7F5F-F-*&,&*$)F5\"\"%F-F-F3F-F--
+FK6$F7-%\"$G6$F5F'F-F-*&,&FE\"\")F5FQF---&%\"DGF&6#F8F@F-F-,,*&,4\"\"*
+F-*&FPF-F.F-F6F.\"#:*&F4F-F.F-!#5F3!\"$*$)F.FIF-F<F0FF*&F4F-F1F-!#C*&F
+coF-F4F-F=F-F7F-F-*&,.F_oF2Fdo\"#CF.FeoFfoF2F0F>FboF<F-F?F-F-*&,,*&)F5
+\"\"&F-F.F-F-*&FHF-F.F-!\"#F5!\"*FGFIFEFaoF-FJF-F-*&,,FOFIF3FIF_oF-*&F
+.F-)F5\"\"'F-F-F]oF'F-FRF-F-*&,(FboFYF0\"#GF.F2F--F86$,&F.F-F'F-F5F-F-
+,,*&,2FapF-F0!#>F.!#HF3F-FboFY*$)F.FQF-FQF_oFIFdoF^pF-F7F-F-*&,*F.FYFb
+qF<FboFFF0FQF-F?F-F-*&,.FGF6FE\"#@F_pFaoF5F\\o*&FHF-F1F-!\"&*&F5F-F1F-
+F^oF-FJF-F-*&,.F]oFIFdoFjqF3F<F_oFap*&FPF-F1F-FjqFOF'F-FRF-F-*&,**$F]p
+F-F-F_pF'FGF-F\\pF'F--FK6$F7-FU6$F5FIF-F-" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT -1 61 "The above system cancels the integral for sufficiently la
+rge " }{XPPEDIT 18 0 "n;" "6#%\"nG" }{TEXT -1 82 ".  (But unfortunatel
+y, we do not know at this point any lower bound for the valid " }
+{XPPEDIT 18 0 "n;" "6#%\"nG" }{TEXT -1 2 ".)" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT -1 83 "At this point, we face a non-deterministic behaviour of
+ Maple: the above output of " }{TEXT 259 10 "int_of_sys" }{TEXT -1 
+191 " varies, according to the system on which this session is run.  A
+voiding this non-determinism would require that the user inputs some c
+onstraints that are not expressable at the level of the " }{HYPERLNK 
+17 "Mgfun" 2 "Mgfun" "" }{TEXT -1 45 " package, but only at the lower-
+level of the " }{HYPERLNK 17 "Holonomy" 2 "Holonomy" "" }{TEXT -1 76 "
+ package (this relates to choices of term orders in Groebner bases, se
+e the " }{HYPERLNK 17 "Groebner" 2 "Groebner" "" }{TEXT -1 126 " packa
+ge).  Due to this, we provide two ways to solve the system, depending \+
+on the output of the following two Maple commands:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 28 "map(indets,sys[2],function);" }}{PARA 12 "
+" 1 "" {XPPMATH 20 "6#<%<'-%\"fG6$%\"nG%\"uG--&%\"DG6#\"\"#6#F&6$,&F(
+\"\"\"F3F3F)-%%diffG6$F%F)-F&F1-F56$F%-%\"$G6$F)F/<'F%F4F7-F&6$,&F(F3F
+/F3F)F8<'-F56$F%-F;6$F)\"\"$F%F4F7F8" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 65 "if nops(remove(has,%,[D,diff]))=1 then \"Case A\" els
+e \"Case B\" fi;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#Q'Case~B6\"" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 81 "Please, directly enter the section
+ with title indicated by the last output above." }}}{SECT 1 {PARA 4 "
+" 0 "" {TEXT -1 6 "Case A" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 90 "In th
+is situation, a recurrence is already available in the system.  It is \+
+readily solved." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "eq[0]:=c
+ollect(eval(subs(f=unapply(f(n),n,u),op(remove(has,sys[2],diff)))),f,f
+actor);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#eqG6#\"\"!,(*&)%\"uG\"
+\"#\"\"\"-%\"fG6#%\"nGF-!\"\"*(,&F+F-F2F-F-,&F+F-F-F-F--F/6#,&F1F-F-F-
+F-F--F/6#,&F1F-F,F-F-" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 69 "no
+rmal(LREtools[hypergeomsols](eq[0],f(n),\{\},output=basis),expanded);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,&&%#_CG6#\"\"\"F'*&&F%6#\"\"#F'),
+$*$)%\"uGF+F'!\"\"%\"nGF'F'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+79 "solve(expand(\{subs(n=1,%)=2*u,subs(n=2,%)=2*u,subs(n=3,%)=2*u\}),
+\{_C[1],_C[2]\});" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$/&%#_CG6#\"\"\"
+,$%\"uG\"\"#/&F&6#F+\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+34 "rsol:=normal(subs(%,%%),expanded);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%%rsolG,$%\"uG\"\"#" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 6 "Ca
+se B" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 57 "In this situation, we proc
+eed to eliminate all shifts in " }{XPPEDIT 18 0 "n;" "6#%\"nG" }{TEXT 
+-1 48 " so as to obtain a purely differential relation." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "eq[1]:=op(select(has,sys[2],diff(f(
+n,u),u$3)));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%#eqG6#\"\"\",,*&,2!
+\"*F'*$)%\"nG\"\"#F'!#>F.!#H*$)%\"uGF/F'F'*$)F.\"\"$F'\"\")*$)F.\"\"%F
+'F;*&F3F'F.F'F7*&F3F'F-F'\"\"&F'-%\"fG6$F.F4F'F'*&,*F.F8F9!\"%F5!\")F,
+F;F'-F@6$,&F.F'F'F'F4F'F'*&,.*$)F4F7F'!\"\"*&F4F'F.F'\"#@*&FLF'F.F'!\"
+$F4\"\"**&FLF'F-F'!\"&*&F4F'F-F'\"#:F'-%%diffG6$F?F4F'F'*&,.*&)F4F;F'F
+.F'F7F=FTF2FDF<F+*&FgnF'F-F'FT*$FgnF'F/F'-FX6$F?-%\"$G6$F4F/F'F'*&,**$
+)F4F>F'F'FPF/FKF'*&FboF'F.F'F/F'-FX6$F?-F]o6$F4F7F'F'" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "eq[2]:=op(select(has,sys[2],D[2](f)
+(n+1,u)));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%#eqG6#\"\"#,,*&,*\"\"
+(\"\"\"%\"nG\"#?*$)F-F'F,\"#7*$)%\"uGF'F,!\"\"F,-%\"fG6$F-F4F,F,*&,(!
+\"%F,F/!#7F-!#?F,-F76$,&F-F,F,F,F4F,F,*&,(F4!\"(*&F4F,F-F,!\")*$)F4\"
+\"$F,F,F,-%%diffG6$F6F4F,F,*&,&*$)F4\"\"%F,F,F2F,F,-FJ6$F6-%\"$G6$F4F'
+F,F,*&,&FD\"\")F4FPF,--&%\"DGF&6#F7F?F,F," }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 39 "eq[3]:=op(select(has,sys[2],f(n+2,u)));" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#>&%#eqG6#\"\"$,,*&,4\"\"*\"\"\"*&)%\"uG\"\"%
+F,%\"nGF,!\"\"F1\"#:*&)F/\"\"#F,F1F,!#5*$F5F,!\"$*$)F1F'F,!\"%*$)F1F6F
+,!\")*&F5F,F>F,!#C*&F;F,F5F,!#7F,-%\"fG6$F1F/F,F,*&,.F4\"#7F@\"#CF1FAF
+BFIF=!#?F:F<F,-FE6$,&F1F,F,F,F/F,F,*&,,*&)F/\"\"&F,F1F,F,*&)F/F'F,F1F,
+!\"#F/!\"**$FUF,F'*&F/F,F1F,F9F,-%%diffG6$FDF/F,F,*&,,*$F.F,F'F8F'F4F,
+*&F1F,)F/\"\"'F,F,F-F6F,-Fen6$FD-%\"$G6$F/F6F,F,*&,(F:\"\")F=\"#GF1FIF
+,-FE6$,&F1F,F6F,F/F,F," }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 71 "[Proced
+ure to replace var in expr with its value solved from relation.]" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "plug:=proc(relation,expr,var
+)\n    eval(subs(var=solve(relation,var),expr))\nend:" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 48 "[Procedure that collects in each function
+ call.]" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 85 "normalize:=proc(
+expr)\n    collect(expr,indets(expr,function),distributed,factor)\nend
+:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 59 "eq[4]:=normalize(plug(
+diff(eq[1],u),eq[2],D[2](f)(n+1,u)));" }}{PARA 12 "" 1 "" {XPPMATH 20 
+"6#>&%#eqG6#\"\"%,.*&**)%\"uGF'\"\"\"),&%\"nG\"\"#F-F-F1F-,&*$)F,F1F-F
+-F-F-F--%%diffG6$-%\"fG6$F0F,-%\"$G6$F,F'F-F-**F0F-,&F0F-!\"\"F-F-,&F0
+F-F1F-F-,&F0F-F-F-F-F@F-*&*&,8F0!#9*$)F0F'F-\"#N*$)F0\"\"$F-!#I*$)F0F1
+F-!#Z*$)F0\"\"&F-\"#W*$)F0\"\"'F-\"#7*&F4F-F0F-FX*&F4F-FHF-F@*&FKF-F4F
+-\"#=*&F4F-FOF-\"#BF3F1F-F8F-F-**F0F-F?F-FAF-FBF-F@F-*&*(F4F-,6F0FLFY
+\"#@Fen!#[Fgn!\")FN\"#5FJFXF-F-F3\"\"(FZF-FGF-F--F66$F8-F<6$F,F1F-F-**
+F0F-F?F-FAF-FBF-F@F-*&*(F,F-,4FNFLFY!#7FG!\"$Fen!#=Fgn!#BF0FWF3!\"#FJ!
+\"'FZF-F--F66$F8F,F-F-**F0F-F?F-FAF-FBF-F@F-*&**)F,FLF-F/F-,.F-F-F3!\"
+(FY!#8F0FLFNFSFgnFSF--F66$F8-F<6$F,FLF-F-**F0F-F?F-FAF-FBF-F@F@*&,(!\"
+%F-FNFjoF0!#?F--F96$FBF,F-F-" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 45 "eq[5]:=normalize(plug(eq[1],eq[4],f(n+1,u)));" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>&%#eqG6#\"\"&,,*&**)%\"uG\"\"%\"\"\"),&%\"nG\"\"#F.F
+.F2F.,&*$)F,F2F.F.F.F.F.-%%diffG6$-%\"fG6$F1F,-%\"$G6$F,F-F.F.**F1F.,&
+F1F.!\"\"F.F.,&F1F.F2F.F.,&F1F.F.F.F.FAF.*&*()F0\"\"$F.,*F1!\"'*&F5F.F
+1F.F2!\"*F.F4FAF.F9F.F.**F1F.F@F.FBF.FCF.FAFA*&**F/F.,.*$)F1F2F.F-*&F5
+F.FQF.F-F1\"#7FJ!#7F'F.F4F'F.F5F.-F76$F9-F=6$F,F2F.F.**F1F.F@F.FBF.FCF
+.FAF.*&**FFF.FHF.F,F.-F76$F9F,F.F.**F1F.F@F.FBF.FCF.FAF.*&**F/F.,*F1F2
+FJF2F.F.F4!\"$F.)F,FGF.-F76$F9-F=6$F,FGF.F.**F1F.F@F.FBF.FCF.FA!\"#" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 74 "The following is a purely differ
+ential equation satisfied by the integral." }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 67 "eq[5]:=normalize(primpart(subs(f(n,u)=f(u),eq[5]),d
+iff(f(u),u$4)));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%#eqG6#\"\"&,,**
+%\"uG\"\"\",&%\"nG\"\"#F+F+F+,*F-!\"'*&)F*F.F+F-F+F.!\"*F+*$F2F+!\"\"F
++-%%diffG6$-%\"fG6#F*F*F+F+*(F2F+,.*$)F-F.F+\"\"%*&F2F+F?F+F@F-\"#7F1!
+#7F'F+F4F'F+-F76$F9-%\"$G6$F*F.F+F+*(F,F+F/F+F9F+F5*()F*F@F+,&F4F+F+F+
+F+-F76$F9-FG6$F*F@F+F+*()F*\"\"$F+,*F-F.F1F.F+F+F4!\"$F+-F76$F9-FG6$F*
+FSF+!\"#" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 107 "There only remains t
+o solve it.  First, a general solution is obtained by a call to Maple'
+s general dsolve." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "dsol:=
+op(2,dsolve(eq[5],f(u)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%dsolG,
+**&*&%$_C1G\"\"\"%\"uGF)F),&*$)F*\"\"#F)F)F)F)!\"\"F)*&*&%$_C2GF))F*\"
+\"$F)F)F+F/F)*&*&%$_C3GF))F*,&%\"nGF.F4F)F)F)F+F/F)*&*&%$_C4GF))F*,&F:
+F.F)F)F)F)F+F/F)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 32 "Next, we use \+
+initial conditions." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 107 "sol
+ve(\{seq(subs(n=i,dsol)=simplify(int(subs(n=i,expr),z=0..infinity),sym
+bolic),i=1..4)\},\{_C1,_C2,_C3,_C4\});" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#<&/%$_C2GF%/%$_C3GF'/%$_C4G,$*&F'\"\"\")%\"uG\"\"#F,!\"\"/%$_C1G
+,(*&F%F,F-F,F0*$F-F,F/F/F," }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+30 "normal(subs(%,dsol),expanded);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+,$%\"uG\"\"#" }}}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 23 "We have just obt
+ained: " }{XPPEDIT 18 0 "int(u^n*exp(-u*z/2*(1-1/(u^2)))*(BesselJ(n,z)
++u*BesselJ(n-1,z)),z = 0 .. infinity) = 2*u;" "6#/-%$intG6$*()%\"uG%\"
+nG\"\"\"-%$expG6#,$**F)F+%\"zGF+\"\"#!\"\",&F+F+*&F+F+*$F)F2F3F3F+F3F+
+,&-%(BesselJG6$F*F1F+*&F)F+-F96$,&F*F+F+F3F1F+F+F+/F1;\"\"!%)infinityG
+*&F2F+F)F+" }{TEXT -1 10 " whenever " }{XPPEDIT 18 0 "1 <= n;" "6#1\"
+\"\"%\"nG" }{TEXT -1 1 "." }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 26 "Ch
+ebyshev Coefficients of " }{XPPEDIT 18 0 "x*exp(x);" "6#*&%\"xG\"\"\"-
+%$expG6#F$F%" }{TEXT -1 0 "" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 30 "Aga
+in, we input the integrand." }}}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 
+1 "expr:=x*exp(x)*ChebyshevT(n,x)/sqrt(1-x^2):" "6#>%%exprG**%\"xG\"\"
+\"-%$expG6#F&F'-%+ChebyshevTG6$%\"nGF&F'-%%sqrtG6#,&F'F'*$F&\"\"#!\"\"
+F5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 81 "The following differential \+
+difference system keeps track of all the dependencies." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "sys[1]:=dfinite_expr_to_sys(expr,f(
+n::shift,x::diff));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>&%$sysG6#\"\"
+\"<$,(*&,**&)%\"xG\"\"#F'%\"nGF'!\"\"F1F'F.F1*$)F.\"\"$F'F'F'-%\"fG6$F
+0F.F'F'*&,&F.F'F2F1F'-%%diffG6$F5F.F'F'*(F.F'F0F'-F66$,&F0F'F'F'F.F'F'
+,(*&,.*&F-F')F0F/F'F1*$)F.\"\"%F'F'F2F1*$F-F'F1F.!\"#FJF'F'F5F'F'*&,*F
+FFJF2F'FIF/F.F/F'F:F'F'*&,&FFF'FIF1F'-F;6$F5-%\"$G6$F.F/F'F'" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 121 "The following call computes a rec
+urrence satisfied by the residue at any singularity of any solution of
+ the above system." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "sys[2
+]:=int_of_sys(sys[1],x=residues);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+&%$sysG6#\"\"#<#,*-%\"fG6#%\"nG\"\"\"-F+6#,&F-F.\"\"%F.!\"\"*&F-F.-F+6
+#,&F-F.F.F.F.!\"#*&,&F-F8!\")F.F.-F+6#,&F-F.\"\"$F.F.F." }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 52 "This fourth order recurrence has no simpl
+e solution." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "rec[4]:=op(s
+ys[2]):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "LREtools[hyperge
+omsols](rec[4],f(n),\{\},output=basis);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"!" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 153 "This is no comple
+tely clear at the time why the following second order recurrence, also
+ satisfied by the integrals, cannot be found by holonomic methods." }}
+}{EXCHG {PARA 0 "> " 0 "" {XPPEDIT 19 1 "rec[2]:=(n^2+n+1)*f(n+2)+2*(n
++1)^3*f(n+1)-(n^2+3*n+3)*f(n):" "6#>&%$recG6#\"\"#,(*&,(*$%\"nGF'\"\"
+\"F,F-F-F-F--%\"fG6#,&F,F-F'F-F-F-*(F'F-*$,&F,F-F-F-\"\"$F--F/6#,&F,F-
+F-F-F-F-*&,(*$F,F'F-*&F5F-F,F-F-F5F-F--F/6#F,F-!\"\"" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 46 "In other words, the integral of the following \+
+" }{XPPEDIT 18 0 "Z;" "6#%\"ZG" }{TEXT -1 9 " is zero." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "Z:=eval(subs(f=unapply(expr,n),rec[
+2]));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"ZG,(*&**,(*$)%\"nG\"\"#\"
+\"\"F-F+F-F-F-F-%\"xGF--%$expG6#F.F--%+ChebyshevTG6$,&F+F-F,F-F.F-F-*$
+-%%sqrtG6#,&F-F-*$)F.F,F-!\"\"F-F=F-*&**),&F+F-F-F-\"\"$F-F.F-F/F--F36
+$FAF.F-F-*$-F86#F:F-F=F,*&**,(F)F-F+FBFBF-F-F.F-F/F--F36$F+F.F-F-*$-F8
+6#F:F-F=F=" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 35 "This is easily chec
+ked numerically." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 158 "for i \+
+from 0 to 3 do\n    'Z'(n=i)=Int(normal(eval(subs(n=i,subs(ChebyshevT=
+orthopoly[T],Z)))),x=-1..1);\n    \"is approximately equal to:\",evalf
+(op(2,%),30)\nod;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"ZG6#/%\"nG\"
+\"!-%$IntG6$,$*&*(%\"xG\"\"\"-%$expG6#F0F1,(*$)F0\"\"#F1F1!\"#F1F0F1F1
+F1*$-%%sqrtG6#,&F1F1F6!\"\"F1F?F8/F0;F?F1" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$Q;is~approximately~equal~to:6\"$\"#Y!#K" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/-%\"ZG6#/%\"nG\"\"\"-%$IntG6$,$*&*(%\"xGF)-%$expG
+6#F0F),**$)F0\"\"$F)F7F0!\"%*$)F0\"\"#F)\"\")F8F)F)F)*$-%%sqrtG6#,&F)F
+)F9!\"\"F)FB\"\"%/F0;FBF)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q;is~appr
+oximately~equal~to:6\"$\"$%y!#K" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%
+\"ZG6#/%\"nG\"\"#-%$IntG6$,$*&*(%\"xG\"\"\"-%$expG6#F0F1,,*$)F0\"\"%F1
+\"#G*$)F0F)F1!#T\"#5F1*$)F0\"\"$F1\"$3\"F0!#\")F1F1*$-%%sqrtG6#,&F1F1F
+:!\"\"F1FHF)/F0;FHF1" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q;is~approxima
+tely~equal~to:6\"$\"%xZ!#K" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%\"ZG6
+#/%\"nG\"\"$-%$IntG6$,$*&*(%\"xG\"\"\"-%$expG6#F0F1,.*$)F0\"\"&F1\"#E*
+$)F0F)F1!#VF0\"#;*$)F0\"\"%F1\"$G\"*$)F0\"\"#F1!$G\"F=F1F1F1*$-%%sqrtG
+6#,&F1F1FB!\"\"F1FK\"\")/F0;FKF1" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q;
+is~approximately~equal~to:6\"$\"%#z)!#K" }}}}}{MARK "0 0 0" 0 }
+{VIEWOPTS 1 1 0 3 2 1804 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

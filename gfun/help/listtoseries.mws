@@ -1,0 +1,96 @@
+{VERSION 4 0 "HELP" "4.0"}
+{USTYLETAB {PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 10 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 3 "> " 0 "" {TEXT -1 18 "gfun[listtoseries]" }
+{TEXT 30 31 " - convert a list into a series" }
+}
+{PARA 3 "> " 0 "" {TEXT -1 18 "gfun[seriestolist]" }
+{TEXT 30 31 " - convert a series into a list" }
+}
+{PARA 3 "> " 0 "" {TEXT -1 16 "gfun[listtolist]" }
+{TEXT 30 29 " - convert a list into a list" }
+}
+{PARA 3 "> " 0 "" {TEXT -1 20 "gfun[seriestoseries]" }
+{TEXT 30 33 " - convert a series into a series" }
+}
+{PARA 4 "> " 0 "usage" {TEXT -1 16 "Calling Sequence" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 18 "     listtoseries(" }
+{TEXT 35 1 "l" }
+{TEXT -1 2 ", " }
+{TEXT 35 1 "x" }
+{TEXT -1 2 ", " }
+{TEXT 35 2 "gf" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 16 "     listtolist(" }
+{TEXT 35 1 "l" }
+{TEXT -1 2 ", " }
+{TEXT 35 2 "gf" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 18 "     seriestolist(" }
+{TEXT 35 1 "s" }
+{TEXT -1 2 ", " }
+{TEXT 35 2 "gf" }
+{TEXT -1 1 ")" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 20 "     seriestoseries(" }
+{TEXT 35 1 "s" }
+{TEXT -1 2 ", " }
+{TEXT 35 2 "gf" }
+{TEXT -1 1 ")" }
+}
+{PARA 4 "> " 0 "" {TEXT -1 10 "Parameters" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "l    - " }
+{TEXT -1 6 "a list" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "s    - " }
+{TEXT -1 8 "a series" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "x    - " }
+{TEXT -1 20 "the unknown variable" }
+}
+{PARA 0 "> " 0 "" {TEXT -1 5 "     " }
+{TEXT 23 7 "[gf] - " }
+{TEXT -1 10 "(optional)" }
+}
+
+{SECT  0 {PARA 4 "> " 0 "info" {TEXT -1 11 "Description" }
+}
+{PARA 15 "> " 0 "" {TEXT -1 105 "These procedures take as input a list or a series and yield a list or a series, according to their name. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 140 "Lists are viewed as lists of coefficients of power series and reciprocally series are viewed are generating series of lists of coefficients." }
+}
+{PARA 14 "> " 0 "" {TEXT -1 12 "By default, " }
+{TEXT 35 12 "listtoseries" }
+{TEXT -1 102 " creates a power series whose coefficients are the elements of the list given as argument. Similarly, " }
+{TEXT 35 12 "seriestolist" }
+{TEXT -1 95 " returns a list of the coefficients of the series given as argument. The other two procedures, " }
+{TEXT 35 10 "listtolist" }
+{TEXT -1 5 " and " }
+{TEXT 35 14 "seriestoseries" }
+{TEXT -1 23 ", default to identity. " }
+}
+{PARA 15 "> " 0 "" {TEXT -1 196 "When a third argument is given, it is treated as a type of generating function. The coefficients of the output are those of the corresponding generating function of the coefficients of the input. " }
+}
+}
+{SECT  0 {PARA 4 "> " 0 "examples" {TEXT -1 8 "Examples" }
+}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 97 "with(gfun):\nl:=[1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786]:\nlisttoseries(l,x,'egf');" }
+}
+{PARA 11 "> " 1 "" {XPPMATH 20 "6#+=%\"xG\"\"\"\"\"!F%F%F%\"\"##\"\"&\"\"'\"\"$#\"\"(\"#7\"\"%#F-\"#?F)#\"#6\"#gF*
+#\"$V\"\"%!o\"F-#F6\"%KS\"\")#\"%JC\"'S9=\"\"*#\"%*>%\"'+s!*\"#5#F@\"(+7&GF
+3-%\"OG6#F%F.
+"}}}
+}
+{SECT  0 {PARA 4 "> " 0 "seealso" {TEXT -1 9 "See Also " }
+}
+{PARA 0 "> " 0 "" {HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "series" 2 "series" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "solve" 2 "solve" "" }{TEXT -1 2 "  " }
+}
+}}

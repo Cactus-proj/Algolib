@@ -1,0 +1,163 @@
+{VERSION 3 0 "DEC ALPHA UNIX" "3.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Input" 2 19 "" 0 1 255 0 0 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 0 1 
+0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{PSTYLE "Normal" 
+-1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 
+-1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 
+18 0 0 0 0 0 1 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "H
+eading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 
+0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 -1 
+0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "List Item" 0 14 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 
+0 0 0 14 5 }{PSTYLE "Bullet Item" 0 15 1 {CSTYLE "" -1 -1 "" 0 1 0 0 
+0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 3 3 0 0 0 0 0 0 15 2 }}
+{SECT 0 {EXCHG {PARA 3 "" 0 "" {TEXT -1 39 "Introduction to the regexp
+count package" }}{PARA 4 "" 0 "usage" {TEXT -1 17 "Calling Sequence:" 
+}}{PARA 0 "" 0 "" {TEXT -1 19 "     function(args)" }}{PARA 0 "" 0 "" 
+{TEXT -1 32 "     regexpcount[function](args)" }}}{SECT 0 {PARA 4 "" 
+0 "info" {TEXT -1 12 "Description:" }}{PARA 15 "" 0 "" {TEXT -1 9 "To \+
+use a " }{TEXT 257 11 "regexpcount" }{TEXT -1 63 " function, either de
+fine that function alone using the command " }{TEXT 258 27 "with(regex
+pcount,function) " }{TEXT -1 54 "or define all regexpcount functions u
+sing the command " }{TEXT 259 17 "with(regexpcount)" }{TEXT -1 12 ". A
+lternativ" }{TEXT 256 0 "" }{TEXT -1 45 "ely, invoke the function usin
+g the long form " }{TEXT 260 21 "regexpcount[function]" }{TEXT -1 147 
+". This long form notation is necessary whenever there is a conflict b
+etween a package function name and another function used in the same s
+ession. " }}{PARA 15 "" 0 "" {TEXT -1 4 "The " }{TEXT 261 11 "regexpco
+unt" }{TEXT -1 197 " package contains functions that manipulate regula
+r expressions and finite automata. The specifications of regular expre
+ssion and automata (external specifications for these) use a subset of
+  the  " }{HYPERLNK 17 "combstruct[specification]" 2 "combstruct[allst
+ructs]" "" }{TEXT -1 2 ". " }}{PARA 15 "" 0 "" {TEXT -1 45 "Using the \+
+Chomsky-Schuetzenberger algorithm, " }{HYPERLNK 17 "combstruct[gfsolve
+]" 2 "combstruct[gfsolve]" "" }{TEXT -1 144 "  applied to a determinis
+tic finite automaton produces the generating function of the language \+
+recognized by this automaton. Appropriate use of " }{TEXT 262 17 "comb
+struct marks " }{TEXT -1 169 "(letters of size zero) in deterministic \+
+automata translates to multivariate generating functions that count th
+e number of matches of regular expressions in random texts." }}{PARA 
+15 "" 0 "" {TEXT -1 29 "The functions available are \n" }{HYPERLNK 17 
+"autocarprod" 2 "regexpcount[autocarprod]" "" }{TEXT -1 27 "          \+
+                 " }{HYPERLNK 17 "autocomplete" 2 "regexpcount[autocom
+plete]" "" }{TEXT -1 20 "                    " }{HYPERLNK 17 "autodete
+rminize" 2 "regexpcount[autodeterminize]" "" }{TEXT -1 16 "           \+
+     " }{HYPERLNK 17 "autoerror" 2 "regexpcount[autoerror]" "" }{TEXT 
+-1 32 "                                " }{HYPERLNK 17 "automarkov" 2 
+"regexpcount[automarkov]" "" }{TEXT -1 21 "                     " }
+{HYPERLNK 17 "autominimize" 2 "regexpcount[autominimize]" "" }{TEXT 
+-1 80 "                                                               \+
+                 " }{HYPERLNK 17 "autoprune" 2 "regexpcount[autocomple
+te]" "" }{TEXT -1 31 "                               " }{HYPERLNK 17 "
+autotogram" 2 "regexpcount[autotogram]" "" }{TEXT -1 24 "             \+
+           " }{HYPERLNK 17 "drawword" 2 "regexpcount[starnormalform]" 
+"" }{TEXT -1 27 "                           " }{HYPERLNK 17 "eqnstoasy
+mpexp" 2 "regexpcount[eqnstoasympexp]" "" }{TEXT -1 17 "              \+
+   " }{HYPERLNK 17 "gramerror" 2 "regexpcount[gramerror]" "" }{TEXT 
+-1 25 "                         " }{HYPERLNK 17 "grammarkov" 2 "regexp
+count[grammarkov]" "" }{TEXT -1 84 "                                  \+
+                                                  " }{HYPERLNK 17 "gra
+mtoauto" 2 "regexpcount[gramtoauto]" "" }{TEXT -1 29 "                \+
+             " }{HYPERLNK 17 "gramweight" 2 "regexpcount[gramweight]" 
+"" }{TEXT -1 23 "                       " }{HYPERLNK 17 "randregexp" 
+2 "regexpcount[starnormalform]" "" }{TEXT -1 24 "                     \+
+   " }{HYPERLNK 17 "regexpstowaitgram" 2 "regexpcount[regexpstowaitgra
+m]" "" }{TEXT -1 13 "             " }{HYPERLNK 17 "regexptoauto" 2 "re
+gexpcount[regexptoauto]" "" }{TEXT -1 19 "                   " }
+{HYPERLNK 17 "regexptogram" 2 "regexpcount[regexptogram]" "" }{TEXT 
+-1 67 "                                                               \+
+    " }{HYPERLNK 17 "regexptomatchesgram" 2 "regexpcount[regexptomatch
+esgram]" "" }{TEXT -1 8 "        " }{HYPERLNK 17 "starnormalform" 2 "r
+egexpcount[starnormalform]" "" }}{PARA 15 "" 0 "" {TEXT -1 63 "For mor
+e information on a particular function see the help for " }{TEXT 263 
+21 "regexpcount[function]" }{TEXT -1 2 ". " }}{PARA 15 "" 0 "" {TEXT 
+-1 446 "A regular expression  is defined by writing a grammar specific
+ation that describes it (in a function name, this is referred to as \"
+regexp\"). External description of a finite automaton is defined by a \+
+constrained grammar specification(in a function name, this is referred
+ to as \"gram\").  Advanced users may wish to use directly the interna
+l specifications of automata (in function names, these are referred to
+ as \"auto\"). Details can be found in  " }{HYPERLNK 17 "regexpcount[s
+pecification]" 2 "regexpcount[specification]" "" }{TEXT -1 2 ". " }}
+{PARA 15 "" 0 "" {TEXT -1 229 "Part of the algorithms (construction of
+ non-deterministic automaton from a regular expression, determinizatio
+n or minimization) are classical. More information concerning the othe
+r algorithms used can be found in these articles: " }}{PARA 14 "" 0 "
+" {TEXT -1 114 "A. Brueggemann-Klein. \"Regular expressions into finit
+e automata.\" Theoretical Computer Science, vol. 120, 2, 1993." }}
+{PARA 14 "" 0 "" {TEXT -1 133 "P. Nicodeme, B. Salvy and P. Flajolet. \+
+\"Motif Statistics.\" 7th Annual European Symposium on Algorithms ESA \+
+'99, Prague, July 99, p.  " }}{PARA 14 "" 0 "" {TEXT -1 176 "P. Nicode
+me. \"Regexpcount, a symbolic package for counting problems on regular
+ expressions and words.\" 15th German Conference on Bioinformatics GCB
+00, Heidelberg, October 2000." }}}{SECT 0 {PARA 4 "" 0 "examples" 
+{TEXT -1 9 "Examples:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "wit
+h(regexpcount):" }}}{PARA 0 "" 0 "" {TEXT -1 49 "To count the number o
+f strings over the alphabet " }{XPPEDIT 19 1 "Sigma = \{a, b\};" "6#/%
+&SigmaG<$%\"aG%\"bG" }{TEXT -1 90 " which do not contain the word ab, \+
+compute the automaton recognizing the complementary in " }{XPPEDIT 19 
+1 "Sigma^`*`;" "6#)%&SigmaG%\"*G" }{TEXT -1 5 " of  " }{XPPEDIT 19 1 "
+Sigma^`*`*ab*Sigma^`*`;" "6#*()%&SigmaG%\"*G\"\"\"%#abGF')F%F&F'" }
+{TEXT -1 62 ", the language of words with at least one match with the \+
+word " }{XPPEDIT 19 1 "ab;" "6#%#abG" }{TEXT -1 1 "." }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 75 "R:=\{reg=Not(Prod(Sequence(X),a,b,Sequenc
+e(X))),X=Union(a,b),a=Atom,b=Atom\}:" }}}{PARA 0 "" 0 "" {TEXT -1 63 "
+Find the grammar of the corresponding deterministic automaton: " }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "A:=regexptogram(R,reg);;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"AG<&/%$regG-%&UnionG6$%(EpsilonG-F
+)6$-%%ProdG6$%\"aG%#w3G-F/6$%\"bGF'/F2-F)6$F+F./F1%%AtomG/F5F:" }}}
+{PARA 0 "" 0 "" {TEXT -1 74 "Use combstruct[gfsolve] to compute the ge
+nerating function of the language" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 53 "gf:=subs(combstruct[gfsolve](A,unlabelled,z),reg(z));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#gfG*&\"\"\"F&,(F&F&*&\"\"#F&%\"
+zGF&!\"\"*$)F*F)F&F&F+" }}}{PARA 0 "" 0 "" {TEXT -1 43 "Expand the fir
+st terms of the Taylor series" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 18 "series(gf,z=0,12);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"
+\"\"\"\"!\"\"#\"\"\"\"\"$\"\"#\"\"%\"\"$\"\"&\"\"%\"\"'\"\"&\"\"(\"\"'
+\"\")\"\"(\"\"*\"\")\"#5\"\"*\"#6\"#5\"#7\"#6-%\"OG6#F%\"#7" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 110 "Compute an automaton with marks m
+ that point (possibly overlapping) matches with the word ab in a rando
+m text." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 77 "Am:=regexptomatc
+hesgram(\{reg=Prod(a,b),a=Atom,b=Atom\},S,[[reg,m,'overlap']]);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#AmG<(/%#w3G-%&UnionG6%-%%ProdG6$%\"
+aGF'-F,6%%\"bG%\"mG%#w2G%(EpsilonG/%\"SG-F)6%F+-F,6$F1F6F4/F3F7/F2F4/F
+.%%AtomG/F1F>" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 152 "Compute the cor
+responding bivariate generating function that counts in z the size of \+
+the random texts and in u the number of occurrences of the word ab." }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "gfbivar(z,u):=subs(combstr
+uct[gfsolve](Am,unlabelled,z,[[u,m]]),S(z,u));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>-%(gfbivarG6$%\"zG%\"uG,$*&\"\"\"F+,**&)F'\"\"#F+F(F+F
++F+!\"\"*&F/F+F'F+F+*$F.F+F0F0F0" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 
+115 "Expand the first terms of the taylor series and recognize the ter
+ms of the preceding series as constant terms in u." }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 36 "expand(series(gfbivar(z,u),z=0,12));" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#+=%\"zG\"\"\"\"\"!\"\"#\"\"\",&\"\"$F%
+%\"uGF%\"\"#,&\"\"%F%*&F.F%F+F%F%\"\"$,(\"\"&F%*&\"#5F%F+F%F%*$)F+F'F%
+F%\"\"%,(\"\"'F%*&\"#?F%F+F%F%*&F9F%F6F%F%\"\"&,*F+\"#N\"\"(F%*&\"#@F%
+F6F%F%*$)F+F*F%F%\"\"',*F+\"#c\"\")F%*&FGF%F6F%F%*&FHF%FDF%F%\"\"(,,F5
+\"$E\"*&\"#%)F%F+F%F%\"\"*F%*&\"#OF%FDF%F%*$)F+F.F%F%\"\"),,F+\"$?\"F4
+F%*&FWF%FDF%F%*&F4F%FTF%F%*&\"$_#F%F6F%F%\"\"*,.FC\"$I$*&\"$i%F%F6F%F%
+*&\"$l\"F%F+F%F%\"#6F%*&\"#bF%FTF%F%*$)F+F2F%F%\"#5,.F5\"$#z*&\"$?#F%F
++F%F%\"#7F%*&FfoF%FTF%F%*&FdoF%FDF%F%*&FgoF%FaoF%F%\"#6-%\"OG6#F%\"#7
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 19 "In the coefficient " }
+{XPPEDIT 19 1 "3+u;" "6#,&\"\"$\"\"\"%\"uGF%" }{TEXT -1 4 " of " }
+{XPPEDIT 19 1 "z^2;" "6#*$%\"zG\"\"#" }{TEXT -1 122 ", u count the mat
+ch within  the text of size 2 ab and 3 counts the 3 texts of size 2 wi
+thout matches aa, ba, bb. The term " }{XPPEDIT 19 1 "u^2;" "6#*$%\"uG
+\"\"#" }{TEXT -1 23 " in the coefficient of " }{XPPEDIT 19 1 "z^4;" "6
+#*$%\"zG\"\"%" }{TEXT -1 48 " count the 2 matches in the text of size \+
+4 abab." }}}}{SECT 0 {PARA 4 "" 0 "seealso" {TEXT -1 10 "See Also: " }
+}{PARA 0 "" 0 "" {HYPERLNK 17 "with" 2 "with" "" }{TEXT -1 2 ", " }
+{HYPERLNK 17 "regexpcount[specification]" 2 "regexpcount[specification
+]" "" }{TEXT -1 1 " " }}}}{MARK "1 10 0" 175 }{VIEWOPTS 1 1 0 1 1 
+1803 }

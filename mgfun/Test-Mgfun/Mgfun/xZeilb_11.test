@@ -1,0 +1,64 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+read "Mgfun/checkCT.mpl";
+
+# Calkin simplifiee (carre au lieu du cube).
+# Somme interne : [Sn*n-2*n-1+Sk*k+Sk-Sn*k+k, -Sk-1-Sk*n+n-k+Sk^2*k+2*Sk^2]
+sys:=[(k-2*n-1)*u(n,k)+(n-k)*u(n+1,k)+(k+1)*u(n,k+1), (-k-1+n)*u(n,k)+(-n-1)*u(n,k+1)+(k+2)*u(n,k+2)]:
+sys:=pol_to_sys(h(n,k)=u(n,k)^2,{[u(n,k),sys]}):
+#creative_telescoping(LFSol(sys),n::shift,k::shift,{"start"=2,"stop"=2}):
+creative_telescoping(LFSol(sys),n::shift,k::shift):
+# External sum is NOT over natural boundaries: its summand is stationnary
+# on 4^n.
+ct:=%:
+if ct=
+[(-4*n-2)*_f(n,k)+n*_f(n+1,k), (-n-k-1)*_f(n,k)+(n^2+k*n+n-k^2)/(-k+2*n+1)*_f(
+n+1,k)+(k^2+2*k+1)/(-k+2*n+1)*_f(n,k+1)]
+# This second result made the rest of the test work.
+or ct=
+[(-4*n-2)*_f(n,k)+n*_f(n+1,k), (n^2+n-6*k*n-4*k+4*k^2)/(3+3*n-2*k)*_f(n,k)-1/2
+*(n^2-5*k*n+n+2*k^2-3*k)/(n+1)*_f(n+1,k)+1/2*(n^3+2*n^2-3*k*n^2-4*k*n+n+3*k^2*
+n+2*k^2-k^3-k)/(3*n^2-2*k*n+6*n-2*k+3)*_f(n+2,k)]
+then okay else % end if;
+# Performing summation over k=0..n+1, we get ct[1]=nh, where nh is obtained
+# below.
+subs(k=n+2,ct[2])-subs(k=0,ct[2]):
+# [k=n+2=(n+1)+1 required here because ct[1] contains _f(n+1,k).]
+simplify(subs([_f(n,n+2)=4^n,_f(n+1,n+2)=4*4^n,_f(n+2,n+2)=16*4^n,_f(n,0)=1,_f(n+1,0)=1,_f(n+2,0)=1],%)):
+nh:=expand(%):
+if nh=3*4^n*n+4*4^n then okay else % end if;
+# The following recurrence cancels nh.
+dfinite_expr_to_rec(nh,_g(n)):
+if %={(-12*n-28)*_g(n)+(3*n+4)*_g(n+1)} then okay else % end if;
+# Summing ct[1] over k=0..n+1: mind that _f(n,n+1)<>0 !
+expand(eval(subs(_g=unapply(subs([_f(n,k)=_f(n)+4^n,_f(n+1,k)=_f(n+1)],ct[1]),n),op(%%)))):
+rec:=collect(primpart(%,_f(n+2)),_f,factor):
+remove(has,rec,4^n):
+hrec:=collect(subs(n=n+1,%)-4*%,_f(n+3),_f,factor):
+if %=
+(3*n+7)*(n+2)*_f(n+3)-2*(3*n+7)*(-24*n*_f(n+1)+6*_f(n+2)*n+32*n*_f(n)+9*_f(n+2
+)-24*_f(n+1)+16*_f(n))
+then okay else % end if;
+# Final resolution.
+{seq(_f(n)=add(add(binomial(n,j),j=0..k)^2,k=0..n),n=0..3)}:
+if %={_f(2) = 26, _f(3) = 130, _f(1) = 5, _f(0) = 1} then okay else % end if;
+LREtools[hypergeomsols](hrec,_f(n),%%,output=gensol):
+if %=4^n+1/2*4^n*n-1/2*4^n*(1/2)^n*2^n*GAMMA(1/2+n)/GAMMA(n)/Pi^(1/2)
+then okay else % end if;

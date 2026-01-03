@@ -1,0 +1,30 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+A_rat:=diff_algebra([Dx,x],[Dy,y]):
+T_rat:=MonomialOrder(A_rat,tdeg(Dx,Dy)):
+A_poly:=diff_algebra([Dx,x],[Dy,y],polynom={x,y}):
+T_poly:=MonomialOrder(A_poly,wdeg([4,4,1,1],[Dx,Dy,x,y])):
+A_elim:=diff_algebra([Dx,x],comm=y,polynom=y):
+T_elim:=MonomialOrder(A_elim,lexdeg([y],[Dx]),[y]):
+G:=hypergeom_to_dfinite(1/(1-(x^2+x*y+y^2)),A_rat):
+holon_diagonal(G,[x,y],x,T_rat,T_poly,T_elim):
+if %=[3*Dx*x^2+2*Dx*x+3*x-Dx+1] then okay else % fi;

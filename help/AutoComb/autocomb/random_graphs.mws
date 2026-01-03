@@ -1,0 +1,1279 @@
+{VERSION 2 3 "DEC ALPHA UNIX" "2.3" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 0 
+0 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 0 0 1 0 0 0 0 0 0 }
+{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "2
+D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 256 "
+" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 257 "" 0 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 259 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 
+"" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 261 "" 0 1 0 0 0 0 0 
+0 1 0 0 0 0 0 0 }{CSTYLE "" -1 262 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }
+{CSTYLE "" -1 263 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 264 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 266 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 267 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 268 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 272 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 273 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 274 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 275 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 276 
+"" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 277 "" 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 }{CSTYLE "" -1 278 "" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 279 "" 1 12 0 0 0 0 1 2 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+280 "" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 }{CSTYLE "" -1 281 "" 1 14 0 0 
+0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 282 "" 1 14 0 0 0 0 0 1 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 283 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 284 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 285 "" 1 18 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 286 "" 0 1 0 0 0 0 0 1 0 0 0 
+0 0 0 0 }{CSTYLE "" -1 287 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 288 "" 1 16 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 289 "" 0 1 
+0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 290 "" 0 1 0 0 0 0 0 1 1 0 0 
+0 0 0 0 }{CSTYLE "" -1 291 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 292 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" 18 293 "" 0 1 0 
+0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 294 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 }{CSTYLE "" -1 295 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" 
+-1 296 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 297 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 298 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 299 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" 
+18 300 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 301 "" 0 1 0 0 
+0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" 18 302 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 
+0 0 }{CSTYLE "" -1 303 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 304 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 305 "" 0 1 0 0 
+0 0 1 0 1 0 0 0 0 0 0 }{CSTYLE "" -1 306 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 307 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" 
+-1 308 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 311 "" 1 12 0 
+0 0 0 0 2 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 
+0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 
+0 0 0 0 }1 0 0 0 6 6 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 
+{CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 4 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 
+0 0 1 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple O
+utput" 0 11 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 
+0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE 
+"Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+}3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 257 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 4 259 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 
+}0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 260 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 261 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 4 262 1 {CSTYLE "" -1 -1 "
+" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 263 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 264 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 265 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 266 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 267 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 268 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 4 269 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 0 2 0 0 0 0 0 0 0 
+}0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 270 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 5 271 1 {CSTYLE "" -1 -1 "" 1 14 0 0 0 0 2 0 0 0 0 0 0 0 0 
+}0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 272 1 {CSTYLE "" -1 -1 
+"" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 273 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 }
+3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 4 274 1 {CSTYLE "" -1 -1 "
+" 1 16 0 0 0 0 0 2 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 275 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 276 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "" 0 277 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }
+0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 278 1 {CSTYLE "" -1 -1 "
+" 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 256 "" 0 "" {TEXT -1 1 "
+ " }{TEXT 256 45 "ROBUSTNESS IN RANDOM INTERCONNECTIONS GRAPHS " }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 257 "" 0 "" {TEXT 257 36 "Philip
+pe Flajolet, January 11, 1998 " }}{PARA 258 "" 0 "" {TEXT -1 48 "(Base
+d on joint work with Kostas Hatzis, Patras)" }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 272 
+13 "Random graphs" }{TEXT -1 258 " are usually studied by the probabil
+istic method that is based on inequalities and on approximations of ra
+ndom variables. Many models that appear in this context can however be
+ subjected to analytic methods. This worksheet explores one such situa
+tion using  " }{HYPERLNK 17 "Combstruct" 2 "combstruct" "" }{TEXT -1 
+2 ", " }{HYPERLNK 17 "Gfun" 2 "gfun" "" }{TEXT -1 119 ", and the Maple
+ system. The objective is to characterise the interplay between three \+
+parameters of a random graph: its " }{TEXT 269 7 "density" }{TEXT -1 
+24 " (number of edges), its " }{TEXT 270 10 "robustness" }{TEXT -1 27 
+" to link failures, and its " }{TEXT 271 12 "connectivity" }{TEXT -1 
+16 " by short paths." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 9 "A triple " }{XPPEDIT 18 0 "``(Gamma,s,t)" "-%!G6%%&Gamma
+G%\"sG%\"tG" }{TEXT -1 8 ", where " }{XPPEDIT 18 0 "Gamma" "I&GammaG6
+\"" }{TEXT -1 14 "  is a graph, " }{XPPEDIT 18 0 "s" "I\"sG6\"" }
+{TEXT -1 5 " and " }{XPPEDIT 18 0 "t" "I\"tG6\"" }{TEXT -1 69 " are tw
+o designated nodes (the source and the target), is said to be " }
+{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 11 "-robust if " }{XPPEDIT 18 
+0 "s" "I\"sG6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "t" "I\"tG6\"" }
+{TEXT -1 72 " are connected by at least two edge-disjoint vertices of \+
+length exactly " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 85 ". This de
+finition captures an intuitive notion of robustness to link failures, \+
+since " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT -1 5 " and " }{XPPEDIT 
+18 0 "t" "I\"tG6\"" }{TEXT -1 148 " will remain connected by \"short\"
+ paths even in the event of a link (i.e., edge) becoming unavailable  \+
+in the interconnection graph represented by  " }{XPPEDIT 18 0 "Gamma" 
+"I&GammaG6\"" }{TEXT -1 3 ". \n" }}{PARA 0 "" 0 "" {TEXT -1 4 "The " }
+{TEXT 265 19 "random graph model " }{TEXT -1 11 "is that of " }
+{XPPEDIT 18 0 "G[n,p]" "&%\"GG6$%\"nG%\"pG" }{TEXT -1 21 " where the g
+raph has " }{XPPEDIT 18 0 "n " "I\"nG6\"" }{TEXT -1 36 " vertices and \+
+each of the possible  " }{XPPEDIT 18 0 "n*(n-1)/2" "*(%\"nG\"\"\",&F#F
+$\"\"\"!\"\"F$\"\"#F'" }{TEXT -1 47 " edges is independently taken wit
+h probability " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 178 ". Under t
+his model, and because of the symmetry it implies with respect to the \+
+naming of nodes, it is strictly equivalent to examine robustness prope
+rties between a fixed source " }{XPPEDIT 18 0 "s" "I\"sG6\"" }{TEXT 
+-1 17 " and destination " }{XPPEDIT 18 0 "t" "I\"tG6\"" }{TEXT -1 35 "
+ or between a random pair of nodes " }{XPPEDIT 18 0 "s,t" "6$%\"sG%\"t
+G" }{TEXT -1 77 ". For definiteness, we adopt the latter formulation. \+
+A graph with very samll " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 40 "
+ will not be robust, while a graph with " }{XPPEDIT 18 0 "p" "I\"pG6\"
+" }{TEXT -1 123 " close to 1 will have a high number of edge-disjoint \+
+paths of small length. The purpose is to evaluate the threshold value \+
+" }{XPPEDIT 18 0 "p[0]" "&%\"pG6#\"\"!" }{TEXT -1 4 " of " }{XPPEDIT 
+18 0 "p" "I\"pG6\"" }{TEXT -1 13 " from which  " }{XPPEDIT 18 0 "l" "I
+\"lG6\"" }{TEXT -1 134 "-robustness becomes likely. In this worksheet,
+ we focus on the problem of estimating the mean number of edge-disjoin
+t pairs of length " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 82 " betwe
+en a random source and a random target, and deduce the associated thre
+shold." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 32 
+"The analysis proceeds in stages:" }}{PARA 0 "" 0 "" {TEXT -1 6 "   - \+
+ " }{TEXT 264 6 "Step 1" }{TEXT -1 51 ". Enumerate the number of pairs
+ of paths of length " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 18 " con
+necting nodes " }{XPPEDIT 18 0 "1" "\"\"\"" }{TEXT -1 5 " and " }
+{XPPEDIT 18 0 "l+1" ",&%\"lG\"\"\"\"\"\"F$" }{TEXT -1 57 " on a line, \+
+so that both paths use the same set of nodes " }{XPPEDIT 18 0 "1,2,`..
+.`,l+1" "6&\"\"\"\"\"#%$...G,&%\"lG\"\"\"\"\"\"F(" }{TEXT -1 47 ".This
+ is really a problem of counting so-called" }{TEXT 296 23 " avoiding p
+ermutations " }{TEXT -1 147 "defined as cyclic permutations with const
+raints on their so-called \"succession gaps\", i.e., the values of the
+ differences between succesive values " }{XPPEDIT 18 0 "sigma[i+1]-sig
+ma[i]" ",&&%&sigmaG6#,&%\"iG\"\"\"\"\"\"F(F(&F$6#F'!\"\"" }{TEXT -1 
+48 "  that are constrained not to belong to the set " }{XPPEDIT 18 0 "
+\{-1,0,+1\}" "<%,$\"\"\"!\"\"\"\"!\"\"\"" }{TEXT -1 36 ". This steps i
+tself decomposes into:" }}{PARA 0 "" 0 "" {TEXT -1 11 "          S" }
+{TEXT 267 6 "tep 1a" }{TEXT -1 22 ". Enumerate so-called " }{TEXT 273 
+9 "templates" }{TEXT -1 44 " that are skelettons of permutations with \+
+a " }{TEXT 275 31 "distinguished set of exceptions" }{TEXT -1 1 "." }}
+{PARA 0 "" 0 "" {TEXT -1 10 "          " }{TEXT 268 7 "Step 1b" }
+{TEXT -1 140 ". Transform the counting of templates into enumeration o
+f permutations with a distinguished set of exceptions and conclude  by
+ means of the " }{TEXT 274 32 "Principle of Inclusion-Exclusion" }
+{TEXT -1 38 ", a classical combinatorial principle." }}{PARA 0 "" 0 "
+" {TEXT -1 6 "    - " }{TEXT 266 6 "Step 2" }{TEXT -1 78 ". Modify the
+ model in order to allow for nodes taken from outside the segment " }
+{XPPEDIT 18 0 "1,2,`...`,l+1" "6&\"\"\"\"\"#%$...G,&%\"lG\"\"\"\"\"\"F
+(" }{TEXT -1 16 ". We then count " }{TEXT 308 14 "avoiding paths" }
+{TEXT -1 175 " that may borrow \"outer nodes\". This situation models \+
+the original random graph problem by allowing nodes taken from the who
+le pool of nodes that are available from the graph " }{XPPEDIT 18 0 "G
+amma" "I&GammaG6\"" }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT -1 7 "   \+
+  - " }{TEXT 276 6 "Step 3" }{TEXT -1 153 ". Return to the original ra
+ndom graph problem and obtain the expected number of edge-disjoint pai
+rs between a source and a destination in a random graph " }{XPPEDIT 
+18 0 "Gamma" "I&GammaG6\"" }{TEXT -1 16 " that obeys the " }{XPPEDIT 
+18 0 "G[n,p]" "&%\"GG6$%\"nG%\"pG" }{TEXT -1 7 " model." }}{PARA 0 "" 
+0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT 258 10 "References" }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT -1 
+33 "     [Comtet, 1974] : L. Comtet, " }{TEXT 259 22 "Advanced Combina
+torics" }{TEXT -1 15 ", Reidel, 1974." }}{PARA 0 "" 0 "" {TEXT -1 38 "
+     [EIS]: N. Sloane and S. Plouffe, " }{TEXT 260 37 "The Encyclopedi
+a of Integer Sequences" }{TEXT -1 23 ", Academic Press, 1995." }}
+{PARA 0 "" 0 "" {TEXT -1 81 "     This Maple worksheet is based on the
+ current versions of the Maple packages " }{TEXT 262 11 "combstruct " 
+}{TEXT -1 4 "and " }{TEXT 263 5 "gfun " }{TEXT -1 42 "(for version V.4
+) that can be found under " }{TEXT 261 30 "http://www-rocq.inria.fr/al
+go/" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 8 "restart;" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 17 "with(combstruct);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#
+71%+allstructsG%&countG%%drawG%)finishedG%'gfeqnsG%)gfseriesG%(gfsolve
+G%,iterstructsG%%markG%'momentG%+nextstructG%,prog_gfeqnsG%.prog_gfser
+iesG%-prog_gfsolveG%)varianceG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 11 "with(gfun);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7V%(LaplaceG%.a
+lgebraicsubsG%.algeqtodiffeqG%.algeqtoseriesG%.algfuntoalgeqG%&borelG%
+.cauchyproductG%.diffeq*diffeqG%.diffeq+diffeqG%2diffeqtohomdiffeqG%,d
+iffeqtorecG%)guesseqnG%(guessgfG%0hadamardproductG%0holexprtodiffeqG%)
+invborelG%,listtoalgeqG%-listtodiffeqG%0listtohypergeomG%+listtolistG%
+.listtoratpolyG%*listtorecG%-listtoseriesG%5listtoseries/LaplaceG%1lis
+ttoseries/egfG%4listtoseries/lgdegfG%4listtoseries/lgdogfG%1listtoseri
+es/ogfG%4listtoseries/revegfG%4listtoseries/revogfG%,maxdegcoeffG%*max
+degeqnG%,maxordereqnG%,mindegcoeffG%*mindegeqnG%,minordereqnG%*options
+gfG%,poltodiffeqG%)poltorecG%/ratpolytocoeffG%(rec*recG%(rec+recG%,rec
+todiffeqG%,rectohomrecG%*rectoprocG%.seriestoalgeqG%/seriestodiffeqG%2
+seriestohypergeomG%-seriestolistG%0seriestoratpolyG%,seriestorecG%/ser
+iestoseriesG" }}}{PARA 0 "" 0 "" {TEXT -1 2 "  " }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 48 "1. Permutations w
+ith constrained succession gaps" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 57 "The goal of this section is to enumerate \+
+permutations of " }{XPPEDIT 18 0 "[1,`..`,n]" "7%\"\"\"%#..G%\"nG" }
+{TEXT -1 30 " that are cyclic, of the form " }{XPPEDIT 18 0 "[1,tau[2]
+,`...`,tau[n-1],n]" "7'\"\"\"&%$tauG6#\"\"#%$...G&F%6#,&%\"nG\"\"\"\"
+\"\"!\"\"F," }{TEXT -1 29 ", and with no succession gap " }{XPPEDIT 
+18 0 "tau[j+1]-tau[j]" ",&&%$tauG6#,&%\"jG\"\"\"\"\"\"F(F(&F$6#F'!\"\"
+" }{TEXT -1 5 "  in " }{XPPEDIT 18 0 "\{-1,0,+1\}" "<%,$\"\"\"!\"\"\"
+\"!\"\"\"" }{TEXT -1 28 ". We call such permutations " }{TEXT 290 21 "
+avoiding permutations" }{TEXT -1 80 ". In another language, what is th
+e number of paths of length n-1 that join 1 to " }{XPPEDIT 18 0 "n" "I
+\"nG6\"" }{TEXT -1 81 " and have no edge in common with those of the l
+ine graph defined by the interval " }{XPPEDIT 18 0 "[1,`..`,n]" "7%\"
+\"\"%#..G%\"nG" }{TEXT -1 2 "? " }}{PARA 0 "" 0 "" {TEXT -1 28 "There \+
+are no such paths for " }{XPPEDIT 18 0 "n=2,3,4,5" "6&/%\"nG\"\"#\"\"$
+\"\"%\"\"&" }{TEXT -1 68 ". Surprisingly enough, the first nontrivial \+
+configurations occur at " }{XPPEDIT 18 0 "n=6" "/%\"nG\"\"'" }{TEXT 
+-1 18 " (try it!), namely" }}{PARA 0 "" 0 "" {TEXT -1 47 "     \{[1, 4
+, 2, 5, 3, 6],   [1, 3, 5, 2, 4, 6]\}" }}{PARA 0 "" 0 "" {TEXT -1 8 "a
+nd for " }{XPPEDIT 18 0 "n=7" "/%\"nG\"\"(" }{TEXT -1 9 ", one has" }}
+{PARA 0 "" 0 "" {TEXT -1 279 "     \{[1, 3, 6, 4, 2, 5, 7],   [1, 3, 5
+, 2, 6, 4, 7], [1, 4, 6, 2, 5, 3, 7],   [1, 4, 2, 6, 3, 5, 7],   [1, 5
+, 3, 6, 4, 2, 7],\n       [1, 5, 3, 6, 2, 4, 7],   [1, 5, 2, 4, 6, 3, \+
+7],  [1, 4, 6, 3, 5, 2, 7],   [1, 6, 3, 5, 2, 4, 7],  [1, 6, 4, 2, 5, \+
+3, 7]\}\nso that the numbers are " }{XPPEDIT 18 0 "Q[6]=2, Q[7]=10" "6
+$/&%\"QG6#\"\"'\"\"#/&F%6#\"\"(\"#5" }{TEXT -1 88 ". A brute force enu
+meration routine based on the predefined structures availaible under \+
+" }{TEXT 289 11 "Combstruct " }{TEXT -1 15 "is given below." }}{SECT 
+0 {PARA 3 "" 0 "" {TEXT -1 15 " 1.1. Templates" }}{PARA 0 "" 0 "" 
+{TEXT -1 2 "A " }{TEXT 277 8 "template" }{TEXT -1 68 " is a scheme tha
+t specifies which \"bits and pieces\" of the interval " }{XPPEDIT 18 
+0 "1,2,`...`,l+1" "6&\"\"\"\"\"#%$...G,&%\"lG\"\"\"\"\"\"F(" }{TEXT 
+-1 58 " may be exceptions. We firtst need to enumerate templates." }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 4 "" 0 "" {TEXT 278 70 "In combs
+truct, we specify templates as decompositions of the interval " }
+{XPPEDIT 18 0 "1..n" ";\"\"\"%\"nG" }{TEXT 311 6 " into " }{TEXT 279 
+6 "blocks" }{TEXT 280 16 " that are either" }}{PARA 0 "" 0 "" {TEXT 
+-1 24 "     -- isolated points " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT 
+-1 1 "," }}{PARA 0 "" 0 "" {TEXT -1 93 "     -- blocks of contiguous u
+nit intervals (based at integer points) oriented left-to-right " }
+{XPPEDIT 18 0 "LR" "I#LRG6\"" }{TEXT -1 1 "," }}{PARA 0 "" 0 "" {TEXT 
+-1 92 "    -- blocks of contiguous unit intervals (based at integer po
+ints) oriented right-to-left " }{XPPEDIT 18 0 "RL" "I#RLG6\"" }{TEXT 
+-1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 30 "A template must start with an \+
+" }{XPPEDIT 18 0 "LR" "I#LRG6\"" }{TEXT -1 4 " or " }{XPPEDIT 18 0 "p
+" "I\"pG6\"" }{TEXT -1 33 " block and end similarly with an " }
+{XPPEDIT 18 0 "LR" "I#LRG6\"" }{TEXT -1 4 " or " }{XPPEDIT 18 0 "p" "I
+\"pG6\"" }{TEXT -1 7 " block." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 18 "For instance, for " }{XPPEDIT 18 0 "n=13
+" "/%\"nG\"#8" }{TEXT -1 15 ", the template " }}{PARA 260 "" 0 "" 
+{TEXT -1 1 " " }{XPPEDIT 18 0 "[[1,2,3],[4],[5,6],[7],[8],[11,10,9],[1
+2,13]" "7)7%\"\"\"\"\"#\"\"$7#\"\"%7$\"\"&\"\"'7#\"\"(7#\"\")7%\"#6\"#
+5\"\"*7$\"#7\"#8" }}{PARA 0 "" 0 "" {TEXT -1 97 "will correspond to an
+y cyclic permutation that has successions of values (in the cycle trav
+ersal)" }}{PARA 261 "" 0 "" {TEXT -1 49 " 1,2;    2,3;    5,6;    11,1
+0;    10,9;    12,13" }}{PARA 0 "" 0 "" {TEXT -1 77 "as distinguished \+
+exceptions to the basic constraint of avoiding permutations." }}{SECT 
+0 {PARA 4 "" 0 "" {TEXT -1 31 "The combinatorial specification" }}
+{PARA 262 "" 0 "" {TEXT -1 39 "First a preliminary specification. Let \+
+" }{XPPEDIT 18 0 "\{a,b\}" "<$%\"aG%\"bG" }{TEXT -1 84 " be a binary a
+lphabet. The collection of strings beginning and ending with a letter \+
+" }{XPPEDIT 18 0 "a" "I\"aG6\"" }{TEXT -1 16 " is described by" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "sp0:=S=Prod(Sequence(Prod(a,
+Sequence(b))),a);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$sp0G/%\"SG-%%P
+rodG6$-%)SequenceG6#-F(6$%\"aG-F+6#%\"bGF/" }}}{PARA 0 "" 0 "" {TEXT 
+-1 69 "(It suffices to decompose according to each occurrence of the l
+etter " }{XPPEDIT 18 0 "a" "I\"aG6\"" }{TEXT -1 2 ".)" }}{PARA 0 "" 0 
+"" {TEXT -1 61 "Now, the three types of blocks in a template are descr
+ibed by" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 190 "sp1:=Prod(begin_
+blockP,Z,end_blockP); sp2:=Prod(begin_blockLR,Z,Sequence(Prod(mu_lengt
+h,Z),card>=1),end_blockLR);\nsp3:=Prod(begin_blockRL,Sequence(Prod(mu_
+length,Z),card>=1),Z,end_blockRL);\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%$sp1G-%%ProdG6%%-begin_blockPG%\"ZG%+end_blockPG" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>%$sp2G-%%ProdG6&%.begin_blockLRG%\"ZG-%)SequenceG6$
+-F&6$%*mu_lengthGF)1\"\"\"%%cardG%,end_blockLRG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$sp3G-%%ProdG6&%.begin_blockRLG-%)SequenceG6$-F&6$%*m
+u_lengthG%\"ZG1\"\"\"%%cardGF/%,end_blockRLG" }}}{PARA 0 "" 0 "" 
+{TEXT -1 9 "Clearly, " }{XPPEDIT 18 0 "sp2" "I$sp2G6\"" }{TEXT -1 5 " \+
+and " }{XPPEDIT 18 0 "sp3" "I$sp3G6\"" }{TEXT -1 148 " are combinatori
+ally isomorphic. For reasons related to application of the inclusion e
+xclusion argument, we keep track of the size (number of nodes " }
+{XPPEDIT 18 0 "l=1" "/%\"lG\"\"\"" }{TEXT -1 78 " of the basic interva
+l graph) as well as of the length of blocks and of their " }{XPPEDIT 
+18 0 "LR" "I#LRG6\"" }{TEXT -1 4 " or " }{XPPEDIT 18 0 "RL" "I#RLG6\"
+" }{TEXT -1 46 " character. Then, the grammar of templates is:" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 187 "Q:=subs([a=Union(sp1,sp2),b
+=sp3],sp0), begin_blockP=Epsilon, end_blockP=Epsilon, begin_blockLR=Ep
+silon, end_blockLR=Epsilon, begin_blockRL=Epsilon, end_blockRL=Epsilon
+, mu_length=Epsilon;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"QG6*/%\"SG
+-%%ProdG6$-%)SequenceG6#-F)6$-%&UnionG6$-F)6%%-begin_blockPG%\"ZG%+end
+_blockPG-F)6&%.begin_blockLRGF6-F,6$-F)6$%*mu_lengthGF61\"\"\"%%cardG%
+,end_blockLRG-F,6#-F)6&%.begin_blockRLGF;F6%,end_blockRLGF0/F5%(Epsilo
+nG/F7FK/F:FK/FCFK/FHFK/FIFK/F?FK" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 41 "temp15:=draw([S,\{Q\},unlabelled],size=15);" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#>%'temp15G-%%ProdG6$-%)SequenceG6)-F&6$-F&6%
+%-begin_blockPG%\"ZG%+end_blockPG%(EpsilonGF+-F&6$-F&6&%.begin_blockLR
+GF0-F)6%-F&6$%*mu_lengthGF0F:F:%,end_blockLRGF2F+F+-F&6$F--F)6#-F&6&%.
+begin_blockRLG-F)6$F:F:F0%,end_blockRLG-F&6$-F&6&F7F0-F)6#F:F=F2F-" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 110 "decode:=proc(e) subs([Prod
+=proc() args end,Sequence=proc() args end,mu_length=NULL,Epsilon=NULL]
+, e); [\"] end;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%'decodeG:6#%\"eG6
+\"F(F(C$-%%subsG6$7&/%%ProdG:F(F(F(F(9\"F(F(/%)SequenceG:F(F(F(F(F1F(F
+(/%*mu_lengthG%%NULLG/%(EpsilonGF79$7#%\"\"GF(F(" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 15 "decode(temp15);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#7C%-begin_blockPG%\"ZG%+end_blockPGF$F%F&%.begin_blockLRGF%F%F%F
+%%,end_blockLRGF$F%F&F$F%F&F$F%F&%.begin_blockRLGF%F%F%%,end_blockRLGF
+'F%F%F(F$F%F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "seq(count(
+[S,\{Q\},unlabelled],size=n),n=0..20);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "67\"\"!\"\"\"\"\"#\"\"%\"\"*\"#@\"#]\"$?\"\"$*G\"$(p\"%#o\"\"%gS\"
+%,)*\"&hO#\"&Ar&\"'/z8\"'HHL\"'hP!)\"(]/%>\"(gYo%\")p(48\"" }}}}{SECT 
+0 {PARA 0 "" 0 "" {TEXT 281 20 "Generating functions" }}{PARA 0 "" 0 "
+" {TEXT -1 84 "A trivariate generating function immediately results fr
+om the specification. There, " }{XPPEDIT 18 0 "z" "I\"zG6\"" }{TEXT 
+-1 15 " records size, " }{XPPEDIT 18 0 "u" "I\"uG6\"" }{TEXT -1 135 " \+
+records the total number of blocks (needed for subsequent permutation \+
+enumerations since blocks should be chained to each other), and " }
+{XPPEDIT 18 0 "v" "I\"vG6\"" }{TEXT -1 29 " records the total length o
+f " }{XPPEDIT 18 0 "LR" "I#LRG6\"" }{TEXT -1 4 " or " }{XPPEDIT 18 0 "
+RL" "I#RLG6\"" }{TEXT -1 79 " blocks (the number of distiguished excep
+tions needed for inclusion exclusion)." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 87 "gfsolve(\{Q\},unlabelled,z,[[u,begin_blockP,begin_blo
+ckLR,begin_blockRL],[v,mu_length]]);" }}{PARA 12 "" 1 "" {XPPMATH 20 "
+6#<+/-%\"SG6%%\"zG%\"uG%\"vG,$**F)\"\"\"F(F-,(!\"\"F-*&F*F-F(F-F-*(F)F
+-F(\"\"#F*F-F-F-,,F-F-F0!\"#*&F)F-F(F-F/*&F*F2F(F2F-*(F*F2F(\"\"$F)F-F
+-F/F//-%,end_blockLRGF'F-/-%\"ZGF'F(/-%,end_blockRLGF'F-/-%.begin_bloc
+kLRGF'F)/-%-begin_blockPGF'F)/-%.begin_blockRLGF'F)/-%+end_blockPGF'F-
+/-%*mu_lengthGF'F*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "f_zuv
+:=subs(\",S(z,u,v));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&f_zuvG,$**%
+\"uG\"\"\"%\"zGF(,(!\"\"F(*&%\"vGF(F)F(F(*(F'F(F)\"\"#F-F(F(F(,,F(F(F,
+!\"#*&F'F(F)F(F+*&F-F/F)F/F(*(F-F/F)\"\"$F'F(F(F+F+" }}}{PARA 0 "" 0 "
+" {TEXT -1 113 " This GF can be checked by comparing its Taylor expans
+ion and exhaustive listing, at least for small size values." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "map(expand,series(f_zuv,z));" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#+/%\"zG%\"uG\"\"\",&*&F%\"\"\"%\"vGF)F
+)*$F%\"\"#F)\"\"#,(*&F%F,F*F)F,*&F%F)F*F,F)*$F%\"\"$F)\"\"$,**&F%F,F*F
+,F2*&F%F2F*F)\"\"%*&F%F)F*F2F)*$F%F7F)\"\"%,,*&F%F2F*F,\"\"**&F%F7F*F)
+\"\"'*&F%F,F*F2F7*$F%\"\"&F)*&F%F)F*F7F)\"\"&-%\"OG6#F)\"\"'" }}}
+{PARA 0 "" 0 "" {TEXT -1 36 " The exhaustive listing is given by " }
+{HYPERLNK 17 "Combstruct[allstructs]" 2 "combstruct[allstructs]" "" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "map(decode,allstructs([S,\{Q
+\},unlabelled],size=3));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7&7)%.begi
+n_blockLRG%\"ZGF&%,end_blockLRG%-begin_blockPGF&%+end_blockPG7)F(F&F)F
+%F&F&F'7+F(F&F)F(F&F)F(F&F)7'F%F&F&F&F'" }}}{PARA 0 "" 0 "" {TEXT -1 
+39 "This corresponds to the correct listing" }}{PARA 263 "" 0 "" 
+{TEXT -1 59 " [[1],[2,3]];     [[1],[2],[3]];     [1,2,3];     [[1,2],
+3]" }}{PARA 0 "" 0 "" {TEXT -1 19 "hence the monomial " }{XPPEDIT 18 
+0 "2u^2*v+u*v^2+u^3" ",(*(\"\"#\"\"\"*$%\"uG\"\"#F%%\"vGF%F%*&F'F%*$F)
+\"\"#F%F%*$F'\"\"$F%" }{TEXT -1 25 " in the series expansion " }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 26 "1.2. Avoiding permutations" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 30 "F
+rom templates to permutations" }}{PARA 269 "" 0 "" {TEXT -1 4 "Let " }
+{XPPEDIT 18 0 "F[n,l]" "&%\"FG6$%\"nG%\"lG" }{TEXT -1 39 " be the numb
+er of permutations of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 
+6 " with " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 28 " distinguished \+
+exceptions:  " }{XPPEDIT 18 0 "F[n,l]" "&%\"FG6$%\"nG%\"lG" }{TEXT -1 
+36 " is the number of permutations with " }{XPPEDIT 18 0 "l" "I\"lG6\"
+" }{TEXT -1 47 " distinguished special successions of the type " }
+{XPPEDIT 18 0 "(j-1,j)" "6$,&%\"jG\"\"\"\"\"\"!\"\"F$" }{TEXT -1 4 " o
+r " }{XPPEDIT 18 0 "(j,j-1)" "6$%\"jG,&F#\"\"\"\"\"\"!\"\"" }{TEXT -1 
+7 ". Let  " }{XPPEDIT 18 0 "Q[n]" "&%\"QG6#%\"nG" }{TEXT -1 87 " be th
+e number of permutations with no exception. Then, by inclusion exclusi
+on, one has" }}{PARA 266 "" 0 "" {XPPEDIT 18 0 "Q[n]=sum(F[n,l]*(-1)^l
+,l=0..n-1)" "/&%\"QG6#%\"nG-%$sumG6$*&&%\"FG6$F&%\"lG\"\"\"),$\"\"\"!
+\"\"F.F//F.;\"\"!,&F&F/\"\"\"F3" }{TEXT -1 2 " ." }}{PARA 0 "" 0 "" 
+{TEXT -1 154 "(Roughly, one takes objects with at least 0 exception, s
+ubtract those with at least one exception, then add back those with at
+ least two exceptions, etc.)" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 4 "Let " }{XPPEDIT 18 0 "F[n,k,l]" "&%\"FG6%%\"nG%
+\"kG%\"lG" }{TEXT -1 44 " be the number of templates with a total of \+
+" }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 8 " nodes, " }{XPPEDIT 18 0 
+"k" "I\"kG6\"" }{TEXT -1 36 "  blocks, and a total length of the " }
+{XPPEDIT 18 0 "LR" "I#LRG6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "RL" 
+"I#RLG6\"" }{TEXT -1 17 " blocks equal to " }{XPPEDIT 18 0 "l" "I\"lG6
+\"" }{TEXT -1 62 ".  Then, by looking at all ways to connect the block
+s, one has" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 267 "" 0 "" {TEXT 
+-1 1 " " }{XPPEDIT 18 0 "F[n,l]=sum(F[n,k,l]*phi(k),k)" "/&%\"FG6$%\"n
+G%\"lG-%$sumG6$*&&F$6%F&%\"kGF'\"\"\"-%$phiG6#F.F/F." }{TEXT -1 6 ", a
+nd " }{XPPEDIT 18 0 "phi(1)=1" "/-%$phiG6#\"\"\"\"\"\"" }{TEXT -1 2 ",
+ " }{XPPEDIT 18 0 "phi(k)=(k-2)!" "/-%$phiG6#%\"kG-%*factorialG6#,&F&
+\"\"\"\"\"#!\"\"" }{TEXT -1 4 " if " }{XPPEDIT 18 0 "k>=2" "1\"\"#%\"k
+G" }{TEXT -1 1 "," }}{PARA 0 "" 0 "" {TEXT -1 75 "since any such conne
+ction is determined by an arbitrary permutation of the " }{XPPEDIT 18 
+0 "(k-2)" ",&%\"kG\"\"\"\"\"#!\"\"" }{TEXT -1 21 " intermediate blocks
+." }}{PARA 0 "" 0 "" {TEXT -1 26 " The trivariate GF of the " }
+{XPPEDIT 18 0 "F[n,k,l]" "&%\"FG6%%\"nG%\"kG%\"lG" }{TEXT -1 78 " has \+
+been determined in the previous section. This shows a chain by which t
+he " }{XPPEDIT 18 0 "Q[n]" "&%\"QG6#%\"nG" }{TEXT -1 16 " are computab
+le." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 30 "Ob
+serve that the extension of " }{XPPEDIT 18 0 "phi" "I$phiG6\"" }{TEXT 
+-1 40 " by linearity to an arbitrary series in " }{XPPEDIT 18 0 "u" "I
+\"uG6\"" }{TEXT -1 12 " is given by" }}{PARA 264 "" 0 "" {TEXT -1 2 " \+
+ " }{XPPEDIT 18 0 "phi(h(u))=int(exp(-u)/u^2*(h(u)-(u-u^2)*diff(h(u),u
+[)[u=0]),u=0..infinity)" "/-%$phiG6#-%\"hG6#%\"uG-%$intG6$*(-%$expG6#,
+$F)!\"\"\"\"\"*$F)\"\"#F2,&-F'6#F)F3*&,&F)F3*$F)\"\"#F2F3&-%%diffG6$-F
+'6#F)&F)6\"6#/F)\"\"!F3F2F3/F);FG%)infinityG" }{TEXT -1 1 "." }}{PARA 
+0 "" 0 "" {TEXT -1 46 "That is to say, we just replace in expansions \+
+" }{XPPEDIT 18 0 "u-> u^2" ":6#%\"uG7\"6$%)operatorG%&arrowG6\"*$F$\"
+\"#F)F)" }{TEXT -1 29 " and apply the Euler integral" }}{PARA 265 "" 
+0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "int(exp(-u)*u^k,u=0..infinity)=k!
+" "/-%$intG6$*&-%$expG6#,$%\"uG!\"\"\"\"\")F+%\"kGF-/F+;\"\"!%)infinit
+yG-%*factorialG6#F/" }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT -1 11 "T
+hus, with " }{XPPEDIT 18 0 "F(z,u,v)" "-%\"FG6%%\"zG%\"uG%\"vG" }
+{TEXT -1 3 " = " }{XPPEDIT 18 0 "sum(F[n,k,l]*z^n*u^k*v^l" "-%$sumG6#*
+*&%\"FG6%%\"nG%\"kG%\"lG\"\"\")%\"zGF)F,)%\"uGF*F,)%\"vGF+F," }{TEXT 
+-1 2 ", " }}{PARA 268 "" 0 "" {TEXT -1 8 "the OGF " }{XPPEDIT 18 0 "Q(
+z)=sum(Q[n]*z^n)" "/-%\"QG6#%\"zG-%$sumG6#*&&F$6#%\"nG\"\"\")F&F-F." }
+{TEXT -1 11 " satisfies " }{XPPEDIT 18 0 "Q(z)=phi(F(z,u,-1))" "/-%\"Q
+G6#%\"zG-%$phiG6#-%\"FG6%F&%\"uG,$\"\"\"!\"\"" }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}}{SECT 0 {PARA 271 "" 0 "" {TEXT -1 20 "Generating fun
+ctions" }}{PARA 0 "" 0 "" {TEXT -1 77 "Start from the previously deter
+mined trivariate GF and apply the basic chain." }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 35 "f_zuv; map(expand,series(f_zuv,z));" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#,$**%\"uG\"\"\"%\"zGF&,(!\"\"F&*&%\"vGF&F'F&F&*
+(F%F&F'\"\"#F+F&F&F&,,F&F&F*!\"#*&F%F&F'F&F)*&F+F-F'F-F&*(F+F-F'\"\"$F
+%F&F&F)F)" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+/%\"zG%\"uG\"\"\",&*&F%
+\"\"\"%\"vGF)F)*$F%\"\"#F)\"\"#,(*&F%F,F*F)F,*&F%F)F*F,F)*$F%\"\"$F)\"
+\"$,**&F%F,F*F,F2*&F%F2F*F)\"\"%*&F%F)F*F2F)*$F%F7F)\"\"%,,*&F%F2F*F,
+\"\"**&F%F7F*F)\"\"'*&F%F,F*F2F7*$F%\"\"&F)*&F%F)F*F7F)\"\"&-%\"OG6#F)
+\"\"'" }}}{PARA 0 "" 0 "" {TEXT -1 38 "For inclusion-exclusion, one mu
+st set " }{XPPEDIT 18 0 "v=-1" "/%\"vG,$\"\"\"!\"\"" }{TEXT -1 1 ":" }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "f_zu:=subs(v=-1,f_zuv);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%f_zuG,$**%\"uG\"\"\"%\"zGF(,(!\"\"F
+(F)F+*&F'F(F)\"\"#F+F(,,F(F(F)F-*&F'F(F)F(F+*$F)F-F(*&F)\"\"$F'F(F(F+F
++" }}}{PARA 0 "" 0 "" {TEXT -1 19 "Application of the " }{XPPEDIT 18 
+0 "phi" "I$phiG6\"" }{TEXT -1 96 "-transformation (that count the numb
+er of ways to connect the blocks) requires the modified form" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "k_zu:=normal(f_zu-(u-u^2)*su
+bs(u=0,diff(f_zu,u)));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%k_zuG*,%
+\"zG\"\"\"%\"uG\"\"#,**&F(F'F&F)F'F&F)*&F(F'F&F'!\"\"F'F'F',&F'F'F&F'F
+-,*F+F'F&F'F,F-F'F'F-" }}}{PARA 0 "" 0 "" {TEXT -1 15 "The OGF is here
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "Q_z:=Int(k_zu*exp(-u)/u^
+2,u=0..infinity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$Q_zG-%$IntG6$*
+,%\"zG\"\"\",**&%\"uGF*F)\"\"#F*F)F.*&F-F*F)F*!\"\"F*F*F*,&F*F*F)F*F0,
+*F,F*F)F*F/F0F*F*F0-%$expG6#,$F-F0F*/F-;\"\"!%)infinityG" }}}{PARA 0 "
+" 0 "" {TEXT -1 54 "This solves the original counting problem numerica
+lly:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 119 "Q_ser:=series(map(p
+roc(e) int(e*exp(-u)/u^2,u=0..infinity) end,map(expand,convert(series(
+k_zu,z=0,15),polynom))),z,15);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&Q
+_serG+7%\"zG\"\"\"\"\"\"\"\"#\"\"'\"#5\"\"(\"#o\"\")\"$+&\"\"*\"%uT\"#
+5\"&u(Q\"#6\"'%e(R\"#7\"([GY%\"#8\")adXa\"#9" }}}{PARA 0 "" 0 "" 
+{TEXT -1 1 " " }}{PARA 0 "" 0 "" {TEXT 282 11 "Closed form" }{TEXT -1 
+16 ".  The quantity " }{XPPEDIT 18 0 "Q_z" "I$Q_zG6\"" }{TEXT -1 55 " \+
+can be expressed in terms of the exponential integral:" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "Q_z_closed:=eval(subs(Int=int,Q_z))
+;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+Q_z_closedG**,(%\"zG\"\"\"!\"
+\"F(*&-%$expG6#*(,&F(F(F'F(F(F'F),&F'F(F)F(F)F(-%#EiG6$F(F.F(F(F(F0F)F
+'F(F/F)" }}}{PARA 0 "" 0 "" {TEXT -1 112 "Since one deals with ordinar
+y generating functions (OGF's), this is to be taken as a formal (asymp
+totic) series:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 64 "map(normal
+,subs(z=1/y,Q_z_closed));map(simplify,asympt(\",y,11));" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#,$*(,(\"\"\"F&%\"yG!\"\"*(-%$expG6#,$*(,&F'F&F&F
+&F&F'F&,&F(F&F'F&F(F(F&-%#EiG6$F&F-F&F'F&F&F&F0F(F/F(F(" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#,0*$%\"yG!\"\"\"\"\"*$F%!\"'\"\"#*$F%!\"(\"#5*$F
+%!\")\"#o*$F%!\"*\"$+&*$F%!#5\"%uT-%\"OG6#*$F%!#6F'" }}}{PARA 270 "" 
+0 "" {TEXT -1 1 "." }}{PARA 0 "" 0 "" {TEXT -1 26 "The exponential int
+egral (" }{XPPEDIT 18 0 "Ei" "I#EiG6\"" }{TEXT -1 46 ") involves the d
+ivergent series of factorials:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 62 "Sum(n!*(-y)^(-n-1),n=0..infinity)=asympt(Ei(1,y)*exp(y),y,10);" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%$SumG6$*&-%*factorialG6#%\"nG\"\"
+\"),$%\"yG!\"\",&F+F0F0F,F,/F+;\"\"!%)infinityG,6*$F/F0F,*$F/!\"#F0*$F
+/!\"$\"\"#*$F/!\"%!\"'*$F/!\"&\"#C*$F/F?!$?\"*$F/!\"(\"$?(*$F/!\")!%S]
+*$F/!\"*\"&?.%-%\"OG6#*$F/!#5F," }}}{PARA 0 "" 0 "" {TEXT -1 53 "The d
+ivergent series is also a hypergeometric series:" }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 36 "series(hypergeom([1,1],[],z),z=0,9);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#+7%\"zG\"\"\"\"\"!F%\"\"\"\"\"#\"\"#\"\"'\"
+\"$\"#C\"\"%\"$?\"\"\"&\"$?(\"\"'\"%S]\"\"(\"&?.%\"\")-%\"OG6#F%\"\"*
+" }}}{PARA 0 "" 0 "" {TEXT -1 102 "This gives rise to a general conver
+sion procedure from Exponential integrals to hypergeometric forms:." }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 153 "convert_hypergeom:=proc(e)
+ subs(Ei=proc(a,b) if a<>1 then ERROR(`unable to convert`) else exp(-b
+)/b*hypergeom([1,1],[],-1/b) fi end,e); simplify(\"); end;" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#>%2convert_hypergeomG:6#%\"eG6\"F(F(C$-%%sub
+sG6$/%#EiG:6$%\"aG%\"bGF(F(F(@%09$\"\"\"-%&ERRORG6#%2unable~to~convert
+G*(-%$expG6#,$9%!\"\"F6F@FA-%*hypergeomG6%7$F6F67\",$*$F@FAFAF6F(F(F5-
+%)simplifyG6#%\"\"GF(F(" }}}{PARA 0 "" 0 "" {TEXT -1 47 " Hence anothe
+r  closed form for the OGF of the " }{XPPEDIT 18 0 "Q[n]" "&%\"QG6#%\"
+nG" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "Q_z_closed2:=convert_h
+ypergeom(Q_z_closed);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%,Q_z_closed
+2G*(%\"zG\"\"\",(F&F'*&F&F'-%*hypergeomG6%7$F'F'7\",$*(,&F'F'F&F'!\"\"
+F&F',&F&F'F2F'F'F2F'F'F'F'F'F1!\"#" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }
+}{PARA 0 "" 0 "" {TEXT 283 11 "Recurrences" }{TEXT -1 89 ".  Holonomic
+ descriptions (by means of linear differential equations) can be obtai
+ned by " }{HYPERLNK 17 "Gfun[holexprtodiffeq]" 2 "gfun[holexprtodiffeq
+]" "" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "Qz_o
+de0:=holexprtodiffeq(Q_z_closed2,Y(z));" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#>%(Qz_ode0G,6*&,.*$%\"zG\"\"%\"\"\"*$F)\"\"&F+*$F)\"\"$F*!\"\"F+
+F)F0*$F)\"\"#F*F+-%\"YG6#F)F+F+*&,(F(!\"#F1F+*$F)\"\"'F+F+-%%diffG6$F3
+F)F+F+F(F0*&F)F/&%#_CG6#\"\"!F+F8F.F8*&F)F*F?F+F0*&F?F+F)F2F+F,F0F)F+F
+1F0" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "subs(Y(z)=Qz_ser,Qz_
+ode0):series(\",z=0,11);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#+/%\"zG,$%
+'Qz_serG!\"\"\"\"!,&F&F'\"\"\"F*\"\"\",(F&\"\"%F'F*&%#_CG6#\"\"!F*\"\"
+#,(F&F-F.!\"#F4F*\"\"$,(F.F'F'F*F&F*\"\"%,&F'F*F&F*\"\"&" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "Qz_ode:=subs(_C[0]=1,Qz_ode0);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'Qz_odeG,.*&,.*$%\"zG\"\"%\"\"\"*$F)
+\"\"&F+*$F)\"\"$F*!\"\"F+F)F0*$F)\"\"#F*F+-%\"YG6#F)F+F+*&,(F(!\"#F1F+
+*$F)\"\"'F+F+-%%diffG6$F3F)F+F+F(F8F.!\"%F,F0F)F+" }}}{PARA 0 "" 0 "" 
+{TEXT -1 58 " The transformation to a linear recurrence is obtained by
+ " }{HYPERLNK 17 "Gfun[diffeqtorec]" 2 "gfun[diffeqtorec]" "" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 48 "Q_rec:=diffeqtorec(\{Qz_ode=
+0,Y(0)=0\},Y(z),u(n));" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&Q_recG<)/
+-%\"uG6#\"\"!F*/-F(6#\"\"\"F.,.*&,&%\"nGF.F.F.F.-F(6#F2F.F.-F(6#F1F.*&
+F2F.-F(6#,&F2F.\"\"#F.F.!\"#-F(6#,&\"\"$F.F2F.\"\"%*&F?F.-F(6#,&F2F.FA
+F.F.F.-F(6#,&F2F.\"\"&F.!\"\"/-F(6#F;F*/-F(6#F@F*/-F(6#FAF*/-F(6#FIF*
+" }}}{PARA 0 "" 0 "" {TEXT -1 106 "This provides an algorithm that use
+s a linear number of arithmetic operations to determine the quantities
+ " }{XPPEDIT 18 0 "Q[n]" "&%\"QG6#%\"nG" }{TEXT -1 1 "." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "ha:=rectoproc(Q_rec,u(n),remember);
+" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%#haG:6#%\"nG6\"6#%)rememberGE\\s
+'\"\"#\"\"!\"\"&F-F-F-\"\"\"F/\"\"%F-\"\"$F-,.-9!6#,&9$F/!\"&F/!\"%-F4
+6#,&F7F/!\"#F/F0-F46#,&F7F/F9F/F/-F46#,&F7F/!\"$F/\"#5-F46#,&F7F/!\"\"
+F/F=*&,(FAF=F3F/FFF/F/F7F/F/F(F(" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 21 "ha(5);ha(50);ha(500);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"hn'o([)*fvbLMyJ>YS\\*
+o(HYe&=]7]D*yi2h\"" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#\"cao'4POI_T[PIj
+TXsi2[CFn9$Qf^k(4O_ee`#Hl_:)HdQWfzrpncPks%>#)=o')*f+*HZHlP<**>R;PdfHcF
++t\"ph+z:?R)Hj:k0QGy\"e</')yb\"*4x\\0r4nH$egH;js9O/aA!y:qGLew@CEcA`l-u
+\\r&y#G'RvE'*[QLyJc&3je1w)Rd$QWmT2],2R%y+<5FBW(QWeF(*[3E(fNG<&QmXa\\=i
+bJ+oQZ()[Sr`JViWLKS&*\\HWznb#RDpNi:%)\\mT_QB%)pa(HVl7`x0(pgK/!Q5n#=E_u
+/5A,h-*y4jJj5eyTP#pF&o!e&QoYqs`ejj4,3?QO182FCt7iY\"=4a&*ySXXE6zJbD+c;F
+tn8klxMCTaLl\\;'H>/XoHE3h%)Qlw!yzb-I4U=:bt$Q\"4$>Z@hfx7>@kV1%fke647aaG
+\"piqels3of+u\\E\"))>VSKNX&3Oc#o9%RgWKG>L;ce%z$)y/#y;QkBX=5`-VzdkfIwVV
+/@g5Q%=2$3Qz*G$Gfn))\\%)e/<eMh:_mz$R,E%G8cXzf0DGW@R+<aHU.3g$***)4rwFNU
+JK<qt\\.1yqO!fC2gmwb!QQW+jMOpixlT5@#4!=u-Cx*p-#zv-[#R')='y\"f'" }}}}
+{SECT 0 {PARA 4 "" 0 "" {TEXT -1 12 "Asymptotics." }}{PARA 0 "" 0 "" 
+{TEXT -1 65 "An asymptotic pattern is  easily inferred from numerical \+
+values.." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "seq(ha(n)/(n-2)!
+*1.0,n=2..50);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6S\"\"!F#F#F#$\"+LLLL$
+)!#6F$$\"+WWWW%*F&$\"+@\\j?**F&$\"+a#=_.\"!#5$\"+'\\2&o5F-$\"+@\\j&4\"
+F-$\"+=v.=6F-$\"+V&fo8\"F-$\"+NN*G:\"F-$\"+ahrm6F-$\"+9`vy6F-$\"+t_L*=
+\"F-$\"+$=1()>\"F-$\"+6T127F-$\"+/\\c97F-$\"+$*RL@7F-$\"+vMZF7F-$\"+%H
+nIB\"F-$\"+.^=Q7F-$\"+(=&)GC\"F-$\"+&o;sC\"F-$\"+>8A^7F-$\"+WZ$\\D\"F-
+$\"+6wQe7F-$\"+9kgh7F-$\"+uThk7F-$\"+()4Vn7F-$\"+yW2q7F-$\"+m,cs7F-$\"
++s<!\\F\"F-$\"+q96x7F-$\"+-,?z7F-$\"+]t<\"G\"F-$\"+&*=0$G\"F-$\"+M:$[G
+\"F-$\"+)HBlG\"F-$\"+QN8)G\"F-$\"+4!o'*G\"F-$\"+N>8\"H\"F-$\"+s+`#H\"F
+-$\"+en'QH\"F-$\"+bf9&H\"F-$\"+'HrjH\"F-$\"+5ha(H\"F-" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "ha(500)/(498)!*1.0;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#$\"+MJ#zM\"!#5" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 18 "exp(-2)=exp(-2.0);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#/-%$expG6#!\"#$\"+KGN`8!#5" }}}{PARA 0 "" 0 "" {TEXT -1 63 "And one c
+an even guess the next term in an asymptotic expansion" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "seq(n*(1-ha(n)/(n-2)!*exp(2.0)),n=6
+..50);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6O$\"+^>Z0B!\"*$\"+wsr*o#F%$\"
++9w:<CF%$\"+$[GES#F%$\"+YUr]BF%$\"+()>@:BF%$\"+E0:&G#F%$\"+xaQgAF%$\"+
+%[`&RAF%$\"+\"\\2=A#F%$\"+=-^1AF%$\"+f%)=$>#F%$\"+0H[\"=#F%$\"+fi6r@F%
+$\"+Q6(=;#F%$\"+bZd`@F%$\"+U\")3Y@F%$\"+c\")HR@F%$\"+==6L@F%$\"+L?XF@F
+%$\"+NUDA@F%$\"+dSY<@F%$\"+]`.8@F%$\"+]'G*3@F%$\"+W+60@F%$\"+R-b,@F%$
+\"+gPA)4#F%$\"+1%3^4#F%$\"+pY=#4#F%$\"+/aV*3#F%$\"+Ia%o3#F%$\"+,8S%3#F
+%$\"+**44#3#F%$\"+$)Q!*z?F%$\"+!GIy2#F%$\"+W;'e2#F%$\"+[,*R2#F%$\"+3)3
+A2#F%$\"+@7^q?F%$\"+b;*)o?F%$\"+D[Mn?F%$\"+Bf'e1#F%$\"+M1Xk?F%$\"+o[4j
+?F%$\"+5]zh?F%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "nn:=500; \+
+ha(nn)/((nn-2)!*(1.0-2.0/nn)*exp(-2.0));" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%#nnG\"$+&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+u\"z)****!#5
+" }}}{PARA 0 "" 0 "" {TEXT -1 42 "Thus, with reasonable certainty, we \+
+expect" }}{PARA 272 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "Q[n]/(n-2)!
+=exp(-2)*(1-2/n+O(1/n^2))" "/*&&%\"QG6#%\"nG\"\"\"-%*factorialG6#,&F'F
+(\"\"#!\"\"F.*&-%$expG6#,$\"\"#F.F(,(\"\"\"F(*&\"\"#F(F'F.F.-%\"OG6#*&
+\"\"\"F(*$F'\"\"#F.F(F(" }{TEXT -1 2 ". " }}{PARA 0 "" 0 "" {TEXT -1 
+72 "The principle of a proof based on the generating function method i
+s that" }}{PARA 273 "" 0 "" {TEXT -1 1 " " }{XPPEDIT 18 0 "coeff[z^n]*
+hypergeom([1,1],[],z+d*z^2+O(z^3))=n!*e^d*(1+o(1))" "/*&&%&coeffG6#)%
+\"zG%\"nG\"\"\"-%*hypergeomG6%7$\"\"\"\"\"\"7\",(F(F**&%\"dGF**$F(\"\"
+#F*F*-%\"OG6#*$F(\"\"$F*F**(-%*factorialG6#F)F*)%\"eGF4F*,&\"\"\"F*-%
+\"oG6#\"\"\"F*F*" }{TEXT -1 1 "," }}{PARA 0 "" 0 "" {TEXT -1 108 "prov
+ided that the argument of the hypergeometric is a function that is ana
+lytic at the origin. Here, one has" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 12 "Q_z_closed2;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*(%\"
+zG\"\"\",(F$F%*&F$F%-%*hypergeomG6%7$F%F%7\",$*(,&F%F%F$F%!\"\"F$F%,&F
+$F%F0F%F%F0F%F%F%F%F%F/!\"#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+44 "-z*(z-1)/(1+z)=series(-z*(z-1)/(1+z),z=0,6);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/,$*(,&\"\"\"F'%\"zGF'!\"\"F(F',&F(F'F)F'F'F)+/F(F'\"\"
+\"!\"#\"\"#\"\"#\"\"$F-\"\"%F/\"\"&-%\"OG6#F'\"\"'" }}}{PARA 0 "" 0 "
+" {TEXT -1 59 "so that the asymptotic proportion of legal permutations
+ is " }{TEXT 284 8 "provedly" }{TEXT -1 10 " equal to " }{XPPEDIT 18 
+0 "e^(-2)" ")%\"eG,$\"\"#!\"\"" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 42 "Qn_asy:=`Q `[n]/(n-2)!=exp(-2)*(1+O(1/n));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'Qn_asyG/*&&%#Q~G6#%\"nG\"\"\"-%*fac
+torialG6#,&F*F+!\"#F+!\"\"*&-%$expG6#F0F+,&F+F+-%\"OG6#*$F*F1F+F+" }}}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT -1 7 "
+Results" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 
+101 "We have thus obtained here a few original results regarding the e
+numeration of avoiding permutations." }}{PARA 0 "" 0 "" {TEXT -1 0 "" 
+}}{PARA 275 "" 0 "" {TEXT 291 9 "Theorem 1" }{TEXT -1 2 ". " }{TEXT 
+292 11 "The number " }{XPPEDIT 293 0 "Q[n]" "&%\"QG6#%\"nG" }{TEXT 
+294 59 " of avoiding permutations has ordinary generating function:" }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "Q_z_closed=Q_z_closed2;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/**,(%\"zG\"\"\"!\"\"F'*&-%$expG6#*(,&
+F'F'F&F'F'F&F(,&F&F'F(F'F(F'-%#EiG6$F'F-F'F'F'F/F(F&F'F.F(*(F&F',(F&F'
+*&F&F'-%*hypergeomG6%7$F'F'7\",$*(F.F(F&F'F/F'F(F'F'F'F'F'F.!\"#" }}}
+{PARA 276 "" 0 "" {TEXT -1 17 "The coefficients " }{XPPEDIT 18 0 "Q[n]
+" "&%\"QG6#%\"nG" }{TEXT -1 24 " satisfy the recurrence:" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 6 "Q_rec;" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#<)/-%\"uG6#\"\"!F(/-F&6#\"\"\"F,,.*&,&%\"nGF,F,F,F,-F&6#F0F,F,-F
+&6#F/F,*&F0F,-F&6#,&F0F,\"\"#F,F,!\"#-F&6#,&\"\"$F,F0F,\"\"%*&F=F,-F&6
+#,&F0F,F?F,F,F,-F&6#,&F0F,\"\"&F,!\"\"/-F&6#F9F(/-F&6#F>F(/-F&6#F?F(/-
+F&6#FGF(" }}}{PARA 0 "" 0 "" {TEXT 295 85 "Accordingly, the ordinary g
+enerating function satisfies the corresponding linear ODE:" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "map(factor,Qz_ode);" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#,.*(,&\"\"\"F&%\"zGF&F&,(*$F'\"\"%F&*$F'\"\"#F*!\"
+\"F&F&-%\"YG6#F'F&F&**F'F,,&F'F&F-F&F,F%F,-%%diffG6$F.F'F&F&F)!\"#*$F'
+\"\"$!\"%*$F'\"\"&F-F'F&" }}}{PARA 277 "" 0 "" {TEXT -1 17 "The coeffi
+cients " }{XPPEDIT 18 0 "Q[n]" "&%\"QG6#%\"nG" }{TEXT -1 32 " satisfy \+
+the asymptotic estimate" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "Qn
+_asy;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/*&&%#Q~G6#%\"nG\"\"\"-%*fact
+orialG6#,&F(F)!\"#F)!\"\"*&-%$expG6#F.F),&F)F)-%\"OG6#*$F(F/F)F)" }}}}
+}{SECT 0 {PARA 4 "" 0 "" {TEXT 285 25 "2. Paths with outer nodes" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 15 " We now d
+efine " }{TEXT 297 14 "avoiding paths" }{TEXT -1 27 ". An avoiding pat
+h of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 38 " is a sequence
+ of values from the set " }{XPPEDIT 18 0 "\{1..n\} union \{-1\}" "-%&u
+nionG6$<#;\"\"\"%\"nG<#,$\"\"\"!\"\"" }{TEXT -1 8 ", where " }
+{XPPEDIT 18 0 "-1" ",$\"\"\"!\"\"" }{TEXT -1 68 " represents generical
+ly a node that does not belong to the interval " }{XPPEDIT 18 0 "[1,`.
+.`,n]" "7%\"\"\"%#..G%\"nG" }{TEXT -1 64 ", with the constraint that t
+he initial value of the sequence is " }{XPPEDIT 18 0 "1" "\"\"\"" }
+{TEXT -1 21 ", the final value is " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 48 ",  no successive value pairs can be of the type " }
+{XPPEDIT 18 0 "j,j+1" "6$%\"jG,&F#\"\"\"\"\"\"F%" }{TEXT -1 4 " or " }
+{XPPEDIT 18 0 "j,j-1" "6$%\"jG,&F#\"\"\"\"\"\"!\"\"" }{TEXT -1 20 ", a
+nd no value from " }{XPPEDIT 18 0 "[1,`..`,n]" "7%\"\"\"%#..G%\"nG" }
+{TEXT -1 73 " can occur more than once. Here are the sets of avoiding \+
+paths for sizes " }{XPPEDIT 18 0 "n=2,3,4,5" "6&/%\"nG\"\"#\"\"$\"\"%
+\"\"&" }{TEXT -1 1 ":" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"#<\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"$<#7%\"\"\"!\"\"F#" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$\"\"%<%7&\"\"\"!\"\"F'F#7&F&F'\"\"#F#7&F&\"\"$F'F#
+" }}{PARA 0 "" 0 "" {XPPMATH 20 "6$\"\"&</7'\"\"\"\"\"%\"\"#!\"\"F#7'F
+&F)F'F(F#7'F&F'F)F(F#7'F&F'F)\"\"$F#7'F&F-F)F(F#7'F&F)F)F(F#7'F&F'F)F)
+F#7'F&F)F)F)F#7'F&F)F)F-F#7'F&F-F)F)F#7'F&F)F(F)F#7'F&F)F'F)F#7'F&F)F-
+F)F#" }}{PARA 0 "" 0 "" {TEXT -1 44 "An avoiding path thus describes a
+ path from " }{XPPEDIT 18 0 "1" "\"\"\"" }{TEXT -1 4 " to " }{XPPEDIT 
+18 0 "n" "I\"nG6\"" }{TEXT -1 163 " that is allowed to go through some
+ \"outer nodes\". The goal is here to enumerate avoiding paths by size
+ and by number of outer nodes conventionally represented by " }
+{XPPEDIT 18 0 "-1" ",$\"\"\"!\"\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 4 "Let " }{XPPEDIT 18 0 "Q[n,
+j]" "&%\"QG6$%\"nG%\"jG" }{TEXT -1 41 " be the number of avoiding path
+s of size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 6 " with " }
+{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 23 " outer nodes. Clearly, " }
+{XPPEDIT 18 0 "Q[n,0]=Q[n]" "/&%\"QG6$%\"nG\"\"!&F$6#F&" }{TEXT -1 93 
+" is the number of avoiding permutations. An extension of the earlier \+
+argument is thus needed." }}{SECT 0 {PARA 274 "" 0 "" {TEXT 287 15 " 2
+.1. Templates" }}{PARA 0 "" 0 "" {TEXT -1 173 "One first needs templat
+es on which an inclusion-exclusion argument is applied. The specificat
+ions are a simple modification of templates associated to avoiding per
+mutations." }}{PARA 259 "" 0 "" {TEXT -1 4 "Let " }{XPPEDIT 18 0 "\{a,
+b,x\}" "<%%\"aG%\"bG%\"xG" }{TEXT -1 65 " be a ternary alphabet. The c
+ollection of strings beginning with " }{XPPEDIT 18 0 "a" "I\"aG6\"" }
+{TEXT -1 29 " and and containing only one " }{XPPEDIT 18 0 "x" "I\"xG6
+\"" }{TEXT -1 23 " that occurs at the end" }{TEXT -1 16 " is described
+ by" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "sp0:=S=Prod(Sequence(
+Prod(a,Sequence(b))),x);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$sp0G/%
+\"SG-%%ProdG6$-%)SequenceG6#-F(6$%\"aG-F+6#%\"bG%\"xG" }}}{PARA 0 "" 
+0 "" {TEXT -1 69 "(It suffices to decompose according to each occurren
+ce of the letter " }{XPPEDIT 18 0 "a" "I\"aG6\"" }{TEXT -1 3 ".) " }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 71 "We first \+
+need so-called \"outer points\" that are taken from outer space." }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 45 "Outerpoints:=Sequence(Prod(Z
+,mu_outerpoint));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%,OuterpointsG-%
+)SequenceG6#-%%ProdG6$%\"ZG%.mu_outerpointG" }}}{PARA 0 "" 0 "" {TEXT 
+-1 28 "We also need \"inner points\"." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 45 "Innerpoints:=Sequence(Prod(Z,mu_innerpoint));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%,InnerpointsG-%)SequenceG6#-%%ProdG6
+$%\"ZG%.mu_innerpointG" }}}{PARA 0 "" 0 "" {TEXT -1 194 "Size is defin
+ed as the cumulated number of points in the pair of paths that underli
+es an avoiding path in the sense above: it is thus equal to the length
+ of the avoiding path plus the number of " }{XPPEDIT 18 0 "-1" ",$\"\"
+\"!\"\"" }{TEXT -1 42 " symbols corresponding to the outer nodes." }
+{TEXT -1 101 " We thus introduce a special notation for nodes of the i
+nteger line that are shared by the two paths:" }}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 14 "Z2:=Prod(Z,Z);" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%#Z2G-%%ProdG6$%\"ZGF(" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 
+"" 0 "" {TEXT -1 47 "Now, the three types of blocks are described by" 
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 218 "sp1:=Prod(mu_block,Z2,Out
+erpoints,Innerpoints); sp2:=Prod(mu_block,Z2,Sequence(Prod(mu_length,Z
+2),card>=1),Outerpoints,Innerpoints);\nsp3:=Prod(Sequence(Prod(mu_leng
+th,Z2),card>=1),Z2,Outerpoints,Innerpoints,mu_block);\n" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%$sp1G-%%ProdG6&%)mu_blockG-F&6$%\"ZGF+-%)Seque
+nceG6#-F&6$F+%.mu_outerpointG-F-6#-F&6$F+%.mu_innerpointG" }}{PARA 12 
+"" 1 "" {XPPMATH 20 "6#>%$sp2G-%%ProdG6'%)mu_blockG-F&6$%\"ZGF+-%)Sequ
+enceG6$-F&6$%*mu_lengthGF)1\"\"\"%%cardG-F-6#-F&6$F+%.mu_outerpointG-F
+-6#-F&6$F+%.mu_innerpointG" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$sp3G-
+%%ProdG6'-%)SequenceG6$-F&6$%*mu_lengthG-F&6$%\"ZGF01\"\"\"%%cardGF.-F
+)6#-F&6$F0%.mu_outerpointG-F)6#-F&6$F0%.mu_innerpointG%)mu_blockG" }}}
+{PARA 0 "" 0 "" {TEXT -1 10 "(Clearly, " }{XPPEDIT 18 0 "sp2" "I$sp2G6
+\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "sp3" "I$sp3G6\"" }{TEXT -1 34 
+" are combinatorially isomorphic.) " }}{PARA 0 "" 0 "" {TEXT -1 49 "Th
+e blocks that can occur at the end are of type " }{XPPEDIT 18 0 "x" "I
+\"xG6\"" }{TEXT -1 25 " and can only be of type " }{XPPEDIT 18 0 "sp1
+" "I$sp1G6\"" }{TEXT -1 4 " or " }{XPPEDIT 18 0 "sp2" "I$sp2G6\"" }
+{TEXT -1 42 " but without outer points nor innerpoints." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 25 "sp1x:=Prod(mu_block,Z2); " }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%%sp1xG-%%ProdG6$%)mu_blockG-F&6$%\"ZGF+" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 61 "sp2x:=Prod(mu_block,Z2,Seq
+uence(Prod(mu_length,Z2),card>=1));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>%%sp2xG-%%ProdG6%%)mu_blockG-F&6$%\"ZGF+-%)SequenceG6$-F&6$%*mu_leng
+thGF)1\"\"\"%%cardG" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 21 "Then, the grammar is:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 138 "Q:=subs([a=Union(sp1,sp2),b=sp3,x=Union(sp1x,sp2x)],
+sp0), mu_block=Epsilon, mu_length=Epsilon,mu_outerpoint=Epsilon,mu_inn
+erpoint=Epsilon;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%\"QG6'/%\"SG-%%P
+rodG6$-%)SequenceG6#-F)6$-%&UnionG6$-F)6&%)mu_blockG-F)6$%\"ZGF8-F,6#-
+F)6$F8%.mu_outerpointG-F,6#-F)6$F8%.mu_innerpointG-F)6'F5F6-F,6$-F)6$%
+*mu_lengthGF61\"\"\"%%cardGF9F>-F,6#-F)6'FEF6F9F>F5-F16$-F)6$F5F6-F)6%
+F5F6FE/F5%(EpsilonG/FIFX/F=FX/FBFX" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 32 "draw([S,\{Q\},unlabelled],size=8);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#-%%ProdG6$-%)SequenceG6$-F$6$-F$6&%)mu_blockG-F$6$%\"
+ZGF0%(EpsilonGF1F1F)-F$6%F-F.-F'6#-F$6$%*mu_lengthGF." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "seq(count([S,\{Q\},unlabelled],size
+=n),n=0..20);" }}{PARA 11 "" 1 "" {XPPMATH 20 "67\"\"!F#\"\"\"F#\"\"#F
+%\"\"(\"#7\"#I\"#i\"$V\"\"$7$\"$-(\"%a:\"%rM\"%;x\"&)><\"&y#Q\"&j_)\"'
+S)*=\"'#yA%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 62 "for j from 0
+ to 6 do allstructs([S,\{Q\},unlabelled],size=j) od;" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#7\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#7#-%%ProdG6$%(EpsilonG-F%6$%)mu_blockG-F%6$%
+\"ZGF-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7\"" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#7$-%%ProdG6$-%)SequenceG6#-F%6$-F%6&%)mu_blockG-F%6$%\"
+ZGF1%(EpsilonGF2F2-F%6$F.F/-F%6$F2-F%6%F.F/-F(6#-F%6$%*mu_lengthGF/" }
+}{PARA 12 "" 1 "" {XPPMATH 20 "6#7$-%%ProdG6$-%)SequenceG6#-F%6$-F%6&%
+)mu_blockG-F%6$%\"ZGF1%(EpsilonG-F(6#-F%6$F1%.mu_innerpointGF2-F%6$F.F
+/-F%6$-F(6#-F%6$-F%6&F.F/-F(6#-F%6$F1%.mu_outerpointGF2F2F8" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6#7)-%%ProdG6$-%)SequenceG6#-F%6$-F%6&%)mu_blo
+ckG-F%6$%\"ZGF1-F(6#-F%6$F1%.mu_outerpointG-F(6#-F%6$F1%.mu_innerpoint
+G%(EpsilonG-F%6$F.F/-F%6$-F(6#-F%6$-F%6&F.F/F<-F(6$F9F9F<F=-F%6$-F(6#-
+F%6$-F%6&F.F/-F(6$F4F4F<F<F=-F%6$-F(6#-F%6$-F%6&F.F/F<F<F<-F%6%F.F/-F(
+6#-F%6$%*mu_lengthGF/-F%6$-F(6$FWFWF=-F%6$-F(6#-F%6$-F%6'F.F/FgnF<F<F<
+F=-F%6$F<-F%6%F.F/-F(6$FinFin" }}}}{SECT 0 {PARA 4 "" 0 "" {TEXT 288 
+26 " 2.2. Generating functions" }}{PARA 0 "" 0 "" {TEXT -1 78 "The tri
+variate generating function immediately results from the specification
+." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 93 "gfsolve(\{Q\},unlabelle
+d,z,[[u,mu_block],[v,mu_length],[w1,mu_outerpoint],[w2,mu_innerpoint]]
+);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#<(/-%.mu_innerpointG6'%\"zG%\"uG
+%\"vG%#w1G%#w2GF,/-%\"ZGF'F(/-%)mu_blockGF'F)/-%.mu_outerpointGF'F+/-%
+*mu_lengthGF'F*/-%\"SGF',$**F)\"\"\"F(\"\"#,4!\"\"F>*&F(F>F,F>F>*&F(F>
+F+F>F>*(F(F?F+F>F,F>FA*&F*F>F(F?F>*(F*F>F(\"\"$F,F>FA*(F*F>F(FGF+F>FA*
+*F*F>F(\"\"%F+F>F,F>F>*(F)F>F(FJF*F>F>F>,>F>F>FBFAFCFAFDF>FE!\"#FFF?FH
+F?FIFM*&F)F>F(F?FA*&F*F?F(FJF>*(F*F?F(\"\"&F,F>FA*(F*F?F(FQF+F>FA**F*F
+?F(\"\"'F+F>F,F>F>*(F*F?F(FTF)F>F>FAFA" }}}{PARA 0 "" 0 "" {TEXT -1 
+44 " For inclusion-exclusion, one must set v=-1:" }}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 48 "f_zu:=factor(subs(v=-1,subs(\",S(z,u,v,w1,w2))
+));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%f_zuG*,%\"uG\"\"\"%\"zG\"\"#
+,4F'F'*&F(F'%#w2GF'!\"\"*&F(F'%#w1GF'F-*(F(F)F/F'F,F'F'*$F(F)F'*&F(\"
+\"$F,F'F-*&F(F3F/F'F-*(F(\"\"%F/F'F,F'F'*&F&F'F(F6F'F',&F'F'F1F'F-,6F5
+F'F7F'F2F-F4F-F0F'F1F'*&F&F'F(F)F-F+F-F.F-F'F'F-" }}}{PARA 0 "" 0 "" 
+{TEXT -1 1 " " }}{PARA 0 "" 0 "" {TEXT -1 19 "Application of the " }
+{XPPEDIT 18 0 "phi" "I$phiG6\"" }{TEXT -1 97 "-transformation (that co
+unts the number of ways to connect the blocks) requires the modified f
+orm" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "h_zu:=factor(normal(f
+_zu-(u-u^2)*subs(u=0,diff(f_zu,u))));" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#>%%h_zuG*,%\"uG\"\"#%\"zGF',6\"\"\"F**$F(F'F'*&F(\"\"$%#w1GF*!\"\"*
+&F&F*F(\"\"%F**(F(F1F.F*%#w2GF*F**&F(F-F3F*F/*&F&F*F(F'F/*&F(F*F3F*F/*
+&F(F*F.F*F/*(F(F'F.F*F3F*F*F*,&F*F*F+F*F/,6F2F*F0F*F4F/F,F/F8F*F+F*F5F
+/F6F/F7F/F*F*F/" }}}{PARA 0 "" 0 "" {TEXT -1 42 "This solves the origi
+nal counting problem:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 119 "Q_
+ser:=series(map(proc(e) int(e*exp(-u)/u^2,u=0..infinity) end,map(expan
+d,convert(series(h_zu,z=0,12),polynom))),z,15);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%&Q_serG+3%\"zG\"\"\"\"\"#,&%#w2GF'%#w1GF'\"\"&,(*$F+
+\"\"#F'*&F*F'F+F'F'*$F*F/F'\"\"',**$F+\"\"$F'*&F*F/F+F'F'*&F*F'F+F/F'*
+$F*F5F'\"\"(,2*$F+\"\"%F'F1F'*&F*F/F+F/F'F0F/*&F+F5F*F'F'F.F'*$F*F<F'*
+&F*F5F+F'F'\"\"),:F7F<*&F*F<F+F'F'*&F*F/F+F5F'F8F/*&F*F5F+F/F'F+F'F4F/
+*$F+\"\"&F'*&F+F<F*F'F'*$F*FGF'F6F<F*F'\"\"*,@F@\"\"'F>FL*&F*FGF+F'F'F
+0FG*$F+FLF'F;F5F=\"\"(*&F*F<F+F/F'F?F5F.F5F1F5*&F+FGF*F'F'*&F+F<F*F/F'
+*&F*F5F+F5F'*$F*FLF'\"#5,JFD\"#5*&F+FLF*F'F'*&F*FLF+F'F'F*F/FFF<FIF<F4
+FO*&F*F<F+F5F'*$F+FOF'F7\"#:F8FOF6FfnFH\"\")*&F*F5F+F<F'*$F*FOF'FEFWF+
+F/*&F*FGF+F/F'FCFgn*&F+FGF*F/F'\"#6" }}}{PARA 0 "" 0 "" {TEXT -1 26 "T
+here, the coefficient of " }{XPPEDIT 18 0 "z^n*w1^j*w2^j" "*()%\"zG%\"
+nG\"\"\")%#w1G%\"jGF&)%#w2GF)F&" }{TEXT -1 47 " counts the number of a
+voiding paths with size " }{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 10 "
+ and with " }{XPPEDIT 18 0 "j" "I\"jG6\"" }{TEXT -1 14 " outer nodes. \+
+" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 286 27 "Clos
+ed form and recurrences" }{TEXT -1 17 ". The OGF is here" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "Q_z:=Int(h_zu*exp(-u)/u^2,u=0..infi
+nity);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$Q_zG-%$IntG6$*,%\"zG\"\"#
+,6\"\"\"F,*$F)F*F**&F)\"\"$%#w1GF,!\"\"*&%\"uGF,F)\"\"%F,*(F)F4F0F,%#w
+2GF,F,*&F)F/F6F,F1*&F3F,F)F*F1*&F)F,F6F,F1*&F)F,F0F,F1*(F)F*F0F,F6F,F,
+F,,&F,F,F-F,F1,6F5F,F2F,F7F1F.F1F;F,F-F,F8F1F9F1F:F1F,F,F1-%$expG6#,$F
+3F1F,/F3;\"\"!%)infinityG" }}}{PARA 0 "" 0 "" {TEXT -1 63 "And this ca
+n be expressed in terms of the exponential integral:" }}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 36 "Q_z_closed:=eval(subs(Int=int,Q_z));" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#>%+Q_z_closedG*,%\"zG\"\"#,(*&F&F'-%$e
+xpG6#*,,&\"\"\"F/*$F&F'F/F/,&%#w2GF/%#w1GF/F/F&!\"\",&F&F/F4F/F4,&F/F/
+F&F/F4F/F/*&-%#EiG6$F/*(,2*(F&\"\"%F3F/F2F/F/*&F&\"\"$F2F/F4*&F&F@F3F/
+F4*(F&F'F3F/F2F/F/F0F/*&F&F/F2F/F4*&F&F/F3F/F4F/F/F/F&!\"#,&F0F/F4F/F4
+F/-F+6#*,F.F/,&FBF/F/F/F/F&FEF5F4F6F4F/F/F*F4F/FFF4F.F4-F+6#,$F-F4F/" 
+}}}{PARA 0 "" 0 "" {TEXT -1 57 "Again, there is an \"explicit form\" o
+f the OGF the problem" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "Qz_
+closed2:=map(factor,convert_hypergeom(Q_z_closed));" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%+Qz_closed2G*,,4*(%\"zG\"\"%%#w1G\"\"\"%#w2GF+F+*&F
+(\"\"$F,F+!\"\"*&F(F.F*F+F/*&F(\"\"#-%*hypergeomG6%7$F+F+7\",$*.F(F2,&
+F(F+F/F+F+,&F+F+F(F+F+,&F+F+*$F(F2F+F/,&*&F(F+F,F+F+F/F+F/,&*&F(F+F*F+
+F+F/F+F/F/F+F+F=F+*(F(F2F*F+F,F+F+F?F/FAF/F+F+F+F(F2F<!\"#F>F/F@F/" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 97 "Qz_closed3:=factor(Qz_close
+d2-subs(hypergeom=0,Qz_closed2))+factor(subs(hypergeom=0,Qz_closed2));
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+Qz_closed3G,&*,%\"zG\"\"%-%*hyp
+ergeomG6%7$\"\"\"F-7\",$*.F'\"\"#,&F'F-!\"\"F-F-,&F-F-F'F-F-,&F-F-*$F'
+F1F-F3,&*&F'F-%#w2GF-F-F3F-F3,&*&F'F-%#w1GF-F-F3F-F3F3F-F5!\"#F7F3F:F3
+F-*&F5F3F'F1F-" }}}{PARA 0 "" 0 "" {TEXT -1 20 "The diagonal, where " 
+}{XPPEDIT 18 0 "w1" "I#w1G6\"" }{TEXT -1 5 " and " }{XPPEDIT 18 0 "w2
+" "I#w2G6\"" }{TEXT -1 55 " appear with equal exponents, is then easil
+y extracted." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 178 "Q_order:=20
+: Qz_ser:=map(normal,series(Qz_closed3,z=0,Q_order+2)):subs([w1=w,w2=t
+/w],Qz_ser): subs([w1=w,w2=t/w],Qz_ser): map(series,\",w=0,2*Q_order+5
+):Qzt_ser:=map(coeff,\",w,0);" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%(Qz
+t_serG+7%\"zG\"\"\"\"\"#%\"tG\"\"',&*$F)\"\"#F'F)F-\"\"),(*$F)\"\"$F'F
+)\"\"&F,\"\"(\"#5,,F)\"#?F,\"#R*$F)\"\"%F'F0\"#9F-F'\"#7,.F0\"$R\"F)\"
+$:\"*$F)F2F'F8\"#B\"#5F'F,\"$X#\"#9,0F8\"$`$F)\"$!zF0\"%S8*$F)\"\"'F'F
+,\"%H=F?\"#M\"#oF'\"#;,2F?\"$T(*$F)F3F'F8\"%r[F,\"&rd\"FH\"#ZF0\"&\\P
+\"\"$+&F'F)\"%<i\"#=,4F0\"'9J:FH\"%v8F)\"&g^&FP\"#i*$F)\"\")F'F?\"&WQ
+\"F8\"&bp'\"%uTF'F,\"'VI:\"#?-%\"OG6#F'\"#A" }}}{PARA 0 "" 0 "" {TEXT 
+-1 74 "We thus get results that generalize the counting of avoiding pe
+rmutations." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 36 "subs(t=0,Qzt_
+ser);subs(t=1,Qzt_ser);" }}{PARA 11 "" 0 "" {TEXT -1 0 "" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#+1%\"zG\"\"\"\"\"#\"\"#\"#7\"#5\"#9\"#o\"#;\"$+&
+\"#=\"%uT\"#?-%\"OG6#F%\"#A" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#+7%\"zG
+\"\"\"\"\"#F%\"\"'\"\"$\"\")\"#8\"#5\"#w\"#7\"$L&\"#9\"%:W\"#;\"&(*=%
+\"#=\"'GxW\"#?-%\"OG6#F%\"#A" }}}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 25 
+" 2.3. Exhaustive listings" }}{PARA 0 "" 0 "" {TEXT -1 227 "Here's a p
+rocedure that lists  balanced avoiding pairs exhaustively (by generati
+ng all permutations and filtering the relevant ones) and derives the c
+ounting polynomials. This fully confirms the GF computations done prev
+iously." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 576 "test:=proc() \nl
+ocal i, perms, dontcares, poly, count1, p, p1, j, x, s, n, listing; n:
+=args[1];\nperms:=combstruct[allstructs](Permutation([seq(i,i=2..n-1)]
+),size=n-2); dontcares := combstruct[allstructs](Subset(\{seq(i,i=2..n
+-1)\}));\nlisting:=\{\};\npoly:=0;\nfor s in dontcares do\ncount1:=0;
+\nfor p in perms do p1:=[1,op(p),n]; \nfor x in s do p1[x]:=-1; od;\nf
+or j from 1 to n-1 while abs(p1[j+1]-p1[j])<>1 do \nod; \nif j=n then \+
+count1:=count1+1; listing:=listing union \{p1\} fi;\nod;\npoly:=poly+c
+ount1*t^nops(s)/nops(s)!;\nod;\nif nargs>1 then RETURN(sort(listing)) \+
+fi;\nRETURN(poly);\nend;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%testG:6
+\"6.%\"iG%&permsG%*dontcaresG%%polyG%'count1G%\"pG%#p1G%\"jG%\"xG%\"sG
+%\"nG%(listingGF&F&C*>8.&9\"6#\"\"\">8%-&%+combstructG6#%+allstructsG6
+$-%,PermutationG6#7#-%$seqG6$8$/FJ;\"\"#,&F6F:!\"\"F:/%%sizeG,&F6F:!\"
+#F:>8&-F>6#-%'SubsetG6#<#FG>8/<\">8'\"\"!?&8-FU%%trueGC%>8(F[o?&8)F<F^
+oC&>8*7%F:-%#opG6#FcoF6?&8,F]oF^o>&Ffo6#F\\pFO?(8+F:F:FN0-%$absG6#,&&F
+fo6#,&FapF:F:F:F:&Ffo6#FapFOF:F&@$/FapF6C$>Fao,&FaoF:F:F:>Fgn-%&unionG
+6$Fgn<#Ffo>Fjn,&FjnF:*(FaoF:)%\"tG-%%nopsG6#F]oF:-%*factorialG6#F[rFOF
+:@$2F:9#-%'RETURNG6#-%%sortG6#Fgn-Fer6#FjnF&F&" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 34 "for j from 2 to 6 do j,test(j) od;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$\"\"#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6$\"\"$%\"tG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"%,&*$%\"tG\"\"#\"
+\"\"F&F'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"&,(*$%\"tG\"\"$\"\"\"F
+&F#*$F&\"\"#\"\"(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"',,%\"tG\"#?*
+$F%\"\"#\"#R*$F%\"\"%\"\"\"*$F%\"\"$\"#9F(F," }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 48 "for j from 2 to 6 do j,test(j,LIST_THEM_ALL) od;
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$\"\"#<\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$\"\"$<#7%\"\"\"!\"\"F#" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6$\"\"%<%7&\"\"\"\"\"$!\"\"F#7&F&F(F(F#7&F&F(\"\"#F#" }}{PARA 12 "" 
+1 "" {XPPMATH 20 "6$\"\"&</7'\"\"\"!\"\"F'\"\"#F#7'F&\"\"$F'F(F#7'F&F'
+F'F*F#7'F&F'\"\"%F(F#7'F&F-F'F(F#7'F&F-F'F*F#7'F&F'F'F'F#7'F&F-F'F'F#7
+'F&F*F'F'F#7'F&F-F(F'F#7'F&F'F(F'F#7'F&F'F-F'F#7'F&F'F*F'F#" }}{PARA 
+12 "" 1 "" {XPPMATH 20 "6$\"\"'<ho7(\"\"\"\"\"$!\"\"F(\"\"%F#7(F&F'F(F
+(\"\"#F#7(F&F)F(F(F'F#7(F&F)F(F(F+F#7(F&\"\"&F(F(F+F#7(F&F/F(F(F'F#7(F
+&F/F(F(F)F#7(F&F(F'F(F)F#7(F&F(F)F(F'F#7(F&F(F/F(F'F#7(F&F(F/F(F)F#7(F
+&F(F)F(F+F#7(F&F(F+F(F)F#7(F&F(F/F(F+F#7(F&F(F+F(F'F#7(F&F(F'F(F+F#7(F
+&F/F(F'F(F#7(F&F'F/F+F(F#7(F&F)F+F/F(F#7(F&F/F+F)F(F#7(F&F'F(F/F(F#7(F
+&F'F(F)F(F#7(F&F)F(F+F(F#7(F&F)F(F/F(F#7(F&F)F(F'F(F#7(F&F'F(F+F(F#7(F
+&F(F'F/F(F#7(F&F/F(F+F(F#7(F&F/F(F)F(F#7(F&F(F/F+F(F#7(F&F(F)F+F(F#7(F
+&F(F+F/F(F#7(F&F(F+F)F(F#7(F&F(F/F'F(F#7(F&F(F(F'F(F#7(F&F(F(F/F(F#7(F
+&F(F(F)F(F#7(F&F(F(F+F(F#7(F&F'F/F(F(F#7(F&F/F+F(F(F#7(F&F)F+F(F(F#7(F
+&F/F'F(F(F#7(F&F)F(F(F(F#7(F&F'F(F(F(F#7(F&F/F(F(F(F#7(F&F(F/F(F(F#7(F
+&F(F+F(F(F#7(F&F(F)F(F(F#7(F&F(F'F(F(F#7(F&F)F+F/F'F#7(F&F'F/F+F)F#7(F
+&F(F+F/F'F#7(F&F(F/F+F)F#7(F&F(F(F(F(F#7(F&F(F'F/F+F#7(F&F(F(F/F'F#7(F
+&F'F(F)F+F#7(F&F(F(F)F+F#7(F&F(F(F+F)F#7(F&F'F(F+F)F#7(F&F'F(F/F+F#7(F
+&F(F(F/F+F#7(F&F/F(F)F+F#7(F&F/F(F+F)F#7(F&F)F(F/F+F#7(F&F)F(F/F'F#7(F
+&F(F(F(F'F#7(F&F(F(F(F)F#7(F&F(F(F(F+F#7(F&F)F+F(F'F#7(F&F'F/F(F+F#7(F
+&F'F/F(F)F#7(F&F/F+F(F)F#7(F&F/F'F(F+F#7(F&F/F'F(F)F#7(F&F/F+F(F'F#" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 37 "remove(has,test(6,LIST_THE
+M_ALL),-1);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<$7(\"\"\"\"\"%\"\"#\"
+\"&\"\"$\"\"'7(F%F)F(F'F&F*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+37 "remove(has,test(7,LIST_THEM_ALL),-1);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#<,7)\"\"\"\"\"$\"\"&\"\"#\"\"'\"\"%\"\"(7)F%F&F)F*F(F'F
++7)F%F*F(F)F&F'F+7)F%F*F)F(F'F&F+7)F%F*F)F&F'F(F+7)F%F'F(F*F)F&F+7)F%F
+'F&F)F(F*F+7)F%F'F&F)F*F(F+7)F%F)F&F'F(F*F+7)F%F)F*F(F'F&F+" }}}{PARA 
+0 "" 0 "" {TEXT -1 68 "These results confirm the GF computation of the
+ previous subsection." }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 32 " 2.4. E
+xplicit binomial formulae" }}{PARA 0 "" 0 "" {TEXT -1 91 "We can now r
+eturn to the GF of avoiding paths enumerated by size and number of out
+er nodes." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "Qz_closed3;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#,&*,%\"zG\"\"%-%*hypergeomG6%7$\"\"\"F
++7\",$*.F%\"\"#,&F%F+!\"\"F+F+,&F+F+F%F+F+,&F+F+*$F%F/F+F1,&*&F%F+%#w2
+GF+F+F1F+F1,&*&F%F+%#w1GF+F+F1F+F1F1F+F3!\"#F5F1F8F1F+*&F3F1F%F/F+" }}
+}{PARA 0 "" 0 "" {TEXT -1 16 "The coefficient " }{XPPEDIT 18 0 "c(n,j,
+k) " "-%\"cG6%%\"nG%\"jG%\"kG" }{TEXT -1 4 " of " }{XPPEDIT 18 0 "z^n*
+(w1^j*w2^k" "*&)%\"zG%\"nG\"\"\"*&)%#w1G%\"jGF&)%#w2G%\"kGF&F&" }
+{TEXT -1 77 " is obtained by straight expansion and avoiding paths are
+ then enumerated by " }{XPPEDIT 18 0 "C(n,j)=c(n,j,j)" "/-%\"CG6$%\"nG
+%\"jG-%\"cG6%F&F'F'" }{TEXT -1 103 ". The corresponding formulae are o
+btained directly by symbolic expansions (performed manually, though!)
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 143 "j:='j': C_formula:=C(n+
+2,j)=Sum(Sum( (-1)^(k1+k2)*(n-j-k1-k2)!*'B'(n-j-k1-k2,k1)* 'B'(n-j-k1+
+1,k2)*'B'(n-k1-k2,j)^2, k1=0..n-j-k2), k2=0..n-j);" }}{PARA 12 "" 1 "
+" {XPPMATH 20 "6#>%*C_formulaG/-%\"CG6$,&%\"nG\"\"\"\"\"#F+%\"jG-%$Sum
+G6$-F/6$*,)!\"\",&%#k1GF+%#k2GF+F+-%*factorialG6#,*F*F+F-F5F7F5F8F5F+-
+%\"BG6$F<F7F+-F>6$,*F*F+F-F5F7F5F+F+F8F+-F>6$,(F*F+F7F5F8F5F-F,/F7;\"
+\"!,(F*F+F-F5F8F5/F8;FH,&F*F+F-F5" }}}{PARA 0 "" 0 "" {TEXT -1 6 "wher
+e " }{XPPEDIT 18 0 "B(a,b)" "-%\"BG6$%\"aG%\"bG" }{TEXT -1 30 " is the
+ binomial, coefficient " }{XPPEDIT 18 0 "B(a,b)=a!/b!/(a-b)!" "/-%\"BG
+6$%\"aG%\"bG*(-%*factorialG6#F&\"\"\"-F*6#F'!\"\"-F*6#,&F&F,F'F/F/" }
+{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 63 "Bin:=proc(n
+,k) if n<0 or k<0 then 0 else binomial(n,k) fi; end;" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>%$BinG:6$%\"nG%\"kG6\"F)F)@%529$\"\"!29%F.F.-%)bino
+mialG6$F-F0F)F)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 167 "coef:=p
+roc(n,j) option remember; local k1,k2;\nadd( add( (-1)^(k1+k2)*(n-j-k1
+-k2)!*Bin(n-j-k1-k2,k1)* Bin(n-j-k1+1,k2)*Bin(n-k1-k2,j)^2, k1=0..n-j-
+k2), k2=0..n-j); end;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%%coefG:6$%
+\"nG%\"jG6$%#k1G%#k2G6#%)rememberG6\"-%$addG6$-F06$*,)!\"\",&8$\"\"\"8
+%F9F9-%*factorialG6#,*9$F99%F6F8F6F:F6F9-%$BinG6$F>F8F9-FB6$,*F?F9F@F6
+F8F6F9F9F:F9-FB6$,(F?F9F8F6F:F6F@\"\"#/F8;\"\"!,(F?F9F@F6F:F6/F:;FM,&F
+?F9F@F6F.F." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 93 "Coef:=proc(n
+,j) local r; option remember; r:=coef(n-2,j);\nif j=0 then r:=r-(-1)^n
+ fi; r; end;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%CoefG:6$%\"nG%\"jG6
+#%\"rG6#%)rememberG6\"C%>8$-%%coefG6$,&9$\"\"\"!\"#F69%@$/F8\"\"!>F0,&
+F0F6)!\"\"F5F?F0F-F-" }}}{PARA 0 "" 0 "" {TEXT -1 39 " This gives the \+
+generating polynomials " }{XPPEDIT 18 0 "co(n,t):=sum(C(n,j)*t^j,j=0..
+n)" ">-%#coG6$%\"nG%\"tG-%$sumG6$*&-%\"CG6$F&%\"jG\"\"\")F'F/F0/F/;\"
+\"!F&" }{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 70 "co:
+=proc(n,t) local j; option remember; add(Coef(n,j)*t^j,j=0..n) end;" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#coG:6$%\"nG%\"tG6#%\"jG6#%)remembe
+rG6\"-%$addG6$*&-%%CoefG6$9$8$\"\"\")9%F6F7/F6;\"\"!F5F-F-" }}}{PARA 
+0 "" 0 "" {TEXT -1 98 "Here is a short table, again consistent with va
+lues obtained by exhaustive listing of small cases." }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 45 "for nn from 2 to 8 do 'co'(nn,t)=co(nn,t) o
+d;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%#coG6$\"\"#%\"tG\"\"!" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%#coG6$\"\"$%\"tGF(" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#/-%#coG6$\"\"%%\"tG,&*$F(\"\"#\"\"\"F(F+" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#/-%#coG6$\"\"&%\"tG,(*$F(\"\"$\"\"\"F(F'*$F(
+\"\"#\"\"(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/-%#coG6$\"\"'%\"tG,,F(
+\"#?*$F(\"\"#\"#R*$F(\"\"%\"\"\"*$F(\"\"$\"#9F,F0" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#/-%#coG6$\"\"(%\"tG,.*$F(\"\"$\"$R\"F(\"$:\"*$F(\"\"&\"
+\"\"*$F(\"\"%\"#B\"#5F0*$F(\"\"#\"$X#" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#/-%#coG6$\"\")%\"tG,0*$F(\"\"%\"$`$F(\"$!z*$F(\"\"$\"%S8*$F(\"\"'\"
+\"\"*$F(\"\"#\"%H=*$F(\"\"&\"#M\"#oF3" }}}}{SECT 0 {PARA 4 "" 0 "" 
+{TEXT -1 7 "Results" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT 298 9 "Theorem 2" }{TEXT -1 2 ". " }{TEXT 299 11 "The number \+
+" }{XPPEDIT 18 0 "C[n,j]" "&%\"CG6$%\"nG%\"jG" }{TEXT -1 1 " " }{TEXT 
+305 34 "of avoiding paths counted by size " }{XPPEDIT 300 0 "n" "I\"nG
+6\"" }{TEXT 301 30 " and by number of outer nodes " }{XPPEDIT 18 0 "j
+" "I\"jG6\"" }{TEXT 304 15 " satisfies for " }{XPPEDIT 302 0 "j>0" "2
+\"\"!%\"jG" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "C_formula;" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "6#/-%\"CG6$,&%\"nG\"\"\"\"\"#F)%\"jG-%$S
+umG6$-F-6$*,)!\"\",&%#k1GF)%#k2GF)F)-%*factorialG6#,*F(F)F+F3F5F3F6F3F
+)-%\"BG6$F:F5F)-F<6$,*F(F)F+F3F5F3F)F)F6F)-F<6$,(F(F)F5F3F6F3F+F*/F5;
+\"\"!,(F(F)F+F3F6F3/F6;FF,&F(F)F+F3" }}}{PARA 278 "" 0 "" {TEXT -1 4 "
+For " }{XPPEDIT 18 0 "j=0" "/%\"jG\"\"!" }{TEXT -1 74 ", the formula s
+implifies and provides the number of avoiding permutations " }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "'Q[n+2]'=subs(j=0,B(n-k1-k2,0)=1,op
+(2,\"))-(-1)^n;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/&%\"QG6#,&%\"nG\"
+\"\"\"\"#F),&-%$SumG6$-F-6$**)!\"\",&%#k1GF)%#k2GF)F)-%*factorialG6#,(
+F(F)F5F3F6F3F)-%\"BG6$F:F5F)-F<6$,(F(F)F)F)F5F3F6F)/F5;\"\"!,&F(F)F6F3
+/F6;FCF(F))F3F(F3" }}}{PARA 0 "" 0 "" {TEXT -1 1 "(" }{XPPEDIT 18 0 "B
+" "I\"BG6\"" }{TEXT -1 33 " denotes a binomial coefficient.)" }}}}
+{SECT 0 {PARA 3 "" 0 "" {TEXT -1 27 "3. The random graph problem" }}
+{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 162 "We concl
+ude this section by showing how to estimate the robustness of connecti
+ons to link failures between a source and a target in a random graph t
+hat obeys the " }{XPPEDIT 18 0 "G[n,p]" "&%\"GG6$%\"nG%\"pG" }{TEXT 
+-1 28 " model, where edges between " }{XPPEDIT 18 0 "n" "I\"nG6\"" }
+{TEXT -1 7 " nodes " }{TEXT -1 42 "are chosen independently with proba
+bility " }{XPPEDIT 18 0 "p" "I\"pG6\"" }{TEXT -1 1 "." }}{PARA 0 "" 0 
+"" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 3 "An " }{TEXT 303 13 "avo
+iding pair" }{TEXT -1 11 " of length " }{XPPEDIT 18 0 "l" "I\"lG6\"" }
+{TEXT -1 58 " in a graph is an unordered pair of paths, each of length
+ " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 125 " that may share some n
+odes but are edge disjoint.The mean number of (unordered) avoiding pai
+rs in a random graph obeying the " }{XPPEDIT 18 0 "G[n,p]" "&%\"GG6$%
+\"nG%\"pG" }{TEXT -1 155 " model between an arbitrary source and an ar
+bitary destination is an indicator of the robustness of the graph to a
+ single link failure. This mean value is:" }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 90 "l:='l': Numpath_formula:=1/2*1/(n*(n-1))*Sum(C(l+1,j)
+*B(n,l+1+j)*(l+1+j)!,j=0..l)*p^(2*l);" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#>%0Numpath_formulaG,$**%\"nG!\"\",&F'\"\"\"F(F*F(-%$SumG6$*(-%\"CG6
+$,&%\"lGF*F*F*%\"jGF*-%\"BG6$F',(F3F*F*F*F4F*F*-%*factorialG6#F8F*/F4;
+\"\"!F3F*)%\"pG,$F3\"\"#F*#F*FB" }}}{PARA 0 "" 0 "" {TEXT -1 44 "The a
+rgument is as follows. The coefficient " }{XPPEDIT 18 0 "1/2" "*&\"\"
+\"\"\"\"\"\"#!\"\"" }{TEXT -1 82 " corresponds to the fact that one ta
+kes unordered pairs of paths, the coefficient " }{XPPEDIT 18 0 "1/(n*(
+n-1)" "*&\"\"\"\"\"\"*&%\"nGF$,&F&F$\"\"\"!\"\"F$F)" }{TEXT -1 222 " a
+verages over all sources and destinations, and the arrangement numbers
+ account for the number of ways to embed an avoiding path into a graph
+ by choosing certain nodes and assigning them in some order to an avoi
+ding path." }}{PARA 0 "" 0 "" {TEXT -1 4 "The " }{XPPEDIT 18 0 "C" "I
+\"CG6\"" }{TEXT -1 47 "-coefficients are as provided by Theorem 2 and \+
+" }{XPPEDIT 18 0 "B" "I\"BG6\"" }{TEXT -1 34 " still means binomial co
+efficient." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 
+-1 78 "The procedure that implements the formula for the mean number o
+f paths is then" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 172 "means:=p
+roc(n,p,l) local j; option remember; 1/2*1/(n*(n-1))*add(Coef(l+1,j)*b
+inomial(n,l+1+j)*(l+1+j)!,j=0..l+1)*p^(2*l); expand(\"); if l<=12 then
+ factor(\") else \" fi end;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%&mean
+sG:6%%\"nG%\"pG%\"lG6#%\"jG6#%)rememberG6\"C%,$**9$!\"\",&F2\"\"\"F3F5
+F3-%$addG6$*(-%%CoefG6$,&9&F5F5F58$F5-%)binomialG6$F2,(F>F5F5F5F?F5F5-
+%*factorialG6#FCF5/F?;\"\"!F=F5)9%,$F>\"\"#F5#F5FM-%'expandG6#%\"\"G@%
+1F>\"#7-%'factorGFQFRF.F." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+40 "for ll from 1 to 10 do means(n,p,ll) od;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*(,&%\"nG\"
+\"\"!\"#F'F',&F&F'!\"$F'F'%\"pG\"\"%#F'\"\"#" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#,$**,&%\"nG\"\"\"!\"#F'F',&F&F'!\"%F'F',&F&F'!\"$F'\"\"
+#%\"pG\"\"'#F'F-" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*.,&%\"nG\"\"\"!
+\"\"F'F',&F&F'!\"#F'F',&F&F'!\"$F'F',&F&F'!\"%F'F',&F&F'!\"&F'\"\"#%\"
+pG\"\")#F'F1" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*.,&%\"nG\"\"\"!\"#F
+'F',&F&F'!\"$F'F',&F&F'!\"%F'F',**$F&\"\"$F'*$F&\"\"#!#6F&\"#D\"#KF'F'
+,&F&F'!\"&F'F1%\"pG\"#5#F'F1" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*0,&
+%\"nG\"\"\"!\"#F'F',&F&F'!\"$F'F',&F&F'!\"%F'F',&F&F'!\"&F'F',&F&F'!\"
+'F'F',.*$F&\"\"&F'*$F&\"\"%!#A*$F&\"\"$\"$i\"*$F&\"\"#!$L$F&!$R*\"%\\L
+F'F'%\"pG\"#7#F'F;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$*2,&%\"nG\"\"
+\"!\"#F'F',&F&F'!\"$F'F',&F&F'!\"%F'F',&F&F'!\"&F'F',&F&F'!\"'F'F',&F&
+F'!\"(F'F',0*$F&\"\"'F'*$F&\"\"&!#H*$F&\"\"%\"$)H*$F&\"\"$!%H5*$F&\"\"
+#!%ICF&\"&vO#!&W%RF'F'%\"pG\"#9#F'F@" }}{PARA 12 "" 1 "" {XPPMATH 20 "
+6#,$*4,&%\"nG\"\"\"!\"#F'F',&F&F'!\"$F'F',&F&F'!\"%F'F',&F&F'!\"&F'F',
+&F&F'!\"'F'F',&F&F'!\"(F'F',&F&F'!\")F'F',2*$F&\"\"(F'*$F&\"\"'!#P*$F&
+\"\"&\"$3&*$F&\"\"%!%*p#*$F&\"\"$!%%)H*$F&\"\"#\"&dC*F&!'(RV$\"'()*o$F
+'F'%\"pG\"#;#F'FE" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,$*6,&%\"nG\"\"\"
+!\"#F'F',&F&F'!\"$F'F',&F&F'!\"%F'F',&F&F'!\"&F'F',&F&F'!\"'F'F',&F&F'
+!\"(F'F',&F&F'!\")F'F',&F&F'!\"*F'F',4*$F&\"\")F'*$F&\"\"(!#Y*$F&\"\"'
+\"$:)*$F&\"\"&!%\">'*$F&\"\"%\"%RO*$F&\"\"$\"'X&f#*$F&\"\"#!(%H\"p\"F&
+\"(^)pR!(O**R#F'F'%\"pG\"#=#F'FJ" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#,$
+*8,&%\"nG\"\"\"!\"#F'F',&F&F'!\"$F'F',&F&F'!\"%F'F',&F&F'!\"&F'F',&F&F
+'!\"'F'F',&F&F'!\"(F'F',&F&F'!\")F'F',&F&F'!\"*F'F',&F&F'!#5F'F',6*$F&
+\"\"*F'*$F&\"\")!#c*$F&\"\"(\"%X7*$F&\"\"'!&$z7*$F&\"\"&\"&&=L*$F&\"\"
+%\"'vgc*$F&\"\"$!(ks5'*$F&\"\"#\").-=CF&!)$)*pT$!(zuI&F'F'%\"pG\"#?#F'
+FO" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 36 "He
+re is an instance for a graph of  " }{XPPEDIT 18 0 "n=10^5" "/%\"nG*$
+\"#5\"\"&" }{TEXT -1 26 " nodes, a probability of  " }{XPPEDIT 18 0 "p
+=5*10^(-5)" "/%\"pG*&\"\"&\"\"\")\"#5,$\"\"&!\"\"F&" }{TEXT -1 40 ", s
+o that the mean node degree is about " }{XPPEDIT 18 0 "delta=5" "/%&de
+ltaG\"\"&" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 60 
+"seq(subs(n=10^5,p=5.0*10^(-5),[ll,means(n,p,ll)]),ll=2..16);" }}
+{PARA 12 "" 1 "" {XPPMATH 20 "617$\"\"#$\"+_P%[7$!#<7$\"\"$$\"+TDc6y!#
+;7$\"\"%$\"+1Wt_>!#97$\"\"&$\"+RyM\")[!#87$\"\"'$\"+A0>?7!#67$\"\"($\"
++[#\\+0$!#57$\"\")$\"+JJ!Ri(!\"*7$\"\"*$\"+=Fj0>!\"(7$\"#5$\"+7!HJw%!
+\"'7$\"#6$\"+\"H?0>\"!\"%7$\"#7$\"+ZkevH!\"$7$\"#8$\"+z?.Pu!\"#7$\"#9$
+\"+cute=\"\"!7$\"#:$\"+o'\\ak%\"\"\"7$\"#;$\"+03*4;\"F)" }}}{PARA 0 "
+" 0 "" {TEXT -1 51 "It appears that there is a sharp threshold between
+ " }{XPPEDIT 18 0 "l=7" "/%\"lG\"\"(" }{TEXT -1 5 " and " }{XPPEDIT 
+18 0 "l=8" "/%\"lG\"\")" }{TEXT -1 101 ". This is to be compared with \+
+the number of nodes reachable from the root of a tree with node degree
+ " }{XPPEDIT 18 0 "delta=5" "/%&deltaG\"\"&" }{TEXT -1 5 "  in " }
+{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 8 " steps: " }{XPPEDIT 18 0 "5^
+7=78125" "/*$\"\"&\"\"(\"&D\"y" }{TEXT -1 15 " is just below " }
+{XPPEDIT 18 0 "10^5=100000" "/*$\"#5\"\"&\"'++5" }{TEXT -1 7 " while \+
+" }{XPPEDIT 18 0 "5^8=390065" "/*$\"\"&\"\")\"'l+R" }{TEXT -1 9 " exce
+eds " }{XPPEDIT 18 0 "10^5" "*$\"#5\"\"&" }}{PARA 0 "" 0 "" {TEXT -1 
+0 "" }}{PARA 0 "" 0 "" {TEXT -1 94 "The probability threshold after wh
+ich the mean number of unordered pairs exceeds 1 is given by" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 69 "p0:=proc(nn,l) local p; fsol
+ve(subs(n=nn,means(n,p,l))=1,p,0..1) end;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%#p0G:6$%#nnG%\"lG6#%\"pG6\"F+-%'fsolveG6%/-%%subsG6$/
+%\"nG9$-%&meansG6%F48$9%\"\"\"F9;\"\"!F;F+F+" }}}{PARA 0 "" 0 "" 
+{TEXT -1 70 "And this quantity is best visualised in terms of the mean
+ node degree:" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "delta:=proc
+(n,p) (n-1)*p; end;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&deltaG:6$%\"
+nG%\"pG6\"F)F)*&,&9$\"\"\"!\"\"F-F-9%F-F)F)" }}}{PARA 0 "" 0 "" {TEXT 
+-1 21 "For  a graph of size " }{XPPEDIT 18 0 "n=10^5" "/%\"nG*$\"#5\"
+\"&" }{TEXT -1 9 ", we have" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+43 "seq([ll,delta(10^5,p0(10^5,ll))],ll=2..10);" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6+7$\"\"#$\"+&\\71w$!\"(7$\"\"$$\"+6%f+@&!\")7$\"\"%$\"+P
+lDR>F,7$\"\"&$\"+**[zr5F,7$\"\"'$\"+(\\=#=s!\"*7$\"\"($\"+%oIDW&F97$\"
+\")$\"+l,#QS%F97$\"\"*$\"+9M0NPF97$\"#5$\"+tC%RF$F9" }}}{PARA 0 "" 0 "
+" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 137 "The thresholds are fai
+rly sharp as attested by plots of the mean values of the number of (un
+ordered) avoiding pairs when the probability " }{XPPEDIT 18 0 "p" "I\"
+pG6\"" }{TEXT -1 54 " increases (the horizontal axis gives the mean de
+gree " }{XPPEDIT 18 0 "delta=(n-1)*p" "/%&deltaG*&,&%\"nG\"\"\"\"\"\"!
+\"\"F'%\"pGF'" }{TEXT -1 2 ")." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 89 "nn:=10^5: plot([seq(means(nn,delta/(nn-1),ll),ll=3..8)],delta=0.
+.20,mu=0..1,thickness=3);" }}{PARA 13 "" 1 "" {INLPLOT "6+-%'CURVESG6$
+7V7$\"\"!F(7$$\"39LLLL3VfV!#=$\"3[JtgJd!=V$!#I7$$\"3&pmm;H[D:)F,$\"3\"
+RHjT@EzY\"!#G7$$\"3LLLLe0$=C\"!#<$\"3d)y7)zllL=!#F7$$\"3jLLL3RBr;F9$\"
+3;!z<'\\)\\$*3\"!#E7$$\"3kmm;zjf)4#F9$\"3=$[cg!4)3F%FB7$$\"3TLL$e4;[\\
+#F9$\"3/m*)4#3Ab?\"!#D7$$\"3!)****\\i'y]!HF9$\"3*46bp<C`+$FM7$$\"3oLL$
+ezs$HLF9$\"3`@g,^9b4oFM7$$\"3=++]7iI_PF9$\"3\"4JAh,7bR\"!#C7$$\"3Pnmm;
+_M(=%F9$\"3'ydG*>.6&p#Fgn7$$\"3$QLL$3y_qXF9$\"3i!*3zP;mdXFgn7$$\"3]+++
+]1!>+&F9$\"3z'=Csrl)HyFgn7$$\"3J+++]Z/NaF9$\"3GHHTMAt)G\"!#B7$$\"3<+++
+]$fC&eF9$\"3n[^S+V(*3?F\\p7$$\"3qLL$ez6:B'F9$\"3RuzjM5bFHF\\p7$$\"31nm
+m;=C#o'F9$\"3@'f3nj*>^WF\\p7$$\"3Nnmmm#pS1(F9$\"3m&[6wa.E@'F\\p7$$\"3<
+++]i`A3vF9$\"3f:z%Ri1r&*)F\\p7$$\"3Rmmmm(y8!zF9$\"35I-^$fPm@\"!#A7$$\"
+3K,+]i.tK$)F9$\"3/q#y!GEmt;F[r7$$\"3!3++v3zMu)F9$\"3\"o1$pGt#QB#F[r7$$
+\"3Zomm\"H_?<*F9$\"3+2A(z!\\vwHF[r7$$\"3,nm;zihl&*F9$\"3w5Cp$*>?IQF[r7
+$$\"3:LLL3#G,***F9$\"3$o[3;Rf,(\\F[r7$$\"3WLLezw5V5!#;$\"3`y&[ZS)[SkF[
+r7$$\"3.++v$Q#\\\"3\"Fhs$\"3!QaT)4L!***zF[r7$$\"3\\LL$e\"*[H7\"Fhs$\"3
+S-L^l^a-5!#@7$$\"3-+++qvxl6Fhs$\"3p5YP!z$)\\D\"Fet7$$\"31++]_qn27Fhs$
+\"30^^7jA8^:Fet7$$\"36++Dcp@[7Fhs$\"3L8`F=!p4*=Fet7$$\"3+++]2'HKH\"Fhs
+$\"3._&Q&z_#)QBFet7$$\"3`mmmwanL8Fhs$\"3zlU*3<([8GFet7$$\"34+++v+'oP\"
+Fhs$\"3M2*zc:*H1MFet7$$\"3CLLeR<*fT\"Fhs$\"3f==.p)H+.%Fet7$$\"3B+++&)H
+xe9Fhs$\"3ioh?oz.=[Fet7$$\"3fmm\"H!o-*\\\"Fhs$\"3W;++%RPGn&Fet7$$\"39+
++DTO5T:Fhs$\"3)GZ,$eR%yp'Fet7$$\"3emmmT9C#e\"Fhs$\"3ICN^SZxWyFet7$$\"3
+\"****\\i!*3`i\"Fhs$\"3dBdiT,O;#*Fet7$$\"3_LLL$*zym;Fhs$\"3(*o-cjt2s5!
+#?7$$\"3fLL$3N1#4<Fhs$\"3-JKNINbY7Fgx7$$\"3!pm;HYt7v\"Fhs$\"3NABbH.MU9
+Fgx7$$\"3@+++q(G**y\"Fhs$\"3BD))HjV@W;Fgx7$$\"3'pmmT6KU$=Fhs$\"3c\"p5u
+47S!>Fgx7$$\"3dLLL`v&Q(=Fhs$\"3oj:8'*)GX;#Fgx7$$\"3\"om\"zW?)\\*=Fhs$
+\"3+#[G!=b7:BFgx7$$\"30++DOl5;>Fhs$\"3D*)p+`TNuCFgx7$$\"38+++q`KO>Fhs$
+\"3?%o2]H-_j#Fgx7$$\"3A++v.Uac>Fhs$\"3_,T&*[5n/GFgx7$$\"3H+](=5s#y>Fhs
+$\"3.=c1\"=;o*HFgx7$$\"#?F($\"37k+k+!3)*>$Fgx-%'COLOURG6&%$RGBG$\"#5!
+\"\"F(F(-F$6$7WF'7$F*$\"3;$[Y6'4j@l!#J7$F1$\"3yX**=4e%ev*!#H7$F7$\"39(
+H09C\"fFGF<7$F>$\"3wX_1'Q'RUIFB7$FD$\"3dt^@\"pG3)=FM7$FI$\"3kMPza'[G](
+FM7$FO$\"38KnQfd=ODFgn7$FT$\"35RT)3TYxa(Fgn7$FY$\"3B1Mu$QNZ'>F\\p7$Fin
+$\"3mjb_e^GDZF\\p7$F^o$\"3'*\\#==Ke-_*F\\p7$Fco$\"3dn'**yNP)e>F[r7$Fho
+$\"3a,(e'=%\\m!QF[r7$F^p$\"3%HOZcN\"e!)oF[r7$Fcp$\"3cfZ:v2vO6Fet7$Fhp$
+\"3e0K@SiW()>Fet7$F]q$\"3KB\\=@*p**4$Fet7$Fbq$\"38!Q#e')o7\\]Fet7$Fgq$
+\"3Pk#)\\&4I_f(Fet7$F]r$\"3log)*)zF?;\"Fgx7$Fbr$\"3%G$o\"3QBwq\"Fgx7$F
+gr$\"3nKZ()\\24/DFgx7$F\\s$\"38&z0?TjW]$Fgx7$Fas$\"3yg_XPP0g\\Fgx7$Ffs
+$\"3An`NS^I2qFgx7$F\\t$\"3\")*39@qJjN*Fgx7$Fat$\"3fv&=R!z9k7!#>7$Fgt$
+\"3u1+4,vY0<F\\bl7$F\\u$\"3(GG@ojl@E#F\\bl7$Fau$\"3D()>9G\"Rg%HF\\bl7$
+Ffu$\"3&3*)yn%oJ6RF\\bl7$F[v$\"3)y7r^,AS+&F\\bl7$F`v$\"3<wj#)*f#3dkF\\
+bl7$Fev$\"34Y\"f2Zc)z!)F\\bl7$Fjv$\"3:'f>U$fAD5F,7$F_w$\"3%)[>2Iilu7F,
+7$Fdw$\"3ur3b&yU1f\"F,7$Fiw$\"3;<hY!47Q'>F,7$F^x$\"3'38&G#QuWV#F,7$Fcx
+$\"3S3d2evCyHF,7$Fix$\"3*41%=nfWTOF,7$F^y$\"3>kqvlGLBWF,7$Fcy$\"32(Q.+
+!>\\n_F,7$Fhy$\"35I(*>H\")[0kF,7$$\"3F++vL[/a=Fhs$\"3F!px)y3R!)pF,7$F]
+z$\"3hezPza%**f(F,7$Fbz$\"3.e;lcs,8$)F,7$Fgz$\"3su`0jx&R3*F,7$F\\[l$\"
+3hUBH`&=(z)*F,7$Fa[l$\"3cJ;&4&>et5F97$Ff[l$\"3c8)[jx^F<\"F97$F[\\l$\"3
+AQ!3YSY)z7F9-F`\\l6&Fb\\lF(Fc\\lF(-F$6$7ZF'7$F*$\"3k&zW)\\JJR7F\\]l7$F
+1$\"3]b:=&)3h$['F`]l7$F7$\"3:V(R$y:?gVF<7$F>$\"3u**Qr+E!o\\)FB7$FD$\"3
+P)o%3(o2FG)FM7$FI$\"3#[zG\"e*z%pYFgn7$FO$\"3fN[F#=Q-9#F\\p7$FT$\"3gUT-
+m')zl$)F\\p7$FY$\"39[\"*4'>(3mFF[r7$Fin$\"3>/g</ge%G)F[r7$F^o$\"3p./>H
+mf))>Fet7$Fco$\"3rAWC+^U+\\Fet7$Fho$\"3,D)4bH$QC6Fgx7$F^p$\"3d?2\"3o)
+\\cBFgx7$Fcp$\"32+SmLy%QT%Fgx7$Fhp$\"3q5I_*o0P())Fgx7$F]q$\"3M)p1$\\Xz
+Y:F\\bl7$Fbq$\"3^v!*o9#Rh%GF\\bl7$Fgq$\"3CcQ#H[e9u%F\\bl7$F]r$\"3L,Icu
+U#y1)F\\bl7$Fbr$\"3')*[P(pnM08F,7$Fgr$\"3'Gto'ekV1@F,7$F\\s$\"3)y2\"3b
+IO1KF,7$Fas$\"3L8$oaip)\\\\F,7$Ffs$\"3g!f#R!*R&Qi(F,7$F\\t$\"3(HW*QDJD
+%4\"F97$Fat$\"3%>VfT,\")Rf\"F97$Fgt$\"3<JKy'f3wJ#F97$F\\u$\"3^*o;)H\"o
+!*H$F97$Fau$\"30%e!H1gp*e%F97$Ffu$\"3,w?f]/$4a'F97$F[v$\"3%)[`QaK*)**)
+)F97$F`v$\"3K()p*fT**RA\"Fhs7$Fev$\"3rvppkz!*>;Fhs7$Fjv$\"3af*4JMD:=#F
+hs7$F_w$\"3@agl3r-kGFhs7$Fdw$\"3;U'4;3vux$Fhs7$Fiw$\"3yD_a^m)f\"\\Fhs7
+$F^x$\"3K_riZPYIkFhs7$Fcx$\"3vJN2mCXt#)Fhs7$Fix$\"3*=o.%\\>sj5!#:7$F^y
+$\"3z%R(R5%4lN\"Fj^m7$Fcy$\"3ri+O\\x[(o\"Fj^m7$$\"3wLL3U/37=Fhs$\"3Dmn
+m6$\\$3>Fj^m7$Fhy$\"3bw*)f\"z%*[:#Fj^m7$Fael$\"3!e<!36]I*R#Fj^m7$F]z$
+\"3qX3G'Q(QoEFj^m7$Fbz$\"3nC&*H&*)H\\)HFj^m7$Fgz$\"3.RK)H\"e([L$Fj^m7$
+F\\[l$\"3%f+j9!='Rq$Fj^m7$Fa[l$\"3WAdT[HT4TFj^m7$$\"33+D\"G:3u'>Fhs$\"
+3x)f7j#)zLM%Fj^m7$Ff[l$\"3Q$GCr'yE*e%Fj^m7$$\"39+v$40O\"*)>Fhs$\"3ZJ=6
+oRhZ[Fj^m7$F[\\l$\"3fi!fl1w*=^Fj^m-F`\\l6&Fb\\lFc\\lFc\\lF(-F$6$7ZF'7$
+F*$\"3)=;/6:M]N#!#K7$F1$\"3I1`7U!R)3VF`]l7$F7$\"3^wV4HDQBnF<7$F>$\"3W0
+7h,!RHP#FM7$FD$\"30)G^[6Guk$Fgn7$FI$\"39p(*f?Q/1HF\\p7$FO$\"3I=QAW&pg!
+=F[r7$FT$\"3:O\"*oU*GBF*F[r7$FY$\"3bxF8?l?%*QFet7$Fin$\"3<Ef!zWiCX\"Fg
+x7$F^o$\"3&yo6+:3P:%Fgx7$Fco$\"3%Rz@xC:fA\"F\\bl7$Fho$\"3mD^')pO1@LF\\
+bl7$F^p$\"3T5=$ze-02)F\\bl7$Fcp$\"3T(*f&\\[-Qr\"F,7$Fhp$\"3$y9skRA>'RF
+,7$F]q$\"3;QI\"R:**yr(F,7$Fbq$\"3ivvNmjI/;F97$Fgq$\"3iWib:7))fHF97$F]r
+$\"32rn\\9[G,cF97$Fbr$\"3a4:D\\F<y**F97$Fgr$\"3a\\r?r\\*=x\"Fhs7$F\\s$
+\"3.4,S[8cLHFhs7$Fas$\"3byf@BwgR\\Fhs7$Ffs$\"3+#o*[k\\[%H)Fhs7$F\\t$\"
+3LLc]u'Q(z7Fj^m7$Fat$\"3(z'Q,)zJ)4?Fj^m7$Fgt$\"3^2%yul,%\\JFj^m7$F\\u$
+\"3RD&RuYc6\"[Fj^m7$Fau$\"3-wS\"[VS-:(Fj^m7$Ffu$\"3\"*HV6AQ#Q4\"!#97$F
+[v$\"3%y.p%eq&Ge\"F^hm7$F`v$\"3Ln,a,r:?BF^hm7$Fev$\"3>&H`B\\VwC$F^hm7$
+Fjv$\"3B(R,=Ki=k%F^hm7$F_w$\"3@>%)**[$e]V'F^hm7$Fdw$\"3zf=:0ygq*)F^hm7
+$Fiw$\"3[!p_!y#)eI7!#87$F^x$\"3ul^G4,_)p\"Fdim7$Fcx$\"3&p'H?)*fG)H#Fdi
+m7$Fix$\"3$>&y#*G?B2JFdim7$F^y$\"3ZAoGfB%*fTFdim7$Fcy$\"3i%*\\zY&3fS&F
+dim7$Fb_m$\"3#p@***oppliFdim7$Fhy$\"3AY)3U4>#\\sFdim7$Fael$\"3sgtC@OuY
+#)Fdim7$F]z$\"3LOO$z3%oo$*Fdim7$Fbz$\"3kaL'yGo<2\"!#77$Fgz$\"303%fmHlU
+A\"Fc[n7$F\\[l$\"3E.'eIC3')Q\"Fc[n7$Fa[l$\"3KA*)*yw_Hd\"Fc[n7$F\\am$\"
+3)f3p#p;-\"o\"Fc[n7$Ff[l$\"3;b5VX\"eez\"Fc[n7$Fdam$\"3W7()Q0`%y\">Fc[n
+7$F[\\l$\"3B^fyncQZ?Fc[n-F`\\l6&Fb\\lF(F(Fc\\l-F$6$7fnF'7$F*$\"3'*3d<&
+))>^Z%!#L7$F1$\"3nDy&R+&[jGF`]l7$F7$\"31^j8,urO5FB7$F>$\"3D**onht(oi'F
+M7$FD$\"3sh.q>N<1;F\\p7$FI$\"3feCl@e`3=F[r7$FO$\"38,urSi/C:Fet7$FT$\"3
+$)**=$>m)oF5Fgx7$FY$\"3N@`M)o2B[&Fgx7$Fin$\"3*z.R1r@ka#F\\bl7$F^o$\"3:
+3$zfjSfn)F\\bl7$Fco$\"3xFueX0vmIF,7$Fho$\"3)46\"38!\\\"4)*F,7$F^p$\"3^
+0n=m(=Rw#F97$Fcp$\"3uG/**GX>amF97$Fhp$\"3')3&[4Rz)o<Fhs7$F]q$\"3y9QBfC
+&3&QFhs7$Fbq$\"3D<b8*)G%H/*Fhs7$Fgq$\"3pRo\"4(\\oZ=Fj^m7$F]r$\"3e]KzN:
+v))QFj^m7$Fbr$\"3)>N[9pSsi(Fj^m7$Fgr$\"3Be[&R6b/\\\"F^hm7$F\\s$\"3!>(o
+d'H;Ro#F^hm7$Fas$\"30hXF,$o#H\\F^hm7$Ffs$\"3e5aYyt#R-*F^hm7$F\\t$\"3,9
+KWBdj'\\\"Fdim7$Fat$\"3\\,j/VC7MDFdim7$Fgt$\"3R]dvV3kzUFdim7$F\\u$\"3[
+7;qN?:;qFdim7$Fau$\"37%>g\"fj!R6\"Fc[n7$Ffu$\"3)oz-LFQ\"H=Fc[n7$F[v$\"
+3wKD27Y2:GFc[n7$F`v$\"3_VL`@`*yR%Fc[n7$Fev$\"3<=T&[q\\3^'Fc[n7$Fjv$\"3
+-z)f+6%yw)*Fc[n7$F_w$\"3y6WmVk$eW\"!#67$Fdw$\"3>Ip7\"3k-8#F[dn7$Fiw$\"
+3*='>RsKR!3$F[dn7$F^x$\"3%>R[ki@j[%F[dn7$Fcx$\"3<pf]\"3\"H%Q'F[dn7$Fix
+$\"3\\-1<\\fLw!*F[dn7$F^y$\"3&f#\\xeSov7!#57$Fcy$\"3hB!QCZh<t\"F^en7$F
+b_m$\"3?ua#zizr0#F^en7$Fhy$\"3[29G,+kQCF^en7$Fael$\"32wAX.LYMGF^en7$F]
+z$\"3HpwMc2F*G$F^en7$Fbz$\"3*\\MPO%>@[QF^en7$Fgz$\"3\"HJd/!pI%\\%F^en7
+$$\"3\"***\\7`f@E>Fhs$\"3eE)[N-/z$[F^en7$F\\[l$\"3)4+2\"*zhd?&F^en7$$
+\"3O+](oyMk%>Fhs$\"3ba))RmHX*f&F^en7$Fa[l$\"3$3ZZ^AV1-'F^en7$F\\am$\"3
+_u,.)4Tf]'F^en7$Ff[l$\"3;FL5QhNFqF^en7$Fdam$\"3<$>)y$\\bte(F^en7$F[\\l
+$\"3tl&Q4$*f&)=)F^en-F`\\l6&Fb\\lFc\\lF(Fc\\l-F$6$7fnF'7$F*$\"3]]'p)=B
+h.&)!#M7$F1$\"3,J([!z9#H!>F`]l7$F7$\"3$)**=[)zU&)f\"FB7$F>$\"3Jvy'o\"G
+k]=Fgn7$FD$\"3Jt&\\HMpF2(F\\p7$FI$\"3IAPc?X\\D6Fet7$FO$\"3ZKBP=g.'G\"F
+gx7$FT$\"3A82>b\\+R6F\\bl7$FY$\"3_kM?!)***yr(F\\bl7$Fin$\"3+k'GO4NUY%F
+,7$F^o$\"3u!Gj6OE@\"=F97$Fco$\"3Q)eVB7K;n(F97$Fho$\"3hk%3Kl)=(*GFhs7$F
+^p$\"36p*e?M]aY*Fhs7$Fcp$\"38J?H@xd$e#Fj^m7$Fhp$\"3RuPH+uN(*yFj^m7$F]q
+$\"3E$)[tMxM@>F^hm7$Fbq$\"3=)H$zF]5(4&F^hm7$Fgq$\"3O$ep,C\"Q`6Fdim7$F]
+r$\"3P+V_)4`(*p#Fdim7$Fbr$\"3T5l()y\"*3IeFdim7$Fgr$\"3g/\"*)f#Gp`7Fc[n
+7$F\\s$\"3=M*fu$oYbCFc[n7$Fas$\"3W4EnLA&)=\\Fc[n7$Ffs$\"3vT0bDGK<)*Fc[
+n7$F\\t$\"3#G`S8le-v\"F[dn7$Fat$\"3m%=r:=<^>$F[dn7$Fgt$\"3L\"y%zguP:eF
+[dn7$F\\u$\"3=YXk#>^J-\"F^en7$Fau$\"3x;Z.)*QFN<F^en7$Ffu$\"3%\\U'o$*3q
+eIF^en7$F[v$\"3]z0zZ[W1]F^en7$F`v$\"3+5\"G9*\\6O$)F^en7$Fev$\"3*H'QkMQ
+E08!\"*7$Fjv$\"3KGE%>!Q],@F\\_o7$F_w$\"3X+KrssX[KF\\_o7$Fdw$\"3o**4))3
+)p'e]F\\_o7$Fiw$\"3(3sR%)*yk5xF\\_o7$F^x$\"3#)*oEU$Q&\\=\"!\")7$Fcx$\"
+3vE[z\"3CMx\"F\\`o7$Fix$\"30$o=9=x6l#F\\`o7$F^y$\"3DIv@NE#>\"RF\\`o7$F
+cy$\"3!o\")GMe=va&F\\`o7$Fb_m$\"3V.kx>C3anF\\`o7$Fhy$\"3![()HX&*HM?)F
+\\`o7$Fael$\"3-mWa:K0U(*F\\`o7$F]z$\"3$ysmL!Q\"[:\"!\"(7$Fbz$\"34?&[:)
+Go\"Q\"Feao7$Fgz$\"3tzMf2x$)\\;Feao7$Fefn$\"3AuUh^+w%z\"Feao7$F\\[l$\"
+3M#)edQ@b^>Feao7$F]gn$\"3`;*>yW;67#Feao7$Fa[l$\"39;%[J$)=WI#Feao7$F\\a
+m$\"3Dceo6()*y^#Feao7$Ff[l$\"3F\\NKAL\")\\FFeao7$Fdam$\"3$fJ&f0+k,IFea
+o7$F[\\l$\"3'3IysTl\\F$Feao-F`\\l6&Fb\\lF(Fc\\lFc\\l-%+AXESLABELSG6$%&
+deltaG%#muG-%*THICKNESSG6#\"\"$-%%VIEWG6$;F(F[\\l;F($\"\"\"F(" 2 361 
+361 361 2 0 1 3 2 9 0 4 2 1.000000 45.000000 45.000000 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 }}}{PARA 0 "" 0 "" 
+{TEXT -1 57 "(The curves from left to right correspond to path length \+
+" }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 21 " = 8, 7, 6, 5, 4, 3.)" }
+}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT 306 11 "Asympto
+tics" }{TEXT -1 109 ". For dense graphs and large size, a numerical pa
+ttern clearly emerges. Here is what happens for mean degree " }
+{XPPEDIT 18 0 "delta=10" "/%&deltaG\"#5" }{TEXT -1 10 " and size " }
+{XPPEDIT 18 0 "n=10^5" "/%\"nG*$\"#5\"\"&" }{TEXT -1 1 ":" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "seq(subs(n=10^5,p=1.0*10^(-4),[ll,m
+eans(n,p,ll)]),ll=2..20);" }}{PARA 12 "" 1 "" {XPPMATH 20 "657$\"\"#$
+\"+.+v**\\!#;7$\"\"$$\"+E+S**\\!#97$\"\"%$\"+!3+!**\\!#77$\"\"&$\"+(=+
+&)*\\!#57$\"\"'$\"+y.!z*\\!\")7$\"\"($\"+)o+s*\\!\"'7$\"\")$\"+d6S'*\\
+!\"%7$\"\"*$\"+K=]&*\\!\"#7$\"#5$\"+nF]%*\\\"\"!7$\"#6$\"+?SS$*\\F$7$
+\"#7$\"+bc?#*\\F.7$\"#8$\"+Xx!4*\\F87$\"#9$\"+m.^*)\\FB7$\"#:$\"++O,))
+\\FL7$\"#;$\"+PvT')\\FU7$\"#<$\"+qAs%)\\Fgn7$\"#=$\"+,z#H)\\F_o7$\"#>$
+\"+NX.\")\\Fgo7$\"#?$\"+'GU!z\\F_p" }}}{PARA 0 "" 0 "" {TEXT -1 83 "Th
+e mantissas all start with 0.49. This corresponds to a regime where th
+e distance " }{XPPEDIT 18 0 "l" "I\"lG6\"" }{TEXT -1 133 " is small so
+ that only dominant terms in the mean value polynomial intervene. The \+
+mean number of avoiding pairs is then approximately" }}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 34 "mu=1/2*n^(2*l)*p^(2*l+2)*(1+o(1));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#/%#muG,$*()%\"nG,$%\"lG\"\"#\"\"\")%\"
+pG,&F*F+F+F,F,,&F,F,-%\"oG6#F,F,F,#F,F+" }}}{PARA 0 "" 0 "" {TEXT -1 
+42 "or, in terms of the mean degree parameter " }{XPPEDIT 18 0 "delta
+" "I&deltaG6\"" }{TEXT -1 1 ":" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 23 "mu=1/2*delta^(2*l)*p^2;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#/%#mu
+G,$*&)%&deltaG,$%\"lG\"\"#\"\"\"%\"pGF+#F,F+" }}}{PARA 0 "" 0 "" 
+{TEXT -1 125 "This simplified formula explains the numerical regularit
+ies seen above, where the mean number increases by a factor of about \+
+" }{XPPEDIT 18 0 "100" "\"$+\"" }{TEXT -1 6 " when " }{XPPEDIT 18 0 "l
+" "I\"lG6\"" }{TEXT -1 16 " increases by 1." }}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 31 "Conversely, a clear example of \+
+" }{TEXT 307 20 "nonasymptotic regime" }{TEXT -1 16 " is provided by \+
+" }{XPPEDIT 18 0 "p=10^(1/8)" "/%\"pG)\"#5*&\"\"\"\"\"\"\"\")!\"\"" }
+{TEXT -1 5 " and " }{XPPEDIT 18 0 "n=10^3" "/%\"nG*$\"#5\"\"$" }{TEXT 
+-1 10 ", that is " }{XPPEDIT 18 0 "delta=1.333" "/%&deltaG$\"%L8!\"$" 
+}{TEXT -1 1 "." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 172 "nn:=10^3;
+ dd:=10.0^(1/8); pp:=dd/(nn-1);for ll from 10 to 28 by 2 do l=ll,Exact
+Mean=evalf(subs(n=nn,p=pp,means(n,p,ll)),5),ApproxMean=evalf(1/2*nn^(2
+*ll)*pp^(2*ll+2),5) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#nnG\"%+5
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#ddG$\"+K9_L8!\"*" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%#ppG$\"+)Gc[L\"!#7" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6%/%\"lG\"#5/%*ExactMeanG$\"&VW\"!\")/%+ApproxMeanG$\"&V(
+GF*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%/%\"lG\"#7/%*ExactMeanG$\"&!yV!
+\")/%+ApproxMeanG$\"&b7*F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%/%\"lG\"
+#9/%*ExactMeanG$\"&jJ\"!\"(/%+ApproxMeanG$\"&u*GF*" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6%/%\"lG\"#;/%*ExactMeanG$\"&c#R!\"(/%+ApproxMeanG$\"&!
+*>*F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%/%\"lG\"#=/%*ExactMeanG$\"&8;
+\"!\"'/%+ApproxMeanG$\"&2#HF*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%/%\"l
+G\"#?/%*ExactMeanG$\"&sS$!\"'/%+ApproxMeanG$\"&IF*F*" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6%/%\"lG\"#A/%*ExactMeanG$\"&b\"**!\"'/%+ApproxMeanG$
+\"&U%H!\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%/%\"lG\"#C/%*ExactMeanG$
+\"&?'G!\"&/%+ApproxMeanG$\"&vM*F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%/
+%\"lG\"#E/%*ExactMeanG$\"&M>)!\"&/%+ApproxMeanG$\"&y'H!\"%" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6%/%\"lG\"#G/%*ExactMeanG$\"&iK#!\"%/%+ApproxM
+eanG$\"&DU*F*" }}}{PARA 0 "" 0 "" {TEXT -1 229 "The ratio between the \+
+exact formula and the simplified approximation is typically of about 1
+ to 2 or 1 to 4, with the approximation being systematically optimisti
+c. An explanation is that, apart from asymptotic approximations in " }
+{XPPEDIT 18 0 "n" "I\"nG6\"" }{TEXT -1 152 ", the simplified  formula \+
+precisely neglects the exclusion effect on edges and this is permissib
+le only in dense large graphs having high connectivity. " }}}{SECT 0 
+{PARA 3 "" 0 "" {TEXT -1 10 "Conclusion" }}{PARA 0 "" 0 "" {TEXT -1 0 
+"" }}{PARA 0 "" 0 "" {TEXT -1 64 "Permutations with constrained succes
+sion gaps are accessible to " }{HYPERLNK 17 "combstruct" 2 "combstruct
+" "" }{TEXT -1 6 "  and " }{HYPERLNK 17 "gfun" 2 "gfun" "" }{TEXT -1 
+507 " . This is achieved via the notion of templates that are nicely d
+ecomposable in conjunction with the inclusion-exclusion principle that
+ is expressed by a simple integral transformation. Generating function
+s and recurrences result automatically and this leads to explicit bino
+mial formulae. An application to robustness in a random interconnectio
+n graph derives from this approach and we have shown how to determine \+
+the mean number of edge-disjoint pairs between a source and a target i
+n such a random graph." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}}{MARK "31 \+
+0 0" 8 }{VIEWOPTS 1 1 0 1 1 1803 }

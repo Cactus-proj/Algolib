@@ -1,0 +1,32 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Mgfun):
+
+dfinite_expr_to_sys( 1/x^n, f(n::shift) ) :
+if % = {-f(n)+x*f(n + 1)} then okay else "shift 1/x^n", % end if ;
+
+dfinite_expr_to_sys( 1/x^n, f(x::diff, n::shift) ) :
+if % = {n*f(x,n)+x*diff(f(x,n),x), -f(x,n)+x*f(x,n+1)} then okay
+else "diff+shift 1/x^n", % end if ;
+
+dfinite_expr_to_sys( exp(x^2)/x^n*ChebyshevT(n,x), f(x::diff, n::shift) ) :
+if % = {
+  (-2*n*x^2+2*x^4-2*x^2+n)*f(x,n)+n*x^2*f(x,n+1)+(-x^3+x)*diff(f(x,n),x),
+  (4*x^6-8*x^4-4*n*x^4+4*n*x^2-n^2+2*x^2+n)*f(x,n)+(-4*x^5+5*x^3+2*n*x^3-2*n*x)*diff(f(x,n),x)+(x^4-x^2)*diff(diff(f(x,n),x),x)
+} then okay else "diff+shift product with ChebyshevT", % end if ;

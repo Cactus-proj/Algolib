@@ -1,0 +1,53 @@
+# Copyright (C) 1991--2010 by INRIA.
+#
+# This file is part of Algolib.
+#
+# Algolib is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# Algolib is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with Algolib.  If not, see
+# <http://www.gnu.org/licenses/>.
+
+with(Ore_algebra):
+with(Groebner):
+with(Holonomy):
+
+unprotect(Si): Si:='Si':
+h:=q^((i+j)^2+j^2+l^2)/qfactorial(q,l-i-j)/qfactorial(q,n-l)
+    /qfactorial(q,i)/qfactorial(q,j):
+A:=skew_algebra(comm=q,qdilat=[Sn,qn=q^n],
+    qdilat=[Si,qi=q^i],qdilat=[Sj,qj=q^j],qdilat=[Sl,ql=q^l],
+    polynom={qn,qi,qj,ql}):
+G:=hypergeom_to_dfinite(h,A):
+T:=MonomialOrder(A,tdeg(qn,qi,qj,ql,Sn,Si,Sj,Sl)):
+GB:=Basis(G,T):
+HilbertDimension(GB,T):
+if %=4 then okay else % fi;
+T2:=MonomialOrder(A,tdeg(Sn,Si,Sj,Sl,qn,qi,qj,ql)):
+GB2:=Basis(G,T2):
+HilbertDimension(GB2,T2):
+if %=4 then okay else % fi;
+T3:=MonomialOrder(A,tdeg(Si,Sj,Sn,Sl,ql,qn,qj,qi)):
+GB3:=Basis(G,T3):
+HilbertDimension(GB3,T3):
+if %=4 then okay else % fi;
+Ak:=skew_algebra(comm={q,qi,qj,ql},qdilat=[Sn,qn=q^n],polynom={qi,qj,ql}):
+Tk:=MonomialOrder(Ak,lexdeg([qi,qj,ql],[Sn]),[qi,qj,ql]):
+TAK:=takayama_algo(map(op,{GB,GB2,G}),A,[qi,qj,ql],Tk,
+    [[],[],0,proc(elim_GB,GB,N) elim_GB=[] end]):
+collect(TAK[1],Sn,factor):
+if %=[(-1+q^4*qn)*Sn^4+(-q^6*qn-q^11*qn^3-q^5*qn+q-q^12*qn^3
++q^9*qn^2+q^14*qn^4+q^21*qn^6+1+q^7*qn^2+q^15*qn^4+q^2+q^3
++q^8*qn^2-q^18*qn^5-q^4*qn)*Sn^3-q*(2*q^8*qn^2+q^6*qn^2+2*q^2
++q^9*qn^2-q^10*qn^3+2*q^7*qn^2+q^3+q+q^13*qn^4+q^12*qn^4+1
++q^14*qn^4-q^11*qn^3-q^4*qn+q^4-q^5*qn-q^6*qn)*Sn^2
++q^3*(q^3+q^2+q^7*qn^2+q^6*qn^2+q-q^4*qn+q^5*qn^2+1)*Sn-q^6]
+then okay else % fi;
