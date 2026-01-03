@@ -1,0 +1,69 @@
+This file describes the installation of algolib for MapleV.5.
+
+
+I. Install the files.
+
+Under Unix:
+
+   1. Download the file:		    algolib.tar.gz
+      Uncompress it by:			    gunzip algolib.tar.gz
+
+      (This creates a file `algolib.tar'; if gunzip was not available
+      on your machine, download the file `algolib.tar' instead.)
+
+   2. Restore the files from the archive:   tar xpf algolib.tar
+
+      (Or something similar, depending on your system.)
+
+      This creates a directory `algolib', and three files in it:
+      `maple.lib', `maple.ind', `maple.hdb'.
+
+On a Macintosh or under Windows:
+
+      Directly download the three files `maple.lib', `maple.ind',
+      `maple.hdb' from the present ftp site.
+
+
+II. Make the algolib library available to your Maple system.
+
+      To this end, the absolute path to the newly created `algolib'
+      directory has to be put in the Maple global variable `libname'.
+      This is either done once forever in your `.mapleinit' file or
+      has to be done at the beginning of each Maple session by the
+      command
+
+	     libname:="<algolib path>",libname:
+
+      where `<algolib path>' depends on your system type.
+
+Under Unix:
+
+      The `algolib' path is something like `/foo/bar/.../algolib', so
+      that your command reads:
+
+	     libname:="/foo/bar/.../algolib",libname:
+
+On a Macintosh:
+
+      The `algolib' path is something like `MyDisk:algolib', so
+      that your command reads:
+
+	     libname:="MyDisk:algolib",libname:
+
+Under Windows:
+
+      The `algolib' path is something like `C:\algolib', so
+      that your command reads:
+
+	     libname:="C:\algolib",libname:
+
+
+III. Using the algolib library.
+
+      Type `?algolib' in a Maple session to get started.
+
+      Documentaion warning: the algolib documentation should be
+      consulted through the graphical user interface, lest a large
+      part of it might remain unavailable.  Beside an enhanced
+      graphical rendering, this will avoid the help pages to be
+      truncated due to a weakness of the text help interface.

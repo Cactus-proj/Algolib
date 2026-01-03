@@ -1,0 +1,31 @@
+History of changes:
+-------------------
+
+01-05-29:
+    a few bug fixes in evalr (part of equivalent)
+
+01-05-09:
+    a few bug fixes in equivalent
+
+00-12-12:
+    combstruct 4.0 (new version including attribute grammars)
+
+00-11-29:
+    regexpcount 1.3 (fixing autotoXstarauto and documentation)
+
+00-07-24:
+    encyclopedia (new version fixing a workaround for a bug in rsolve)
+
+00-07-03:
+    combstruct 3.31 (bug fix in the labelled case)
+    regexpcount 1.1
+
+00-04-07:
+    combstruct 3.3
+    encyclopedia
+    gdev
+    gfun 2.63
+    Groebner 3.0
+    Holonomy 3.0
+    Mgfun 3.0
+    Ore_algebra 3.0
