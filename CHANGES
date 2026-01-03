@@ -1,6 +1,12 @@
 History of changes:
 -------------------
 
+03-03-11:
+    bug fix in gdev (Harris-Schoenfeld)
+
+02-08-07:
+    port to Maple 8
+
 02-08-03:
     port to Maple 7
 
